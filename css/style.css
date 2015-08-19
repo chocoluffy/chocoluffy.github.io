@@ -23,7 +23,7 @@ body {
     margin: 0 30px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body {
     font-size: 13px;
   }
@@ -126,7 +126,7 @@ a:hover {
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1;
-  margin-top: 2em;
+  margin-top: 10px;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
