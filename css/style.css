@@ -104,26 +104,37 @@ a:hover {
   }
 }
 #header {
-  text-shadow: 0 0 1px #fff;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   margin: 50px auto;
 }
 #header a {
-  color: #999;
+  color: #fbf5e6;
 }
 #header a:hover {
   color: #0085ff;
   text-decoration: none;
 }
 #header h1 {
+  position: relative;
+  left: 50%;
+  text-align: center;
   font-weight: normal;
   font-size: 3.5em;
   line-height: 1;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
 }
 #header h2 {
+  position: relative;
+  left: 50%;
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1;
-  margin-top: 10px;
+  margin-top: 2em;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
 }
 #header #main-nav {
   font-family: Georgia, 'Times New Roman', Times, 'Songti SC', SimSun, serif;
