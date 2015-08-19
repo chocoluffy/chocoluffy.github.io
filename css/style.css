@@ -115,9 +115,6 @@ a:hover {
   text-decoration: none;
 }
 #header h1 {
-  position: relative;
-  left: 50%;
-  text-align: center;
   font-weight: normal;
   font-size: 3.5em;
   line-height: 1;
@@ -126,8 +123,6 @@ a:hover {
   filter: alpha(opacity=70);
 }
 #header h2 {
-  position: relative;
-  left: 50%;
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1;
