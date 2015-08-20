@@ -95,8 +95,7 @@ a:hover {
 }
 @media screen and (max-width: 1260px) {
   #wrapper {
-    margin-right: -25px;
-    margin-left: -25px;
+    margin-right: 300px;
   }
 }
 @media screen and (max-width: 900px) {
