@@ -23,22 +23,9 @@ body {
     margin: 0 30px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   body {
-    font-size: 15px;
-  }
-  #main-title{
-    text-align: center;
-  }
-
-  #sub-title{
-    font-size: 1.0em;
-    margin-right: 0;
-    margin-left: 10px;
-  }
-
-  #main-nav{
-    display: none;
+    font-size: 13px;
   }
 }
 h1,
@@ -116,9 +103,6 @@ a:hover {
     margin-right: -25px;
     margin-left: -25px;
   }
-  #wrapper .title{
-    font-size: 1.4em;
-  }
 }
 #header {
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
@@ -141,9 +125,9 @@ a:hover {
 }
 #header h2 {
   font-weight: normal;
+  font-size: 1.2em;
   line-height: 1;
-  margin-top: 28px;
-  margin-bottom: -18px;
+  margin-top: 10px;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
