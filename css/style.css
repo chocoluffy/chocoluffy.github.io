@@ -109,6 +109,9 @@ a:hover {
     margin-right: -25px;
     margin-left: -25px;
   }
+  #wrapper .title{
+    font-size: 1.4em;
+  }
 }
 #header {
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
