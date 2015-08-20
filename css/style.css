@@ -30,6 +30,9 @@ body {
   #main-title{
     text-align: center;
   }
+  #sub-title{
+    margin-left: 2px;
+  }
   #main-nav{
     display: none;
   }
