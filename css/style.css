@@ -100,7 +100,8 @@ a:hover {
 }
 @media screen and (max-width: 900px) {
   #wrapper {
-    margin-right: 0;
+    margin-right: -25px;
+    margin-left: -25px;
   }
 }
 #header {
@@ -179,7 +180,8 @@ article .post-content {
 }
 @media screen and (max-width: 600px) {
   article .post-content {
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 article .post-content:before {
