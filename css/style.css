@@ -31,7 +31,8 @@ body {
     text-align: center;
   }
   #sub-title{
-    margin-left: 2px;
+    margin-left: -10px;
+    margin-bottom: -10px;
   }
   #main-nav{
     display: none;
@@ -139,7 +140,8 @@ a:hover {
   font-weight: normal;
   font-size: 1.2em;
   line-height: 1;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: -10px;
   opacity: 0.8;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
   filter: alpha(opacity=80);
