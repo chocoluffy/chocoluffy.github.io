@@ -27,6 +27,12 @@ body {
   body {
     font-size: 16px;
   }
+  #main-title{
+    text-align: center;
+  }
+  #main-nav{
+    display: none;
+  }
 }
 h1,
 h2,
