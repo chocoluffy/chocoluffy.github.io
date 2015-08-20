@@ -40,7 +40,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   #sub-title {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-right: 0;
     margin-left: 10px;
   }
