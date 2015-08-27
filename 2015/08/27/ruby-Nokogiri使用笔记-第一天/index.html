@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>海贼梦</title>
+  <title>ruby Nokogiri使用笔记[第一天] | 海贼梦</title>
   <meta name="author" content="余舜哲">
   
   <meta name="description" content="学习总结 思考感悟 知识管理 商业科技 生活娱乐">
@@ -13,7 +13,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="ruby Nokogiri使用笔记[第一天]"/>
   <meta property="og:site_name" content="海贼梦"/>
 
   
@@ -230,24 +230,35 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2015-08-27T21:03:40.000Z"><a href="/2015/08/27/ruby-Nokogiri使用笔记-第一天/">2015-08-27</a></time>
+        <time datetime="2015-08-28T02:52:07.000Z"><a href="/2015/08/27/ruby-Nokogiri使用笔记-第一天/">2015-08-27</a></time>
       
       
   
-    <h1 class="title"></h1>
+    <h1 class="title">ruby Nokogiri使用笔记[第一天]</h1>
   
 
     </header>
     <div class="entry">
       
-        <h2 id="ruby_Nokogiri使用笔记[第一天]">ruby Nokogiri使用笔记[第一天]</h2><p>将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧</p>
+        <p>将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧</p>
+<a id="more"></a>
 <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span> <span class="string">'nokogiri'</span></span><br><span class="line"><span class="built_in">require</span> <span class="string">'open-uri'</span></span><br><span class="line"></span><br><span class="line">BASE_WIKIPEDIA_URL = <span class="string">"http://en.wikipedia.org"</span></span><br><span class="line">LIST_URL = <span class="string">"#&#123;BASE_WIKIPEDIA_URL&#125;/wiki/List_of_Nobel_laureates"</span></span><br><span class="line">page = Nokogiri::HTML(<span class="built_in">open</span>(LIST_URL))</span><br><span class="line">rows = page.css(<span class="string">'div.mw-content-ltr table.wikitable tr'</span>)       </span><br><span class="line"></span><br><span class="line">rows[<span class="number">1.</span>.-<span class="number">2</span>].<span class="keyword">each</span> <span class="built_in">do</span> |row|</span><br><span class="line">  hrefs = row.css(<span class="string">"td a"</span>).map&#123; |<span class="operator">a</span>| </span><br><span class="line">    <span class="operator">a</span>[<span class="string">'href'</span>] <span class="keyword">if</span> <span class="operator">a</span>[<span class="string">'href'</span>].match(<span class="string">"/wiki/"</span>)</span><br><span class="line">  &#125;.compact.uniq</span><br><span class="line">  <span class="comment"># 对每一个row里面将不同的cell里面的link收集起来，然后filter</span></span><br><span class="line">  <span class="comment"># 同样长度的array在filter之后不符合要求的得到nil然后在compact方法的时候被删掉</span></span><br><span class="line">  <span class="comment"># 然后uniq是删去那些相同的link url</span></span><br><span class="line"></span><br><span class="line">  hrefs.<span class="keyword">each</span> <span class="built_in">do</span> |href|</span><br><span class="line">   puts href</span><br><span class="line">  <span class="function"><span class="keyword">end</span></span><br><span class="line"><span class="title">end</span></span></span><br></pre></td></tr></table></figure>
       
     </div>
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/笔记/">笔记</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tags/ruby/">ruby</a>
+  </div>
+
 <!-- Baidu Button BEGIN -->
 <div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
 <a class="bds_qzone"></a>
@@ -317,6 +328,8 @@ var duoshuoQuery = {short_name:"chocoluffy"};
   
     <li><a href="/categories/blog/">blog</a><small>6</small></li>
   
+    <li><a href="/categories/笔记/">笔记</a><small>1</small></li>
+  
     <li><a href="/categories/转载/">转载</a><small>7</small></li>
   
   </ul>
@@ -349,7 +362,7 @@ var duoshuoQuery = {short_name:"chocoluffy"};
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/原创/" style="font-size: 17.5px;">原创</a> <a href="/tags/商业科技/" style="font-size: 10px;">商业科技</a> <a href="/tags/生活感悟/" style="font-size: 12.5px;">生活感悟</a> <a href="/tags/社会人文/" style="font-size: 15px;">社会人文</a> <a href="/tags/转载/" style="font-size: 20px;">转载</a>
+    <a href="/tags/ruby/" style="font-size: 10px;">ruby</a> <a href="/tags/原创/" style="font-size: 18px;">原创</a> <a href="/tags/商业科技/" style="font-size: 12px;">商业科技</a> <a href="/tags/生活感悟/" style="font-size: 14px;">生活感悟</a> <a href="/tags/社会人文/" style="font-size: 16px;">社会人文</a> <a href="/tags/转载/" style="font-size: 20px;">转载</a>
   </div>
 </div>
 
