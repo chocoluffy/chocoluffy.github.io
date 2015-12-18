@@ -306,7 +306,6 @@ a {
     border-bottom: 1px dotted #ddd;
   }
   #container .article-header h1 {
-    text-align: right;
     margin-bottom: 10px;
   }
   #container .header-subtitle {
@@ -341,7 +340,6 @@ a {
   #container .article .article-title {
     font-size: 18px;
     max-width: 185px;
-    display: block;
     margin: 0;
   }
   #container .article .article-meta {
