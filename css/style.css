@@ -302,8 +302,8 @@ a {
   }
   #container .article-header {
     border-left: none;
-    padding: 10px;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 1px dotted #ddd;
   }
   #container .article-header h1 {
