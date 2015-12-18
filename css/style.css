@@ -303,7 +303,7 @@ a {
   #container .article-header {
     border-left: none;
     padding: 0;
-    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px thick #008000;
   }
   #container .article-header h1 {
     margin-bottom: 10px;
