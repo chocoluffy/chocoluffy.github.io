@@ -306,8 +306,8 @@ a {
     border-bottom: 1px dotted #ddd;
   }
   #container .article-header h1 {
+    text-align: right;
     margin-bottom: 10px;
-    vertical-align: baseline;
   }
   #container .header-subtitle {
     padding: 0 24px;
