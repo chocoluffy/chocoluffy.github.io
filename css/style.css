@@ -306,10 +306,11 @@ a {
     border-bottom: 1px dotted #ddd;
   }
   #container .article-header h1 {
+    width: 60%;
     margin-bottom: 10px;
   }
   #container .header-subtitle {
-    padding: 0 24px 10px 24px;
+    padding: 0 24px;
   }
   #container .article-info-index.article-info {
     padding-top: 10px;
