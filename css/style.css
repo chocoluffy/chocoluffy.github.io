@@ -339,7 +339,8 @@ a {
   }
   #container .article .article-title {
     font-size: 18px;
-    max-width: 185px;
+    max-width: 300px;
+    display: block;
     margin: 0;
   }
   #container .article .article-meta {
