@@ -302,8 +302,7 @@ a {
   }
   #container .article-header {
     border-left: none;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
     border-bottom: 1px dotted #ddd;
   }
   #container .article-header h1 {
@@ -336,7 +335,8 @@ a {
   #container .article .article-entry {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   #container .article .article-title {
     font-size: 18px;
