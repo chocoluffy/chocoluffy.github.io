@@ -307,6 +307,7 @@ a {
   }
   #container .article-header h1 {
     margin-bottom: 10px;
+    vertical-align: baseline;
   }
   #container .header-subtitle {
     padding: 0 24px;
