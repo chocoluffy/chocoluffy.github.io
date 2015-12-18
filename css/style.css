@@ -302,11 +302,10 @@ a {
   }
   #container .article-header {
     border-left: none;
-    padding: 0;
+    padding: 0 -10px;
     border-bottom: 1px dotted #ddd;
   }
   #container .article-header h1 {
-    width: 60%;
     margin-bottom: 10px;
   }
   #container .header-subtitle {
