@@ -271,7 +271,7 @@ a {
     left: 0;
   }
   #container #header .header-menu {
-    margin-top: -5px;
+    font-size: 20px;
   }
   #container #header .header-nav {
     position: relative;
