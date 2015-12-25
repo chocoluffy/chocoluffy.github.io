@@ -105,7 +105,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Facebook/" style="font-size: 10px;">Facebook</a> <a href="/tags/Instagram/" style="font-size: 10px;">Instagram</a> <a href="/tags/Nokogiri-Gem/" style="font-size: 10px;">Nokogiri Gem</a> <a href="/tags/Snapchat/" style="font-size: 10px;">Snapchat</a> <a href="/tags/Terrorism/" style="font-size: 10px;">Terrorism</a> <a href="/tags/Vision/" style="font-size: 10px;">Vision</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/三体/" style="font-size: 10px;">三体</a> <a href="/tags/互联网行业/" style="font-size: 10px;">互联网行业</a> <a href="/tags/伯克利交换/" style="font-size: 10px;">伯克利交换</a> <a href="/tags/卢安克/" style="font-size: 10px;">卢安克</a> <a href="/tags/常青藤/" style="font-size: 10px;">常青藤</a> <a href="/tags/探索宇宙/" style="font-size: 10px;">探索宇宙</a> <a href="/tags/暑假/" style="font-size: 20px;">暑假</a> <a href="/tags/死亡诗社/" style="font-size: 10px;">死亡诗社</a> <a href="/tags/理想主义/" style="font-size: 10px;">理想主义</a> <a href="/tags/生活感悟/" style="font-size: 10px;">生活感悟</a> <a href="/tags/知识分子/" style="font-size: 10px;">知识分子</a> <a href="/tags/读书笔记/" style="font-size: 20px;">读书笔记</a> <a href="/tags/读闲书/" style="font-size: 10px;">读闲书</a>
+						<a href="/tags/Facebook/" style="font-size: 10px;">Facebook</a> <a href="/tags/Instagram/" style="font-size: 10px;">Instagram</a> <a href="/tags/Nokogiri-Gem/" style="font-size: 10px;">Nokogiri Gem</a> <a href="/tags/Snapchat/" style="font-size: 10px;">Snapchat</a> <a href="/tags/Terrorism/" style="font-size: 10px;">Terrorism</a> <a href="/tags/Vision/" style="font-size: 10px;">Vision</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/rails/" style="font-size: 10px;">rails</a> <a href="/tags/三体/" style="font-size: 10px;">三体</a> <a href="/tags/互联网行业/" style="font-size: 10px;">互联网行业</a> <a href="/tags/伯克利交换/" style="font-size: 10px;">伯克利交换</a> <a href="/tags/卢安克/" style="font-size: 10px;">卢安克</a> <a href="/tags/常青藤/" style="font-size: 10px;">常青藤</a> <a href="/tags/探索宇宙/" style="font-size: 10px;">探索宇宙</a> <a href="/tags/暑假/" style="font-size: 20px;">暑假</a> <a href="/tags/死亡诗社/" style="font-size: 10px;">死亡诗社</a> <a href="/tags/理想主义/" style="font-size: 10px;">理想主义</a> <a href="/tags/生活感悟/" style="font-size: 10px;">生活感悟</a> <a href="/tags/知识分子/" style="font-size: 10px;">知识分子</a> <a href="/tags/读书笔记/" style="font-size: 20px;">读书笔记</a> <a href="/tags/读闲书/" style="font-size: 10px;">读闲书</a>
 					</div>
 				</section>
 				
@@ -173,7 +173,7 @@
   
     <div class="article-meta">
       <a href="/2015/12/24/agile-web-developing-in-rails-第一期/" class="article-date">
-  	<time datetime="2015-12-25T00:10:19.000Z" itemprop="datePublished">2015-12-24</time>
+  	<time datetime="2015-12-24T16:55:00.000Z" itemprop="datePublished">2015-12-24</time>
 </a>
     </div>
   
@@ -182,159 +182,40 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/24/agile-web-developing-in-rails-第一期/">Agile web developing in rails 第一期</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="目的：_将agile_rails_web_application一书里面的精华概括下来，_为之后运用rails开发打基础">目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</h1><p>1\在css里面遇到将image按比例缩小的时候， 使用auto来对width, height按比例缩小</p>
-<p>.resize {<br>    width: 70px;<br>    height: auto;<br>}</p>
-<p>2\一些实用的built-in rails features 例如： cycle\truncate\strip-tags<br>&lt;%= truncate(strip-tags(product.description), length: 100) % &gt;</p>
-<p>3\rake db:rollback 将数据库往前恢复， 如果是需要更新：<br>rake db:migrate, 之后再将seed的数据加载进来, rake db:seed</p>
-<p>4\在model部分进行models之间关系的定义和validation：</p>
-<p>validates :title, :description, :image_url, presence: true</p>
-<p>除了presence这个方法以外， 常用的还有:<br>inclusion: %w{male female} \length: {maximum: 30}\numericaliry: {greater_than_or_equal_to: 0.01}\format: {with: //}\<br>uniqueness: true\</p>
-<p>例如：检查image_url是否合法：</p>
-<pre><code><span class="string">validates :</span>image_url, <span class="string">allow_blank:</span> <span class="literal">true</span>, <span class="string">format:</span> {
-<span class="label">    with:</span> %r{\.(gif|jpg|jpeg|png)\Z}i,
-<span class="label">    message:</span> <span class="string">"must be a url for GIF, JPG, JPEG or PNG image."</span>
-}
-</code></pre><p>5\controller test/unit test</p>
-<p>assert_not_nil assigns(:person) 确保instance variables assigned in action is available for the view template, 在这个例子里，<br>确保@person这个instance variable被成功赋值</p>
-<p>重点： 在test这个部分， 我们使用get\post\patch\put\delete\head这些方法来模拟http请求；然后第二步， 我们assert states是否as expected,<br>这里的state, 指的是http state, or database date;</p>
-<p>  test “should get index” do<br>    get :index</p>
-<pre><code><span class="comment"># 调用product controller里面的index方法</span>
-assert_response <span class="symbol">:success</span>
-<span class="comment"># make sure that the request is successful</span>
-assert_not_nil assigns(<span class="symbol">:products</span>)
-<span class="comment"># assigns是什么意思？检查<span class="doctag">@product</span>这个instance variable是否被成功赋值</span>
-</code></pre><p>  end</p>
-<p>这里的get可以接受4个参数， 第一个是controller action的名字， 可以为symbol\string; 第二个参数： an optional hash to pass into the action</p>
-<pre><code>test <span class="string">"should create article"</span> <span class="keyword">do</span>
-  assert_difference(<span class="string">'Article.count'</span>) <span class="keyword">do</span>
-    post <span class="symbol">:create</span>, <span class="symbol">article:</span> {<span class="symbol">title:</span> <span class="string">'Some title'</span>}
-  <span class="keyword">end</span>
-
-  assert_redirected_to article_path(assigns(<span class="symbol">:article</span>))
-<span class="keyword">end</span>
-
-test <span class="string">"new should render correct layout"</span> <span class="keyword">do</span>
-  get <span class="symbol">:new</span>
-  assert_template <span class="symbol">layout:</span> <span class="string">"layouts/application"</span>, <span class="symbol">partial:</span> <span class="string">"_form"</span>
-<span class="keyword">end</span>
-
-setup <span class="keyword">do</span>
-<span class="variable">@product</span> = products(<span class="symbol">:one</span>)
-<span class="variable">@update</span> = {
-  <span class="symbol">title:</span> <span class="string">"toy bear"</span>,
-  <span class="symbol">description:</span> <span class="string">"a funny and elegant bear!"</span>,
-  <span class="symbol">image_url:</span> <span class="string">"1.jpg"</span>,
-  <span class="symbol">price:</span> <span class="number">14.8</span>
-}
-<span class="comment"># 这里的update instance variable并不是一个product object, 而是一些条件， 为了避免下面出现重复我们提前声明；</span>
-</code></pre><p>  end<br>这个setup函数会在其他每一个single test前面执行；与之配套的还有def teardown 在每一个test结束后执行</p>
-<p>6\<br>在test/model里面我们主要是对database里面的data检查， 看看有没有和validates矛盾；<br>在test/controller部分就是关于和每一个action是否成功执行和发送http请求；<br>在test/fixture部分注意不能使用tab， 只可以用space; test里面使用的使用， 我们不仅仅可以用find来从数据库中找到fixture里的例子， 我们也可以<br>使用rails创建的捷径：</p>
-<p>person = Person(:one) 可以赋值到第一个名字为one的固件；</p>
-<p>7\在routes.rb里面出现的一些注意点：<br>  resources :products</p>
-<h1 id="将http的请求动作自动转换为controller里相应的actions">将http的请求动作自动转换为controller里相应的actions</h1><p>  root “store#index”, as: “store”</p>
-<p>#后面的这个as: “” 只是为了在使用store_path的时候的一个简化引用而已， 就像之前的say_goodbye_path的用法 </p>
-<p>8\<br>erb插件： command+shift+. 可以打开erb的格式<br>AdvanceNewFile插件： option+command+n 在下面的path处输入 :project.erb 则在当前路径加上这个file；<br>快捷键： command+shift+d 可以复制当前行<br>docDash插件： control+h可以打开dash浏览器看doc</p>
-<p>9\css技巧：来自《视差的web design》－ <a href="http://line25.com/tutorials/create-a-cool-website-with-fancy-scrolling-effects" target="_blank" rel="external">http://line25.com/tutorials/create-a-cool-website-with-fancy-scrolling-effects</a><br>text-indent 通过text-indent: -9999px， 使得文字可以隐藏， 只显示image， 同时也有对应的标签， seo也实现； 对于每一个block， text会被移开，<br>用户只能看到background-image， 是一个广泛使用的技巧；</p>
-<p>background-size: cover 使得图片可以自适应用户的尺寸</p>
-<p>transform: rotate(10deg);<br>z-index: 3; 可以讲对应的block相应的旋转， 设置相对前后； 配合 li:nth-child(3){} 在多个li里面选择需要的</p>
-<p>初始的条件是一个基础的vertical design， 也就是像幻灯片一样的通过几个不同的section构建起来的。基础结构：</p>
-<p><ul><br>    <li><br>        <section><br>            …<br>        </section><br>        <section><br>            …<br>        </section><br>    </li><br></ul><br>然后在每一个section里面， 也就是每一个单独的页面， 可以再设计各种页面的结构：通过在css里面设计section{height: 992px;}来撑开页面；</p>
-<section><br>    <h1></h1><br>    <p></p><br>    <ul><br>        <li><a><img></a></li><br>        …<br></ul></section>
-
-<p>10\ 如何设定model之间的关系</p>
-<p>rails generate scaffold LineItem product:references cart:belongs_to</p>
-<p>class CreateLineItems &lt; ActiveRecord::Migration<br>  def change<br>    create_table :line_items do |t|<br>      t.references :product, index: true, foreign_key: true</p>
-<pre><code>  <span class="preprocessor"># 这一行的作用是在line_items里面增加一行integer column： product_id;</span>
-  t.belongs_to :cart, <span class="keyword">index</span>: <span class="keyword">true</span>, foreign_key: <span class="keyword">true</span>
-
-  t.timestamps <span class="keyword">null</span>: <span class="keyword">false</span>
-end
-</code></pre><p>  end<br>end</p>
-<p>===</p>
-<h1 id="官方文档里面对_has_many_:through_的定义">官方文档里面对 has_many :through 的定义</h1><p>就是在many_to_many里面找到一个桥梁， 那个桥梁是一个pair<br>The has_many :through Association<br>A has_many :through association is often used to set up a many-to-many<br>connection with another model. This association indicates that the declaring<br>model can be matched with zero or more instances of another model by proceeding<br>through a third model. For example, consider a medical practice where patients<br>make appointments to see physicians. The relevant association declarations could look like this:</p>
-<p>class Physician &lt; ActiveRecord::Base<br>  has_many :appointments<br>  has_many :patients, :through =&gt; :appointments<br>end</p>
-<p>class Appointment &lt; ActiveRecord::Base<br>  belongs_to :physician<br>  belongs_to :patient<br>end</p>
-<p>class Patient &lt; ActiveRecord::Base<br>  has_many :appointments<br>  has_many :physicians, :through =&gt; :appointments<br>end</p>
-<p>如果使用 has_and_belongs_to_many的话， 就是直接设定many_to_many的设定， 而不经过另外一个model;<br>The simplest rule of thumb is that you should set up a has_many :through relationship if<br>you need to work with the relationship model as an independent entity. If you don’t need<br>to do anything with the relationship model, it may be simpler to set up a has_and_belongs_to_many<br> relationship (though you’ll need to remember to create the joining table in the database).</p>
-<p>You should use has_many :through if you need validations, callbacks, or extra attributes on the join model.</p>
-<p>11\ :references的使用<br>在创建model的时候， 在comment这个model里面添加一个已有model的field, 为 post_id, 因此我们这么做：<br>rails generate scaffold Post name:string title:string content:text</p>
-<p>rails generate model Comment author:string body:text post:references </p>
-<p>rake db:migrate</p>
-<p>也就得到的model是<br>class Model &lt; ActiveRecord::Base<br>    belongs_to :post<br>    attr_accessible :author, :body<br>end</p>
-<p>12\ 增加一个LineItem的model<br>rails generate scaffold LineItem product:references cart:belongs_to<br>重点在于 :references 和 :belongs_to 的区别， 所以其实是一致的；也就是说， 这段代码的意思是， 令LineItem belongs_to<br>product 和 cart 这两个model; 而它这里希望取得的效果就是达到many_to_many的目的；physicians 和 patients 之间是<br>many_to_many的关系， 然后通过 LineItem 这个中间介质来达到目的；</p>
-<p>同样， 我们什么时候使用belongs_to, 当一个table具有foreign_key的时候， 需要用这个来声明和那个model之间的关系；</p>
-<p>13\ 使用 add_to_cart button的作用<br>在这之前， link_to 这个方法调用的是http的get功能；然后在这个地方， 在我们点击add to cart的时候， 我们希望做到的是去创建一个<br>lineitem的obeject, 使用的是http的post功能. 之前使用post功能的地方是sumbit按钮， 这里我们使用button_to;</p>
-<p>@@重点， 在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
-<p>&lt;%= button_to ‘Add to Cart’, line_item_path(product_id: product) % &gt;</p>
-<p>这个操作创建<form></form></p>
-<p>14\ 在创建model之后， 更新model， 添加或者删除columns;<br>目的： 对于之前创建的line_items model, 增加一个column<br>rails generate migration add_quantity_to_line_items quantity:integer<br>使用add)add_quantity_to_line_items\ remove_quantity_to_line_items来增加或者删除column;</p>
-<p>15\ 如果让seperate multiple rows collapse， 再次对db改变<br>rails generate migration combine_items_in_cart<br>这一次我们并没有说明需要添加或者删除哪一个column， 于是我们不用def change， 我们定义up and down 函数；</p>
-<p>sums = cart.line_items.group(:product_id).sum(:quantity)<br>得到的是， 对于同一个cart里同一个product_id的数量的总和， 也就是部分之前的seperate的还是， 之后添加的；</p>
-<p>重点是： group之后得到的数据结构？一个nested array 还是 hash? 得到hash；</p>
-<p>注意：<br>cart.line_items.group(:product_id).count<br>cart.line_items.group(:product_id).sum(:quantity)<br>这两者的区别； count在array上调用的时候返回array.size; 在这里是对每一个value的array调用：<br>{‘product_id_1’ =&gt; 4, ‘product_id_2’ =&gt; 3} 数字是拥有相同product_id的 line_item的数目<br>后者类似， 得到类似的结构， 不过， 数字表示的是， 拥有相同product_id的 line_item的product的数目 ；</p>
-<p>16\ 官方对 array.inject 的定义：</p>
-<p>inject(initial, sym) → obj<br>inject(sym) → obj<br>inject(initial) { |memo, obj| block } → obj<br>inject { |memo, obj| block } → obj<br>Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.</p>
-<p>If you specify a block, then for each element in enum the block is passed an accumulator value (memo) and the element. If you specify a symbol instead, then each element in the collection will be passed to the named method of memo. In either case, the result becomes the new value for memo. At the end of the iteration, the final value of memo is the return value for the method.</p>
-<p>If you do not explicitly specify an initial value for memo, then the first element of collection is used as the initial value of memo.</p>
-<h1 id="Sum_some_numbers">Sum some numbers</h1><p>(5..10).reduce(:+)                             #=&gt; 45</p>
-<h1 id="Same_using_a_block_and_inject">Same using a block and inject</h1><p>(5..10).inject { |sum, n| sum + n }            #=&gt; 45</p>
-<h1 id="Multiply_some_numbers">Multiply some numbers</h1><p>(5..10).reduce(1, :*)                          #=&gt; 151200</p>
-<h1 id="Same_using_a_block">Same using a block</h1><p>(5..10).inject(1) { |product, n| product * n } #=&gt; 151200</p>
-<h1 id="find_the_longest_word">find the longest word</h1><p>longest = %w{ cat sheep bear }.inject do |memo, word|<br>   memo.length &gt; word.length ? memo : word<br>end<br>longest                                        #=&gt; “sheep”</p>
-<p>应用：<br>what I have</p>
-<p>hash = {:a=&gt;5, :b=&gt;10, :c=&gt;15, :d=&gt;3}<br>The result that I want</p>
-<p>{:a=&gt;5, :b=&gt;15, :c=&gt;30, :d=&gt;33}</p>
-<p>解答：</p>
-<p>hash.inject(0) { |s, (k, v)| hash[k] = s + v }</p>
-<h1 id="=&gt;_33">=&gt; 33</h1><p>hash</p>
-<h1 id="=&gt;_{:a=&gt;5,_:b=&gt;15,_:c=&gt;30,_:d=&gt;33}">=&gt; {:a=&gt;5, :b=&gt;15, :c=&gt;30, :d=&gt;33}</h1><p>If you want to preserve the original hash, you can use each_with_object instead:</p>
-<p>hash.each_with_object({}) { |(k, v), h| h[k] = v + (h.values.last||0)  }</p>
-<h1 id="=&gt;_{:a=&gt;5,_:b=&gt;15,_:c=&gt;30,_:d=&gt;33}-1">=&gt; {:a=&gt;5, :b=&gt;15, :c=&gt;30, :d=&gt;33}</h1><p>17\ 官方对 where 的定义：</p>
-<p>where(opts = :chain, *rest)<br>Returns a new relation, which is the result of filtering the current relation according to the conditions in the arguments.</p>
-<p>where accepts conditions in one of several formats. In the examples below, the resulting SQL is given as an illustration; the actual query generated may be different depending on the database adapter.</p>
-<p>string</p>
-<p>A single string, without additional arguments, is passed to the query constructor as an SQL fragment, and used in the where clause of the query.</p>
-<p>Client.where(“orders_count = ‘2’”)</p>
-<h1 id="SELECT_*_from_clients_where_orders_count_=_‘2’;">SELECT * from clients where orders_count = ‘2’;</h1><p>Note that building your own string from user input may expose your application to injection attacks if not done properly. As an alternative, it is recommended to use one of the following methods.</p>
-<p>array</p>
-<p>If an array is passed, then the first element of the array is treated as a template, and the remaining elements are inserted into the template to generate the condition. Active Record takes care of building the query to avoid injection attacks, and will convert from the ruby type to the database type where needed. Elements are inserted into the string in the order in which they appear.</p>
-<p>User.where([“name = ? and email = ?”, “Joe”, “joe@example.com”])</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_=_‘Joe’_AND_email_=_‘joe@example-com’;">SELECT * FROM users WHERE name = ‘Joe’ AND email = ‘joe@example.com’;</h1><p>Alternatively, you can use named placeholders in the template, and pass a hash as the second element of the array. The names in the template are replaced with the corresponding values from the hash.</p>
-<p>User.where([“name = :name and email = :email”, { name: “Joe”, email: “joe@example.com” }])</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_=_‘Joe’_AND_email_=_‘joe@example-com’;-1">SELECT * FROM users WHERE name = ‘Joe’ AND email = ‘joe@example.com’;</h1><p>This can make for more readable code in complex queries.</p>
-<p>Lastly, you can use sprintf-style % escapes in the template. This works slightly differently than the previous methods; you are responsible for ensuring that the values in the template are properly quoted. The values are passed to the connector for quoting, but the caller is responsible for ensuring they are enclosed in quotes in the resulting SQL. After quoting, the values are inserted using the same escapes as the Ruby core method Kernel::sprintf.</p>
-<p>User.where([“name = ‘%s’ and email = ‘%s’”, “Joe”, “joe@example.com”])</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_=_‘Joe’_AND_email_=_‘joe@example-com’;-2">SELECT * FROM users WHERE name = ‘Joe’ AND email = ‘joe@example.com’;</h1><p>If where is called with multiple arguments, these are treated as if they were passed as the elements of a single array.</p>
-<p>User.where(“name = :name and email = :email”, { name: “Joe”, email: “joe@example.com” })</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_=_‘Joe’_AND_email_=_‘joe@example-com’;-3">SELECT * FROM users WHERE name = ‘Joe’ AND email = ‘joe@example.com’;</h1><p>When using strings to specify conditions, you can use any operator available from the database. While this provides the most flexibility, you can also unintentionally introduce dependencies on the underlying database. If your code is intended for general consumption, test with multiple database backends.</p>
-<p>hash</p>
-<p>where will also accept a hash condition, in which the keys are fields and the values are values to be searched for.</p>
-<p>Fields can be symbols or strings. Values can be single values, arrays, or ranges.</p>
-<p>User.where({ name: “Joe”, email: “joe@example.com” })</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_=_‘Joe’_AND_email_=_‘joe@example-com’">SELECT * FROM users WHERE name = ‘Joe’ AND email = ‘joe@example.com’</h1><p>User.where({ name: [“Alice”, “Bob”]})</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_IN_(‘Alice’,_‘Bob’)">SELECT * FROM users WHERE name IN (‘Alice’, ‘Bob’)</h1><p>User.where({ created_at: (Time.now.midnight - 1.day)..Time.now.midnight })</p>
-<h1 id="SELECT_*_FROM_users_WHERE_(created_at_BETWEEN_‘2012-06-09_07:00:00-000000’_AND_‘2012-06-10_07:00:00-000000’)">SELECT * FROM users WHERE (created_at BETWEEN ‘2012-06-09 07:00:00.000000’ AND ‘2012-06-10 07:00:00.000000’)</h1><p>In the case of a belongs_to relationship, an association key can be used to specify the model if an ActiveRecord object is used as the value.</p>
-<p>author = Author.find(1)</p>
-<h1 id="The_following_queries_will_be_equivalent:">The following queries will be equivalent:</h1><p>Post.where(author: author)<br>Post.where(author_id: author)<br>This also works with polymorphic belongs_to relationships:</p>
-<p>treasure = Treasure.create(name: ‘gold coins’)<br>treasure.price_estimates &lt;&lt; PriceEstimate.create(price: 125)</p>
-<h1 id="The_following_queries_will_be_equivalent:-1">The following queries will be equivalent:</h1><p>PriceEstimate.where(estimate_of: treasure)<br>PriceEstimate.where(estimate_of_type: ‘Treasure’, estimate_of_id: treasure)<br>Joins</p>
-<p>If the relation is the result of a join, you may create a condition which uses any of the tables in the join. For string and array conditions, use the table name in the condition.</p>
-<p>User.joins(:posts).where(“posts.created_at &lt; ?”, Time.now)<br>For hash conditions, you can either use the table name in the key, or use a sub-hash.</p>
-<p>User.joins(:posts).where({ “posts.published” =&gt; true })<br>User.joins(:posts).where({ posts: { published: true } })<br>no argument</p>
-<p>If no argument is passed, where returns a new instance of WhereChain, that can be chained with not to return a new relation that negates the where clause.</p>
-<p>User.where.not(name: “Jon”)</p>
-<h1 id="SELECT_*_FROM_users_WHERE_name_!=_‘Jon’">SELECT * FROM users WHERE name != ‘Jon’</h1><p>See WhereChain for more details on not.</p>
-
+        <p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
       
     </div>
     
     <div class="article-info article-info-index">
       
       
-      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rails/">rails</a></li></ul>
+	</div>
 
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/12/24/agile-web-developing-in-rails-第一期/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
