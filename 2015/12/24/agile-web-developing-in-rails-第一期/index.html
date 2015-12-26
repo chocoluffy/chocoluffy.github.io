@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/12/24/agile-web-developing-in-rails-第一期/index.html">
 <meta property="og:site_name" content="One Piece">
 <meta property="og:description" content="目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础">
-<meta property="og:updated_time" content="2015-12-25T22:43:50.000Z">
+<meta property="og:updated_time" content="2015-12-26T01:09:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Agile web developing in rails 第一期">
 <meta name="twitter:description" content="目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础">
@@ -220,7 +220,7 @@
       
         <p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
 <a id="more"></a> 
-<ul>
+<h2 id="The_details_you_should_know_about_in_rails:">The details you should know about in rails:</h2><ul>
 <li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to <span class="string">'Add to Cart'</span>, line_item_path(<span class="string">product_id:</span> product) % &gt;</span><br></pre></td></tr></table></figure>
 </li>
