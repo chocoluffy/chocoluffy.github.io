@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>One Piece</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ActionCable in Rail5 实战笔记">
+<meta property="og:url" content="http://yoursite.com/2015/12/26/ActionCable-in-Rail5-实战笔记/index.html">
+<meta property="og:site_name" content="One Piece">
+<meta property="og:description" content="rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
+<meta property="og:updated_time" content="2015-12-26T17:45:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ActionCable in Rail5 实战笔记">
+<meta name="twitter:description" content="rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备">
+  
+    <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Shunzhe Yu</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">技术就是信仰</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/chocoluffy" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/chocoluffy" title="weibo">weibo</a>
+					        
+								<a class="mail" target="_blank" href="mailto:luffy.yu@mail.utoronto.ca" title="mail">mail</a>
+					        
+								<a class="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100007218182748" title="facebook">facebook</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/machine-learning/" style="font-size: 10px;">machine learning</a> <a href="/tags/rails/" style="font-size: 15px;">rails</a> <a href="/tags/伯克利交换/" style="font-size: 10px;">伯克利交换</a> <a href="/tags/公众号文章/" style="font-size: 20px;">公众号文章</a> <a href="/tags/商业IT评论/" style="font-size: 12.5px;">商业IT评论</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a> <a href="/tags/社会人物/" style="font-size: 17.5px;">社会人物</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">
+						<p>多伦多大学计算机系, 喜欢思考。</p>
+						<a href="https://drive.google.com/open?id=0B6qSwdwPxPRddWFabS1iOWRzZlU">💣我的简历</a>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Shunzhe Yu</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Shunzhe Yu</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/chocoluffy" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/chocoluffy" title="weibo">weibo</a>
+			        
+						<a class="mail" target="_blank" href="mailto:luffy.yu@mail.utoronto.ca" title="mail">mail</a>
+			        
+						<a class="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100007218182748" title="facebook">facebook</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-ActionCable-in-Rail5-实战笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/26/ActionCable-in-Rail5-实战笔记/" class="article-date">
+  	<time datetime="2015-12-26T17:42:33.000Z" itemprop="datePublished">2015-12-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ActionCable in Rail5 实战笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rails/">rails</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备</p>
+<a id="more"></a>
+<ul>
+<li>整个流程<br>[1] in routes.rb, we set the root page to be <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">root</span> ‘sessions<span class="comment">#new’</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>which means that it will first find the SessionsController’s new method and implement it. We know in rails that when it runs a controller method, it will also render the corresponding views html.erb in view folder. Thus the <code>views/sessions/new.html.erb</code> will be first rendered. </p>
+<p>Further observing in routes.rb:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">Rails.</span>application.routes.draw <span class="keyword">do</span></span><br><span class="line">  resources <span class="symbol">:messages</span>, <span class="symbol">only:</span> [<span class="symbol">:index</span>, <span class="symbol">:create</span>]</span><br><span class="line">  resources <span class="symbol">:sessions</span>, <span class="symbol">only:</span> [<span class="symbol">:new</span>, <span class="symbol">:create</span>]</span><br><span class="line">  root <span class="string">'sessions#new'</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
+<p>we find the use of <code>resources</code>, which means we treat those objects as RESTFUL as we could, those objects in their controllers will have all seven methods like new, create, update, destroy and so on which corresponds to the Http Verbs like post, get and so on.</p>
+<h2 id="Then,_we_look_at_the_new-html-erb">Then, we look at the new.html.erb</h2><figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span>&lt;%=<span class="ruby"> form_for <span class="symbol">:session</span>, <span class="symbol">url:</span> sessions_path <span class="keyword">do</span> |f| </span>%&gt;<span class="xml"></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.label <span class="symbol">:username</span>, <span class="string">'Enter a name'</span> </span>%&gt;<span class="xml"><span class="tag">&lt;<span class="title">br</span>/&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.text_field <span class="symbol">:username</span> </span>%&gt;<span class="xml"> <span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.submit <span class="string">'Start chatting'</span> </span>%&gt;<span class="xml"></span><br><span class="line"></span>&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;<span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>where <code>:session</code> is the name for this form, when in use in SessionsController, we obtain the information in this form by<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cookies.signed[<span class="link_label">:username</span>] = params[<span class="link_label">:session</span>][<span class="link_reference">:username</span>]</span><br></pre></td></tr></table></figure></p>
+<p>And <code>url: sessions_path</code> is for directing the action to SessionsController#create.</p>
+<h2 id="In_MessagesController-rb">In MessagesController.rb</h2><p>we use index to render the view<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">Signed in as @</span>&lt;%=<span class="ruby"> cookies.signed[<span class="symbol">:username</span>] </span>%&gt;<span class="xml">.</span><br><span class="line"><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"messages"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span>&lt;%=<span class="ruby"> form_for <span class="symbol">:message</span>, <span class="symbol">url:</span> messages_path, <span class="symbol">remote:</span> <span class="keyword">true</span>, <span class="symbol">id:</span> messages-form <span class="keyword">do</span> |f| </span>%&gt;<span class="xml"></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.label <span class="symbol">:body</span>, <span class="string">'Enter a message:'</span> </span>%&gt;<span class="xml"> <span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.text_field <span class="symbol">:body</span> </span>%&gt;<span class="xml"> <span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.submit <span class="string">'Send message'</span> </span>%&gt;<span class="xml"></span><br><span class="line"></span>&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;<span class="xml"></span></span><br></pre></td></tr></table></figure></p>
+<p>where the cookies are carrying the parameters we need in another controller, while the empty <code>div</code> will eventually be filled with previous content. As for the form, it will pretty similar as the SessionsController#new.</p>
+<ul>
+<li>here we use <code>remote: true</code>, which is calling with Ajax. In usual case, we will need to specify the partial js file we want to implement in MessagesContrller#create method. * But, here we just want it to reload again without refreshing the page.</li>
+</ul>
+<h2 id="ActionCable">ActionCable</h2><p>ActionCable uses Redis for publishihng and subscribing to the messages, so we need to configure Redis in config/redis/cable.yml. You will need Redis installed and running for ActionCable to work.</p>
+<h2 id="Redis">Redis</h2><p>reds is a key-value store, often referred to as a NoSQL database. Key features are that: [1] the data can be retrieved by key later in use. [2] the key-value will be stored permanently.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SET</span> <span class="keyword">server</span>:<span class="keyword">name</span> “fido”</span><br><span class="line"><span class="keyword">GET</span> <span class="keyword">server</span>:<span class="keyword">name</span></span><br><span class="line">DEL <span class="keyword">server</span>:<span class="keyword">name</span></span><br><span class="line">INCR <span class="keyword">count</span></span></span><br></pre></td></tr></table></figure>
+<p>Compared with<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = GET <span class="keyword">count</span></span><br><span class="line">x = x + 1</span><br><span class="line"><span class="keyword">SET</span> <span class="keyword">count</span> x</span><br></pre></td></tr></table></figure></p>
+<p>we choose to use INCR because it is a atomic operation which will work as expected if multiple users want to access this value.<br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">EXPIRE <span class="keyword">server</span>:name <span class="number">120</span> <span class="comment">//after 120s this value will vanish</span></span><br><span class="line">TTL <span class="keyword">server</span>:name <span class="comment">// obtain after how long it will vanish</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="List_operation">List operation</h3><p><code>RPUSH, LPUSH, LLEN, LRANGE, LPOP, RPOP</code></p>
+<h3 id="Set_operation">Set operation</h3><p><code>SADD, SREM, SISMEMBER, SMEMBERS, SUNION</code><br>where <code>SMEMBERS</code> returns a list of all members of this set.</p>
+<h3 id="Sorted_Set">Sorted Set</h3><p><code>ZADD, ZRANGE</code></p>
+<h3 id="Hashes">Hashes</h3><p><code>HSET, HGETALL, HMSET, HGET, HINCRBY, HDEL</code> like</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HMSET user:<span class="number">1001</span> name <span class="string">"Mary Jones"</span> password <span class="string">"hidden"</span> email <span class="string">"mjones@example.com"</span></span><br><span class="line">HGETALL user:<span class="number">1001</span></span><br></pre></td></tr></table></figure>
+<h2 id="Adding_our_MessagesChannel">Adding our MessagesChannel</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># app/channels/messages_channel.rb</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MessagesChannel</span> <span class="inheritance">&lt; <span class="parent">ApplicationCable::Channel</span></span></span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">subscribed</span></span></span><br><span class="line">    stream_from <span class="string">'messages'</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>whenever a client subscribes to MessageChannel, the <code>#subscribed</code> method will be called, which starts streaming anything you broadcast to the “messages” stream.</p>
+<h2 id="Future_learning">Future learning</h2><ul>
+<li><a href="https://gorails.com/episodes/rails-5-actioncable-websockets" target="_blank" rel="external">Rails 5’s ActionCable and Websockets Introduction</a></li>
+<li><a href="https://github.com/rails/actioncable-examples" target="_blank" rel="external">Action Cable Examples</a></li>
+</ul>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/12/25/关于hexo博客最棒的素材和教程收集/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于hexo博客最棒的素材和教程收集</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="ActionCable-in-Rail5-实战笔记" data-title="ActionCable in Rail5 实战笔记" data-url="http://yoursite.com/2015/12/26/ActionCable-in-Rail5-实战笔记/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Shunzhe Yu
+    		<span id="busuanzi_container_site_pv">
+    			你是第<span id="busuanzi_value_site_pv"></span>个小伙伴
+			</span>
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-41207871-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
