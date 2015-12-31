@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>One Piece</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这篇笔记作为revealjs的学习记录 &amp;amp; 网页制作的迭代">
+  <meta name="description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用reveal.js制作生日礼物">
-<meta property="og:url" content="http://yoursite.com/2015/12/24/用reveal-js制作生日派对礼物/index.html">
+<meta property="og:title" content="D3js in 3D [Animation focus]">
+<meta property="og:url" content="http://yoursite.com/2015/12/31/D3js-in-3D-Animation-focus/index.html">
 <meta property="og:site_name" content="One Piece">
-<meta property="og:description" content="这篇笔记作为revealjs的学习记录 &amp;amp; 网页制作的迭代">
-<meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif">
+<meta property="og:description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
-<meta property="og:updated_time" content="2015-12-25T00:34:41.000Z">
+<meta property="og:updated_time" content="2015-12-31T17:24:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用reveal.js制作生日礼物">
-<meta name="twitter:description" content="这篇笔记作为revealjs的学习记录 &amp;amp; 网页制作的迭代">
+<meta name="twitter:title" content="D3js in 3D [Animation focus]">
+<meta name="twitter:description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
   
     <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
   
@@ -179,11 +179,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-用reveal-js制作生日派对礼物" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-D3js-in-3D-Animation-focus" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/24/用reveal-js制作生日派对礼物/" class="article-date">
-  	<time datetime="2015-12-24T16:55:00.000Z" itemprop="datePublished">2015-12-24</time>
+      <a href="/2015/12/31/D3js-in-3D-Animation-focus/" class="article-date">
+  	<time datetime="2015-12-31T17:14:50.000Z" itemprop="datePublished">2015-12-31</time>
 </a>
     </div>
   
@@ -196,7 +196,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      用reveal.js制作生日礼物
+      D3js in 3D [Animation focus]
     </h1>
   
 
@@ -220,27 +220,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+        <p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js-Aframe/" target="_blank" rel="external">Live Demo</a> here! </p>
 <a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" alt="Animation"></p>
+<h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
+<p>Say, we have a lot of <code>&lt;a-cube&gt;</code> now, and we want to add the click event listener to the <code>&lt;a-cube&gt;</code> below to trigger the animations of the <code>&lt;a-cube&gt;</code> above the scene. [The way we add animations is to append tag <code>&lt;a-animation&gt;</code>  as the childNode of the <code>&lt;a-cube&gt;</code>]. Now, in order to do that attachment in one time, we need to group all the <code>&lt;a-cube&gt;</code> into a container, we can just use a <code>&lt;a-entity id=“meteor”&gt;&lt;/a-entity&gt;</code> to do that thing. So we can add the click event listener at the parent node, and when the childNode get clicked, the event will propagated to the parent level by level, and back then when it achieve the targeted parent. we can trigger the function and do all the <code>append</code> or other actions on <code>e.target</code>. [here <code>e.target</code> refers to the one get clicked]. </p>
+<p>In the later interaction. we want the action of one object may trigger another object’s actions. Then, we need to leave such mark to indicate which object may be related to! For example, in my code, I use  a data-attribute called “flag” as a id to indicate which object to bind. So later in the eventListener, we can use <code>e.target.getAttribute(“flag”)</code> to obtain that value for further use like <code>meteorParentNode.childNodes[e.target.getAttribute(“flag”)].append()</code> some animation nodes to the “meteor”!!</p>
+<h2 id="Image_on_meteor">Image on meteor</h2><p>In order to make it a fun, I decided to use image as the surface of the meteors ,  and the way to achieve that is to wrap a tag <code>&lt;a-root&gt;</code> and a tag <code>&lt;a-entity&gt;</code> further inside. So now the structure will be like:<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;a-entity some-attributes-here&gt;</span></span><br><span class="line">	<span class="tag">&lt;a-root&gt;</span></span><br><span class="line">		<span class="tag">&lt;a-entity some-attribute-here&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>And set the src to be some texture image or even in this project some funny images as the surface of the meteors. And that’s it! </p>
+<h2 id="Further_Reading">Further Reading</h2><ul>
+<li><a href="http://aframevr.tumblr.com/" target="_blank" rel="external">Aframe in tumblr</a></li>
+<li><a href="https://aframe.io/docs/core/animation.html" target="_blank" rel="external">Official Aframe animations guide</a></li>
+<li><a href="http://projects.bmannconsulting.com/aframe-boilerplate/" target="_blank" rel="external">How to add texture for Aframe objects</a></li>
+<li><a href="http://www.kirupa.com/html5/handling_events_for_many_elements.htm" target="_blank" rel="external">How to add event listener to multiple sibling elements</a></li>
+</ul>
 <blockquote>
 <p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
 </blockquote>
-</section>
+
       
     </div>
     
@@ -249,18 +246,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/12/25/关于hexo博客最棒的素材和教程收集/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          关于hexo博客最棒的素材和教程收集
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/12/24/机器学习资料收集/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">机器学习资料收集[持续更新]</div>
+    <a href="/2015/12/30/D3js-in-3D/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">D3js in 3D</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -295,7 +283,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="用reveal-js制作生日派对礼物" data-title="用reveal.js制作生日礼物" data-url="http://yoursite.com/2015/12/24/用reveal-js制作生日派对礼物/"></div>
+	<div class="ds-thread" data-thread-key="D3js-in-3D-Animation-focus" data-title="D3js in 3D [Animation focus]" data-url="http://yoursite.com/2015/12/31/D3js-in-3D-Animation-focus/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
