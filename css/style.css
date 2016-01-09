@@ -2134,25 +2134,6 @@ pre .css ~ * .id {
   margin-top: 9px;
   float: left;
 }
-.article-hit {
-  float: right;
-}
-.article-hit:before {
-  float: right;
-  color: #999;
-  content: "\f06c";
-  font: 16px FontAwesome;
-  float: right;
-  margin-right: 10px;
-  margin-top: 9px;
-}
-.article-hit:after {
-  float: right;
-  content: "";
-  margin-right: 20px;
-  margin-top: 9px;
-  float: right;
-}
 .article-category {
   float: left;
 }
@@ -2166,6 +2147,25 @@ pre .css ~ * .id {
   margin-top: 9px;
 }
 .article-category:after {
+  float: left;
+  content: "";
+  margin-right: 20px;
+  margin-top: 9px;
+  float: left;
+}
+.article-hit {
+  float: left;
+}
+.article-hit:before {
+  float: left;
+  color: #999;
+  content: "\f03d";
+  font: 16px FontAwesome;
+  float: left;
+  margin-right: 10px;
+  margin-top: 9px;
+}
+.article-hit:after {
   float: left;
   content: "";
   margin-right: 20px;
