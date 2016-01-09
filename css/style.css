@@ -965,9 +965,9 @@ a {
   margin: -30px 0 20px 30px;
 }
 .article-info-post.article-info div.busuanzi_container_page_pv {
-  margin: 20px 0;
+  margin: 10px auto;
   color: #817c7c;
-  font-size: 10px;
+  font-size: 12px;
 }
 .article-info-post.article-info div.busuanzi_container_page_pv span.busuanzi_value_page_pv {
   padding-left: 4px;
