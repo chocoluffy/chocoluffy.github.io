@@ -2030,6 +2030,7 @@ pre .css ~ * .id {
 #header .tagcloud a {
   color: #fff;
 }
+.tagcloud span,
 .tagcloud a {
   display: inline-block;
   text-decoration: none;
@@ -2046,9 +2047,11 @@ pre .css ~ * .id {
   margin: 5px 9px 5px 8px;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 }
+.tagcloud span:hover,
 .tagcloud a:hover {
   opacity: 0.8;
 }
+.tagcloud span:before,
 .tagcloud a:before {
   content: " ";
   width: 0px;
@@ -2058,6 +2061,7 @@ pre .css ~ * .id {
   left: -18px;
   border: 9px solid transparent;
 }
+.tagcloud span:after,
 .tagcloud a:after {
   content: " ";
   width: 4px;
