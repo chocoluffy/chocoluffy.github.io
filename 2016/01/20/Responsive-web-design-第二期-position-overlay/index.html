@@ -6,20 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <title>One Piece</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。">
+  <meta name="description" content="在使用position等css属性的时候会经常在’absolute’,’relative’和’static’上进坑。 本文从实战的角度介绍position的各种应用和如何添加一层优雅的渐变背景过渡层。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="rails开发笔记-instagram">
-<meta property="og:url" content="http://yoursite.com/2015/08/31/rails开发笔记-instagram-1/index.html">
+<meta property="og:title" content="Responsive web design[第二期]-position/overlay">
+<meta property="og:url" content="http://yoursite.com/2016/01/20/Responsive-web-design-第二期-position-overlay/index.html">
 <meta property="og:site_name" content="One Piece">
-<meta property="og:description" content="用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。">
-<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qp26GB1Mm409ZKPy3NRDqbD6xeG6hgdjfyN9ic3bEQtwQGsArZ53PxmQ/0?wx_fmt=jpeg">
-<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qB5xCWEgEH979oIdDSpPMiaW1oLIHtpVECbY3ZQxNBXnKw33rFBh2gMQ/0?wx_fmt=png">
-<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qzKjPRxEFgZdPbcicyDcSxaRCAh34H7EKK5O2Na5gIEwlZbYjXchB3rQ/0?wx_fmt=png">
-<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qzW0y2WJqB8oJXFdxXE3ZqCYcFvywrnXT97u69vUWvvTg93VxiaP9rNw/0?wx_fmt=png">
-<meta property="og:updated_time" content="2015-12-25T00:23:04.000Z">
+<meta property="og:description" content="在使用position等css属性的时候会经常在’absolute’,’relative’和’static’上进坑。 本文从实战的角度介绍position的各种应用和如何添加一层优雅的渐变背景过渡层。">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1f06g8ze3fhj20yo0pw76w.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/c5ee78b5gw1f06lr99d5xj21kw0q47cw.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
+<meta property="og:updated_time" content="2016-01-20T20:54:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="rails开发笔记-instagram">
-<meta name="twitter:description" content="用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。">
+<meta name="twitter:title" content="Responsive web design[第二期]-position/overlay">
+<meta name="twitter:description" content="在使用position等css属性的时候会经常在’absolute’,’relative’和’static’上进坑。 本文从实战的角度介绍position的各种应用和如何添加一层优雅的渐变背景过渡层。">
   
     <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
   
@@ -184,11 +183,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-rails开发笔记-instagram-1" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Responsive-web-design-第二期-position-overlay" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/08/31/rails开发笔记-instagram-1/" class="article-date">
-  	<time datetime="2015-09-01T02:04:00.000Z" itemprop="datePublished">2015-08-31</time>
+      <a href="/2016/01/20/Responsive-web-design-第二期-position-overlay/" class="article-date">
+  	<time datetime="2016-01-20T20:50:19.000Z" itemprop="datePublished">2016-01-20</time>
 </a>
     </div>
   
@@ -201,7 +200,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      rails开发笔记-instagram
+      Responsive web design[第二期]-position/overlay
     </h1>
   
 
@@ -211,7 +210,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rails/">rails</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-design/">web design</a></li></ul>
 	</div>
 
         
@@ -227,30 +226,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。</p>
+        <p>在使用position等css属性的时候会经常在’absolute’,’relative’和’static’上进坑。 本文从实战的角度介绍position的各种应用和如何添加一层优雅的渐变背景过渡层。</p>
 <a id="more"></a>
-<p><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qp26GB1Mm409ZKPy3NRDqbD6xeG6hgdjfyN9ic3bEQtwQGsArZ53PxmQ/0?wx_fmt=jpeg" alt="image"><br>用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。<br><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qB5xCWEgEH979oIdDSpPMiaW1oLIHtpVECbY3ZQxNBXnKw33rFBh2gMQ/0?wx_fmt=png" alt="image">  </p>
-<p>当鼠标hover其中一个照片时：  </p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qzKjPRxEFgZdPbcicyDcSxaRCAh34H7EKK5O2Na5gIEwlZbYjXchB3rQ/0?wx_fmt=png" alt="image">  </p>
-<p>网站的功能：输入一个image tag或者用户名， 可以看到这个类别下面最新发布的post， 鼠标hover的时候可以看到用户的post原文。  </p>
-<p>原理：其实这个很简单的， 就是调用了instagram的api，然后做的一个数据抓取和呈现而已。 不过在改进方向上面有很多可能。 我也会继续在功能上做出完善。比如：   </p>
-<ol>
-<li>我可以通过api得到用户之间的follow关系， 那么利用d3.js里面的一些三维模型函数库， 也就可以做出一张动态的关系网出来， (这种社交网络结构在商业ppt上可能比较常见吧)； 还记得大一去MIT决赛的时候， 中科大的那个结构网的作品， 结合图论上的一些shortest path, maximum flow的原理还可以找到最高效的关系连通path。在这个instagram的情景中，这个“最高效的”仍然需要人们定义， 比如可以定义成获得的点赞数最多， 社区声誉最好？购买力最高， 广告转化率最高等的指标。  </li>
-<li>通过获得的geolocation的数据， 可以结合一些数据处理包完成地图上tag发布热点区域的绘制， 用户发布的地点时间的集合，（现在吐槽最多的不就是O2O startup，现在都可以拿个google map的地图和一些头像就去融资了不是吗)。   </li>
-<li>获得某一个tag当前最新的， 或者最热的图片， 那其实也可以变相给用户推荐图片， 像feed一样， 不过这个时候用户看到的不就只是自己follow的人, 而是门户filter后的资源， 这个方向走下去基本就是社交媒体了， 那种编辑、发布的， 控制资源的channel。   </li>
-<li>对用户的描述做语义分析， 然后利用统计手段得到某个特定用户的发布资源的特点， 或者某个特定群体的common tag\interests。 实现方式也不算复杂， ruby里面的nokogiri gem可以parse掉html结构， 得到的json数据再去统计整合处理。 但就像我前几天做得一个小项目中遇到的问题。 英文可以很方面的根据词语出现过的频率来统计， 然后去掉预设的meaningless的词语后得到， 然后筛选可以得到概括； 但是对于中文， 毕竟parse之后只能得到单个的字， 而不是一个个完整意义的词语， 所以给后期过滤中心主体带来了很多困难， （为什么不能得到词语？ 答：技术上只能得到一个个单个字， 就像英文一个个单词一样， 你必须定义怎样算一个中文词语的规则， 以及怎样才是原文里面的那个词语搭配规则才能得到一个完整的意群）这也是当时困扰我的一个问题， 或许互联网上有很多人、企业遇到过这个问题， 我会继续去关注。  </li>
-<li>根据用户发布的post的点赞数或者是转发数量的一个统计分析、排序， 做出一个类似facebook的 the best of the years， 虽然在隐私上仍然有着一些抵触的情绪， 但是当用户看到这些曾经很棒的、很希望分享的照片不都挺惊讶和开心的吗。  </li>
-<li>打通twiiter \ weibo \ facebook api之间的联系？ 可以做到站内的消息多平台的发布和浏览。  </li>
-</ol>
-<p>等等…  </p>
-<p>这些基本都是我debug之后挺高兴地走去吃饭路上想到的一些延伸， 能写出来的都是大概心里有个想法知道方向在哪里的， 可以做出来的。 那些有些天马行空的就自己留着暂时不分享了。 其实这一天的时间里面我在前端设计上花的功夫比我在后端请求数据和处理的功夫多太多了， 而问题都基本都出在一些动效和细节上面， 不过一仔细起来， 真的很多地方的设计都学到了东西；  </p>
-<p> 比如怎样做出这样类似纸张微微隆起的漂亮阴影效果：  </p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qzW0y2WJqB8oJXFdxXE3ZqCYcFvywrnXT97u69vUWvvTg93VxiaP9rNw/0?wx_fmt=png" alt="image">  </p>
-<p> 一些优雅的google fonts的收集、bootstrap里面超级flexible的grid system。还有很多很多， 之后的优化应该要集中在抽象上面了， 做到真正orthogonal \ extensible的模块真的不简单， 我函数里面hard-coding还是太多了。   </p>
-<p> 其实刚刚在一边写这些extensions的时候， 就感觉， 数据的意义和价值都是设计者思维的体现。 一场惊艳的交互， 一个有商业价值的发现， 都离不开设计者的融会贯通。  </p>
-<p> 希望能在全栈工程师的路上可以走的更远。  </p>
-<p>今天看到的一句很喜欢的话， 和大家分享：  </p>
-<p>孤独被抬举和神化， 寂寞也并不可耻。多数时候， 我们只是寂寞， 不必用孤独为自己加冕。  </p>
+<h2 id="css_position">css position</h2><hr>
+<p>when dealing with nested container, the parent div is usually set to be <code>position: relative</code> while child div is <code>position: absolute</code> so that the child element can be positioned to any pos within parent container, if the parent div is set to <code>position: static</code>, child element will ignore parent position.</p>
+<blockquote>
+<p>Note that <code>position: static</code> is CSS default setting, so if we want to use <code>position: absolute</code>, we should always set the parent element to <code>position: relative</code>. ReactNative set the default value back, so no worries.</p>
+</blockquote>
+<p>when use position properties like <code>top</code> and <code>left</code>, we usually set them to <code>50%</code>, but the result will be like the element’s top left corner is sticked to the center, while the rest of it is not at the center, which is not what we want, we usually use <code>transform</code> property and get it to <code>-50%</code> to center the element.</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">top: <span class="number">50</span>%;</span><br><span class="line">left: <span class="number">50</span>%;</span><br><span class="line">transform: translate(-<span class="number">50</span>%, -<span class="number">50</span>%);</span><br></pre></td></tr></table></figure>
+<p>这里我们要说说 static 元素的另外一个坑。</p>
+<p>absolute, relative: 有 z-index。<br>static: 没有 z-index。<br>没有 z-index 的元素默认在有 z-index 的元素下面。</p>
+<p>img 和 h1 元素都是 position: static。z-index 对 static 元素不起作用，因此它们都在绝对定位的元素下面。</p>
+<h2 id="滚动控制">滚动控制</h2><hr>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="slider-control"&gt;</span><br><span class="line">  &lt;a href="#native" class="active"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#touch"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#async"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#flex"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>让它们position: fixed, 效果参考：</p>
+<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1f06g8ze3fhj20yo0pw76w.jpg" alt="movement control"></p>
+<h2 id="overlay_平滑过渡">overlay 平滑过渡</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;section&gt;</span><br><span class="line">    &lt;div class="container" id="intro-section"&gt;</span><br><span class="line">    &lt;div class="overlay"&gt;&lt;/div&gt;</span><br><span class="line">    &lt;h1&gt;I Love React&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;I just want to see the so-called live-coding&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/section&gt;</span><br></pre></td></tr></table></figure>
+<p>将最上面的container的背景设置为图片背景， 然后中间加一个div.overlay的div, 然后通过渐变设置其背景为主背景颜色。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#intro-section&#123;</span></span><br><span class="line">  background-image: url(../image/background.jpg);</span><br><span class="line">  background-size: cover;</span><br><span class="line">  background-position: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#intro-section h1, p&#123;</span></span><br><span class="line">  position: relative;</span><br><span class="line">  z-index: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.overlay&#123;</span><br><span class="line">  position: absolute;</span><br><span class="line">  top: <span class="number">0</span>;</span><br><span class="line">  left: <span class="number">0</span>;</span><br><span class="line">  width: <span class="number">100</span>%;</span><br><span class="line">  height: <span class="number">100</span>%;</span><br><span class="line">  background-image: linear-gradient(rgba(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>),rgba(<span class="number">22</span>, <span class="number">21</span>, <span class="number">37</span>, <span class="number">1</span>));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1f06lr99d5xj21kw0q47cw.jpg" alt="overlay"></p>
+<h2 id="参考资料">参考资料</h2><hr>
+<ul>
+<li><a href="http://hex2rgba.devoth.com/" target="_blank" rel="external">hex to rgba online converter</a></li>
+<li><a href="https://github.com/luckymore0520/sike-react-ilovereact" target="_blank" rel="external">ilovereact</a></li>
+</ul>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
 
       
     </div>
@@ -260,18 +263,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/11/16/一个记者和恐怖分子的秘密生活/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          我的ISIS男友：一个记者与恐怖分子的秘密生活
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/08/29/希望是一种善意/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">希望是一种善意</div>
+    <a href="/2016/01/12/时间知道-持续更新/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">时间知道[持续更新...]</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -317,7 +311,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="rails开发笔记-instagram-1" data-title="rails开发笔记-instagram" data-url="http://yoursite.com/2015/08/31/rails开发笔记-instagram-1/"></div>
+	<div class="ds-thread" data-thread-key="Responsive-web-design-第二期-position-overlay" data-title="Responsive web design[第二期]-position/overlay" data-url="http://yoursite.com/2016/01/20/Responsive-web-design-第二期-position-overlay/"></div>
 	<!-- 多说评论框 end -->
 
 <!-- Duoshuo Comment BEGIN -->
