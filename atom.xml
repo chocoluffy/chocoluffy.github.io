@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-20T20:54:49.000Z</updated>
+  <updated>2016-01-20T20:56:12.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,11 +19,10 @@
     <link href="http://yoursite.com/2016/01/20/Responsive-web-design-%E7%AC%AC%E4%BA%8C%E6%9C%9F-position-overlay/"/>
     <id>http://yoursite.com/2016/01/20/Responsive-web-design-第二期-position-overlay/</id>
     <published>2016-01-20T20:50:19.000Z</published>
-    <updated>2016-01-20T20:54:49.000Z</updated>
+    <updated>2016-01-20T20:56:12.000Z</updated>
     <content type="html"><![CDATA[<p>在使用position等css属性的时候会经常在’absolute’,’relative’和’static’上进坑。 本文从实战的角度介绍position的各种应用和如何添加一层优雅的渐变背景过渡层。</p>
 <a id="more"></a>
-<h2 id="css_position">css position</h2><hr>
-<p>when dealing with nested container, the parent div is usually set to be <code>position: relative</code> while child div is <code>position: absolute</code> so that the child element can be positioned to any pos within parent container, if the parent div is set to <code>position: static</code>, child element will ignore parent position.</p>
+<h2 id="css_position">css position</h2><p>when dealing with nested container, the parent div is usually set to be <code>position: relative</code> while child div is <code>position: absolute</code> so that the child element can be positioned to any pos within parent container, if the parent div is set to <code>position: static</code>, child element will ignore parent position.</p>
 <blockquote>
 <p>Note that <code>position: static</code> is CSS default setting, so if we want to use <code>position: absolute</code>, we should always set the parent element to <code>position: relative</code>. ReactNative set the default value back, so no worries.</p>
 </blockquote>
@@ -32,8 +31,7 @@
 <p>这里我们要说说 static 元素的另外一个坑。</p>
 <p>absolute, relative: 有 z-index。<br>static: 没有 z-index。<br>没有 z-index 的元素默认在有 z-index 的元素下面。</p>
 <p>img 和 h1 元素都是 position: static。z-index 对 static 元素不起作用，因此它们都在绝对定位的元素下面。</p>
-<h2 id="滚动控制">滚动控制</h2><hr>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="slider-control"&gt;</span><br><span class="line">  &lt;a href="#native" class="active"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#touch"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#async"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#flex"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="滚动控制">滚动控制</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="slider-control"&gt;</span><br><span class="line">  &lt;a href="#native" class="active"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#touch"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#async"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">  &lt;a href="#flex"&gt;</span><br><span class="line">    &lt;div class="dot"&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p>让它们position: fixed, 效果参考：</p>
 <p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1f06g8ze3fhj20yo0pw76w.jpg" alt="movement control"></p>
 <h2 id="overlay_平滑过渡">overlay 平滑过渡</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;section&gt;</span><br><span class="line">    &lt;div class="container" id="intro-section"&gt;</span><br><span class="line">    &lt;div class="overlay"&gt;&lt;/div&gt;</span><br><span class="line">    &lt;h1&gt;I Love React&lt;/h1&gt;</span><br><span class="line">    &lt;p&gt;I just want to see the so-called live-coding&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/section&gt;</span><br></pre></td></tr></table></figure>
