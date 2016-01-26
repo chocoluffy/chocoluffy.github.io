@@ -459,8 +459,8 @@
     <link href="http://yoursite.com/2015/12/31/D3js-in-3D-Animation-focus/"/>
     <id>http://yoursite.com/2015/12/31/D3js-in-3D-Animation-focus/</id>
     <published>2015-12-31T17:14:50.000Z</published>
-    <updated>2015-12-31T17:24:07.000Z</updated>
-    <content type="html"><![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js-Aframe/" target="_blank" rel="external">Live Demo</a> here! </p>
+    <updated>2016-01-26T03:16:30.000Z</updated>
+    <content type="html"><![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/" target="_blank" rel="external">Live Demo</a> here! </p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" alt="Animation"></p>
 <h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
@@ -479,7 +479,7 @@
 </blockquote>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js-Aframe/">Live Demo</a> here! </p>]]>
+    <![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>]]>
     
     </summary>
     
@@ -494,8 +494,8 @@
     <link href="http://yoursite.com/2015/12/30/D3js-in-3D/"/>
     <id>http://yoursite.com/2015/12/30/D3js-in-3D/</id>
     <published>2015-12-30T17:30:59.000Z</published>
-    <updated>2015-12-31T17:25:51.000Z</updated>
-    <content type="html"><![CDATA[<p>Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out <a href="http://chocoluffy.com/d3js-Aframe/" target="_blank" rel="external">Live Demo</a> now!</p>
+    <updated>2016-01-26T03:16:38.000Z</updated>
+    <content type="html"><![CDATA[<p>Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out <a href="http://chocoluffy.com/d3js3D/" target="_blank" rel="external">Live Demo</a> now!</p>
 <a id="more"></a>
 <p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezi7ksw2zyj21kw0sa17h.jpg" alt="virtual scene"></p>
 <p>Inspired by <a href="https://www.youtube.com/watch?v=Tb2b5nFmmsM" target="_blank" rel="external">d33d</a>, 💣<strong> <a href="http://chocoluffy.com/d3js-Aframe/" target="_blank" rel="external">Live Demo</a> </strong></p>
@@ -522,7 +522,7 @@
 </blockquote>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out <a href="http://chocoluffy.com/d3js-Aframe/">Live Demo</a> now!</p>]]>
+    <![CDATA[<p>Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> now!</p>]]>
     
     </summary>
     
