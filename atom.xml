@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-26T22:42:07.000Z</updated>
+  <updated>2016-01-26T22:43:40.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://yoursite.com/2016/01/26/Memory-allocation-in-C/"/>
     <id>http://yoursite.com/2016/01/26/Memory-allocation-in-C/</id>
     <published>2016-01-26T22:36:34.000Z</published>
-    <updated>2016-01-26T22:42:07.000Z</updated>
-    <content type="html"><![CDATA[<p>Learning memory allocation in C for beginners will be totally a pain. This post, distilled from course materials, will provide you a practice guide and example coding snippets to help you learning more and fase in C programming language. It is cherishable, at least to me :)</p>
+    <updated>2016-01-26T22:43:40.000Z</updated>
+    <content type="html"><![CDATA[<p>Learning memory allocation in C for beginners will be totally a pain. This post, distilled from course materials, will provide you a practice guide and example coding snippets to help you learning more and fast in C programming language. It is cherishable, at least to me :)</p>
 <a id="more"></a>
 <h2 id="Introduction_to_malloc">Introduction to malloc</h2><ul>
 <li>Variable defined in function will be stored in stack, so how to use that part of memory after function returns? we use <code>void * malloc(size_t size)</code> will allocate memory in heap. This function will remain the memory for the variables until the function explicitly deallocate them. The argument for this function indicates how many bytes of memory should it allocate.</li>
@@ -88,7 +88,7 @@
 </blockquote>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>Learning memory allocation in C for beginners will be totally a pain. This post, distilled from course materials, will provide you a practice guide and example coding snippets to help you learning more and fase in C programming language. It is cherishable, at least to me :)</p>]]>
+    <![CDATA[<p>Learning memory allocation in C for beginners will be totally a pain. This post, distilled from course materials, will provide you a practice guide and example coding snippets to help you learning more and fast in C programming language. It is cherishable, at least to me :)</p>]]>
     
     </summary>
     
