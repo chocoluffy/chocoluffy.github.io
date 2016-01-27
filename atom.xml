@@ -3,9 +3,9 @@
   <title><![CDATA[One Piece]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
+  <link href="http://chocoluffy.com/"/>
   <updated>2016-01-26T22:43:40.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://chocoluffy.com/</id>
   
   <author>
     <name><![CDATA[John Doe]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Memory allocation in C]]></title>
-    <link href="http://yoursite.com/2016/01/26/Memory-allocation-in-C/"/>
-    <id>http://yoursite.com/2016/01/26/Memory-allocation-in-C/</id>
+    <link href="http://chocoluffy.com/2016/01/26/Memory-allocation-in-C/"/>
+    <id>http://chocoluffy.com/2016/01/26/Memory-allocation-in-C/</id>
     <published>2016-01-26T22:36:34.000Z</published>
     <updated>2016-01-26T22:43:40.000Z</updated>
     <content type="html"><![CDATA[<p>Learning memory allocation in C for beginners will be totally a pain. This post, distilled from course materials, will provide you a practice guide and example coding snippets to help you learning more and fast in C programming language. It is cherishable, at least to me :)</p>
@@ -92,16 +92,16 @@
     
     </summary>
     
-      <category term="C" scheme="http://yoursite.com/tags/C/"/>
+      <category term="C" scheme="http://chocoluffy.com/tags/C/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[象征与符号]]></title>
-    <link href="http://yoursite.com/2016/01/23/%E8%B1%A1%E5%BE%81%E4%B8%8E%E7%AC%A6%E5%8F%B7/"/>
-    <id>http://yoursite.com/2016/01/23/象征与符号/</id>
+    <link href="http://chocoluffy.com/2016/01/23/%E8%B1%A1%E5%BE%81%E4%B8%8E%E7%AC%A6%E5%8F%B7/"/>
+    <id>http://chocoluffy.com/2016/01/23/象征与符号/</id>
     <published>2016-01-24T04:05:53.000Z</published>
     <updated>2016-01-24T04:09:28.000Z</updated>
     <content type="html"><![CDATA[<p>是什么， 在流血。</p>
@@ -177,18 +177,18 @@
     
     </summary>
     
-      <category term="社会人物" scheme="http://yoursite.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E7%89%A9/"/>
+      <category term="社会人物" scheme="http://chocoluffy.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E7%89%A9/"/>
     
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Responsive web design[第二期]-position/overlay]]></title>
-    <link href="http://yoursite.com/2016/01/20/Responsive-web-design-%E7%AC%AC%E4%BA%8C%E6%9C%9F-position-overlay/"/>
-    <id>http://yoursite.com/2016/01/20/Responsive-web-design-第二期-position-overlay/</id>
+    <link href="http://chocoluffy.com/2016/01/20/Responsive-web-design-%E7%AC%AC%E4%BA%8C%E6%9C%9F-position-overlay/"/>
+    <id>http://chocoluffy.com/2016/01/20/Responsive-web-design-第二期-position-overlay/</id>
     <published>2016-01-20T20:50:19.000Z</published>
     <updated>2016-01-23T15:55:18.000Z</updated>
     <content type="html"><![CDATA[<p>在使用position等css属性的时候会经常在’absolute’,’relative’和’static’上进坑。 本文从实战的角度介绍position的各种应用和如何添加一层优雅的渐变背景过渡层。</p>
@@ -237,16 +237,16 @@
     
     </summary>
     
-      <category term="web design" scheme="http://yoursite.com/tags/web-design/"/>
+      <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[时间知道[持续更新...]]]></title>
-    <link href="http://yoursite.com/2016/01/12/%E6%97%B6%E9%97%B4%E7%9F%A5%E9%81%93-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
-    <id>http://yoursite.com/2016/01/12/时间知道-持续更新/</id>
+    <link href="http://chocoluffy.com/2016/01/12/%E6%97%B6%E9%97%B4%E7%9F%A5%E9%81%93-%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>http://chocoluffy.com/2016/01/12/时间知道-持续更新/</id>
     <published>2016-01-12T17:46:57.000Z</published>
     <updated>2016-01-27T01:58:45.000Z</updated>
     <content type="html"><![CDATA[<p>因为， 只有时间知道。</p>
@@ -263,19 +263,19 @@
     
     </summary>
     
-      <category term="收藏帖" scheme="http://yoursite.com/tags/%E6%94%B6%E8%97%8F%E5%B8%96/"/>
+      <category term="收藏帖" scheme="http://chocoluffy.com/tags/%E6%94%B6%E8%97%8F%E5%B8%96/"/>
     
-      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Flexbox website layout - Intro]]></title>
-    <link href="http://yoursite.com/2016/01/12/Flexbox-website-layout-Intro/"/>
-    <id>http://yoursite.com/2016/01/12/Flexbox-website-layout-Intro/</id>
+    <link href="http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/"/>
+    <id>http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/</id>
     <published>2016-01-12T17:00:52.000Z</published>
     <updated>2016-01-26T22:43:07.000Z</updated>
-    <content type="html"><![CDATA[<p>My first attempt to build up a responsive website using Flexbox layout. Check <a href="http://chocoluffy.com/flex-layout/" target="_blank" rel="external">Live Demo</a> here!</p>
+    <content type="html"><![CDATA[<p>My first attempt to build up a responsive website using Flexbox layout. Check <a href="http://chocoluffy.com/flex-layout/">Live Demo</a> here!</p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezx7kdisiuj21kw0r1di7.jpg" alt="overview"></p>
 <p>check <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">this post</a> on the complete guide about Flexbox layout.</p>
@@ -313,16 +313,16 @@
     
     </summary>
     
-      <category term="web design" scheme="http://yoursite.com/tags/web-design/"/>
+      <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[现实和虚拟的边界]]></title>
-    <link href="http://yoursite.com/2016/01/09/%E7%8E%B0%E5%AE%9E%E5%92%8C%E8%99%9A%E6%8B%9F%E7%9A%84%E8%BE%B9%E7%95%8C/"/>
-    <id>http://yoursite.com/2016/01/09/现实和虚拟的边界/</id>
+    <link href="http://chocoluffy.com/2016/01/09/%E7%8E%B0%E5%AE%9E%E5%92%8C%E8%99%9A%E6%8B%9F%E7%9A%84%E8%BE%B9%E7%95%8C/"/>
+    <id>http://chocoluffy.com/2016/01/09/现实和虚拟的边界/</id>
     <published>2016-01-09T21:26:16.000Z</published>
     <updated>2016-01-09T21:32:22.000Z</updated>
     <content type="html"><![CDATA[<p>什么花样。</p>
@@ -458,18 +458,18 @@
     
     </summary>
     
-      <category term="商业IT评论" scheme="http://yoursite.com/tags/%E5%95%86%E4%B8%9AIT%E8%AF%84%E8%AE%BA/"/>
+      <category term="商业IT评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9AIT%E8%AF%84%E8%AE%BA/"/>
     
-      <category term="虚拟现实" scheme="http://yoursite.com/tags/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E/"/>
+      <category term="虚拟现实" scheme="http://chocoluffy.com/tags/%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E/"/>
     
-      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Twitter engine in React]]></title>
-    <link href="http://yoursite.com/2016/01/06/Twitter-engine-in-React/"/>
-    <id>http://yoursite.com/2016/01/06/Twitter-engine-in-React/</id>
+    <link href="http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/"/>
+    <id>http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/</id>
     <published>2016-01-07T04:10:20.000Z</published>
     <updated>2016-01-07T04:24:33.000Z</updated>
     <content type="html"><![CDATA[<p>The hand-on project to get myself familiar with React.js, which pulls the latest post from Twitter by using a nodejs module in client-side javascript and allows users to form their own collections and share them via Codepen or other platforms. </p>
@@ -534,19 +534,19 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[D3js in 3D [Animation focus]]]></title>
-    <link href="http://yoursite.com/2015/12/31/D3js-in-3D-Animation-focus/"/>
-    <id>http://yoursite.com/2015/12/31/D3js-in-3D-Animation-focus/</id>
+    <link href="http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/"/>
+    <id>http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/</id>
     <published>2015-12-31T17:14:50.000Z</published>
     <updated>2016-01-26T03:16:30.000Z</updated>
-    <content type="html"><![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/" target="_blank" rel="external">Live Demo</a> here! </p>
+    <content type="html"><![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" alt="Animation"></p>
 <h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
@@ -569,22 +569,22 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[D3js in 3D]]></title>
-    <link href="http://yoursite.com/2015/12/30/D3js-in-3D/"/>
-    <id>http://yoursite.com/2015/12/30/D3js-in-3D/</id>
+    <link href="http://chocoluffy.com/2015/12/30/D3js-in-3D/"/>
+    <id>http://chocoluffy.com/2015/12/30/D3js-in-3D/</id>
     <published>2015-12-30T17:30:59.000Z</published>
     <updated>2016-01-26T03:16:38.000Z</updated>
-    <content type="html"><![CDATA[<p>Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out <a href="http://chocoluffy.com/d3js3D/" target="_blank" rel="external">Live Demo</a> now!</p>
+    <content type="html"><![CDATA[<p>Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> now!</p>
 <a id="more"></a>
 <p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezi7ksw2zyj21kw0sa17h.jpg" alt="virtual scene"></p>
-<p>Inspired by <a href="https://www.youtube.com/watch?v=Tb2b5nFmmsM" target="_blank" rel="external">d33d</a>, 💣<strong> <a href="http://chocoluffy.com/d3js-Aframe/" target="_blank" rel="external">Live Demo</a> </strong></p>
+<p>Inspired by <a href="https://www.youtube.com/watch?v=Tb2b5nFmmsM" target="_blank" rel="external">d33d</a>, 💣<strong> <a href="http://chocoluffy.com/d3js-Aframe/">Live Demo</a> </strong></p>
 <h2 id="Build_up_a_local_server_to_avoid_cross-origin_error">Build up a local server to avoid cross-origin error</h2><p>we know that using <a-image> can do insert the image. Due to the cross-origin problem, in local testing, we need to use a local server to host the static file and its assets, such as images so that when used in html file, it will not cause a cross-origin error. The way we build up a temporary server is to use python. First cd to the corresponding directory, then do:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m SimpleHTTPServer <span class="number">8000</span></span><br></pre></td></tr></table></figure></a-image></p>
 <p>Then go to the localhost:8000 can see the files. For more detailed info, check <a href="http://stackoverflow.com/questions/8456538/origin-null-is-not-allowed-by-access-control-allow-origin" target="_blank" rel="external">this post</a> in stack overflow.</p>
 <h2 id="How_to_append_tag_in_multiple_nodes">How to append tag in multiple nodes</h2><p>references <a href="http://stackoverflow.com/questions/24318154/d3-js-append-on-existing-div-and-hierarchy" target="_blank" rel="external">this post</a> from stack overflow</p>
@@ -612,16 +612,16 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[为什么大公司不会偷取你的想法]]></title>
-    <link href="http://yoursite.com/2015/12/28/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%85%AC%E5%8F%B8%E4%B8%8D%E4%BC%9A%E5%81%B7%E5%8F%96%E4%BD%A0%E7%9A%84%E6%83%B3%E6%B3%95/"/>
-    <id>http://yoursite.com/2015/12/28/为什么大公司不会偷取你的想法/</id>
+    <link href="http://chocoluffy.com/2015/12/28/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%85%AC%E5%8F%B8%E4%B8%8D%E4%BC%9A%E5%81%B7%E5%8F%96%E4%BD%A0%E7%9A%84%E6%83%B3%E6%B3%95/"/>
+    <id>http://chocoluffy.com/2015/12/28/为什么大公司不会偷取你的想法/</id>
     <published>2015-12-29T03:53:07.000Z</published>
     <updated>2015-12-29T04:02:11.000Z</updated>
     <content type="html"><![CDATA[<p>那些难以复制的。</p>
@@ -674,18 +674,18 @@
     
     </summary>
     
-      <category term="公众号文章" scheme="http://yoursite.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
+      <category term="公众号文章" scheme="http://chocoluffy.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
     
-      <category term="商业IT评论" scheme="http://yoursite.com/tags/%E5%95%86%E4%B8%9AIT%E8%AF%84%E8%AE%BA/"/>
+      <category term="商业IT评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9AIT%E8%AF%84%E8%AE%BA/"/>
     
-      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[ActionCable in Rail5 实战笔记]]></title>
-    <link href="http://yoursite.com/2015/12/26/ActionCable-in-Rail5-%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2015/12/26/ActionCable-in-Rail5-实战笔记/</id>
+    <link href="http://chocoluffy.com/2015/12/26/ActionCable-in-Rail5-%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/"/>
+    <id>http://chocoluffy.com/2015/12/26/ActionCable-in-Rail5-实战笔记/</id>
     <published>2015-12-26T17:42:33.000Z</published>
     <updated>2016-01-07T15:15:51.000Z</updated>
     <content type="html"><![CDATA[<p>rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备</p>
@@ -731,18 +731,18 @@
     
     </summary>
     
-      <category term="rails" scheme="http://yoursite.com/tags/rails/"/>
+      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[关于hexo博客最棒的素材和教程收集]]></title>
-    <link href="http://yoursite.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/"/>
-    <id>http://yoursite.com/2015/12/25/关于hexo博客最棒的素材和教程收集/</id>
+    <link href="http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/"/>
+    <id>http://chocoluffy.com/2015/12/25/关于hexo博客最棒的素材和教程收集/</id>
     <published>2015-12-25T16:29:20.000Z</published>
-    <updated>2016-01-27T01:59:36.000Z</updated>
+    <updated>2016-01-27T15:05:34.000Z</updated>
     <content type="html"><![CDATA[<p>在搭建hexo博客的时候遇到的各种坑， 留下一些最棒的博文和大家分享!</p>
 <a id="more"></a>
 <ul>
@@ -766,6 +766,8 @@
 </li>
 <li><p><a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html" target="_blank" rel="external">给Hexo博客添加站内搜索</a></p>
 </li>
+<li><p><a href="https://moral.im/%E4%B8%BAHexo%E6%B7%BB%E5%8A%A0meta%20Keyword/" target="_blank" rel="external">给Hexo网站添加meta tag提高SEO</a></p>
+</li>
 </ul>
 <blockquote>
 <p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
@@ -776,16 +778,16 @@
     
     </summary>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://chocoluffy.com/tags/hexo/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[用reveal.js制作生日礼物]]></title>
-    <link href="http://yoursite.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/"/>
-    <id>http://yoursite.com/2015/12/24/用reveal-js制作生日派对礼物/</id>
+    <link href="http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/"/>
+    <id>http://chocoluffy.com/2015/12/24/用reveal-js制作生日派对礼物/</id>
     <published>2015-12-24T16:55:00.000Z</published>
     <updated>2015-12-25T00:34:41.000Z</updated>
     <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
@@ -814,16 +816,16 @@
     
     </summary>
     
-      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Agile web developing in rails 第一期]]></title>
-    <link href="http://yoursite.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/"/>
-    <id>http://yoursite.com/2015/12/24/agile-web-developing-in-rails-第一期/</id>
+    <link href="http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/"/>
+    <id>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-第一期/</id>
     <published>2015-12-24T16:55:00.000Z</published>
     <updated>2015-12-26T01:09:44.000Z</updated>
     <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
@@ -870,16 +872,16 @@
     
     </summary>
     
-      <category term="rails" scheme="http://yoursite.com/tags/rails/"/>
+      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[机器学习资料收集[持续更新]]]></title>
-    <link href="http://yoursite.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/"/>
-    <id>http://yoursite.com/2015/12/24/机器学习资料收集/</id>
+    <link href="http://chocoluffy.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/"/>
+    <id>http://chocoluffy.com/2015/12/24/机器学习资料收集/</id>
     <published>2015-12-24T16:55:00.000Z</published>
     <updated>2015-12-25T02:49:00.000Z</updated>
     <content type="html"><![CDATA[<p>来自github, 各种关于机器学习的教程博客和工具。</p>
@@ -1101,16 +1103,16 @@
     
     </summary>
     
-      <category term="machine learning" scheme="http://yoursite.com/tags/machine-learning/"/>
+      <category term="machine learning" scheme="http://chocoluffy.com/tags/machine-learning/"/>
     
-      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[一派胡言[第一期]-读书是赴会一场缺席的对话]]></title>
-    <link href="http://yoursite.com/2015/11/24/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80/"/>
-    <id>http://yoursite.com/2015/11/24/一派胡言/</id>
+    <link href="http://chocoluffy.com/2015/11/24/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80/"/>
+    <id>http://chocoluffy.com/2015/11/24/一派胡言/</id>
     <published>2015-11-24T16:55:00.000Z</published>
     <updated>2015-12-25T00:44:56.000Z</updated>
     <content type="html"><![CDATA[<p>一场缺席的对话， 一场没有观众的戏剧。</p>
@@ -1141,18 +1143,18 @@
     
     </summary>
     
-      <category term="公众号文章" scheme="http://yoursite.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
+      <category term="公众号文章" scheme="http://chocoluffy.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
     
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="原创" scheme="http://yoursite.com/categories/%E5%8E%9F%E5%88%9B/"/>
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[我的ISIS男友：一个记者与恐怖分子的秘密生活]]></title>
-    <link href="http://yoursite.com/2015/11/16/%E4%B8%80%E4%B8%AA%E8%AE%B0%E8%80%85%E5%92%8C%E6%81%90%E6%80%96%E5%88%86%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86%E7%94%9F%E6%B4%BB/"/>
-    <id>http://yoursite.com/2015/11/16/一个记者和恐怖分子的秘密生活/</id>
+    <link href="http://chocoluffy.com/2015/11/16/%E4%B8%80%E4%B8%AA%E8%AE%B0%E8%80%85%E5%92%8C%E6%81%90%E6%80%96%E5%88%86%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86%E7%94%9F%E6%B4%BB/"/>
+    <id>http://chocoluffy.com/2015/11/16/一个记者和恐怖分子的秘密生活/</id>
     <published>2015-11-17T03:46:47.000Z</published>
     <updated>2015-12-25T01:25:35.000Z</updated>
     <content type="html"><![CDATA[<p>什么才是真正难以摧毁的。</p>
@@ -1238,18 +1240,18 @@
     
     </summary>
     
-      <category term="公众号文章" scheme="http://yoursite.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
+      <category term="公众号文章" scheme="http://chocoluffy.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
     
-      <category term="社会人物" scheme="http://yoursite.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E7%89%A9/"/>
+      <category term="社会人物" scheme="http://chocoluffy.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E7%89%A9/"/>
     
-      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[rails开发笔记-instagram]]></title>
-    <link href="http://yoursite.com/2015/08/31/rails%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-instagram-1/"/>
-    <id>http://yoursite.com/2015/08/31/rails开发笔记-instagram-1/</id>
+    <link href="http://chocoluffy.com/2015/08/31/rails%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-instagram-1/"/>
+    <id>http://chocoluffy.com/2015/08/31/rails开发笔记-instagram-1/</id>
     <published>2015-09-01T02:04:00.000Z</published>
     <updated>2015-12-25T00:23:04.000Z</updated>
     <content type="html"><![CDATA[<p>用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。</p>
@@ -1282,16 +1284,16 @@
     
     </summary>
     
-      <category term="rails" scheme="http://yoursite.com/tags/rails/"/>
+      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[希望是一种善意]]></title>
-    <link href="http://yoursite.com/2015/08/29/%E5%B8%8C%E6%9C%9B%E6%98%AF%E4%B8%80%E7%A7%8D%E5%96%84%E6%84%8F/"/>
-    <id>http://yoursite.com/2015/08/29/希望是一种善意/</id>
+    <link href="http://chocoluffy.com/2015/08/29/%E5%B8%8C%E6%9C%9B%E6%98%AF%E4%B8%80%E7%A7%8D%E5%96%84%E6%84%8F/"/>
+    <id>http://chocoluffy.com/2015/08/29/希望是一种善意/</id>
     <published>2015-08-30T02:46:47.000Z</published>
     <updated>2015-12-25T00:30:23.000Z</updated>
     <content type="html"><![CDATA[<p>如果我们真的有幸进入了孩子们的世界带给他们快乐和尚不熟悉的爱和体贴， 那当我们离开的时候， 我们会留下什么。</p>
@@ -1385,18 +1387,18 @@
     
     </summary>
     
-      <category term="公众号文章" scheme="http://yoursite.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
+      <category term="公众号文章" scheme="http://chocoluffy.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
     
-      <category term="读书笔记" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+      <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[ruby Nokogiri使用笔记[第一天]]]></title>
-    <link href="http://yoursite.com/2015/08/27/ruby-Nokogiri%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
-    <id>http://yoursite.com/2015/08/27/ruby-Nokogiri使用笔记-第一天/</id>
+    <link href="http://chocoluffy.com/2015/08/27/ruby-Nokogiri%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
+    <id>http://chocoluffy.com/2015/08/27/ruby-Nokogiri使用笔记-第一天/</id>
     <published>2015-08-28T02:52:07.000Z</published>
     <updated>2015-12-25T00:23:28.000Z</updated>
     <content type="html"><![CDATA[<p>将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧</p>
@@ -1407,9 +1409,9 @@
     
     </summary>
     
-      <category term="rails" scheme="http://yoursite.com/tags/rails/"/>
+      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
     
-      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
