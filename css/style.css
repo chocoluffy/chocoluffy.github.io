@@ -223,6 +223,9 @@ a {
   position: relative;
   z-index: 100;
 }
+#container #mobile-nav #header .header-author {
+  color: #fff;
+}
 #container #mobile-nav #header .header-menu {
   min-height: 100px;
   margin: 10px;
@@ -281,7 +284,7 @@ a {
     position: fixed;
     top: -13px;
     width: 100%;
-    color: #ddd;
+    color: #fff;
   }
   #container .overlay .slider-trigger {
     position: absolute;
@@ -317,7 +320,7 @@ a {
   }
   #container .article-info-index.article-info {
     padding-top: 10px;
-    margin: 0;
+    margin: 5px 2px -20px 2px;
     border-top: 1px solid #ddd;
   }
   #container .article-info-post.article-info {
@@ -960,8 +963,8 @@ a {
   float: right;
 }
 .article-info-index.article-info {
-  padding-top: 20px;
-  margin: 30px 30px 0 30px;
+  padding-top: 10px;
+  margin: 10px 30px -10px 30px;
   border-top: 1px solid #ddd;
 }
 .article-info-post.article-info {
