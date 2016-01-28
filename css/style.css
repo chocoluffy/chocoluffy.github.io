@@ -212,6 +212,10 @@ a {
   z-index: 99;
 }
 #container #mobile-nav #header {
+  background: -webkit-linear-gradient(#161525, rgba(0,0,0,0));
+  background: -moz-linear-gradient(#161525, rgba(0,0,0,0));
+  background: -ms-linear-gradient(#161525, rgba(0,0,0,0));
+  background: linear-gradient(#161525, rgba(0,0,0,0));
   padding: 10px 0 0 0;
 }
 #container #mobile-nav #header .profilepic {
