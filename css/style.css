@@ -224,7 +224,7 @@ a {
   z-index: 100;
 }
 #container #mobile-nav #header .header-menu {
-  height: auto;
+  min-height: 100px;
   margin: 10px;
 }
 #container #mobile-nav #header .header-menu ul {
@@ -540,7 +540,7 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   float: none;
-  min-height: 100px;
+  min-height: 150px;
   margin-left: -12px;
   text-align: center;
   display: -webkit-box;
