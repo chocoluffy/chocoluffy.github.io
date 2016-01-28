@@ -205,7 +205,6 @@ a {
   height: 110px;
   position: absolute;
   width: 100%;
-  background: #4d4d4d;
 }
 #container #mobile-nav .overlay.fixed {
   position: fixed;
@@ -233,7 +232,10 @@ a {
   margin: 3px;
 }
 #container .left-col {
-  background: #fff;
+  background: url("http://ww2.sinaimg.cn/large/c5ee78b5gw1f0fot0zisvj205u0dcdga.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   width: 300px;
   position: fixed;
   opacity: 1;
