@@ -540,7 +540,7 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   float: none;
-  min-height: 150px;
+  min-height: 100px;
   margin-left: -12px;
   text-align: center;
   display: -webkit-box;
@@ -975,7 +975,8 @@ a {
   padding-left: 30px;
 }
 .article-entry p {
-  margin-top: 10px;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 .article-entry p code,
 .article-entry li code {
