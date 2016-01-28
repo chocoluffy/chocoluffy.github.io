@@ -484,7 +484,7 @@ a {
   width: 100%;
 }
 #header a {
-  color: #696969;
+  color: #fff;
 }
 #header a:hover {
   color: #b0a0aa;
@@ -523,7 +523,7 @@ a {
 }
 #header .header-subtitle {
   text-align: center;
-  color: #999;
+  color: #fff;
   font-size: 14px;
   line-height: 25px;
   overflow: hidden;
@@ -550,6 +550,7 @@ a {
   cursor: default;
 }
 #header .header-menu li a {
+  color: #fff;
   font-size: 14px;
   min-width: 300px;
 }
