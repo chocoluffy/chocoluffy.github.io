@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chocoluffy.com/2016/01/26/Memory-allocation-in-C/</loc>
+    <lastmod>2016-02-01T14:52:04.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2016-01-28T17:38:03.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2016/01/23/%E8%B1%A1%E5%BE%81%E4%B8%8E%E7%AC%A6%E5%8F%B7/</loc>
     <lastmod>2016-01-28T17:36:53.000Z</lastmod>
   </url>
@@ -47,18 +57,8 @@
   </url>
   
   <url>
-    <loc>http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</loc>
-    <lastmod>2016-01-27T15:22:25.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://chocoluffy.com/about/index.html</loc>
     <lastmod>2016-01-27T01:44:41.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2016/01/26/Memory-allocation-in-C/</loc>
-    <lastmod>2016-01-26T22:43:40.000Z</lastmod>
   </url>
   
   <url>
