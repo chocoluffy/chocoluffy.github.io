@@ -253,9 +253,14 @@ a {
   height: 100%;
 }
 #container .left-col .overlay {
-  width: 100%;
-  height: 180px;
+  width: 15%;
+  right: 0;
+  height: 100%;
   position: absolute;
+  background: -webkit-linear-gradient(right, #eaeaea, rgba(0,0,0,0));
+  background: -moz-linear-gradient(right, #eaeaea, rgba(0,0,0,0));
+  background: -ms-linear-gradient(right, #eaeaea, rgba(0,0,0,0));
+  background: linear-gradient(to left, #eaeaea, rgba(0,0,0,0));
 }
 #container .left-col .intrude-less {
   width: 76%;
