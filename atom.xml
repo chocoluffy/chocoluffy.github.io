@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-02-01T14:52:04.000Z</updated>
+  <updated>2016-02-05T01:52:32.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Responsive web design[第三期]-js动画]]></title>
+    <link href="http://chocoluffy.com/2016/02/04/Responsive-web-design-%E7%AC%AC%E4%B8%89%E6%9C%9F-js%E5%8A%A8%E7%94%BB/"/>
+    <id>http://chocoluffy.com/2016/02/04/Responsive-web-design-第三期-js动画/</id>
+    <published>2016-02-05T01:48:22.000Z</published>
+    <updated>2016-02-05T01:52:32.000Z</updated>
+    <content type="html"><![CDATA[<p>Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations. </p>
+<a id="more"></a>
+<h2 id="Introduction">Introduction</h2><p>很多前端开发者会告诉你，你应该避免使用 JavaScript 动画。使用 CSS 动画会有更好的性能（更少的 CPU 时间）和更平滑的效果（更高的帧率）。</p>
+<p>然而，JavaScript 动画慢的原因经常是因为你用的库并没有为动画进行优化。优化过的 JavaScript 动画引擎（比如 GreenSock 或 Velocity.js）有堪比 CSS 动画的性能。某些情况下 JS 动画甚至比 CSS 动画更快！可参考下面这个性能的比较， 最后发现在某些情况下greensock的性能会比jquery好上5-6倍</p>
+<ul>
+<li><a href="https://www.greensock.com/js/speed.html" target="_blank" rel="external">greensock</a> </li>
+</ul>
+<h2 id="引入greensock_js库">引入greensock js库</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">TweenMax.fromTo(<span class="string">"#box"</span>,<span class="number">1</span>, &#123;</span><br><span class="line">    <span class="comment">// from</span></span><br><span class="line">    css: &#123;</span><br><span class="line">      left: <span class="string">"-200px"</span>,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,&#123;</span><br><span class="line">    <span class="comment">// to</span></span><br><span class="line">    css: &#123;</span><br><span class="line">      left: <span class="string">"200px"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 永久重复动画的选项</span></span><br><span class="line">    repeat: -<span class="number">1</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 反转、重新运行动画的选项</span></span><br><span class="line">    yoyo: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 改变 easing 类型</span></span><br><span class="line">    ease: Power2.easeInOut,</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>什么是fps? 帧率或画面更新率是用于测量显示帧数的量度[1]。测量单位为“每秒显示帧数”（Frame per Second，FPS，帧率）或“赫兹”，一般来说FPS用于描述影片、电子绘图或游戏每秒播放多少帧，而赫兹则描述显示屏的画面每秒更新多少次。<br>由于人类眼睛的特殊生理结构，如果所看画面之帧率高于每秒约10-12帧的时候，就会认为是连贯的[2]， 此现象称之为视觉暂留。这也就是为什么电影胶片是一格一格拍摄出来，然后快速播放的。但30帧仅仅是流畅，而非平滑连续，因此有更多帧率的产品推出也就不足为奇了。<br>有声电影的拍摄及播放帧率均为每秒24帧，对一般人而言已算可接受，但对早期的高动态电子游戏，尤其是射击游戏或竞速游戏来说，帧率少于每秒30帧的话，游戏就会显得不连贯，这是因为电脑会准确地显示瞬时的画面（像是一台快门速度无限大的相机），没有动态模糊使流畅度降低。而使用相同帧率的摄影机拍摄物体移动时，该场景的视频必定会表现所有移动物体在曝光时间内所有位置的完整组合。因此很多新世代电玩游戏以动态模糊为特色。在实际体验中，60帧相对于30帧有着更好的体验。</p>
+</blockquote>
+<p>在app.js里面我们用y来表现出垂直状态的变化</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> animateLogo()&#123;</span><br><span class="line">	TweenMax.fromTo(<span class="string">"#logo"</span>, <span class="number">2.5</span>, &#123;</span><br><span class="line">		css: &#123;</span><br><span class="line">			y: <span class="string">"-30px"</span>,</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;, &#123;</span><br><span class="line">		css: &#123;</span><br><span class="line">			y: <span class="string">"20px"</span>,</span><br><span class="line">		&#125;,</span><br><span class="line"></span><br><span class="line">		repeat: -<span class="number">1</span>,</span><br><span class="line">		yoyo: true,</span><br><span class="line">		ease: Sine.easeInOut,</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="GPU加速">GPU加速</h2><p>你可以把一个网页想象为一堆矩形。布局和绘图都是由 CPU 完成的：</p>
+<p>CPU 计算这些矩形的布局。矩形在哪里？它们有多大？<br>CPU 把矩形渲染成点阵位图（bitmap）。<br>之后如果可能的话，矩形被送到 GPU 以获得更好的性能：</p>
+<p>CPU 以点阵位图的形式上传到 GPU 中。<br>CPU 给 GPU 发送指令去处理这些位图。可能有平移/缩放/旋转，修改透明度，等等。<br>GPU 为什么比 CPU 快呢？假设我们把一个红色点阵和一个绿色点阵结合，CPU 不得不一个一个像素地做.</p>
+<p>总的来说，当修改 CSS 属性时，有三种可能的开销：</p>
+<p>重排（CPU。代价最高）。<br>重绘（CPU）。<br>变换, 旋转, 缩放, 透明度（GPU，代价最低）。</p>
+<p>因此在使用transform的时候， 我们常常用y在表示垂直方向的移动，这么做是不会重新排列布局的， 而是在局部位置偏移。</p>
+<blockquote>
+<p>注意： left 只对 position: absolute 生效 </p>
+</blockquote>
+<p>transform 的原理是由元素的定位位置（absolute or relative) 偏移。<br>用 GreenSocks 去修改 left 的话是改变定位位置。<br>也就是说 left 的动画改变布局，但 transform 动画不会改变布局。</p>
+<h2 id="多步骤动画">多步骤动画</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> t = <span class="keyword">new</span> TimelineMax();</span><br><span class="line">t.<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">1</span>,&#123;<span class="attribute">x</span>: <span class="number">200</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">0.5</span>,&#123;<span class="attribute">rotation</span>: <span class="string">"360deg"</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">1</span>,&#123;<span class="attribute">y</span>: <span class="number">100</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">0.5</span>,&#123;<span class="attribute">rotation</span>: <span class="string">"-=360deg"</span>&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="指示器(滚动指示条)">指示器(滚动指示条)</h2><p>当窗口滚动时, 你可以用 window.scrollY 来算出窗口正在展示的是哪一部分。那么现在的重点就在于， 怎样可以获得关于元素所在位置， 高度的各种属性， 比如<code>scrollY</code>, <code>offsetHeight</code>, <code>offsetTop</code></p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/6777506/offsettop-vs-jquery-offset-top/21880020#21880020" target="_blank" rel="external">offset的各种用法实例</a></li>
+</ul>
+<h2 id="取消link默认行为">取消link默认行为</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addSmoothScrolling</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> links = <span class="built_in">document</span>.querySelectorAll(<span class="string">"#slider-control a"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;links.length; i++)&#123;</span><br><span class="line">		<span class="keyword">var</span> link = links[i];</span><br><span class="line">		<span class="keyword">var</span> section = <span class="built_in">document</span>.querySelectorAll(<span class="string">"div.section"</span>)[i];</span><br><span class="line">		(<span class="function"><span class="keyword">function</span>(<span class="params">sec</span>)</span>&#123;</span><br><span class="line">			<span class="comment">// console.log(sec);</span></span><br><span class="line">			link.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">				<span class="comment">// console.log(sec.offsetTop+"px");</span></span><br><span class="line">				scrollToElement(sec);</span><br><span class="line">				e.preventDefault();</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)(section)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>首先用一个闭包来保证， 里面的函数在click的时候才之行， 而在那个时候， i 已经到了最后一个link的位置， 所以必须提前找到对应的section， 然后在闭包中传入。 同时需要在click事件的最后加上一个e.preventDefault， 来阻止link的默认行为， link的默认行为是直接跳转， 然后我们需要动画来辅助。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations. </p>]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
+    
+      <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Memory allocation in C]]></title>
@@ -797,6 +847,44 @@
   </entry>
   
   <entry>
+    <title><![CDATA[用reveal.js制作生日礼物]]></title>
+    <link href="http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/"/>
+    <id>http://chocoluffy.com/2015/12/24/用reveal-js制作生日派对礼物/</id>
+    <published>2015-12-24T16:55:00.000Z</published>
+    <updated>2015-12-25T00:34:41.000Z</updated>
+    <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
+    <summary type="html">
+    <![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[机器学习资料收集[持续更新]]]></title>
     <link href="http://chocoluffy.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/"/>
     <id>http://chocoluffy.com/2015/12/24/机器学习资料收集/</id>
@@ -1024,44 +1112,6 @@
       <category term="machine learning" scheme="http://chocoluffy.com/tags/machine-learning/"/>
     
       <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[用reveal.js制作生日礼物]]></title>
-    <link href="http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/"/>
-    <id>http://chocoluffy.com/2015/12/24/用reveal-js制作生日派对礼物/</id>
-    <published>2015-12-24T16:55:00.000Z</published>
-    <updated>2015-12-25T00:34:41.000Z</updated>
-    <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-    <summary type="html">
-    <![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>]]>
-    
-    </summary>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -1404,26 +1454,6 @@
       <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
       <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[ruby Nokogiri使用笔记[第一天]]]></title>
-    <link href="http://chocoluffy.com/2015/08/27/ruby-Nokogiri%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
-    <id>http://chocoluffy.com/2015/08/27/ruby-Nokogiri使用笔记-第一天/</id>
-    <published>2015-08-28T02:52:07.000Z</published>
-    <updated>2015-12-25T00:23:28.000Z</updated>
-    <content type="html"><![CDATA[<p>将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧</p>
-<a id="more"></a>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span> <span class="string">'nokogiri'</span></span><br><span class="line"><span class="built_in">require</span> <span class="string">'open-uri'</span></span><br><span class="line"></span><br><span class="line">BASE_WIKIPEDIA_URL = <span class="string">"http://en.wikipedia.org"</span></span><br><span class="line">LIST_URL = <span class="string">"#&#123;BASE_WIKIPEDIA_URL&#125;/wiki/List_of_Nobel_laureates"</span></span><br><span class="line">page = Nokogiri::HTML(<span class="built_in">open</span>(LIST_URL))</span><br><span class="line">rows = page.css(<span class="string">'div.mw-content-ltr table.wikitable tr'</span>)       </span><br><span class="line"></span><br><span class="line">rows[<span class="number">1.</span>.-<span class="number">2</span>].<span class="keyword">each</span> <span class="built_in">do</span> |row|</span><br><span class="line">  hrefs = row.css(<span class="string">"td a"</span>).map&#123; |<span class="operator">a</span>| </span><br><span class="line">    <span class="operator">a</span>[<span class="string">'href'</span>] <span class="keyword">if</span> <span class="operator">a</span>[<span class="string">'href'</span>].match(<span class="string">"/wiki/"</span>)</span><br><span class="line">  &#125;.compact.uniq</span><br><span class="line">  <span class="comment"># 对每一个row里面将不同的cell里面的link收集起来，然后filter</span></span><br><span class="line">  <span class="comment"># 同样长度的array在filter之后不符合要求的得到nil然后在compact方法的时候被删掉</span></span><br><span class="line">  <span class="comment"># 然后uniq是删去那些相同的link url</span></span><br><span class="line"></span><br><span class="line">  hrefs.<span class="keyword">each</span> <span class="built_in">do</span> |href|</span><br><span class="line">   puts href</span><br><span class="line">  <span class="function"><span class="keyword">end</span></span><br><span class="line"><span class="title">end</span></span></span><br></pre></td></tr></table></figure>]]></content>
-    <summary type="html">
-    <![CDATA[<p>将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧</p>]]>
-    
-    </summary>
-    
-      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
