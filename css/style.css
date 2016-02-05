@@ -988,7 +988,7 @@ a {
   padding-left: 30px;
 }
 .article-entry p {
-  margin-top: -5px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 .article-entry p code,
