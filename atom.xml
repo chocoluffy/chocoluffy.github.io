@@ -796,7 +796,7 @@
     <link href="http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/"/>
     <id>http://chocoluffy.com/2015/12/25/关于hexo博客最棒的素材和教程收集/</id>
     <published>2015-12-25T16:29:20.000Z</published>
-    <updated>2016-01-28T17:38:03.000Z</updated>
+    <updated>2016-02-05T02:58:09.000Z</updated>
     <content type="html"><![CDATA[<p>在搭建hexo博客的时候遇到的各种坑， 留下一些最棒的博文和大家分享!</p>
 <a id="more"></a>
 <ul>
@@ -819,6 +819,8 @@
 <li><p><a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html" target="_blank" rel="external">搭建一个免费的，无限流量的Blog—-github Pages和Jekyll入门</a></p>
 </li>
 <li><p><a href="http://www.jerryfu.net/post/search-engine-for-hexo-with-swiftype.html" target="_blank" rel="external">给Hexo博客添加站内搜索</a></p>
+</li>
+<li><p><a href="http://starsky.gitcafe.io/2015/05/05/Hexo%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E3%80%81%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/" target="_blank" rel="external">在Hexo博文里面添加音乐\gif\视频等的教程</a></p>
 </li>
 <li><p><a href="http://blog.sunnyxx.com/2014/03/07/hexo_customize/" target="_blank" rel="external">私人定制hexo主题，添加横幅logo</a></p>
 </li>
