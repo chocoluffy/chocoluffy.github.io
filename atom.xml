@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-02-18T22:57:43.000Z</updated>
+  <updated>2016-02-18T23:00:55.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,10 +19,10 @@
     <link href="http://chocoluffy.com/2016/02/18/Online-messege-sending%E5%90%8E%E7%AB%AFC%E5%AE%9E%E7%8E%B0%E7%89%88/"/>
     <id>http://chocoluffy.com/2016/02/18/Online-messege-sending后端C实现版/</id>
     <published>2016-02-18T22:51:30.000Z</published>
-    <updated>2016-02-18T22:57:43.000Z</updated>
+    <updated>2016-02-18T23:00:55.000Z</updated>
     <content type="html"><![CDATA[<p>原型是最近一门课的作业， 这是我在过程中记下的一些手记心得， 都是我认为是值得关注的地方。 未来会把这些后端函数加入TCP协议， 更贴近实战使用吧。基础的数据结构主要是链表， 算是用C自己再复习一遍链表实现。算法嘛？没有算法😂不需要考虑性能也就没有考虑算法优化咯。</p>
 <a id="more"></a>
-<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1f149fxx25oj21360w6n5z.jpg" alt="screenshot"></p>
+<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1f149fxx25oj21360w6n5z.jpg" alt="screenshot"><br><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1f149r4zqkaj213e0zgajd.jpg" alt="profileshot"></p>
 <h2 id="Ongoing_notes">Ongoing notes</h2><ul>
 <li>how to enter the interactive mode? the main function for interactive mode is process_args. Like the code snippet below, it keep reading inputs from stdin(then using <code>fgets</code> to feed it into a input buffer), then using tokenize function(making use of <code>strtok</code> to tokenize the input commands), then the input command is stored in <code>char ** cmdargv</code>, which just like <code>argv</code> we often use. <code>cmdargv[0]</code> stores the first command, like <code>profile</code> and so on. What is left is just to depend on the return value from each core functions to display a proper information back to the screen.  </li>
 </ul>
