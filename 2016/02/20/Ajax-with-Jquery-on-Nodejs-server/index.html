@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>One Piece</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+  <meta name="description" content="Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ajax(with Jquery) on Nodejs server">
+<meta property="og:url" content="http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/index.html">
+<meta property="og:site_name" content="One Piece">
+<meta property="og:description" content="Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢">
+<meta property="og:image" content="https://zippy.gfycat.com/FancyWeeBrontosaurus.gif">
+<meta property="og:updated_time" content="2016-02-20T19:44:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ajax(with Jquery) on Nodejs server">
+<meta name="twitter:description" content="Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢">
+  
+    <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Shunzhe Yu</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">技术就是信仰</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>简介</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/about">关于我</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/chocoluffy" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/chocoluffy" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100007218182748" title="facebook">facebook</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/C/" style="font-size: 11.43px;">C</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/javascript/" style="font-size: 17.14px;">javascript</a> <a href="/tags/machine-learning/" style="font-size: 10px;">machine learning</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/rails/" style="font-size: 14.29px;">rails</a> <a href="/tags/web-design/" style="font-size: 12.86px;">web design</a> <a href="/tags/伯克利交换/" style="font-size: 10px;">伯克利交换</a> <a href="/tags/公众号文章/" style="font-size: 20px;">公众号文章</a> <a href="/tags/商业IT评论/" style="font-size: 10px;">商业IT评论</a> <a href="/tags/商业评论/" style="font-size: 14.29px;">商业评论</a> <a href="/tags/收藏帖/" style="font-size: 10px;">收藏帖</a> <a href="/tags/日记/" style="font-size: 12.86px;">日记</a> <a href="/tags/社会人物/" style="font-size: 18.57px;">社会人物</a> <a href="/tags/虚拟现实/" style="font-size: 10px;">虚拟现实</a> <a href="/tags/读书笔记/" style="font-size: 15.71px;">读书笔记</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">
+						<p>多伦多大学计算机系</p>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Shunzhe Yu</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Shunzhe Yu</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/about">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/chocoluffy" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/chocoluffy" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100007218182748" title="facebook">facebook</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-Ajax-with-Jquery-on-Nodejs-server" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/" class="article-date">
+  	<time datetime="2016-02-20T19:37:25.000Z" itemprop="datePublished">2016-02-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Ajax(with Jquery) on Nodejs server
+    </h1>
+  
+
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢理解了才能够融会贯通， 现在的开发速度大大进步了。 同时也学会了如何允许CORS的请求， 和正则匹配的部分细节。<br><a id="more"></a></p>
+<p><img src="https://zippy.gfycat.com/FancyWeeBrontosaurus.gif" alt="project gif"></p>
+<h2 id="Requirements">Requirements</h2><p>Requesting 127.0.0.1:3000 should give your index page (with CSS and JS). For the subsequent requests, you should use AJAX to send requests to the Node server and update only some parts of the page with the response data. Ideally, you should return JSON data as a response and then format that using Javascript.</p>
+<h2 id="Ongoing_notes">Ongoing notes</h2><ul>
+<li><p>how to use Ajax to request the data instead of using url request to node server? <strong><em>Main idea is that to use <code>$.getJSON(&quot;http://127.0.0.1:3000/favs.json&quot;, function(...){...}</code> to send out the Ajax request, and set the nodejs script to be able to respond such json file request and properly handle CORS problem. The things left will be just styling and formatted retrieved information and display.</em></strong></p>
+</li>
+<li><p>nodejs. You might use Node.js to connect to a database (returning a result set from a query, say, or updating a record); deliver HTML, XML, or JSON content; connect to local files; or serve up static web pages like Apache or another web server.</p>
+</li>
+<li><p>ajax. The mechanism for sending data to and retrieving data from the server with Ajax is the XMLHttpRequest object. So, now that we have an XMLHttpRequest object created, what do we do with it? We use it to make HTTP requests. To do so, we initialize the object with the open() method, which takes three arguments. Like <code>xmlhttp.open(&quot;GET&quot;,&quot;Demo.xml&quot;,true);</code>.</p>
+<ul>
+<li>HEAD. <code>xmlhttp.open(&quot;HEAD&quot;,&quot;Demo&quot;,true);</code> and <code>xmlhttp.send(null)</code>.</li>
+<li>GET. <code>xmlhttp.open(&quot;GET&quot;,&quot;Demo?FirstName=Nat&amp;LastName=Dunn&quot;,true);</code>, the last argument is choose for true(asynchronous) or false(synchronous). The difference is that for synchronous version, browser has to wait for a response. The code below shows how to use Ajax solely to listen to the content change.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">start</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">        <span class="keyword">var</span> contentDiv = <span class="built_in">document</span>.getElementById(<span class="string">"Content"</span>);</span><br><span class="line"> </span><br><span class="line">        xmlhttp.open(<span class="string">"GET"</span>, <span class="string">"Demo?FirstName=Nat&amp;LastName=Dunn"</span>, <span class="literal">true</span>);</span><br><span class="line">        xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// handle Ajax response.</span></span><br><span class="line">            <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>) &#123;</span><br><span class="line">                contentDiv.innerHTML = xmlhttp.responseText;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        xmlhttp.send(<span class="literal">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    observeEvent(<span class="built_in">window</span>, <span class="string">"load"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"btnStart"</span>);</span><br><span class="line">        observeEvent(btn, <span class="string">"click"</span>, start);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Ajax in jquery. In general, Ajax does not work across domains. Exceptions are services that provide JSONP (JSON with Padding) support, which allow limited cross-domain functionality. JQuery provides Ajax support that abstracts away painful browser differences. It offers both a full-featured $.ajax() method, and simple convenience methods such as $.get(), $.getScript(), $.getJSON(), $.post(), and $.fn.load(). A working example of using Ajax of pulling image data from Flick referring <a href="http://www.w3school.com.cn/jquery/ajax_getjson.asp" target="_blank" rel="external">this post</a></p>
+</li>
+<li><p>How to avoid CORS(cross-origin resources sharing) error, refer to <a href="http://www.bennadel.com/blog/2327-cross-origin-resource-sharing-cors-ajax-requests-between-jquery-and-node-js.htm" target="_blank" rel="external">this post</a>. <strong><em>Main idea is that at the nodejs server part, we allow some origin and some type of content being CORS, thus we can request such resources at client part, which in this case in my own browser.</em></strong></p>
+</li>
+<li><p>How to regex all the href links inside a tweet? Especially how to do that in javascript? </p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// tweet here is a JSON object</span></span><br><span class="line"><span class="keyword">var</span> tweetString = <span class="built_in">JSON</span>.stringify(tweet);</span><br><span class="line"><span class="keyword">var</span> regex = <span class="regexp">/(https?:\/\/.*?)("|\s)/g</span>;</span><br><span class="line"><span class="keyword">var</span> matchlst = [];</span><br><span class="line">tweetString.replace(regex, <span class="function"><span class="keyword">function</span>(<span class="params">a, b, c, d</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a.slice(-<span class="number">1</span>)==<span class="string">'"'</span>)&#123;</span><br><span class="line">		a = a.slice(<span class="number">0</span>, -<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	matchlst.push(a);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p><strong><em>Main idea is that we first make a JSON object into a string, then we can do regex match on a string. we use //g to indicate that it is search globally. And then for those valid match, we trim out the trailing quote then store it into a list for later formatting use. </em></strong>. Note that we should make full use of the flag option provided with regex matching, refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="external">this post</a>. For example, <code>/.../g</code> is for global match, <code>/.../i</code> is for case-insensitive match.</p>
+<ul>
+<li>How to use Jquery to construct <code>div</code> or <code>a</code> elements? refer to <a href="http://stackoverflow.com/questions/867916/creating-a-div-element-in-jquery" target="_blank" rel="external">this post</a>, simply do the following: <strong><em>Here I make use of the Bootstrap alert styling!</em></strong></li>
+</ul>
+<figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="params">(<span class="string">"&lt;div&gt;"</span>)</span>.addClass<span class="params">('alert alert-warning')</span>.html<span class="params">(<span class="string">"&lt;strong&gt;Warning!&lt;/strong&gt; Such user or tweet does not exist. Please enter a valid query."</span>)</span>.prependTo<span class="params">(query_list)</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Avoid the <code>submit</code> event cause a page redirection or refresh? simply add a <code>return false</code> at the end of the submit function. Here is the submit function I wrote to process the info after AJAX from nodejs server. Note that my nodejs server host at <code>http://127.0.0.1:3000/</code>.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#queryform"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    		emptyAll();</span><br><span class="line">    		<span class="keyword">var</span> searchval = $(<span class="string">"#search"</span>).val();</span><br><span class="line">    		<span class="built_in">console</span>.log(searchval);</span><br><span class="line">    		$(<span class="string">"#list ul"</span>).addClass(<span class="string">"unseen"</span>);</span><br><span class="line">    		<span class="keyword">var</span> query_list = $(<span class="string">"#query"</span>);</span><br><span class="line">    		<span class="keyword">var</span> nameHash = &#123;&#125;;</span><br><span class="line">    		<span class="keyword">var</span> tweetidHash = &#123;&#125;; </span><br><span class="line">	    	$.getJSON(<span class="string">"http://127.0.0.1:3000/favs.json"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">tweets</span>)</span>&#123;</span><br><span class="line">				$.each(tweets, <span class="function"><span class="keyword">function</span>(<span class="params">i,tweet</span>)</span>&#123;</span><br><span class="line">					nameHash[tweet.user.screen_name] = tweet;</span><br><span class="line">					tweetidHash[tweet.id_str] = tweet;</span><br><span class="line">				&#125;);</span><br><span class="line">				<span class="keyword">if</span>(<span class="built_in">Object</span>.keys(nameHash).indexOf(searchval)&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> formattedText = <span class="string">"&lt;strong&gt;User screen name: &lt;/strong&gt;"</span>;</span><br><span class="line">					formattedText += searchval + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;strong&gt;Tweet: &lt;/strong&gt;&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;pre&gt;&lt;code&gt;"</span> + <span class="built_in">JSON</span>.stringify(nameHash[searchval], <span class="literal">null</span>, <span class="number">4</span>) + <span class="string">"&lt;/code&gt;&lt;/pre&gt;"</span>;</span><br><span class="line">					$(<span class="string">"&lt;p&gt;"</span>).html(formattedText).prependTo(query_list);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">Object</span>.keys(tweetidHash).indexOf(searchval)&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> formattedText = <span class="string">"&lt;strong&gt;Tweet ID: &lt;/strong&gt;"</span>;</span><br><span class="line">					formattedText += searchval + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;strong&gt;Tweet: &lt;/strong&gt;&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;pre&gt;&lt;code&gt;"</span> + <span class="built_in">JSON</span>.stringify(tweetidHash[searchval], <span class="literal">null</span>, <span class="number">4</span>) + <span class="string">"&lt;/code&gt;&lt;/pre&gt;"</span>;</span><br><span class="line">					$(<span class="string">"&lt;p&gt;"</span>).html(formattedText).prependTo(query_list);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span>&#123;		</span><br><span class="line">					$(<span class="string">"&lt;div&gt;"</span>).addClass(<span class="string">'alert alert-warning'</span>).html(<span class="string">"&lt;strong&gt;Warning!&lt;/strong&gt; Such user or tweet does not exist. Please enter a valid query."</span>).prependTo(query_list);</span><br><span class="line"></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;);</span><br><span class="line">	</span><br><span class="line">			$(<span class="string">"#query"</span>).removeClass(<span class="string">"unseen"</span>);</span><br><span class="line">			$(<span class="string">"#query"</span>).addClass(<span class="string">"seen"</span>); </span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">    	&#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Some JS tricks:<ul>
+<li><code>if...in...</code> equivalent type in JS as in python. use <code>Array.indexOf(element)&gt;=0</code> to know that if such element exist in this array.</li>
+<li>Get the keys array of a Hash. <code>Object.keys(hash)</code>.</li>
+<li>Get the last character from a string. <code>string.slice(-1)</code>.</li>
+<li>Trim out the last character from a string. <code>string = string.slice(0, -1)</code>.</li>
+<li>Use Jquery to get the value from submitted form. </li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/02/18/Online-messege-sending后端C实现版/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Online messege sending后端C实现版</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Ajax-with-Jquery-on-Nodejs-server" data-title="Ajax(with Jquery) on Nodejs server" data-url="http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/"></div>
+	<!-- 多说评论框 end -->
+
+<!-- Duoshuo Comment BEGIN -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chocoluffy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+</div>
+
+
+
+
+</div>
+      <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Shunzhe Yu
+    		<span id="busuanzi_container_site_pv">
+    			你是第<span id="busuanzi_value_site_pv"></span>个小伙伴
+			</span>
+    	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-41207871-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

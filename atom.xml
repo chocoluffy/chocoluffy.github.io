@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-02-18T23:00:55.000Z</updated>
+  <updated>2016-02-20T19:44:47.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Ajax(with Jquery) on Nodejs server]]></title>
+    <link href="http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/"/>
+    <id>http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/</id>
+    <published>2016-02-20T19:37:25.000Z</published>
+    <updated>2016-02-20T19:44:47.000Z</updated>
+    <content type="html"><![CDATA[<p>Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢理解了才能够融会贯通， 现在的开发速度大大进步了。 同时也学会了如何允许CORS的请求， 和正则匹配的部分细节。<br><a id="more"></a></p>
+<p><img src="https://zippy.gfycat.com/FancyWeeBrontosaurus.gif" alt="project gif"></p>
+<h2 id="Requirements">Requirements</h2><p>Requesting 127.0.0.1:3000 should give your index page (with CSS and JS). For the subsequent requests, you should use AJAX to send requests to the Node server and update only some parts of the page with the response data. Ideally, you should return JSON data as a response and then format that using Javascript.</p>
+<h2 id="Ongoing_notes">Ongoing notes</h2><ul>
+<li><p>how to use Ajax to request the data instead of using url request to node server? <strong><em>Main idea is that to use <code>$.getJSON(&quot;http://127.0.0.1:3000/favs.json&quot;, function(...){...}</code> to send out the Ajax request, and set the nodejs script to be able to respond such json file request and properly handle CORS problem. The things left will be just styling and formatted retrieved information and display.</em></strong></p>
+</li>
+<li><p>nodejs. You might use Node.js to connect to a database (returning a result set from a query, say, or updating a record); deliver HTML, XML, or JSON content; connect to local files; or serve up static web pages like Apache or another web server.</p>
+</li>
+<li><p>ajax. The mechanism for sending data to and retrieving data from the server with Ajax is the XMLHttpRequest object. So, now that we have an XMLHttpRequest object created, what do we do with it? We use it to make HTTP requests. To do so, we initialize the object with the open() method, which takes three arguments. Like <code>xmlhttp.open(&quot;GET&quot;,&quot;Demo.xml&quot;,true);</code>.</p>
+<ul>
+<li>HEAD. <code>xmlhttp.open(&quot;HEAD&quot;,&quot;Demo&quot;,true);</code> and <code>xmlhttp.send(null)</code>.</li>
+<li>GET. <code>xmlhttp.open(&quot;GET&quot;,&quot;Demo?FirstName=Nat&amp;LastName=Dunn&quot;,true);</code>, the last argument is choose for true(asynchronous) or false(synchronous). The difference is that for synchronous version, browser has to wait for a response. The code below shows how to use Ajax solely to listen to the content change.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">start</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">        <span class="keyword">var</span> contentDiv = <span class="built_in">document</span>.getElementById(<span class="string">"Content"</span>);</span><br><span class="line"> </span><br><span class="line">        xmlhttp.open(<span class="string">"GET"</span>, <span class="string">"Demo?FirstName=Nat&amp;LastName=Dunn"</span>, <span class="literal">true</span>);</span><br><span class="line">        xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// handle Ajax response.</span></span><br><span class="line">            <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>) &#123;</span><br><span class="line">                contentDiv.innerHTML = xmlhttp.responseText;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        xmlhttp.send(<span class="literal">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    observeEvent(<span class="built_in">window</span>, <span class="string">"load"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"btnStart"</span>);</span><br><span class="line">        observeEvent(btn, <span class="string">"click"</span>, start);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>Ajax in jquery. In general, Ajax does not work across domains. Exceptions are services that provide JSONP (JSON with Padding) support, which allow limited cross-domain functionality. JQuery provides Ajax support that abstracts away painful browser differences. It offers both a full-featured $.ajax() method, and simple convenience methods such as $.get(), $.getScript(), $.getJSON(), $.post(), and $.fn.load(). A working example of using Ajax of pulling image data from Flick referring <a href="http://www.w3school.com.cn/jquery/ajax_getjson.asp" target="_blank" rel="external">this post</a></p>
+</li>
+<li><p>How to avoid CORS(cross-origin resources sharing) error, refer to <a href="http://www.bennadel.com/blog/2327-cross-origin-resource-sharing-cors-ajax-requests-between-jquery-and-node-js.htm" target="_blank" rel="external">this post</a>. <strong><em>Main idea is that at the nodejs server part, we allow some origin and some type of content being CORS, thus we can request such resources at client part, which in this case in my own browser.</em></strong></p>
+</li>
+<li><p>How to regex all the href links inside a tweet? Especially how to do that in javascript? </p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// tweet here is a JSON object</span></span><br><span class="line"><span class="keyword">var</span> tweetString = <span class="built_in">JSON</span>.stringify(tweet);</span><br><span class="line"><span class="keyword">var</span> regex = <span class="regexp">/(https?:\/\/.*?)("|\s)/g</span>;</span><br><span class="line"><span class="keyword">var</span> matchlst = [];</span><br><span class="line">tweetString.replace(regex, <span class="function"><span class="keyword">function</span>(<span class="params">a, b, c, d</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a.slice(-<span class="number">1</span>)==<span class="string">'"'</span>)&#123;</span><br><span class="line">		a = a.slice(<span class="number">0</span>, -<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	matchlst.push(a);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p><strong><em>Main idea is that we first make a JSON object into a string, then we can do regex match on a string. we use //g to indicate that it is search globally. And then for those valid match, we trim out the trailing quote then store it into a list for later formatting use. </em></strong>. Note that we should make full use of the flag option provided with regex matching, refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="external">this post</a>. For example, <code>/.../g</code> is for global match, <code>/.../i</code> is for case-insensitive match.</p>
+<ul>
+<li>How to use Jquery to construct <code>div</code> or <code>a</code> elements? refer to <a href="http://stackoverflow.com/questions/867916/creating-a-div-element-in-jquery" target="_blank" rel="external">this post</a>, simply do the following: <strong><em>Here I make use of the Bootstrap alert styling!</em></strong></li>
+</ul>
+<figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="params">(<span class="string">"&lt;div&gt;"</span>)</span>.addClass<span class="params">('alert alert-warning')</span>.html<span class="params">(<span class="string">"&lt;strong&gt;Warning!&lt;/strong&gt; Such user or tweet does not exist. Please enter a valid query."</span>)</span>.prependTo<span class="params">(query_list)</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Avoid the <code>submit</code> event cause a page redirection or refresh? simply add a <code>return false</code> at the end of the submit function. Here is the submit function I wrote to process the info after AJAX from nodejs server. Note that my nodejs server host at <code>http://127.0.0.1:3000/</code>.</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#queryform"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    		emptyAll();</span><br><span class="line">    		<span class="keyword">var</span> searchval = $(<span class="string">"#search"</span>).val();</span><br><span class="line">    		<span class="built_in">console</span>.log(searchval);</span><br><span class="line">    		$(<span class="string">"#list ul"</span>).addClass(<span class="string">"unseen"</span>);</span><br><span class="line">    		<span class="keyword">var</span> query_list = $(<span class="string">"#query"</span>);</span><br><span class="line">    		<span class="keyword">var</span> nameHash = &#123;&#125;;</span><br><span class="line">    		<span class="keyword">var</span> tweetidHash = &#123;&#125;; </span><br><span class="line">	    	$.getJSON(<span class="string">"http://127.0.0.1:3000/favs.json"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">tweets</span>)</span>&#123;</span><br><span class="line">				$.each(tweets, <span class="function"><span class="keyword">function</span>(<span class="params">i,tweet</span>)</span>&#123;</span><br><span class="line">					nameHash[tweet.user.screen_name] = tweet;</span><br><span class="line">					tweetidHash[tweet.id_str] = tweet;</span><br><span class="line">				&#125;);</span><br><span class="line">				<span class="keyword">if</span>(<span class="built_in">Object</span>.keys(nameHash).indexOf(searchval)&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> formattedText = <span class="string">"&lt;strong&gt;User screen name: &lt;/strong&gt;"</span>;</span><br><span class="line">					formattedText += searchval + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;strong&gt;Tweet: &lt;/strong&gt;&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;pre&gt;&lt;code&gt;"</span> + <span class="built_in">JSON</span>.stringify(nameHash[searchval], <span class="literal">null</span>, <span class="number">4</span>) + <span class="string">"&lt;/code&gt;&lt;/pre&gt;"</span>;</span><br><span class="line">					$(<span class="string">"&lt;p&gt;"</span>).html(formattedText).prependTo(query_list);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">Object</span>.keys(tweetidHash).indexOf(searchval)&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> formattedText = <span class="string">"&lt;strong&gt;Tweet ID: &lt;/strong&gt;"</span>;</span><br><span class="line">					formattedText += searchval + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;strong&gt;Tweet: &lt;/strong&gt;&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;pre&gt;&lt;code&gt;"</span> + <span class="built_in">JSON</span>.stringify(tweetidHash[searchval], <span class="literal">null</span>, <span class="number">4</span>) + <span class="string">"&lt;/code&gt;&lt;/pre&gt;"</span>;</span><br><span class="line">					$(<span class="string">"&lt;p&gt;"</span>).html(formattedText).prependTo(query_list);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span>&#123;		</span><br><span class="line">					$(<span class="string">"&lt;div&gt;"</span>).addClass(<span class="string">'alert alert-warning'</span>).html(<span class="string">"&lt;strong&gt;Warning!&lt;/strong&gt; Such user or tweet does not exist. Please enter a valid query."</span>).prependTo(query_list);</span><br><span class="line"></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;);</span><br><span class="line">	</span><br><span class="line">			$(<span class="string">"#query"</span>).removeClass(<span class="string">"unseen"</span>);</span><br><span class="line">			$(<span class="string">"#query"</span>).addClass(<span class="string">"seen"</span>); </span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">    	&#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Some JS tricks:<ul>
+<li><code>if...in...</code> equivalent type in JS as in python. use <code>Array.indexOf(element)&gt;=0</code> to know that if such element exist in this array.</li>
+<li>Get the keys array of a Hash. <code>Object.keys(hash)</code>.</li>
+<li>Get the last character from a string. <code>string.slice(-1)</code>.</li>
+<li>Trim out the last character from a string. <code>string = string.slice(0, -1)</code>.</li>
+<li>Use Jquery to get the value from submitted form. </li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢理解了才能够融会贯通， 现在的开发速度大大进步了。 同时也学会了如何允许CORS的请求， 和正则匹配的部分细节。<br>]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
+    
+      <category term="nodejs" scheme="http://chocoluffy.com/tags/nodejs/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Online messege sending后端C实现版]]></title>
@@ -905,44 +969,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[用reveal.js制作生日礼物]]></title>
-    <link href="http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/"/>
-    <id>http://chocoluffy.com/2015/12/24/用reveal-js制作生日派对礼物/</id>
-    <published>2015-12-24T16:55:00.000Z</published>
-    <updated>2015-12-25T00:34:41.000Z</updated>
-    <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-    <summary type="html">
-    <![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>]]>
-    
-    </summary>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[机器学习资料收集[持续更新]]]></title>
     <link href="http://chocoluffy.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/"/>
     <id>http://chocoluffy.com/2015/12/24/机器学习资料收集/</id>
@@ -1174,6 +1200,44 @@
   </entry>
   
   <entry>
+    <title><![CDATA[用reveal.js制作生日礼物]]></title>
+    <link href="http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/"/>
+    <id>http://chocoluffy.com/2015/12/24/用reveal-js制作生日派对礼物/</id>
+    <published>2015-12-24T16:55:00.000Z</published>
+    <updated>2015-12-25T00:34:41.000Z</updated>
+    <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
+    <summary type="html">
+    <![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>]]>
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Agile web developing in rails 第一期]]></title>
     <link href="http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/"/>
     <id>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-第一期/</id>
@@ -1365,48 +1429,6 @@
       <category term="社会人物" scheme="http://chocoluffy.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E7%89%A9/"/>
     
       <category term="转载" scheme="http://chocoluffy.com/categories/%E8%BD%AC%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[rails开发笔记-instagram]]></title>
-    <link href="http://chocoluffy.com/2015/08/31/rails%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-instagram-1/"/>
-    <id>http://chocoluffy.com/2015/08/31/rails开发笔记-instagram-1/</id>
-    <published>2015-09-01T02:04:00.000Z</published>
-    <updated>2015-12-25T00:23:04.000Z</updated>
-    <content type="html"><![CDATA[<p>用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。</p>
-<a id="more"></a>
-<p><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qp26GB1Mm409ZKPy3NRDqbD6xeG6hgdjfyN9ic3bEQtwQGsArZ53PxmQ/0?wx_fmt=jpeg" alt="image"><br>用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。<br><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qB5xCWEgEH979oIdDSpPMiaW1oLIHtpVECbY3ZQxNBXnKw33rFBh2gMQ/0?wx_fmt=png" alt="image">  </p>
-<p>当鼠标hover其中一个照片时：  </p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qzKjPRxEFgZdPbcicyDcSxaRCAh34H7EKK5O2Na5gIEwlZbYjXchB3rQ/0?wx_fmt=png" alt="image">  </p>
-<p>网站的功能：输入一个image tag或者用户名， 可以看到这个类别下面最新发布的post， 鼠标hover的时候可以看到用户的post原文。  </p>
-<p>原理：其实这个很简单的， 就是调用了instagram的api，然后做的一个数据抓取和呈现而已。 不过在改进方向上面有很多可能。 我也会继续在功能上做出完善。比如：   </p>
-<ol>
-<li>我可以通过api得到用户之间的follow关系， 那么利用d3.js里面的一些三维模型函数库， 也就可以做出一张动态的关系网出来， (这种社交网络结构在商业ppt上可能比较常见吧)； 还记得大一去MIT决赛的时候， 中科大的那个结构网的作品， 结合图论上的一些shortest path, maximum flow的原理还可以找到最高效的关系连通path。在这个instagram的情景中，这个“最高效的”仍然需要人们定义， 比如可以定义成获得的点赞数最多， 社区声誉最好？购买力最高， 广告转化率最高等的指标。  </li>
-<li>通过获得的geolocation的数据， 可以结合一些数据处理包完成地图上tag发布热点区域的绘制， 用户发布的地点时间的集合，（现在吐槽最多的不就是O2O startup，现在都可以拿个google map的地图和一些头像就去融资了不是吗)。   </li>
-<li>获得某一个tag当前最新的， 或者最热的图片， 那其实也可以变相给用户推荐图片， 像feed一样， 不过这个时候用户看到的不就只是自己follow的人, 而是门户filter后的资源， 这个方向走下去基本就是社交媒体了， 那种编辑、发布的， 控制资源的channel。   </li>
-<li>对用户的描述做语义分析， 然后利用统计手段得到某个特定用户的发布资源的特点， 或者某个特定群体的common tag\interests。 实现方式也不算复杂， ruby里面的nokogiri gem可以parse掉html结构， 得到的json数据再去统计整合处理。 但就像我前几天做得一个小项目中遇到的问题。 英文可以很方面的根据词语出现过的频率来统计， 然后去掉预设的meaningless的词语后得到， 然后筛选可以得到概括； 但是对于中文， 毕竟parse之后只能得到单个的字， 而不是一个个完整意义的词语， 所以给后期过滤中心主体带来了很多困难， （为什么不能得到词语？ 答：技术上只能得到一个个单个字， 就像英文一个个单词一样， 你必须定义怎样算一个中文词语的规则， 以及怎样才是原文里面的那个词语搭配规则才能得到一个完整的意群）这也是当时困扰我的一个问题， 或许互联网上有很多人、企业遇到过这个问题， 我会继续去关注。  </li>
-<li>根据用户发布的post的点赞数或者是转发数量的一个统计分析、排序， 做出一个类似facebook的 the best of the years， 虽然在隐私上仍然有着一些抵触的情绪， 但是当用户看到这些曾经很棒的、很希望分享的照片不都挺惊讶和开心的吗。  </li>
-<li>打通twiiter \ weibo \ facebook api之间的联系？ 可以做到站内的消息多平台的发布和浏览。  </li>
-</ol>
-<p>等等…  </p>
-<p>这些基本都是我debug之后挺高兴地走去吃饭路上想到的一些延伸， 能写出来的都是大概心里有个想法知道方向在哪里的， 可以做出来的。 那些有些天马行空的就自己留着暂时不分享了。 其实这一天的时间里面我在前端设计上花的功夫比我在后端请求数据和处理的功夫多太多了， 而问题都基本都出在一些动效和细节上面， 不过一仔细起来， 真的很多地方的设计都学到了东西；  </p>
-<p> 比如怎样做出这样类似纸张微微隆起的漂亮阴影效果：  </p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz/oXichwD6Wg3liaa80EeoviaAB01GKkyjG6qzW0y2WJqB8oJXFdxXE3ZqCYcFvywrnXT97u69vUWvvTg93VxiaP9rNw/0?wx_fmt=png" alt="image">  </p>
-<p> 一些优雅的google fonts的收集、bootstrap里面超级flexible的grid system。还有很多很多， 之后的优化应该要集中在抽象上面了， 做到真正orthogonal \ extensible的模块真的不简单， 我函数里面hard-coding还是太多了。   </p>
-<p> 其实刚刚在一边写这些extensions的时候， 就感觉， 数据的意义和价值都是设计者思维的体现。 一场惊艳的交互， 一个有商业价值的发现， 都离不开设计者的融会贯通。  </p>
-<p> 希望能在全栈工程师的路上可以走的更远。  </p>
-<p>今天看到的一句很喜欢的话， 和大家分享：  </p>
-<p>孤独被抬举和神化， 寂寞也并不可耻。多数时候， 我们只是寂寞， 不必用孤独为自己加冕。  </p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>用了一天的时间完成了这个网站的开发，SearchInsta， 也算是一个阶段性的总结。</p>]]>
-    
-    </summary>
-    
-      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
