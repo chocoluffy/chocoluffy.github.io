@@ -7,16 +7,15 @@
   <title>One Piece</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
-  <meta name="description" content="将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧">
-<meta property="og:type" content="article">
-<meta property="og:title" content="ruby Nokogiri使用笔记[第一天]">
-<meta property="og:url" content="http://chocoluffy.com/2015/08/27/ruby-Nokogiri使用笔记-第一天/index.html">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="One Piece">
+<meta property="og:url" content="http://chocoluffy.com/archives/2016/03/index.html">
 <meta property="og:site_name" content="One Piece">
-<meta property="og:description" content="将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧">
-<meta property="og:updated_time" content="2015-12-25T00:23:28.000Z">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ruby Nokogiri使用笔记[第一天]">
-<meta name="twitter:description" content="将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧">
+<meta name="twitter:title" content="One Piece">
+<meta name="twitter:description">
   
     <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
   
@@ -181,138 +180,57 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-ruby-Nokogiri使用笔记-第一天" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap">
   
-    <div class="article-meta">
-      <a href="/2015/08/27/ruby-Nokogiri使用笔记-第一天/" class="article-date">
-  	<time datetime="2015-08-28T02:52:07.000Z" itemprop="datePublished">2015-08-27</time>
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/" class="archive-article-date">
+  	<time datetime="2016-03-06T14:38:41.000Z" itemprop="datePublished">Mar 6</time>
 </a>
-    </div>
+        </div>
+    	 
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      ruby Nokogiri使用笔记[第一天]
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a>
     </h1>
   
 
-
-      </header>
-      
-      <div class="article-info article-info-post">
-        
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rails/">rails</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-design/">web design</a></li></ul>
 	</div>
 
-        
+          
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/技术/">技术</a>
 	</div>
 
 
-
+        </div>
         <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>将wikipedia上面表格中的信息的一个整合， 重点：掌握关于筛选和array manipulation的技巧</p>
-<a id="more"></a>
-<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span> <span class="string">'nokogiri'</span></span><br><span class="line"><span class="built_in">require</span> <span class="string">'open-uri'</span></span><br><span class="line"></span><br><span class="line">BASE_WIKIPEDIA_URL = <span class="string">"http://en.wikipedia.org"</span></span><br><span class="line">LIST_URL = <span class="string">"#&#123;BASE_WIKIPEDIA_URL&#125;/wiki/List_of_Nobel_laureates"</span></span><br><span class="line">page = Nokogiri::HTML(<span class="built_in">open</span>(LIST_URL))</span><br><span class="line">rows = page.css(<span class="string">'div.mw-content-ltr table.wikitable tr'</span>)       </span><br><span class="line"></span><br><span class="line">rows[<span class="number">1.</span>.-<span class="number">2</span>].<span class="keyword">each</span> <span class="built_in">do</span> |row|</span><br><span class="line">  hrefs = row.css(<span class="string">"td a"</span>).map&#123; |<span class="operator">a</span>| </span><br><span class="line">    <span class="operator">a</span>[<span class="string">'href'</span>] <span class="keyword">if</span> <span class="operator">a</span>[<span class="string">'href'</span>].match(<span class="string">"/wiki/"</span>)</span><br><span class="line">  &#125;.compact.uniq</span><br><span class="line">  <span class="comment"># 对每一个row里面将不同的cell里面的link收集起来，然后filter</span></span><br><span class="line">  <span class="comment"># 同样长度的array在filter之后不符合要求的得到nil然后在compact方法的时候被删掉</span></span><br><span class="line">  <span class="comment"># 然后uniq是删去那些相同的link url</span></span><br><span class="line"></span><br><span class="line">  hrefs.<span class="keyword">each</span> <span class="built_in">do</span> |href|</span><br><span class="line">   puts href</span><br><span class="line">  <span class="function"><span class="keyword">end</span></span><br><span class="line"><span class="title">end</span></span></span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2015/08/29/希望是一种善意/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          希望是一种善意
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/08/27/告别卢安克/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">告别卢安克</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
-  
 </article>
+  
+  
+    </div></section>
+  
 
-
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">分享到: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-<div class="share_addthis">
-  <div class="sharing addthis_toolbox share">
-    <a class="addthis_button_facebook_like"></a>
-    <a class="addthis_button_tweet"></a>
-    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-    <a class="addthis_counter addthis_pill_style"></a>
-  </div>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
-</div>
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="ruby-Nokogiri使用笔记-第一天" data-title="ruby Nokogiri使用笔记[第一天]" data-url="http://chocoluffy.com/2015/08/27/ruby-Nokogiri使用笔记-第一天/"></div>
-	<!-- 多说评论框 end -->
-
-<!-- Duoshuo Comment BEGIN -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"chocoluffy"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = 'http://static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		|| document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- Duoshuo Comment END -->  
-
-</div>
-
-
-
+    
 
 </div>
       <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
@@ -340,8 +258,8 @@ var duoshuoQuery = {short_name:"chocoluffy"};
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
