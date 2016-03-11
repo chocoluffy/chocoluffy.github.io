@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-03-11T20:18:26.000Z</updated>
+  <updated>2016-03-11T20:23:58.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/03/11/MEAN%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91-%E7%AC%AC%E4%BA%8C%E6%9C%9F-%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%89%8B%E8%AE%B0/"/>
     <id>http://chocoluffy.com/2016/03/11/MEAN全栈开发-第二期-前端实战手记/</id>
     <published>2016-03-11T20:10:55.000Z</published>
-    <updated>2016-03-11T20:18:26.000Z</updated>
+    <updated>2016-03-11T20:23:58.000Z</updated>
     <content type="html"><![CDATA[<p>AirLoft的原型。 第二期， 基于Bootstrap的扁平化设计， 把所有涉及的页面的clickable prototype做出来， 再迁移到express application或者Angular SPA上， 虽然只是前端的prototype， 但是做好一些npm scripts的配置会让前端开发特别的高效和舒服， 也算是在入门了各种炫技的前端展示后， 逐步到一个full-fledged website的过渡。</p>
 <a id="more"></a>
 <p><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1f1tkjoatboj21kw0r7aic.jpg" alt="project screenshot"></p>
@@ -104,7 +104,7 @@
     
       <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
     
-      <category term="node" scheme="http://chocoluffy.com/tags/node/"/>
+      <category term="nodejs" scheme="http://chocoluffy.com/tags/nodejs/"/>
     
       <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
     
