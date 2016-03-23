@@ -1027,11 +1027,11 @@ a {
   display: inline-block;
   margin-right: 10px;
   float: left;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 .article-entry ul,
 .article-entry ol {
-  font-size: 14px;
+  font-size: 1em;
   margin: 10px 0px;
 }
 .article-entry li ul,
