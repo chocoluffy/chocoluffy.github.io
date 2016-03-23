@@ -984,13 +984,13 @@ a {
 }
 .article-entry {
   color: #34495e;
-  line-height: 1.8em;
+  line-height: 1.5em;
   padding-right: 30px;
   padding-left: 30px;
 }
 .article-entry p {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .article-entry p code,
 .article-entry li code {
