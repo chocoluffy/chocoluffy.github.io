@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-03-23T02:54:25.000Z</updated>
+  <updated>2016-03-23T02:55:29.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/03/22/MEAN%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91-%E7%AC%AC%E4%B8%89%E6%9C%9F-Mongo%E6%95%B0%E6%8D%AE%E5%BA%93%E6%90%AD%E5%BB%BAREST-API/"/>
     <id>http://chocoluffy.com/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/</id>
     <published>2016-03-23T02:50:55.000Z</published>
-    <updated>2016-03-23T02:54:25.000Z</updated>
+    <updated>2016-03-23T02:55:29.000Z</updated>
     <content type="html"><![CDATA[<p>AirLoft的原型。 第三期， 基于mongodb的mongoose来搭建RESTful API， 主要包括了关于各类涉及到对象的GET, POST, PUT DELETE方法的实现。 在postman上不断的模拟， 也最终搭好一个稳定且flexible的后端API处理， 剩下的就是将数据库和这个Express App的controller结合， 并在前端上灵活的应用啦！如果说前端就像一个人的妆容， 那么数据库以及API处理就是他的谈吐和内涵， 这个应用也有了scaling的能力， 加油!</p>
 <a id="more"></a>
 <p><img src="http://ww1.sinaimg.cn/large/c5ee78b5jw1f26lk141v7j21kw0tjn61.jpg" alt="screenshot"></p>
@@ -155,7 +155,7 @@
     <link href="http://chocoluffy.com/2016/03/11/MEAN%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91-%E7%AC%AC%E4%BA%8C%E6%9C%9F-%E5%89%8D%E7%AB%AF%E5%AE%9E%E6%88%98%E6%89%8B%E8%AE%B0/"/>
     <id>http://chocoluffy.com/2016/03/11/MEAN全栈开发-第二期-前端实战手记/</id>
     <published>2016-03-11T20:10:55.000Z</published>
-    <updated>2016-03-23T02:46:58.000Z</updated>
+    <updated>2016-03-23T03:00:41.000Z</updated>
     <content type="html"><![CDATA[<p>AirLoft的原型。 第二期， 基于Bootstrap的扁平化设计， 把所有涉及的页面的clickable prototype做出来， 再迁移到express application或者Angular SPA上， 虽然只是前端的prototype， 但是做好一些npm scripts的配置会让前端开发特别的高效和舒服， 也算是在入门了各种炫技的前端展示后， 逐步到一个full-fledged website的过渡。</p>
 <a id="more"></a>
 <p><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1f1tkjoatboj21kw0r7aic.jpg" alt="project screenshot"></p>
@@ -177,8 +177,7 @@
 <p>Bootstrap is not being processed by node engine, thus we put it under <code>public</code> folder. Inside the <code>layout.jade</code> file, we will include the bootstrap theme and js files we want to use in our project:</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">doctype html</span><br><span class="line">html</span><br><span class="line">  head</span><br><span class="line">    # <span class="operator"><span class="keyword">set</span> viewport metadata <span class="keyword">for</span> better display <span class="keyword">in</span> mobile device.</span><br><span class="line">  	meta(<span class="keyword">name</span>=<span class="string">'viewport'</span>, <span class="keyword">content</span>=<span class="string">'width=device-width, initial-scale=1.0'</span>)</span><br><span class="line">    title= title</span><br><span class="line">    # <span class="keyword">before</span> the <span class="keyword">style</span>.css <span class="keyword">file</span>, so that we can write <span class="keyword">style</span> <span class="keyword">to</span> override <span class="keyword">or</span> polish the <span class="keyword">style</span> <span class="keyword">in</span> bootstrap theme.</span><br><span class="line">    <span class="keyword">link</span>(rel=<span class="string">'stylesheet'</span>, href=<span class="string">'/bootstrap/css/cerulean.bootstrap.css'</span>)</span><br><span class="line">    <span class="keyword">link</span>(rel=<span class="string">'stylesheet'</span>, href=<span class="string">'/stylesheets/style.css'</span>)</span><br><span class="line">  <span class="keyword">body</span></span><br><span class="line">    <span class="keyword">block</span> <span class="keyword">content</span></span></span><br></pre></td></tr></table></figure>
 <p>After deciding on the urls we want to use, we will add corresponding controller into the index.js inside the routes folder. since we mainly have two function groups, we use <code>ctrlLocations</code> and <code>ctrlOthers</code> to represent these two main controller files.</p>
-<h2 id="Jade_in_Express">Jade in Express</h2><hr>
-<p>Let’s start to move the content in view into controller. When we look at the clickable prototype, especially its Jade view pages, we define Javascript object in hash in controller to store the data. <strong><em>We design data structure to hold data for views.</em></strong> Then in view folder, we can do: [1] use <code>=</code> to use that object’s value, or use <code>#{}</code> to <strong><em>insert</em></strong> the value into a string.</p>
+<h2 id="Jade_in_Express">Jade in Express</h2><p>Let’s start to move the content in view into controller. When we look at the clickable prototype, especially its Jade view pages, we define Javascript object in hash in controller to store the data. <strong><em>We design data structure to hold data for views.</em></strong> Then in view folder, we can do: [1] use <code>=</code> to use that object’s value, or use <code>#{}</code> to <strong><em>insert</em></strong> the value into a string.</p>
 <figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">h1= <span class="built_in">title</span> </span><br><span class="line">p &amp;nbsp; #&#123;<span class="built_in">title</span>&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>Pay attention to the format when using the programming syntax or inline coding. </p>
