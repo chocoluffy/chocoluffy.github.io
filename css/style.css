@@ -1003,6 +1003,7 @@ a {
   background-color: #f8f8f8;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  word-wrap: break-word;
 }
 .article-entry blockquote {
   display: block;
@@ -1137,7 +1138,14 @@ a {
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 }
 .article-entry pre code {
-  font-size: 14px;
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  word-wrap: break-word;
 }
 .article-entry table {
   width: 100%;
