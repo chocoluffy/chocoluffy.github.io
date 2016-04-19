@@ -996,13 +996,13 @@ a {
 }
 .article-entry p code,
 .article-entry li code {
-  padding: 1px 3px;
-  margin: 0 3px;
-  background: #ddd;
-  border: 1px solid #ccc;
-  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
-  word-wrap: break-word;
-  font-size: 14px;
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 .article-entry blockquote {
   display: block;
