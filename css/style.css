@@ -1005,15 +1005,54 @@ a {
   font-size: 14px;
 }
 .article-entry blockquote {
-  background: #ddd;
-  border-left: 5px solid #ccc;
-  padding: 15px 20px;
-  margin-top: 10px;
-  border-left: 5px solid #657b83;
-  background: #f6f6f6;
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+/*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+/*Borders - (Optional)*/
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+/*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
 }
-.article-entry blockquote p {
-  margin-top: 0;
+.article-entry blockquote::before {
+  content: "\201C"; /*Unicode for Left Double Quote*/
+/*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+/*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+.article-entry blockquote::after {
+/*Reset to make sure*/
+  content: "";
+}
+.article-entry blockquote a {
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+.article-entry blockquote a:hover {
+  color: #666;
+}
+.article-entry blockquote em {
+  font-style: italic;
 }
 .article-entry em {
   font-style: italic;
