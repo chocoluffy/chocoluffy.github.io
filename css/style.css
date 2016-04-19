@@ -289,7 +289,7 @@ a {
   }
   #container .header-author.fixed {
     position: fixed;
-    top: -20px;
+    top: -25px;
     width: 100%;
     color: #fff;
     background: -webkit-linear-gradient(#646464, rgba(200,200,200,0.5));
