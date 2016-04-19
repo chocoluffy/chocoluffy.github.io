@@ -1590,7 +1590,7 @@ a {
 .article-entry .gist .gist-file .gist-meta {
   background: #272822;
   color: highlight-comment;
-  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 0.85em Merriweather, serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
