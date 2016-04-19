@@ -1,20 +1,14 @@
-
 <!DOCTYPE html>
-<html lang="zh-Hans">
-    
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="One Piece">
-    <title>Flexbox website layout - Intro - One Piece</title>
-    <meta name="author" content="John Doe">
-    
-    
-    
-        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
-    
-    <meta name="description" content="My first attempt to build up a responsive website using Flexbox layout. Check Live Demo here!">
-<meta property="og:type" content="blog">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>One Piece</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+  <meta name="description" content="My first attempt to build up a responsive website using Flexbox layout. Check Live Demo here!">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Flexbox website layout - Intro">
 <meta property="og:url" content="http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/index.html">
 <meta property="og:site_name" content="One Piece">
@@ -25,184 +19,214 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flexbox website layout - Intro">
 <meta name="twitter:description" content="My first attempt to build up a responsive website using Flexbox layout. Check Live Demo here!">
-    
-    
-        
-    
-    
-    
-    
-    
-    <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css" type="text/css">
-    <link rel="stylesheet" href="/assets/css/jquery.fancybox-thumbs.css" type="text/css">
-    <link rel="stylesheet" href="/assets/css/tranquilpeak.css" type="text/css">
-    <!--STYLES END-->
-    
-    
+  
+    <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-    <body>
-        <div id="blog">
-            <!-- Define author's picture -->
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg" class="js-avatar">
+			
+		</a>
 
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Shunzhe Yu</a></h1>
+		</hgroup>
 
-    
+		
+		<p class="header-subtitle">技术就是信仰</p>
+		
 
-<header id="header" data-behavior="4">
-    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-    <h1 class="header-title">
-        <a class="header-title-link" href="/ ">One Piece</a>
-    </h1>
-    
-        
-            <a  class="header-right-picture "
-                href="/#about">
-        
-        
-        </a>
-    
-</header>
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>简介</li>
+						
+					</ul>
+				</div>
+			</div>
+		
 
-            <!-- Define author's picture -->
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/about">关于我</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/chocoluffy" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/chocoluffy" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100007218182748" title="facebook">facebook</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/C/" style="font-size: 11.25px;">C</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/javascript/" style="font-size: 18.75px;">javascript</a> <a href="/tags/machine-learning/" style="font-size: 10px;">machine learning</a> <a href="/tags/nodejs/" style="font-size: 12.5px;">nodejs</a> <a href="/tags/rails/" style="font-size: 13.75px;">rails</a> <a href="/tags/web-design/" style="font-size: 16.25px;">web design</a> <a href="/tags/伯克利交换/" style="font-size: 10px;">伯克利交换</a> <a href="/tags/公众号文章/" style="font-size: 20px;">公众号文章</a> <a href="/tags/商业IT评论/" style="font-size: 10px;">商业IT评论</a> <a href="/tags/商业评论/" style="font-size: 13.75px;">商业评论</a> <a href="/tags/收藏帖/" style="font-size: 10px;">收藏帖</a> <a href="/tags/日记/" style="font-size: 12.5px;">日记</a> <a href="/tags/社会人物/" style="font-size: 17.5px;">社会人物</a> <a href="/tags/虚拟现实/" style="font-size: 10px;">虚拟现实</a> <a href="/tags/读书笔记/" style="font-size: 15px;">读书笔记</a>
+					</div>
+				</section>
+				
+				
+				
 
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">
+						<p>多伦多大学计算机系</p>
+					</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
 
-<nav id="sidebar" data-behavior="4">
-    
-    
-        <ul class="sidebar-buttons">
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/ "
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-                    <span class="sidebar-button-desc">首頁</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-categories"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-                    <span class="sidebar-button-desc">分類</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-tags"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-                    <span class="sidebar-button-desc">標籤</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-archives"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-                    <span class="sidebar-button-desc">所有文章</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link st-search-show-outputs"
-                         href="/#search"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-                    <span class="sidebar-button-desc">搜尋</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/#about"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-                    <span class="sidebar-button-desc">關於</span>
-                </a>
-        </li>
-        
-    </ul>
-    
-        <ul class="sidebar-buttons">
-        
-    </ul>
-    
-        <ul class="sidebar-buttons">
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/atom.xml"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-                    <span class="sidebar-button-desc">Atom</span>
-                </a>
-        </li>
-        
-    </ul>
-    
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">Shunzhe Yu</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">Shunzhe Yu</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/about">关于我</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/chocoluffy" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/chocoluffy" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100007218182748" title="facebook">facebook</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
 </nav>
 
-            
-            <div id="main" data-behavior="4"
-                 class="
-                        hasCoverMetaIn
-                        ">
-                
-<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+      <div class="body-wrap"><article id="post-Flexbox-website-layout-Intro" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/01/12/Flexbox-website-layout-Intro/" class="article-date">
+  	<time datetime="2016-01-12T17:00:52.000Z" itemprop="datePublished">2016-01-12</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
     
     
-        <div class="post-header main-content-wrap text-left">
-    
-        <h1 class="post-title" itemprop="headline">
-            Flexbox website layout - Intro
-        </h1>
-    
-    <div class="post-meta">
-    <time itemprop="datePublished" content="Tue Jan 12 2016 12:00:52 GMT-0500">
-	
-		    Jan 12, 2016
-    	
-    </time>
-    
-        <span>分類 </span>
+      <header class="article-header">
         
-    <a class="category-link" href="/categories/技术/">技术</a>
+  
+    <h1 class="article-title" itemprop="name">
+      Flexbox website layout - Intro
+    </h1>
+  
 
 
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web-design/">web design</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+
+        <div class="clearfix"></div>
+      </div>
+      
     
-</div>
-</div>
-    
-    <div class="post-content markdown" itemprop="articleBody">
-        <div class="main-content-wrap">
-            <p>My first attempt to build up a responsive website using Flexbox layout. Check <a href="http://chocoluffy.com/flex-layout/">Live Demo</a> here!</p>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>My first attempt to build up a responsive website using Flexbox layout. Check <a href="http://chocoluffy.com/flex-layout/">Live Demo</a> here!</p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezx7kdisiuj21kw0r1di7.jpg" alt="overview"></p>
 <p>check <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="external">this post</a> on the complete guide about Flexbox layout.</p>
@@ -235,204 +259,168 @@
 <p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
 </blockquote>
 
-            
-        </div>
+      
     </div>
-    <div id="post-footer" class="post-footer main-content-wrap">
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/01/12/时间知道-持续更新/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
         
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">標籤</span><br/>
-                
-    <a class="tag tag--primary tag--small t-link" href="/tags/web-design/">web design</a>
+          时间知道[持续更新...]
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/01/09/现实和虚拟的边界/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">现实和虚拟的边界</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-            </div>
-        
-        <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/12/时间知道-持续更新/"  data-tooltip="时间知道[持续更新...]">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/09/现实和虚拟的边界/" data-tooltip="现实和虚拟的边界">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#">
-            
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-        
-            
-        
-    </div>
+  
 </article>
 
 
-
-                <footer id="footer" class="main-content-wrap">
-    <span class="copyrights">
-        Copyrights &copy; 2016 John Doe. All Rights Reserved.
-    </span>
-</footer>
-
-            </div>
-            
-                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
-                    <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/12/时间知道-持续更新/"  data-tooltip="时间知道[持续更新...]">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/01/09/现实和虚拟的边界/" data-tooltip="现实和虚拟的边界">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#">
-            
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
-    </ul>
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
 </div>
 
 
-                </div>
-                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
-    <ul class="share-options">
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-google-plus"></i><span class="">分享到 Google+</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/">
-                <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
-            </a>
-        </li>
-    </ul>
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
 </div>
-<div id="share-options-mask" class="share-options-mask"></div>
-            
-        </div>
-        
 
 
-<div id="about">
-    <div id="about-card">
-        <div id="about-btn-close">
-            <i class="fa fa-remove"></i>
-        </div>
-        
-            <h4 id="about-card-name">John Doe</h4>
-        
-            <h5 id="about-card-bio"><p>author.bio</p>
-</h5>
-        
-        
-            <h5 id="about-card-job">
-                <i class="fa fa-briefcase"></i>
-                <br/>
-                <p>author.job</p>
 
-            </h5>
-        
-        
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Flexbox-website-layout-Intro" data-title="Flexbox website layout - Intro" data-url="http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/"></div>
+	<!-- 多说评论框 end -->
+
+<!-- Duoshuo Comment BEGIN -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"chocoluffy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->  
+
+</div>
+
+
+
+
+</div>
+      <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 Shunzhe Yu
+    		<span id="busuanzi_container_site_pv">
+    			你是第<span id="busuanzi_value_site_pv"></span>个小伙伴
+			</span>
+    	</div>
     </div>
-</div>
-
-        
-<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
-    </body>
-    <!--SCRIPTS-->
-<script src="/assets/js/jquery.js" type="text/javascript"></script>
-<script src="/assets/js/jquery.fancybox.js" type="text/javascript"></script>
-<script src="/assets/js/jquery.fancybox-thumbs.js" type="text/javascript"></script>
-<script src="/assets/js/tranquilpeak.js" type="text/javascript"></script>
-<!--SCRIPTS END-->
-
+  </div>
+</footer>
+    </div>
     
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
 
 
 
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-41207871-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
 </html>
