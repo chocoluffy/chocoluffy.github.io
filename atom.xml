@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-04-24T02:04:54.000Z</updated>
+  <updated>2016-04-24T02:16:27.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/04/23/%E5%88%9B%E6%84%8F%E8%A7%86%E9%A2%91%E5%88%86%E5%B1%8F-HTML5-JS/"/>
     <id>http://chocoluffy.com/2016/04/23/创意视频分屏-HTML5-JS/</id>
     <published>2016-04-24T01:53:56.000Z</published>
-    <updated>2016-04-24T02:04:54.000Z</updated>
+    <updated>2016-04-24T02:16:27.000Z</updated>
     <content type="html"><![CDATA[<p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance" target="_blank" rel="external">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>
 <a id="more"></a>
 <p><img src="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0" alt="beoplay"></p>
@@ -44,7 +44,7 @@
 <p><img src="https://dl.dropboxusercontent.com/s/8y6fr3ib87yz9h7/screensplit2.0.gif?dl=0" alt="demo2.0"></p>
 <p>初衷： 因为从拍摄的角度， 大部分的时间， 我们都会把拍摄的主体放在视频的中间位置， 而如果我们只是简单地移动视窗而不改变视窗的主角位置的话， 我们在鼠标移动的时候， 就只能看到边边角的视频内容了， 这违反设计直觉。</p>
 <p>因此我们希望在移动视窗的同时， <strong>同时移动视频本身的位置来弥补视窗的偏差</strong>。相应的js代码是：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">offset = e.pageX - videoContainer.offsetLeft,</span><br><span class="line">offsetRight = videoContainer.offsetWidth - offset,</span><br><span class="line"></span><br><span class="line"><span class="comment">// for adaptive resizing:</span></span><br><span class="line">rightVideo.style.webkitTransform = <span class="string">"translate("</span> + offset / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br><span class="line">leftVideo.style.webkitTransform = <span class="string">"translate(-"</span> + offsetRight / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">offset = e.pageX - videoContainer.offsetLeft,</span><br><span class="line">offsetRight = videoContainer.offsetWidth - offset,</span><br><span class="line"></span><br><span class="line"><span class="comment">// for adaptive resizing:</span></span><br><span class="line">rightVideo.style.webkitTransform = <span class="string">"translate("</span> + offset / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br><span class="line">leftVideo.style.webkitTransform = <span class="string">"translate(-"</span> + offsetRight / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>画外音： 使用<code>transform</code>来改变DOM元素的位置相比直接改写他们的”定位属性“有很多好处， 其中最突出的就是， transform使用的是GPU， 而那些<code>top\left</code>等的定位元素使用的是CPU， 我们希望充分利用GPU和它提供的硬件加速， 同时<code>transform</code>也不会触发网页的repaint， 从而在渲染上更加的smooth和fast。</p>
 </blockquote>
