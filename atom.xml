@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-04-24T02:00:37.000Z</updated>
+  <updated>2016-04-24T02:04:54.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/04/23/%E5%88%9B%E6%84%8F%E8%A7%86%E9%A2%91%E5%88%86%E5%B1%8F-HTML5-JS/"/>
     <id>http://chocoluffy.com/2016/04/23/创意视频分屏-HTML5-JS/</id>
     <published>2016-04-24T01:53:56.000Z</published>
-    <updated>2016-04-24T02:00:37.000Z</updated>
+    <updated>2016-04-24T02:04:54.000Z</updated>
     <content type="html"><![CDATA[<p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance" target="_blank" rel="external">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>
 <a id="more"></a>
 <p><img src="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0" alt="beoplay"></p>
@@ -46,7 +46,7 @@
 <p>因此我们希望在移动视窗的同时， <strong>同时移动视频本身的位置来弥补视窗的偏差</strong>。相应的js代码是：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">offset = e.pageX - videoContainer.offsetLeft,</span><br><span class="line">offsetRight = videoContainer.offsetWidth - offset,</span><br><span class="line"></span><br><span class="line"><span class="comment">// for adaptive resizing:</span></span><br><span class="line">rightVideo.style.webkitTransform = <span class="string">"translate("</span> + offset / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br><span class="line">leftVideo.style.webkitTransform = <span class="string">"translate(-"</span> + offsetRight / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>画外音： 使用<code>transform</code>来改变DOM元素的位置相比直接改写他们的”定位属性“有很多好处， 其中最突出的就是， transform使用的是GPU， 而那些<code>top\left</code>等的定位元素使用的是CPU， 我们希望充分利用GPU和它提供的硬件加速， 同时<code>transform</code>也不会出发网页的repaint， 从而在渲染上更加的smooth和fast。</p>
+<p>画外音： 使用<code>transform</code>来改变DOM元素的位置相比直接改写他们的”定位属性“有很多好处， 其中最突出的就是， transform使用的是GPU， 而那些<code>top\left</code>等的定位元素使用的是CPU， 我们希望充分利用GPU和它提供的硬件加速， 同时<code>transform</code>也不会触发网页的repaint， 从而在渲染上更加的smooth和fast。</p>
 </blockquote>
 <p>那这个地方，<code>offset</code>就是鼠标在container里面距离左边边框的距离， 那么我们同时根据这个距离， 让左边的视频在视窗移动时， <strong>往相反的方向以一半的速度移动来弥补视窗偏差</strong>。使得可以在视窗移动的时候， 始终保持视频本身拍摄的主体视角也处于该视窗的主体视角! 原理可以参考这个图：</p>
 <p><img src="https://dl.dropboxusercontent.com/s/t99wbc4n3s8c4r7/screensplit3.0.gif?dl=0" alt="demo3.0"></p>
@@ -54,7 +54,7 @@
 <blockquote>
 <p>总结： HTML5对media文件更多功能上的支持使得我们可以更好的操作media文件， 包括视频的开始暂停， 以及各种音量的调节， 而这个程序实例， 是一个很好的对相关API的使用的一个示范和一个小小的创意细节。这个项目， 也是饭后和朋友聊天聊出来的实现方案，也希望看到更多的创意脑洞和美的设计!</p>
 </blockquote>
-<p>这个是这个项目的<a href="https://github.com/chocoluffy/screen-split-video" target="_blank" rel="external">github repo</a> 欢迎评论和star~</p>
+<p>这个是这个项目的<a href="https://github.com/chocoluffy/screen-split-video" target="_blank" rel="external">github repo</a>, 这个是项目的展示<a href="http://chocoluffy.com/screen-split-video/">demo</a> 欢迎评论和star~</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>]]>
