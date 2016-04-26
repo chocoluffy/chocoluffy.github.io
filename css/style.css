@@ -980,9 +980,9 @@ a {
   float: right;
 }
 .article-info-index.article-info {
-  padding-top: 10px;
-  margin: 10px 30px -10px 30px;
-  border-top: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin: 10px 30px -15px 30px;
+  border-bottom: 1px solid #ddd;
 }
 .article-info-post.article-info {
   padding: 0;
