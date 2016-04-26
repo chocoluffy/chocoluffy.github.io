@@ -330,9 +330,9 @@ a {
     padding: 0 24px;
   }
   #container .article-info-index.article-info {
-    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 5px 2px -20px 2px;
-    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
   }
   #container .article-info-post.article-info {
     margin: 0;
