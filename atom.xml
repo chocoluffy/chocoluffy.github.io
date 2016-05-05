@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-05-05T01:10:55.000Z</updated>
+  <updated>2016-05-05T01:18:31.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,13 +19,13 @@
     <link href="http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
     <id>http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/</id>
     <published>2016-05-05T01:03:58.000Z</published>
-    <updated>2016-05-05T01:10:55.000Z</updated>
+    <updated>2016-05-05T01:18:31.000Z</updated>
     <content type="html"><![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
 <a id="more"></a>
 <div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/de08e7610183200c.png" alt="aws"></div>
 
 <h2 id="概览">概览</h2><p>将之前用nodejs写的对<a href="https://cnodejs.org/?tab=good" target="_blank" rel="external">cnode社区精华帖</a>的爬虫放在AWS的EC2 instance下管理， 利用elastic beanstalk来对AWS资源进行分配和调控， 由于使用的还是free-tier的single instance， 则elastic beanstalk所特有的load-balancing的优势没有办法享受到。</p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/4c3c5794a3994678.png" alt="eb"></div>
+<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/69662ed94ae1f3ff.png" alt="ebean"></div>
 
 <p>一开始如果直接按照AWS给的方法, <code>eb init</code>初始化一个elastic beanstalk的项目， <code>eb create</code>创建一个environment和一个EC2实例, 然后<code>eb deploy</code>将.git里面committed的改动push到elastic beanstalk的生产环境里面， 然后用<code>eb open</code>来打开这个IP address， 如果之后需要终止这个app的话， 就<code>app terminate</code>就好了。</p>
 <div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/143c21d61cd3cf33.png" alt="heroku"></div>
