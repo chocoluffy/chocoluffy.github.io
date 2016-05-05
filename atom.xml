@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-04-28T01:49:28.000Z</updated>
+  <updated>2016-05-05T01:10:55.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[AWS elastic beanstalk使用体验]]></title>
+    <link href="http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
+    <id>http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/</id>
+    <published>2016-05-05T01:03:58.000Z</published>
+    <updated>2016-05-05T01:10:55.000Z</updated>
+    <content type="html"><![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
+<a id="more"></a>
+<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/de08e7610183200c.png" alt="aws"></div>
+
+<h2 id="概览">概览</h2><p>将之前用nodejs写的对<a href="https://cnodejs.org/?tab=good" target="_blank" rel="external">cnode社区精华帖</a>的爬虫放在AWS的EC2 instance下管理， 利用elastic beanstalk来对AWS资源进行分配和调控， 由于使用的还是free-tier的single instance， 则elastic beanstalk所特有的load-balancing的优势没有办法享受到。</p>
+<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/4c3c5794a3994678.png" alt="eb"></div>
+
+<p>一开始如果直接按照AWS给的方法, <code>eb init</code>初始化一个elastic beanstalk的项目， <code>eb create</code>创建一个environment和一个EC2实例, 然后<code>eb deploy</code>将.git里面committed的改动push到elastic beanstalk的生产环境里面， 然后用<code>eb open</code>来打开这个IP address， 如果之后需要终止这个app的话， 就<code>app terminate</code>就好了。</p>
+<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/143c21d61cd3cf33.png" alt="heroku"></div>
+
+<p>如果之前有使用heroku的经验的话， 其实你会发现其实amazon elastic beanstalk和heroku提供的服务非常相似， 实际上， 就这两家服务的定位而言， 都是platform as a service（Paas）， 也就是让developer可以将网站， 移动端部署在云端(cloud)不需要顾虑backend server和database的configuration。 而heroku本身相对于其他市面上的Paas在auto-scaling上做得更加出色， 它的computing resources(dyno)可以按照计算的需求而叠加从而满足在高流量下的网站后端流畅运行。而近几年amazon的elastic beanstalk的出现， 在这个Paas的市场给我们developer多一个很好的选择。就自己的使用而言， 感觉两者的command line interface其实设计得差不多， 都很简洁方便， 不过相比heroku， amazon的AWS还涉及租用到计算单元EC2, 就配置的操作来说， 你在配置AWS的服务上需要花更多的时间去设置环境变量和考虑密钥存储， 毕竟你可能有时候有ssh远程登陆amazon linux服务器的需求。相比之下， heroku的配置就是很简单的在<code>~/.bashrc</code>文件里面添加toolbelt文件夹的路径了。</p>
+<blockquote>
+<p>补充： 其实heroku它本身就是deploy在了AWS上的呀😂， 所以理论上在performance上不会有太大的差别。</p>
+</blockquote>
+<p>而在pricing上， 我认为AWS的价格和服务会更加的实惠， 毕竟考虑到你有一张信用卡就可以申请到你一年的free-tier的single instance的使用权利， 而single instance对一些小型的side project来说完完全全是够用的呀。即便不够用， 换成large instance也是several clicks away， 反正也是按用量收费， 经济实惠!</p>
+<h2 id="遇到的问题">遇到的问题</h2><p>第一个使用EB部署的应用是一个nodejs爬虫， 负责爬去cnode社区的精华帖， 然后返回一个json object收集精华帖的link, 标题和作者avatar， 为了显示的直观， 我并没有写前端的样式， 而是直接<code>JSON.stringify(json)</code>然后send会浏览器。之后如果仅仅作为REST API使用的话， 还需要在router上修饰一下URL。目前还是有点粗糙的。github<a href="https://github.com/AirLoft/web-scraper" target="_blank" rel="external">链接</a></p>
+<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/9fd7dd3d203d2d91.png" alt="demo"></div>
+
+<p>一开始我直接将在本地localhost运行的版本deploy到了elastic beanstalk上， 犹豫缺少了这一行配置<code>var port = process.env.PORT || 3000;</code>， 我直接把port定在了3000， 而elastic beanstalk是有应该占用的port的， 所以得到了“502 bad gateway error”。</p>
+<p>还有一点需要注意的是<code>npm start</code>这个npm script里面的配置， AWS elastic beanstalk会找到这条指令并去执行来执行相应的js文件， 比如我把写cnode网站的爬虫写在了cnode.js里面， 那么我需要</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"node cnode.js"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>来保证服务器执行的是我对cnode这个网站的爬虫。</p>
+<h2 id="Q&amp;A">Q&amp;A</h2><p>以下内容是我在自己折腾Elastic Beanstalk的时候收集的一些比较简练而准确的总结， 在这里分享给大家。 其实amazon的AWS教程写得非常详细的， 大家自己如果有能力最好去尝试自己阅读和实践它给的例子!</p>
+<p><strong>How elastic beanstalk works?</strong><br>Now you have a web app running in AWS Elastic Beanstalk. As Elastic Beanstalk creates your environment, it <strong>interacts with several other AWS services</strong> to create the resources required to run your web app securely and resiliently.</p>
+<p><strong>How EC2 instance works?</strong><br>EC2 instance – A virtual machine that runs Amazon Linux or Microsoft Windows Server and that is configured to run web apps on the platform that you choose.<br>Each platform runs a different set of software, configuration files, and scripts to support a specific language version, framework, web container, or combination thereof. Most platforms <strong>use either Apache or nginx as a reverse proxy</strong> that sits in front of your web app, forwards requests to it, serves static assets, and generates access and error logs.</p>
+<p><strong>What is reverse proxy server?</strong><br>A proxy server is a go-between or intermediary server that forwards requests for content from multiple clients to different servers across the Internet. A reverse proxy server is a type of proxy server that typically <strong>sits behind the firewall in a private network</strong> and directs client requests to the appropriate backend server. A reverse proxy provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.</p>
+<p>Common uses for a reverse proxy server include:</p>
+<ul>
+<li>Load balancing – A reverse proxy server can act as a “traffic cop,” sitting in front of your backend servers and distributing client requests across a group of servers in a manner that maximizes speed and capacity utilization while ensuring no one server is overloaded, which can degrade performance. If a server goes down, the load balancer redirects traffic to the remaining online servers.</li>
+<li>Web acceleration – Reverse proxies can compress inbound and outbound data, as well as cache commonly requested content, both of which speed up the flow of traffic between clients and servers. They can also perform additional tasks such as SSL encryption to take load off of your web servers, thereby boosting their performance.</li>
+<li>Security and anonymity – By intercepting requests headed for your backend servers, a reverse proxy server protects their identities and acts as an additional defense against security attacks. It also ensures that multiple servers can be accessed from a single record locator or URL regardless of the structure of your local area network.</li>
+</ul>
+<p><strong>What is amazon s3 bucket?</strong><br>Amazon S3 bucket – A storage location for your source code, logs, and other artifacts that are created when you use Elastic Beanstalk.</p>
+<p><strong>How your domain will look like?</strong><br>Domain name – A domain name that routes to your web app in the form subdomain.region.elasticbeanstalk.com.</p>
+<p><strong>When should I use AWS Lambda versus Amazon EC2?</strong></p>
+<p>Amazon Web Services offers a set of compute services to meet a range of needs.</p>
+<p>Amazon EC2 offers flexibility, with a wide range of instance types and the option to customize the operating system, network and security settings, and the entire software stack, allowing you to easily move existing applications to the cloud. With Amazon EC2 you are responsible for provisioning capacity, monitoring fleet health and performance, and designing for fault tolerance and scalability. AWS Elastic Beanstalk offers an easy-to-use service for deploying and scaling web applications in which you retain ownership and full control over the underlying EC2 instances. Amazon EC2 Container Service is a scalable management service that supports Docker containers and allows you to easily run distributed applications on a managed cluster of Amazon EC2 instances.<br>AWS Lambda makes it easy to execute code in response to events, such as changes to Amazon S3 buckets, updates to an Amazon DynamoDB table, or custom events generated by your applications or devices. With Lambda you do not have to provision your own instances; Lambda performs all the operational and administrative activities on your behalf, including capacity provisioning, monitoring fleet health, applying security patches to the underlying compute resources, deploying your code, running a web service front end, and monitoring and logging your code. AWS Lambda provides easy scaling and high availability to your code without additional effort on your part.</p>
+<p><strong>To create a hosted zone in Amazon Route 53</strong></p>
+<ul>
+<li>Open the Amazon Route 53 management console.</li>
+<li>Choose Hosted Zones.</li>
+<li>Choose Create Hosted Zone.</li>
+</ul>
+<p>For Domain Name, type the domain name that you own. For example: example.com.</p>
+<p>Choose Create.</p>
+<p>Next, add a CNAME record to the hosted zone. A CNAME record registers a domain name that you own as an alias of your web app environment’s elasticbeanstalk.com subdomain.</p>
+<p>When an Amazon Route 53 DNS server receives a name request for your custom domain name, it resolves to the elasticbeanstalk.com subdomain, which resolves to the public DNS name of your Elastic Load Balancing load balancer, which resolves to your web app’s IP address.</p>
+<p>Note<br>In a single-instance environment, the elasticbeanstalk.com subdomain resolves to an Elastic IP address attached to the instance running your web app.</p>
+<h2 id="参考链接">参考链接</h2><ul>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html#set_aes_home_linux" target="_blank" rel="external">setting up EC2 cli on mac</a> we store EC2 api tool, aws-access-key and aws-secret-key in <code>~/.bashrc</code>, so that we can use the shortcut commands to do <code>init\create\deploy\open</code>. The common commands are listed as followed.</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">eb init</span><br><span class="line">eb create</span><br><span class="line">eb deploy</span><br><span class="line">eb open</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://docs.aws.amazon.com/quickstarts/latest/webapp/welcome.html" target="_blank" rel="external">A high level explanation of what EB does and what can we config</a> trying to give a high-level description of what is the use and purpost of each AWS service, including EC2, the reverse proxy server sitting in front of servers, router 53 and so on so forth.</li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html" target="_blank" rel="external">A detailed explanation of how to host an express app on EB full-step tutorial</a> The tutorial uses an express app to explain how to use EB.</li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html" target="_blank" rel="external">How to deploy a nodejs project to EB</a> similar to the previous tutorial post.</li>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html" target="_blank" rel="external">how to connect to EC2 instance using ssh</a><br>by using <code>ec2-describe-instances</code>, we can get the id of my instance.</li>
+</ul>
+<p>So after we have created an project, we go to the elastic beanstalk console, we will see the dashboard of all the application I host on EB such as the recent one(webscraper). The following is a screen capture of the configuration of that application on EB as in a free-tier plan:<br><img src="http://ac-TC2Vc5Tu.clouddn.com/7c3a33a6cfab0843.png" alt="configuration"> In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.</p>
+<p>When you turn on load balancing, Elastic Beanstalk creates a load balancer, deletes the Elastic IP address from your environment, and provisions a new EC2 instance. Elastic Beanstalk also updates DNS records to point the web app’s domain name to the load balancer instead of to the IP address of a single instance.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>]]>
+    
+    </summary>
+    
+      <category term="AWS" scheme="http://chocoluffy.com/tags/AWS/"/>
+    
+      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
+    
+      <category term="nodejs" scheme="http://chocoluffy.com/tags/nodejs/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[[第一期]AirLoft组织动员宣言]]></title>
@@ -1318,61 +1400,6 @@
       <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
     
       <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[ActionCable in Rail5 实战笔记]]></title>
-    <link href="http://chocoluffy.com/2015/12/26/ActionCable-in-Rail5-%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/"/>
-    <id>http://chocoluffy.com/2015/12/26/ActionCable-in-Rail5-实战笔记/</id>
-    <published>2015-12-26T17:42:33.000Z</published>
-    <updated>2016-01-07T15:15:51.000Z</updated>
-    <content type="html"><![CDATA[<p>rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备</p>
-<a id="more"></a>
-<ul>
-<li>整个流程<br>After <code>rails new chat</code> and <code>bundle install</code>, we add some related in Gemfile, so now it will look like this:</li>
-</ul>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">source <span class="string">'https://rubygems.org'</span></span><br><span class="line"></span><br><span class="line">gem <span class="string">'rails'</span>, <span class="string">'4.2.3'</span></span><br><span class="line">gem <span class="string">'actioncable'</span>, <span class="symbol">github:</span> <span class="string">'rails/actioncable'</span></span><br><span class="line"></span><br><span class="line">gem <span class="string">'sqlite3'</span></span><br><span class="line">gem <span class="string">'coffee-rails'</span>, <span class="string">'~&gt; 4.1.0'</span></span><br><span class="line">gem <span class="string">'jquery-rails'</span></span><br><span class="line">gem <span class="string">'turbolinks'</span></span><br><span class="line">gem <span class="string">'puma'</span></span><br><span class="line">gem <span class="string">'uglifier'</span>, <span class="string">'&gt;= 1.3.0'</span></span><br><span class="line"></span><br><span class="line">group <span class="symbol">:development</span>, <span class="symbol">:test</span> <span class="keyword">do</span></span><br><span class="line">  gem <span class="string">'byebug'</span></span><br><span class="line">  gem <span class="string">'spring'</span></span><br><span class="line">  gem <span class="string">'web-console'</span>, <span class="string">'~&gt; 2.0'</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<p>[1] in routes.rb, we set the root page to be<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">root</span> ‘sessions<span class="comment">#new’</span></span><br></pre></td></tr></table></figure></p>
-<p>which means that it will first find the SessionsController’s new method and implement it. We know in rails that when it runs a controller method, it will also render the corresponding views html.erb in view folder. Thus the <code>views/sessions/new.html.erb</code> will be first rendered. </p>
-<p>Further observing in routes.rb:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="constant">Rails.</span>application.routes.draw <span class="keyword">do</span></span><br><span class="line">  resources <span class="symbol">:messages</span>, <span class="symbol">only:</span> [<span class="symbol">:index</span>, <span class="symbol">:create</span>]</span><br><span class="line">  resources <span class="symbol">:sessions</span>, <span class="symbol">only:</span> [<span class="symbol">:new</span>, <span class="symbol">:create</span>]</span><br><span class="line">  root <span class="string">'sessions#new'</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
-<p>we find the use of <code>resources</code>, which means we treat those objects as RESTFUL as we could, those objects in their controllers will have all seven methods like new, create, update, destroy and so on which corresponds to the Http Verbs like post, get and so on.</p>
-<h2 id="Then,_we_look_at_the_new-html-erb">Then, we look at the new.html.erb</h2><figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span>&lt;%=<span class="ruby"> form_for <span class="symbol">:session</span>, <span class="symbol">url:</span> sessions_path <span class="keyword">do</span> |f| </span>%&gt;<span class="xml"></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.label <span class="symbol">:username</span>, <span class="string">'Enter a name'</span> </span>%&gt;<span class="xml"><span class="tag">&lt;<span class="title">br</span>/&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.text_field <span class="symbol">:username</span> </span>%&gt;<span class="xml"> <span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.submit <span class="string">'Start chatting'</span> </span>%&gt;<span class="xml"></span><br><span class="line"></span>&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;<span class="xml"></span></span><br></pre></td></tr></table></figure>
-<p>where <code>:session</code> is the name for this form, when in use in SessionsController, we obtain the information in this form by<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cookies.signed[<span class="link_label">:username</span>] = params[<span class="link_label">:session</span>][<span class="link_reference">:username</span>]</span><br></pre></td></tr></table></figure></p>
-<p>And <code>url: sessions_path</code> is for directing the action to SessionsController#create.</p>
-<h2 id="In_MessagesController-rb">In MessagesController.rb</h2><p>we use index to render the view<br><figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">Signed in as @</span>&lt;%=<span class="ruby"> cookies.signed[<span class="symbol">:username</span>] </span>%&gt;<span class="xml">.</span><br><span class="line"><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"messages"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">br</span>&gt;</span><span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span>&lt;%=<span class="ruby"> form_for <span class="symbol">:message</span>, <span class="symbol">url:</span> messages_path, <span class="symbol">remote:</span> <span class="keyword">true</span>, <span class="symbol">id:</span> messages-form <span class="keyword">do</span> |f| </span>%&gt;<span class="xml"></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.label <span class="symbol">:body</span>, <span class="string">'Enter a message:'</span> </span>%&gt;<span class="xml"> <span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.text_field <span class="symbol">:body</span> </span>%&gt;<span class="xml"> <span class="tag">&lt;<span class="title">br</span>&gt;</span></span><br><span class="line">	</span>&lt;%=<span class="ruby"> f.submit <span class="string">'Send message'</span> </span>%&gt;<span class="xml"></span><br><span class="line"></span>&lt;%<span class="ruby"> <span class="keyword">end</span> </span>%&gt;<span class="xml"></span></span><br></pre></td></tr></table></figure></p>
-<p>where the cookies are carrying the parameters we need in another controller, while the empty <code>div</code> will eventually be filled with previous content. As for the form, it will pretty similar as the SessionsController#new.</p>
-<ul>
-<li>here we use <code>remote: true</code>, which is calling with Ajax. In usual case, we will need to specify the partial js file we want to implement in MessagesContrller#create method. * But, here we just want it to reload again without refreshing the page.</li>
-</ul>
-<h2 id="ActionCable">ActionCable</h2><p>ActionCable uses Redis for publishihng and subscribing to the messages, so we need to configure Redis in config/redis/cable.yml. You will need Redis installed and running for ActionCable to work.</p>
-<h2 id="Redis">Redis</h2><p>reds is a key-value store, often referred to as a NoSQL database. Key features are that: [1] the data can be retrieved by key later in use. [2] the key-value will be stored permanently.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator"><span class="keyword">SET</span> <span class="keyword">server</span>:<span class="keyword">name</span> “fido”</span><br><span class="line"><span class="keyword">GET</span> <span class="keyword">server</span>:<span class="keyword">name</span></span><br><span class="line">DEL <span class="keyword">server</span>:<span class="keyword">name</span></span><br><span class="line">INCR <span class="keyword">count</span></span></span><br></pre></td></tr></table></figure>
-<p>Compared with<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = GET <span class="keyword">count</span></span><br><span class="line">x = x + 1</span><br><span class="line"><span class="keyword">SET</span> <span class="keyword">count</span> x</span><br></pre></td></tr></table></figure></p>
-<p>we choose to use INCR because it is a atomic operation which will work as expected if multiple users want to access this value.<br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">EXPIRE <span class="keyword">server</span>:name <span class="number">120</span> <span class="comment">//after 120s this value will vanish</span></span><br><span class="line">TTL <span class="keyword">server</span>:name <span class="comment">// obtain after how long it will vanish</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="List_operation">List operation</h3><p><code>RPUSH, LPUSH, LLEN, LRANGE, LPOP, RPOP</code></p>
-<h3 id="Set_operation">Set operation</h3><p><code>SADD, SREM, SISMEMBER, SMEMBERS, SUNION</code><br>where <code>SMEMBERS</code> returns a list of all members of this set.</p>
-<h3 id="Sorted_Set">Sorted Set</h3><p><code>ZADD, ZRANGE</code></p>
-<h3 id="Hashes">Hashes</h3><p><code>HSET, HGETALL, HMSET, HGET, HINCRBY, HDEL</code> like</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HMSET user:<span class="number">1001</span> name <span class="string">"Mary Jones"</span> password <span class="string">"hidden"</span> email <span class="string">"mjones@example.com"</span></span><br><span class="line">HGETALL user:<span class="number">1001</span></span><br></pre></td></tr></table></figure>
-<h2 id="Adding_our_MessagesChannel">Adding our MessagesChannel</h2><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># app/channels/messages_channel.rb</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MessagesChannel</span> <span class="inheritance">&lt; <span class="parent">ApplicationCable::Channel</span></span></span></span><br><span class="line">  <span class="function"><span class="keyword">def</span> <span class="title">subscribed</span></span></span><br><span class="line">    stream_from <span class="string">'messages'</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<p>whenever a client subscribes to MessageChannel, the <code>#subscribed</code> method will be called, which starts streaming anything you broadcast to the “messages” stream.</p>
-<h2 id="Future_learning">Future learning</h2><ul>
-<li><a href="https://gorails.com/episodes/rails-5-actioncable-websockets" target="_blank" rel="external">Rails 5’s ActionCable and Websockets Introduction</a></li>
-<li><a href="https://github.com/rails/actioncable-examples" target="_blank" rel="external">Action Cable Examples</a></li>
-</ul>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>rails5 ActionCable in chatroom, 为之后开发狼人多人游戏做准备</p>]]>
-    
-    </summary>
-    
-      <category term="rails" scheme="http://chocoluffy.com/tags/rails/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
