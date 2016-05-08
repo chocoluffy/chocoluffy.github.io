@@ -7,18 +7,52 @@
   <title>One Piece</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
-  <meta name="description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
-<meta property="og:type" content="article">
-<meta property="og:title" content="D3js in 3D [Animation focus]">
-<meta property="og:url" content="http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/index.html">
+  <meta name="description" content="我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。
+这里，是我分享生活的地方。
+思考点滴
+象征与符号-记查理周刊里人们的困境
+一派胡言[第一期]-读书是赴会一场缺席的对话
+我们需要什么样子的理想主义？
+On vision
+On terrorism-what would be the next attack?
+
+读书笔记
+关于创业, 那些不能说的秘密
+如果暑假没有尽头
+一">
+<meta property="og:type" content="website">
+<meta property="og:title" content="生活">
+<meta property="og:url" content="http://chocoluffy.com/life/index.html">
 <meta property="og:site_name" content="One Piece">
-<meta property="og:description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
-<meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
-<meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
-<meta property="og:updated_time" content="2016-01-26T03:16:30.000Z">
+<meta property="og:description" content="我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。
+这里，是我分享生活的地方。
+思考点滴
+象征与符号-记查理周刊里人们的困境
+一派胡言[第一期]-读书是赴会一场缺席的对话
+我们需要什么样子的理想主义？
+On vision
+On terrorism-what would be the next attack?
+
+读书笔记
+关于创业, 那些不能说的秘密
+如果暑假没有尽头
+一">
+<meta property="og:updated_time" content="2016-05-08T00:51:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="D3js in 3D [Animation focus]">
-<meta name="twitter:description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
+<meta name="twitter:title" content="生活">
+<meta name="twitter:description" content="我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。
+这里，是我分享生活的地方。
+思考点滴
+象征与符号-记查理周刊里人们的困境
+一派胡言[第一期]-读书是赴会一场缺席的对话
+我们需要什么样子的理想主义？
+On vision
+On terrorism-what would be the next attack?
+
+读书笔记
+关于创业, 那些不能说的秘密
+如果暑假没有尽头
+一">
   
     <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
   
@@ -191,11 +225,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-D3js-in-3D-Animation-focus" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/31/D3js-in-3D-Animation-focus/" class="article-date">
-  	<time datetime="2015-12-31T17:14:50.000Z" itemprop="datePublished">2015-12-31</time>
+      <a href="/life/index.html" class="article-date">
+  	<time datetime="2016-01-07T04:10:20.000Z" itemprop="datePublished">2016-01-06</time>
 </a>
     </div>
   
@@ -208,7 +242,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      D3js in 3D [Animation focus]
+      生活
     </h1>
   
 
@@ -217,15 +251,7 @@
       
       <div class="article-info article-info-post">
         
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-	</div>
-
         
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
-
 
 
         <div class="clearfix"></div>
@@ -234,23 +260,36 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>
-<a id="more"></a>
-<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" alt="Animation"></p>
-<h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
-<p>Say, we have a lot of <code>&lt;a-cube&gt;</code> now, and we want to add the click event listener to the <code>&lt;a-cube&gt;</code> below to trigger the animations of the <code>&lt;a-cube&gt;</code> above the scene. [The way we add animations is to append tag <code>&lt;a-animation&gt;</code>  as the childNode of the <code>&lt;a-cube&gt;</code>]. Now, in order to do that attachment in one time, we need to group all the <code>&lt;a-cube&gt;</code> into a container, we can just use a <code>&lt;a-entity id=“meteor”&gt;&lt;/a-entity&gt;</code> to do that thing. So we can add the click event listener at the parent node, and when the childNode get clicked, the event will propagated to the parent level by level, and back then when it achieve the targeted parent. we can trigger the function and do all the <code>append</code> or other actions on <code>e.target</code>. [here <code>e.target</code> refers to the one get clicked]. </p>
-<p>In the later interaction. we want the action of one object may trigger another object’s actions. Then, we need to leave such mark to indicate which object may be related to! For example, in my code, I use  a data-attribute called “flag” as a id to indicate which object to bind. So later in the eventListener, we can use <code>e.target.getAttribute(“flag”)</code> to obtain that value for further use like <code>meteorParentNode.childNodes[e.target.getAttribute(“flag”)].append()</code> some animation nodes to the “meteor”!!</p>
-<h2 id="Image_on_meteor">Image on meteor</h2><p>In order to make it a fun, I decided to use image as the surface of the meteors ,  and the way to achieve that is to wrap a tag <code>&lt;a-root&gt;</code> and a tag <code>&lt;a-entity&gt;</code> further inside. So now the structure will be like:<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;a-entity some-attributes-here&gt;</span></span><br><span class="line">	<span class="tag">&lt;a-root&gt;</span></span><br><span class="line">		<span class="tag">&lt;a-entity some-attribute-here&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>And set the src to be some texture image or even in this project some funny images as the surface of the meteors. And that’s it! </p>
-<h2 id="Further_Reading">Further Reading</h2><ul>
-<li><a href="http://aframevr.tumblr.com/" target="_blank" rel="external">Aframe in tumblr</a></li>
-<li><a href="https://aframe.io/docs/core/animation.html" target="_blank" rel="external">Official Aframe animations guide</a></li>
-<li><a href="http://projects.bmannconsulting.com/aframe-boilerplate/" target="_blank" rel="external">How to add texture for Aframe objects</a></li>
-<li><a href="http://www.kirupa.com/html5/handling_events_for_many_elements.htm" target="_blank" rel="external">How to add event listener to multiple sibling elements</a></li>
+        <p>我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。</p>
+<p>这里，是我分享生活的地方。</p>
+<h2 id="思考点滴">思考点滴</h2><ul>
+<li><a href="http://chocoluffy.com/2016/01/23/%E8%B1%A1%E5%BE%81%E4%B8%8E%E7%AC%A6%E5%8F%B7/">象征与符号-记查理周刊里人们的困境</a></li>
+<li><a href="http://chocoluffy.com/2015/11/24/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80/">一派胡言[第一期]-读书是赴会一场缺席的对话</a></li>
+<li><a href="http://chocoluffy.com/2015/04/16/%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90%E7%9A%84%E7%90%86%E6%83%B3%E4%B8%BB%E4%B9%89/">我们需要什么样子的理想主义？</a></li>
+<li><a href="http://chocoluffy.com/2014/11/27/On-Vision/">On vision</a></li>
+<li><a href="http://chocoluffy.com/2014/09/06/What-would-be-the-next-attack/">On terrorism-what would be the next attack?</a></li>
 </ul>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
+<h2 id="读书笔记">读书笔记</h2><ul>
+<li><a href="http://chocoluffy.com/2016/04/25/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A%EF%BC%8C-%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86/">关于创业, 那些不能说的秘密</a></li>
+<li><a href="http://chocoluffy.com/2015/08/18/%E5%A6%82%E6%9E%9C%E6%9A%91%E5%81%87%E6%B2%A1%E6%9C%89%E5%B0%BD%E5%A4%B4/">如果暑假没有尽头</a></li>
+<li><a href="http://chocoluffy.com/2015/07/29/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80-%E7%AC%AC%E5%9B%9B%E6%9C%9F-%E7%9F%A5%E8%AF%86%E5%88%86%E5%AD%90%E7%9A%84%E7%A6%8F%E4%B8%8E%E7%A5%B8/">一派胡言[第四期]-知识分子的福与祸</a></li>
+</ul>
+<h2 id="心情日记">心情日记</h2><ul>
+<li><a href="http://chocoluffy.com/2015/03/30/%E4%BC%AF%E5%85%8B%E5%88%A9%E7%9A%84%E7%A7%98%E5%AF%86-%E4%B8%8A-%E6%A2%A6%E6%83%B3%E7%9A%84%E7%81%AB%E5%85%89/">伯克利的秘密-梦想的火光</a></li>
+<li><a href="http://chocoluffy.com/2014/11/15/%E6%83%B3%E4%BD%A0%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/">想你的第一天</a></li>
+<li><a href="http://chocoluffy.com/2014/02/12/2014%E5%B9%B4%E6%88%91%E6%9D%A5%E4%BA%86/">2014年我来了</a></li>
+</ul>
+<h2 id="转载与点评">转载与点评</h2><ul>
+<li><a href="http://chocoluffy.com/2015/12/28/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%85%AC%E5%8F%B8%E4%B8%8D%E4%BC%9A%E5%81%B7%E5%8F%96%E4%BD%A0%E7%9A%84%E6%83%B3%E6%B3%95/">为什么大公司不会偷取你的想法</a> 在面对投资人的时候， 很多VC都会问你这样的一个问题：如果大公司偷了你的想法的话， 你怎么办?</li>
+<li><a href="http://chocoluffy.com/2016/01/09/%E7%8E%B0%E5%AE%9E%E5%92%8C%E8%99%9A%E6%8B%9F%E7%9A%84%E8%BE%B9%E7%95%8C/">现实和虚拟的边界</a> 有幸将在这个学期接触并学习虚拟现实， 我的授课教授Steve Mann被誉为“世界穿戴电脑之父”。</li>
+<li><a href="http://chocoluffy.com/2015/08/29/%E5%B8%8C%E6%9C%9B%E6%98%AF%E4%B8%80%E7%A7%8D%E5%96%84%E6%84%8F/">希望是一种善意</a> 如果我们真的有幸进入了孩子们的世界带给他们快乐和尚不熟悉的爱和体贴， 那当我们离开的时候， 我们会留下什么。</li>
+<li><a href="http://chocoluffy.com/2015/08/24/%E5%8F%AA%E6%9C%89%E5%9C%A8%E6%A2%A6%E6%83%B3%E4%B8%AD-%E4%BA%BA%E6%89%8D%E8%83%BD%E7%9C%9F%E6%AD%A3%E8%87%AA%E7%94%B1/">只有在梦想中， 人才能真正自由 - 纪念罗宾•威廉姆斯</a> Here’s to the crazy ones.</li>
+<li><a href="http://chocoluffy.com/2015/08/20/%E6%9C%80%E5%B9%B8%E7%A6%8F%E5%88%9B%E4%B8%9A%E8%80%85%EF%BC%8C25%E5%B2%81%E7%9A%84%E6%96%B0%E7%A7%BB%E5%8A%A8%E7%A4%BE%E4%BA%A4%E4%B9%8B%E7%8E%8B/">最幸福创业者，25岁的新移动社交之王</a> 很多时候，我都相信，在我们创造软件、网站的交互方式的时候，我们同样的，在创造一种文化。</li>
+<li><a href="http://chocoluffy.com/2015/07/26/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E8%A6%81%E6%8E%A2%E7%B4%A2%E5%AE%87%E5%AE%99-%E6%98%8E%E6%98%8E%E8%BF%98%E6%9C%89%E9%82%A3%E4%B9%88%E5%A4%9A%E4%BA%BA%E6%8C%A8%E9%A5%BF/">为什么我们要探索宇宙? 明明还有那么多人挨饿</a> 随着NASA的研究越来越不受重视的今天，每一次的项目上报，都是一次对探索可能性的割舍，都是一次对民主残暴一面的体现。 或许正如文章结尾所述，我放眼探索宇宙，正因我深深地爱着这个星球。</li>
+<li><a href="http://chocoluffy.com/2015/11/16/%E4%B8%80%E4%B8%AA%E8%AE%B0%E8%80%85%E5%92%8C%E6%81%90%E6%80%96%E5%88%86%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86%E7%94%9F%E6%B4%BB/">我的ISIS男友：一个记者与恐怖分子的秘密生活</a> 我想知道ISIS他们的心理状态， 他们的生活日常， 他们的童年经历， 究竟为什么会有这么一群人， 愿意把杀戮(圣战)当成荣耀， 而究竟战争与反抗能争取到什么， 而什么才是真正难以摧毁的。</li>
+<li><a href="http://chocoluffy.com/2015/08/27/%E5%91%8A%E5%88%AB%E5%8D%A2%E5%AE%89%E5%85%8B/">告别卢安克</a> 教育，是人与人之间，也是自己与自己之间发生的事，它永不停止，就像一棵树摇动另一棵树，一朵云触碰另一朵云，一个灵魂唤醒另一个灵魂，只要这样的传递和唤醒不停止，<br>我们就不会告别卢安克。</li>
+<li><a href="http://chocoluffy.com/2015/08/12/%E9%AB%98%E6%96%87%E6%96%8C%EF%BC%9A%E5%91%8A%E5%88%AB%E6%96%87%E5%8C%96%E7%96%9F%E7%96%BE%E7%97%87%E2%80%94%E2%80%94%E4%B9%9F%E8%AF%B4%E5%B8%B8%E6%98%A5%E8%97%A4%E7%9A%84%E7%BB%B5%E7%BE%8A/">高文斌：告别文化疟疾症——也说常春藤的绵羊</a></li>
+</ul>
 
       
     </div>
@@ -258,25 +297,6 @@
   </div>
   
     
-<nav id="article-nav">
-  
-    <a href="/2016/01/06/Twitter-engine-in-React/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Twitter engine in React
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2015/12/30/D3js-in-3D/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">D3js in 3D</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -359,7 +379,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
