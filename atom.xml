@@ -172,7 +172,7 @@
     <link href="http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
     <id>http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/</id>
     <published>2016-05-05T01:03:58.000Z</published>
-    <updated>2016-05-05T18:26:09.000Z</updated>
+    <updated>2016-05-13T17:55:01.000Z</updated>
     <content type="html"><![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
 <a id="more"></a>
 <div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/de08e7610183200c.png" alt="aws"></div>
@@ -185,7 +185,7 @@
 
 <p>如果之前有使用heroku的经验的话， 其实你会发现其实amazon elastic beanstalk和heroku提供的服务非常相似， 实际上， 就这两家服务的定位而言， 都是platform as a service（Paas）， 也就是让developer可以将网站， 移动端部署在云端(cloud)不需要顾虑backend server和database的configuration。 而heroku本身相对于其他市面上的Paas在auto-scaling上做得更加出色， 它的computing resources(dyno)可以按照计算的需求而叠加从而满足在高流量下的网站后端流畅运行。而近几年amazon的elastic beanstalk的出现， 在这个Paas的市场给我们developer多一个很好的选择。就自己的使用而言， 感觉两者的command line interface其实设计得差不多， 都很简洁方便， 不过相比heroku， amazon的AWS还涉及租用到计算单元EC2, 就配置的操作来说， 你在配置AWS的服务上需要花更多的时间去设置环境变量和考虑密钥存储， 毕竟你可能有时候有ssh远程登陆amazon linux服务器的需求。相比之下， heroku的配置就是很简单的在<code>~/.bashrc</code>文件里面添加toolbelt文件夹的路径了。</p>
 <blockquote>
-<p>补充： 其实heroku它本身就是deploy在了AWS上的呀😂， 所以理论上在performance上不会有太大的差别。</p>
+<p> 其实heroku它本身就是deploy在了AWS上的呀😂， 所以理论上在performance上不会有太大的差别。</p>
 </blockquote>
 <p>而在pricing上， 我认为AWS的价格和服务会更加的实惠， 毕竟考虑到你有一张信用卡就可以申请到你一年的free-tier的single instance的使用权利， 而single instance对一些小型的side project来说完完全全是够用的呀。即便不够用， 换成large instance也是several clicks away， 反正也是按用量收费， 经济实惠!</p>
 <h2 id="遇到的问题">遇到的问题</h2><p>第一个使用EB部署的应用是一个nodejs爬虫， 负责爬去cnode社区的精华帖， 然后返回一个json object收集精华帖的link, 标题和作者avatar， 为了显示的直观， 我并没有写前端的样式， 而是直接<code>JSON.stringify(json)</code>然后send会浏览器。之后如果仅仅作为REST API使用的话， 还需要在router上修饰一下URL。目前还是有点粗糙的。<a href="https://github.com/AirLoft/web-scraper" target="_blank" rel="external">github链接</a></p>
