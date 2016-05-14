@@ -1018,7 +1018,7 @@ a {
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 1.2;
-  color: #666;
+  color: #777;
   text-align: justify;
 }
 .article-entry blockquote::before {
@@ -1086,7 +1086,7 @@ a {
 .article-entry h2 {
   margin-top: 20px;
   font-weight: 300;
-  color: #2c3e50;
+  color: #555;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
@@ -1096,7 +1096,7 @@ a {
 .article-entry h6 {
   margin-top: 20px;
   font-weight: 300;
-  color: #2c3e50;
+  color: #555;
   padding-bottom: 5px;
   border-bottom: 1px solid #ddd;
 }
