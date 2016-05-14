@@ -959,7 +959,8 @@ a {
   font-weight: 300;
   line-height: 35px;
   margin-bottom: 20px;
-  font-size: 26px;
+  font-size: 23px;
+  font-weight: 400;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -1002,6 +1003,7 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 15px;
+  font-weight: 300;
 }
 .article-entry p code,
 .article-entry li code {
