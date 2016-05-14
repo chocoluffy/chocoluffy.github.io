@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-05-13T13:51:50.000Z</updated>
+  <updated>2016-05-14T01:47:19.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,86 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[另一种鼓声-读《途客圈》有感]]></title>
+    <link href="http://chocoluffy.com/2016/05/13/%E5%8F%A6%E4%B8%80%E7%A7%8D%E9%BC%93%E5%A3%B0-%E8%AF%BB%E3%80%8A%E9%80%94%E5%AE%A2%E5%9C%88%E3%80%8B%E6%9C%89%E6%84%9F/"/>
+    <id>http://chocoluffy.com/2016/05/13/另一种鼓声-读《途客圈》有感/</id>
+    <published>2016-05-14T01:45:08.000Z</published>
+    <updated>2016-05-14T01:47:19.000Z</updated>
+    <content type="html"><![CDATA[<p>“如果你清醒地知道你要去哪儿，脑海中还保留着那份憧憬，那么你就能逢山开路，遇水搭桥，所有的阻碍都将成为一个个里程碑，被踩在你的身后……”</p>
+<a id="more"></a>
+<p><img src="http://ac-TC2Vc5Tu.clouddn.com/7c3aa7a1e64bda62.png" alt="生命不能承受之重"></p>
+<p>在一个充斥着来自CEO乃至风险投资人视角的创业回顾的环境下， 一个来自技术合伙人(CTO)的视角显得尤为可贵。 从最早的技术选型， 到带领其它技术人员的开发和维护， 到技术过渡和商业选择， 陈天给了一份很详细和真挚的参考选项。</p>
+<div style="text-align:center" markdown="1"><br> <img src="http://ac-TC2Vc5Tu.clouddn.com/6ceefbf6929babac.png" alt="toureet"><br></div>
+
+<p>每本书， 每个文字对不同的人意义都是不同的。 下面纪录了我在看完这本书之后的想法。</p>
+<h2 id="关于创业，那所有无关技术的事">关于创业，那所有无关技术的事</h2><p>一开始不要设置过高的期权池， 期权池的主要目的是未来吸引和留住人才。期权与股权不同，股权代表所有权，期权代表的则是在特定的时间、以特定的价格购买特定所有权的权利，它可被视作是员工与公司之间关于股权买卖的一份合同。行权之后员工获得的股份是普通股。</p>
+<p>在和创新工场的交谈中：</p>
+<ul>
+<li><p>清算优先权</p>
+</li>
+<li><p>反稀释条款</p>
+</li>
+</ul>
+<p>如何雇佣到最好的人， 的确拥有创新工场这个名字更容易发现更好的技术人员。</p>
+<p>nanfang就是通过创新工厂的招聘进来的。同时alex的官方博客和知乎都可以用来获取人才的来源。</p>
+<p>当时作者使用的是amazon的四台最小免费计算单元， 用4个账号注册的。一台用来跑翻译， 一台跑wordpress， 一台跑toureet.com， 和另一台。 现在国内的云服务可以考虑阿里云。</p>
+<p>在UI上要直观和实用。 一定要在第一轮宣传之前完成UI的设计和构架， 毕竟第一轮宣传之后， 往后的宣传的力度和效果都将大大不如之前。</p>
+<p>同时也需要考虑的就是域名和注册的问题!!</p>
+<p>要把钱花在刀刃上， 要舍得去花钱。app的制作是必须的!!!!!!!!尽管大家使用web的时间很多， 但是下载了一个app就是护城河。</p>
+<p><strong>对于一些特别优秀的人， 一定要和他们经常讨论产品的发展方向， 因为对于他们来说， 他们之所以加入你， 已经不是因为技术的吸引力了， 而是因为他的声音很可能在塑造他准备推出的产品， 因为从未有的对产品的掌控力。而这， 也是创业的魅力吧!</strong></p>
+<p>历时一个月的推广大赛， 烧了30万（加上员工的工资）， 换来的是一次性的用户， 看热闹的用户， 注册了3万多人， 然而没有什么用。</p>
+<p>如果你战略上不是很清晰，你再做什么也是没有用的，<strong>是在用战术性的疲劳掩盖战略上的懒惰</strong>。百场汇不停地在战略层面做一些调整，所以战术上大家不会那么辛苦。一年来，百场汇全公司只有一个人离职。这对初创公司来说是很不容易的。</p>
+<h2 id="关于功能的实用和噱头">关于功能的实用和噱头</h2><p>有没有想过如果微信把朋友圈的功能作为每一次打开的初始页面？而不是一直以来的群组或者单聊？首屏一定要放你最最核心的功能， 而社交是最为用户粘性的方式之一， 绝对不能喧宾夺主。或者说， 所有的工具式网站， 都应该考虑围绕那个工具所最最合适的社交场景。</p>
+<p>比如微信的工具属性是：即时通讯和群聊， 那么聊天的社交场景就应该是： 让更多的人发现聊天的内容， 也从纯文字转换到图片和视频和直播， 乃至可以让更多的人加入和感受到聊天的这个场景里面。</p>
+<p>比如网易云音乐的工具属性是： 发现和享受高品质音乐， 那么找音乐和听音乐的社交场景就应该是： 让更多的人去发现你喜欢和收藏的音乐， 并基于这些音乐进行进一步的交流。而我觉得一个非常非常棒的功能就是， 不仅仅允许用户分享他们自己创作的歌单， 而且允许把他们最常听的那25首歌显示出来。你不会欺骗你自己的耳朵。如果可以把这一栏更突出地显示会更好？！</p>
+<h2 id="关于工具和社区的交叠和矛盾">关于工具和社区的交叠和矛盾</h2><p>每一个需求在被解决的时候， 产品是被工具化的， 而希望推广这种解决方案的时候， 产品是被社区化的。 现在大部分围绕工具性产品还是社区性产品的讨论， 如果被抽象出了产品本身要解决的问题的话， 基本都是废话和干扰。 拿两种使用场景和频率比较不同的方向做比较， 比如听音乐和旅游这两个商业方向。 </p>
+<p>人们听音乐的两个需求， 在自己疲惫不爽的时候听到自己最喜欢的音乐， 和发现那些不认识却好听的音乐； 当然， 人们还会从分享自己组好的歌单或者评论里面得到分享和反馈的满足，但我认为这种行为是因为社区化带来的，因为在人群中， 所以也想得到人群的温暖和共鸣 ，但这种社会心理的需求我暂不归于听音乐本身的需求。 就拿网易云音乐APP作例子， 其本身在很多细节上做得很棒了， 但是我认为还可以提高的地方：</p>
+<p>基于喜欢同一个专辑的乐众的社交兴趣小组。人们对自己喜欢的东西永远都有如数家珍般的热情。</p>
+<p>从你不会骗自己的耳朵， 你最最经常听的25首歌。</p>
+<p>同样发现别人最最经常听的25首歌。</p>
+<p>用户对收集到歌曲的分类的自我重组。 应当支持双向的标记， 一是tag， 二是collection。像管理笔记一样去管理音乐， 同时将任何collection都注重社交化的分享， 像pinterest的理念学习。</p>
+<p>评论分为两栏， 一栏是trending， 一栏是历史最热。 trending要像hackernews一样的不断让新事物涌现来代替旧评论， 而历史最热， 则是就硬碰硬的质量。原因？你不会去参加一个高低胜负已经分明的比赛。你之所倚评论， 你总会有被反馈的渴望， 而看见自己的文字被淹没是最最失落的， 哪怕你知道这的确不是最好的文字~</p>
+<h2 id="关于期权池">关于期权池</h2><p>以下内容， 来源自知乎。可参考：<a href="http://zhuanlan.zhihu.com/p/20726127" target="_blank" rel="external">知乎专栏</a>, 作者：黄海, 著作权归作者所有。</p>
+<p>可能有创业者会问了：我给了员工股份，他3个月以后就跳槽了，我不就亏了。当然不会，首先记住这是股权池，不是股份池。给的是股权，不是直接送股份。所谓股权，就是一定时候，可以以行使价格买入股票，这个行使价格由董事会决定，一般特别低。</p>
+<p>【有股权的员工和创始人的区别】</p>
+<p>你最早的员工可能和你一起度过了创业的全过程，而且还通过股权池获得股权，那你可能会问，那他们算创始人么？</p>
+<p>答案是，他们与创始人还是有很大不同的。首先，如果他们不行使权利，他们甚至都不算是股东，话语权当然不一样。另外创始人开始都是、没有工资，甚至自己就是投资人，承担了所有的风险。员工就很不一样，依然是雇佣关系，除了失业风险较大，同时劳资可能相对低，但这些都是个人风险，而不是企业风险。所以还是有很大区别的。</p>
+<p>越迟加入公司的员工需要冒的风险越低。</p>
+<p>创始人应该最终拿整个公司大约50%的股份。首层下面的5层员工的每一层最终都分别分到大约10%的公司股份，每一层的员工都将平分这10%的股份。</p>
+<p>现在，你搞定了一个公平的份股系统，但还有一个重要的原则：你必须执行“股份绑定”(vesting)。股份绑定期最好是 4 到 5 年。任何人都必须在公司做够起码 1 年才可持有股份（包括创始人）。好的股份绑定计划一般是头一年给 25%，然后接下来每个月落实 2%。否则，你的合作创始人将加入公司 3 个星期后跑掉，然后 7 年后又出现，并声称他拥有公司的 25% 的股份。</p>
+<p>没有“股份绑定”条款，你派股份给任何人都是不靠谱的！</p>
+<p>没有执行“股份绑定”是极其普遍的现象，后果可以十分严重。你看到有些公司的 3 个创始人没日没夜地工作了 5 年，然后你发现有些混蛋加入后 2 个星期就离开，这混蛋还以为他仍然拥有公司 25% 的股份，就因为他工作过的那 2 个星期。</p>
+<p>好了，让我们清理一下整个设计蓝图中没搞定的小问题。</p>
+<p>如果你的公司融资了，股份如何分割？</p>
+<p>投资可以来自任何方向，一个天使投资人，一个风险投资公司，或者是某人的老爸。基本上，回答很简单：</p>
+<p>新的投资将“稀释”所有人的股份。</p>
+<p>千万不要用分配股权来解决这些问题。</p>
+<p>其实，你只需要针对每位创始人拿的工资做好记帐：不拿工资创始人就给 她记着工资“欠条”。当公司有了足够现金，就根据这个工资欠条补发工资给她。接下来的几年中，当公司现金收入逐步增加，或者当完成第一轮风险投资后，你可 以给每一位创始人补发工资，以确保每一位创始人都可从公司得到完全一样的工资收入。</p>
+<p><strong>创业构想是我提出的，难道我不应该多拿股份吗？</strong></p>
+<p>不拿。构想基本上是不值钱的。仅仅因为提出创业构想就获得更多股 权，因此导致纷争是不值得的。如果你们当中有人首先提出的创业构想，但你们都同时辞工并同时开始创业，你们应该拿同等的股份。为公司工作才是创造价值的原 因，而你洗澡的时候突发奇想的“创业点子”根本不值什么钱。</p>
+<p><strong>如果创始人之一不是全职投入创业公司工作，该怎么办？</strong></p>
+<p>那么，他（们）就不能算是“创始人”。在我的概念中，如果 一个人不全职投入公司的工作就不能算是创始人。任何边干着他们其它的全职工作边帮公司干活的人只能拿工资或者工资“欠条”，但是不要给股份。如果这个“创 始人”一直干着某份全职工作直到公司拿到风投，然后辞工全职过来公司干活，他（们）和第一批员工相比好不了多少，毕竟他们并没有冒其他创始人一样的风险。</p>
+<p><strong>如果有人为公司提供设备或其它有价值的东西（专利、域名等），怎么处理？</strong></p>
+<p>很好啊。按这些东西的价值支付现金或开个“欠条”咯，别给股份。你准确算一下他给公司带来的那台电脑的价值，或者他们自带的某个聪明的字处理专利的价格，给他们写下欠条，公司有钱后再偿还即可。在创业初期就用股权来购买某些公司需要的东西将导致不平等，纷争和不公平。</p>
+<p><strong>再重复一遍!! 用欠条， 而不是股份解决问题!!!!解决大部分的资金纷争和各种帮助!!</strong></p>
+<p>今天买来的用户，明天还是不会成为你的品牌用户。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>“如果你清醒地知道你要去哪儿，脑海中还保留着那份憧憬，那么你就能逢山开路，遇水搭桥，所有的阻碍都将成为一个个里程碑，被踩在你的身后……”</p>]]>
+    
+    </summary>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
+    
+      <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Angular入门-module和service]]></title>
@@ -1413,41 +1493,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<p>The hand-on project to get myself familiar with React.js, which pulls the latest post from Twitter by using a nodejs module in client-side javascript and allows users to form their own collections and share them via Codepen or other platforms. </p>]]>
-    
-    </summary>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[D3js in 3D [Animation focus]]]></title>
-    <link href="http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/"/>
-    <id>http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/</id>
-    <published>2015-12-31T17:14:50.000Z</published>
-    <updated>2016-01-26T03:16:30.000Z</updated>
-    <content type="html"><![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>
-<a id="more"></a>
-<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" alt="Animation"></p>
-<h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
-<p>Say, we have a lot of <code>&lt;a-cube&gt;</code> now, and we want to add the click event listener to the <code>&lt;a-cube&gt;</code> below to trigger the animations of the <code>&lt;a-cube&gt;</code> above the scene. [The way we add animations is to append tag <code>&lt;a-animation&gt;</code>  as the childNode of the <code>&lt;a-cube&gt;</code>]. Now, in order to do that attachment in one time, we need to group all the <code>&lt;a-cube&gt;</code> into a container, we can just use a <code>&lt;a-entity id=“meteor”&gt;&lt;/a-entity&gt;</code> to do that thing. So we can add the click event listener at the parent node, and when the childNode get clicked, the event will propagated to the parent level by level, and back then when it achieve the targeted parent. we can trigger the function and do all the <code>append</code> or other actions on <code>e.target</code>. [here <code>e.target</code> refers to the one get clicked]. </p>
-<p>In the later interaction. we want the action of one object may trigger another object’s actions. Then, we need to leave such mark to indicate which object may be related to! For example, in my code, I use  a data-attribute called “flag” as a id to indicate which object to bind. So later in the eventListener, we can use <code>e.target.getAttribute(“flag”)</code> to obtain that value for further use like <code>meteorParentNode.childNodes[e.target.getAttribute(“flag”)].append()</code> some animation nodes to the “meteor”!!</p>
-<h2 id="Image_on_meteor">Image on meteor</h2><p>In order to make it a fun, I decided to use image as the surface of the meteors ,  and the way to achieve that is to wrap a tag <code>&lt;a-root&gt;</code> and a tag <code>&lt;a-entity&gt;</code> further inside. So now the structure will be like:<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;a-entity some-attributes-here&gt;</span></span><br><span class="line">	<span class="tag">&lt;a-root&gt;</span></span><br><span class="line">		<span class="tag">&lt;a-entity some-attribute-here&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>And set the src to be some texture image or even in this project some funny images as the surface of the meteors. And that’s it! </p>
-<h2 id="Further_Reading">Further Reading</h2><ul>
-<li><a href="http://aframevr.tumblr.com/" target="_blank" rel="external">Aframe in tumblr</a></li>
-<li><a href="https://aframe.io/docs/core/animation.html" target="_blank" rel="external">Official Aframe animations guide</a></li>
-<li><a href="http://projects.bmannconsulting.com/aframe-boilerplate/" target="_blank" rel="external">How to add texture for Aframe objects</a></li>
-<li><a href="http://www.kirupa.com/html5/handling_events_for_many_elements.htm" target="_blank" rel="external">How to add event listener to multiple sibling elements</a></li>
-</ul>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>]]>
     
     </summary>
     
