@@ -354,8 +354,12 @@ a {
     padding-left: 0;
     padding-right: 0;
   }
+  #container .article .article-entry p {
+    font-weight: 300;
+  }
   #container .article .article-title {
     font-size: 18px;
+    font-weight: 500;
     max-width: 290px;
     display: block;
     margin: 0;
