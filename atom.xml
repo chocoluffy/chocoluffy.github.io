@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-05-15T22:16:27.000Z</updated>
+  <updated>2016-05-15T22:17:01.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/"/>
     <id>http://chocoluffy.com/2016/05/15/前端开发工具库-第一期-npm-script/</id>
     <published>2016-05-15T21:48:45.000Z</published>
-    <updated>2016-05-15T22:16:27.000Z</updated>
+    <updated>2016-05-15T22:17:01.000Z</updated>
     <content type="html"><![CDATA[<p>在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?</p>
 <a id="more"></a>
 <h2 id="前言">前言</h2><p>为什么我们需要自动构建工具？</p>
