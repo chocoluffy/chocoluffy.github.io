@@ -9,14 +9,14 @@
   <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
   <meta name="description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端开发工具库[第一期] - npm script">
+<meta property="og:title" content="前端开发工具库[第一期]-npm script">
 <meta property="og:url" content="http://chocoluffy.com/2016/05/15/前端开发工具库-第一期-npm-script/index.html">
 <meta property="og:site_name" content="One Piece">
 <meta property="og:description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
 <meta property="og:image" content="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png">
-<meta property="og:updated_time" content="2016-05-15T22:00:17.000Z">
+<meta property="og:updated_time" content="2016-05-15T22:04:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端开发工具库[第一期] - npm script">
+<meta name="twitter:title" content="前端开发工具库[第一期]-npm script">
 <meta name="twitter:description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
   
     <link rel="alternative" href="/atom.xml" title="One Piece" type="application/atom+xml">
@@ -207,7 +207,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      前端开发工具库[第一期] - npm script
+      前端开发工具库[第一期]-npm script
     </h1>
   
 
@@ -240,12 +240,13 @@
 <p>很多功能曾经是要开发者手动引入script文件的，但鉴于npm上活跃的开发者将很多需求的module开发并发布出来， 我们可以利用npm这个包管理器来配置使用这些方便的module，在能够达到同样功能的工具里面比如bower, grunt, gulp，我认为对于一个轻量的小项目， 个人项目来说, npm script是最方便的， 最容易上手的。<strong>没有最好的工具， 只有最合适的使用场景。</strong></p>
 <p>而今天的主题：在配置工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?</p>
 <p>因为simplicity matters。没有必要在需要用的时候才去找那些数量有限的grunt, gulp plugins，而直接将node modules拿来用。对于个人开发和维护的小项目， 有没有必要花时间去研究Gruntfile.js怎么去配置， 或者说， 在配置上花的时间相对短期集中开发的时间来说值不值？不是说反对使用grunt, gulp和webpack等工具， 而是我们没有必要拿大炮去打蚊子， 我们想要agile development。 也正是simplicy， 所以才有RoR, meteor等全栈框架的出现来挑战java等较为臃肿的开发流程不是么？</p>
+<p>下图是截止至今年1月为止的各平台的插件数量，仍在不断地增加中。</p>
 <p><img src="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png" alt="npm script"></p>
 <h2 id="什么是npm_script">什么是npm script</h2><p>其实npm script就是希望执行的command的alias， 类似与command line里面的make， 通过提前设置希望执行的命令， 我们可以通过<code>npm run &lt;alias&gt;</code>来执行我们预先设置的命令。</p>
 <h2 id="如何config你的npm_script">如何config你的npm script</h2><p>而目前npm上有很多很棒的module可以直接处理项目， 下面列出来的是我平时自己经常使用的module: </p>
 <p>比如: browserfy将文件的各种文件和浏览器同步; postcss和autofixer可以将css文件添加适配各种浏览器的前缀同时进行压缩; js-lint用来检查js文件的各种格式细节; uglify用来压缩js文件的大小; imagemin用来压缩各种图片文件的大小， 在各种大型网站中， 图片的大小占据了大部分。</p>
 <p>下面是一些具体使用的例子：比如我们想将sass compile成css。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev node-sass</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev node-sass</span><br></pre></td></tr></table></figure>
 <p>将<code>node-sass</code>这个module装在developing环境之后，可以直接<code>node-sass --output-style compressed -o dist/css src/scss</code>来将”src/scss“这个文件夹下面的sass文件compile出来并保存在”dist/css“文件夹下面； 或者一个更便捷的做法，是使用npm script：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"scss"</span>: <span class="string">"node-sass --output-style compressed -o dist/css src/scss"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后在console里run <code>npm run scss</code>就可以执行这个相同命令了。和makefile的原理和使用习惯可以类比， 只不过使用场景和平台不同。</p>
