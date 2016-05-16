@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chocoluffy.com/tech/index.html</loc>
+    <lastmod>2016-05-16T20:46:56.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/</loc>
     <lastmod>2016-05-16T00:18:13.000Z</lastmod>
   </url>
@@ -39,11 +44,6 @@
   <url>
     <loc>http://chocoluffy.com/2016/05/12/Angular%E5%85%A5%E9%97%A8-module%E5%92%8Cservice/</loc>
     <lastmod>2016-05-13T13:51:50.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/tech/index.html</loc>
-    <lastmod>2016-05-13T03:08:16.000Z</lastmod>
   </url>
   
   <url>
