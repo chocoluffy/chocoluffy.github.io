@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-05-15T22:17:01.000Z</updated>
+  <updated>2016-05-16T00:18:13.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,14 +19,14 @@
     <link href="http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/"/>
     <id>http://chocoluffy.com/2016/05/15/前端开发工具库-第一期-npm-script/</id>
     <published>2016-05-15T21:48:45.000Z</published>
-    <updated>2016-05-15T22:17:01.000Z</updated>
+    <updated>2016-05-16T00:18:13.000Z</updated>
     <content type="html"><![CDATA[<p>在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?</p>
 <a id="more"></a>
 <h2 id="前言">前言</h2><p>为什么我们需要自动构建工具？</p>
 <p>在前端开发的时候，会遇到很多实际产品开发之外上的需求，比如开发者希望做到“所写即所得”，可以一边在编辑器里面修改和开发代码，浏览器可以同步更新而不需要我们手动去refresh页面； 比如我们希望可以压缩最后的成品代码， 图片资源的大小，让每次浏览器下载所需要的js代码的时间可以更短，或者考虑CDN； 比如我们希望我们写的scss可以适配任何类型的浏览器等等。</p>
 <p>很多功能曾经是要开发者手动引入script文件的，但鉴于npm上活跃的开发者将很多需求的module开发并发布出来， 我们可以利用npm这个包管理器来配置使用这些方便的module，在能够达到同样功能的工具里面比如bower, grunt, gulp，我认为对于一个轻量的小项目， 个人项目来说, npm script是最方便的， 最容易上手的。<strong>没有最好的工具， 只有最合适的使用场景。</strong></p>
 <p>而今天的主题：在配置工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?</p>
-<p>因为simplicity matters。没有必要在需要用的时候才去找那些数量有限的grunt, gulp plugins，而直接将node modules拿来用。对于个人开发和维护的小项目， 有没有必要花时间去研究Gruntfile.js怎么去配置， 或者说， 在配置上花的时间相对短期集中开发的时间来说值不值？不是说反对使用grunt, gulp和webpack等工具， 而是我们没有必要拿大炮去打蚊子， 我们想要agile development。 也正是simplicy， 所以才有RoR, meteor等全栈框架的出现来挑战java等较为臃肿的开发流程不是么？</p>
+<p><strong>因为simplicity matters。</strong>没有必要在需要用的时候才去找那些数量有限的grunt, gulp plugins，而直接将node modules拿来用。对于个人开发和维护的小项目， 有没有必要花时间去研究Gruntfile.js怎么去配置， 或者说， 在配置上花的时间相对短期集中开发的时间来说值不值？不是说反对使用grunt, gulp和webpack等工具， 而是我们没有必要拿大炮去打蚊子， 我们想要agile development。 也正是simplicy， 所以才有RoR, meteor等全栈框架的出现来挑战java等较为臃肿的开发流程不是么？</p>
 <p>下图是截止至今年1月为止的各平台的插件数量，仍在不断地增加中。</p>
 <p><img src="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png" alt="npm script"></p>
 <h2 id="什么是npm_script">什么是npm script</h2><p>其实npm script就是希望执行的command的alias， 类似与command line里面的make， 通过提前设置希望执行的命令， 我们可以通过<code>npm run &lt;alias&gt;</code>来执行我们预先设置的命令。</p>
