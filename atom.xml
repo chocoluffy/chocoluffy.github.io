@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-05-24T03:06:01.000Z</updated>
+  <updated>2016-05-24T03:08:47.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/"/>
     <id>http://chocoluffy.com/2016/05/23/socket-io开发多人聊天室教程/</id>
     <published>2016-05-24T02:43:41.000Z</published>
-    <updated>2016-05-24T03:06:01.000Z</updated>
+    <updated>2016-05-24T03:08:47.000Z</updated>
     <content type="html"><![CDATA[<p>用socket.io搭配express写的一个多人聊天室应用， 同时借这个机会复习了一下socket及TCP/IP的一些细节知识， 在UI上用jquery， 简洁而快速地完成一些基础前端样式的开发， 开发时用nodemon和browser-sync来辅助开发流程。</p>
 <a id="more"></a>
 <p><img src="http://ac-TC2Vc5Tu.clouddn.com/1a5c1f59080e5cc1.png" alt="socket.io"></p>
