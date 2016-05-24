@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="One Piece">
 <meta property="og:description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
 <meta property="og:image" content="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png">
-<meta property="og:updated_time" content="2016-05-16T00:18:13.000Z">
+<meta property="og:updated_time" content="2016-05-24T17:44:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端开发工具库[第一期]-npm script">
 <meta name="twitter:description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
@@ -260,6 +260,7 @@
 <p>很多时候就是因为准备的工具效率高， 开发者也因此得以集中精力于产品逻辑， 在更短的时间内开发出更好更稳定的产品。</p>
 <h2 id="后记">后记</h2><p>npm script不是没有缺点的，就像我一再强调的，没有最好的工具， 只有最合适的使用场景， 在个人小项目适合的npm script，在大项目， 动辄几十万的前端项目的构建和测试下， npm script会显得特别臃肿和难以维护。 而目前大热的grunt\gulp\webpack也迎来了他们的舞台。下一期，集中介绍grunt和webpack，公司里使用的也是grunt，为什么它会在众多工具中脱颖而出。</p>
 <h2 id="参考链接">参考链接</h2><ul>
+<li><a href="https://www.nczonline.net/blog/2016/03/mimicking-npm-script-in-node-js/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+nczonline+%28NCZOnline+-+The+Official+Web+Site+of+Nicholas+C.+Zakas%29" target="_blank" rel="external">Mimicking npm script in Node.js</a> The underlying mechanism of using npm script is that npm modifies the PATH environment variable so that it affects the lookup of executables. Run <code>npm install --save-dev eslint</code>, then do <code>npm run lint</code>, it works because npm script is actually running <code>node_modules/.bin/eslint</code>.</li>
 <li><a href="http://gon.to/2015/02/26/gulp-is-awesome-but-do-we-really-need-it/" target="_blank" rel="external">Gulp is awesome, but do we really need it?</a></li>
 <li><a href="http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/" target="_blank" rel="external">How to Use npm as a Build Tool</a></li>
 </ul>
