@@ -17,7 +17,7 @@
 <meta property="og:image" content="http://ac-TC2Vc5Tu.clouddn.com/8d0dd106f5f226f4.png">
 <meta property="og:image" content="http://ac-TC2Vc5Tu.clouddn.com/8b9309129959f85e.png">
 <meta property="og:image" content="http://ac-TC2Vc5Tu.clouddn.com/4aa537ca52ea8080.png">
-<meta property="og:updated_time" content="2016-05-24T03:00:48.000Z">
+<meta property="og:updated_time" content="2016-05-24T03:06:01.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="socket.io开发多人聊天室教程">
 <meta name="twitter:description" content="用socket.io搭配express写的一个多人聊天室应用， 同时借这个机会复习了一下socket及TCP/IP的一些细节知识， 在UI上用jquery， 简洁而快速地完成一些基础前端样式的开发， 开发时用nodemon和browser-sync来辅助开发流程。">
@@ -264,6 +264,7 @@
 <p>Next, we passed the HTTP server directly to the SocketIO method exactly as we would have if we were using a nonExpress HTTP server. Socket.IO took the server instance to listen for new socket connections on it. </p>
 <p>其中一个小细节：用 <code>emit</code> 来传输named message, 用 <code>send</code> 来传输a message without name.</p>
 <h2 id="多人在线聊天室">多人在线聊天室</h2><p>下面是对以上应用的一个简单拓展。使用一个轮播(broadcasting)的方式， 将客户端传来的消息显示给每一个在线的用户。</p>
+<p><a href="https://github.com/chocoluffy/chatroom" target="_blank" rel="external">github源代码</a></p>
 <p><a href="http://chatroom.sb6imr3gpx.us-west-2.elasticbeanstalk.com/" target="_blank" rel="external">在线Demo-网页版</a></p>
 <p>在手机上也是可以用的， 不过UI没有专门针对移动端优化， 会有点糗的感觉😭。有bug汇报到Issue呀， 谢谢~</p>
 <p>效果图Demo:</p>
