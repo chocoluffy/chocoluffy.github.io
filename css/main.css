@@ -1518,14 +1518,6 @@ pre .javascript .function {
   box-shadow: inset 0 2px 6px #000;
   -webkit-transform: translateZ(0);
 }
-.sidebar .sidebar-overlay {
-  z-index: 1050;
-  width: 90%;
-  left: 0;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(to left, rgba(0,0,0,0), #222);
-}
 .sidebar a {
   color: #999;
   border-bottom-color: #555;
@@ -1543,7 +1535,19 @@ pre .javascript .function {
     display: none !important;
   }
 }
+.sidebar:before {
+  pointer-events: none;
+  content: "";
+  display: block;
+  z-index: 1050;
+  width: 135%;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to left, rgba(0,0,0,0), #222);
+}
 .sidebar-inner {
+  z-index: 2000;
   position: relative;
   padding: 20px 10px;
   color: #999;
@@ -1672,7 +1676,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4734ff;
+  background: #ff44b4;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -1747,12 +1751,12 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #999;
+  color: #aaa;
   border-bottom-color: #555;
 }
 .post-toc ol a:hover {
-  color: #ccc;
-  border-bottom-color: #ccc;
+  color: #eee;
+  border-bottom-color: #eee;
 }
 .post-toc .nav-item {
   overflow: hidden;
