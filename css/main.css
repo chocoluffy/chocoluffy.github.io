@@ -1514,13 +1514,13 @@ pre .javascript .function {
   top: 0;
   bottom: 0;
   width: 0;
-  z-index: 1050;
+  z-index: $zindex-6;
   box-shadow: inset 0 2px 6px #000;
   -webkit-transform: translateZ(0);
 }
 .sidebar .sidebar-overlay {
-  z-index: 1040;
-  width: 50%;
+  z-index: 1050;
+  width: 90%;
   left: -20%;
   height: 100%;
   position: absolute;
@@ -1672,7 +1672,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #83ffff;
+  background: #d01f36;
 }
 .links-of-blogroll {
   font-size: 13px;
