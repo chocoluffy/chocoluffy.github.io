@@ -1521,7 +1521,7 @@ pre .javascript .function {
 .sidebar .sidebar-overlay {
   z-index: 1050;
   width: 90%;
-  left: -20%;
+  left: 0;
   height: 100%;
   position: absolute;
   background: linear-gradient(to left, rgba(0,0,0,0), #222);
@@ -1672,7 +1672,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d01f36;
+  background: #4734ff;
 }
 .links-of-blogroll {
   font-size: 13px;
