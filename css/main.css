@@ -1507,6 +1507,8 @@ pre .javascript .function {
   }
 }
 .sidebar {
+  background: url("http://ww2.sinaimg.cn/large/c5ee78b5jw1f278pauon9j207t0dawf2.jpg");
+  background-size: cover;
   position: fixed;
   right: 0;
   top: 0;
@@ -1514,7 +1516,6 @@ pre .javascript .function {
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
-  background: #222;
   -webkit-transform: translateZ(0);
 }
 .sidebar a {
@@ -1663,7 +1664,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d6c291;
+  background: #e3a8fb;
 }
 .links-of-blogroll {
   font-size: 13px;
