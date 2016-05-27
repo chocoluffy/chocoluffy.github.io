@@ -1520,11 +1520,11 @@ pre .javascript .function {
 }
 .sidebar .sidebar-overlay {
   z-index: 1040;
-  width: 20%;
-  left: 0;
+  width: 50%;
+  left: -20%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(left, #fefefe, rgba(0,0,0,0));
+  background: linear-gradient(to left, rgba(0,0,0,0), #222);
 }
 .sidebar a {
   color: #999;
@@ -1672,7 +1672,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffbe;
+  background: #83ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
