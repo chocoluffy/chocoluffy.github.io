@@ -502,8 +502,7 @@
 <p>那这个地方，<code>offset</code>就是鼠标在container里面距离左边边框的距离， 那么我们同时根据这个距离， 让左边的视频在视窗移动时， <strong>往相反的方向以一半的速度移动来弥补视窗偏差</strong>。使得可以在视窗移动的时候， 始终保持视频本身拍摄的主体视角也处于该视窗的主体视角! 原理可以参考这个图：</p>
 <p><img src="https://dl.dropboxusercontent.com/s/t99wbc4n3s8c4r7/screensplit3.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
 <p>那么也就大功告成啦!</p>
-<p>##总结</p>
-<p>HTML5对media文件更多功能上的支持使得我们可以更好的操作media文件， 包括视频的开始暂停， 以及各种音量的调节， 而这个程序实例， 是一个很好的对相关API的使用的一个示范和一个小小的创意细节。这个项目， 也是饭后和朋友聊天聊出来的实现方案，也希望看到更多的创意脑洞和美的设计!</p>
+<h2 id="总结">总结</h2><p>HTML5对media文件更多功能上的支持使得我们可以更好的操作media文件， 包括视频的开始暂停， 以及各种音量的调节， 而这个程序实例， 是一个很好的对相关API的使用的一个示范和一个小小的创意细节。这个项目， 也是饭后和朋友聊天聊出来的实现方案，也希望看到更多的创意脑洞和美的设计!</p>
 <p>这个是这个项目的<a href="https://github.com/chocoluffy/screen-split-video" target="_blank" rel="external">github repo</a>, 这个是项目的展示<a href="http://chocoluffy.com/screen-split-video/">demo</a> 欢迎评论和pull request~</p>
 <h2 id="Q&amp;A">Q&amp;A</h2><p>后续的一些疑问和解答：(基于V2ex和微博的评论)</p>
 <p><strong>跟<a href="http://www.mi.com/hezi3s/" target="_blank" rel="external">这个链接</a>中间的 2K－4K 对比差不多一个意思？</strong><br>A: 哈哈在分屏效果上是类似的， 不过那个对图片的处理就会简单很多啦， 感觉就是在某个位置以左叠加一个高斯模糊的滤镜就可以了~ 相比之下， 对视频的处理还要考虑到视窗和视频本身的移动呢! 不过谢谢分享啦!</p>
