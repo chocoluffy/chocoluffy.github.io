@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2016-06-14T19:10:14.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/about/index.html</loc>
     <lastmod>2016-06-12T16:45:52.000Z</lastmod>
   </url>
@@ -44,11 +49,6 @@
   <url>
     <loc>http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/</loc>
     <lastmod>2016-05-27T18:54:26.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2016-05-27T18:48:49.000Z</lastmod>
   </url>
   
   <url>

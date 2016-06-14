@@ -3,6 +3,30 @@
 
 
     
+  <url>
+    <loc>http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2016-06-14T19:10:14.000Z</lastmod>
+    <data>
+        <display>
+        <title>socket.io开发多人聊天室教程</title>
+        <pubTime>2016-05-24T02:43:41.000Z</pubTime>
+        
+        <tag>AWS</tag>
+         
+        <tag>nodejs</tag>
+         
+        <tag>web design</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -129,30 +153,6 @@
         <tag>javascript</tag>
          
         <tag>nodejs</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2016-05-27T18:48:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>socket.io开发多人聊天室教程</title>
-        <pubTime>2016-05-24T02:43:41.000Z</pubTime>
-        
-        <tag>AWS</tag>
-         
-        <tag>nodejs</tag>
-         
-        <tag>web design</tag>
          
          
            
