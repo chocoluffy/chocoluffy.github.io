@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title><![CDATA[VRTO展会游记]]></title>
+      <url>http://chocoluffy.com/2016/06/27/VRTO%E5%B1%95%E4%BC%9A%E6%B8%B8%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>记录在VR Toronto展会第一次尝试Oculus和Vive的实用体验。</p>
+<a id="more"></a>
+<p><img src="http://ww3.sinaimg.cn/large/72f96cbagw1f59mz8yt2sj20ww0jhwiy" alt="down hall"></p>
+<p>先是有多大Steve Mann教授的开幕panel演讲， 其实内容和上学期ECE516的课程slides重合度非常高， 主要关于教授这四十年左右对VR的研究和总结， 以及他draft的三条关于VR的laws， 可参考conclusion那张配图, 更多具体内容和demo可以在课程网页上找到。 </p>
+<p><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f59n0318qmj20vj0ki783" alt="lecture"></p>
+<p><img src="http://ww2.sinaimg.cn/large/72f96cbagw1f59mzm3mtkg20nk0ezn44" alt="conclusion"></p>
+<p>我还记得在课上Steve展示的频率可视化手环和水波乐器， 都在昨天和今天的会场展示了， 错过的同学们可以在教授的个人主页上看到更详细的介绍。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z9qiWqRPrcw" frameborder="0" allowfullscreen></iframe>
+
+<p>接下来是一系列VR相关的演讲和demo展示， 尝试了目前市场比较流行的Oculus和Vive， 有很多游戏和服务行业开发公司都将各自的应用带到了展台， 大致的感受是：Oculus画质暂时比较差， 场景移动快的demo会导致轻微眩晕感， Vive的画质和human interaction相比之下都更加得细腻出色。</p>
+<p>但同时不可否认的是， Facebook旗下的Oculus受到更多开发者的青睐， 拥有更多的游戏选择和强大的技术支持, 但最近曝出来的Oculus强制要求某些游戏开发商的优先发行权还是有损企业形象。Sony的VR头盔暂时没有出现在今天的展示中， 但基于PS4成熟市场规模和玩家预期来说， 仍是最值得期待和大规模流行的VR设备。Vive，在我今天的体验之后， 也给我留下了很深刻的印象， 一个三维画画的游戏应用， 见配图， 将手指slide\click\hold的操作融合得很棒， slide换画板， click选择不同的画笔画布装备， hold来画画， 也的确是本场最immersive的应用之一。</p>
+<p><img src="http://ww3.sinaimg.cn/large/72f96cbagw1f59n0xg6hsj20qo0zkgq7" alt="demo"></p>
+<p><img src="http://ww3.sinaimg.cn/large/72f96cbagw1f59n0bvwjsj20qo0zk40p" alt="ada"></p>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/xG3hslceFqo" frameborder="0" allowfullscreen></iframe>
+
+<p>苹果也一直既往地选择观望态度， 短期内没有推出的VR设备的计划。微软Hololens作为AR设备， 相比VR， 拥有更大的生活场景应用空间， 今天体验到的Internet of Things， 包括家具电器灯泡的控制， 餐馆点餐是菜单的选择… 这个demo应该是今天最惊艳的展示了， 也感觉这一两年着力布局家居科技环境的苹果也将加入AR的市场。</p>
+<p>同时讲座上提及的myo手环， 曾计划是写个应用给朋友庆祝生日的， 结果用户体验实在太差（动作捕捉不准确）， 不得不放弃myo， 目前市场上较实用的motion detection的设备更多时候还是参考大公司的产品风险比较小。</p>
+<p>综上。</p>
+<p><a href="https://github.com/geekplux/hexo-tag-video" target="_blank" rel="external">https://github.com/geekplux/hexo-tag-video</a> </p>
+<p>一个插件， 可以自适应用户的视频！！！可以尝试一下</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[写给高考三年后自己的一封信]]></title>
       <url>http://chocoluffy.com/2016/06/11/%E5%86%99%E7%BB%99%E9%AB%98%E8%80%83%E4%B8%89%E5%B9%B4%E5%90%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/</url>
       <content type="html"><![CDATA[<p>这篇随笔，记为我对我高中思维的审判。 写给高考结束三年后的自己， 也写给所有刚刚结束高考乃至即将开始高中生活的小伙伴们。</p>
@@ -1560,32 +1586,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[机器学习资料收集[持续更新]]]></title>
       <url>http://chocoluffy.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</url>
       <content type="html"><![CDATA[<p>来自github, 各种关于机器学习的教程博客和工具。</p>
@@ -1846,6 +1846,32 @@
 <p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
 <p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test <span class="string">"should redirect to store_url because of empty cart when checkout"</span> <span class="built_in">do</span></span><br><span class="line">  <span class="built_in">get</span> :<span class="built_in">new</span></span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], <span class="string">"Your cart is empty!"</span></span><br><span class="line"><span class="function"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="title">test</span> "<span class="title">should</span> <span class="title">get</span> <span class="title">new</span>" <span class="title">do</span></span></span><br><span class="line">  <span class="keyword">item</span> = LineItem.<span class="built_in">new</span></span><br><span class="line">  <span class="keyword">item</span>.build_cart</span><br><span class="line">  <span class="keyword">item</span>.product = products(:<span class="constant">one</span>)</span><br><span class="line">  <span class="keyword">item</span>.save!</span><br><span class="line">  session[:cart_id] = <span class="keyword">item</span>.cart.id</span><br><span class="line">  <span class="built_in">get</span> :<span class="built_in">new</span></span><br><span class="line">  assert_response :success</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
     </entry>
     
     <entry>
