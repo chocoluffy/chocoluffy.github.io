@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-06-27T13:04:22.000Z</updated>
+  <updated>2016-06-27T13:07:03.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,14 +19,14 @@
     <link href="http://chocoluffy.com/2016/06/27/VRTO%E5%B1%95%E4%BC%9A%E6%B8%B8%E8%AE%B0/"/>
     <id>http://chocoluffy.com/2016/06/27/VRTO展会游记/</id>
     <published>2016-06-27T12:49:07.000Z</published>
-    <updated>2016-06-27T13:04:22.000Z</updated>
+    <updated>2016-06-27T13:07:03.000Z</updated>
     <content type="html"><![CDATA[<p>记录在VR Toronto展会第一次尝试Oculus和Vive的实用体验。</p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/72f96cbagw1f59mz8yt2sj20ww0jhwiy" alt="down hall"></p>
 <p>先是有多大Steve Mann教授的开幕panel演讲， 其实内容和上学期ECE516的课程slides重合度非常高， 主要关于教授这四十年左右对VR的研究和总结， 以及他draft的三条关于VR的laws， 更多具体内容和demo可以在课程网页上找到。 </p>
 <p><img src="http://ww1.sinaimg.cn/large/72f96cbagw1f59n0318qmj20vj0ki783" alt="lecture"></p>
 <p>我还记得在课上Steve展示的频率可视化手环和水波乐器， 都在昨天和今天的会场展示了， 错过的同学们可以在教授的个人主页上看到更详细的介绍。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z9qiWqRPrcw" frameborder="0" allowfullscreen></iframe>
+<div class="video-container"><br>    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z9qiWqRPrcw" frameborder="0" allowfullscreen></iframe><br></div>
 
 <p>接下来是一系列VR相关的演讲和demo展示， 尝试了目前市场比较流行的Oculus和Vive， 有很多游戏和服务行业开发公司都将各自的应用带到了展台， 大致的感受是：Oculus画质暂时比较差， 场景移动快的demo会导致轻微眩晕感， Vive的画质和human interaction相比之下都更加得细腻出色。</p>
 <p>但同时不可否认的是， Facebook旗下的Oculus受到更多开发者的青睐， 拥有更多的游戏选择和强大的技术支持, 但最近曝出来的Oculus强制要求某些游戏开发商的优先发行权还是有损企业形象。Sony的VR头盔暂时没有出现在今天的展示中， 但基于PS4成熟市场规模和玩家预期来说， 仍是最值得期待和大规模流行的VR设备。Vive，在我今天的体验之后， 也给我留下了很深刻的印象， 一个三维画画的游戏应用， 见配图， 将手指slide\click\hold的操作融合得很棒， slide换画板， click选择不同的画笔画布装备， hold来画画， 也的确是本场最immersive的应用之一。</p>
