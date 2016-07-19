@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-07-19T03:33:24.000Z</updated>
+  <updated>2016-07-19T03:41:44.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/07/18/webpack%E4%B8%8Ereact-hot-reload%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93/"/>
     <id>http://chocoluffy.com/2016/07/18/webpack与react-hot-reload开发工具库/</id>
     <published>2016-07-19T03:28:05.000Z</published>
-    <updated>2016-07-19T03:33:24.000Z</updated>
+    <updated>2016-07-19T03:41:44.000Z</updated>
     <content type="html"><![CDATA[<p>对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。<a href="https://github.com/chocoluffy/react-hot-boilerplate" target="_blank" rel="external">Github Source</a></p>
 <a id="more"></a>
 <h2 id="Babel">Babel</h2><p>通常用到的plugin, 在package.json里面保存的module有： “babel-loader”\”babel-preset-es2015”\”babel-preset-react”， 使用babel-loader, 一是可以在<code>.babelrc</code>这个文件里面写出使用另外两个module的配置， 或者， 在webpack里面的loaders部分添加相应的code来实现同样的功能。其中”babel-preset-es2015”是将es6的js语法compile成es2015的， 虽然现在IE9以上及大部分的主流浏览器目前都支持ES6语法了。</p>
