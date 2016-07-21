@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[webpack与react hot reload开发工具库]]></title>
+      <title><![CDATA[webpack与react\redux前端开发工具库]]></title>
       <url>http://chocoluffy.com/2016/07/18/webpack%E4%B8%8Ereact-hot-reload%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93/</url>
       <content type="html"><![CDATA[<p>对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。<a href="https://github.com/chocoluffy/react-hot-boilerplate" target="_blank" rel="external">Github Source</a></p>
 <a id="more"></a>
