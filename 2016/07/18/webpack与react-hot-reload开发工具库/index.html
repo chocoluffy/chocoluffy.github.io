@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://chocoluffy.com/2016/07/18/webpack与react-hot-reload开发工具库/index.html">
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。Github Source">
-<meta property="og:updated_time" content="2016-07-24T02:39:01.000Z">
+<meta property="og:updated_time" content="2016-07-26T01:02:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack与react\redux前端开发工具库">
 <meta name="twitter:description" content="对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。Github Source">
@@ -426,6 +426,10 @@
 <p>If child component requires change, it triggers corresponding handler (which typically passed as props). The only way to change the state is to dispatch an action. That action contains a type and a payload and based on that type, corresponding reducer is selected. The reducer then produces a new state, based on previous state and action payload.</p>
 <p><strong>If in the result of reducer call, state got changed, Redux will re-render high-order component, passing new state in properties. So, all child components will be updated correspondingly.</strong></p>
 <p>Check <a href="http://stackoverflow.com/questions/33668827/refresh-logic-in-react-component-or-flux-redux" target="_blank" rel="external">this post</a> for more information.</p>
+<p>How to use seperate reducers to handle different parts of state</p>
+<p>One thing to note that in seperate single reducers functions like this one, we no longer pass in the whole state tree, but instead the correct portion of that state tree, in this case, only todos array. And this part of code handles that:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; combineReducers &#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"><span class="keyword">import</span> todoReducer <span class="keyword">from</span> <span class="string">'./todoReducer'</span>;</span><br><span class="line"><span class="keyword">import</span> userReducer <span class="keyword">from</span> <span class="string">'./userReducer'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rootReducer = combineReducers(&#123;</span><br><span class="line">    todos: todoReducer,</span><br><span class="line">    user: userReducer</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> rootReducer</span><br></pre></td></tr></table></figure>
+<p>Note that after we split the reducer function, we will also update all related files.</p>
 
       
     </div>
