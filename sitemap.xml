@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chocoluffy.com/2016/08/01/React-ES6-style-guideline/</loc>
+    <lastmod>2016-08-01T20:46:35.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2016/07/03/ReactNative-%E7%AE%80%E6%98%93%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%A2%E6%88%B7%E7%AB%AF/</loc>
     <lastmod>2016-08-01T00:04:43.000Z</lastmod>
   </url>
