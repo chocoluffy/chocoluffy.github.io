@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-08-01T20:54:03.000Z</updated>
+  <updated>2016-08-27T20:39:20.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[用ffmpeg从视频中获取图片及GIF]]></title>
+    <link href="http://chocoluffy.com/2016/08/27/%E7%94%A8ffmpeg%E4%BB%8E%E8%A7%86%E9%A2%91%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%8F%8AGIF/"/>
+    <id>http://chocoluffy.com/2016/08/27/用ffmpeg从视频中获取图片及GIF/</id>
+    <published>2016-08-27T20:37:22.000Z</published>
+    <updated>2016-08-27T20:39:20.000Z</updated>
+    <content type="html"><![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。 </p>
+<p>在项目的展示中， 我提出了来自youtube的启发， 我感觉也是最近这几周， youtube上的视频列表多了一个新功能是， 当你鼠标hover当前视频时， 静态图片会变成视频中其中的一段GIF， 然后过一段时间再变回来， 具体效果看这个动图：</p>
+<p><img src="http://ww4.sinaimg.cn/large/7853084cgw1f78xtzb0xyg20dc08u1ky.gif" alt="demo"></p>
+<p>当时上youtube就觉得用户体验好棒， 很快想到的一些问题是， youtube是随机攫取GIF的嘛， 是否这个GIF就是这个视频的重要scene， 是利用收集的社交数据和评论来预测重要性的， 还是仅仅通过比较frame出现的时长来比较……</p>
+<p>这些都是很有趣的问题， 每一个方向展开来说都可以逐渐细分到实现的算法和数据格式。 我现在正在做的也正是我上面提到的其中一个方向哈哈， 而今天这篇博文想要探讨的， 是实现上面所有后续构想的building block， 怎样获取数据源和呈现。 ffmpeg和imagemagick这两个处理照片和视频特别方便的库也再这里介绍一下。</p>
+<h2 id="Preparation">Preparation</h2><p>安装ffmpeg的方式很简单， 在OSX里面<code>brew install ffmpeg</code>就可以了。同理也有<code>brew install imagemagick</code>。</p>
+<h2 id="Example">Example</h2><p>下面是各种working choice，ffmpeg强大的另外一个地方是它并不需要将整个视频都下载下来然后再进行处理， 而是可以直接read from stream。 而在整个流程最花时间的步骤其实并不是获取那个frame， 而是将frame根据一定编码保存到本地这个过程。 而后续如果有充分时间， 我也满希望可以仔细去看看ffmpeg编码的格式~</p>
+<p>[1]<code>ffmpeg -y -i https://video.twimg.com/ext_tw_video/712057418646052864/pu/vid/1280x720/JiR-RnnRyfQVF5ue.mp4 -ss 3 -frames:v 1 frame_3.jpg</code><br>can help extract the third frame from that url.</p>
+<p>[2]<code>ffmpeg -y -i https://video.twimg.com/ext_tw_video/712057418646052864/pu/vid/1280x720/JiR-RnnRyfQVF5ue.mp4 -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - gif:- | convert -layers Optimize - output.gif</code><br>will output images to convert them into gif.</p>
+<p>[3]<code>ffmpeg -t 3 -ss 00:00:02 -i https://video.twimg.com/ext_tw_video/712057418646052864/pu/vid/1280x720/JiR-RnnRyfQVF5ue.mp4 middle.gif</code><br>The snippet directs ffmpeg to create a GIF 3 seconds long starting at 2 seconds into the video.</p>
+<p>[4]Thus, simply combine the [2] and [3] can convert some specific time frames into optimized gif like this <code>ffmpeg -t 3 -ss 00:00:02 -i https://video.twimg.com/ext_tw_video/712057418646052864/pu/vid/1280x720/JiR-RnnRyfQVF5ue.mp4  -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - gif:- | convert -layers Optimize - output.gif</code></p>
+<p>[5]ffmpeg has its own version of converting to gif. <code>ffmpeg -t 3 -ss 1 -i https://video.twimg.com/ext_tw_video/712057418646052864/pu/vid/1280x720/JiR-RnnRyfQVF5ue.mp4 output.gif</code>. However, the file size is extremely large, hard to load.</p>
+<p>For now, version [4] is the best choice.</p>
+<p><code>-ss</code>: follows a single number means extracting that single frame from video source; follows a specific time-format means extracting from that time. </p>
+<p><code>-t</code>: follows a number means the duration of that extraction.</p>
+<p>我在这里只记录了几个较为常用的parameter options。更多的option可以参看<a href="https://www.ffmpeg.org/ffmpeg.html" target="_blank" rel="external">官方文档</a></p>
+<h2 id="Dev_Environment">Dev Environment</h2><p>接下来是一段我写的示例代码， 主要还是就怎么使用ffmpeg的问题稍微说一下， 毕竟大部分Machine Learning的工作还是在python里面写， 而当我们需要在python里面获取这些frames的时候， 我们应该怎么调用ffmpeg和imagemagick呢？</p>
+<p>这里稍微补充一点， 启示ffmpeg本身也可以convert seperate images into gif， 但是相比与imagemagick还提供了图片压缩和优化的选项， 我更倾向于使用两者的结合。</p>
+<h3 id="virtualenv">virtualenv</h3><p>就使用ffmpeg这个方面本身并不需要提及virtualenv， 但是很多和ffmpeg相关的后续工作都会和很多python的scientific computing package一起合用， 而安装这些packages的过程是非常繁琐而容易出错的， 大家都习惯一上来就把这些library安装在全局， 而无论是安装过程还是未来的版本管理都是mess。</p>
+<p>因此这里稍微提一下anaconda， 专为管理python packages而生的CLI， 为每一个项目创建一个virtualenv然后给那个项目安装不同的独立的python libraries， 用完即删。</p>
+<p><code>conda create --name &lt;project-name&gt; python=2.7 opencv matplotlib</code>, use conda to install library dependencies. Also specify the python version and library needed to pre-install, say inside this project, we want  <code>import cv2</code>, thus we put those libraries right after the python version. Then <code>source activate &lt;project-name&gt;</code> can jump into that virtualenv.</p>
+<h3 id="subprocess">subprocess</h3><p>Since I will utilize “imagemagick” library to process images into gifs, by piping the results from “opencv”, most likely I will need to create a subprocess to do that. The command-line way to achieve that is <code>ffmpeg -t 3 -ss 00:00:02 -i &lt;video source&gt; -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - gif:- | convert -layers Optimize - output.gif</code>, which for example, will extract starting at 00:00:02 a 3-seconds short video from origin video and convert\optimize them into a smaller gif. In order to support multiple pipes as in command line, we use subprocess’s <code>PIPE</code> functions to concatenate those different parts.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_video_gif</span><span class="params">(video, t, duration, output_name)</span>:</span></span><br><span class="line">    <span class="comment"># In subprocess, save gif to local.</span></span><br><span class="line">    <span class="comment"># ffmpeg -t 3 -ss 00:00:02 -i https://video.twimg.com/ext_tw_video/712057418646052864/pu/vid/1280x720/JiR-RnnRyfQVF5ue.mp4 -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 5 -loop 0 - gif:- | convert -layers Optimize - output.gif</span></span><br><span class="line">    p1 = sp.Popen([<span class="string">'ffmpeg'</span>, <span class="string">'-t'</span>, str(duration), <span class="string">'-ss'</span>, str(t), <span class="string">'-i'</span>, video, <span class="string">'-vf'</span>, <span class="string">'scale=320:-1'</span>, <span class="string">'-r'</span>, <span class="string">'10'</span>, <span class="string">'-f'</span>, <span class="string">'image2pipe'</span>, <span class="string">'-vcodec'</span>, <span class="string">'ppm'</span>, <span class="string">'-'</span>, ], stdout=sp.PIPE)</span><br><span class="line">    p2 = sp.Popen([<span class="string">'convert'</span>, <span class="string">'-delay'</span>, <span class="string">'5'</span>, <span class="string">'-loop'</span>, <span class="string">'0'</span>, <span class="string">'-'</span>, <span class="string">'gif:-'</span>], stdin=p1.stdout, stdout=sp.PIPE)</span><br><span class="line">    p1.stdout.close()</span><br><span class="line">    p3 = sp.Popen([<span class="string">'convert'</span>, <span class="string">'-layers'</span>, <span class="string">'Optimize'</span>, <span class="string">'-'</span>, output_name], stdin=p2.stdout, stdout=sp.PIPE)</span><br><span class="line">    p2.stdout.close()</span><br><span class="line"></span><br><span class="line">    output = p3.communicate()[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="Documentation">Documentation</h2><ul>
+<li><a href="http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality" target="_blank" rel="external">How to convert a video to gif using ffmpeg</a></li>
+<li><a href="https://davidwalsh.name/convert-video-gif" target="_blank" rel="external">How to convert to and from between gif and video</a></li>
+</ul>
+<h2 id="Summary">Summary</h2><p>处理视频和图片对我来说是一个蛮有趣的方向。 我们每天都会查询和搜索到无数多媒体信息， 而人们对信息的处理能力和标准也越来越严苛， 从简单文本到图片分享再到视频， 现在还很火的视频直播技术不是吗。 人们越来越多地被记录下来， 从曾经一生可能只去几次的影楼， 到情绪高涨时举起的自拍杆， 再到可能无时无刻都存在的直播和拍摄。</p>
+<p>而记录本身， 就孕育着还原的渴望。</p>
+<p>利用文字， 图片和视频， 科学家们能会如何重构一个曾经发生的世界， 而又能怎样地拿那个世界的统计和观察来预测下一个每分每秒。 深度学习和人工智能火了， 或许也是人们在尝试还原重构这个世界的一个必经之路， 很期待未来几年的科技发展啊。</p>
+<p>很幸运以一个学生和实习生的身份慢慢进入这个殿堂。 话说回来， 每次见到那些用户体验特别好的细节总是特别喜欢然后絮絮叨叨呢哈哈~</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(fr]]>
+    </summary>
+    
+      <category term="machine learning" scheme="http://chocoluffy.com/tags/machine-learning/"/>
+    
+      <category term="用户体验" scheme="http://chocoluffy.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[React/ES6 style guideline]]></title>
@@ -1311,56 +1361,6 @@
     </summary>
     
       <category term="C" scheme="http://chocoluffy.com/tags/C/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Responsive web design[第三期]-js动画]]></title>
-    <link href="http://chocoluffy.com/2016/02/04/Responsive-web-design-%E7%AC%AC%E4%B8%89%E6%9C%9F-js%E5%8A%A8%E7%94%BB/"/>
-    <id>http://chocoluffy.com/2016/02/04/Responsive-web-design-第三期-js动画/</id>
-    <published>2016-02-05T01:48:22.000Z</published>
-    <updated>2016-02-05T01:55:38.000Z</updated>
-    <content type="html"><![CDATA[<p>Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations. </p>
-<a id="more"></a>
-<h2 id="Introduction">Introduction</h2><p>很多前端开发者会告诉你，你应该避免使用 JavaScript 动画。使用 CSS 动画会有更好的性能（更少的 CPU 时间）和更平滑的效果（更高的帧率）。</p>
-<p>然而，JavaScript 动画慢的原因经常是因为你用的库并没有为动画进行优化。优化过的 JavaScript 动画引擎（比如 GreenSock 或 Velocity.js）有堪比 CSS 动画的性能。某些情况下 JS 动画甚至比 CSS 动画更快！可参考下面这个性能的比较， 最后发现在某些情况下greensock的性能会比jquery好上5-6倍</p>
-<ul>
-<li><a href="https://www.greensock.com/js/speed.html" target="_blank" rel="external">greensock</a> </li>
-</ul>
-<h2 id="引入greensock_js库">引入greensock js库</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">TweenMax.fromTo(<span class="string">"#box"</span>,<span class="number">1</span>, &#123;</span><br><span class="line">    <span class="comment">// from</span></span><br><span class="line">    css: &#123;</span><br><span class="line">      left: <span class="string">"-200px"</span>,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,&#123;</span><br><span class="line">    <span class="comment">// to</span></span><br><span class="line">    css: &#123;</span><br><span class="line">      left: <span class="string">"200px"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 永久重复动画的选项</span></span><br><span class="line">    repeat: -<span class="number">1</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 反转、重新运行动画的选项</span></span><br><span class="line">    yoyo: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 改变 easing 类型</span></span><br><span class="line">    ease: Power2.easeInOut,</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>什么是fps? 帧率或画面更新率是用于测量显示帧数的量度[1]。测量单位为“每秒显示帧数”（Frame per Second，FPS，帧率）或“赫兹”，一般来说FPS用于描述影片、电子绘图或游戏每秒播放多少帧，而赫兹则描述显示屏的画面每秒更新多少次。<br>由于人类眼睛的特殊生理结构，如果所看画面之帧率高于每秒约10-12帧的时候，就会认为是连贯的[2]， 此现象称之为视觉暂留。这也就是为什么电影胶片是一格一格拍摄出来，然后快速播放的。但30帧仅仅是流畅，而非平滑连续，因此有更多帧率的产品推出也就不足为奇了。<br>有声电影的拍摄及播放帧率均为每秒24帧，对一般人而言已算可接受，但对早期的高动态电子游戏，尤其是射击游戏或竞速游戏来说，帧率少于每秒30帧的话，游戏就会显得不连贯，这是因为电脑会准确地显示瞬时的画面（像是一台快门速度无限大的相机），没有动态模糊使流畅度降低。而使用相同帧率的摄影机拍摄物体移动时，该场景的视频必定会表现所有移动物体在曝光时间内所有位置的完整组合。因此很多新世代电玩游戏以动态模糊为特色。在实际体验中，60帧相对于30帧有着更好的体验。</p>
-</blockquote>
-<p>在app.js里面我们用y来表现出垂直状态的变化</p>
-<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> animateLogo()&#123;</span><br><span class="line">	TweenMax.fromTo(<span class="string">"#logo"</span>, <span class="number">2.5</span>, &#123;</span><br><span class="line">		css: &#123;</span><br><span class="line">			y: <span class="string">"-30px"</span>,</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;, &#123;</span><br><span class="line">		css: &#123;</span><br><span class="line">			y: <span class="string">"20px"</span>,</span><br><span class="line">		&#125;,</span><br><span class="line"></span><br><span class="line">		repeat: -<span class="number">1</span>,</span><br><span class="line">		yoyo: true,</span><br><span class="line">		ease: Sine.easeInOut,</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="GPU加速">GPU加速</h2><p>你可以把一个网页想象为一堆矩形。布局和绘图都是由 CPU 完成的：</p>
-<p>CPU 计算这些矩形的布局。矩形在哪里？它们有多大？<br>CPU 把矩形渲染成点阵位图（bitmap）。<br>之后如果可能的话，矩形被送到 GPU 以获得更好的性能：</p>
-<p>CPU 以点阵位图的形式上传到 GPU 中。<br>CPU 给 GPU 发送指令去处理这些位图。可能有平移/缩放/旋转，修改透明度，等等。<br>GPU 为什么比 CPU 快呢？假设我们把一个红色点阵和一个绿色点阵结合，CPU 不得不一个一个像素地做.</p>
-<p>总的来说，当修改 CSS 属性时，有三种可能的开销：</p>
-<p>重排（CPU。代价最高）。<br>重绘（CPU）。<br>变换, 旋转, 缩放, 透明度（GPU，代价最低）。</p>
-<p>因此在使用transform的时候， 我们常常用y在表示垂直方向的移动，这么做是不会重新排列布局的， 而是在局部位置偏移。</p>
-<blockquote>
-<p>注意： left 只对 position: absolute 生效 </p>
-</blockquote>
-<p>transform 的原理是由元素的定位位置（absolute or relative) 偏移。<br>用 GreenSocks 去修改 left 的话是改变定位位置。<br>也就是说 left 的动画改变布局，但 transform 动画不会改变布局。</p>
-<h2 id="多步骤动画">多步骤动画</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> t = <span class="keyword">new</span> TimelineMax();</span><br><span class="line">t.<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">1</span>,&#123;<span class="attribute">x</span>: <span class="number">200</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">0.5</span>,&#123;<span class="attribute">rotation</span>: <span class="string">"360deg"</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">1</span>,&#123;<span class="attribute">y</span>: <span class="number">100</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">0.5</span>,&#123;<span class="attribute">rotation</span>: <span class="string">"-=360deg"</span>&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="指示器(滚动指示条)">指示器(滚动指示条)</h2><p>当窗口滚动时, 你可以用 window.scrollY 来算出窗口正在展示的是哪一部分。那么现在的重点就在于， 怎样可以获得关于元素所在位置， 高度的各种属性， 比如<code>scrollY</code>, <code>offsetHeight</code>, <code>offsetTop</code></p>
-<ul>
-<li><a href="http://stackoverflow.com/questions/6777506/offsettop-vs-jquery-offset-top/21880020#21880020" target="_blank" rel="external">offset的各种用法实例</a></li>
-</ul>
-<h2 id="取消link默认行为">取消link默认行为</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addSmoothScrolling</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> links = <span class="built_in">document</span>.querySelectorAll(<span class="string">"#slider-control a"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;links.length; i++)&#123;</span><br><span class="line">		<span class="keyword">var</span> link = links[i];</span><br><span class="line">		<span class="keyword">var</span> section = <span class="built_in">document</span>.querySelectorAll(<span class="string">"div.section"</span>)[i];</span><br><span class="line">		(<span class="function"><span class="keyword">function</span>(<span class="params">sec</span>)</span>&#123;</span><br><span class="line">			<span class="comment">// console.log(sec);</span></span><br><span class="line">			link.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">				<span class="comment">// console.log(sec.offsetTop+"px");</span></span><br><span class="line">				scrollToElement(sec);</span><br><span class="line">				e.preventDefault();</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)(section)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>首先用一个闭包来保证， 里面的函数在click的时候才之行， 而在那个时候， i 已经到了最后一个link的位置， 所以必须提前找到对应的section， 然后在闭包中传入。 同时需要在click事件的最后加上一个e.preventDefault， 来阻止link的默认行为， link的默认行为是直接跳转， 然后我们需要动画来辅助。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations. </p>]]>
-    
-    </summary>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
     
       <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
