@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-08-27T20:39:20.000Z</updated>
+  <updated>2016-08-27T20:41:44.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,10 +19,11 @@
     <link href="http://chocoluffy.com/2016/08/27/%E7%94%A8ffmpeg%E4%BB%8E%E8%A7%86%E9%A2%91%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%8F%8AGIF/"/>
     <id>http://chocoluffy.com/2016/08/27/用ffmpeg从视频中获取图片及GIF/</id>
     <published>2016-08-27T20:37:22.000Z</published>
-    <updated>2016-08-27T20:39:20.000Z</updated>
+    <updated>2016-08-27T20:41:44.000Z</updated>
     <content type="html"><![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。 </p>
+<a id="more"></a>
 <p>在项目的展示中， 我提出了来自youtube的启发， 我感觉也是最近这几周， youtube上的视频列表多了一个新功能是， 当你鼠标hover当前视频时， 静态图片会变成视频中其中的一段GIF， 然后过一段时间再变回来， 具体效果看这个动图：</p>
-<p><img src="http://ww4.sinaimg.cn/large/7853084cgw1f78xtzb0xyg20dc08u1ky.gif" alt="demo"></p>
+<p><img src="http://ww4.sinaimg.cn/large/7853084cgw1f78xtzb0xyg20dc08u1ky.gif" style="margin: 0 auto;"></p>
 <p>当时上youtube就觉得用户体验好棒， 很快想到的一些问题是， youtube是随机攫取GIF的嘛， 是否这个GIF就是这个视频的重要scene， 是利用收集的社交数据和评论来预测重要性的， 还是仅仅通过比较frame出现的时长来比较……</p>
 <p>这些都是很有趣的问题， 每一个方向展开来说都可以逐渐细分到实现的算法和数据格式。 我现在正在做的也正是我上面提到的其中一个方向哈哈， 而今天这篇博文想要探讨的， 是实现上面所有后续构想的building block， 怎样获取数据源和呈现。 ffmpeg和imagemagick这两个处理照片和视频特别方便的库也再这里介绍一下。</p>
 <h2 id="Preparation">Preparation</h2><p>安装ffmpeg的方式很简单， 在OSX里面<code>brew install ffmpeg</code>就可以了。同理也有<code>brew install imagemagick</code>。</p>
@@ -53,7 +54,8 @@
 <p>很幸运以一个学生和实习生的身份慢慢进入这个殿堂。 话说回来， 每次见到那些用户体验特别好的细节总是特别喜欢然后絮絮叨叨呢哈哈~</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(fr]]>
+    <![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。 </p>]]>
+    
     </summary>
     
       <category term="machine learning" scheme="http://chocoluffy.com/tags/machine-learning/"/>
