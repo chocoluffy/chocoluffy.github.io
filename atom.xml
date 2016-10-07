@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-10-07T01:16:23.000Z</updated>
+  <updated>2016-10-07T01:21:12.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/"/>
     <id>http://chocoluffy.com/2016/10/06/社团日记2-新生致辞/</id>
     <published>2016-10-07T01:09:06.000Z</published>
-    <updated>2016-10-07T01:16:23.000Z</updated>
+    <updated>2016-10-07T01:21:12.000Z</updated>
     <content type="html"><![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8jfpjll14j20j60ao3z8.jpg" alt="sky"></p>
@@ -48,7 +48,7 @@
 <p>这是一个试错成本很高的时代，ADA想提供给你， 在你步入残酷的商业逻辑之前， 一次尝试的机会。</p>
 <p>这里有一群我认为非常理想主义的人。</p>
 <p>如果要我说， 为什么我选择计算机。 因为他给了我自由。 和文字， 设计一样。它给予了你实现你想法的自由。而自由的人， 是最快乐的。</p>
-<div style="text-align:center" markdown="1"><br>  <iframe src="http://chocoluffy.com/ADA2016/" width="100%" height="400px"><br>    <p>Your browser does not support iframes.</p><br>  </iframe><br></div>]]></content>
+<div class="full-image" markdown="1"><br>  <iframe src="http://chocoluffy.com/ADA2016/" width="100%" height="400px"><br>    <p>Your browser does not support iframes.</p><br>  </iframe><br></div>]]></content>
     <summary type="html">
     <![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>]]>
     
