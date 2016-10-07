@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-09-11T21:32:07.000Z</updated>
+  <updated>2016-10-07T01:12:48.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[社团日记2 新生致辞]]></title>
+    <link href="http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/"/>
+    <id>http://chocoluffy.com/2016/10/06/社团日记2-新生致辞/</id>
+    <published>2016-10-07T01:09:06.000Z</published>
+    <updated>2016-10-07T01:12:48.000Z</updated>
+    <content type="html"><![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>
+<a id="more"></a>
+<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8jfpjll14j20j60ao3z8.jpg" alt="sky"></p>
+<p>两周前的那个周末面试了好多小伙伴。 有来自工程系正在实习着的， 有研究生搞计算机系统的， 有一个穿着印有Amazon logo衣服的， 还有一个中文说得很溜的外国朋友。人来来往往。</p>
+<p>作为技术部门的负责人， 在新生大会上也将有一段致辞。 说来也好玩， 给新生们准备的一段话， 自己准备的时候却也常常反问自己新生时的那段过往， 想起自己第一次接触计算机， 第一次参加hacker meeting的等等等等…</p>
+<p>以下是当时准备时的摘要：</p>
+<p>这一段时间主要在忙招新、面试。 一直就会在想， 这到底是一个怎么样的社团， 我们想招进来什么样的人， 一个特别庞大的感觉其他社团都不太注重的tech部门， 究竟是干什么的， 为什么我要加入？</p>
+<p>把我们精雕细琢的作品， 无论是程序还是海报， 分享出去。 哪怕是他们对我们的作品有异议， 但我们至少给生活的细节提供了观点。</p>
+<p>特别印象深刻的是， “为什么加入ada“， 很多人的回答是， ”因为我曾经被UT助手的某些文章， 某些功能帮助过。”</p>
+<p>我们特别珍惜这种感觉。</p>
+<p>能够将自己的想法实现出来的自由。</p>
+<p>这感觉是一个特别难回答的问题， 就好像你去问一个人， 什么是喜欢跑东跑西去摄影， 抑或什么才是旅行的意义。</p>
+<p>但可能更多时候这个问题也特别简单， 因为我喜欢啊。我用照片想纪录下生活里最美最美的瞬间去留住记忆， 我想设计出别人看两眼都要抖两下的海报~</p>
+<p>也因为喜欢， 你也想去找那同样饱含热情、热烈的一群人。</p>
+<p>说白了，这是一群怎么样的人， 也会吸引那样子的一群人过来。</p>
+<p>那我们tech部门呢， 特别特别珍重的一种感觉， 其实也恨简单， 就是好玩。</p>
+<p>当你开发的东西（无论网页也好， 应用也好）， 设计的海报，被周围几千人使用者讨论着， 驻足欣赏的时候。 你知道你那仔仔细细研究出来的东西帮大家解决了问题的时候， 那是我最最快乐的时候。</p>
+<p>分享一个我们前段时间为了帮助新生更好的认识多伦多大学设计的一个简单的网页游戏-你究竟是不是一个多大学生。点进去会看到很多很美的风景， 你需要根据图片猜到这个地点的名称。蛮多新生可能猜不到几个， 所以我们在后续的小助手文章里也详细介绍了很多各个著名地点以及贴心的建议（比如：ba哪里有热水等等）。 感谢我们的lydia\jessie\gloria给我们整理的图片。最后还有一个很萌很萌的教授。</p>
+<p>现在如何才能玩到这个游戏呢？很简单，在UT助手输入关键词都可以匹配到这篇文章找到这个游戏链接。</p>
+<p>那这个也是一个很好玩的功能啦， 也就是上个月吧， 我给小助手的后台添加了语义理解的功能。</p>
+<p>说回来， 这是一个很典型的， 也是一个我蛮喜欢的游击战合作方式啦， 短短一两天内， 从社长提出这个上一次brainstorm里joyce的想法， 到技术部水水完成基本框架， 再转移给marketing部jessie添加内容素材， 再转移给技术部我和justin来设计动效和优化加载时间。 然后就有了这份几千人在微信上玩的一个游戏。很好玩吧。</p>
+<p>第二个我一直想分享的东西， 就是我们的UT助手了， 正如大家所看到的一样， 我们给UT助手添加了很多的功能。</p>
+<p>那ADA和UT助手， 究竟是什么一个关系？UT助手是一个独立的媒体平台， 由ADA的市场部的伙伴运营， 想让大家听见不同的声音， 看见有态度有温度的文字。 我也非常期待今年的UT助手， 因为作者费诺、冯小姐都是我特别欣赏的人。而Tech部门的主要目标之一， 也是为这个媒体平台添加工具性的功能。</p>
+<p>自动化。</p>
+<p>这是今年Tech部门最最主要的使命之一。</p>
+<p>从数据来源爬虫的自动采集， 到项目与slackbot、hubot的自动储存和部署。我希望今年大部分的ADA项目都可以在某个方面接受自动化的想法。 从开发环境的设置开始， 可能每次开发网页你都是在编辑器里面保存然后跑去浏览器那边刷新等新的结果， 而同样， 或者可以尝试webpack的热加载， 页面可以随时同步到最新的状态而不必你有任何操作。很多的东西都会在后续的workshop里面分享。</p>
+<p>这是一个试错成本很高的时代，ADA想提供给你， 在你步入残酷的商业逻辑之前， 一次尝试的机会。</p>
+<p>这里有一群我认为非常理想主义的人。</p>
+<p>如果要我说， 为什么我选择计算机。 因为他给了我自由。 和文字， 设计一样。它给予了你实现你想法的自由。而自由的人， 是最快乐的。</p>
+<div style="text-align:center" markdown="1"><br>  <iframe src="http://chocoluffy.com/ADA2016/" width="100%" height="600"><br>    <p>Your browser does not support iframes.</p><br>  </iframe><br></div>]]></content>
+    <summary type="html">
+    <![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>]]>
+    
+    </summary>
+    
+      <category term="公众号文章" scheme="http://chocoluffy.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="日记" scheme="http://chocoluffy.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[社团日记1 重新出发]]></title>
@@ -1282,70 +1333,6 @@
       <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
     
       <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Ajax(with Jquery) on Nodejs server]]></title>
-    <link href="http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/"/>
-    <id>http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/</id>
-    <published>2016-02-20T19:37:25.000Z</published>
-    <updated>2016-02-20T19:44:47.000Z</updated>
-    <content type="html"><![CDATA[<p>Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢理解了才能够融会贯通， 现在的开发速度大大进步了。 同时也学会了如何允许CORS的请求， 和正则匹配的部分细节。<br><a id="more"></a></p>
-<p><img src="https://zippy.gfycat.com/FancyWeeBrontosaurus.gif" alt="project gif"></p>
-<h2 id="Requirements">Requirements</h2><p>Requesting 127.0.0.1:3000 should give your index page (with CSS and JS). For the subsequent requests, you should use AJAX to send requests to the Node server and update only some parts of the page with the response data. Ideally, you should return JSON data as a response and then format that using Javascript.</p>
-<h2 id="Ongoing_notes">Ongoing notes</h2><ul>
-<li><p>how to use Ajax to request the data instead of using url request to node server? <strong><em>Main idea is that to use <code>$.getJSON(&quot;http://127.0.0.1:3000/favs.json&quot;, function(...){...}</code> to send out the Ajax request, and set the nodejs script to be able to respond such json file request and properly handle CORS problem. The things left will be just styling and formatted retrieved information and display.</em></strong></p>
-</li>
-<li><p>nodejs. You might use Node.js to connect to a database (returning a result set from a query, say, or updating a record); deliver HTML, XML, or JSON content; connect to local files; or serve up static web pages like Apache or another web server.</p>
-</li>
-<li><p>ajax. The mechanism for sending data to and retrieving data from the server with Ajax is the XMLHttpRequest object. So, now that we have an XMLHttpRequest object created, what do we do with it? We use it to make HTTP requests. To do so, we initialize the object with the open() method, which takes three arguments. Like <code>xmlhttp.open(&quot;GET&quot;,&quot;Demo.xml&quot;,true);</code>.</p>
-<ul>
-<li>HEAD. <code>xmlhttp.open(&quot;HEAD&quot;,&quot;Demo&quot;,true);</code> and <code>xmlhttp.send(null)</code>.</li>
-<li>GET. <code>xmlhttp.open(&quot;GET&quot;,&quot;Demo?FirstName=Nat&amp;LastName=Dunn&quot;,true);</code>, the last argument is choose for true(asynchronous) or false(synchronous). The difference is that for synchronous version, browser has to wait for a response. The code below shows how to use Ajax solely to listen to the content change.</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">start</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">        <span class="keyword">var</span> contentDiv = <span class="built_in">document</span>.getElementById(<span class="string">"Content"</span>);</span><br><span class="line"> </span><br><span class="line">        xmlhttp.open(<span class="string">"GET"</span>, <span class="string">"Demo?FirstName=Nat&amp;LastName=Dunn"</span>, <span class="literal">true</span>);</span><br><span class="line">        xmlhttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">// handle Ajax response.</span></span><br><span class="line">            <span class="keyword">if</span> (xmlhttp.readyState == <span class="number">4</span> &amp;&amp; xmlhttp.status == <span class="number">200</span>) &#123;</span><br><span class="line">                contentDiv.innerHTML = xmlhttp.responseText;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        xmlhttp.send(<span class="literal">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    observeEvent(<span class="built_in">window</span>, <span class="string">"load"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> btn = <span class="built_in">document</span>.getElementById(<span class="string">"btnStart"</span>);</span><br><span class="line">        observeEvent(btn, <span class="string">"click"</span>, start);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>Ajax in jquery. In general, Ajax does not work across domains. Exceptions are services that provide JSONP (JSON with Padding) support, which allow limited cross-domain functionality. JQuery provides Ajax support that abstracts away painful browser differences. It offers both a full-featured $.ajax() method, and simple convenience methods such as $.get(), $.getScript(), $.getJSON(), $.post(), and $.fn.load(). A working example of using Ajax of pulling image data from Flick referring <a href="http://www.w3school.com.cn/jquery/ajax_getjson.asp" target="_blank" rel="external">this post</a></p>
-</li>
-<li><p>How to avoid CORS(cross-origin resources sharing) error, refer to <a href="http://www.bennadel.com/blog/2327-cross-origin-resource-sharing-cors-ajax-requests-between-jquery-and-node-js.htm" target="_blank" rel="external">this post</a>. <strong><em>Main idea is that at the nodejs server part, we allow some origin and some type of content being CORS, thus we can request such resources at client part, which in this case in my own browser.</em></strong></p>
-</li>
-<li><p>How to regex all the href links inside a tweet? Especially how to do that in javascript? </p>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// tweet here is a JSON object</span></span><br><span class="line"><span class="keyword">var</span> tweetString = <span class="built_in">JSON</span>.stringify(tweet);</span><br><span class="line"><span class="keyword">var</span> regex = <span class="regexp">/(https?:\/\/.*?)("|\s)/g</span>;</span><br><span class="line"><span class="keyword">var</span> matchlst = [];</span><br><span class="line">tweetString.replace(regex, <span class="function"><span class="keyword">function</span>(<span class="params">a, b, c, d</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(a.slice(-<span class="number">1</span>)==<span class="string">'"'</span>)&#123;</span><br><span class="line">		a = a.slice(<span class="number">0</span>, -<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	matchlst.push(a);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p><strong><em>Main idea is that we first make a JSON object into a string, then we can do regex match on a string. we use //g to indicate that it is search globally. And then for those valid match, we trim out the trailing quote then store it into a list for later formatting use. </em></strong>. Note that we should make full use of the flag option provided with regex matching, refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank" rel="external">this post</a>. For example, <code>/.../g</code> is for global match, <code>/.../i</code> is for case-insensitive match.</p>
-<ul>
-<li>How to use Jquery to construct <code>div</code> or <code>a</code> elements? refer to <a href="http://stackoverflow.com/questions/867916/creating-a-div-element-in-jquery" target="_blank" rel="external">this post</a>, simply do the following: <strong><em>Here I make use of the Bootstrap alert styling!</em></strong></li>
-</ul>
-<figure class="highlight openscad"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$<span class="params">(<span class="string">"&lt;div&gt;"</span>)</span>.addClass<span class="params">('alert alert-warning')</span>.html<span class="params">(<span class="string">"&lt;strong&gt;Warning!&lt;/strong&gt; Such user or tweet does not exist. Please enter a valid query."</span>)</span>.prependTo<span class="params">(query_list)</span>;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Avoid the <code>submit</code> event cause a page redirection or refresh? simply add a <code>return false</code> at the end of the submit function. Here is the submit function I wrote to process the info after AJAX from nodejs server. Note that my nodejs server host at <code>http://127.0.0.1:3000/</code>.</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#queryform"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    		emptyAll();</span><br><span class="line">    		<span class="keyword">var</span> searchval = $(<span class="string">"#search"</span>).val();</span><br><span class="line">    		<span class="built_in">console</span>.log(searchval);</span><br><span class="line">    		$(<span class="string">"#list ul"</span>).addClass(<span class="string">"unseen"</span>);</span><br><span class="line">    		<span class="keyword">var</span> query_list = $(<span class="string">"#query"</span>);</span><br><span class="line">    		<span class="keyword">var</span> nameHash = &#123;&#125;;</span><br><span class="line">    		<span class="keyword">var</span> tweetidHash = &#123;&#125;; </span><br><span class="line">	    	$.getJSON(<span class="string">"http://127.0.0.1:3000/favs.json"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">tweets</span>)</span>&#123;</span><br><span class="line">				$.each(tweets, <span class="function"><span class="keyword">function</span>(<span class="params">i,tweet</span>)</span>&#123;</span><br><span class="line">					nameHash[tweet.user.screen_name] = tweet;</span><br><span class="line">					tweetidHash[tweet.id_str] = tweet;</span><br><span class="line">				&#125;);</span><br><span class="line">				<span class="keyword">if</span>(<span class="built_in">Object</span>.keys(nameHash).indexOf(searchval)&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> formattedText = <span class="string">"&lt;strong&gt;User screen name: &lt;/strong&gt;"</span>;</span><br><span class="line">					formattedText += searchval + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;strong&gt;Tweet: &lt;/strong&gt;&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;pre&gt;&lt;code&gt;"</span> + <span class="built_in">JSON</span>.stringify(nameHash[searchval], <span class="literal">null</span>, <span class="number">4</span>) + <span class="string">"&lt;/code&gt;&lt;/pre&gt;"</span>;</span><br><span class="line">					$(<span class="string">"&lt;p&gt;"</span>).html(formattedText).prependTo(query_list);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span> <span class="keyword">if</span>(<span class="built_in">Object</span>.keys(tweetidHash).indexOf(searchval)&gt;=<span class="number">0</span>)&#123;</span><br><span class="line">					<span class="keyword">var</span> formattedText = <span class="string">"&lt;strong&gt;Tweet ID: &lt;/strong&gt;"</span>;</span><br><span class="line">					formattedText += searchval + <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;strong&gt;Tweet: &lt;/strong&gt;&lt;br&gt;"</span>;</span><br><span class="line">					formattedText += <span class="string">"&lt;pre&gt;&lt;code&gt;"</span> + <span class="built_in">JSON</span>.stringify(tweetidHash[searchval], <span class="literal">null</span>, <span class="number">4</span>) + <span class="string">"&lt;/code&gt;&lt;/pre&gt;"</span>;</span><br><span class="line">					$(<span class="string">"&lt;p&gt;"</span>).html(formattedText).prependTo(query_list);</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">else</span>&#123;		</span><br><span class="line">					$(<span class="string">"&lt;div&gt;"</span>).addClass(<span class="string">'alert alert-warning'</span>).html(<span class="string">"&lt;strong&gt;Warning!&lt;/strong&gt; Such user or tweet does not exist. Please enter a valid query."</span>).prependTo(query_list);</span><br><span class="line"></span><br><span class="line">				&#125;</span><br><span class="line">			&#125;);</span><br><span class="line">	</span><br><span class="line">			$(<span class="string">"#query"</span>).removeClass(<span class="string">"unseen"</span>);</span><br><span class="line">			$(<span class="string">"#query"</span>).addClass(<span class="string">"seen"</span>); </span><br><span class="line">			<span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">    	&#125;);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Some JS tricks:<ul>
-<li><code>if...in...</code> equivalent type in JS as in python. use <code>Array.indexOf(element)&gt;=0</code> to know that if such element exist in this array.</li>
-<li>Get the keys array of a Hash. <code>Object.keys(hash)</code>.</li>
-<li>Get the last character from a string. <code>string.slice(-1)</code>.</li>
-<li>Trim out the last character from a string. <code>string = string.slice(0, -1)</code>.</li>
-<li>Use Jquery to get the value from submitted form. </li>
-</ul>
-</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢理解了才能够融会贯通， 现在的开发速度大大进步了。 同时也学会了如何允许CORS的请求， 和正则匹配的部分细节。<br>]]>
-    
-    </summary>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="nodejs" scheme="http://chocoluffy.com/tags/nodejs/"/>
     
       <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
