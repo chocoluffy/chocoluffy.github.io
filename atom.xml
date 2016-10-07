@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-10-07T01:14:13.000Z</updated>
+  <updated>2016-10-07T01:15:30.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/"/>
     <id>http://chocoluffy.com/2016/10/06/社团日记2-新生致辞/</id>
     <published>2016-10-07T01:09:06.000Z</published>
-    <updated>2016-10-07T01:14:13.000Z</updated>
+    <updated>2016-10-07T01:15:30.000Z</updated>
     <content type="html"><![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8jfpjll14j20j60ao3z8.jpg" alt="sky"></p>
@@ -36,7 +36,6 @@
 <p>也因为喜欢， 你也想去找那同样饱含热情、热烈的一群人。</p>
 <p>说白了，这是一群怎么样的人， 也会吸引那样子的一群人过来。</p>
 <p>那我们tech部门呢， 特别特别珍重的一种感觉， 其实也恨简单， 就是好玩。</p>
-<p>当你开发的东西（无论网页也好， 应用也好）， 设计的海报，被周围几千人使用者讨论着， 驻足欣赏的时候。 你知道你那仔仔细细研究出来的东西帮大家解决了问题的时候， 那是我最最快乐的时候。</p>
 <p>分享一个我们前段时间为了帮助新生更好的认识多伦多大学设计的一个简单的网页游戏-你究竟是不是一个多大学生。点进去会看到很多很美的风景， 你需要根据图片猜到这个地点的名称。蛮多新生可能猜不到几个， 所以我们在后续的小助手文章里也详细介绍了很多各个著名地点以及贴心的建议（比如：ba哪里有热水等等）。 感谢我们的lydia\jessie\gloria给我们整理的图片。最后还有一个很萌很萌的教授。</p>
 <p>现在如何才能玩到这个游戏呢？很简单，在UT助手输入关键词都可以匹配到这篇文章找到这个游戏链接。</p>
 <p>那这个也是一个很好玩的功能啦， 也就是上个月吧， 我给小助手的后台添加了语义理解的功能。</p>
@@ -49,7 +48,7 @@
 <p>这是一个试错成本很高的时代，ADA想提供给你， 在你步入残酷的商业逻辑之前， 一次尝试的机会。</p>
 <p>这里有一群我认为非常理想主义的人。</p>
 <p>如果要我说， 为什么我选择计算机。 因为他给了我自由。 和文字， 设计一样。它给予了你实现你想法的自由。而自由的人， 是最快乐的。</p>
-<div style="text-align:center" markdown="1"><br>  <iframe src="http://chocoluffy.com/ADA2016/" width="100%"><br>    <p>Your browser does not support iframes.</p><br>  </iframe><br></div>]]></content>
+<div style="text-align:center" markdown="1"><br>  <iframe src="http://chocoluffy.com/ADA2016/" width="100%" height="450px"><br>    <p>Your browser does not support iframes.</p><br>  </iframe><br></div>]]></content>
     <summary type="html">
     <![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>]]>
     
