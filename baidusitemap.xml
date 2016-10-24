@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/</loc>
+    <lastmod>2016-10-24T03:05:23.000Z</lastmod>
+    <data>
+        <display>
+        <title>前端开发工具库[第一期]-npm script</title>
+        <pubTime>2016-05-15T21:48:45.000Z</pubTime>
+        
+        <tag>javascript</tag>
+         
+        <tag>nodejs</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/</loc>
     <lastmod>2016-10-07T03:21:40.000Z</lastmod>
     <data>
@@ -289,28 +311,6 @@
         <tag>angularjs</tag>
          
         <tag>javascript</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/</loc>
-    <lastmod>2016-05-27T18:54:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>前端开发工具库[第一期]-npm script</title>
-        <pubTime>2016-05-15T21:48:45.000Z</pubTime>
-        
-        <tag>javascript</tag>
-         
-        <tag>nodejs</tag>
          
          
            

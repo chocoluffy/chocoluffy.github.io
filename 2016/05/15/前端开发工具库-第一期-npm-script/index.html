@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
 <meta property="og:image" content="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png">
-<meta property="og:updated_time" content="2016-05-27T18:54:26.000Z">
+<meta property="og:updated_time" content="2016-10-24T03:05:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端开发工具库[第一期]-npm script">
 <meta name="twitter:description" content="在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?">
@@ -397,7 +397,12 @@
 <p><strong>因为simplicity matters。</strong>没有必要在需要用的时候才去找那些数量有限的grunt, gulp plugins，而直接将node modules拿来用。对于个人开发和维护的小项目， 有没有必要花时间去研究Gruntfile.js怎么去配置， 或者说， 在配置上花的时间相对短期集中开发的时间来说值不值？不是说反对使用grunt, gulp和webpack等工具， 而是我们没有必要拿大炮去打蚊子， 我们想要agile development。 也正是simplicy， 所以才有RoR, meteor等全栈框架的出现来挑战java等较为臃肿的开发流程不是么？</p>
 <p>下图是截止至今年1月为止的各平台的插件数量，仍在不断地增加中。</p>
 <p><img src="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png" alt="npm script"></p>
-<h2 id="什么是npm_script">什么是npm script</h2><p>其实npm script就是希望执行的command的alias， 类似与command line里面的make， 通过提前设置希望执行的命令， 我们可以通过<code>npm run &lt;alias&gt;</code>来执行我们预先设置的命令。</p>
+<h2 id="什么是npm_script">什么是npm script</h2><p>其实npm script就是希望执行的command的alias， 类似与command line里面的make， 通过提前设置希望执行的命令， 我们可以通过<code>npm run &lt;alias&gt;</code>来执行我们预先设置的命令。 还有一些特别方便的commands比如：</p>
+<ul>
+<li><code>npm home request</code>， 可以直接跳转到那个module的介绍页面；</li>
+<li><code>npm install request --save</code>可以将我们使用的modules以“^”形式保存在package.json文件里面， 这意味着下一次用同一个package.json安装依赖模块时， 没有经过major version jump的模块可以下载到本地项目目录； </li>
+<li><code>npm install --production</code>可以安装生产环境的模块， 同<code>NODE_ENV=production npm install</code></li>
+</ul>
 <h2 id="如何config你的npm_script">如何config你的npm script</h2><p>而目前npm上有很多很棒的module可以直接处理项目， 下面列出来的是我平时自己经常使用的module: </p>
 <p>比如: browserfy将文件的各种文件和浏览器同步; postcss和autofixer可以将css文件添加适配各种浏览器的前缀同时进行压缩; js-lint用来检查js文件的各种格式细节; uglify用来压缩js文件的大小; imagemin用来压缩各种图片文件的大小， 在各种大型网站中， 图片的大小占据了大部分。</p>
 <h3 id="node－sass">node－sass</h3><p>下面是一些具体使用的例子：比如我们想将sass compile成css。</p>
