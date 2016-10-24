@@ -106,7 +106,7 @@
     <link href="http://chocoluffy.com/2016/08/27/%E7%94%A8ffmpeg%E4%BB%8E%E8%A7%86%E9%A2%91%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%8F%8AGIF/"/>
     <id>http://chocoluffy.com/2016/08/27/用ffmpeg从视频中获取图片及GIF/</id>
     <published>2016-08-27T20:37:22.000Z</published>
-    <updated>2016-08-27T20:41:44.000Z</updated>
+    <updated>2016-10-24T03:07:43.000Z</updated>
     <content type="html"><![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。 </p>
 <a id="more"></a>
 <p>在项目的展示中， 我提出了来自youtube的启发， 我感觉也是最近这几周， youtube上的视频列表多了一个新功能是， 当你鼠标hover当前视频时， 静态图片会变成视频中其中的一段GIF， 然后过一段时间再变回来， 具体效果看这个动图：</p>
@@ -134,7 +134,15 @@
 <h2 id="Documentation">Documentation</h2><ul>
 <li><a href="http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality" target="_blank" rel="external">How to convert a video to gif using ffmpeg</a></li>
 <li><a href="https://davidwalsh.name/convert-video-gif" target="_blank" rel="external">How to convert to and from between gif and video</a></li>
+<li><a href="https://www.reddit.com/r/learnprogramming/comments/44nhzp/how_to_use_youtubedl_and_ffmpeg_to_download/" target="_blank" rel="external">use youtube-dl and ffmpeg to download</a></li>
+<li><a href="http://superuser.com/questions/680323/processing-youtube-video-in-ffmpeg" target="_blank" rel="external">how to process youtube video without downloading it</a> main idea is to config ffmpeg with <code>libquvi</code>!!</li>
+<li><a href="https://trac.ffmpeg.org/wiki/CompilationGuide/MacOSX" target="_blank" rel="external">install ffmpeg through homebrew</a> with recommending configuration options like <code>brew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-libass --with-libquvi --with-libvorbis --with-libvpx --with-opus --with-x265</code></li>
+<li><a href="https://www.binpress.com/tutorial/how-to-generate-video-previews-with-ffmpeg/138" target="_blank" rel="external">[recommend]how to generate video preview with ffmpeg</a></li>
+<li><a href="http://www.bogotobogo.com/FFMpeg/ffmpeg_thumbnails_select_scene_iframe.php" target="_blank" rel="external">ffmpeg generate thumbnail from video</a> after generate the thumbnail and stitch together, here is a front end demo to over it <a href="http://jsfiddle.net/r6wz0nz6/2/" target="_blank" rel="external">demo</a> to see a preview.</li>
+<li><a href="https://wideopenbokeh.com/AthenasFall/?p=5" target="_blank" rel="external">some tricks of using youtube-dl</a></li>
 </ul>
+<p>Inside <code>~/.bashrc</code>, set <code>alias youtubemp3=&#39;youtube-dl --extract-audio --audio-format mp3&#39;</code> to be able to create a alias and save a youtube video to mp3.</p>
+<p>So basically, <code>youtube-dl -F &lt;url&gt;</code> to list all available video format, then  <code>youtube-dl -f 134 -o video.mp4 https://www.youtube.com/watch?v=v1uyQZNg2vE</code></p>
 <h2 id="Summary">Summary</h2><p>处理视频和图片对我来说是一个蛮有趣的方向。 我们每天都会查询和搜索到无数多媒体信息， 而人们对信息的处理能力和标准也越来越严苛， 从简单文本到图片分享再到视频， 现在还很火的视频直播技术不是吗。 人们越来越多地被记录下来， 从曾经一生可能只去几次的影楼， 到情绪高涨时举起的自拍杆， 再到可能无时无刻都存在的直播和拍摄。</p>
 <p>而记录本身， 就孕育着还原的渴望。</p>
 <p>利用文字， 图片和视频， 科学家们能会如何重构一个曾经发生的世界， 而又能怎样地拿那个世界的统计和观察来预测下一个每分每秒。 深度学习和人工智能火了， 或许也是人们在尝试还原重构这个世界的一个必经之路， 很期待未来几年的科技发展啊。</p>
