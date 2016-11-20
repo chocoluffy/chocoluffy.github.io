@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://chocoluffy.com/2016/11/07/Computer-Vision-%E5%9F%BA%E4%BA%8E%E5%9B%BE%E7%89%87%E7%89%B9%E5%BE%81%E5%8C%B9%E9%85%8D%E5%90%88%E6%88%90%E5%85%A8%E6%99%AF%E5%9B%BE/</loc>
+    <lastmod>2016-11-20T21:23:59.000Z</lastmod>
+    <data>
+        <display>
+        <title>Computer Vision - 基于图片特征匹配合成全景图</title>
+        <pubTime>2016-11-08T01:56:36.000Z</pubTime>
+        
+        <tag>computer vision</tag>
+         
+        <tag>machine learning</tag>
+         
+        <tag>matlab</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://chocoluffy.com/2016/11/20/16-11-%E6%9C%88%E6%80%BB%E7%BB%93-%E6%80%BB%E7%BB%9F%E9%80%89%E4%B8%BE/</loc>
     <lastmod>2016-11-20T20:45:23.000Z</lastmod>
     <data>
@@ -27,30 +51,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://chocoluffy.com/2016/11/07/Computer-Vision-%E5%9F%BA%E4%BA%8E%E5%9B%BE%E7%89%87%E7%89%B9%E5%BE%81%E5%8C%B9%E9%85%8D%E5%90%88%E6%88%90%E5%85%A8%E6%99%AF%E5%9B%BE/</loc>
-    <lastmod>2016-11-08T02:04:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>Computer Vision - 基于图片特征匹配合成全景图</title>
-        <pubTime>2016-11-08T01:56:36.000Z</pubTime>
-        
-        <tag>computer vision</tag>
-         
-        <tag>machine learning</tag>
-         
-        <tag>matlab</tag>
-         
-         
-           
-             
-              <breadCrumb title="技术" url="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://chocoluffy.com/2016/08/27/%E7%94%A8ffmpeg%E4%BB%8E%E8%A7%86%E9%A2%91%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%8F%8AGIF/</loc>
