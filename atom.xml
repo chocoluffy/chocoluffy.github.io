@@ -84,7 +84,7 @@
     <link href="http://chocoluffy.com/2016/11/07/Computer-Vision-%E5%9F%BA%E4%BA%8E%E5%9B%BE%E7%89%87%E7%89%B9%E5%BE%81%E5%8C%B9%E9%85%8D%E5%90%88%E6%88%90%E5%85%A8%E6%99%AF%E5%9B%BE/"/>
     <id>http://chocoluffy.com/2016/11/07/Computer-Vision-基于图片特征匹配合成全景图/</id>
     <published>2016-11-08T01:56:36.000Z</published>
-    <updated>2016-11-20T21:23:59.000Z</updated>
+    <updated>2016-11-20T21:24:14.000Z</updated>
     <content type="html"><![CDATA[<p>这一次尝试解决的问题是: 假如你希望有一幅风景的全景图(panaroma)，但是你手头上只有一堆关于该风景不同角度的图片， 怎么利用computer vision学习到的方法来合成一张全景图。</p>
 <a id="more"></a>
 <h2 id="前言">前言</h2><p>这学期虽然在公司实习， 但同时我也在学校part time了一门computer vision的课程。Computer Vision，说白了就是结合image recognition和machine learning的方法来训练机器能够识别和”理解”图片等媒体资源， 也算是一个特别新兴的研究领域。 正巧大项目开始前期， 我也准备在博客里总结一下前几次作业里面涉及的概念， 感觉特别有趣和实用呢~</p>
