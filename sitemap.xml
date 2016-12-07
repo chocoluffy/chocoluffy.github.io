@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chocoluffy.com/about/index.html</loc>
+    <lastmod>2016-12-07T04:26:23.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2015/08/24/Here%E2%80%99s-What-A-Coder-Learned-After-Losing-Internship-at-Facebook/</loc>
     <lastmod>2016-12-06T00:13:09.000Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/</loc>
     <lastmod>2016-12-04T18:16:54.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/about/index.html</loc>
-    <lastmod>2016-12-04T18:14:20.000Z</lastmod>
   </url>
   
   <url>
