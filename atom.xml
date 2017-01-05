@@ -18,7 +18,7 @@
     <title><![CDATA[浅析经典面试算法题-two pointer的运用]]></title>
     <link href="http://chocoluffy.com/2016/12/04/%E6%B5%85%E6%9E%90%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E9%A2%98-two-pointer%E7%9A%84%E8%BF%90%E7%94%A8/"/>
     <id>http://chocoluffy.com/2016/12/04/浅析经典面试算法题-two-pointer的运用/</id>
-    <published>2016-12-04T17:59:47.000Z</published>
+    <published>2016-12-04T04:59:47.000Z</published>
     <updated>2016-12-08T01:51:30.000Z</updated>
     <content type="html"><![CDATA[<p>前几天和朋友讨论 Google 电面的一道题， 由此启发， 总结了下 two pointer 的使用场景， 在大部分情况下， 恰当地使用 two pointer 可以使时间复杂度保持在 O(n)， 像 online judge 里部分 medium 题经常提及的子数列类型问题， two pointer 也可以提供不错的切入角度。</p>
 <a id="more"></a>
@@ -99,7 +99,7 @@
     <title><![CDATA[16.11月随笔-告别|散文|冬天|总统选举]]></title>
     <link href="http://chocoluffy.com/2016/11/20/16.11%E6%9C%88%E9%9A%8F%E7%AC%94-%E5%91%8A%E5%88%AB%7C%E6%95%A3%E6%96%87%7C%E5%86%AC%E5%A4%A9%7C%E6%80%BB%E7%BB%9F%E9%80%89%E4%B8%BE/"/>
     <id>http://chocoluffy.com/2016/11/20/16.11月随笔-告别|散文|冬天|总统选举/</id>
-    <published>2016-11-20T20:29:29.000Z</published>
+    <published>2016-11-20T07:29:29.000Z</published>
     <updated>2016-12-21T02:36:20.000Z</updated>
     <content type="html"><![CDATA[<p>自由主义的故事，曾经是因为其经济上的优势而繁荣和扩张的。然而绝大多数的时候，这只是一小部分精英们的故事，自由和权利或许都只会是上层阶级的财产和特权。可悲的是，人们没有其他选择。选择trump，是不想听见一个一直听腻的故事，是对遥远的精英们仅剩的嘲讽罢了。</p>
 <a id="more"></a>
@@ -164,7 +164,7 @@
     <title><![CDATA[Computer Vision - 基于图片特征匹配合成全景图]]></title>
     <link href="http://chocoluffy.com/2016/11/07/Computer-Vision-%E5%9F%BA%E4%BA%8E%E5%9B%BE%E7%89%87%E7%89%B9%E5%BE%81%E5%8C%B9%E9%85%8D%E5%90%88%E6%88%90%E5%85%A8%E6%99%AF%E5%9B%BE/"/>
     <id>http://chocoluffy.com/2016/11/07/Computer-Vision-基于图片特征匹配合成全景图/</id>
-    <published>2016-11-08T01:56:36.000Z</published>
+    <published>2016-11-07T12:56:36.000Z</published>
     <updated>2016-11-20T21:24:14.000Z</updated>
     <content type="html"><![CDATA[<p>这一次尝试解决的问题是: 假如你希望有一幅风景的全景图(panaroma)，但是你手头上只有一堆关于该风景不同角度的图片， 怎么利用computer vision学习到的方法来合成一张全景图。</p>
 <a id="more"></a>
@@ -218,7 +218,7 @@
     <title><![CDATA[社团日记2 新生致辞]]></title>
     <link href="http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/"/>
     <id>http://chocoluffy.com/2016/10/06/社团日记2-新生致辞/</id>
-    <published>2016-10-07T01:09:06.000Z</published>
+    <published>2016-10-06T13:09:06.000Z</published>
     <updated>2016-12-04T18:16:54.000Z</updated>
     <content type="html"><![CDATA[<p>为什么我选择计算机。 因为它给了我自由。 和文字一样， 甚至更流行的自由。</p>
 <a id="more"></a>
@@ -268,7 +268,7 @@
     <title><![CDATA[社团日记1 重新出发]]></title>
     <link href="http://chocoluffy.com/2016/09/11/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B01-%E9%87%8D%E6%96%B0%E5%87%BA%E5%8F%91/"/>
     <id>http://chocoluffy.com/2016/09/11/社团日记1-重新出发/</id>
-    <published>2016-09-11T21:07:25.000Z</published>
+    <published>2016-09-11T09:07:25.000Z</published>
     <updated>2016-09-11T21:32:07.000Z</updated>
     <content type="html"><![CDATA[<p>故事的开始。</p>
 <a id="more"></a>
@@ -305,7 +305,7 @@
     <title><![CDATA[用ffmpeg从视频中获取图片及GIF]]></title>
     <link href="http://chocoluffy.com/2016/08/27/%E7%94%A8ffmpeg%E4%BB%8E%E8%A7%86%E9%A2%91%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%8F%8AGIF/"/>
     <id>http://chocoluffy.com/2016/08/27/用ffmpeg从视频中获取图片及GIF/</id>
-    <published>2016-08-27T20:37:22.000Z</published>
+    <published>2016-08-27T08:37:22.000Z</published>
     <updated>2016-10-24T03:07:43.000Z</updated>
     <content type="html"><![CDATA[<p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。 </p>
 <a id="more"></a>
@@ -365,7 +365,7 @@
     <title><![CDATA[React/ES6 style guideline]]></title>
     <link href="http://chocoluffy.com/2016/08/01/React-ES6-style-guideline/"/>
     <id>http://chocoluffy.com/2016/08/01/React-ES6-style-guideline/</id>
-    <published>2016-08-01T20:41:46.000Z</published>
+    <published>2016-08-01T08:41:46.000Z</published>
     <updated>2016-08-01T20:54:03.000Z</updated>
     <content type="html"><![CDATA[<p>用React完成了好几个小项目， 同时还在学习React Native开发， 记录一些ES6特别便捷的用法和guideline。持续更新…</p>
 <a id="more"></a>
@@ -424,7 +424,7 @@
     <title><![CDATA[webpack与react\redux前端开发工具库]]></title>
     <link href="http://chocoluffy.com/2016/07/18/webpack%E4%B8%8Ereact-hot-reload%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93/"/>
     <id>http://chocoluffy.com/2016/07/18/webpack与react-hot-reload开发工具库/</id>
-    <published>2016-07-19T03:28:05.000Z</published>
+    <published>2016-07-18T15:28:05.000Z</published>
     <updated>2016-07-31T01:33:46.000Z</updated>
     <content type="html"><![CDATA[<p>对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。<a href="https://github.com/chocoluffy/react-hot-boilerplate" target="_blank" rel="external">Github Source</a></p>
 <a id="more"></a>
@@ -486,7 +486,7 @@
     <title><![CDATA[ReactNative-简易个人博客客户端]]></title>
     <link href="http://chocoluffy.com/2016/07/03/ReactNative-%E7%AE%80%E6%98%93%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%AE%A2%E6%88%B7%E7%AB%AF/"/>
     <id>http://chocoluffy.com/2016/07/03/ReactNative-简易个人博客客户端/</id>
-    <published>2016-07-03T15:25:11.000Z</published>
+    <published>2016-07-03T03:25:11.000Z</published>
     <updated>2016-08-01T00:04:43.000Z</updated>
     <content type="html"><![CDATA[<p>记录了学习React Native过程中一开始的上手项目， 对初学者提供对比参考。<a href="https://github.com/chocoluffy/ReactNativeEveryday/tree/master/Day3SimpleNavigator" target="_blank" rel="external">Github Source</a></p>
 <a id="more"></a>
@@ -547,7 +547,7 @@
     <title><![CDATA[VRTO展会游记]]></title>
     <link href="http://chocoluffy.com/2016/06/27/VRTO%E5%B1%95%E4%BC%9A%E6%B8%B8%E8%AE%B0/"/>
     <id>http://chocoluffy.com/2016/06/27/VRTO展会游记/</id>
-    <published>2016-06-27T12:49:07.000Z</published>
+    <published>2016-06-27T00:49:07.000Z</published>
     <updated>2016-06-28T01:48:11.000Z</updated>
     <content type="html"><![CDATA[<p>记录在VR Toronto展会第一次尝试Oculus和Vive的使用体验。</p>
 <a id="more"></a>
@@ -584,7 +584,7 @@
     <title><![CDATA[写给高考三年后自己的一封信]]></title>
     <link href="http://chocoluffy.com/2016/06/11/%E5%86%99%E7%BB%99%E9%AB%98%E8%80%83%E4%B8%89%E5%B9%B4%E5%90%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%80%E5%B0%81%E4%BF%A1/"/>
     <id>http://chocoluffy.com/2016/06/11/写给高考三年后自己的一封信/</id>
-    <published>2016-06-11T20:49:24.000Z</published>
+    <published>2016-06-11T08:49:24.000Z</published>
     <updated>2016-06-25T22:27:42.000Z</updated>
     <content type="html"><![CDATA[<p>这篇随笔，记为我对我高中思维的审判。 写给高考结束三年后的自己， 也写给所有刚刚结束高考乃至即将开始高中生活的小伙伴们。</p>
 <a id="more"></a>
@@ -641,7 +641,7 @@
     <title><![CDATA[socket.io开发多人聊天室教程]]></title>
     <link href="http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/"/>
     <id>http://chocoluffy.com/2016/05/23/socket-io开发多人聊天室教程/</id>
-    <published>2016-05-24T02:43:41.000Z</published>
+    <published>2016-05-23T14:43:41.000Z</published>
     <updated>2016-06-15T00:41:31.000Z</updated>
     <content type="html"><![CDATA[<p>用socket.io搭配express写的一个多人聊天室应用， 同时借这个机会复习了一下socket及TCP/IP的一些细节知识， 在UI上用jquery， 简洁而快速地完成一些基础前端样式的开发， 开发时用nodemon和browser-sync来辅助开发流程。<a href="http://52.20.64.23/chatroom" target="_blank" rel="external">在线Demo-网页版</a>, <a href="https://github.com/chocoluffy/chatroom" target="_blank" rel="external">github源代码</a>, 欢迎提交bug issue或者pull request~</p>
 <a id="more"></a>
@@ -726,7 +726,7 @@
     <title><![CDATA[前端开发工具库[第一期]-npm script]]></title>
     <link href="http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/"/>
     <id>http://chocoluffy.com/2016/05/15/前端开发工具库-第一期-npm-script/</id>
-    <published>2016-05-15T21:48:45.000Z</published>
+    <published>2016-05-15T09:48:45.000Z</published>
     <updated>2016-10-24T03:05:23.000Z</updated>
     <content type="html"><![CDATA[<p>在自动构建工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?</p>
 <a id="more"></a>
@@ -784,7 +784,7 @@
     <title><![CDATA[另一种鼓声-读《途客圈》有感]]></title>
     <link href="http://chocoluffy.com/2016/05/13/%E5%8F%A6%E4%B8%80%E7%A7%8D%E9%BC%93%E5%A3%B0-%E8%AF%BB%E3%80%8A%E9%80%94%E5%AE%A2%E5%9C%88%E3%80%8B%E6%9C%89%E6%84%9F/"/>
     <id>http://chocoluffy.com/2016/05/13/另一种鼓声-读《途客圈》有感/</id>
-    <published>2016-05-14T01:45:08.000Z</published>
+    <published>2016-05-13T13:45:08.000Z</published>
     <updated>2016-05-27T19:20:11.000Z</updated>
     <content type="html"><![CDATA[<p>“如果你清醒地知道你要去哪儿，脑海中还保留着那份憧憬，那么你就能逢山开路，遇水搭桥，所有的阻碍都将成为一个个里程碑，被踩在你的身后……”</p>
 <a id="more"></a>
@@ -861,7 +861,7 @@
     <title><![CDATA[Angular入门-module和service]]></title>
     <link href="http://chocoluffy.com/2016/05/12/Angular%E5%85%A5%E9%97%A8-module%E5%92%8Cservice/"/>
     <id>http://chocoluffy.com/2016/05/12/Angular入门-module和service/</id>
-    <published>2016-05-13T02:43:51.000Z</published>
+    <published>2016-05-12T14:43:51.000Z</published>
     <updated>2016-05-27T19:03:20.000Z</updated>
     <content type="html"><![CDATA[<p>自己学习angular时候记录的学习笔记，这一篇主要讨论module和service。</p>
 <a id="more"></a>
@@ -971,7 +971,7 @@
     <title><![CDATA[一派胡言[第三期]-民主的不满]]></title>
     <link href="http://chocoluffy.com/2016/05/07/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80-%E7%AC%AC%E4%B8%89%E6%9C%9F-%E6%B0%91%E4%B8%BB%E7%9A%84%E4%B8%8D%E6%BB%A1/"/>
     <id>http://chocoluffy.com/2016/05/07/一派胡言-第三期-民主的不满/</id>
-    <published>2016-05-08T01:07:37.000Z</published>
+    <published>2016-05-07T13:07:37.000Z</published>
     <updated>2016-05-12T18:12:40.000Z</updated>
     <content type="html"><![CDATA[<p>我不清楚我的选择会是什么， 但这并不是我拒绝去看这个问题的理由， 或许在相信他们针锋相对的背后， 就是我的立场。</p>
 <a id="more"></a>
@@ -1006,7 +1006,7 @@
     <title><![CDATA[AWS elastic beanstalk使用体验]]></title>
     <link href="http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
     <id>http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/</id>
-    <published>2016-05-05T01:03:58.000Z</published>
+    <published>2016-05-04T13:03:58.000Z</published>
     <updated>2016-05-13T17:55:01.000Z</updated>
     <content type="html"><![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
 <a id="more"></a>
@@ -1092,7 +1092,7 @@
     <title><![CDATA[[第一期]AirLoft组织动员宣言]]></title>
     <link href="http://chocoluffy.com/2016/04/27/%E7%AC%AC%E4%B8%80%E6%9C%9F-AirLoft%E7%BB%84%E7%BB%87%E5%8A%A8%E5%91%98%E5%AE%A3%E8%A8%80/"/>
     <id>http://chocoluffy.com/2016/04/27/第一期-AirLoft组织动员宣言/</id>
-    <published>2016-04-28T01:46:44.000Z</published>
+    <published>2016-04-27T13:46:44.000Z</published>
     <updated>2016-04-28T01:49:28.000Z</updated>
     <content type="html"><![CDATA[<p>The best education comes from inside. </p>
 <a id="more"></a>
@@ -1138,7 +1138,7 @@
     <title><![CDATA[关于创业, 那些不能说的秘密]]></title>
     <link href="http://chocoluffy.com/2016/04/25/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A%EF%BC%8C-%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86/"/>
     <id>http://chocoluffy.com/2016/04/25/关于创业，-那些不能说的秘密/</id>
-    <published>2016-04-26T03:39:01.000Z</published>
+    <published>2016-04-25T15:39:01.000Z</published>
     <updated>2016-12-07T04:35:31.000Z</updated>
     <content type="html"><![CDATA[<p>每个人， 在每个阶段， 都会有个不容分说的理由。</p>
 <a id="more"></a>
@@ -1230,7 +1230,7 @@
     <title><![CDATA[创意视频分屏 - HTML5 & JS]]></title>
     <link href="http://chocoluffy.com/2016/04/23/%E5%88%9B%E6%84%8F%E8%A7%86%E9%A2%91%E5%88%86%E5%B1%8F-HTML5-JS/"/>
     <id>http://chocoluffy.com/2016/04/23/创意视频分屏-HTML5-JS/</id>
-    <published>2016-04-24T01:53:56.000Z</published>
+    <published>2016-04-23T13:53:56.000Z</published>
     <updated>2016-08-27T20:40:00.000Z</updated>
     <content type="html"><![CDATA[<p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance" target="_blank" rel="external">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>
 <a id="more"></a>
