@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2016-12-08T01:51:30.000Z</updated>
+  <updated>2017-03-20T23:42:11.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,67 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[App首发｜鲸语 - 多伦多玩乐攻略第一入口]]></title>
+    <link href="http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/"/>
+    <id>http://chocoluffy.com/2017/03/20/App首发｜鲸语-多伦多玩乐攻略第一入口/</id>
+    <published>2017-03-20T23:23:04.000Z</published>
+    <updated>2017-03-20T23:42:11.000Z</updated>
+    <content type="html"><![CDATA[<p>我想象，当我想知道在多伦多，哪里有最好吃的煎饼果子或者绵绵冰， 哪里有最好玩的酒吧和密室，鲸语能给我最好的答案。</p>
+<a id="more"></a>
+<p>鲸语是我过去三个月用业余时间开发出来的作品，聚合追踪了多数主流媒体平台在本地关于吃喝玩乐的最新报道，结合全面的搜索功能，每一个话题，都可以关注到最热门和最新的内容。如果能省下些平时刷公众号的时间，少些急用时又搜不到的焦虑，也是我最大的愿望。</p>
+<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/whalesper-search.gif" style="display: block; margin: 0 auto;"></p>
+<p>鲸语也同步了近期多伦多周边最热门的活动，一键加入日历或者开始导航。</p>
+<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/whalesper-event.gif" style="display: block; margin: 0 auto;"></p>
+<p>同时，诞生于多伦多大学校园的鲸语，也聚合了大部分华人社团的动态，在此基础上，打通了UTADA社团旗下的UT助手平台的数据库，引入自动化聊天机器人，希望以最快捷的方式提供实时校园服务，包括各图书馆开放时间查询，期末考时间查询，课程课本乃至建筑物的查询等等等等…</p>
+<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/whalesper-campus.gif" style="display: block; margin: 0 auto;"></p>
+<p>纷乱嘈杂的媒体环境，掩盖了许多不被分享的美好。而鲸语想实现的，是想把这些优质的本土内容攻略，沉淀下来，分享出去。用最自动化的方式。</p>
+<h2 id="一个没有编辑部的媒体平台_-_鲸语是什么">一个没有编辑部的媒体平台 - 鲸语是什么</h2><p>曾经接触过许多优秀的学生开发者的作品，可每当发现作品的内容终止更新的时候，总会感到些许惋惜。</p>
+<p>的确，作为学生，难以取舍的运营成本抑或突如其来的人情世故，太容易放弃作品背后的冲动。也或许是这样，在我有开发鲸语的计划时，自动化成为了我最重要的目标。</p>
+<p>自动地收集，自动地提取分析归类，自动地推荐。这会是一个完整的媒体平台，实时追踪着多伦多最有趣的动态，由算法决定文章消息的过滤，概括，标签和分类，由用户的阅读和收藏权衡热度，由地理位置产生推荐……而唯独不依赖于我的编辑。哪怕一年之后我从多伦多大学毕业了，鲸语也可以长久地运营下去，推送本地最酷的内容，服务所有多伦多华人。</p>
+<p>向今日头条和湾区日报致敬。</p>
+<p>被更多人所熟知的今日头条在技术上给了我很多启发，我也尝试着按照我的理解来打造内容特征分析和协同推荐的流程。在体量上，鲸语有接近200个内容源，涵盖了诸如微信、微博、知乎、Facebook及各大本地优质杂志等等的热门媒体平台。</p>
+<p>而湾区日报，则更让我亲切。一个人每天分享文章的业余项目，近3年写了近90万字的简评。阅读并收集优秀的资源是一个很好的习惯，而让我印象深刻的并不是作者这一坚持的习惯本身，而是，作为一名工程师，将整个习惯流程完全自动化的地步。而我也采用类似的技术栈为鲸语开发了自动化的审核系统，各类存在争议的文章和活动，能够在与聊天机器人的交互中完成审核，后续的发布也依旧交给程序。而近期也将开放接口给各合作社团及第三方，提供更多内容发布上的便利。</p>
+<p>讲不清楚自己对自动化的执着。或许就是懒吧，但更多也是对鲸语更长远的期待。打造一个没有编辑部的媒体平台，我还想尝试更多可能。</p>
+<h2 id="连接更多优质的服务与人_-_鲸语的下一步">连接更多优质的服务与人 - 鲸语的下一步</h2><p>鲸语的下一步，会和许多优质的服务第三方和个人合作。会有很酷的东西更新，这里抿一下嘴哈哈。</p>
+<h2 id="连点成线_-_记鲸语的诞生日记">连点成线 - 记鲸语的诞生日记</h2><blockquote>
+<p>生命里的每一个点都会最终连成线。乔布斯</p>
+</blockquote>
+<p>很难说现在回头看能望见什么，但这半年来的经历都在我计划鲸语的时候给了特别多的启发。从开发校园服务开始，集成UT助手过去几百篇文章的推荐系统，自动文本概括，聊天机器人和先后开发的四五个未上架的App原型等等等等……于是乎，鲸语的出现就仿佛是一张拼图慢慢浮现出了形状，与其说是我开发出了这个作品，不如说是我认出了它。</p>
+<p>就像突然发现一条绷紧的风筝线，牵扯起背后风尘仆仆的过往。</p>
+<p>以前很喜欢普鲁斯特的一句话，“每个读者只能读到已然存于他内心的东西。书籍只不过是一种光学仪器，帮助读者发现自己的内心。”。它告诉我，不同的人怀揣着不同的心事往昔，会看见不同的风景。那些被骄傲着的想法，那个在软件背后所规划的世界，都不过唯心而已；也渐渐发现，在世界兜了一大圈，最后不过和自己对话。</p>
+<p>可越是如此，也想拼命问出来，自己想象里这个世界的样子，那些还没被串联起的可能。</p>
+<p>镜头慢慢转回来，鲸语的雏形出现了，开始更细致地开发。这过程也不是一帆风顺。</p>
+<p>从合作伙伴到盈利方式，从功能迭代到规模宣传，每当规划起鲸语的一个阶段，也感觉这仿佛就是场小小的“创业”。</p>
+<p>过去一直觉得这是一个只发生在新闻简讯里的词语，直到最近这六个月，也因为各种原因曾部分接触了两个创业团队，而终于轮到自己，才发现，曾经那些被争吵着的，被争分夺秒的，都是最血淋淋的事实。诚心而论，在我开发鲸语的过程里，最大的动力却同样最大的瓶颈就是技术。商业化作品的架构的稳定性和延展性远不同于平时随手玩玩的项目，从运算的效率改进到数据库优化，无数个选择，都推动你不断尝试和理解不同企业面临相似问题的时候所作出的选择。</p>
+<p>或许没有那么多理所当然和信手拈来，不过举重若轻罢了。</p>
+<p>其实鲸语说白了并没有那么复杂，就是一个聚焦本地服务的平台，实验着我自己对数据分析上的，语义分析上的很多想法。而对鲸语真正可贵的，是那些海量被标签的数据，作为一个媒体平台，对机器推荐的改进怎么都不为过不是吗。等自己空闲下来，还有很多在机器学习上更有趣的事情可以尝试!</p>
+<p>在你看到这里的时候，鲸语的第一版已经稳定地发布了。看过那些关于鲸语诞生的故事，那些开发时候的尝试，翻过篇章，鲸语也将迎来在推广上新的冒险。而我，也将尝试些更多的东西，纪录下更多的故事。或许不是每个故事都有完整的起承转合，但能够想清楚写清楚那些婉转和遗憾，也很有意思不是吗。</p>
+<p>就好像有一段和自己一起成长的故事，一场陪伴。</p>
+<p>或许就是陶立夏笔下写到的，就像蜗牛与它的壳，人嘛，总想要一些熟悉的东西陪伴着去看这个世界的繁华与荒凉。也算是写给自己间隔一年的回忆吧。</p>
+<p>期待下一章。</p>
+<h2 id="关于伙伴和小幸运_-_比心">关于伙伴和小幸运 - 比心</h2><p>来多伦多的这一年半发生了很多事情。搬了一次家，做出了全职一年的决定，第二遍去读加缪，各个打磨地或许依旧不会上架但仍然有趣的作品，以及那可能还未亲近的冬天……其中印象最深刻的，或许就是那误打误撞地加入了一个社团UTADA，误打误撞地认识了现在最要好的朋友和室友。曾经一直以为自己会单打独斗下去，但一路上的小伙伴慢慢多了起来，深感起伙伴的意义和陪伴。</p>
+<p>谢谢Ajax，很天才的设计师和学习速度特别快的开发者，鲸语里很多细节都很有你的风格。谢谢Gloria，作为社长给一个年轻而懵懂的社团带来了太多的改变，产品方面特别有想法，激情和执行力。</p>
+<p>谢谢AirLoft的成员，去年暑假每个周末的hackerthon为社团捣鼓各种奇怪的东西，或许只有你们能陪我这么折腾。谢谢很默契的室友还有办公室里经常抱团的五小只，一起上课一起上班的各种帮忙打掩护。还有多大中文，虽然很少有交集但每每看到他们的文字总觉得很亲切，同样很酷的作品Klido和很有才艺的开发者；觅迷，很精致的作品，给了鲸语启发；还有EZ4，刚来多大时还以为是普通社团参加的破冰活动到现在已经发展得规模如此之大，有很不错的核心团队。</p>
+<p>身边有很多很有趣的人，无论学术还是业界，和他们的相遇和合作本身就值得感激。也想多做点什么，对得起时光，也对得起运气。</p>
+<p>最后引用多大中文一篇文章里很有感触的一句话结尾，“二十多岁的大学生绝对是迷茫、恐惧和无聊的，但却真的可以做很多事情、影响很多人。”</p>
+<p>也致21岁的上半场。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>我想象，当我想知道在多伦多，哪里有最好吃的煎饼果子或者绵绵冰， 哪里有最好玩的酒吧和密室，鲸语能给我最好的答案。</p>]]>
+    
+    </summary>
+    
+      <category term="iOS" scheme="http://chocoluffy.com/tags/iOS/"/>
+    
+      <category term="react native" scheme="http://chocoluffy.com/tags/react-native/"/>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[浅析经典面试算法题-two pointer的运用]]></title>
@@ -1223,66 +1284,6 @@
       <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
       <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[创意视频分屏 - HTML5 & JS]]></title>
-    <link href="http://chocoluffy.com/2016/04/23/%E5%88%9B%E6%84%8F%E8%A7%86%E9%A2%91%E5%88%86%E5%B1%8F-HTML5-JS/"/>
-    <id>http://chocoluffy.com/2016/04/23/创意视频分屏-HTML5-JS/</id>
-    <published>2016-04-24T01:53:56.000Z</published>
-    <updated>2016-08-27T20:40:00.000Z</updated>
-    <content type="html"><![CDATA[<p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance" target="_blank" rel="external">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>
-<a id="more"></a>
-<p><img src="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
-<h2 id="目标">目标</h2><p>仿造beoplay这款耳机<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#video" target="_blank" rel="external">主页的宣传视频</a>来实现一个类似的视频分屏的效果。</p>
-<h2 id="版本1-0（不加视频自适应居中）">版本1.0（不加视频自适应居中）</h2><p><img src="https://dl.dropboxusercontent.com/s/zppojylzfsyk6in/screensplit1.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
-<p>right video是静止的不动的， 同时位于最底层。 目前所有的伸缩都是在控制left video， 同时由于我们设置了left video的<code>z-index</code>为3， 那么左边的视频会覆盖在右边的视频上。接下来的目标就很明确了， 我们需要追踪鼠标在整个container里面的位置(我们会用占宽度的百分比来表示)， 然后， 通过改变左边视频的宽度， 同时也就把位于下面的右边视频暴露出来了， 来达到切换的效果。</p>
-<p>理解到这一步之后，目标就是<strong>如何改变视频宽度</strong>了。</p>
-<h3 id="如何改变视频宽度">如何改变视频宽度</h3><p>这里其实隐藏着一个陷阱， 就是因为我们不可以直接改变<strong>视频本身的宽度</strong>，因为视频的高宽比在拍摄的时候就决定了， 我们如果只拉长视频而不同时提高高度的话， 就会使得在纵轴上部分内容被遮盖到， 大致意思如图：</p>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1f37ixae23nj219e0oe77a.jpg" alt="" style="display: block; margin: 0 auto;"></p>
-<p>而这并不是我们想要的效果， 我们希望， 视频可以维持在同一个大小，而改变的只是<strong>视窗的横向移动</strong>，<br>这一步我用到了一个trick， 就是<code>overflow: hidden;</code>， 我们在左边的视频外面包住了一层<code>div</code>， 因为我们控制的就是左边的视频， 然后我们来改变这个“wrapper”的宽度（同时保证保证里面的left video的宽度占比仍然占最外面container的100%）， 来改变我们的视窗， 所以这个wrapper在网页上所包住的部分， 加上了<code>overflow: hidden;</code>遮去了超出部分后， 显示的就是左边的视频了。</p>
-<p>比如一开始， 我们希望两个视频都各占一半， 那么左边的视窗一开始就会是占比原container的宽度的50%， 而原视频本身的宽度应该不变， 即container的宽度的100%， 所以我们需要给left video赋上200%的宽度， 理由是这个属性是对其直接父级的div起作用的。</p>
-<h3 id="引入视窗">引入视窗</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* clipper 即左侧视频的视窗 */</span></span><br><span class="line"><span class="id">#clipper</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">50%</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 该属性作用于左侧视频  */</span></span><br><span class="line"><span class="id">#clipper</span> <span class="tag">video</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">200%</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> absolute</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">10</span></span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>效果如下：</p>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1f37j53tshej21a20o643j.jpg" alt="init"></p>
-<p>之后的事情就清楚了， 我们只需要改变<strong>左边视窗的宽度， 并同时保证视频本身相对原容器的宽度不变</strong>。写的js代码如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> rect = videoContainer.getBoundingClientRect(),</span><br><span class="line">offset = e.pageX - videoContainer.offsetLeft,</span><br><span class="line">position = ((e.pageX - videoContainer.offsetLeft) / videoContainer.offsetWidth) * <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (position &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">	videoClipper.style.width = position+<span class="string">"%"</span>;</span><br><span class="line">	leftVideo.style.width = ((<span class="number">100</span>/position)*<span class="number">100</span>)+<span class="string">"%"</span>;</span><br><span class="line">	leftVideo.style.zIndex = <span class="number">3</span>;</span><br><span class="line">｝</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>简单地说， 只需保证<code>videoClipper.style.width * leftVideo.style.width = 100%</code>即可。</p>
-</blockquote>
-<p>那最后一个改变<code>z-index</code>的目的， 就是确保左边的视频一直叠加在右边的视频之上。</p>
-<h2 id="版本2-0（增加了自适应居中）">版本2.0（增加了自适应居中）</h2><p><img src="https://dl.dropboxusercontent.com/s/8y6fr3ib87yz9h7/screensplit2.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
-<p>初衷： 因为从拍摄的角度， 大部分的时间， 我们都会把拍摄的主体放在视频的中间位置， 而如果我们只是简单地移动视窗而不改变视窗的主角位置的话， 我们在鼠标移动的时候， 就只能看到边边角的视频内容了， 这违反设计直觉。</p>
-<p>因此我们希望在移动视窗的同时， <strong>同时移动视频本身的位置来弥补视窗的偏差</strong>。相应的js代码是：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">offset = e.pageX - videoContainer.offsetLeft,</span><br><span class="line">offsetRight = videoContainer.offsetWidth - offset,</span><br><span class="line"></span><br><span class="line"><span class="comment">// for adaptive resizing:</span></span><br><span class="line">rightVideo.style.webkitTransform = <span class="string">"translate("</span> + offset / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br><span class="line">leftVideo.style.webkitTransform = <span class="string">"translate(-"</span> + offsetRight / <span class="number">2</span> + <span class="string">"px, 0)"</span>;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>画外音： 使用<code>transform</code>来改变DOM元素的位置相比直接改写他们的”定位属性“有很多好处， 其中最突出的就是， transform使用的是GPU， 而那些<code>top\left</code>等的定位元素使用的是CPU， 我们希望充分利用GPU和它提供的硬件加速， 同时<code>transform</code>也不会触发网页的repaint， 从而在渲染上更加的smooth和fast。</p>
-</blockquote>
-<p>那这个地方，<code>offset</code>就是鼠标在container里面距离左边边框的距离， 那么我们同时根据这个距离， 让左边的视频在视窗移动时， <strong>往相反的方向以一半的速度移动来弥补视窗偏差</strong>。使得可以在视窗移动的时候， 始终保持视频本身拍摄的主体视角也处于该视窗的主体视角! 原理可以参考这个图：</p>
-<p><img src="https://dl.dropboxusercontent.com/s/t99wbc4n3s8c4r7/screensplit3.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
-<p>那么也就大功告成啦!</p>
-<h2 id="总结">总结</h2><p>HTML5对media文件更多功能上的支持使得我们可以更好的操作media文件， 包括视频的开始暂停， 以及各种音量的调节， 而这个程序实例， 是一个很好的对相关API的使用的一个示范和一个小小的创意细节。这个项目， 也是饭后和朋友聊天聊出来的实现方案，也希望看到更多的创意脑洞和美的设计!</p>
-<p>这个是这个项目的<a href="https://github.com/chocoluffy/screen-split-video" target="_blank" rel="external">github repo</a>, 这个是项目的展示<a href="http://chocoluffy.com/screen-split-video/">demo</a> 欢迎评论和pull request~</p>
-<h2 id="Q&amp;A">Q&amp;A</h2><p>后续的一些疑问和解答：(基于V2ex和微博的评论)</p>
-<p><strong>跟<a href="http://www.mi.com/hezi3s/" target="_blank" rel="external">这个链接</a>中间的 2K－4K 对比差不多一个意思？</strong><br>A: 哈哈在分屏效果上是类似的， 不过那个对图片的处理就会简单很多啦， 感觉就是在某个位置以左叠加一个高斯模糊的滤镜就可以了~ 相比之下， 对视频的处理还要考虑到视窗和视频本身的移动呢! 不过谢谢分享啦!</p>
-<p><strong>多个声音怎么办？两个声音会重叠嘛？</strong><br>A: 我做了音轨的渐变处理， 也就是根据视频的相对大小来相对改变音量， 也就是说， 当某个视频占主体位置的时候， 另一个视频的声音是会渐弱的， 这样可能使用体验更好吧! 在博文最后有 demo 的网址， 你可以试试， 我 host 在了 github pages 上， 对了， 这个 demo 只在桌面端 work ， 在手机端还是实现不了这个效果呢， 有点可惜啦， 如果有改进的建议的话， 希望能提出来啦~</p>
-<p><strong>快速拉扯的时候边缘缝隙比较大?</strong><br>A: 啊对的！我调试的时候也发现是有， 原因也很明显， 我只对整个 container 绑定了 mousemove 事件， 而 html 页面其他元素是不会监听 mousemove 的， 因此当鼠标快速移出 container 的时候， 就会发现边缘缝隙较大了， 我现在就改改 code ， 加个 condition ， 如果鼠标在 container 之外， 就把视频宽度订死为全屏~谢谢啦!</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>]]>
-    
-    </summary>
-    
-      <category term="HTML5" scheme="http://chocoluffy.com/tags/HTML5/"/>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="web design" scheme="http://chocoluffy.com/tags/web-design/"/>
-    
-      <category term="用户体验" scheme="http://chocoluffy.com/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
