@@ -29,7 +29,7 @@
       <content type="html"><![CDATA[<p>我想象，当我想知道在多伦多，哪里有最好吃的煎饼果子或者绵绵冰， 哪里有最好玩的酒吧和密室，鲸语能给我最好的答案。</p>
 <a id="more"></a>
 <p>鲸语是我过去几个月用业余时间开发出来的作品，<strong>每天推送多伦多城市生活，校园生活的最新资讯</strong>，实时追踪着主流媒体平台的本地报道，涵盖微信公众号，微博，知乎，Facebook及各大潮流杂志等等。结合全面的搜索功能，<strong>每一个话题，都可以关注到最实用和最及时的回答</strong>，从浪漫的约会地点到实惠的报税攻略……如果能省下些平时刷公众号的时间，少些急用时又搜不到的焦虑，也是我最大的愿望。</p>
-<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-new-search.gif" style="display: block; margin: 0 auto; height: 500px"></p>
+<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif" style="display: block; margin: 0 auto; height: 500px"></p>
 <p>鲸语也同步了近期多伦多周边最热门的活动，一键加入日历或者开始导航。</p>
 <p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-event.gif" style="display: block; margin: 0 auto; height: 500px"></p>
 <p>同时，诞生于多伦多大学校园的鲸语，也聚合了大部分华人社团的动态，在此基础上，打通了UTADA社团旗下的UT助手平台的数据库，引入自动化聊天机器人，希望以最快捷的方式提供实时校园服务，包括各图书馆开放时间查询，期末考时间查询，课程课本乃至建筑物的查询等等等等…</p>
