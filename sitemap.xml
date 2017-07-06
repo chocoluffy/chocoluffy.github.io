@@ -2,8 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chocoluffy.com/tech/index.html</loc>
+    <lastmod>2017-07-06T03:40:25.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2017/07/05/%E5%86%99%E5%9C%A81-0%E5%8F%91%E5%B8%83%E5%90%8E%E7%AC%AC50%E5%A4%A9-%E9%B2%B8%E8%AF%AD%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E7%8B%AC%E7%99%BD/</loc>
-    <lastmod>2017-07-06T03:34:33.000Z</lastmod>
+    <lastmod>2017-07-06T03:37:25.000Z</lastmod>
   </url>
   
   <url>
@@ -34,11 +39,6 @@
   <url>
     <loc>http://chocoluffy.com/2017/03/20/%E4%BD%86%E6%98%AF%E4%BD%A0%E8%AE%B0%E5%BE%97-%E3%80%8A%E6%8A%8A%E4%BD%A0%E4%BA%A4%E7%BB%99%E6%97%B6%E9%97%B4%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
     <lastmod>2017-03-21T02:10:21.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/tech/index.html</loc>
-    <lastmod>2017-03-20T23:57:49.000Z</lastmod>
   </url>
   
   <url>
