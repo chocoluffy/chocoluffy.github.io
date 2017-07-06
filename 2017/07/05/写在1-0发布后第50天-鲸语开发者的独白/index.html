@@ -1,0 +1,944 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="iOS,react native,创业,日记," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="余舜哲的 One Piece" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="编者按：三人的学生团队，历时四个月，从零开始开发应用，冲进了App Store新闻资讯类榜单全球前30，并登顶“多伦多”相关应用的搜索结果。这篇长信，来自鲸语的开发作者，关于校园开发者的经历，关于鲸语诞生的初衷，以及他和伙伴之间的故事。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写在1.0发布后第50天 - 鲸语开发者的独白">
+<meta property="og:url" content="http://chocoluffy.com/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/index.html">
+<meta property="og:site_name" content="余舜哲的 One Piece">
+<meta property="og:description" content="编者按：三人的学生团队，历时四个月，从零开始开发应用，冲进了App Store新闻资讯类榜单全球前30，并登顶“多伦多”相关应用的搜索结果。这篇长信，来自鲸语的开发作者，关于校园开发者的经历，关于鲸语诞生的初衷，以及他和伙伴之间的故事。">
+<meta property="og:image" content="https://ww1.sinaimg.cn/large/006tNc79gy1fh9y71z4pij30dv08074m.jpg">
+<meta property="og:updated_time" content="2017-07-06T02:34:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="写在1.0发布后第50天 - 鲸语开发者的独白">
+<meta name="twitter:description" content="编者按：三人的学生团队，历时四个月，从零开始开发应用，冲进了App Store新闻资讯类榜单全球前30，并登顶“多伦多”相关应用的搜索结果。这篇长信，来自鲸语的开发作者，关于校园开发者的经历，关于鲸语诞生的初衷，以及他和伙伴之间的故事。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 10766069,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 写在1.0发布后第50天 - 鲸语开发者的独白 | 余舜哲的 One Piece </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '66874854-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?62b2fff9ba2f591d71be23f4b51e59c6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=56472517";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">余舜哲的 One Piece</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tech">
+          <a href="/tech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery-full"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-life">
+          <a href="/life" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br />
+            
+            书房
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                写在1.0发布后第50天 - 鲸语开发者的独白
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-07-05T22:31:04-04:00" content="2017-07-05">
+              2017-07-05
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/原创/" itemprop="url" rel="index">
+                    <span itemprop="name">原创</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+          <span class="post-visit" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          </span>
+          
+
+          
+          <span>
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+              <i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读时长</span>
+            <span class="post-count">10 分钟</span>
+          </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>编者按：三人的学生团队，历时四个月，从零开始开发应用，冲进了App Store新闻资讯类榜单全球前30，并登顶“多伦多”相关应用的搜索结果。这篇长信，来自鲸语的开发作者，关于校园开发者的经历，关于鲸语诞生的初衷，以及他和伙伴之间的故事。</p>
+<a id="more"></a>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fh9y71z4pij30dv08074m.jpg" alt="whalesper"></p>
+<p>“按下确认，鲸语就算正式发布咯”，小G把手机递给我。</p>
+<p>“……”</p>
+<p>我侧过头，熄灭的屏幕里映出我们三个人的剪影。思绪暗涌，或许半年前的我不会预想到这一刻。从一无所有开始，这是对我们，对鲸语，很意外而深刻的一段时光……</p>
+<h2 id="一个人到一群人_-_鲸语的前生AirLoft">一个人到一群人 - 鲸语的前生AirLoft</h2><p>鲸语的源头，如果硬是要追溯回去，那是在2016年4月1号上线的一个粗糙网站项目AirLoft。 </p>
+<p>那是我刚接触计算机学习一年以来第一个独立完成的作品，印象蛮深刻的，因为那是学院CSC309课程的一个团队项目，可能是当时对网站技术的痴迷，一个人完成了所有的开发。想法挺简单的，每个人都可以发布自己能提供的服务，然后你可以基于地理位置的远近看到别人所能提供的服务，以促成交易。当时就连项目名字起得也是特别粗糙，loft，阁楼嘛，通常大家和朋友分享私密事的地方，前面加个Air，也是傻乎乎地致敬当时最火的平台Airbnb。</p>
+<p>AirLoft或许也可以被粗译成，空中楼阁，这或许也是我所有空中楼阁想法的起点。</p>
+<p>“我希望能够基于地理位置连接你和周围优质的服务”，还记得当时我在一个项目分享会上这么讲。那是华人技术社团UTADA每年都会举办的项目展示大会，不大的房间里塞满了人，宛若一场小型发布会，每一个项目的发起者依次阐释着自己的想法和进度，来吸引在场的人组建最初的团队。有希望开发桌面宠物的，有希望打造异地情侣合照App的，还有一系列从外卖到选课承包了几乎所有校园生活的想法……场下出奇的安静，我脑海里飞速地闪过想法实现的技术框架，身子却一动也不敢动生怕椅子咯吱作响。现在回想起来，那或许也是那段时间里除学习之外少有的几个笨拙而严肃的时刻。</p>
+<p>从讲台上下来，逆着投影的光，台下稀稀拉拉的掌声，总给人一种谢幕的错觉。可值得庆幸的是，AirLoft成了当场分享会最受欢迎的项目，几近半屋子的人在结束后找我询问项目的开发和发展表示希望加入团队。想起这一两年来被其他厉害的师兄带领的经历，这一次我义无反顾地承担起领队的责任，欢迎着每一个人的加入。来自于社团里的20余人，这应该是AirLoft最初的开发团队构成。还记得当时，我觉得我是最幸运的领队。</p>
+<p>只是……</p>
+<h2 id="回到一个人的战斗_-_鲸语的出现">回到一个人的战斗 - 鲸语的出现</h2><p>学生开发者本身其实是一个蛮尴尬的身份，一方面作为紧密的学生群体的一员，我捣鼓开发的东西可以很快被很多人了解，使用甚至因此让我获得赞誉，而另一方面我也很清楚地知道自己不过也只是业余选手，无论在能力还是经验上。</p>
+<p>可即便很业余，这却是我向往的生活的一部分，一种能够真正把想法实现出来的自由感。</p>
+<p>那是我正式接触计算机专业学习的第一年，我用平时的空闲时间揽下了特别多的开发任务，各种博客，网站，游戏还有VR，也慢慢认识了很多同样喜欢开发的同学，很幸运地成为项目领队，之后再成为社团技术部的负责人。可是……也渐渐地，开发涉及的领域越来越多，支持想法的技术难度越来越大，作为学生，我也越来越难去说服别人去牺牲业余时间和你一起挑战一个工程难题，去完整一个商业想法。</p>
+<p>没有什么能够承诺的余地，或许正是学生开发者乃至校园创业者相似的现实。它无法承诺你的GPA抑或者履历，更多的也只是在打点好自己学习和生活之后的兴趣而已。而路越窄，越人迹罕至。志同道合绝对值得感恩，而更大多数的时候，这是一个人选择的战斗……</p>
+<p>还记得那个时候在AirLoft的开发阶段，我正在研究怎么处理文本之间的相似度，为的是可以帮助用户找到更贴切相关的服务。我记得特别清楚，那天晚上在家，我正拿UT助手历史上两百多篇文章来测试算法准确度，当屏幕上突然亮出结果的时候，我心里也突然亮出一个念头—</p>
+<p>“说不定我可以把整个多伦多范围的资讯和服务都串联起来而不仅仅只是校园范围的……”</p>
+<p>“……”</p>
+<p>我静默下去。和往常那些浴室里的胡思乱想不同，我感觉到这一次的想法远非不可实现，回想起当初自己刚来多伦多的时候大到租房，退税，小到选课，买零食却需要翻遍各个网站、论坛、公众号和微博查攻略的繁琐，如果能有一个应用把这些攻略像归档一样整理好，每一个话题都能收纳到所有相类似的实用文章，再告诉你离你远近哪里可以找到……感觉会挺实用的不是嘛。我打赌当时的我绝对不会想象到几个月后一个手机应用的上架乃至进入排行榜，更别说现在加入的人工智能，场景识别和视频一系列更复杂的技术等等。当时就是那么一霎那，我觉得这应该是AirLoft真正去实现的方向，这能够真正帮到大家，而我，可能可以把它做出来，那么我来试试吧。</p>
+<p>没什么恢弘的铺陈和情节，创造鲸语的想法就那样突如其来地出现了。</p>
+<p>现在回想起来，还真有点像村上在书里谈论他做出决定写小说的那个瞬间—坐在神宫球场外听见清脆的击球声，“哦对了或许我也可以写小说……”。</p>
+<p>余下的那晚，和接下来那几天我或许并没有什么特别，上班，请假上课，写作业和准备考试依旧占据了我生活绝大多数的时间。只是在每天那剩下来的一小会儿时间里，我脑海持续地被这个想法占据，碰巧半年前在图书馆里看完了整场Facebook开发者直播，也了解到了最新React Native跨平台开发App的方案。拥有接近半年React开发网站经验的我决定来啃啃螃蟹，谁知道呢，反正也没什么人试过，但是这真的很酷啊。</p>
+<p>当时只是觉得自己不过是做了一个很小的决定，小到就有点像是在选择晚餐是配苹果还是橙汁这样无关紧要的选择，可现在想起来，当时的那个决定或许是基于我一个从未开发过iOS应用的初学者最好的决定。熟悉的技术理念和开发语言，也让我两个月用周末业余时间把鲸语的雏形开发出来成为可能。这期间经历的困境，并不像纸面上“两个月的业余时间”这么潇洒的概括，那些因为框架方案太新导致没人处理的漏洞我不得不写出奇奇怪怪的解决方案，那些直接和陌生开发者讨论实现方案长篇累牍的邮件，还有每几周迎来的新的开发观念的消化带来的一系列项目的变动……这一切都历历在目。</p>
+<p>我无法评论我未曾选择的路，但我所经历过的那些尝试起伏，那些明亮的失落的瞬间，都作为一部分成就了鲸语最初的样子。</p>
+<p>当初写在鲸语1.0发布文章里的那句话依然能诚恳地回望我这一段鲸语初期的开发—</p>
+<p>“谁没有些从陌生到渐渐开窍的故事呢，或许没有那么多理所当然和信手拈来，不过举重若轻罢了。”</p>
+<h2 id="伙伴_-_记在鲸语1-0发布之后">伙伴 - 记在鲸语1.0发布之后</h2><p>无论问我多少次，对鲸语来说最重要的部分是什么，最重要的经历是哪些，我都会毫不迟疑地回答，是伙伴，是鲸语团队里的伙伴们，是一路走来志同道合的伙伴们。</p>
+<p>我特别喜欢的海贼王漫画，讲着一群人为了各自的梦想相互守候一起冒险的故事。很幸运地，在鲸语成长的路上，我也渐渐找到了值得依赖的伙伴。</p>
+<p>认识小G，是在羽球场上两个左撇子相遇的意外。谁也没有想到，接下来的一年，小G以新任社长的身份带领UTADA在各个对外活动上接入正轨，为鲸语项目的产品化，商业化出谋划策。在每次鲸语的重要决策之前，我脑海里都会浮现小G的一句话，“即便是最糟糕的结果，也不过只是维持现状罢了……”。很平淡的字，却每一次给我决意的勇气。小A，很有灵性的设计师和开发者，鲸语的logo和许多样式均出自小A之手，印象特别深刻教会小A项目技术背景的那晚，他凌晨三四点发来App改进的界面图，我只能用完美来评价……他们的加入，像是静寂了很久的路上慢慢传来的烟火声，我渐渐学会把所有心事都拿出来说，好话，废话，美好的愿景，耍过的机灵都抖落出来。我曾深知孤独的必然，而所有交错的经历，共同的承担，都成为恩赐而值得深深铭记。</p>
+<p>是被“驯服”过的，于是玫瑰的名字，不再重要。</p>
+<p>距离鲸语1.0的发布刚走过不多不少的50天，盛大，冷却，到再出发，无意却像极了过往的这一年。我一字一句地斟酌，写不出的青涩和匆忙像留不住的沙漏，笨拙却无比真实。</p>
+<p>静静地在图书馆敲下这些字的时候，也是多伦多一段绵长的雨季正式结束的时候，终于迎来的夏天，像终于等来的恋人，空气里弥漫着绵软如絮的热烈。</p>
+<p>我坐在E.J.图书馆最靠窗的位置，能瞧见整个Queens Park的慵懒和喧闹。屏幕一角那三人剪影的位置，依附着午后阳光的一块。阳光很暖，温顺一如眼眸。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>一起加油！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="余舜哲 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag">#iOS</a>
+          
+            <a href="/tags/react-native/" rel="tag">#react native</a>
+          
+            <a href="/tags/创业/" rel="tag">#创业</a>
+          
+            <a href="/tags/日记/" rel="tag">#日记</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/20/但是你记得-《把你交给时间》读后感/" rel="next" title="但是你记得｜《把你交给时间》读后感">
+                <i class="fa fa-chevron-left"></i> 但是你记得｜《把你交给时间》读后感
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+
+      
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2017/03/20/App首发｜鲸语-多伦多玩乐攻略第一入口/">App首发｜鲸语 - 多伦多玩乐攻略第一入口</a></li><li><a href="/2016/04/27/第一期-AirLoft组织动员宣言/">[第一期]AirLoft组织动员宣言</a></li><li><a href="/2016/10/06/社团日记2-新生致辞/">社团日记2 新生致辞</a></li><li><a href="/2016/09/11/社团日记1-重新出发/">社团日记1 重新出发</a></li><li><a href="/2016/11/20/16.11月随笔-告别|散文|冬天|总统选举/">16.11月随笔-告别|散文|冬天|总统选举</a></li><li><a href="/2016/05/13/另一种鼓声-读《途客圈》有感/">另一种鼓声-读《途客圈》有感</a></li><li><a href="/2016/04/25/关于创业，-那些不能说的秘密/">关于创业, 那些不能说的秘密</a></li><li><a href="/2015/12/28/为什么大公司不会偷取你的想法/">为什么大公司不会偷取你的想法</a></li><li><a href="/2015/11/20/辩手说-人们有没有权利来决定他们的税收将会被用在什么地方？/">[辩手说]人们有没有权利来决定他们的税收将会被用在什么地方？</a></li><li><a href="/2016/07/03/ReactNative-简易个人博客客户端/">ReactNative-简易个人博客客户端</a></li></ul>
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+               alt="余舜哲" />
+          <p class="site-author-name" itemprop="name">余舜哲</p>
+          <p class="site-description motion-element" itemprop="description">技术就是信仰</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">70</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chocoluffy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chocoluffy" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://think-different-8.lofter.com/" target="_blank" title="Lofter">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  Lofter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一个人到一群人_-_鲸语的前生AirLoft"><span class="nav-number">1.</span> <span class="nav-text">一个人到一群人 - 鲸语的前生AirLoft</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回到一个人的战斗_-_鲸语的出现"><span class="nav-number">2.</span> <span class="nav-text">回到一个人的战斗 - 鲸语的出现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#伙伴_-_记在鲸语1-0发布之后"><span class="nav-number">3.</span> <span class="nav-text">伙伴 - 记在鲸语1.0发布之后</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2013 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">余舜哲</span>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">你是第<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>个小伙伴</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'chocoluffy';
+      var disqus_identifier = '2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/';
+      var disqus_title = '写在1.0发布后第50天 - 鲸语开发者的独白';
+      var disqus_url = 'http://chocoluffy.com/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
