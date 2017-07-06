@@ -1972,7 +1972,16 @@
       <url>http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</url>
       <content type="html"><![CDATA[<p>在搭建hexo博客的时候遇到的各种坑， 留下一些最棒的博文和大家分享!</p>
 <a id="more"></a>
-<h2 id="常用功能">常用功能</h2><h3 id="怎样使用七牛云服务来存储静态资源">怎样使用七牛云服务来存储静态资源</h3><ul>
+<h2 id="常用功能">常用功能</h2><h3 id="添加豆瓣读书插件">添加豆瓣读书插件</h3><blockquote>
+<p>每一次如果<code>hexo g</code>会报错，通常都是因为我系统的node的版本不对；需要用<code>nvm use system</code>来改成node 4.5来运行操作。</p>
+</blockquote>
+<p><a href="https://github.com/ForbesLindesay/sync-request" target="_blank" rel="external">GitHub - ForbesLindesay/sync-request: Make synchronous web requests with cross platform support.</a> 用sync-request来修改hexo-douban，实现爬去书籍消息的功能。</p>
+<p>demo: <a href="https://blog.mythsman.com/books/" target="_blank" rel="external">https://blog.mythsman.com/books/</a></p>
+<p>开发的组件博客 <a href="https://blog.mythsman.com/" target="_blank" rel="external">https://blog.mythsman.com/</a><br>github： <a href="https://github.com/mythsman/hexo-douban/blob/master/lib/templates/book.ejs" target="_blank" rel="external">hexo-douban/book.ejs at master · mythsman/hexo-douban · GitHub</a></p>
+<p>类似的但是样式上差一点的另一个组件 <a href="https://github.com/Yikun/hexo-generator-douban" target="_blank" rel="external">GitHub - Yikun/hexo-generator-douban: Douban page generator plugin for Hexo.</a></p>
+<h3 id="添加微博组件">添加微博组件</h3><p><a href="http://kuangqi.me/tricks/add-weibo-show-in-hexo/" target="_blank" rel="external">在Hexo博客中添加微博秀 | The Bloom of Youth | 锦瑟华年</a></p>
+<p><a href="https://suarezzz.github.io/2016/07/02/hexo-useful-tools/" target="_blank" rel="external">Hexo有用的工具和插件汇总 | suarezzz’s blog</a></p>
+<h3 id="怎样使用七牛云服务来存储静态资源">怎样使用七牛云服务来存储静态资源</h3><ul>
 <li>[1]<a href="https://linux.cn/article-2311-1.html" target="_blank" rel="external">Linux中国采用“七牛”云存储支撑图片访问</a></li>
 <li>[2]<a href="https://blog.blahgeek.com/qiniu-cdn-serve-static/" target="_blank" rel="external">使用七牛CDN加速博客静态文件访问</a></li>
 </ul>
