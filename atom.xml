@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2017-07-06T03:59:59.000Z</updated>
+  <updated>2017-07-11T03:01:09.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[写在1.0发布后第50天 - 鲸语开发者的独白]]></title>
+    <title><![CDATA[鲸语|一名多大校园开发者的独白]]></title>
     <link href="http://chocoluffy.com/2017/07/05/%E5%86%99%E5%9C%A81-0%E5%8F%91%E5%B8%83%E5%90%8E%E7%AC%AC50%E5%A4%A9-%E9%B2%B8%E8%AF%AD%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E7%8B%AC%E7%99%BD/"/>
     <id>http://chocoluffy.com/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/</id>
     <published>2017-07-06T02:31:04.000Z</published>
-    <updated>2017-07-06T03:59:59.000Z</updated>
+    <updated>2017-07-11T03:01:09.000Z</updated>
     <content type="html"><![CDATA[<p>编者按：三人的学生团队，历时四个月，从零开始开发应用，冲进了App Store新闻资讯类榜单全球前30，并登顶“多伦多”相关应用的搜索结果。这篇长信，来自鲸语的开发作者，关于校园开发者的经历，关于鲸语诞生的初衷，以及他和伙伴之间的故事。附<a href="https://appsto.re/ca/klNuhb.i" target="_blank" rel="external">App Store下载链接</a>。</p>
 <a id="more"></a>
 <p><img src="https://ww2.sinaimg.cn/large/006tNc79gy1fh9zt7p6g9j30gf05emzf.jpg" style="display: block; margin: 0 auto;"></p>
@@ -54,6 +54,8 @@
 <p>距离鲸语1.0的发布刚走过不多不少的50天，盛大，冷却，到再出发，无意却像极了过往的这一年。我一字一句地斟酌，写不出的青涩和匆忙像留不住的沙漏，笨拙却无比真实。</p>
 <p>静静地在图书馆敲下这些字的时候，也是多伦多一段绵长的雨季正式结束的时候，终于迎来的夏天，像终于等来的恋人，空气里弥漫着绵软如絮的热烈。</p>
 <p>我坐在E.J.图书馆最靠窗的位置，能瞧见整个Queens Park的慵懒和喧闹。屏幕一角那三人剪影的位置，依附着午后阳光的一块。阳光很暖，温顺一如眼眸。</p>
+<h2 id="写在后面的话">写在后面的话</h2><p>留下上面每一字的时候，是鲸语1.0刚发布的第50天。很幸运，在它的第100天，2.0如期而至。变化的是几近所有的功能和样式，这期间我们去拜访了很多业界的前辈，去展示，去交换，去见见外面的世界，也默默低下头去记下了每一处鲸语的伤。更庆幸那些没有变化的，那些依旧会紧张的，却也依旧高涨的情绪， 那些如同记录自己成长般记录鲸语成长的坚持……</p>
+<p>很感激这期间相遇的每一个帮助过鲸语的人，尤其是校园里反馈尤其积极的同学们。我们为下一步画下了更难的挑战，要更踏实地去实现呢。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>编者按：三人的学生团队，历时四个月，从零开始开发应用，冲进了App Store新闻资讯类榜单全球前30，并登顶“多伦多”相关应用的搜索结果。这篇长信，来自鲸语的开发作者，关于校园开发者的经历，关于鲸语诞生的初衷，以及他和伙伴之间的故事。附<a href="https://appsto.re/ca/klNuhb.i">App Store下载链接</a>。</p>]]>
