@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2017-07-11T03:07:31.000Z</updated>
+  <updated>2017-09-27T03:04:30.000Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -13,6 +13,45 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[鲸语的创业故事-聚焦生活服务的搜索引擎]]></title>
+    <link href="http://chocoluffy.com/2017/09/26/%E9%B2%B8%E8%AF%AD%E7%9A%84%E5%88%9B%E4%B8%9A%E6%95%85%E4%BA%8B-%E8%81%9A%E7%84%A6%E7%94%9F%E6%B4%BB%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/"/>
+    <id>http://chocoluffy.com/2017/09/26/鲸语的创业故事-聚焦生活服务的搜索引擎/</id>
+    <published>2017-09-27T03:01:58.000Z</published>
+    <updated>2017-09-27T03:04:30.000Z</updated>
+    <content type="html"><![CDATA[<p>“我希望辍学一年全力开发出高质量的新功能”，这是我对鲸语下一阶段的约定，也是我还没有对导师、朋友们透露的秘密。</p>
+<a id="more"></a>
+<p>鲸语，是一个聚焦生活品类的搜索引擎。聚合了当下媒体平台诸如：微信，微博，今日头条，知乎和Facebook等等的多伦多本地高品质资讯，并利用全自动化的自然语义处理，来推送给用户当下最值得留意的内容和服务。</p>
+<p>这是我对鲸语的愿景，也是今年年初我利用圣诞假期前后三个月开发时，不断自我提醒的目标。我希望让用户高效率的获取信息，宛如在浩瀚海洋里倾听见鲸鱼的低语一般，用户不应该错过任何一条有价值的内容，这也是这款应用名字的由来。目前鲸语下载量在苹果商店多伦多搜索排行榜位列第四，多伦多攻略一类名列第一。</p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNc79gy1fjxxrpvfqdj30yi0ea0uq.jpg" alt="logo"></p>
+<p>这也是我就读多伦多大学的第三年。</p>
+<p>直到现在我依旧印象很深的是当初我拖着行李离开机场被同系师兄接上了车，一路上我听着师兄们聊着那些校园周边的新鲜事，那些新开的餐馆和奶茶店，那些社团的纠纷和变故，乃至毕业后职场的迷茫等等。那些陌生的名字和街道，宛如一罐罐精美包装的糖果吸引着我，我听得见我内心的声音，“我希望更快地融入这个城市”。</p>
+<p>在一番搜索后，我手机留下了两个App，一个是51黄页，一个是觅迷，这两个应用分别从大而全，精而细的角度提供了很棒的攻略。每当在两个应用间切换的时候，我也在思考，有没有可能提供一种折中的方式，既具备广泛的品类，又能提供精致的视觉呈现和服务呢？我的注意力慢慢转移到了微博和微信上。</p>
+<p>如果有应用能够像搜索引擎一样，聚合起来各个平台的内容，以跳回原平台地址的形式保障内容生产者的利益，也提供用户高效的资讯获取方式，会不会很实用？接下来的三个月，我利用课余时间着手实现这个想法。</p>
+<p>在iOS的应用上架，Android应用调试的时候，我让我一些社团朋友来试用。也很惊喜地发现，苹果应用刚上架的前两天就积累了近千名用户，曾一度出现在苹果商店新闻推荐的列表里。慢慢地，有不少社团联系上我，表达希望提供校园内活动的意愿，以及一些健身类的机构，家庭厨房和房屋租赁中介愿意达成广告合作。这些商业合作的拟定，也让我确信这是一个机会，我希望把它做得更好。</p>
+<p>我之前在社交数据分析公司实习的经历，和目前在实验室和导师研究的项目都让我意识到，高质量可供分析的数据和一套支持数据产生的框架系统是多么重要。也是从第一天开发起，我也将鲸语打造成高度自动化的系统。直到目前鲸语达到近9000名用户的时候，我依然没有在运营、管理应用上有任何花销，维持在当前4人的学生团队，相应地和机构的合作也让鲸语一直处于盈利的阶段。</p>
+<p>现阶段的鲸语同时结合了目前人工智能的先进成果。鲸语可以利用用户拍摄的照片，进行智能识别照片内的主体，并推荐相关的攻略，更进一步的应用场景会结合到社交圈子的背景下，更好地连接社交图片的分享和对应服务提供商。</p>
+<p><img src="https://ww3.sinaimg.cn/large/006tNc79gy1fjxxpzywzhg30b40hs7wh.gif" alt="gif"></p>
+<p>鲸语的下一阶段，是注重接入更多的机构和服务，基于目前搜索引擎的收纳优势，实现更精准地资讯投放和广告服务，为机构提供细分到人群的用户画像和兴趣分布，推出不同价格层级的合作模式，更好地为本地服务提供宣传曝光的机会。</p>
+<p>同时鲸语也将涉及更多的品类和平台，积极撮合和本地流行华人杂志的合作，为用户提供更完整的全平台阅读体验。</p>
+<p>日前鲸语正在与多伦多校方孵化器取得联系，评估进驻多伦多大学创业园区的机会。同时也在接触业界的投资人，寻求25-40万种子轮投资的机会，进一步扩大团队和支持市场宣传和营销。</p>
+<p>作者介绍：余舜哲，现多伦多大学计算机科学大四学生，鲸语的作者，鲸语科技公司的联合创始人。大一参加麻省理工国际遗传工程机器设计竞赛获最佳软件奖和金奖，大二赴加州伯克利交换学习，大三赴多伦多大学并在业界开始为期一年数据科学的实习，现大四结束实习返回学校实验室跟导师继续关于社交网络的研究。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>“我希望辍学一年全力开发出高质量的新功能”，这是我对鲸语下一阶段的约定，也是我还没有对导师、朋友们透露的秘密。</p>]]>
+    
+    </summary>
+    
+      <category term="react native" scheme="http://chocoluffy.com/tags/react-native/"/>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="日记" scheme="http://chocoluffy.com/tags/%E6%97%A5%E8%AE%B0/"/>
+    
+      <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[鲸语 | 一名多大校园开发者的独白]]></title>
@@ -1157,92 +1196,6 @@
       <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
       <category term="原创" scheme="http://chocoluffy.com/categories/%E5%8E%9F%E5%88%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[AWS elastic beanstalk使用体验]]></title>
-    <link href="http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/"/>
-    <id>http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/</id>
-    <published>2016-05-05T01:03:58.000Z</published>
-    <updated>2016-05-13T17:55:01.000Z</updated>
-    <content type="html"><![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
-<a id="more"></a>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/de08e7610183200c.png" alt="aws"></div>
-
-<h2 id="概览">概览</h2><p>将之前用nodejs写的对<a href="https://cnodejs.org/?tab=good" target="_blank" rel="external">cnode社区精华帖</a>的爬虫放在AWS的EC2 instance下管理， 利用elastic beanstalk来对AWS资源进行分配和调控， 由于使用的还是free-tier的single instance， 则elastic beanstalk所特有的load-balancing的优势没有办法享受到。</p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/69662ed94ae1f3ff.png" alt="ebean"></div>
-
-<p>一开始如果直接按照AWS给的方法, <code>eb init</code>初始化一个elastic beanstalk的项目， <code>eb create</code>创建一个environment和一个EC2实例, 然后<code>eb deploy</code>将.git里面committed的改动push到elastic beanstalk的生产环境里面， 然后用<code>eb open</code>来打开这个IP address， 如果之后需要终止这个app的话， 就<code>eb terminate</code>就好了。</p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/143c21d61cd3cf33.png" alt="heroku"></div>
-
-<p>如果之前有使用heroku的经验的话， 其实你会发现其实amazon elastic beanstalk和heroku提供的服务非常相似， 实际上， 就这两家服务的定位而言， 都是platform as a service（Paas）， 也就是让developer可以将网站， 移动端部署在云端(cloud)不需要顾虑backend server和database的configuration。 而heroku本身相对于其他市面上的Paas在auto-scaling上做得更加出色， 它的computing resources(dyno)可以按照计算的需求而叠加从而满足在高流量下的网站后端流畅运行。而近几年amazon的elastic beanstalk的出现， 在这个Paas的市场给我们developer多一个很好的选择。就自己的使用而言， 感觉两者的command line interface其实设计得差不多， 都很简洁方便， 不过相比heroku， amazon的AWS还涉及租用到计算单元EC2, 就配置的操作来说， 你在配置AWS的服务上需要花更多的时间去设置环境变量和考虑密钥存储， 毕竟你可能有时候有ssh远程登陆amazon linux服务器的需求。相比之下， heroku的配置就是很简单的在<code>~/.bashrc</code>文件里面添加toolbelt文件夹的路径了。</p>
-<blockquote>
-<p> 其实heroku它本身就是deploy在了AWS上的呀😂， 所以理论上在performance上不会有太大的差别。</p>
-</blockquote>
-<p>而在pricing上， 我认为AWS的价格和服务会更加的实惠， 毕竟考虑到你有一张信用卡就可以申请到你一年的free-tier的single instance的使用权利， 而single instance对一些小型的side project来说完完全全是够用的呀。即便不够用， 换成large instance也是several clicks away， 反正也是按用量收费， 经济实惠!</p>
-<h2 id="遇到的问题">遇到的问题</h2><p>第一个使用EB部署的应用是一个nodejs爬虫， 负责爬去cnode社区的精华帖， 然后返回一个json object收集精华帖的link, 标题和作者avatar， 为了显示的直观， 我并没有写前端的样式， 而是直接<code>JSON.stringify(json)</code>然后send会浏览器。之后如果仅仅作为REST API使用的话， 还需要在router上修饰一下URL。目前还是有点粗糙的。<a href="https://github.com/AirLoft/web-scraper" target="_blank" rel="external">github链接</a></p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/9fd7dd3d203d2d91.png" alt="demo"></div>
-
-<p>一开始我直接将在本地localhost运行的版本deploy到了elastic beanstalk上， 由于缺少了这一行配置<code>var port = process.env.PORT || 3000;</code>， 我直接把port定在了3000， 而elastic beanstalk是有应该占用的port的， 所以得到了“502 bad gateway error”。</p>
-<p>还有一点需要注意的是<code>npm start</code>这个npm script里面的配置， AWS elastic beanstalk会找到这条指令并去执行来执行相应的js文件， 比如我把写cnode网站的爬虫写在了cnode.js里面， 那么我需要</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"node cnode.js"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<p>来保证服务器执行的是我对cnode这个网站的爬虫。</p>
-<h2 id="Q&amp;A">Q&amp;A</h2><p>以下内容是我在自己折腾Elastic Beanstalk的时候收集的一些比较简练而准确的总结， 在这里分享给大家。 其实amazon的AWS教程写得非常详细的， 大家自己如果有能力最好去尝试自己阅读和实践它给的例子!</p>
-<p><strong>How elastic beanstalk works?</strong><br>Now you have a web app running in AWS Elastic Beanstalk. As Elastic Beanstalk creates your environment, it <strong>interacts with several other AWS services</strong> to create the resources required to run your web app securely and resiliently.</p>
-<p><strong>How EC2 instance works?</strong><br>EC2 instance – A virtual machine that runs Amazon Linux or Microsoft Windows Server and that is configured to run web apps on the platform that you choose.<br>Each platform runs a different set of software, configuration files, and scripts to support a specific language version, framework, web container, or combination thereof. Most platforms <strong>use either Apache or nginx as a reverse proxy</strong> that sits in front of your web app, forwards requests to it, serves static assets, and generates access and error logs.</p>
-<p><strong>What is reverse proxy server?</strong><br>A proxy server is a go-between or intermediary server that forwards requests for content from multiple clients to different servers across the Internet. A reverse proxy server is a type of proxy server that typically <strong>sits behind the firewall in a private network</strong> and directs client requests to the appropriate backend server. A reverse proxy provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.</p>
-<p>Common uses for a reverse proxy server include:</p>
-<ul>
-<li>Load balancing – A reverse proxy server can act as a “traffic cop,” sitting in front of your backend servers and distributing client requests across a group of servers in a manner that maximizes speed and capacity utilization while ensuring no one server is overloaded, which can degrade performance. If a server goes down, the load balancer redirects traffic to the remaining online servers.</li>
-<li>Web acceleration – Reverse proxies can compress inbound and outbound data, as well as cache commonly requested content, both of which speed up the flow of traffic between clients and servers. They can also perform additional tasks such as SSL encryption to take load off of your web servers, thereby boosting their performance.</li>
-<li>Security and anonymity – By intercepting requests headed for your backend servers, a reverse proxy server protects their identities and acts as an additional defense against security attacks. It also ensures that multiple servers can be accessed from a single record locator or URL regardless of the structure of your local area network.</li>
-</ul>
-<p><strong>What is amazon s3 bucket?</strong><br>Amazon S3 bucket – A storage location for your source code, logs, and other artifacts that are created when you use Elastic Beanstalk.</p>
-<p><strong>How your domain will look like?</strong><br>Domain name – A domain name that routes to your web app in the form subdomain.region.elasticbeanstalk.com.</p>
-<p><strong>When should I use AWS Lambda versus Amazon EC2?</strong></p>
-<p>Amazon Web Services offers a set of compute services to meet a range of needs.</p>
-<p>Amazon EC2 offers flexibility, with a wide range of instance types and the option to customize the operating system, network and security settings, and the entire software stack, allowing you to easily move existing applications to the cloud. With Amazon EC2 you are responsible for provisioning capacity, monitoring fleet health and performance, and designing for fault tolerance and scalability. AWS Elastic Beanstalk offers an easy-to-use service for deploying and scaling web applications in which you retain ownership and full control over the underlying EC2 instances. Amazon EC2 Container Service is a scalable management service that supports Docker containers and allows you to easily run distributed applications on a managed cluster of Amazon EC2 instances.<br>AWS Lambda makes it easy to execute code in response to events, such as changes to Amazon S3 buckets, updates to an Amazon DynamoDB table, or custom events generated by your applications or devices. With Lambda you do not have to provision your own instances; Lambda performs all the operational and administrative activities on your behalf, including capacity provisioning, monitoring fleet health, applying security patches to the underlying compute resources, deploying your code, running a web service front end, and monitoring and logging your code. AWS Lambda provides easy scaling and high availability to your code without additional effort on your part.</p>
-<p><strong>To create a hosted zone in Amazon Route 53</strong></p>
-<ul>
-<li>Open the Amazon Route 53 management console.</li>
-<li>Choose Hosted Zones.</li>
-<li>Choose Create Hosted Zone.</li>
-</ul>
-<p>For Domain Name, type the domain name that you own. For example: example.com.</p>
-<p>Choose Create.</p>
-<p>Next, add a CNAME record to the hosted zone. A CNAME record registers a domain name that you own as an alias of your web app environment’s elasticbeanstalk.com subdomain.</p>
-<p>When an Amazon Route 53 DNS server receives a name request for your custom domain name, it resolves to the elasticbeanstalk.com subdomain, which resolves to the public DNS name of your Elastic Load Balancing load balancer, which resolves to your web app’s IP address.</p>
-<p>Note<br>In a single-instance environment, the elasticbeanstalk.com subdomain resolves to an Elastic IP address attached to the instance running your web app.</p>
-<p><strong>关于elastic beanstalk的价格</strong><br>有小伙伴在comment里面提问， 如果用完了一年的free-tier的话， 价格怎么计算呢? 可以参考下amazon的<a href="https://aws.amazon.com/elasticbeanstalk/pricing/" target="_blank" rel="external">这篇介绍</a>里面详细记录了EC2, S3, DB等等AWS相关服务的价格。如果是个人的side project, 对CPU和图片等用户信息存储的需求不是特别大的话， 免费的plan或者是micro的instance是完全够用的， 如果是在某方面的需求特别大， 比如说unsplash这个高清摄影图片分享的社区。</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/bb0b5ef1d0298d11.png" alt="unsplash"></p>
-<p> unsplash将用户上传的照片存储在Amazon的S3服务上会比较安全和便捷，(搭配着Imgix这个service使用)， 具体的网站花销可以参考<a href="http://backstage.crew.co/what-does-unsplash-cost/" target="_blank" rel="external">这篇博文</a>， 里面记录了unsplash一个月网站使用的各种服务的明细记录， 也可以给一些希望做图片分享社区的创业者们一个参考。一个值得注意的点是， unsplash的花销是比较适合借鉴的， 因为unsplash和目前许多的创业公司一样， 选择将自己的主服务host在heroku这个平台， 选择S3等等主流的服务， 不像一些更geeky的公司可能为了省钱就自己来搭建和管理自己的服务器和数据库。 当然， 管理成本和维护成本都要考虑进去， 所以综上我才认为unsplash的例子是非常值得借鉴的!</p>
-<h2 id="参考链接">参考链接</h2><p>下面的链接是我在自己尝试搭建环境时参考的内容， 以及我选择free-tier的configuration的页面。其中就有以express为例子的服务端环境搭建。</p>
-<ul>
-<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html#set_aes_home_linux" target="_blank" rel="external">setting up EC2 cli on mac</a> we store EC2 api tool, aws-access-key and aws-secret-key in <code>~/.bashrc</code>, so that we can use the shortcut commands to do <code>init\create\deploy\open</code>. The common commands are listed as followed.</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">eb init</span><br><span class="line">eb create</span><br><span class="line">eb deploy</span><br><span class="line">eb open</span><br></pre></td></tr></table></figure>
-<ul>
-<li><a href="https://docs.aws.amazon.com/quickstarts/latest/webapp/welcome.html" target="_blank" rel="external">A high level explanation of what EB does and what can we config</a> trying to give a high-level description of what is the use and purpost of each AWS service, including EC2, the reverse proxy server sitting in front of servers, router 53 and so on so forth.</li>
-<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html" target="_blank" rel="external">A detailed explanation of how to host an express app on EB full-step tutorial</a> The tutorial uses an express app to explain how to use EB.</li>
-<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html" target="_blank" rel="external">How to deploy a nodejs project to EB</a> similar to the previous tutorial post.</li>
-<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html" target="_blank" rel="external">how to connect to EC2 instance using ssh</a><br>by using <code>ec2-describe-instances</code>, we can get the id of my instance.</li>
-</ul>
-<p>So after we have created an project, we go to the elastic beanstalk console, we will see the dashboard of all the application I host on EB such as the recent one(webscraper). The following is a screen capture of the configuration of that application on EB as in a free-tier plan:<br><img src="http://ac-TC2Vc5Tu.clouddn.com/7c3a33a6cfab0843.png" alt="configuration"> In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.</p>
-<p>When you turn on load balancing, Elastic Beanstalk creates a load balancer, deletes the Elastic IP address from your environment, and provisions a new EC2 instance. Elastic Beanstalk also updates DNS records to point the web app’s domain name to the load balancer instead of to the IP address of a single instance.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>]]>
-    
-    </summary>
-    
-      <category term="AWS" scheme="http://chocoluffy.com/tags/AWS/"/>
-    
-      <category term="javascript" scheme="http://chocoluffy.com/tags/javascript/"/>
-    
-      <category term="nodejs" scheme="http://chocoluffy.com/tags/nodejs/"/>
-    
-      <category term="技术" scheme="http://chocoluffy.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
