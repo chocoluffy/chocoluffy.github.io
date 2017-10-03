@@ -204,7 +204,7 @@
     
     <entry>
       <title><![CDATA[喜欢冬天，因为可以把寒冷归咎于天气]]></title>
-      <url>http://chocoluffy.com/2016/11/20/%E6%AC%A2%E5%86%AC%E5%A4%A9%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%8F%AF%E4%BB%A5%E6%8A%8A%E5%AF%92%E5%86%B7%E5%BD%92%E5%92%8E%E4%BA%8E%E5%A4%A9%E6%B0%94/</url>
+      <url>http://chocoluffy.com/2016/11/20/%E5%96%9C%E6%AC%A2%E5%86%AC%E5%A4%A9%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%8F%AF%E4%BB%A5%E6%8A%8A%E5%AF%92%E5%86%B7%E5%BD%92%E5%92%8E%E4%BA%8E%E5%A4%A9%E6%B0%94/</url>
       <content type="html"><![CDATA[<p>自由主义的故事，曾经是因为其经济上的优势而繁荣和扩张的。然而绝大多数的时候，这只是一小部分精英们的故事，自由和权利或许都只会是上层阶级的财产和特权。可悲的是，人们没有其他选择。选择trump，是不想听见一个一直听腻的故事，是对遥远的精英们仅剩的嘲讽罢了。</p>
 <a id="more"></a>
 <h2 id="11-11">11.11</h2><h3 id="告别">告别</h3><p>今天和最亲最尊敬的小老板告别，还好是冬天，可以把难受和不舍归咎给天气。 这是一个流行离开的世界，但是我们都不擅长告别。 祝愿你一切都好。</p>
@@ -2331,32 +2331,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Agile web developing in rails 第一期]]></title>
       <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
       <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
@@ -2398,6 +2372,32 @@
 <p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
 <p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test <span class="string">"should redirect to store_url because of empty cart when checkout"</span> <span class="built_in">do</span></span><br><span class="line">  <span class="built_in">get</span> :<span class="built_in">new</span></span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], <span class="string">"Your cart is empty!"</span></span><br><span class="line"><span class="function"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="title">test</span> "<span class="title">should</span> <span class="title">get</span> <span class="title">new</span>" <span class="title">do</span></span></span><br><span class="line">  <span class="keyword">item</span> = LineItem.<span class="built_in">new</span></span><br><span class="line">  <span class="keyword">item</span>.build_cart</span><br><span class="line">  <span class="keyword">item</span>.product = products(:<span class="constant">one</span>)</span><br><span class="line">  <span class="keyword">item</span>.save!</span><br><span class="line">  session[:cart_id] = <span class="keyword">item</span>.cart.id</span><br><span class="line">  <span class="built_in">get</span> :<span class="built_in">new</span></span><br><span class="line">  assert_response :success</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="external">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="external">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="external">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="external">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="external">click anywhere to start an animation!</a><br>use:<br><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).<span class="keyword">on</span>(‘mousedown’, <span class="function"><span class="keyword">function</span><span class="params">(e)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="external">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
     </entry>
     
     <entry>
