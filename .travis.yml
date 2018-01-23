@@ -16,7 +16,7 @@ install:
     - npm install
 
 script:
-    - rsync -a hexo-douban/ ./node_modules/
+    - mv -vu hexo-douban ./node_modules/
     - rm -r hexo-douban/
     - hexo clean
     - hexo g
