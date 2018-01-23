@@ -1,0 +1,160 @@
+# Header
+menu:
+  主页: /
+  所有文章: /archives
+  # 随笔: /tags/随笔
+title: 余舜哲的 One Piece
+language: zh-Hans
+
+# SubNav
+subnav:
+  github: "https://github.com/chocoluffy"
+  weibo: "http://weibo.com/chocoluffy"
+  mail: "luffy.yu@mail.utoronto.ca"
+  # rss: "http://feed.feedsky.com/litten"
+  # facebook: "/"
+  # google: "/"
+  # twitter: "/"
+  # linkedin: "/"
+
+# rss: /atom.xml
+
+#RSS订阅
+plugin:
+- hexo-generator-feed
+- hexo-generator-sitemap
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
+
+# Content
+excerpt_link: more
+fancybox: true
+tagcloud: true
+theme: next
+# theme: tranquilpeak
+
+# Miscellaneous
+
+favicon: ./source/favicon.png
+
+avatar: "http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+share: true
+duoshuo: false
+disqus_shortname: chocoluffy
+
+deploy:
+  type: git
+  repository: https://github.com/chocoluffy/chocoluffy.github.io.git
+  branch: master
+
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+
+# subtitle: 因为大家在一起 为了各自的梦想 努力着
+# description: 学习总结 思考感悟 知识管理 商业科技 生活娱乐
+# author: 余舜哲
+
+# email: 492406114@qq.com
+# timezone:
+
+# # URL
+# ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://chocoluffy.com
+root: /
+permalink: :year/:month/:day/:title/
+# permalink_defaults:
+
+# # Directory
+# source_dir: source
+# public_dir: public
+# tag_dir: tags
+# archive_dir: archives
+# category_dir: categories
+# code_dir: downloads/code
+# i18n_dir: :lang
+# skip_render:
+
+# # Writing
+# new_post_name: :title.md # File name of new posts
+# default_layout: post
+# titlecase: false # Transform title into titlecase
+# external_link: true # Open external links in new tab
+# filename_case: 0
+# render_drafts: false
+# post_asset_folder: false
+# relative_link: false
+# future: true
+# highlight:
+#   enable: true
+#   line_number: true
+#   auto_detect: true
+#   tab_replace:
+
+# # Category & Tag
+# default_category: uncategorized
+# category_map:
+# tag_map:
+
+# #Archives
+# archive: 1
+# category: 1
+# tag: 1
+
+
+
+# # Date / Time format
+# ## Hexo uses Moment.js to parse and display date
+# ## You can customize the date format as defined in
+# ## http://momentjs.com/docs/#/displaying/format/
+# date_format: YYYY-MM-DD
+# time_format: HH:mm:ss
+
+# # Pagination
+# ## Set per_page to 0 to disable pagination
+# per_page: 15
+# pagination_dir: page
+
+# # Extensions
+# ## Plugins: http://hexo.io/plugins/
+# ## Themes: http://hexo.io/themes/
+# theme: lightum
+
+# plugins:
+# - hexo-generator-feed
+# - hexo-generator-sitemap
+
+# #sitemap
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
+
+# #feed atom
+# feed:
+#   type: atom
+#   path: atom.xml
+#   limit: 20
+
+# # Deployment
+# ## Docs: http://hexo.io/docs/deployment.html
+# deploy:
+#   type: git
+#   repository: https://github.com/chocoluffy/chocoluffy.github.io.git
+#   branch: master
+
+# Douban
+douban:
+  user: 142512968
+  book:
+    title: '时间知道'
+    quote: '“时间过去了，我们谁也没有在原地等候......这或许是关于时间和耐心的全部真相。”'
+  movie:
+    title: 'This is my movie title'
+    quote: 'This is my movie quote'

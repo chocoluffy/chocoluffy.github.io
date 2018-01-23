@@ -1,0 +1,32 @@
+language: node_js
+
+node_js: stable
+
+cache:
+    apt: true
+    directories:
+        - node_modules
+
+before_install:
+    - export TZ='America/New_York'
+    - npm install hexo-cli -g
+    - chmod +x ./publish-to-gh-pages.sh
+
+install:
+    - npm install
+
+script:
+    - hexo clean
+    - hexo g
+
+after_script:
+    - ./publish-to-gh-pages.sh
+
+branches:
+    only:
+        - hexo
+
+env:
+    global:
+        - GH_REF: github.com/chocoluffy/chocoluffy.github.io.git
+        

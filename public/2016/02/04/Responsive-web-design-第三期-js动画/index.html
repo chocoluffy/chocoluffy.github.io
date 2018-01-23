@@ -1,0 +1,939 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="javascript,web design," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="余舜哲的 One Piece" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Responsive web design[第三期]-js动画">
+<meta property="og:url" content="http://chocoluffy.com/2016/02/04/Responsive-web-design-第三期-js动画/index.html">
+<meta property="og:site_name" content="余舜哲的 One Piece">
+<meta property="og:description" content="Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations.">
+<meta property="og:updated_time" content="2016-02-05T01:55:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Responsive web design[第三期]-js动画">
+<meta name="twitter:description" content="Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations.">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 10766069,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Responsive web design[第三期]-js动画 | 余舜哲的 One Piece </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '66874854-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?62b2fff9ba2f591d71be23f4b51e59c6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=56472517";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">余舜哲的 One Piece</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tech">
+          <a href="/tech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery-full"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-life">
+          <a href="/life" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br />
+            
+            书房
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Responsive web design[第三期]-js动画
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-04T20:48:22-05:00" content="2016-02-04">
+              2016-02-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/04/Responsive-web-design-第三期-js动画/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/04/Responsive-web-design-第三期-js动画/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+          <span class="post-visit" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          </span>
+          
+
+          
+          <span>
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+              <i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读时长</span>
+            <span class="post-count">5 分钟</span>
+          </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations. </p>
+<a id="more"></a>
+<h2 id="Introduction">Introduction</h2><p>很多前端开发者会告诉你，你应该避免使用 JavaScript 动画。使用 CSS 动画会有更好的性能（更少的 CPU 时间）和更平滑的效果（更高的帧率）。</p>
+<p>然而，JavaScript 动画慢的原因经常是因为你用的库并没有为动画进行优化。优化过的 JavaScript 动画引擎（比如 GreenSock 或 Velocity.js）有堪比 CSS 动画的性能。某些情况下 JS 动画甚至比 CSS 动画更快！可参考下面这个性能的比较， 最后发现在某些情况下greensock的性能会比jquery好上5-6倍</p>
+<ul>
+<li><a href="https://www.greensock.com/js/speed.html" target="_blank" rel="external">greensock</a> </li>
+</ul>
+<h2 id="引入greensock_js库">引入greensock js库</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">TweenMax.fromTo(<span class="string">"#box"</span>,<span class="number">1</span>, &#123;</span><br><span class="line">    <span class="comment">// from</span></span><br><span class="line">    css: &#123;</span><br><span class="line">      left: <span class="string">"-200px"</span>,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,&#123;</span><br><span class="line">    <span class="comment">// to</span></span><br><span class="line">    css: &#123;</span><br><span class="line">      left: <span class="string">"200px"</span>,</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 永久重复动画的选项</span></span><br><span class="line">    repeat: -<span class="number">1</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 反转、重新运行动画的选项</span></span><br><span class="line">    yoyo: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 改变 easing 类型</span></span><br><span class="line">    ease: Power2.easeInOut,</span><br><span class="line">  &#125;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>什么是fps? 帧率或画面更新率是用于测量显示帧数的量度[1]。测量单位为“每秒显示帧数”（Frame per Second，FPS，帧率）或“赫兹”，一般来说FPS用于描述影片、电子绘图或游戏每秒播放多少帧，而赫兹则描述显示屏的画面每秒更新多少次。<br>由于人类眼睛的特殊生理结构，如果所看画面之帧率高于每秒约10-12帧的时候，就会认为是连贯的[2]， 此现象称之为视觉暂留。这也就是为什么电影胶片是一格一格拍摄出来，然后快速播放的。但30帧仅仅是流畅，而非平滑连续，因此有更多帧率的产品推出也就不足为奇了。<br>有声电影的拍摄及播放帧率均为每秒24帧，对一般人而言已算可接受，但对早期的高动态电子游戏，尤其是射击游戏或竞速游戏来说，帧率少于每秒30帧的话，游戏就会显得不连贯，这是因为电脑会准确地显示瞬时的画面（像是一台快门速度无限大的相机），没有动态模糊使流畅度降低。而使用相同帧率的摄影机拍摄物体移动时，该场景的视频必定会表现所有移动物体在曝光时间内所有位置的完整组合。因此很多新世代电玩游戏以动态模糊为特色。在实际体验中，60帧相对于30帧有着更好的体验。</p>
+</blockquote>
+<p>在app.js里面我们用y来表现出垂直状态的变化</p>
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> animateLogo()&#123;</span><br><span class="line">	TweenMax.fromTo(<span class="string">"#logo"</span>, <span class="number">2.5</span>, &#123;</span><br><span class="line">		css: &#123;</span><br><span class="line">			y: <span class="string">"-30px"</span>,</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;, &#123;</span><br><span class="line">		css: &#123;</span><br><span class="line">			y: <span class="string">"20px"</span>,</span><br><span class="line">		&#125;,</span><br><span class="line"></span><br><span class="line">		repeat: -<span class="number">1</span>,</span><br><span class="line">		yoyo: true,</span><br><span class="line">		ease: Sine.easeInOut,</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="GPU加速">GPU加速</h2><p>你可以把一个网页想象为一堆矩形。布局和绘图都是由 CPU 完成的：</p>
+<p>CPU 计算这些矩形的布局。矩形在哪里？它们有多大？<br>CPU 把矩形渲染成点阵位图（bitmap）。<br>之后如果可能的话，矩形被送到 GPU 以获得更好的性能：</p>
+<p>CPU 以点阵位图的形式上传到 GPU 中。<br>CPU 给 GPU 发送指令去处理这些位图。可能有平移/缩放/旋转，修改透明度，等等。<br>GPU 为什么比 CPU 快呢？假设我们把一个红色点阵和一个绿色点阵结合，CPU 不得不一个一个像素地做.</p>
+<p>总的来说，当修改 CSS 属性时，有三种可能的开销：</p>
+<p>重排（CPU。代价最高）。<br>重绘（CPU）。<br>变换, 旋转, 缩放, 透明度（GPU，代价最低）。</p>
+<p>因此在使用transform的时候， 我们常常用y在表示垂直方向的移动，这么做是不会重新排列布局的， 而是在局部位置偏移。</p>
+<blockquote>
+<p>注意： left 只对 position: absolute 生效 </p>
+</blockquote>
+<p>transform 的原理是由元素的定位位置（absolute or relative) 偏移。<br>用 GreenSocks 去修改 left 的话是改变定位位置。<br>也就是说 left 的动画改变布局，但 transform 动画不会改变布局。</p>
+<h2 id="多步骤动画">多步骤动画</h2><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> t = <span class="keyword">new</span> TimelineMax();</span><br><span class="line">t.<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">1</span>,&#123;<span class="attribute">x</span>: <span class="number">200</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">0.5</span>,&#123;<span class="attribute">rotation</span>: <span class="string">"360deg"</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">1</span>,&#123;<span class="attribute">y</span>: <span class="number">100</span>&#125;)</span><br><span class="line">  .<span class="keyword">to</span>(<span class="string">"<span class="subst">#box</span>"</span>,<span class="number">0.5</span>,&#123;<span class="attribute">rotation</span>: <span class="string">"-=360deg"</span>&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="指示器(滚动指示条)">指示器(滚动指示条)</h2><p>当窗口滚动时, 你可以用 window.scrollY 来算出窗口正在展示的是哪一部分。那么现在的重点就在于， 怎样可以获得关于元素所在位置， 高度的各种属性， 比如<code>scrollY</code>, <code>offsetHeight</code>, <code>offsetTop</code></p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/6777506/offsettop-vs-jquery-offset-top/21880020#21880020" target="_blank" rel="external">offset的各种用法实例</a></li>
+</ul>
+<h2 id="取消link默认行为">取消link默认行为</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addSmoothScrolling</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> links = <span class="built_in">document</span>.querySelectorAll(<span class="string">"#slider-control a"</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;links.length; i++)&#123;</span><br><span class="line">		<span class="keyword">var</span> link = links[i];</span><br><span class="line">		<span class="keyword">var</span> section = <span class="built_in">document</span>.querySelectorAll(<span class="string">"div.section"</span>)[i];</span><br><span class="line">		(<span class="function"><span class="keyword">function</span>(<span class="params">sec</span>)</span>&#123;</span><br><span class="line">			<span class="comment">// console.log(sec);</span></span><br><span class="line">			link.addEventListener(<span class="string">"click"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</span><br><span class="line">				<span class="comment">// console.log(sec.offsetTop+"px");</span></span><br><span class="line">				scrollToElement(sec);</span><br><span class="line">				e.preventDefault();</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)(section)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>首先用一个闭包来保证， 里面的函数在click的时候才之行， 而在那个时候， i 已经到了最后一个link的位置， 所以必须提前找到对应的section， 然后在闭包中传入。 同时需要在click事件的最后加上一个e.preventDefault， 来阻止link的默认行为， link的默认行为是直接跳转， 然后我们需要动画来辅助。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>一起加油！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="余舜哲 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/web-design/" rel="tag">#web design</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/26/Memory-allocation-in-C/" rel="next" title="Memory allocation in C">
+                <i class="fa fa-chevron-left"></i> Memory allocation in C
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/18/Online-messege-sending后端C实现版/" rel="prev" title="Online messege sending后端C实现版">
+                Online messege sending后端C实现版 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+
+      
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/04/23/创意视频分屏-HTML5-JS/">创意视频分屏 - HTML5 & JS</a></li><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2015/12/24/用reveal-js制作生日派对礼物/">用reveal.js制作生日礼物</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li><li><a href="/2016/08/01/React-ES6-style-guideline/">React/ES6 style guideline</a></li><li><a href="/2016/05/15/前端开发工具库-第一期-npm-script/">前端开发工具库[第一期]-npm script</a></li><li><a href="/2015/12/31/D3js-in-3D-Animation-focus/">D3js in 3D [Animation focus]</a></li></ul>
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+               alt="余舜哲" />
+          <p class="site-author-name" itemprop="name">余舜哲</p>
+          <p class="site-description motion-element" itemprop="description">技术就是信仰</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">73</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chocoluffy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chocoluffy" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/chocolufy/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引入greensock_js库"><span class="nav-number">2.</span> <span class="nav-text">引入greensock js库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GPU加速"><span class="nav-number">3.</span> <span class="nav-text">GPU加速</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多步骤动画"><span class="nav-number">4.</span> <span class="nav-text">多步骤动画</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指示器(滚动指示条)"><span class="nav-number">5.</span> <span class="nav-text">指示器(滚动指示条)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#取消link默认行为"><span class="nav-number">6.</span> <span class="nav-text">取消link默认行为</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2013 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">余舜哲</span>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">你是第<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>个小伙伴</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'chocoluffy';
+      var disqus_identifier = '2016/02/04/Responsive-web-design-第三期-js动画/';
+      var disqus_title = 'Responsive web design[第三期]-js动画';
+      var disqus_url = 'http://chocoluffy.com/2016/02/04/Responsive-web-design-第三期-js动画/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -2,93 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chocoluffy.com/life/index.html</loc>
-    <lastmod>2018-01-23T14:51:41.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2018/01/22/%E3%80%8A%E9%A3%8E%E6%B2%99%E6%98%9F%E8%BE%B0-%E5%A4%9C%E9%97%B4%E9%A3%9E%E8%A1%8C%E3%80%8B%E6%96%87%E6%91%98/</loc>
-    <lastmod>2018-01-23T04:28:47.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2018/01/01/%E5%8E%9F%E6%9D%A5%E8%BF%99%E4%B8%80%E5%88%87%E9%83%BD%E5%8F%AF%E4%BB%A5%E8%AE%B2%E8%BF%B0/</loc>
-    <lastmod>2018-01-01T15:41:19.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/about/index.html</loc>
-    <lastmod>2018-01-01T15:20:47.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2017/07/05/%E5%86%99%E5%9C%A81-0%E5%8F%91%E5%B8%83%E5%90%8E%E7%AC%AC50%E5%A4%A9-%E9%B2%B8%E8%AF%AD%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E7%8B%AC%E7%99%BD/</loc>
-    <lastmod>2018-01-01T15:18:46.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2017/09/26/%E9%B2%B8%E8%AF%AD%E7%9A%84%E5%88%9B%E4%B8%9A%E6%95%85%E4%BA%8B-%E8%81%9A%E7%84%A6%E7%94%9F%E6%B4%BB%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/</loc>
-    <lastmod>2018-01-01T15:17:35.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/tech/index.html</loc>
-    <lastmod>2017-10-11T14:49:56.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2016/11/20/%E5%96%9C%E6%AC%A2%E5%86%AC%E5%A4%A9%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%8F%AF%E4%BB%A5%E6%8A%8A%E5%AF%92%E5%86%B7%E5%BD%92%E5%92%8E%E4%BA%8E%E5%A4%A9%E6%B0%94/</loc>
-    <lastmod>2017-10-03T01:17:24.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</loc>
-    <lastmod>2017-07-06T02:23:32.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/</loc>
-    <lastmod>2017-06-26T14:38:42.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2015/08/27/%E5%91%8A%E5%88%AB%E5%8D%A2%E5%AE%89%E5%85%8B/</loc>
-    <lastmod>2017-06-25T02:33:53.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2017/03/20/%E4%BD%86%E6%98%AF%E4%BD%A0%E8%AE%B0%E5%BE%97-%E3%80%8A%E6%8A%8A%E4%BD%A0%E4%BA%A4%E7%BB%99%E6%97%B6%E9%97%B4%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
-    <lastmod>2017-03-21T02:10:21.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2016/12/04/%E6%B5%85%E6%9E%90%E7%BB%8F%E5%85%B8%E9%9D%A2%E8%AF%95%E7%AE%97%E6%B3%95%E9%A2%98-two-pointer%E7%9A%84%E8%BF%90%E7%94%A8/</loc>
-    <lastmod>2016-12-08T01:51:30.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2016/04/25/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A%EF%BC%8C-%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86/</loc>
-    <lastmod>2016-12-07T04:35:31.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2015/08/24/Here%E2%80%99s-What-A-Coder-Learned-After-Losing-Internship-at-Facebook/</loc>
-    <lastmod>2016-12-06T00:13:09.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2015/12/28/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%85%AC%E5%8F%B8%E4%B8%8D%E4%BC%9A%E5%81%B7%E5%8F%96%E4%BD%A0%E7%9A%84%E6%83%B3%E6%B3%95/</loc>
-    <lastmod>2016-12-06T00:09:57.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/</loc>
-    <lastmod>2016-12-04T18:16:54.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://chocoluffy.com/2016/11/07/Computer-Vision-%E5%9F%BA%E4%BA%8E%E5%9B%BE%E7%89%87%E7%89%B9%E5%BE%81%E5%8C%B9%E9%85%8D%E5%90%88%E6%88%90%E5%85%A8%E6%99%AF%E5%9B%BE/</loc>
-    <lastmod>2016-11-20T21:24:14.000Z</lastmod>
+    <lastmod>2016-11-08T01:59:01.000Z</lastmod>
   </url>
   
   <url>
@@ -99,6 +14,21 @@
   <url>
     <loc>http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/</loc>
     <lastmod>2016-10-24T03:05:23.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/2016/10/06/%E7%A4%BE%E5%9B%A2%E6%97%A5%E8%AE%B02-%E6%96%B0%E7%94%9F%E8%87%B4%E8%BE%9E/</loc>
+    <lastmod>2016-10-07T03:21:40.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/life/index.html</loc>
+    <lastmod>2016-10-07T01:26:17.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/tech/index.html</loc>
+    <lastmod>2016-09-11T21:41:22.000Z</lastmod>
   </url>
   
   <url>
@@ -127,6 +57,11 @@
   </url>
   
   <url>
+    <loc>http://chocoluffy.com/about/index.html</loc>
+    <lastmod>2016-07-18T02:11:08.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2016/06/27/VRTO%E5%B1%95%E4%BC%9A%E6%B8%B8%E8%AE%B0/</loc>
     <lastmod>2016-06-28T01:48:11.000Z</lastmod>
   </url>
@@ -139,6 +74,11 @@
   <url>
     <loc>http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2016-06-15T00:41:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2016-05-27T20:47:54.000Z</lastmod>
   </url>
   
   <url>
@@ -159,6 +99,11 @@
   <url>
     <loc>http://chocoluffy.com/tags/index.html</loc>
     <lastmod>2016-05-26T23:14:14.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/2016/04/25/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A%EF%BC%8C-%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86/</loc>
+    <lastmod>2016-05-15T18:05:23.000Z</lastmod>
   </url>
   
   <url>
@@ -262,6 +207,11 @@
   </url>
   
   <url>
+    <loc>http://chocoluffy.com/2015/12/28/%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%A7%E5%85%AC%E5%8F%B8%E4%B8%8D%E4%BC%9A%E5%81%B7%E5%8F%96%E4%BD%A0%E7%9A%84%E6%83%B3%E6%B3%95/</loc>
+    <lastmod>2016-01-28T17:35:57.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2015/08/24/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B8%BA%E4%BD%95%E5%9C%A8%E4%BA%92%E8%81%94%E7%BD%91%E8%A1%8C%E4%B8%9A%E5%86%85%E8%A2%AB%E2%80%9C%E5%9C%A3%E7%BB%8F%E5%8C%96%E2%80%9D%EF%BC%9F-1/</loc>
     <lastmod>2016-01-28T17:35:45.000Z</lastmod>
   </url>
@@ -337,6 +287,11 @@
   </url>
   
   <url>
+    <loc>http://chocoluffy.com/2015/08/27/%E5%91%8A%E5%88%AB%E5%8D%A2%E5%AE%89%E5%85%8B/</loc>
+    <lastmod>2015-12-25T00:33:56.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://chocoluffy.com/2015/08/18/%E5%A6%82%E6%9E%9C%E6%9A%91%E5%81%87%E6%B2%A1%E6%9C%89%E5%B0%BD%E5%A4%B4/</loc>
     <lastmod>2015-12-25T00:33:44.000Z</lastmod>
   </url>
@@ -374,6 +329,11 @@
   <url>
     <loc>http://chocoluffy.com/2014/11/27/On-Vision/</loc>
     <lastmod>2015-12-25T00:22:51.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://chocoluffy.com/2015/08/24/Here%E2%80%99s-What-A-Coder-Learned-After-Losing-Internship-at-Facebook/</loc>
+    <lastmod>2015-12-25T00:22:40.000Z</lastmod>
   </url>
   
   <url>

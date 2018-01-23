@@ -1,0 +1,965 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="javascript," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="余舜哲的 One Piece" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="The hand-on project to get myself familiar with React.js, which pulls the latest post from Twitter by using a nodejs module in client-side javascript and allows users to form their own collections and">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Twitter engine in React">
+<meta property="og:url" content="http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/index.html">
+<meta property="og:site_name" content="余舜哲的 One Piece">
+<meta property="og:description" content="The hand-on project to get myself familiar with React.js, which pulls the latest post from Twitter by using a nodejs module in client-side javascript and allows users to form their own collections and">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/c5ee78b5gw1ezqtafuny9j21kw0uhqhx.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
+<meta property="og:updated_time" content="2016-01-07T04:24:33.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Twitter engine in React">
+<meta name="twitter:description" content="The hand-on project to get myself familiar with React.js, which pulls the latest post from Twitter by using a nodejs module in client-side javascript and allows users to form their own collections and">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 10766069,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Twitter engine in React | 余舜哲的 One Piece </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '66874854-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?62b2fff9ba2f591d71be23f4b51e59c6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=56472517";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">余舜哲的 One Piece</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tech">
+          <a href="/tech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery-full"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-life">
+          <a href="/life" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br />
+            
+            书房
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Twitter engine in React
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-06T23:10:20-05:00" content="2016-01-06">
+              2016-01-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/06/Twitter-engine-in-React/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/01/06/Twitter-engine-in-React/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+          <span class="post-visit" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数</span>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          </span>
+          
+
+          
+          <span>
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+              <i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读时长</span>
+            <span class="post-count">7 分钟</span>
+          </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>The hand-on project to get myself familiar with React.js, which pulls the latest post from Twitter by using a nodejs module in client-side javascript and allows users to form their own collections and share them via Codepen or other platforms. </p>
+<a id="more"></a>
+<p><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1ezqtafuny9j21kw0uhqhx.jpg" alt="screen capture"></p>
+<p><strong>Some important details you want to learn on this project</strong></p>
+<h2 id="Browserify">Browserify</h2><p>used for building all the dependency file together in such a way that we can use Node.js module to build up out client-side application. We install it in this way:<br><figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install - - <span class="built_in">save</span>-<span class="built_in">dev</span> browserify</span><br></pre></td></tr></table></figure></p>
+<p>Notice, here is a save-dev flag, which tells npm that it is a development dependency, it will write this dependency in package.json file. Writing a module name into package.json tells npm to install when executed command: <code>npm install</code>. Here is a distinction between running dependency and developing dependency. And since Browserify is used during build time, so it belongs to developing dependency. </p>
+<h2 id="Writing_style">Writing style</h2><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> React = require(<span class="string">'react'</span>);</span><br><span class="line"><span class="keyword">var</span> Stream = require(<span class="string">'./Stream.react.js'</span>);</span><br><span class="line"><span class="keyword">var</span> Collection = require(<span class="string">'./Collection.react.js'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Application = React.createClass(&#123;</span><br><span class="line">	getInitialState: <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			collectionTweets: &#123;&#125;</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	addTweetToCollection: <span class="function"><span class="keyword">function</span><span class="params">(tweet)</span></span>&#123;</span><br><span class="line">		<span class="keyword">var</span> collection = <span class="keyword">this</span>.state.collectionTweets;</span><br><span class="line">		collection[tweet.id] = tweet;</span><br><span class="line">		<span class="keyword">this</span>.setState(&#123;</span><br><span class="line">			collectionTweets: collection</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;,</span><br><span class="line">	removeTweetFromCollection: <span class="function"><span class="keyword">function</span><span class="params">(tweet)</span></span>&#123;</span><br><span class="line">		<span class="keyword">var</span> collection = <span class="keyword">this</span>.state.collectionTweets;</span><br><span class="line">		<span class="keyword">delete</span> collection[tweet.id];</span><br><span class="line">		<span class="keyword">this</span>.setState(&#123;</span><br><span class="line">			collectionTweets: collection</span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	removeAllTweetsFromCollection: <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.setState(&#123;</span><br><span class="line">			collectionTweets: &#123;&#125;</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	render: <span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (</span><br><span class="line">				&lt;div className=<span class="string">"container-fluid"</span>&gt;</span><br><span class="line">					&lt;div className=<span class="string">"row"</span>&gt;</span><br><span class="line">						&lt;div className=<span class="string">"col-md-4 text-center"</span>&gt;</span><br><span class="line">							&lt;Stream onAddTweetToCollection=&#123;<span class="keyword">this</span>.addTweetToCollection&#125; /&gt;</span><br><span class="line">						&lt;/div&gt;</span><br><span class="line">						&lt;div className=<span class="string">"col-md-8"</span>&gt;</span><br><span class="line">							&lt;Collection tweets=&#123;<span class="keyword">this</span>.state.collectionTweets&#125; onRemoveTweetFromCollection=&#123;<span class="keyword">this</span>.removeTweetFromCollection&#125;</span><br><span class="line">							 onRemoveAllTweetsFromCollection=&#123;<span class="keyword">this</span>.removeAllTweetsFromCollection&#125; /&gt;</span><br><span class="line">						&lt;/div&gt;</span><br><span class="line">					&lt;/div&gt;</span><br><span class="line">				&lt;/div&gt;</span><br><span class="line">			)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br><span class="line">module.exports = Application;</span><br></pre></td></tr></table></figure>
+<p>It is in out Application.react.js. The reason we adopt a CommonJS writing style is that it will be convenient for other part of the file to require this react component we just build. So we use  such <code>module.exports = Application;</code> to allow other file when used to require this component. </p>
+<h2 id="Children_elements_change_parent’s_elements">Children elements change parent’s elements</h2><p>Focus on this part:</p>
+<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="keyword">Stream </span>onAddTweetToCollection=&#123;this.<span class="keyword">addTweetToCollection&#125; </span>/&gt;</span><br></pre></td></tr></table></figure>
+<p>the function defined in this react component is passed in, which indicates that this function will be called inside Stream component where since we know addTweetToCollection embodies a <code>setState</code> method, it illustrates how child element can update its parent component’s state.</p>
+<p>Thus, in Stream component, we can access this method by using <code>this.props.onAddTweetToCollection</code>. <strong> Child component feed the arguments to parent’s state-changing function which will trigger <code>render()</code> function to re-render the whole children component again. </strong></p>
+<h2 id="React_lifecycle_method_API_like_componentDidMount()">React lifecycle method API like componentDidMount()</h2><p>This function is part of react API, that will be called once after the initial rendering finished. At that time, we have a initialed DOM tree, and it will be a perfect time for using another js library! </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">componentDidMount</span>:<span class="value"> <span class="function">function</span>()&#123;</span><br><span class="line">	SnapkiteStreamClient.<span class="function">initializeStream</span>(this.handleNewTweet)</span></span>;</span><br><span class="line">&#125;,</span><br><span class="line"></span><br><span class="line"><span class="rule"><span class="attribute">compoentWillUnmount</span>:<span class="value"> <span class="function">function</span>()&#123;</span><br><span class="line">	SnapkiteStreamClient.<span class="function">destroyStream</span>()</span></span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p><code>componentWillUnmount()</code> will be called when react unmount the components.</p>
+<p>And in general, react lifecycle methods can be grouped into three phases.<br>mounting, updating and unmounting. </p>
+<p>And in this coding example, we see <code>componentDidMount</code> and <code>componentWillUnmount</code>. Also, we have <code>componentWillMount</code> and other methods</p>
+<blockquote>
+<p>Note that <code>componentDidMount</code> will be the method when DOM is ready. Thus we usually will introduce other JS library at this method to do something on the DOM tree. For example, Jquery, setInterval, setTimeout and so on.</p>
+</blockquote>
+<p>say in this example, if we want to use setInterval method:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="rule"><span class="attribute">componentDidMount</span>:<span class="value"> <span class="function">function</span>() &#123;</span><br><span class="line">  this.interval = <span class="function">setInterval</span>(this.handleTick, <span class="number">1000</span>)</span></span>;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="rule"><span class="attribute">componentWillUnmount</span>:<span class="value"> <span class="function">function</span>() &#123;</span><br><span class="line">  <span class="function">clearInterval</span>(this.interval)</span></span>;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>And we use react-don node.js module here. </p>
+<p>Some of other lifecycle methods are: <code>shouldComponentUpdate</code>, this will determine whether or not to call the render function, and <code>forceUpdate</code> can skip this function checking. Note that it is a good way to enhance app’s speed when in hundreds of components app. <code>componentWillRecieveProps</code> will invoke wen receiving new props can use <code>setState</code> inside this method while the similar method <code>compontWillUpdate</code> cannot. <code>componentDidUpdate</code> will invoke after each update. </p>
+<h2 id="getDefaultProps">getDefaultProps</h2><p>it will set the props if it receive no props from parent components</p>
+<h2 id="Checking_for_props_exist?">Checking for props exist?</h2><p>the predicate statement at parent component may sometimes determine whether or not to render a children component. If not, then in later children component part, it should check whether it receives props from parent component. </p>
+<h2 id="Validation_function_for_properties">Validation function for properties</h2><p><code>propTypes</code> is used for validating if a property is used and has value. If not, it will report an error to console.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">propTypes: &#123;</span><br><span class="line">	tweet: <span class="function"><span class="keyword">function</span>(<span class="params">properties, propertyName, componentName</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> tweet = properties[propertyName];</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(!tweet)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'Tweet must be set. '</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(!tweet.media)&#123;</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">'Tweet must have an image'</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line"></span><br><span class="line">	onImageClick: React.propTypes.func</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>So in <code>propTypes</code>, we are validating the existence of Tweet by obtaining the tweet property object from <code>properties[propertyName]</code>. And for validating the <code>onImageClick</code> part, we only need to ensure that it is a function. so we did:</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">onImageClick: React.propTypes.func</span><br><span class="line">```	</span><br><span class="line"></span><br><span class="line">Some similar validation functions provided <span class="keyword">by</span> React are: React.propTypes.<span class="built_in">number</span> <span class="operator">and</span> so <span class="command"><span class="keyword">on</span>.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## this.refs</span></span><br><span class="line"></span><br><span class="line">Keep <span class="operator">in</span> mind, however, that <span class="operator">the</span> JSX doesn<span class="string">'t return a component instance! It'</span>s just <span class="operator">a</span> ReactElement: <span class="operator">a</span> lightweight representation that tells React what <span class="operator">the</span> mounted component should look like. In other <span class="built_in">word</span>, we can insert `ref` property <span class="operator">in</span> `render()` , <span class="operator">the</span> component <span class="keyword">it</span> renders, so that we can access that component outside `render` <span class="function"><span class="keyword">function</span>.</span></span><br></pre></td></tr></table></figure>
+<p>componentDidMount: function(){<br>    this.refs.collectionName.focus();<br>},</p>
+<p>render: function(){<br>    return (<br>            <form classname="form-inline" onsubmit="{this.handleFormSubmit}"><br>                <header text="Collection Name: "></header></form></p>
+<pre><code>        &lt;<span class="keyword">div</span> className=<span class="string">"form-group"</span> style={inputStyle} onChange={this.handleInputValueChange}
+         value={this.state.inputValue} <span class="keyword">ref</span>=<span class="string">"collectionName"</span> /&gt;
+         &lt;/<span class="keyword">div</span>&gt;
+
+         &lt;<span class="type">Button</span> label=<span class="string">"Change"</span> handleClick={this.handleFormSubmit} /&gt;
+         &lt;<span class="type">Button</span> label=<span class="string">"Cancel"</span> handleClick={this.handleFormCancel} /&gt;
+    &lt;/form&gt;
+)
+</code></pre><p>}<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">we know <span class="keyword">that</span> `componentDidMount` will be called instantly <span class="keyword">after</span> DOM tree <span class="keyword">is</span> ready.  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">## Bootstrap usage in this project</span></span><br></pre></td></tr></table></figure></p>
+<p><div classname="container-fluid"><br>                    <div classname="row"><br>                        <div classname="col-md-4 text-center"><br>                            <stream onaddtweettocollection="{this.addTweetToCollection}"><br>                        </stream></div><br>                        <div classname="col-md-8"><br>                            <collection tweets="{this.state.collectionTweets}" onremovetweetfromcollection="{this.removeTweetFromCollection}" onremovealltweetsfromcollection="{this.removeAllTweetsFromCollection}"><br>                        </collection></div><br>                    </div><br>                </div><br>```</p>
+<p>It is where we use some Bootstrap property to quickly add style to the components. Note that we only add those style at the wrapper element for example we always wrap a <code>div</code> outside the target element. </p>
+<p>references <a href="http://getbootstrap.com/css/" target="_blank" rel="external">this post</a> for more Bootstrap property.</p>
+<ul>
+<li><code>container-fluid</code> for a full width container, spanning the entire width of viewport.</li>
+<li><code>text-center</code> to put the innerHTML text at the center of the element. </li>
+<li><code>row</code> will create a horizontal groups of elements. </li>
+<li><code>col-md-8</code> and <code>col-md-4</code> for sparing width horizontally.</li>
+<li><code>form-group</code> for optimum spacing for labels and input controls.</li>
+<li><code>form-control</code> for element inside the form wrapper, usually appear with the <code>form-group</code> class. </li>
+</ul>
+<h2 id="Try_to_add_color_palette_using_Mustache-js_and_ColorThief-js">Try to add color palette using Mustache.js and ColorThief.js</h2><blockquote>
+<p>Due to my technical issue, I can only make it a local version. I will try me best to host it online.</p>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>一起加油！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="余舜哲 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/31/D3js-in-3D-Animation-focus/" rel="next" title="D3js in 3D [Animation focus]">
+                <i class="fa fa-chevron-left"></i> D3js in 3D [Animation focus]
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/01/09/现实和虚拟的边界/" rel="prev" title="现实和虚拟的边界">
+                现实和虚拟的边界 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+
+      
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2015/12/24/用reveal-js制作生日派对礼物/">用reveal.js制作生日礼物</a></li><li><a href="/2016/04/23/创意视频分屏-HTML5-JS/">创意视频分屏 - HTML5 & JS</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/08/01/React-ES6-style-guideline/">React/ES6 style guideline</a></li><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/05/15/前端开发工具库-第一期-npm-script/">前端开发工具库[第一期]-npm script</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2015/12/31/D3js-in-3D-Animation-focus/">D3js in 3D [Animation focus]</a></li></ul>
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+               alt="余舜哲" />
+          <p class="site-author-name" itemprop="name">余舜哲</p>
+          <p class="site-description motion-element" itemprop="description">技术就是信仰</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">73</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chocoluffy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chocoluffy" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/chocolufy/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Browserify"><span class="nav-number">1.</span> <span class="nav-text">Browserify</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Writing_style"><span class="nav-number">2.</span> <span class="nav-text">Writing style</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Children_elements_change_parent’s_elements"><span class="nav-number">3.</span> <span class="nav-text">Children elements change parent’s elements</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#React_lifecycle_method_API_like_componentDidMount()"><span class="nav-number">4.</span> <span class="nav-text">React lifecycle method API like componentDidMount()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getDefaultProps"><span class="nav-number">5.</span> <span class="nav-text">getDefaultProps</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Checking_for_props_exist?"><span class="nav-number">6.</span> <span class="nav-text">Checking for props exist?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Validation_function_for_properties"><span class="nav-number">7.</span> <span class="nav-text">Validation function for properties</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Try_to_add_color_palette_using_Mustache-js_and_ColorThief-js"><span class="nav-number">8.</span> <span class="nav-text">Try to add color palette using Mustache.js and ColorThief.js</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2013 - 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">余舜哲</span>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">你是第<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>个小伙伴</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'chocoluffy';
+      var disqus_identifier = '2016/01/06/Twitter-engine-in-React/';
+      var disqus_title = 'Twitter engine in React';
+      var disqus_url = 'http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+
+  
+
+  
+
+</body>
+</html>
