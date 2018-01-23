@@ -17,7 +17,6 @@ install:
 
 script:
     - mv -vu hexo-douban ./node_modules/
-    - rm -r hexo-douban/
     - hexo clean
     - hexo g
 
