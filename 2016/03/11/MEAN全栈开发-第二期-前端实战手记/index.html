@@ -100,12 +100,12 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="AirLoft的原型。 第二期， 基于Bootstrap的扁平化设计， 把所有涉及的页面的clickable prototype做出来， 再迁移到express application或者Angular SPA上， 虽然只是前端的prototype， 但是做好一些npm scripts的配置会让前端开发特别的高效和舒服， 也算是在入门了各种炫技的前端展示后， 逐步到一个full-fledged w">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/c5ee78b5gw1f1tkjoatboj21kw0r7aic.jpg">
-<meta property="og:updated_time" content="2018-01-23T17:27:14.493Z">
+<meta property="og:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
+<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MEAN全栈开发[第二期-前端实战手记]">
 <meta name="twitter:description" content="AirLoft的原型。 第二期， 基于Bootstrap的扁平化设计， 把所有涉及的页面的clickable prototype做出来， 再迁移到express application或者Angular SPA上， 虽然只是前端的prototype， 但是做好一些npm scripts的配置会让前端开发特别的高效和舒服， 也算是在入门了各种炫技的前端展示后， 逐步到一个full-fledged w">
-<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/c5ee78b5gw1f1tkjoatboj21kw0r7aic.jpg">
+<meta name="twitter:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
 
 
 
@@ -413,7 +413,7 @@
       
         <p>AirLoft的原型。 第二期， 基于Bootstrap的扁平化设计， 把所有涉及的页面的clickable prototype做出来， 再迁移到express application或者Angular SPA上， 虽然只是前端的prototype， 但是做好一些npm scripts的配置会让前端开发特别的高效和舒服， 也算是在入门了各种炫技的前端展示后， 逐步到一个full-fledged website的过渡。</p>
 <a id="more"></a>
-<p><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1f1tkjoatboj21kw0r7aic.jpg" alt="project screenshot"></p>
+<p><img src="/js/lazyload-plugin/loading.svg" alt="project screenshot" data-original="http://ww4.sinaimg.cn/large/c5ee78b5gw1f1tkjoatboj21kw0r7aic.jpg"></p>
 <h2 id="Difference-about-MEAN-stack"><a href="#Difference-about-MEAN-stack" class="headerlink" title="Difference about MEAN stack"></a>Difference about MEAN stack</h2><p>Traditional web server like Apache is multi-thread, <strong><em>the key idea about multi-thread is visitors use seperate resources.</em></strong>Like a bank system, it works perfectly fine when the population size is small, while when the size grows more than the resources, you have to queue for resources. (然而当你访问一个网站的时候， 你是不会等的， 你看那个网站响应很慢， 你就退出了). In nodejs, it is single-threaded. 所以你知道现在很多大型的企业架构， 尤其是国内的， 在前几年还特别严重， 一到过年过节流量特别大的时候， 你的网站就会宕机， 因为太多人访问了， 你必须等。所以解决办法是什么， 通常企业就回去买更多的服务器， 或者更新过大的内存， 来扛过流量最大的时候， 可是有一个问题就是， 在流量没有那么大的绝大多数时候， 你的资源被浪费了! </p>
 <p>在单线程的nodejs里面， 有一个非常重要的特性就是必须是非阻塞， 因为默认的情况就是大家都会去同一个center office， 同一个线程， 然而我们不希望前一个的request, 比如request static files or database, 影响到下一个用户， 所以nodejs里面的函数都是异步的。</p>
 <p>Some useful helper libraries like Underscorejs, Mochajs, and Colors(which can add color to the nodejs console log).</p>
@@ -479,7 +479,7 @@
 <p>使用nodemon来监听server-side js文件的改动来自动更新server， 使用browser-sync来监听各种css file的改动。有两种模式， 一种是通过直接创建一个server来host本地的static file, 另一种模式是通过代理另一个服务器， 比如php server, rails webbrick server, python simplehttpserver, nodejs server都可以的!!!!</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">browser-sync start --proxy=&apos;localhost:3000&apos; --files &apos;app_server/views/*.jade, app_server/controllers/*.js, public/stylesheets/*.css&apos;</span><br><span class="line"></span><br><span class="line">browser-sync start --server --files &apos;app_server/views/*.jade, app_server/controllers/*.js, public/stylesheets/*.css&apos;</span><br></pre></td></tr></table></figure>
 <p>由于我在nodejs里面设置了服务器的端口是3000， 那么通过让browser-sync监听这个端口并创建在3001的代理， 我可以在<code>localhost:3001</code>上面得到自动更新的网页!!</p>
-
+<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
       
     </div>
 

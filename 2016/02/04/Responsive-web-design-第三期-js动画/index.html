@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-23T17:27:14.493Z">
+<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Responsive web design[第三期]-js动画">
 <meta name="twitter:description" content="Introduce greensock library to javascript, along with GPU acceleration to create high-quality and smooth animations.">
@@ -439,7 +439,7 @@
 </ul>
 <h2 id="取消link默认行为"><a href="#取消link默认行为" class="headerlink" title="取消link默认行为"></a>取消link默认行为</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function addSmoothScrolling()&#123;</span><br><span class="line">	var links = document.querySelectorAll(&quot;#slider-control a&quot;);</span><br><span class="line">	for(var i=0; i&lt;links.length; i++)&#123;</span><br><span class="line">		var link = links[i];</span><br><span class="line">		var section = document.querySelectorAll(&quot;div.section&quot;)[i];</span><br><span class="line">		(function(sec)&#123;</span><br><span class="line">			// console.log(sec);</span><br><span class="line">			link.addEventListener(&quot;click&quot;, function(e)&#123;</span><br><span class="line">				// console.log(sec.offsetTop+&quot;px&quot;);</span><br><span class="line">				scrollToElement(sec);</span><br><span class="line">				e.preventDefault();</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)(section)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>首先用一个闭包来保证， 里面的函数在click的时候才之行， 而在那个时候， i 已经到了最后一个link的位置， 所以必须提前找到对应的section， 然后在闭包中传入。 同时需要在click事件的最后加上一个e.preventDefault， 来阻止link的默认行为， link的默认行为是直接跳转， 然后我们需要动画来辅助。</p>
-
+<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
       
     </div>
 

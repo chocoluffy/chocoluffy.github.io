@@ -100,13 +100,13 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="AirLoft的原型。 第三期， 基于mongodb的mongoose来搭建RESTful API， 主要包括了关于各类涉及到对象的GET, POST, PUT DELETE方法的实现。 在postman上不断的模拟， 也最终搭好一个稳定且flexible的后端API处理， 剩下的就是将数据库和这个Express App的controller结合， 并在前端上灵活的应用啦！如果说前端就像一个人的妆">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/c5ee78b5jw1f26lk141v7j21kw0tjn61.jpg">
-<meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1f1wrkszhcej218w0u6wib.jpg">
-<meta property="og:updated_time" content="2018-01-23T17:27:14.493Z">
+<meta property="og:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
+<meta property="og:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
+<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MEAN全栈开发[第三期-Mongo数据库搭建REST API]">
 <meta name="twitter:description" content="AirLoft的原型。 第三期， 基于mongodb的mongoose来搭建RESTful API， 主要包括了关于各类涉及到对象的GET, POST, PUT DELETE方法的实现。 在postman上不断的模拟， 也最终搭好一个稳定且flexible的后端API处理， 剩下的就是将数据库和这个Express App的controller结合， 并在前端上灵活的应用啦！如果说前端就像一个人的妆">
-<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/c5ee78b5jw1f26lk141v7j21kw0tjn61.jpg">
+<meta name="twitter:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
 
 
 
@@ -414,7 +414,7 @@
       
         <p>AirLoft的原型。 第三期， 基于mongodb的mongoose来搭建RESTful API， 主要包括了关于各类涉及到对象的GET, POST, PUT DELETE方法的实现。 在postman上不断的模拟， 也最终搭好一个稳定且flexible的后端API处理， 剩下的就是将数据库和这个Express App的controller结合， 并在前端上灵活的应用啦！如果说前端就像一个人的妆容， 那么数据库以及API处理就是他的谈吐和内涵， 这个应用也有了scaling的能力， 加油!</p>
 <a id="more"></a>
-<p><img src="http://ww1.sinaimg.cn/large/c5ee78b5jw1f26lk141v7j21kw0tjn61.jpg" alt="screenshot"></p>
+<p><img src="/js/lazyload-plugin/loading.svg" alt="screenshot" data-original="http://ww1.sinaimg.cn/large/c5ee78b5jw1f26lk141v7j21kw0tjn61.jpg"></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>In MVC architecture, we need to have views without content or data. An common way to implement MVC architecture is to <strong>first build up a frontend clickable prototype, then extract the content from the view back to controller(concerned with data structure), then back to model.</strong> And now we are in the second step, we try to put variable in jade file in place of content, and put the content as variable into the controller.</p>
 <h2 id="Mongoose"><a href="#Mongoose" class="headerlink" title="Mongoose"></a>Mongoose</h2><p>First set up a connection URI like: <code>var dbURI = &#39;mongodb://localhost/airloft&#39;;</code>, username, password and port number is optional for localhost.</p>
 <p>A stupid mistake!! Need to open the <code>mongod</code> before you tried to connect to it. One thing to notice is that Mongoose connection doesn’t automatically close when the application restarts or stops. In order to do that whenever we restart the <code>nodemon</code>, we will need to listen for nodejs event. Nodemon uses <code>SIGUSR2</code>, application termination uses <code>SIGINT</code>, Heroku uses <code>SIGTERM</code>, like:</p>
@@ -432,7 +432,7 @@
 <p>Adding indexes can make database search more efficiently, jist like adding index to the files you want to search in your drawer. In order to add a GeoJSON path into your application, you only need to do this: <code>coords: {type: [Number], index: &#39;2dsphere&#39;}</code>; using <code>2dsphere</code> allows mongodb to be able to calculate the geolocation fast, thus <strong>it is helpful to build a location-based application.</strong></p>
 <p>Subdocument is helpful when handling nested data structure, one thing to note, when creating attributes like <code>timestamp</code>, we use data type called <code>Date</code>, like:   </p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> reviewSchema = <span class="keyword">new</span> mongoose.Schema(&#123;</span><br><span class="line">	rating: &#123;<span class="attr">type</span>: <span class="built_in">Number</span>, <span class="string">"default"</span>: <span class="number">0</span>, <span class="attr">min</span>: <span class="number">0</span>, <span class="attr">max</span>: <span class="number">5</span>&#125;,</span><br><span class="line">	author: <span class="built_in">String</span>,</span><br><span class="line">	createdOn: &#123;<span class="attr">type</span>: <span class="built_in">Date</span>, <span class="string">"default"</span>: <span class="built_in">Date</span>.now&#125;,</span><br><span class="line">	text: <span class="built_in">String</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1f1wrkszhcej218w0u6wib.jpg" alt="mongo"> 这张图讲得很清楚， schema是application-side的东西， 每一个model是的实例instance通过schema可以map到database里面的每一个document, 1:1的对应关系。</p>
+<p><img src="/js/lazyload-plugin/loading.svg" alt="mongo" data-original="http://ww3.sinaimg.cn/large/c5ee78b5gw1f1wrkszhcej218w0u6wib.jpg"> 这张图讲得很清楚， schema是application-side的东西， 每一个model是的实例instance通过schema可以map到database里面的每一个document, 1:1的对应关系。</p>
 <p>While typing in <code>mongod</code> will let you start the mongodatabase, using <code>mongo</code> will start tht shell and let you connect to the test database. And some useful commands in mongo go here:</p>
 <ul>
 <li><code>show dbs</code> to show all existing database so far.</li>
@@ -526,7 +526,7 @@
 <li>Unless you fancy adding hundreds of script tags to your pages, you need a build tool to bundle your dependencies. You also need something to <strong>allow NPM packages to work in browsers</strong>. This is where Webpack comes in.</li>
 <li>Add a .gitattributes file and push it to github to overwrite the project type calculated by github, adding <code>*.css linguist-language=Javascript</code> into the file to let a specific file being overwritten.</li>
 </ul>
-
+<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
       
     </div>
 
