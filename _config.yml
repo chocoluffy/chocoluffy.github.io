@@ -160,5 +160,5 @@ douban:
     quote: 'This is my movie quote'
   
 # Image lazyload [https://github.com/Robin-front/hexo-lazyload]
-lazyload:
-  enable: true
+# lazyload:
+#   enable: true
