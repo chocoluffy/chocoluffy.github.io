@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
+<meta property="og:updated_time" content="2018-01-25T16:09:08.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Agile web developing in rails 第一期">
 <meta name="twitter:description" content="目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础">
@@ -447,7 +447,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 <p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
 <p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
+
       
     </div>
 
@@ -493,16 +493,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/24/机器学习资料收集/" rel="next" title="机器学习资料收集[持续更新]">
-                <i class="fa fa-chevron-left"></i> 机器学习资料收集[持续更新]
+              <a href="/2015/12/24/用reveal-js制作生日派对礼物/" rel="next" title="用reveal.js制作生日礼物">
+                <i class="fa fa-chevron-left"></i> 用reveal.js制作生日礼物
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/12/24/用reveal-js制作生日派对礼物/" rel="prev" title="用reveal.js制作生日礼物">
-                用reveal.js制作生日礼物 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/12/25/关于hexo博客最棒的素材和教程收集/" rel="prev" title="关于hexo博客最棒的素材和教程收集">
+                关于hexo博客最棒的素材和教程收集 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

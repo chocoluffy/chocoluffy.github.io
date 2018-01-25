@@ -100,13 +100,13 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="原型是最近一门课的作业， 这是我在过程中记下的一些手记心得， 都是我认为是值得关注的地方。 未来会把这些后端函数加入TCP协议， 更贴近实战使用吧。基础的数据结构主要是链表， 算是用C自己再复习一遍链表实现。算法嘛？没有算法😂不需要考虑性能也就没有考虑算法优化咯。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
-<meta property="og:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
-<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1f149fxx25oj21360w6n5z.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/c5ee78b5gw1f149r4zqkaj213e0zgajd.jpg">
+<meta property="og:updated_time" content="2018-01-25T16:09:08.610Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Online messege sending后端C实现版">
 <meta name="twitter:description" content="原型是最近一门课的作业， 这是我在过程中记下的一些手记心得， 都是我认为是值得关注的地方。 未来会把这些后端函数加入TCP协议， 更贴近实战使用吧。基础的数据结构主要是链表， 算是用C自己再复习一遍链表实现。算法嘛？没有算法😂不需要考虑性能也就没有考虑算法优化咯。">
-<meta name="twitter:image" content="http://chocoluffy.com/js/lazyload-plugin/loading.svg">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1f149fxx25oj21360w6n5z.jpg">
 
 
 
@@ -414,7 +414,7 @@
       
         <p>原型是最近一门课的作业， 这是我在过程中记下的一些手记心得， 都是我认为是值得关注的地方。 未来会把这些后端函数加入TCP协议， 更贴近实战使用吧。基础的数据结构主要是链表， 算是用C自己再复习一遍链表实现。算法嘛？没有算法😂不需要考虑性能也就没有考虑算法优化咯。</p>
 <a id="more"></a>
-<p><img src="/js/lazyload-plugin/loading.svg" alt="screenshot" data-original="http://ww3.sinaimg.cn/large/c5ee78b5gw1f149fxx25oj21360w6n5z.jpg"><br><img src="/js/lazyload-plugin/loading.svg" alt="profileshot" data-original="http://ww4.sinaimg.cn/large/c5ee78b5gw1f149r4zqkaj213e0zgajd.jpg"></p>
+<p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1f149fxx25oj21360w6n5z.jpg" alt="screenshot"><br><img src="http://ww4.sinaimg.cn/large/c5ee78b5gw1f149r4zqkaj213e0zgajd.jpg" alt="profileshot"></p>
 <h2 id="Ongoing-notes"><a href="#Ongoing-notes" class="headerlink" title="Ongoing notes"></a>Ongoing notes</h2><ul>
 <li>how to enter the interactive mode? the main function for interactive mode is process_args. Like the code snippet below, it keep reading inputs from stdin(then using <code>fgets</code> to feed it into a input buffer), then using tokenize function(making use of <code>strtok</code> to tokenize the input commands), then the input command is stored in <code>char ** cmdargv</code>, which just like <code>argv</code> we often use. <code>cmdargv[0]</code> stores the first command, like <code>profile</code> and so on. What is left is just to depend on the return value from each core functions to display a proper information back to the screen.  </li>
 </ul>
@@ -450,7 +450,7 @@
 <h2 id="Bugs-remaining-to-fix"><a href="#Bugs-remaining-to-fix" class="headerlink" title="Bugs remaining to fix"></a>Bugs remaining to fix</h2><ul>
 <li>time.h. I finally do a trick to cover up the failure of using time.h. we are supposed to record the time when a post is created, and store the address of that <code>time_t</code>, which is actually a long int, to the struct attribute <code>post-&gt;date</code>, while it fails to display the right time when doing <code>ctime</code> in <code>print_user</code> function. I finally insert a time update right into the <code>print_user</code> function to let them next to each other and it display right result?!.</li>
 </ul>
-<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
+
       
     </div>
 

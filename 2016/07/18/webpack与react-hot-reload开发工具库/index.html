@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。Github Source">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
+<meta property="og:updated_time" content="2018-01-25T16:09:08.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack与react\redux前端开发工具库">
 <meta name="twitter:description" content="对Dan Abramov开源的react hot loader boilplate的浅探， 同时复习一下webpack与react搭配开发时的常用配置。Github Source">
@@ -451,7 +451,7 @@
 <h3 id="How-to-use-seperate-reducers-to-handle-different-parts-of-state"><a href="#How-to-use-seperate-reducers-to-handle-different-parts-of-state" class="headerlink" title="How to use seperate reducers to handle different parts of state"></a>How to use seperate reducers to handle different parts of state</h3><p>One thing to note that in seperate single reducers functions like this one, we no longer pass in the whole state tree, but instead the correct portion of that state tree, in this case, only todos array. And this part of code handles that:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; combineReducers &#125; <span class="keyword">from</span> <span class="string">'redux'</span>;</span><br><span class="line"><span class="keyword">import</span> todoReducer <span class="keyword">from</span> <span class="string">'./todoReducer'</span>;</span><br><span class="line"><span class="keyword">import</span> userReducer <span class="keyword">from</span> <span class="string">'./userReducer'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> rootReducer = combineReducers(&#123;</span><br><span class="line">    todos: todoReducer,</span><br><span class="line">    user: userReducer</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> rootReducer</span><br></pre></td></tr></table></figure>
 <p>Note that after we split the reducer function, we will also update all related files.</p>
-<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
+
       
     </div>
 

@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="用React完成了好几个小项目， 同时还在学习React Native开发， 记录一些ES6特别便捷的用法和guideline。持续更新…">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-25T15:14:54.472Z">
+<meta property="og:updated_time" content="2018-01-25T16:09:08.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React&#x2F;ES6 style guideline">
 <meta name="twitter:description" content="用React完成了好几个小项目， 同时还在学习React Native开发， 记录一些ES6特别便捷的用法和guideline。持续更新…">
@@ -448,7 +448,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// The constructor does not pass its props to the super class. It should include the following line:</span></span><br><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">        <span class="keyword">super</span>(props);</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"><span class="comment">// The event listener (when assigned via addEventListener()) is not properly scoped because ES2015 doesn’t provide autobinding. Therefore we might re-assign clickHandler in the constructor to include the correct binding to this:</span></span><br><span class="line"><span class="keyword">constructor</span>(props) &#123;</span><br><span class="line">        <span class="keyword">super</span>(props);</span><br><span class="line">              <span class="keyword">this</span>.clickHandler = <span class="keyword">this</span>.clickHandler.bind(<span class="keyword">this</span>);</span><br><span class="line">        <span class="comment">// ...</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <p>And in order to use this component, we can do this:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;MyComponent headerText=”A list <span class="keyword">of</span> paragraph tags”&gt;</span><br><span class="line">    &lt;p&gt;First child.&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">    &lt;p&gt;Any other &lt;span&gt;number&lt;/</span>span&gt; <span class="keyword">of</span> children...&lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>MyComponent&gt;</span><br></pre></td></tr></table></figure>
-<script src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script>
+
       
     </div>
 
@@ -516,7 +516,7 @@
       
 
       
-        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/05/04/AWS-elastic-beanstalk使用体验/">AWS elastic beanstalk使用体验</a></li><li><a href="/2016/05/12/Angular入门-module和service/">Angular入门-module和service</a></li><li><a href="/2015/12/31/D3js-in-3D-Animation-focus/">D3js in 3D [Animation focus]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/">Ajax(with Jquery) on Nodejs server</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li></ul>
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/">Ajax(with Jquery) on Nodejs server</a></li><li><a href="/2015/12/31/D3js-in-3D-Animation-focus/">D3js in 3D [Animation focus]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2016/05/04/AWS-elastic-beanstalk使用体验/">AWS elastic beanstalk使用体验</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/05/12/Angular入门-module和service/">Angular入门-module和service</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li></ul>
       
     </footer>
   </article>
