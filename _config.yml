@@ -171,7 +171,7 @@ generator_amp:
     width:  600
     height: 60
   substituteTitleImage: 
-    path:   sample/sample-substituteTitleImage.jpg
+    path:   sample/sample-substituteTitleImage.png
     width:  1024
     height: 800
   warningLog: false   # To display warning, please set true.
