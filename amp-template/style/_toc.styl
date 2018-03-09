@@ -1,0 +1,78 @@
+//-----------------------------
+// TOC for hexo-toc
+//-----------------------------
+.entry-content
+  .toc
+    background: color-background
+    padding: font-size * 0.5
+    margin: content-margin 0
+    border: 1px solid color-h-border
+    border-radius: 2px
+
+    ul
+      margin-bottom: 0
+      padding: 0
+      margin: 0
+      border-top: 1px solid darken(color-h , 20 )
+      border-radius: 2px
+
+      &:first-child
+        border-top: none
+      ul,ol
+        margin-bottom: 0
+        padding: 0
+        margin: 0
+      li
+        padding: 0
+        margin: 0
+        border-top: 1px solid darken(color-h , 20 )
+
+        &:first-child
+          border-top: none
+
+        &::after, &::before
+          content: normal
+        a
+          font-size: font-size * 1.2
+          font-weight: bold
+          display: block
+          padding: font-size
+          background-color: darken(color-h , 36 )
+          color: color-background
+          utilAni(0.3s)
+          &:hover
+            color: color-background
+            background-color: darken(color-h , 45 )
+            
+
+          &:before
+            content: "\f02d"
+            font-family: font-awesome
+            display: inline-block
+            padding: 0
+            margin: 0
+            margin-right: font-size * 0.8
+
+        ul,ol
+          margin-bottom: 0
+          padding: 0
+          margin: 0
+
+          li
+            a
+              padding: font-size * 0.5 font-size * 0.75 font-size * 0.5 font-size * 2
+              font-size: font-size * 0.9
+              background-color: darken(color-h , 34 )
+              &:before
+                content: "\f0da"
+                font-family: font-awesome
+                display: inline-block
+                padding: 0
+                margin: 0
+                margin-right: font-size * 0.6
+            ul
+              li
+                a
+                  padding: font-size * 0.5 font-size * 0.75 font-size * 0.5 font-size * 4
+                  &:before
+                    content: none

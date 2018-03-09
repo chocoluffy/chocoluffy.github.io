@@ -1,0 +1,42 @@
+@charset "utf-8"
+@import "nib"
+@import "_variables"
+@import "_function"
+@import "_base"
+@import "_font-size"
+@import "_util"
+@import "_nav"
+@import "_header"
+@import "_layout"
+@import "_syntax"
+@import "_toc"
+@import "_meta"
+@import "_footer"
+@import "_shareBtn"
+@import "_totop"
+// @import "_custom"
+
+
+
+// media query
+@media (min-width:800px)
+  .title-cover , .entry-content , .categories , .title-cover , .meta-content , .site-author-info
+    width: 780px
+    margin: 0 auto
+  .nav-container
+    width: 800px
+    margin: 0 auto
+@media (min-width : 0px) and (max-width : 480px)
+  .site-author-info-wrapper
+    display: block
+  .gravatar-area
+    text-align: center
+    amp-img
+      display: inline-block
+  .entry-content
+    td , th
+      line-height: 1.8em
+      padding: font-size * 0.6 font-size * 0.6
+      font-size: font-size * 0.5
+      em , strong , a
+        font-size: font-size * 0.5

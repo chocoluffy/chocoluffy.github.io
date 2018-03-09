@@ -1,0 +1,164 @@
+//-----------------------------
+// code
+//-----------------------------
+code, figure.highlight .code, pre
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: subpixel-antialiased
+code, pre, samp
+  font-family: font-mono
+p
+  code
+    // font-family: font-sans
+    font-size: font-size
+code , pre
+  font-size: font-size-code
+  letter-spacing: letter-spacing-code
+  background-color: color-inlineCode-background
+  color: color-inlineCode
+code
+  margin: 0 3px
+  padding: 0.4em
+samp
+  font-size: font-size-code
+  letter-spacing: letter-spacing-code
+sub , sup
+  font-size: font-size * 0.75
+  line-height: 0
+  position: relative
+sub
+  bottom: -1*0.2em
+sup
+  top: -1*0.5em
+pre
+  font-size: font-size
+  letter-spacing: letter-spacing-code
+  margin: 0 3px
+  padding: 15px
+  background-clip: padding-box
+  border: 0
+  line-height: font-size * 1.3
+  overflow-x: auto
+
+  .addition, .css .tag, .keyword, .method, .nginx .title, .request, .status, .winutils
+    color: code-method
+  .attr_selector, .cdata, .clojure .title, .diff .change, .important
+    color: code-important
+  .preprocessor
+    color: code-important
+    .keyword
+      color: code-important
+  .shebang, .special, .subst
+    color: code-important
+  .symbol
+    color: code-important
+    .string
+      color: code-important
+  .attribute, .class .title, .constant, .haskell .type, .lisp .body, .parent, .smalltalk .number, .variable
+    color: code-class
+  .built_in, .chunk, .decorator, .id, .identifier, .literal, .localvars, .title, .vhdl, .deletion
+    color: code-function
+  .command, .hexcolor, .number, .phpdoc, .regexp, .string, .tag .value, .tex .formula
+    color: code-number
+  .comment, .diff .header, .doctype, .javadoc, .lisp .string, .pi, .template_comment
+    color: code-comments
+    font-weight: normal
+
+
+.line
+  font-size: font-size-code
+  letter-spacing: letter-spacing-code
+  line-height: font-size * 2
+  color: color-code
+  span
+    font-size: font-size-code
+    letter-spacing: letter-spacing-code
+
+.gist
+  background: color-background
+  border: 1px solid color-gutter
+  color: code-variable
+  line-height: font-size * 1.6
+  margin-top: 15px
+  overflow: auto
+  padding: 7px 15px
+  .gist-file
+    border: none
+    font-family: inherit
+    font-size: font-size
+    letter-spacing: 0
+    margin: 0
+    .gist-data
+      background: 0 0
+      border-bottom: none
+      pre
+        font-family: font-mono
+        padding: 0 !important
+    .gist-meta
+      background: 0 0
+      color: code-variable
+      font-size: font-size
+      margin-top: 5px
+      padding: 0
+      a
+        color: code-variable
+        &:visited
+          color: code-variable
+
+figure.highlight
+  font-size: font-size * 0.95
+  margin: content-margin content-margin-side
+  background: color-code-background
+  border: 1px solid color-gutter
+  line-height: font-size * 2
+  overflow: auto
+  position: relative
+  .code
+    if is-gutter
+      border-left: 1px solid color-background
+    else
+      padding: 0 1.0em 1.0em 1.0em
+    color: code-variable
+  .gutter
+    if is-gutter
+      color: code-comments
+      // padding-right: 1px
+      text-align: left
+      padding: 0.0em 0 0 0.5em
+    else
+      display: none
+  figcaption
+    font-size: font-size
+    font-weight: bold
+    color: color-figcaption-title
+    background-color: color-figcaption
+    padding: 0.6em 1.0em
+    a
+      position: absolute
+      right: font-size
+    &:before
+      content: "\f121"
+      font-family: font-awesome
+      text-align: center
+      display: inline-block;
+      margin-right: 0.6em;
+  pre
+    background: 0 0
+    border: none
+    margin: 0
+    padding: font-size * 0.5
+  table
+    border-spacing: 0
+    margin: 0
+  th
+    border: 0
+    font-weight: 400
+    padding: 0
+  td
+    border: 0
+    font-size: font-size * 1.1
+    padding: 0
+    &.code
+      if is-gutter
+        border-left: 1px solid code-gutter
+
+

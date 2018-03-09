@@ -1,0 +1,46 @@
+//-----------------------------
+// share button
+//-----------------------------
+.social-share
+  margin: content-margin * 0.5 content-margin-side
+  display: flex
+  justify-content: center
+  amp-social-share , .sbtn
+    margin: 5px
+
+.sbtn
+  padding: 0
+  width: font-size * 4
+  height: font-size * 3
+  line-height: font-size * 3
+  color: color-background
+  font-size: font-size * 1.2
+  text-align: center
+  border-radius: 4px
+  &:hover
+    color: color-background
+.tw
+  background-color: color-twitter-flat
+  &:hover
+    background-color: darken(color-twitter-flat , 20)
+.fb
+  background-color: color-facebook-flat
+  &:hover
+    background-color: darken(color-facebook-flat , 20)
+.ht
+  background-color: color-hatena-flat
+  &:hover
+    background-color: darken(color-hatena-flat , 20)
+.gp
+  background-color: color-google-flat
+  &:hover
+    background-color: darken(color-google-flat , 20)
+.tb
+  background-color: color-tumblr-flat
+  &:hover
+    background-color: darken(color-tumblr-flat , 20)
+.icon-hatena
+  &:before
+    content: "B"
+    font-weight: bold
+    font-size: font-size * 1.2
