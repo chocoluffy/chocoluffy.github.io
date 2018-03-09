@@ -104,17 +104,15 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自beoplay这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0">
-<meta property="og:image" content="https://dl.dropboxusercontent.com/s/zppojylzfsyk6in/screensplit1.0.gif?dl=0">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1f37ixae23nj219e0oe77a.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1f37j53tshej21a20o643j.jpg">
 <meta property="og:image" content="https://dl.dropboxusercontent.com/s/8y6fr3ib87yz9h7/screensplit2.0.gif?dl=0">
 <meta property="og:image" content="https://dl.dropboxusercontent.com/s/t99wbc4n3s8c4r7/screensplit3.0.gif?dl=0">
-<meta property="og:updated_time" content="2018-03-09T21:14:21.929Z">
+<meta property="og:updated_time" content="2018-03-09T21:45:26.105Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创意视频分屏 - HTML5 &amp; JS">
 <meta name="twitter:description" content="和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自beoplay这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。">
-<meta name="twitter:image" content="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0">
+<meta name="twitter:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1f37ixae23nj219e0oe77a.jpg">
 
 
 
@@ -422,10 +420,8 @@
       
         <p>和朋友聊天时无意间发现的一个创意视频分屏的想法， 来自<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#at-a-glance" target="_blank" rel="noopener">beoplay</a>这个高端耳机的宣传页面， 在自己实现的过程中， 也发现了视频自适应居中的这个设计细节， 自己也捣鼓了出来， 话说在之后产品的宣传主页视频可以一试的， 从两个视角去诠释同一个故事， 就是对这样有心思的设计细节没有任何抵抗力呢。</p>
 <a id="more"></a>
-<p><img src="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
 <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>仿造beoplay这款耳机<a href="http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#video" target="_blank" rel="noopener">主页的宣传视频</a>来实现一个类似的视频分屏的效果。</p>
-<h2 id="版本1-0（不加视频自适应居中）"><a href="#版本1-0（不加视频自适应居中）" class="headerlink" title="版本1.0（不加视频自适应居中）"></a>版本1.0（不加视频自适应居中）</h2><p><img src="https://dl.dropboxusercontent.com/s/zppojylzfsyk6in/screensplit1.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;"></p>
-<p>right video是静止的不动的， 同时位于最底层。 目前所有的伸缩都是在控制left video， 同时由于我们设置了left video的<code>z-index</code>为3， 那么左边的视频会覆盖在右边的视频上。接下来的目标就很明确了， 我们需要追踪鼠标在整个container里面的位置(我们会用占宽度的百分比来表示)， 然后， 通过改变左边视频的宽度， 同时也就把位于下面的右边视频暴露出来了， 来达到切换的效果。</p>
+<h2 id="版本1-0（不加视频自适应居中）"><a href="#版本1-0（不加视频自适应居中）" class="headerlink" title="版本1.0（不加视频自适应居中）"></a>版本1.0（不加视频自适应居中）</h2><p>right video是静止的不动的， 同时位于最底层。 目前所有的伸缩都是在控制left video， 同时由于我们设置了left video的<code>z-index</code>为3， 那么左边的视频会覆盖在右边的视频上。接下来的目标就很明确了， 我们需要追踪鼠标在整个container里面的位置(我们会用占宽度的百分比来表示)， 然后， 通过改变左边视频的宽度， 同时也就把位于下面的右边视频暴露出来了， 来达到切换的效果。</p>
 <p>理解到这一步之后，目标就是<strong>如何改变视频宽度</strong>了。</p>
 <h3 id="如何改变视频宽度"><a href="#如何改变视频宽度" class="headerlink" title="如何改变视频宽度"></a>如何改变视频宽度</h3><p>这里其实隐藏着一个陷阱， 就是因为我们不可以直接改变<strong>视频本身的宽度</strong>，因为视频的高宽比在拍摄的时候就决定了， 我们如果只拉长视频而不同时提高高度的话， 就会使得在纵轴上部分内容被遮盖到， 大致意思如图：</p>
 <p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1f37ixae23nj219e0oe77a.jpg" alt="" style="display: block; margin: 0 auto;"></p>
