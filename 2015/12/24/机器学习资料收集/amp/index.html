@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="http://chocoluffy.com/2015/12/24/机器学习资料收集/" >
+    <title>机器学习资料收集[持续更新] - 余舜哲的 One Piece</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+    <meta property="og:title" content="机器学习资料收集[持续更新]">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="http://chocoluffy.com/2015/12/24/机器学习资料收集/">
+	
+		<meta property="og:image" content="/amp-dist/sample/sample-substituteTitleImage.png">
+	
+	<meta property="og:site_name" content="余舜哲的 One Piece">
+	
+		<meta property="og:description" content="&lt;p&gt;来自github, 各种关于机器学习的教程博客和工具。&lt;/p&gt;">
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="余舜哲的 One Piece">
+	<meta name="twitter:url" content="http://chocoluffy.com/2015/12/24/机器学习资料收集/">
+	<meta name="twitter:title" content="机器学习资料收集[持续更新] - 余舜哲的 One Piece">
+	
+		<meta name="twitter:description" content="&lt;p&gt;来自github, 各种关于机器学习的教程博客和工具。&lt;/p&gt;">
+	
+    
+    	<meta name="twitter:image" content="/amp-dist/sample/sample-substituteTitleImage.png">
+	
+	
+	
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <!--
+  	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "BlogPosting",
+			"headline": "机器学习资料收集[持续更新]",
+			
+			"description": "&lt;p&gt;来自github, 各种关于机器学习的教程博客和工具。&lt;/p&gt;",
+			
+			"mainEntityOfPage":{
+			    "@type":"WebPage",
+			    "@id":"http://chocoluffy.com/2015/12/24/机器学习资料收集/"
+			},
+			"datePublished": "2015-12-24T16:55:00.000Z",
+			"dateModified": "2018-03-09T22:22:23.103Z",
+			
+			"image": {
+				"@type": "ImageObject",
+				"url": "/amp-dist/sample/sample-substituteTitleImage.png",
+				"width" : "1024",
+				"height" : "800"
+			},
+			
+			"author": {
+			    "@type": "Person",
+			    "name": "John Doe"
+			},
+			"publisher": {
+			    "@type": "Organization",
+			    "name": "余舜哲的 One Piece"
+			    
+			    ,
+			    "logo": {
+			      "@type": "ImageObject",
+			      "url": "http://chocoluffy.com/amp-dist/sample/sample-logo.png",
+			      "width": 600,
+			      "height": 60
+			    }
+			    
+			}
+		}
+	</script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+	<style amp-custom>
+		
+abbr,
+acronym,
+address,
+applet,
+big,
+blockquote,
+body,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+acronym {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #2d3d40;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-rendering: optimizelegibility;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+figure.highlight td,
+.post .entry-content figure.highlight th {
+  border: 0;
+  padding: 0;
+}
+caption,
+table,
+td,
+th {
+  vertical-align: middle;
+}
+caption,
+td,
+th,
+.table-align-left {
+  text-align: left;
+}
+del {
+  text-decoration: line-through;
+}
+html {
+  font-size: 14px;
+}
+:root sub,
+:root sup {
+  vertical-align: baseline;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+a {
+  color: #e91e63;
+  text-decoration: none;
+  -webkit-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  -ms-transition: 0.7s;
+  transition: 0.7s;
+  border: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+a img {
+  border: none;
+}
+a:hover {
+  -webkit-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  color: #930e3b;
+}
+@media (min-width: 481px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+.clearfix:after {
+  clear: both;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.circle {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.thumbImg-w {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.thumbImg {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.__web-inspector-hide-shortcut__ {
+  visibility: hidden ;
+}
+button {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  background-color: buttonface;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  -webkit-border-image: initial;
+  -moz-border-image: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 11px system-ui;
+  -webkit-writing-mode: horizontal-tb;
+  -webkit-appearance: button;
+}
+.hamburger {
+  display: inline-block;
+  background-color: transparent;
+  background-image: url("data:image/svg+xmlutf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-3 -6 24 24\"><path fill=\"#4A4A4A\" d=\"M0 12h18v-2H0v2M0 7h18V5H0v2M0 0v2h18V0H0\"/></svg>");
+  background-repeat: no-repeat;
+  -webkit-background-size: 30px 24px;
+  -moz-background-size: 30px 24px;
+  background-size: 30px 24px;
+  background-position: center center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center;
+}
+.nav ul:after {
+  clear: both;
+  visibility: hidden;
+}
+.nav,
+.nav-icon {
+  position: relative;
+}
+.nav ul {
+  display: block;
+}
+.nav ul li {
+  display: block;
+}
+.nav ul li a {
+  display: block;
+}
+.tab {
+  position: relative;
+  color: #424242;
+  padding: 6px;
+  margin: 0 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: 0.1s ease color;
+  -webkit-transition: 0.1s ease color;
+  -moz-transition: 0.1s ease color;
+  -o-transition: 0.1s ease color;
+  -ms-transition: 0.1s ease color;
+  transition: 0.1s ease color;
+}
+amp-sidebar {
+  width: 200px;
+}
+amp-sidebar ul {
+  padding: 10px 0;
+}
+amp-sidebar li a {
+  display: block;
+  padding: 10px 20px;
+}
+header {
+  height: 60px;
+  background-color: #222f31;
+  -webkit-box-shadow: 0 -1px 0 #3c5155 inset, 0 -3px 0 #1e292b inset;
+  box-shadow: 0 -1px 0 #3c5155 inset, 0 -3px 0 #1e292b inset;
+  -webkit-box-shadow: 0 -1px 0 #3c5155 inset, 0 -3px 0 #1e292b inset;
+}
+header .header-title a {
+  padding: 0 0 0 20px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+header .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+header .left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  font-size: 20px;
+  margin-left: 0;
+  font-weight: 300;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -o-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  text-align: left;
+  width: auto;
+  font-size: 15px;
+}
+header .right {
+  font-size: 15px;
+}
+header .alt {
+  padding: 0;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  -o-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.blog-title a {
+  position: relative;
+}
+button {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  background-color: buttonface;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  -webkit-border-image: initial;
+  -moz-border-image: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 11px system-ui;
+  -webkit-writing-mode: horizontal-tb;
+  -webkit-appearance: button;
+}
+.__web-inspector-hide-shortcut__ {
+  visibility: hidden ;
+}
+.hamburger {
+  display: inline-block;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-3 -6 24 24\"><path fill=\"#FFF\" d=\"M0 12h18v-2H0v2M0 7h18V5H0v2M0 0v2h18V0H0\"/></svg>");
+  background-repeat: no-repeat;
+  -webkit-background-size: 30px 24px;
+  -moz-background-size: 30px 24px;
+  background-size: 30px 24px;
+  background-position: center center;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  -ms-flex-item-align: center;
+}
+.tab {
+  position: relative;
+  color: #2d3d40;
+  padding: 6px;
+  margin: 0 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-transition: 0.1s ease color;
+  -webkit-transition: 0.1s ease color;
+  -moz-transition: 0.1s ease color;
+  -o-transition: 0.1s ease color;
+  -ms-transition: 0.1s ease color;
+  transition: 0.1s ease color;
+}
+amp-sidebar {
+  width: 250px;
+  background-color: #182022;
+}
+amp-sidebar ul {
+  padding: 10px 0;
+}
+amp-sidebar li {
+  border-top: 1px solid #2f4043;
+}
+amp-sidebar li:last-child {
+  border-bottom: 1px solid #2f4043;
+}
+amp-sidebar li a {
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+}
+amp-sidebar li a:hover {
+  color: #ccc;
+  background-color: #030404;
+}
+.categories-header {
+  background-color: #2d3d40;
+  padding: 0rem 0.8rem;
+}
+.categories-header a {
+  color: #fff;
+}
+.categories-header a:hover {
+  color: #fff;
+}
+.categories-header .breadcrumb ol li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+.categories-header .breadcrumb ol li span {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.categories-header .breadcrumb ol li:after {
+  content: "/";
+  color: #fff;
+  display: inline-block;
+  margin: 0 0.4rem;
+}
+.categories-header .breadcrumb ol li:last-child:after {
+  content: "";
+  margin: 0;
+}
+.entry-header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.entry-header .flx:first-child {
+  margin: 0 1rem 0 0;
+}
+.header-cap {
+  -webkit-flex-grow: 3;
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -o-box-flex: 3;
+  -ms-box-flex: 3;
+  box-flex: 3;
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+.title-cover {
+  background-color: #fff;
+  color: #2d3d40;
+  padding: 1.5rem 0.8rem 0 0.8rem;
+}
+.title-cover a {
+  font-size: 1.2rem;
+  color: #2d3d40;
+  text-align: left;
+  font-weight: bold;
+}
+.entry-title {
+  margin: 0;
+}
+.entry-meta-header {
+  font-size: 0.85rem;
+  text-align: center;
+}
+.entry-meta-header .date {
+  font-family: sans-serif;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #2d3d40;
+  text-decoration: none;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: #e91e63;
+}
+#container {
+  margin-left: auto;
+  margin-right: auto;
+}
+#main {
+  margin-bottom: 3em;
+  padding-left: 0;
+}
+.post {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.entry-content {
+  margin: 0 0.6rem;
+  font-size: 1rem;
+}
+.entry-content h1 {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin: 1em 0 0.8em;
+}
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content h2 span,
+.entry-content h3 span,
+.entry-content h4 span,
+.entry-content h5 span,
+.entry-content h6 span {
+  color: #98b8be;
+  font-weight: bold;
+}
+.entry-content h2,
+.entry-content h2 span {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  text-align: center;
+}
+.entry-content h2 {
+  border-bottom: 2px solid #cce4e8;
+  margin: 4.5rem 0 0.5em;
+  padding: 0.8em 0;
+}
+.entry-content h3,
+.entry-content h3 span {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+.entry-content h3 {
+  margin: 3.6rem 0.8rem 3rem 0.8rem;
+  padding: 0;
+}
+.entry-content h4,
+.entry-content h4 span {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.entry-content h4 {
+  margin: 3.6rem 0.8rem 3rem 0.8rem;
+  padding: 0;
+}
+.entry-content h5,
+.entry-content h5 span {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+.entry-content h5 {
+  margin: 3.6rem 0.8rem 3rem 0.8rem;
+  padding: 0;
+}
+.entry-content h6,
+.entry-content h6 span {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.entry-content h6 {
+  margin: 3.6rem 0.8rem 3rem 0.8rem;
+  padding: 0;
+}
+.entry-content p {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 2.2rem;
+  margin: 3rem 0.8rem;
+}
+.entry-content p a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  display: inline;
+  border-bottom: 1px dashed #f1729d;
+  padding-bottom: 0.3rem;
+}
+.entry-content p a:hover {
+  border-bottom: 1px dashed #9c0f3f;
+  padding-bottom: 0.4rem;
+}
+.entry-content em {
+  background-color: #f9f5d1;
+  color: #886d00;
+  font-style: normal;
+  margin: 0 2px;
+  padding: 0.4em;
+}
+.entry-content strong {
+  color: #871c1c;
+  font-style: normal;
+  margin: 0 2px;
+  padding: 0.4em;
+  background-color: #fadcdc;
+}
+.entry-content hr {
+  border: 0;
+  border-top: 3px solid #cce4e8;
+  margin: 3rem auto;
+  width: 20%;
+}
+.entry-content img,
+.entry-content video {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+.entry-content iframe {
+  width: 100% ;
+}
+.entry-content blockquote {
+  margin: 3rem 0.8rem;
+  padding: 1rem 1.8rem;
+  position: relative;
+  background-color: none;
+  border-left: 3px solid #98b8be;
+  font-style: italic;
+}
+.entry-content blockquote p {
+  margin: 0.5rem 0;
+}
+.entry-content blockquote blockquote {
+  border-left: none;
+}
+.entry-content .table-wrapper {
+  margin: 3rem 0.8rem;
+}
+.entry-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+  display: block;
+  font-size: 0.85rem;
+  margin: 0 auto;
+  width: auto;
+}
+.entry-content td,
+.entry-content th {
+  line-height: 1.8em;
+  padding: 0.8rem 0.8rem;
+  font-size: 0.85rem;
+}
+.entry-content td em,
+.entry-content th em,
+.entry-content td strong,
+.entry-content th strong,
+.entry-content td a,
+.entry-content th a {
+  font-size: 0.85rem;
+}
+.entry-content td {
+  border: 1px solid #c4c4c4;
+}
+.entry-content th {
+  background-color: #ecf5f7;
+  border: 1px solid #c4c4c4;
+}
+.entry-content .table-align-center {
+  text-align: center;
+}
+.entry-content .table-align-right {
+  text-align: right;
+}
+.entry-content ul,
+.entry-content ol,
+.entry-content dl {
+  margin: 3rem 0 3rem 1.6rem;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+}
+.entry-content ul li,
+.entry-content ol li,
+.entry-content dl li {
+  line-height: 2rem;
+  position: relative;
+  padding: 0;
+}
+.entry-content ul li p,
+.entry-content ol li p,
+.entry-content dl li p {
+  line-height: 2rem;
+  margin: 0;
+}
+.entry-content ul li p:not(:first-child),
+.entry-content ol li p:not(:first-child),
+.entry-content dl li p:not(:first-child) {
+  color: #57767c;
+  margin: 0.5rem;
+}
+.entry-content ul li ul,
+.entry-content ol li ul,
+.entry-content dl li ul,
+.entry-content ul li ol,
+.entry-content ol li ol,
+.entry-content dl li ol,
+.entry-content ul li dl,
+.entry-content ol li dl,
+.entry-content dl li dl {
+  margin: 1rem;
+}
+.entry-content ul li {
+  margin: 0.4rem 0 0.4rem 0.8rem;
+}
+.entry-content ul li::after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0.75rem;
+  left: -1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #cce4e8;
+  border-radius: 100%;
+}
+.entry-content ol {
+  counter-reset: number;
+}
+.entry-content ol li {
+  margin: 0.4rem 0 0.4rem 2rem;
+}
+.entry-content ol li p:first-child {
+  display: inline-block;
+  line-height: 1.6rem;
+  height: 1.6rem;
+}
+.entry-content ol li:before {
+  position: absolute;
+  display: inline-block;
+  float: left;
+  margin: 0 0.2rem 0 0;
+  padding: 0;
+  counter-increment: number;
+  content: counter(number);
+  left: -2.2rem;
+  top: 0.2rem;
+  background-color: #98b8be;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+}
+kbd {
+  font-family: sans-serif;
+  text-align: center;
+  display: inline-block;
+  color: #425a5e;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 0 10px #e8e8e8 inset, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 3px 3px #333;
+  box-shadow: 0 0 10px #e8e8e8 inset, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 3px 3px #333;
+  -webkit-box-shadow: 0 0 10px #e2e2e2 inset, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 3px 3px #333;
+  -webkit-font-smoothing: subpixel-antialiased;
+  background: #fff;
+  border-left: 1px solid #fff;
+  border-radius: 3px;
+  border-right: 1px solid #e6e6e6;
+  border-top: 1px solid #fff;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin: 5px;
+  padding: 6px 8px 3px;
+  text-shadow: 0 1px 0 #fff;
+  vertical-align: baseline;
+  
+}
+img.responsive-img {
+  height: auto;
+  max-width: 100%;
+}
+video.responsive-video {
+  height: auto;
+  max-width: 100%;
+}
+amp-instagram,
+amp-vimeo,
+amp-video,
+amp-youtube,
+amp-twitter,
+.soundcloud-wrapper,
+.amp-img-wrapper,
+.googleAdPost,
+.ad-footer {
+  margin: 3rem 0.8rem;
+}
+code,
+figure.highlight .code,
+pre {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+code,
+pre,
+samp {
+  font-family: Menlo, Consolas, Monaco, Consolas, monospace;
+}
+p code {
+  font-size: 1rem;
+}
+code,
+pre {
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  background-color: #ecf5f7;
+  color: #007e96;
+}
+code {
+  margin: 0 3px;
+  padding: 0.4em;
+}
+samp {
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+}
+sub,
+sup {
+  font-size: 0.75rem;
+  line-height: 0;
+  position: relative;
+}
+sub {
+  bottom: -0.2em;
+}
+sup {
+  top: -0.5em;
+}
+pre {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  margin: 0 3px;
+  padding: 15px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  border: 0;
+  line-height: 1.3rem;
+  overflow-x: auto;
+}
+pre .addition,
+pre .css .tag,
+pre .keyword,
+pre .method,
+pre .nginx .title,
+pre .request,
+pre .status,
+pre .winutils {
+  color: #66d9ef;
+}
+pre .attr_selector,
+pre .cdata,
+pre .clojure .title,
+pre .diff .change,
+pre .important {
+  color: #9882eb;
+}
+pre .preprocessor {
+  color: #9882eb;
+}
+pre .preprocessor .keyword {
+  color: #9882eb;
+}
+pre .shebang,
+pre .special,
+pre .subst {
+  color: #9882eb;
+}
+pre .symbol {
+  color: #9882eb;
+}
+pre .symbol .string {
+  color: #9882eb;
+}
+pre .attribute,
+pre .class .title,
+pre .constant,
+pre .haskell .type,
+pre .lisp .body,
+pre .parent,
+pre .smalltalk .number,
+pre .variable {
+  color: #a6e22e;
+}
+pre .built_in,
+pre .chunk,
+pre .decorator,
+pre .id,
+pre .identifier,
+pre .literal,
+pre .localvars,
+pre .title,
+pre .vhdl,
+pre .deletion {
+  color: #f92672;
+}
+pre .command,
+pre .hexcolor,
+pre .number,
+pre .phpdoc,
+pre .regexp,
+pre .string,
+pre .tag .value,
+pre .tex .formula {
+  color: #e6db74;
+}
+pre .comment,
+pre .diff .header,
+pre .doctype,
+pre .javadoc,
+pre .lisp .string,
+pre .pi,
+pre .template_comment {
+  color: #75715e;
+  font-weight: normal;
+}
+.line {
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  color: #f8f8f2;
+}
+.line span {
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+}
+.gist {
+  background: #fff;
+  border: 1px solid color-gutter;
+  color: #f8f8f2;
+  line-height: 1.6rem;
+  margin-top: 15px;
+  overflow: auto;
+  padding: 7px 15px;
+}
+.gist .gist-file {
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: 0;
+  margin: 0;
+}
+.gist .gist-file .gist-data {
+  background: 0 0;
+  border-bottom: none;
+}
+.gist .gist-file .gist-data pre {
+  font-family: Menlo, Consolas, Monaco, Consolas, monospace;
+  padding: 0 ;
+}
+.gist .gist-file .gist-meta {
+  background: 0 0;
+  color: #f8f8f2;
+  font-size: 1rem;
+  margin-top: 5px;
+  padding: 0;
+}
+.gist .gist-file .gist-meta a {
+  color: #f8f8f2;
+}
+.gist .gist-file .gist-meta a:visited {
+  color: #f8f8f2;
+}
+figure.highlight {
+  font-size: 0.95rem;
+  margin: 3rem 0.8rem;
+  background: #263338;
+  border: 1px solid color-gutter;
+  line-height: 2rem;
+  overflow: auto;
+  position: relative;
+}
+figure.highlight .code {
+  padding: 0 1em 1em 1em;
+  color: #f8f8f2;
+}
+figure.highlight .gutter {
+  display: none;
+}
+figure.highlight figcaption {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #e9e9d6;
+  background-color: #1e282c;
+  padding: 0.6em 1em;
+}
+figure.highlight figcaption a {
+  position: absolute;
+  right: 1rem;
+}
+figure.highlight figcaption:before {
+  content: "\f121";
+  font-family: "fontawesome";
+  text-align: center;
+  display: inline-block;
+  margin-right: 0.6em;
+}
+figure.highlight pre {
+  background: 0 0;
+  border: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+figure.highlight table {
+  border-spacing: 0;
+  margin: 0;
+}
+figure.highlight th {
+  border: 0;
+  font-weight: 400;
+  padding: 0;
+}
+figure.highlight td {
+  border: 0;
+  font-size: 1.1rem;
+  padding: 0;
+}
+.entry-content .toc {
+  background: #fff;
+  padding: 0.5rem;
+  margin: 3rem 0;
+  border: 1px solid #cce4e8;
+  border-radius: 2px;
+}
+.entry-content .toc ul {
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #5d8b93;
+  border-radius: 2px;
+}
+.entry-content .toc ul:first-child {
+  border-top: none;
+}
+.entry-content .toc ul ul,
+.entry-content .toc ul ol {
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+.entry-content .toc ul li {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #5d8b93;
+}
+.entry-content .toc ul li:first-child {
+  border-top: none;
+}
+.entry-content .toc ul li::after,
+.entry-content .toc ul li::before {
+  content: normal;
+}
+.entry-content .toc ul li a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  padding: 1rem;
+  background-color: #3d5b61;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.entry-content .toc ul li a:hover {
+  color: #fff;
+  background-color: #2c4145;
+}
+.entry-content .toc ul li a:before {
+  content: "\f02d";
+  font-family: "fontawesome";
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.8rem;
+}
+.entry-content .toc ul li ul,
+.entry-content .toc ul li ol {
+  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+}
+.entry-content .toc ul li ul li a,
+.entry-content .toc ul li ol li a {
+  padding: 0.5rem 0.75rem 0.5rem 2rem;
+  font-size: 0.9rem;
+  background-color: #416167;
+}
+.entry-content .toc ul li ul li a:before,
+.entry-content .toc ul li ol li a:before {
+  content: "\f0da";
+  font-family: "fontawesome";
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.6rem;
+}
+.entry-content .toc ul li ul li ul li a,
+.entry-content .toc ul li ol li ul li a {
+  padding: 0.5rem 0.75rem 0.5rem 4rem;
+}
+.entry-content .toc ul li ul li ul li a:before,
+.entry-content .toc ul li ol li ul li a:before {
+  content: none;
+}
+.meta-content {
+  background-color: #fff;
+  margin: 1.5rem 0.8rem;
+  padding: 0;
+  border-top: 1px dotted #cce4e8;
+  letter-spacing: 0.05rem;
+}
+.meta-wrapper {
+  margin: 3rem 0.8rem;
+  padding: 0;
+  background-color: #fff;
+}
+h6.tag,
+h6.categories {
+  color: #2d3d40;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.article-tag-list {
+  padding: 0;
+}
+.article-tag,
+.article-tag-list,
+.article-categories,
+.article-categories-list {
+  padding: 0;
+  margin: 0;
+}
+.article-categories {
+  margin-bottom: 1.6em;
+}
+.article-tag-list li,
+.article-categories-list li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0.2rem 0.1rem;
+}
+.article-tag-list li a,
+.article-categories-list li a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  margin: 0;
+  background-color: #ecf5f7;
+  color: #2d3d40;
+  border-radius: 2px;
+  display: block;
+}
+.article-tag-list li a:before,
+.article-categories-list li a:before {
+  content: "#";
+}
+.article-tag-list li a:hover,
+.article-categories-list li a:hover {
+  color: #fff;
+  background-color: #2d3d40;
+}
+.widget {
+  margin: 1.5rem 0.8rem;
+  padding: 0;
+}
+.widget-h {
+  text-align: center;
+  margin: 1.6rem 0;
+}
+.widget-h h6 {
+  color: #fff;
+  background-color: #2d3d40;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.posts-list li {
+  list-style: none;
+  margin: 0.8rem 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.posts-list li .posts-list-link {
+  -webkit-flex-grow: 3;
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -o-box-flex: 3;
+  -ms-box-flex: 3;
+  box-flex: 3;
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+.posts-list li .posts-list-link a {
+  color: #2d3d40;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.posts-list li .posts-list-link a:hover {
+  color: #e91e63;
+}
+.posts-list li .posts-list-meta {
+  font-size: 0.7rem;
+}
+.posts-list li .flx:first-child {
+  margin: 0 1rem 0 0;
+}
+.posts-list li amp-img {
+  border-radius: 2px;
+}
+#footer {
+  background-color: #2d3d40;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 2rem;
+  margin: 3rem 0 0 0;
+  padding: 0;
+}
+.site-author-info {
+  margin: 0;
+  padding: 3rem 1.6rem;
+}
+.site-author-info h6 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #222f31;
+  padding: 0.4rem 0.8rem;
+}
+.site-author-info-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.site-author-info-wrapper .flx:first-child {
+  margin: 0 1rem 0 0;
+}
+.authorCap-wrapper {
+  -webkit-flex-grow: 3;
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -o-box-flex: 3;
+  -ms-box-flex: 3;
+  box-flex: 3;
+  -webkit-flex-grow: 3;
+  flex-grow: 3;
+}
+.authorCap {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.authorReading {
+  font-size: 0.7rem;
+}
+.site-author-desc {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  margin: 1.4rem 0;
+}
+.copyright-tool {
+  margin: 0;
+  padding: 1.5rem 1.6rem;
+  border-top: 1px solid #384b4f;
+}
+.copyright-notice p {
+  font-size: 0.6rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.2rem;
+  color: #8ba8ae;
+}
+.copyright-title {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.8rem 0 0.4rem 0;
+}
+.copyright-license {
+  margin: 0.4rem 0 0.8rem 0;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.copyright-license a {
+  color: #e6e6e6;
+  font-size: 0.7rem;
+}
+.copyright-license a:hover {
+  color: #b3b3b3;
+}
+.sns-link {
+  margin: 0;
+  text-align: center;
+}
+.sns-link a {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0.6rem;
+  margin: 0 0.1rem;
+  background-color: #222f31;
+  color: #fff;
+  border-radius: 4px;
+}
+.sns-link a:hover {
+  color: #ccc;
+  background-color: #030404;
+}
+.footer-menu {
+  padding: 1.5rem 0.8rem;
+  border-top: 1px solid #384b4f;
+}
+.footer-menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-menu ul li a {
+  display: block;
+  padding: 0.6rem;
+  margin: 0.2rem 1.6rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #222f31;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.footer-menu ul li a:hover {
+  color: #ccc;
+  background-color: #030404;
+}
+.social-share {
+  margin: 1.5rem 0.8rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.social-share amp-social-share,
+.social-share .sbtn {
+  margin: 5px;
+}
+.sbtn {
+  padding: 0;
+  width: 4rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 4px;
+}
+.sbtn:hover {
+  color: #fff;
+}
+.tw {
+  background-color: #1cafe8;
+}
+.tw:hover {
+  background-color: #0f6b8f;
+}
+.fb {
+  background-color: #4f677f;
+}
+.fb:hover {
+  background-color: #283440;
+}
+.ht {
+  background-color: #35acda;
+}
+.ht:hover {
+  background-color: #1a6e8f;
+}
+.gp {
+  background-color: #d56153;
+}
+.gp:hover {
+  background-color: #9c3326;
+}
+.tb {
+  background-color: #465f79;
+}
+.tb:hover {
+  background-color: #212c38;
+}
+.icon-hatena:before {
+  content: "B";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#totop {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.6rem;
+  font-size: 1.2rem;
+  z-index: 995;
+}
+#totop a {
+  background: rgba(152,184,190,0.6);
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+#totop a:before {
+  content: "\f062";
+  font-family: "fontawesome";
+  font-size: 1.2rem;
+}
+#totop a:hover {
+  text-decoration: none;
+  background: #5d8b93;
+  color: #fff;
+  line-height: 2.3em;
+}
+@media (min-width: 800px) {
+  .title-cover,
+  .entry-content,
+  .categories,
+  .meta-content,
+  .site-author-info {
+    width: 780px;
+    margin: 0 auto;
+  }
+  .nav-container {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .site-author-info-wrapper {
+    display: block;
+  }
+  .gravatar-area {
+    text-align: center;
+  }
+  .gravatar-area amp-img {
+    display: inline-block;
+  }
+  .entry-content td,
+  .entry-content th {
+    line-height: 1.8em;
+    padding: 0.6rem 0.6rem;
+    font-size: 0.5rem;
+  }
+  .entry-content td em,
+  .entry-content th em,
+  .entry-content td strong,
+  .entry-content th strong,
+  .entry-content td a,
+  .entry-content th a {
+    font-size: 0.5rem;
+  }
+}
+
+	</style>
+	
+  </head>
+  <body>
+  	
+  	
+  	<!-- google analytics -->
+  	
+  	
+  	
+  	<!-- menu -->
+  	<header>
+  		<div class="nav-container">
+	  		<div class="left-nav">
+	  			<div class="header-title">
+	  				<a href="/">余舜哲的 One Piece</a>
+	  			</div>
+	  		</div>
+	  		
+	  	</div>
+    </header>
+  	
+  	
+  	<!-- sidebar -->
+  	
+  	
+  	<!-- container -->
+  	<div id="container">
+	  	<div id="main">
+		    <article id="post-机器学习资料收集" class="post">
+		    
+		   		<!-- categories and bread crumb -->
+		    	
+				<div class="categories-header">
+					<div class="categories">
+						<div class="breadcrumb inline-icon">
+							<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+							  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+							    <a itemprop="item" href="/">
+							    	<span class="sns-icon home-icon"></span>
+							        <span itemprop="name"><span class="fa fa-fw fa-home"></span></span>
+							    </a>
+							    <meta itemprop="position" content="1" />
+							  </li>
+
+								
+						    		<li itemprop="itemListElement" itemscope
+									      itemtype="http://schema.org/ListItem">
+									    <a itemprop="item" href="/categories/转载/">
+									      
+									      	<span class="sns-icon folder-icon"></span>
+									      
+									      <span itemprop="name">转载</span>
+									    </a>
+									    <meta itemprop="position" content="2" />
+									</li>
+								
+							</ol>
+						</div>
+					</div>
+				</div>
+				
+		    
+		    	<!-- entry title -->
+				<div class="title-cover">
+					<div class="entry-header">
+						
+						
+						
+			          	<div class="header-thumb flx">
+			          		<div class="thumbImg-w circle">
+			          			<amp-img class="thumbImg" layout="fixed" width="128" height="100" src="/amp-dist/sample/sample-substituteTitleImage.png">
+			          			</amp-img>
+			          		</div>
+			          	</div>
+			            
+			            
+			            <div class="header-cap flx">
+							
+							  <h1 class="article-title entry-title" itemprop="name">
+							    <a href="http://chocoluffy.com/2015/12/24/机器学习资料收集/" target="_blank" itemprop="url">机器学习资料收集[持续更新]</a>
+							  </h1>
+							
+						</div>
+					</div>
+					
+					<!-- datePublished -->
+					<div class="entry-meta-header">
+						<span class="meta-elements date">
+							<span class="fa fa-fw fa-clock-o"></span>
+							<time datetime="2015-12-24" itemprop="datePublished">2015.12.24</time>
+						</span>
+					</div>
+				</div>
+				
+				
+				
+				<!-- entry content -->
+			    <div class="entry-content ecp">
+			    	<!-- social share button -->
+			    	
+			    	
+			    	
+                    <!-- google Adsense Matched content -->
+                    
+                    
+			    	<!-- content -->
+			  		<p>&#x6765;&#x81EA;github, &#x5404;&#x79CD;&#x5173;&#x4E8E;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7684;&#x6559;&#x7A0B;&#x535A;&#x5BA2;&#x548C;&#x5DE5;&#x5177;&#x3002;</p>
+<a id="more"></a>
+<h1 id="Dive-into-Machine-Learning"><a href="#Dive-into-Machine-Learning" class="headerlink" title="Dive into Machine Learning  "></a>Dive into Machine Learning <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener"><div class="amp-img-wrapper"><amp-img src="http://i.creativecommons.org/l/by/4.0/88x31.png" width="88" height="31" layout="responsive"></amp-img></div></a> <a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener"><div class="amp-img-wrapper"><amp-img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" width="110" height="20" layout="responsive"></amp-img></div></a></h1><p><strong>Hi there! This guide is for you:</strong></p>
+<ul>
+<li><strong>You&#x2019;re new to Machine Learning.</strong></li>
+<li><strong>You know Python.</strong> (At least the basics! If you want to learn Python, try <a href="http://www.diveintopython.net/" target="_blank" rel="noopener">Dive Into Python.</a>)</li>
+</ul>
+<p>I learned Python by hacking first, and getting serious <em>later.</em> I wanted to do this with Machine Learning. If this is your style, join me in getting a bit ahead of yourself.</p>
+<p><em>Note:</em> There are several fields within &#x201C;Data&#x201D; and Machine Learning is just one. It&#x2019;s good to know the context: <a href="http://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1" target="_blank" rel="noopener">What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?</a></p>
+<h1 id="Get-your-feet-wet"><a href="#Get-your-feet-wet" class="headerlink" title="Get your feet wet!"></a>Get your feet wet!</h1><p>I suggest you get your feet wet ASAP. You&#x2019;ll boost your confidence.</p>
+<h2 id="Tools-you&#x2019;ll-need"><a href="#Tools-you&#x2019;ll-need" class="headerlink" title="Tools you&#x2019;ll need"></a>Tools you&#x2019;ll need</h2><ul>
+<li><a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>. Python 3 is the best option.</li>
+<li><a href="http://ipython.org/" target="_blank" rel="noopener">IPython and the Jupyter Notebook</a>. (FKA IPython and IPython Notebook.)</li>
+<li>Some scientific computing packages:<ul>
+<li>numpy</li>
+<li>pandas</li>
+<li>scikit-learn</li>
+<li>matplotlib</li>
+</ul>
+</li>
+</ul>
+<p>You can install Python 3 and all of these packages in a few clicks with the <a href="https://www.continuum.io/downloads" target="_blank" rel="noopener">Anaconda Python distribution</a>. Anaconda is popular in Data Science and Machine Learning communities.</p>
+<p>If you&#x2019;re using Python 2.7, don&#x2019;t worry. You don&#x2019;t have to migrate to Python 3 just for this guide. Also, if you&#x2019;re using pip/virtualenv instead of Anaconda, that&#x2019;s alright too! Confer <a href="http://conda.pydata.org/docs/_downloads/conda-pip-virtualenv-translator.html" target="_blank" rel="noopener">conda vs. pip vs. virtualenv</a> if you&#x2019;re curious.</p>
+<h2 id="Let&#x2019;s-go"><a href="#Let&#x2019;s-go" class="headerlink" title="Let&#x2019;s go!"></a>Let&#x2019;s go!</h2><p><strong><a href="http://opentechschool.github.io/python-data-intro/core/notebook.html" target="_blank" rel="noopener">Learn how to use IPython Notebook</a> (5-10 minutes).</strong> (You can <a href="https://www.youtube.com/watch?v=qb7FT68tcA8" target="_blank" rel="noopener">learn by screencast</a> instead.)</p>
+<p>Now, follow along with this brief exercise (10 minutes): <strong><a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html" target="_blank" rel="noopener">An introduction to machine learning with scikit-learn</a></strong>. Do it in <code>ipython</code> or IPython Notebook. It&#x2019;ll really boost your confidence.</p>
+<p><a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html" target="_blank" rel="noopener"></a></p><div class="amp-img-wrapper"><a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html" target="_blank" rel="noopener"><amp-img src="http://i.imgur.com/nqn3pVV.jpg" width="444" height="292" layout="responsive"></amp-img></a></div>
+<h2 id="What-just-happened"><a href="#What-just-happened" class="headerlink" title="What just happened?"></a>What just happened?</h2><p>You just classified some hand-written digits using <a href="http://scikit-learn.org/stable/index.html" target="_blank" rel="noopener">scikit-learn</a>. Neat huh?</p>
+<p><a href="http://scikit-learn.org/stable/index.html" target="_blank" rel="noopener">scikit-learn</a> is the go-to library for machine learning in Python. <a href="http://scikit-learn.org/stable/testimonials/testimonials.html" target="_blank" rel="noopener">Some recognizable logos use it, including Spotify and Evernote.</a> Machine learning is hard. You&#x2019;ll be glad your tools are easy to work with.</p>
+<p>I encourage you to look at the <a href="http://scikit-learn.org/stable/index.html" target="_blank" rel="noopener">scikit-learn</a> homepage  and spend about 5 minutes looking over the names of the strategies (Classification, Regression, etc.), and their applications. Don&#x2019;t click through yet! Just get a glimpse of the vocabulary.</p>
+<h1 id="Dive-in"><a href="#Dive-in" class="headerlink" title="Dive in"></a>Dive in</h1><h2 id="A-Visual-Introduction-to-Machine-Learning"><a href="#A-Visual-Introduction-to-Machine-Learning" class="headerlink" title="A Visual Introduction to Machine Learning"></a>A Visual Introduction to Machine Learning</h2><p>Let&#x2019;s learn a bit more about Machine Learning, and a couple of common ideas and concerns. Read <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/" target="_blank" rel="noopener">&#x201C;A Visual Introduction to Machine Learning, Part 1&#x201D;</a> by <a href="https://twitter.com/stephaniejyee" target="_blank" rel="noopener">Stephanie Yee</a> and <a href="https://twitter.com/tonyhschu/" target="_blank" rel="noopener">Tony Chu</a>.</p>
+<p><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/" target="_blank" rel="noopener"></a></p><div class="amp-img-wrapper"><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/" target="_blank" rel="noopener"><amp-img src="http://i.imgur.com/j5fiTBv.gif" width="360" height="360" layout="responsive"></amp-img></a></div>
+<p>It won&#x2019;t take long. It&#x2019;s a beautiful introduction &#x2026; Try not to drool too much!</p>
+<h2 id="A-Few-Useful-Things-to-Know-about-Machine-Learning"><a href="#A-Few-Useful-Things-to-Know-about-Machine-Learning" class="headerlink" title="A Few Useful Things to Know about Machine Learning"></a>A Few Useful Things to Know about Machine Learning</h2><p>OK. Let&#x2019;s dive deeper.</p>
+<p>Read <strong><a href="http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf" target="_blank" rel="noopener">&#x201C;A Few Useful Things to Know about Machine Learning&#x201D;</a></strong> by Prof. Pedro Domingos. It&#x2019;s densely packed with valuable information, but not opaque. The author understands that there&#x2019;s a lot of &#x201C;black art&#x201D; and folk wisdom, and they invite you in.</p>
+<p>Take your time with this one. Take notes. Don&#x2019;t worry if you don&#x2019;t understand it all yet.</p>
+<p>The whole paper is packed with value, but I want to call out two points:</p>
+<ul>
+<li><strong>Data alone is not enough.</strong> This is where science meets art in machine-learning. Quoting Domingos: &#x201C;&#x2026; the need for knowledge in learning should not be surprising. Machine learning is not magic; it can&#x2019;t get something from nothing. What it does is get more from less. Programming, like all engineering, is a lot of work: we have to build everything from scratch. Learning is more like farming, which lets nature do most of the work. Farmers combine seeds with nutrients to grow crops. Learners combine knowledge with data to grow programs.&#x201D;</li>
+<li><strong>More data beats a cleverer algorithm.</strong> Listen up, programmers. We like cool tools. Resist the temptation to reinvent the wheel, or to over-engineer solutions. Your starting point is to <a href="http://www.artima.com/intv/simplest3.html" target="_blank" rel="noopener">Do the Simplest Thing that Could <em>Possibly</em> Work</a>. Quoting Domingos: &#x201C;Suppose you&#x2019;ve constructed the best set of features you can, but the classifiers you&#x2019;re getting are still not accurate enough. What can you do now? There are two main choices: design a better learning algorithm, or gather more data. [&#x2026;] As a rule of thumb, a dumb algorithm with lots and lots of data beats a clever one with modest amounts of it. (After all, machine learning is all about letting data do the heavy lifting.)&#x201D;</li>
+</ul>
+<p>So  <strong>knowledge</strong> and <strong>data</strong> are critical. Focus your efforts on those, before fussing about algorithms. In practice, this means that unless you <em>have</em> to increase complexity, you should continue to <a href="http://c2.com/cgi/wiki?DoSimpleThings" target="_blank" rel="noopener">Do Simple Things</a>; don&#x2019;t rush to neural networks just because they&#x2019;re cool. To improve your model, get more data  and use your knowledge of the problem to manipulate the data. You should spend most of your time on these steps. Only optimize your choice of algorithms after you&#x2019;ve got enough data, and you&#x2019;ve processed it well.</p>
+<div class="amp-img-wrapper"><amp-img src="http://i1381.photobucket.com/albums/ah240/hangtwenty/Screen%20Shot%202015-03-05%20at%2010.08.10%20PM_zpsqnljkqt5.png" width="320" height="320" layout="responsive"></amp-img></div>
+<p>(Chart inspired by a slide from <a href="https://www.youtube.com/watch?v=TYVCVzEJhhQ" target="_blank" rel="noopener">Alex Pinto&#x2019;s talk, &#x201C;Secure Because Math: A Deep-Dive on ML-Based Monitoring&#x201D;</a>.)</p>
+<h2 id="Talking-Machines"><a href="#Talking-Machines" class="headerlink" title="Talking Machines"></a>Talking Machines</h2><p>Subscribe to <strong><a href="http://www.thetalkingmachines.com/" target="_blank" rel="noopener">Talking Machines</a></strong>, a podcast about machine learning. It&#x2019;s great. It&#x2019;s a low-effort, high-yield way to learn more.</p>
+<p>I suggest this listening order:</p>
+<ul>
+<li>Start with the <a href="http://www.thetalkingmachines.com/blog/2015/4/23/starting-simple-and-machine-learning-in-meds" target="_blank" rel="noopener">&#x201C;Starting Simple&#x201D;</a> episode. It supports what we read from Domingos. Ryan Adams talks about starting simple, as discussed above. Adams also stresses the importance of feature engineering. Feature engineering is an exercise of the &#x201C;knowledge&#x201D; Domingos writes about.</li>
+<li>Then, start over from the first episode</li>
+</ul>
+<h2 id="Play-to-learn"><a href="#Play-to-learn" class="headerlink" title="Play to learn"></a>Play to learn</h2><p>Pick <strong>one or two</strong> of these IPython Notebooks and play along.</p>
+<ul>
+<li><a href="http://nbviewer.ipython.org/github/ogrisel/notebooks/blob/master/Labeled%20Faces%20in%20the%20Wild%20recognition.ipynb" target="_blank" rel="noopener">Face Recognition on a subset of the Labeled Faces in the Wild</a></li>
+<li><a href="http://agconti.github.io/kaggle-titanic/" target="_blank" rel="noopener">Machine Learning from Disaster</a>: Using Titanic data, &#x201C;Demonstrates basic data munging, analysis, and visualization techniques. Shows examples of supervised machine learning techniques.&#x201D;</li>
+<li><a href="https://github.com/jseabold/538model" target="_blank" rel="noopener">Election Forecasting</a>: A replication of the model Nate Silver used to make <a href="http://fivethirtyeight.blogs.nytimes.com/fivethirtyeights-2012-forecast/" target="_blank" rel="noopener">predictions about the 2012 US Presidential Election for the New York Times</a>)</li>
+<li><a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb" target="_blank" rel="noopener">An example Machine Learning notebook</a>: &#x201C;let&#x2019;s pretend we&#x2019;re working for a startup that just got funded to create a smartphone app that automatically identifies species of flowers from pictures taken on the smartphone.  We&#x2019;ve been tasked by our head of data science to create a demo machine learning model that takes four measurements from the flowers (sepal length, sepal width, petal length, and petal width) and identifies the species based on those measurements alone.&#x201D;</li>
+<li>ClickSecurity&#x2019;s &#x201C;data hacking&#x201D; series (thanks <a href="https://github.com/hummus" target="_blank" rel="noopener">hummus</a>!)<ul>
+<li><a href="http://nbviewer.ipython.org/github/ClickSecurity/data_hacking/blob/master/dga_detection/DGA_Domain_Detection.ipynb" target="_blank" rel="noopener">Detect Algorithmically Generated Domains</a></li>
+<li><a href="http://nbviewer.ipython.org/github/ClickSecurity/data_hacking/blob/master/sql_injection/sql_injection.ipynb" target="_blank" rel="noopener">Detect SQL Injection</a></li>
+<li><a href="http://nbviewer.ipython.org/github/ClickSecurity/data_hacking/blob/master/java_classification/java_classification.ipynb" target="_blank" rel="noopener">Java Class File Analysis</a>: is this Java code malicious or benign?</li>
+</ul>
+</li>
+<li>If you want more of a data science bent, pick a notebook from <a href="https://github.com/donnemartin/data-science-ipython-notebooks" target="_blank" rel="noopener">this excellent list of Data Science ipython notebooks</a>. &#x201C;Continually updated Data Science Python Notebooks: Spark, Hadoop MapReduce, HDFS, AWS, Kaggle, scikit-learn, matplotlib, pandas, NumPy, SciPy, and various command lines.&#x201D;</li>
+<li>Or more generic tutorials/overviews &#x2026;<ul>
+<li><a href="http://amueller.github.io/sklearn_tutorial/" target="_blank" rel="noopener">Tutorial introduction to machine learning with sklearn</a></li>
+<li><a href="http://bugra.github.io/work/notes/2014-11-22/an-introduction-to-supervised-learning-scikit-learn/" target="_blank" rel="noopener">An Introduction to Supervised Learning via Scikit Learn</a></li>
+<li><a href="http://bugra.github.io/work/notes/2014-11-16/an-introduction-to-unsupervised-learning-scikit-learn/" target="_blank" rel="noopener">An Introduction to Unsupervised Learning via Scikit Learn</a></li>
+</ul>
+</li>
+</ul>
+<p>There are more places to find great IPython Notebooks:</p>
+<ul>
+<li><a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks#statistics-machine-learning-and-data-science" target="_blank" rel="noopener">A Gallery of Interesting IPython notebooks (wiki page on GitHub): Statistics, Machine Learning and Data Science</a></li>
+<li><a href="http://nb.bianp.net/sort/views/" target="_blank" rel="noopener">Fabian Pedregosa&#x2019;s larger, automatic gallery</a></li>
+</ul>
+<h1 id="Immerse-yourself"><a href="#Immerse-yourself" class="headerlink" title="Immerse yourself"></a>Immerse yourself</h1><p>Pick one of the courses below and do the whole thing.</p>
+<h2 id="Recommended-course"><a href="#Recommended-course" class="headerlink" title="Recommended course"></a>Recommended course</h2><p><strong><a href="http://www.andrewng.org/about/" target="_blank" rel="noopener">Prof. Andrew Ng&#x2019;s</a> <a href="https://www.coursera.org/learn/machine-learning" target="_blank" rel="noopener"><em>Machine Learning</em></a> is a free online course I&#x2019;ve <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0/" target="_blank" rel="noopener">seen</a> <a href="http://www.forbes.com/sites/anthonykosner/2013/12/29/why-is-machine-learning-cs-229-the-most-popular-course-at-stanford/" target="_blank" rel="noopener">recommended</a> <a href="https://www.quora.com/How-do-I-learn-machine-learning-1/answer/Cory-Hicks-1" target="_blank" rel="noopener">often.</a> <a href="https://www.quora.com/How-do-I-learn-machine-learning-1/answers/5673" target="_blank" rel="noopener">And</a> <a href="https://www.quora.com/How-do-I-learn-machine-learning-1/answer/Xavier-Amatriain" target="_blank" rel="noopener">emphatically.</a></strong></p>
+<p>It&#x2019;s helpful if you decide on a pet project to play around with, as you go, so you have a way to apply your knowledge. You could use one of these <a href="https://github.com/caesar0301/awesome-public-datasets" target="_blank" rel="noopener">Awesome Public Datasets</a>. And remember, IPython Notebook is your friend.</p>
+<p>Also, the book <em><a href="http://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank" rel="noopener">Elements of Statistical Learning</a></em> comes up frequently, but is usually referred to as a &#x201C;reference&#x201D; not an introduction. It&#x2019;s free, so download or bookmark it!</p>
+<h2 id="Other-courses"><a href="#Other-courses" class="headerlink" title="Other courses"></a>Other courses</h2><p>Here are some other free online courses I&#x2019;ve seen recommended. (Machine Learning, Data Science, and related topics.)</p>
+<ul>
+<li><a href="https://www.coursera.org/course/machlearning" target="_blank" rel="noopener">Machine Learning</a> by Prof. Pedro Domingos of the University of Washington. Domingos wrote the paper <a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf" target="_blank" rel="noopener">&#x201C;A Few Useful Things to Know About Machine Learning&#x201D;</a>, from earlier in this guide. (Thanks to <a href="https://news.ycombinator.com/item?id=9563501" target="_blank" rel="noopener">paperwork on Hacker News.</a>)</li>
+<li>Data science courses as IPython Notebooks:<ul>
+<li><a href="http://radimrehurek.com/data_science_python/" target="_blank" rel="noopener">Practical Data Science</a></li>
+<li><a href="http://learnds.com/" target="_blank" rel="noopener">Learn Data Science (an entire self-directed course!)</a></li>
+<li>Supplementary material: <a href="https://github.com/donnemartin/data-science-ipython-notebooks" target="_blank" rel="noopener">donnemartin/data-science-ipython-notebooks</a>. &#x201C;Continually updated Data Science Python Notebooks: Spark, Hadoop MapReduce, HDFS, AWS, Kaggle, scikit-learn, matplotlib, pandas, NumPy, SciPy, and various command lines.&#x201D;</li>
+</ul>
+</li>
+<li>Kevin Markham&#x2019;s video series, <a href="http://blog.kaggle.com/2015/04/08/new-video-series-introduction-to-machine-learning-with-scikit-learn/" target="_blank" rel="noopener">Intro to Machine Learning with scikit-learn</a>, starts with what we&#x2019;ve already covered, then continues on at a comfortable place. After the videos you could do Markham&#x2019;s <a href="https://github.com/justmarkham/DAT8" target="_blank" rel="noopener">General Assembly&#x2019;s Data Science course.</a> Interactive. (Older versions: <a href="https://github.com/justmarkham/DAT7" target="_blank" rel="noopener">7</a>, <a href="https://github.com/justmarkham/DAT5" target="_blank" rel="noopener">5</a>, <a href="https://github.com/justmarkham/DAT4" target="_blank" rel="noopener">4</a>, <a href="https://github.com/justmarkham/DAT3" target="_blank" rel="noopener">3</a>.) Markham&#x2019;s course is also offered in-person in Washington, DC.</li>
+<li>Surveys of Data Science courseware (a bit more Choose Your Own Adventure)<ul>
+<li>Check out <a href="https://www.quora.com/Is-it-worth-it-to-pay-9-*-49-for-a-data-science-specialization-on-Coursera/answer/Jack-Golding" target="_blank" rel="noopener">Jack Golding&#x2019;s survey of Data Science courseware</a>. Includes Coursera&#x2019;s <a href="https://www.coursera.org/specializations/jhudatascience" target="_blank" rel="noopener">Data Science Specialization</a> with 9 courses in it. The Specialization certificate isn&#x2019;t free, but you can take the courses 1-by-1 for free if you don&#x2019;t care about the certificate. The survey also covers <a href="http://cs109.github.io/2014/" target="_blank" rel="noopener">Harvard CS109</a> which I&#x2019;ve seen recommended elsewhere.</li>
+<li><a href="https://www.quora.com/How-can-I-become-a-data-scientist?redirected_qid=59455" target="_blank" rel="noopener">Another epic Quora thread: How can I become a data scientist?</a></li>
+<li>Data Science Weekly&#x2019;s <a href="http://www.datascienceweekly.org/data-science-resources/the-big-list-of-data-science-resources" target="_blank" rel="noopener">Big List of Data Science Resources</a> has a <a href="http://www.datascienceweekly.org/data-science-resources/data-science-moocs" target="_blank" rel="noopener">List of Data Science MOOCs</a></li>
+</ul>
+</li>
+<li><a href="http://cs109.github.io/2014/" target="_blank" rel="noopener">Data Science (Harvard CS109)</a></li>
+<li><a href="http://stronginference.com/Bios8366/lectures.html" target="_blank" rel="noopener">Advanced Statistical Computing (Vanderbilt BIOS8366).</a>. Interactive (lots of IPython Notebook material)</li>
+</ul>
+<h2 id="Learn-Pandas-well"><a href="#Learn-Pandas-well" class="headerlink" title="Learn Pandas well"></a>Learn Pandas well</h2><p>If you&#x2019;re focusing on Python, you should get more familiar with Pandas.</p>
+<ul>
+<li><strong>Essential</strong>: <a href="http://pandas.pydata.org/pandas-docs/stable/10min.html" target="_blank" rel="noopener">10 Minutes to Pandas</a></li>
+<li><strong>Essential</strong>: <a href="http://nbviewer.ipython.org/github/rasbt/python_reference/blob/master/tutorials/things_in_pandas.ipynb" target="_blank" rel="noopener">Things in Pandas I Wish I&#x2019;d Had Known Earlier</a> (IPython Notebook)</li>
+<li><a href="http://www.swegler.com/becky/blog/2014/08/06/useful-pandas-snippets/" target="_blank" rel="noopener">Useful Pandas Snippets</a></li>
+<li>Here are some docs I found especially helpful as I continued learning:<ul>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/cookbook.html" target="_blank" rel="noopener">Cookbook</a></li>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html" target="_blank" rel="noopener">Data Structures</a>, esp. <a href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe" target="_blank" rel="noopener">DataFrame</a> section</li>
+<li><a href="http://pandas.pydata.org/pandas-docs/version/0.15.0/reshaping.html" target="_blank" rel="noopener">Reshaping by pivoting DataFrames</a></li>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/computation.html" target="_blank" rel="noopener">Computational tools</a> and <a href="http://stats.stackexchange.com/questions/29713/what-is-covariance-in-plain-language" target="_blank" rel="noopener">StackExchange thread: &#x201C;What is covariance in plain language?&#x201D;</a></li>
+<li><a href="http://pandas.pydata.org/pandas-docs/stable/groupby.html" target="_blank" rel="noopener">Group By (split, apply, and combine DataFrames)</a></li>
+<li><a href="http://pandas.pydata.org/pandas-docs/version/0.15.0/visualization.html" target="_blank" rel="noopener">Visualizing your DataFrames</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Cheat-sheets"><a href="#Cheat-sheets" class="headerlink" title="Cheat sheets"></a>Cheat sheets</h2><p>Bookmark these cheat sheets:</p>
+<ul>
+<li><a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/" target="_blank" rel="noopener">scikit-learn algorithm cheat sheet</a></li>
+<li><a href="http://hunch.net/?p=2714" target="_blank" rel="noopener">Metacademy: a package manager for [machine learning] knowledge</a>. A mind map of machine learning concepts, with great detail on each.</li>
+<li><a href="https://drive.google.com/folderview?id=0ByIrJAE4KMTtaGhRcXkxNHhmY2M" target="_blank" rel="noopener">Matplotlib / Pandas / Python cheat sheets</a>.</li>
+</ul>
+<h2 id="More-topics"><a href="#More-topics" class="headerlink" title="More topics"></a>More topics</h2><h3 id="More-Data-Science-materials"><a href="#More-Data-Science-materials" class="headerlink" title="More Data Science materials"></a>More Data Science materials</h3><p>Not repeating the materials mentioned above, here are some more Data Science resources:</p>
+<ul>
+<li><strong>Extremely accessible data science book: <a href="http://www.john-foreman.com/data-smart-book.html" target="_blank" rel="noopener"><em>Data Smart</em> by John Foreman</a></strong></li>
+<li><strong><a href="http://learnds.com/" target="_blank" rel="noopener">An entire self-directed course in Data Science, as a IPython Notebook</a></strong></li>
+<li><a href="http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext" target="_blank" rel="noopener">Data Science Workflow: Overview and Challenges</a> (read the article &amp; the comment by Joseph McCarthy)</li>
+<li>Fun little IPython Notebook: <a href="http://nbviewer.ipython.org/github/jmsteinw/Notebooks/blob/master/IndeedJobs.ipynb" target="_blank" rel="noopener">Web Scraping Indeed.com for Key Data Science Job Skills</a></li>
+</ul>
+<h3 id="Many-more-specialized-topics"><a href="#Many-more-specialized-topics" class="headerlink" title="Many more specialized topics"></a>Many more specialized topics</h3><p>Check out <a href="http://gwulfs.github.io/" target="_blank" rel="noopener">Gideon Wulfsohn</a>&#x2018;s <a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0" target="_blank" rel="noopener"><strong>excellent</strong> introduction to Machine Learning</a> for specialized knowledge on many topics&#x2026; including <a href="http://www.quora.com/How-do-random-forests-work-in-laymans-terms" target="_blank" rel="noopener">Ensemble Methods</a>, <a href="https://spark.apache.org/examples.html" target="_blank" rel="noopener">Apache Spark</a>, <a href="https://www.coursera.org/course/neuralnets" target="_blank" rel="noopener">Neural Networks</a>, <a href="http://pybrain.org/" target="_blank" rel="noopener">Reinforcement Learning</a>, <a href="https://nltk.org" target="_blank" rel="noopener">Natural Language Processing</a> (<a href="https://github.com/IndicoDataSolutions/Passage" target="_blank" rel="noopener">RNN</a>, <a href="http://bugra.github.io/work/notes/2015-02-21/topic-modeling-for-the-uninitiated/" target="_blank" rel="noopener">LDA</a>, <a href="http://rare-technologies.com/word2vec-tutorial/" target="_blank" rel="noopener">Word2Vec</a>), <a href="https://pystruct.github.io/" target="_blank" rel="noopener">Structured Prediction</a>, <a href="https://www.youtube.com/watch?v=S75EdAcXHKk" target="_blank" rel="noopener">Deep Learning</a>, <a href="http://web.stanford.edu/class/cs246/" target="_blank" rel="noopener">Distributed Systems (Hadoop Ecosystem)</a>, Graphical Models (<a href="http://www.autonlab.org/tutorials/hmm.html" target="_blank" rel="noopener">Hidden Markov Models</a>), <a href="https://github.com/hyperopt/hyperopt" target="_blank" rel="noopener">Hyper Parameter Optimization</a>, <a href="http://deeplearning.net/software/theano/tutorial/using_gpu.html" target="_blank" rel="noopener">GPU Acceleration (Theano)</a>, <a href="http://deeplearning.net/tutorial/lenet.html" target="_blank" rel="noopener">Computer Vision</a>, Internet of Things, and Visualization.</p>
+<p>Here&#x2019;s an IPython Notebook book about <a href="http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/" target="_blank" rel="noopener">Probabilistic Programming<br>and Bayesian Methods for Hackers</a>: &#x201C;An intro to Bayesian methods and probabilistic programming from a computation/understanding-first, mathematics-second point of view.&#x201D;</p>
+<h2 id="Questions-answers-chats"><a href="#Questions-answers-chats" class="headerlink" title="Questions, answers, chats"></a>Questions, answers, chats</h2><p>For now, the best StackExchange site is  <a href="http://stats.stackexchange.com/questions/tagged/machine-learning?sort=frequent&amp;pageSize=15" target="_blank" rel="noopener">stats.stackexchange.com &#x2013; <em>machine-learning</em>.</a> (There&#x2019;s also <a href="http://datascience.stackexchange.com/" target="_blank" rel="noopener">datascience.stackexchange.com</a>, but it&#x2019;s still in Beta.) And there&#x2019;s <a href="https://www.reddit.com/r/machinelearning" target="_blank" rel="noopener">/r/machinelearning</a>. There are also many relevant discussions on Quora, for example: <a href="http://www.quora.com/What-is-the-difference-between-Data-Analytics-Data-Analysis-Data-Mining-Data-Science-Machine-Learning-and-Big-Data-1" target="_blank" rel="noopener">What is the difference between Data Analytics, Data Analysis, Data Mining, Data Science, Machine Learning, and Big Data?</a></p>
+<p>You should also <a href="https://gitter.im/scikit-learn/scikit-learn" target="_blank" rel="noopener">join the Gitter channel for scikit-learn!</a></p>
+<p>For help and community in meatspace, seek out meetups. Data Science Weekly&#x2019;s <a href="http://www.datascienceweekly.org/data-science-resources/the-big-list-of-data-science-resources" target="_blank" rel="noopener">Big List of Data Science Resources</a> may help you.</p>
+<h1 id="Assorted-Opinions-and-Other-Resources"><a href="#Assorted-Opinions-and-Other-Resources" class="headerlink" title="Assorted Opinions and Other Resources"></a>Assorted Opinions and Other Resources</h1><p>The rest of the stuff that might not be structured enough for a course, but seems important to know.</p>
+<h2 id="Risks"><a href="#Risks" class="headerlink" title="Risks"></a>Risks</h2><p>&#x201C;Machine learning systems automatically learn programs from<br>data.&#x201D; Pedro Domingos, in <a href="http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf" target="_blank" rel="noopener">&#x201C;A Few Useful Things to Know about Machine Learning.&#x201D;</a> The programs you generate will require maintenance. Like any way of creating programs faster, you can rack up technical debt.</p>
+<p>Really essential:</p>
+<ul>
+<li><strong><a href="http://www.john-foreman.com/blog/surviving-data-science-at-the-speed-of-hype" target="_blank" rel="noopener">Surviving Data Science &#x201C;at the Speed of Hype&#x201D;</a></strong> by John Foreman, Data Scientist at MailChimp</li>
+<li><a href="http://hunch.net/?p=22" target="_blank" rel="noopener">11 Clever Methods of Overfitting and How to Avoid Them</a></li>
+</ul>
+<p>A worthwhile paper: <a href="https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/43146.pdf" target="_blank" rel="noopener">Machine Learning: The High-Interest Credit Card of Technical Debt.</a> Here&#x2019;s the abstract:</p>
+<blockquote>
+<p>Machine learning offers a fantastically powerful toolkit for building complex systems quickly. This paper argues that it is dangerous to think of these quick wins as coming for free. Using the framework of technical debt, we note that it is remarkably easy to incur massive ongoing maintenance costs at the system level when applying machine learning. The goal of this paper is highlight several machine learning specific risk factors and design patterns to be avoided or refactored where possible. These include boundary erosion, entanglement, hidden feedback loops, undeclared consumers, data dependencies, changes in the external world, and a variety of system-level anti-patterns.</p>
+</blockquote>
+<p>And a few more articles:</p>
+<ul>
+<li><a href="http://www.john-foreman.com/blog/the-perilous-world-of-machine-learning-for-fun-and-profit-pipeline-jungles-and-hidden-feedback-loops" target="_blank" rel="noopener">The Perilous World of Machine Learning for Fun and Profit: Pipeline Jungles and Hidden Feedback Loops</a></li>
+<li><a href="http://www.kdnuggets.com/2015/01/high-cost-machine-learning-technical-debt.html" target="_blank" rel="noopener">The High Cost of Maintaining Machine Learning Systems</a></li>
+</ul>
+<h3 id="Welcome-to-the-Danger-Zone"><a href="#Welcome-to-the-Danger-Zone" class="headerlink" title="Welcome to the Danger Zone"></a>Welcome to the Danger Zone</h3><p>So you are dabbling with Machine Learning. You&#x2019;ve got Hacking Skills. Maybe you&#x2019;ve got some &#x201C;knowledge&#x201D; in Domingos&#x2019; sense (some &#x201C;Substantive Expertise&#x201D; or &#x201C;Domain Knowledge&#x201D;). This diagram isn&#x2019;t a perfect fit for us, but may get the point across:</p>
+<p><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank" rel="noopener"></a></p><div class="amp-img-wrapper"><a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank" rel="noopener"><amp-img src="http://i.imgur.com/cH5Rkko.png" width="528" height="504" layout="responsive"></amp-img></a></div>
+<p><strong>Please</strong> don&#x2019;t sell yourself as a Machine Learning expert while you&#x2019;re still in the Danger Zone. Don&#x2019;t build bad products or publish junk science. This guide can&#x2019;t tell you how you&#x2019;ll know you&#x2019;ve &#x201C;made it&#x201D; into Machine Learning competence &#x2026; let alone  expertise. It&#x2019;s hard to evaluate proficiency without schools or other institutions. This is a common problem for self-taught people.</p>
+<h4 id="Towards-Expertise"><a href="#Towards-Expertise" class="headerlink" title="Towards Expertise"></a>Towards Expertise</h4><p>You need practice. <a href="https://news.ycombinator.com/item?id=10508565" target="_blank" rel="noopener">On Hacker News, user olympus commented to say you could use competitions to practice and evaluate yourself</a>. <a href="http://www.kaggle.com/competitions" target="_blank" rel="noopener">Kaggle</a> and <a href="http://www.chalearn.org/" target="_blank" rel="noopener">ChaLearn</a> are hubs for Machine Learning competitions. You can find some <a href="https://github.com/apeeyush/machine-learning" target="_blank" rel="noopener">examples of code for popular Kaggle competitions here</a>. For smaller exercises, <a href="https://www.hackerrank.com/domains/ai/machine-learning/page/1" target="_blank" rel="noopener">try HackerRank</a>.</p>
+<p>You also need understanding. You should review what Kaggle competition winners had to say about their solutions, <a href="http://blog.kaggle.com/" target="_blank" rel="noopener">for example, the &#x201C;No Free Hunch&#x201D; blog</a>. These might be over your head at first but once you&#x2019;re starting to understand and appreciate these, you know you&#x2019;re getting somewhere.</p>
+<p>Competitions and challenges are one way to practice. You shouldn&#x2019;t limit yourself, though.</p>
+<p>Here&#x2019;s a complementary way to practice: <strong>do practice studies.</strong></p>
+<ol>
+<li><strong>Ask a question. Start your own study.</strong> The <a href="https://github.com/DataScienceSpecialization/courses/blob/master/01_DataScientistToolbox/03_02_whatIsData/index.Rmd#the-data-is-the-second-most-important-thing" target="_blank" rel="noopener">&#x201C;most important thing in data science is the question&#x201D;</a> (<a href="https://github.com/jtleek" target="_blank" rel="noopener">Dr. Jeff T. Leek</a>). So start with a question. Then, find <a href="https://github.com/caesar0301/awesome-public-datasets" target="_blank" rel="noopener">real data</a>. Analyze it. Then &#x2026;</li>
+<li><strong>Communicate results.</strong> When you have a novel finding, reach out for peer review (see below).</li>
+<li><strong>Fix issues.</strong> Learn. Share what you learn.</li>
+</ol>
+<p>And repeat. Re-phrasing this, it fits with the <a href="https://en.wikipedia.org/wiki/Scientific_method" target="_blank" rel="noopener">scientific method</a>: formulate a question (or problem statement), create a hypothesis, gather data, analyze the data, and communicate results. (You should <a href="http://101.datascience.community/2012/06/27/the-data-scientific-method/" target="_blank" rel="noopener">watch this video about the scientific method in data science</a>, and/or <a href="http://customerthink.com/getting-insights-using-data-science-skills-and-the-scientific-method/" target="_blank" rel="noopener">read this article</a>.)</p>
+<p>How can you come up with interesting questions? Once a week, <a href="https://github.com/caesar0301/awesome-public-datasets" target="_blank" rel="noopener">browse datasets</a> and write down some questions. Also, you should sign up for <a href="https://tinyletter.com/data-is-plural" target="_blank" rel="noopener">Data is Plural</a>, a newsletter of interesting data sets. Stay curious. When a question inspires you, start a study.</p>
+<p>This advice, to do practice studies and learn from peer review, is based on <a href="https://github.com/hangtwenty/dive-into-machine-learning/issues/11#issuecomment-153934120" target="_blank" rel="noopener">a conversation</a> with <a href="http://www.randalolson.com/" target="_blank" rel="noopener">Dr. Randal S. Olson</a>. Here&#x2019;s more advice from Olson, <a href="https://github.com/hangtwenty/dive-into-machine-learning/issues/11#issuecomment-154135498" target="_blank" rel="noopener">quoted with permission:</a></p>
+<blockquote>
+<p>I think the best advice is to tell people to always present their methods clearly and to avoid over-interpreting their results. Part of being an expert is knowing that there&#x2019;s rarely a clear answer, especially when you&#x2019;re working with real data.</p>
+</blockquote>
+<p>As you repeat this process, your practice studies will become more scientific, interesting, and focused. The most important part of this process is peer review.</p>
+<h4 id="Ask-for-Peer-Review"><a href="#Ask-for-Peer-Review" class="headerlink" title="Ask for Peer Review"></a>Ask for Peer Review</h4><p>Here are some communities where you can reach out for peer review:</p>
+<ul>
+<li><a href="https://stats.stackexchange.com/" target="_blank" rel="noopener">Cross-Validated: stats.stackexchange.com</a></li>
+<li><a href="https://reddit.com/r/DataIsBeautiful" target="_blank" rel="noopener">/r/DataIsBeautiful</a></li>
+<li><a href="https://reddit.com/r/DataScience" target="_blank" rel="noopener">/r/DataScience</a></li>
+<li><a href="https://reddit.com/r/MachineLearning" target="_blank" rel="noopener">/r/MachineLearning</a></li>
+<li><a href="https://news.ycombinator.com" target="_blank" rel="noopener">Hacker News: news.ycombinator.com</a>. You&#x2019;ll probably want to submit as &#x201C;Show HN&#x201D;</li>
+</ul>
+<p>Post to any of those, and ask for feedback. You&#x2019;ll get feedback. You&#x2019;ll learn a ton. As experts review your work you will learn a lot about the field. You&#x2019;ll also be practicing the skill of accepting critical feedback.</p>
+<p>When I read the feedback on my Pull Requests, first I repeat to myself, &#x201C;I will not get defensive, I will not get defensive, I will not get defensive.&#x201D; You may want to do that before you read reviews of your Machine Learning work too.</p>
+<h3 id="An-Anecdote-About-User-Experience"><a href="#An-Anecdote-About-User-Experience" class="headerlink" title="An Anecdote About User Experience"></a>An Anecdote About User Experience</h3><p>If you create software for users, and you want to use machine learning to benefit your users, <em>you must understand your users.</em> I won&#x2019;t get into a whole user experience lesson here, but in short, you must think about user experience.</p>
+<p>I have a friend who worked at <code>&lt;Redacted&gt;</code> Music Streaming Service. This company used machine learning in their recommendation and radio services. He complained about the way the company scored the radio feature&#x2019;s performance. There was disagreement about what should be scored. They used a metric, &#x201C;no song skips.&#x201D; But why? Sure that indicates the recommendation wasn&#x2019;t <em>awful</em>, what if you want to measure engagement? Other metrics could measure positive engagement: &#x201C;favorites,&#x201D; shares, listening time, or whether the listener returns to the radio station later. Measuring &#x201C;no skips&#x201D; might work for the passive listener, but the engaged listener is different. Perhaps the engaged listener will skip 5 songs, but find 20 songs they love and come back to the service later.</p>
+<p><strong>My takeaway:</strong> user experience matters just as much as ever. You must understand <em>which kind</em> of user you&#x2019;re trying to benefit with your machine learning techniques. (Write user stories!) You must come up with measurements and ways to evaluate success for those users. You must be able to measure before you can optimize.</p>
+<p>This has to do with knowledge of the domain, but also may benefit from UX expertise. Work with UX experts if you can.</p>
+<h3 id="Machine-Learning-in-Internet-Security"><a href="#Machine-Learning-in-Internet-Security" class="headerlink" title="Machine Learning in Internet Security"></a>Machine Learning in Internet Security</h3><p>There was a great BlackHat webcast on this topic, <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html" target="_blank" rel="noopener">Secure Because Math: Understanding Machine Learning-Based Security Products.</a> Slides are <a href="https://www.blackhat.com/html/webcast/02192015-secure-because-math.html" target="_blank" rel="noopener">there</a>, <a href="https://attendee.gotowebinar.com/recording/80449431422110210" target="_blank" rel="noopener">video recording is here.</a> Equally relevant to InfoSec and AppSec.</p>
+<h2 id="Big-Data"><a href="#Big-Data" class="headerlink" title="Big Data?"></a>Big Data?</h2><p>Scaling data analysis is a familiar problem now, and there&#x2019;s no shortage of ways to address it. <a href="http://www.john-foreman.com/blog/surviving-data-science-at-the-speed-of-hype" target="_blank" rel="noopener">Beware needless hype and companies that want to sell you flashy, proprietary solutions.</a> You can do it all with open-source tools. Even if you contract it, you consider looking for contractors who use known good stacks. No news here.</p>
+<p>Here are some tools to reach for:</p>
+<ul>
+<li><strong><a href="https://spark.apache.org/" target="_blank" rel="noopener">Apache Spark.</a></strong><ul>
+<li>I mean, hell, <a href="https://databricks.com/blog/2015/02/17/introducing-dataframes-in-spark-for-large-scale-data-science.html" target="_blank" rel="noopener">Spark has DataFrames and easy co-operability with pandas!</a></li>
+<li>Berkeley has <a href="https://www.edx.org/course/scalable-machine-learning-uc-berkeleyx-cs190-1x#.VOC70VPF_lQ" target="_blank" rel="noopener">a course on Scalable Machine Learning, focusing on Apache Spark.</a></li>
+</ul>
+</li>
+<li><a href="http://netflix.github.io/#repo" target="_blank" rel="noopener">NetflixOSS</a> (see &#x201C;Big Data Tools&#x201D;)<ul>
+<li><a href="http://techblog.netflix.com/2015/01/introducing-surus-and-scorepmml.html" target="_blank" rel="noopener">Netflix: Surus and ScorePMML</a></li>
+<li><a href="http://techblog.netflix.com/search/label/big%20data" target="_blank" rel="noopener">&#x201C;big data&#x201D; on the NetflixOSS blog</a></li>
+</ul>
+</li>
+</ul>
+<p>Also: <a href="http://simplystatistics.org/2014/05/22/10-things-statistics-taught-us-about-big-data-analysis/" target="_blank" rel="noopener">10 things statistics taught us about big data analysis</a></p>
+<h2 id="Finding-Open-Source-Libraries"><a href="#Finding-Open-Source-Libraries" class="headerlink" title="Finding Open-Source Libraries"></a>Finding Open-Source Libraries</h2><ul>
+<li>Bookmark <strong><a href="https://github.com/josephmisiti/awesome-machine-learning" target="_blank" rel="noopener">awesome-machine-learning</a></strong>, a curated list of <a href="https://github.com/bayandin/awesome-awesomeness" target="_blank" rel="noopener">awesome</a> Machine Learning libraries and software.</li>
+<li><a href="http://www.tensorflow.org/" target="_blank" rel="noopener">TensorFlow</a> seems like a <a href="https://news.ycombinator.com/item?id=10532957" target="_blank" rel="noopener">really big deal.</a> People like you will do exciting things with TensorFlow. It&#x2019;s a framework. Frameworks can help you manage complexity. Just remember this rule of thumb: <strong>&#x201C;More data beats a cleverer algorithm&#x201D;</strong> (Domingos), no matter how cool your tools are. Also note, TensorFlow is not the only machine learning framework of its kind: <strong><a href="https://github.com/zer0n/deepframeworks" target="_blank" rel="noopener">Check this great, detailed comparison of TensorFlow, Torch, and Theano.</a></strong> See also <a href="https://github.com/Newmu/Theano-Tutorials" target="_blank" rel="noopener">Newmu/Theano-Tutorials</a> and  <a href="https://github.com/nlintz/TensorFlow-Tutorials" target="_blank" rel="noopener">nlintz/TensorFlow-Tutorials</a>.</li>
+<li>Bookmark <strong><a href="https://github.com/svaksha/pythonidae/blob/master/AI.md#machine-learning" target="_blank" rel="noopener">Pythonidae</a></strong>, a curated list of <a href="https://github.com/bayandin/awesome-awesomeness" target="_blank" rel="noopener">awesome</a> libraries and software in the Python language.</li>
+<li>Bookmark <strong><a href="https://github.com/svaksha/Julia.jl/blob/master/AI.md#machine-learning" target="_blank" rel="noopener">Julia.jl</a></strong>, a curated list of <a href="https://github.com/bayandin/awesome-awesomeness" target="_blank" rel="noopener">awesome</a> libraries and software in the Julia language.</li>
+<li>For Machine-Learning libraries that might not be on PyPI, GitHub, etc., there&#x2019;s <a href="http://mloss.org/software/" target="_blank" rel="noopener">MLOSS (Machine Learning Open Source Software)</a>. Seems to feature many academic libraries.</li>
+</ul>
+<h2 id="Alternative-ways-to-&#x201C;Dive-into-Machine-Learning&#x201D;"><a href="#Alternative-ways-to-&#x201C;Dive-into-Machine-Learning&#x201D;" class="headerlink" title="Alternative ways to &#x201C;Dive into Machine Learning&#x201D;"></a>Alternative ways to &#x201C;Dive into Machine Learning&#x201D;</h2><p>Here are some other guides to Machine Learning. They can be alternatives or complements to this guide.</p>
+<ul>
+<li><a href="http://xyclade.github.io/MachineLearning/" target="_blank" rel="noopener">Machine Learning for Developers</a> is another good introduction. It introduces machine learning for a developer audience using Smile, a machine learning library that can be used both in Java and Scala.</li>
+<li><a href="http://www.jacksimpson.co/2015/06/07/materials-for-learning-machine-learning/" target="_blank" rel="noopener">Materials for Learning Machine Learning</a> by Jack Simpson</li>
+<li><a href="https://docs.google.com/document/d/1YN6BVdReNAYc8B0fjQ84yzDflqmeEPj7S0Xc-9_26R0/edit" target="_blank" rel="noopener">How to Machine Learn</a> by <a href="http://gwulfs.github.io/" target="_blank" rel="noopener">Gideon Wulfsohn</a></li>
+<li><a href="https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/example-data-science-notebook/Example%20Machine%20Learning%20Notebook.ipynb" target="_blank" rel="noopener">Example Machine Learning notebook, exercise, and guide</a> by Dr. Randal S. Olson. Mentioned in Notebooks section as well, but it has a similar goal to this guide (introduce you, and show you where to go next). Rich &#x201C;Further Reading&#x201D; section.</li>
+<li>[Your guide here]</li>
+</ul>
+<blockquote>
+<p>&#x540E;&#x8BB0;&#xFF1A; &#x6B22;&#x8FCE;&#x52A0;&#x5165;&#x6211;&#x7684;&#x79C1;&#x4EBA;&#x516C;&#x4F17;&#x53F7;&#xFF0C; &#x548C;&#x4F60;&#x5206;&#x4EAB;&#x6211;&#x601D;&#x8003;&#x7684;&#x89C2;&#x70B9;&#x548C;&#x6587;&#x7AE0;&#xFF1A;<br></p><div class="amp-img-wrapper"><amp-img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" width="430" height="430" layout="responsive"></amp-img></div>
+</blockquote>
+
+			  		
+			  		<!-- google Adsense -->
+			  		
+					
+					
+					
+					
+			    	
+					
+					<!-- google Adsense Matched content -->
+			  		
+			  	</div>
+				
+		  	</article>
+		  	
+		  	
+		  	<!-- TAGS -->
+		  	
+		  	<div class="meta-content">
+				
+				<div class="widget">
+				  	<h6 class="tag"><span class="fa fa-fw fa-tag"></span>TAGS</h6>
+				  	<div class="article-tag">
+						<ul class="article-tag-list">
+							
+					    		<li class="article-tag-list-item">
+					    			<a class="article-tag-list-link" href="/tags/machine-learning/" class="link-gaTrack" data-linkType="link-tag">
+					    				machine learning
+					    			</a>
+					    		</li>
+							
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		  	
+		  	
+		  	<!-- Categories posts -->
+		  	
+		  	
+		  	
+		  	<!-- Detailed categories  posts -->
+		  	
+		  	
+		  	
+		  	<!-- Latests -->
+		  	
+			
+		</div>
+		
+		
+		<footer id="footer">
+		
+			
+			
+			
+			
+			<div class="copyright-tool">
+				
+				
+				
+				<div class="copyright-title">
+					<span>
+					&copy; 2018&nbsp;余舜哲的 One Piece
+					</span>
+				</div>
+				
+				<div class="copyright-license">
+					<aside>
+						Powered by <a href="https://hexo.io/">Hexo</a>. <a href="https://github.com/tea3/hexo-generator-amp">AMP-Theme</a> designed by <a href="https://photo-tea.com/">tea</a>.
+					</aside>
+				</div>
+			</div>
+			
+		</footer>
+		
+		
+	</div>
+	
+	
+  	<div id="totop"><a href="#"></a></div>
+  	
+  	
+  </body>
+</html>
