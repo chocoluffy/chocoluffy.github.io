@@ -167,12 +167,12 @@ generator_amp:
   templateDir:  amp-template
   assetDistDir: amp-dist
   logo:
-    path:   favicon.png
+    path:   sample/sample-logo.png
     width:  600
     height: 60
   substituteTitleImage: 
-    path:   top.png
+    path:   sample/sample-substituteTitleImage.png
     width:  1024
-    height: 640
+    height: 800
   warningLog: false   # To display warning, please set true.
   validateAMP: true   # To AMP HTML validate automatically, please set true.
