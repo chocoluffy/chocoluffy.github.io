@@ -176,3 +176,5 @@ generator_amp:
     height: 800
   warningLog: false   # To display warning, please set true.
   validateAMP: true   # To AMP HTML validate automatically, please set true.
+  # 3. Google Analytics Option
+  google_analytics: UA-66874854-1
