@@ -73,7 +73,6 @@ if (position <= 100) {
 
 ## 版本2.0（增加了自适应居中）
 
-<img src="https://dl.dropboxusercontent.com/s/8y6fr3ib87yz9h7/screensplit2.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;">
 
 初衷： 因为从拍摄的角度， 大部分的时间， 我们都会把拍摄的主体放在视频的中间位置， 而如果我们只是简单地移动视窗而不改变视窗的主角位置的话， 我们在鼠标移动的时候， 就只能看到边边角的视频内容了， 这违反设计直觉。
 
@@ -92,7 +91,6 @@ leftVideo.style.webkitTransform = "translate(-" + offsetRight / 2 + "px, 0)";
 
 那这个地方，`offset`就是鼠标在container里面距离左边边框的距离， 那么我们同时根据这个距离， 让左边的视频在视窗移动时， **往相反的方向以一半的速度移动来弥补视窗偏差**。使得可以在视窗移动的时候， 始终保持视频本身拍摄的主体视角也处于该视窗的主体视角! 原理可以参考这个图：
 
-<img src="https://dl.dropboxusercontent.com/s/t99wbc4n3s8c4r7/screensplit3.0.gif?dl=0" alt="" style="display: block; margin: 0 auto;">
 
 那么也就大功告成啦!
 
