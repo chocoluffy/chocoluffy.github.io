@@ -93,17 +93,20 @@
 
 
 <meta name="description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="D3js in 3D [Animation focus]">
 <meta property="og:url" content="http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/index.html">
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
-<meta property="og:updated_time" content="2016-01-26T03:16:30.000Z">
+<meta property="og:updated_time" content="2018-03-09T19:42:48.475Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3js in 3D [Animation focus]">
 <meta name="twitter:description" content="Focus on how animations work in such 3D scene and how I achieve that. Live Demo here!">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
 
 
 
@@ -412,16 +415,16 @@
         <p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" alt="Animation"></p>
-<h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
+<h2 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
 <p>Say, we have a lot of <code>&lt;a-cube&gt;</code> now, and we want to add the click event listener to the <code>&lt;a-cube&gt;</code> below to trigger the animations of the <code>&lt;a-cube&gt;</code> above the scene. [The way we add animations is to append tag <code>&lt;a-animation&gt;</code>  as the childNode of the <code>&lt;a-cube&gt;</code>]. Now, in order to do that attachment in one time, we need to group all the <code>&lt;a-cube&gt;</code> into a container, we can just use a <code>&lt;a-entity id=“meteor”&gt;&lt;/a-entity&gt;</code> to do that thing. So we can add the click event listener at the parent node, and when the childNode get clicked, the event will propagated to the parent level by level, and back then when it achieve the targeted parent. we can trigger the function and do all the <code>append</code> or other actions on <code>e.target</code>. [here <code>e.target</code> refers to the one get clicked]. </p>
 <p>In the later interaction. we want the action of one object may trigger another object’s actions. Then, we need to leave such mark to indicate which object may be related to! For example, in my code, I use  a data-attribute called “flag” as a id to indicate which object to bind. So later in the eventListener, we can use <code>e.target.getAttribute(“flag”)</code> to obtain that value for further use like <code>meteorParentNode.childNodes[e.target.getAttribute(“flag”)].append()</code> some animation nodes to the “meteor”!!</p>
-<h2 id="Image_on_meteor">Image on meteor</h2><p>In order to make it a fun, I decided to use image as the surface of the meteors ,  and the way to achieve that is to wrap a tag <code>&lt;a-root&gt;</code> and a tag <code>&lt;a-entity&gt;</code> further inside. So now the structure will be like:<br><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;a-entity some-attributes-here&gt;</span></span><br><span class="line">	<span class="tag">&lt;a-root&gt;</span></span><br><span class="line">		<span class="tag">&lt;a-entity some-attribute-here&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Image-on-meteor"><a href="#Image-on-meteor" class="headerlink" title="Image on meteor"></a>Image on meteor</h2><p>In order to make it a fun, I decided to use image as the surface of the meteors ,  and the way to achieve that is to wrap a tag <code>&lt;a-root&gt;</code> and a tag <code>&lt;a-entity&gt;</code> further inside. So now the structure will be like:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a-entity some-attributes-here&gt;</span><br><span class="line">	&lt;a-root&gt;</span><br><span class="line">		&lt;a-entity some-attribute-here&gt;</span><br></pre></td></tr></table></figure></p>
 <p>And set the src to be some texture image or even in this project some funny images as the surface of the meteors. And that’s it! </p>
-<h2 id="Further_Reading">Further Reading</h2><ul>
-<li><a href="http://aframevr.tumblr.com/" target="_blank" rel="external">Aframe in tumblr</a></li>
-<li><a href="https://aframe.io/docs/core/animation.html" target="_blank" rel="external">Official Aframe animations guide</a></li>
-<li><a href="http://projects.bmannconsulting.com/aframe-boilerplate/" target="_blank" rel="external">How to add texture for Aframe objects</a></li>
-<li><a href="http://www.kirupa.com/html5/handling_events_for_many_elements.htm" target="_blank" rel="external">How to add event listener to multiple sibling elements</a></li>
+<h2 id="Further-Reading"><a href="#Further-Reading" class="headerlink" title="Further Reading"></a>Further Reading</h2><ul>
+<li><a href="http://aframevr.tumblr.com/" target="_blank" rel="noopener">Aframe in tumblr</a></li>
+<li><a href="https://aframe.io/docs/core/animation.html" target="_blank" rel="noopener">Official Aframe animations guide</a></li>
+<li><a href="http://projects.bmannconsulting.com/aframe-boilerplate/" target="_blank" rel="noopener">How to add texture for Aframe objects</a></li>
+<li><a href="http://www.kirupa.com/html5/handling_events_for_many_elements.htm" target="_blank" rel="noopener">How to add event listener to multiple sibling elements</a></li>
 </ul>
 <blockquote>
 <p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
@@ -492,7 +495,7 @@
       
 
       
-        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2015/12/24/用reveal-js制作生日派对礼物/">用reveal.js制作生日礼物</a></li><li><a href="/2016/04/23/创意视频分屏-HTML5-JS/">创意视频分屏 - HTML5 & JS</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/08/01/React-ES6-style-guideline/">React/ES6 style guideline</a></li><li><a href="/2016/05/15/前端开发工具库-第一期-npm-script/">前端开发工具库[第一期]-npm script</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li></ul>
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/05/04/AWS-elastic-beanstalk使用体验/">AWS elastic beanstalk使用体验</a></li><li><a href="/2016/05/12/Angular入门-module和service/">Angular入门-module和service</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/">Ajax(with Jquery) on Nodejs server</a></li><li><a href="/2016/08/01/React-ES6-style-guideline/">React/ES6 style guideline</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li></ul>
       
     </footer>
   </article>
@@ -641,7 +644,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Animation"><span class="nav-number">1.</span> <span class="nav-text">Animation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image_on_meteor"><span class="nav-number">2.</span> <span class="nav-text">Image on meteor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Further_Reading"><span class="nav-number">3.</span> <span class="nav-text">Further Reading</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Animation"><span class="nav-number">1.</span> <span class="nav-text">Animation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Image-on-meteor"><span class="nav-number">2.</span> <span class="nav-text">Image on meteor</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Further-Reading"><span class="nav-number">3.</span> <span class="nav-text">Further Reading</span></a></li></ol></div>
             
           </div>
         </section>
