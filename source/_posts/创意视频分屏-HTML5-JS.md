@@ -8,15 +8,11 @@ categories: 技术
 
 <!-- more -->
 
-<img src="https://dl.dropboxusercontent.com/s/09k1efohvmdkphu/beoplay%20demo.gif?dl=0" alt="" style="display: block; margin: 0 auto;">
-
 ## 目标
 
 仿造beoplay这款耳机[主页的宣传视频](http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#video)来实现一个类似的视频分屏的效果。
 
 ## 版本1.0（不加视频自适应居中）
-
-<img src="https://dl.dropboxusercontent.com/s/zppojylzfsyk6in/screensplit1.0.gif?dl=0" alt=""  style="display: block; margin: 0 auto;">
 
 right video是静止的不动的， 同时位于最底层。 目前所有的伸缩都是在控制left video， 同时由于我们设置了left video的`z-index`为3， 那么左边的视频会覆盖在右边的视频上。接下来的目标就很明确了， 我们需要追踪鼠标在整个container里面的位置(我们会用占宽度的百分比来表示)， 然后， 通过改变左边视频的宽度， 同时也就把位于下面的右边视频暴露出来了， 来达到切换的效果。
 
