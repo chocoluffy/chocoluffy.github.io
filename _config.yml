@@ -162,3 +162,17 @@ douban:
 # Image lazyload [https://github.com/Robin-front/hexo-lazyload]
 # lazyload:
 #   enable: true
+
+generator_amp:
+  templateDir:  amp-template
+  assetDistDir: amp-dist
+  logo:
+    path:   source/favicon.png
+    width:  600
+    height: 60
+  substituteTitleImage: 
+    path:   source/favicon.png
+    width:  1024
+    height: 800
+  warningLog: false   # To display warning, please set true.
+  validateAMP: true   # To AMP HTML validate automatically, please set true.

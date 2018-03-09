@@ -41,6 +41,10 @@
 
 <link href="{{ url_for(theme.css) }}/main.css?v={{ theme.version }}" rel="stylesheet" type="text/css" />
 
+{% if is_post() && config.generator_amp %}
+  <link rel="amphtml" href="./amp/index.html">
+{% endif %}
+
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elif page.tags and page.tags.length %}
