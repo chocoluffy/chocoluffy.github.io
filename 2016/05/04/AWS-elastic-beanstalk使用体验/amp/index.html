@@ -44,6 +44,8 @@
     
     
     
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script type="application/ld+json">
 		{
@@ -58,7 +60,7 @@
 			    "@id":"http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/"
 			},
 			"datePublished": "2016-05-05T01:03:58.000Z",
-			"dateModified": "2018-03-09T22:22:23.095Z",
+			"dateModified": "2018-03-09T22:29:52.439Z",
 			
 			"image": {
 				"@type": "ImageObject",
@@ -1749,6 +1751,22 @@ h6.categories {
   	
   	<!-- google analytics -->
   	
+  	<amp-analytics type="googleanalytics" id="google-analytics">
+		<script type="application/json">
+		{
+		  "vars": {
+		    "account": "UA-66874854-1"
+		  },
+		  "triggers": {
+		    "trackPageview": {
+		      "on": "visible",
+		      "request": "pageview"
+		    }
+		  }
+		}
+		</script>
+	</amp-analytics>
+	
   	
   	
   	<!-- menu -->

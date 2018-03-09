@@ -44,6 +44,8 @@
     
     
     
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script type="application/ld+json">
 		{
@@ -58,7 +60,7 @@
 			    "@id":"http://chocoluffy.com/2014/11/27/On-Vision/"
 			},
 			"datePublished": "2014-11-28T03:50:38.000Z",
-			"dateModified": "2018-03-09T22:22:23.095Z",
+			"dateModified": "2018-03-09T22:29:52.443Z",
 			
 			"image": {
 				"@type": "ImageObject",
@@ -1749,6 +1751,22 @@ h6.categories {
   	
   	<!-- google analytics -->
   	
+  	<amp-analytics type="googleanalytics" id="google-analytics">
+		<script type="application/json">
+		{
+		  "vars": {
+		    "account": "UA-66874854-1"
+		  },
+		  "triggers": {
+		    "trackPageview": {
+		      "on": "visible",
+		      "request": "pageview"
+		    }
+		  }
+		}
+		</script>
+	</amp-analytics>
+	
   	
   	
   	<!-- menu -->
