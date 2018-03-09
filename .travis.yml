@@ -10,6 +10,7 @@ cache:
 
 before_install:
     - export TZ='America/New_York'
+    - npm install npm -g
     - npm install hexo-cli -g
     - chmod +x ./publish-to-gh-pages.sh
 
