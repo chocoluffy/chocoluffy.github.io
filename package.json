@@ -6,11 +6,9 @@
     "version": "3.1.1"
   },
   "dependencies": {
-    "concat-map": "0.0.1",
     "hexo": "^3.1.1",
     "hexo-deployer-git": "0.0.4",
     "hexo-douban": "^0.1.9",
-    "hexo-fs": "^0.2.2",
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-baidu-sitemap": "^0.1.2",
     "hexo-generator-category": "^0.1.2",
