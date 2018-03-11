@@ -1,0 +1,253 @@
+//-----------------------------
+// article
+//-----------------------------
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  color: color-default
+  text-decoration: none
+  &:hover
+    color: color-link
+
+#container
+  margin-left: auto
+  margin-right: auto
+#main
+  margin-bottom: 3em
+  padding-left: 0
+.post
+  margin-bottom: content-margin
+  position: relative
+.entry-content
+  margin: 0 font-size * 0.6
+  font-size: font-size
+
+  h1
+    font-size: font-size * 1.7
+    line-height: 1.5
+    margin: 1em 0 0.8em
+  h2, h3, h4, h5, h6 , h2 span, h3 span, h4 span, h5 span, h6 span
+    color: color-h
+    font-weight: bold
+  h2 , h2 span
+    font-size: font-size * 1.8
+    line-height: font-size * 2.6
+    text-align: center
+  h2
+    border-bottom: 2px solid color-h-border
+    margin: content-margin * 1.5 0 0.5em
+    padding: 0.8em 0
+  h3 , h3 span
+    font-size: font-size * 1.6
+    line-height: font-size * 2.2
+    text-align: center
+  h3
+    margin: content-margin * 1.2 content-margin-side content-margin content-margin-side
+    padding: 0
+  h4 , h4 span
+    font-size: font-size * 1.4
+    line-height: font-size * 2.0
+    text-align: center
+  h4
+    margin: content-margin * 1.2 content-margin-side content-margin content-margin-side
+    padding: 0
+  h5 , h5 span
+    font-size: font-size * 1.2
+    line-height: font-size * 1.8
+    text-align: center
+  h5
+    margin: content-margin * 1.2 content-margin-side content-margin content-margin-side
+    padding: 0
+  h6 , h6 span
+    font-size: font-size * 1.1
+    line-height: font-size * 1.6
+    text-align: center
+  h6
+    margin: content-margin * 1.2 content-margin-side content-margin content-margin-side
+    padding: 0
+
+
+  p
+    font-size: font-size
+    letter-spacing: letter-spacing
+    line-height: font-size * 2.2
+    margin: content-margin content-margin-side
+    a
+      word-wrap : break-word
+      overflow-wrap : break-word
+      display: inline
+      border-bottom: 1px dashed lighten(color-link , 18)
+      padding-bottom: font-size * 0.3
+      &:hover
+        border-bottom: 1px dashed darken(color-link , 18)
+        padding-bottom: font-size * 0.4
+  em
+    // background-color: color-em-background
+    // color: color-em
+    font-style: normal
+    // margin: 0 2px
+    // padding: 0.4em
+    border-bottom: 4px solid color-em-background
+    font-weight: bold
+  strong
+    // color: color-strong
+    font-style: normal
+    // margin: 0 2px
+    // padding: 0.4em
+    // background-color: color-strong-background
+    border-bottom: 4px solid color-strong-background
+    font-weight: bold
+  hr
+    border: 0
+    border-top: 3px solid color-h-border
+    margin: content-margin auto
+    width: 20%
+  img, video
+    display: block
+    height: auto
+    margin: auto
+    max-width: 100%
+  iframe
+    width: 100% !important
+
+  // blockquote p:last-child, .archive .post
+  //   margin-bottom: 0
+  blockquote
+    margin: content-margin content-margin-side
+    padding: font-size font-size * 1.8
+    position: relative
+    background-color: none
+    border-left: 3px solid color-blockquote-border
+    font-style: italic
+    p
+      margin: font-size * 0.5 0
+    blockquote
+      border-left: none
+
+  .table-wrapper
+    margin: content-margin content-margin-side
+  table
+    border-collapse: collapse
+    border-spacing: 0
+    overflow: auto
+    display: block
+    font-size: font-size * 0.85
+    margin: 0 auto
+    width: auto
+  td , th
+    line-height: 1.8em
+    padding: font-size * 0.8 font-size * 0.8
+    font-size: font-size * 0.85
+    em , strong ,a
+      font-size: font-size * 0.85
+  td
+    border: 1px solid darken(color-border,10)
+  th
+    background-color: color-tableBack
+    border: 1px solid darken(color-border,10)
+  .table-align-center
+    text-align: center
+  .table-align-right
+    text-align: right
+
+
+
+
+  ul , ol , dl
+    margin: content-margin-side
+    padding: content-margin-side content-margin-side content-margin-side content-margin-side * 2
+    list-style: none
+    font-size: font-size
+    border: 1px solid color-h-border
+    border-radius: 4px
+    li
+      line-height: line-height
+      position: relative
+      padding: 0
+      p
+        line-height: line-height
+        margin: 0
+        &:not(:first-child)
+          color: color-default-weak
+          margin: font-size * 0.5
+      ul , ol , dl
+        margin: font-size
+
+  ul
+    li
+      margin: font-size * 0.4 0 font-size * 0.4 font-size * 0.8
+      &::after
+        position: absolute
+        display: block
+        content: ''
+        top: font-size - font-size * 0.5 * 0.5
+        left: -1 * font-size
+        width: font-size * 0.5
+        height: font-size * 0.5
+        background-color: color-h-border
+        border-radius: 100%
+
+  ol
+    counter-reset:number
+    li
+      margin: font-size * 0.4 0 font-size * 0.4 font-size * 2.0
+      p:first-child
+        display: inline-block
+        line-height: font-size * 1.6
+        height: font-size * 1.6
+      &:before
+        position: absolute
+        display: inline-block
+        float: left
+        margin: 0 font-size * 0.2 0 0
+        padding: 0
+        counter-increment: number
+        content: counter(number)
+        left: -1 * font-size * 2.2
+        top: font-size - font-size * 1.6 * 0.5
+        background-color: color-h
+        width: font-size * 1.6
+        height: font-size * 1.6
+        border-radius: 50%
+        color: color-background
+        text-align: center
+        font-weight: bold
+        font-size: font-size * 0.8
+        line-height: font-size * 1.6
+
+
+kbd
+  font-family: font-sans
+  text-align: center
+  display: inline-block
+  color: lighten(color-default,10)
+  -moz-osx-font-smoothing: grayscale
+  -webkit-border-radius: 3px
+  box-shadow: 0 0 10px #e8e8e8 inset, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 3px 3px #333333
+  -webkit-box-shadow: 0 0 10px #e2e2e2 inset, 0 1px 0 #c3c3c3, 0 2px 0 #c9c9c9, 0 3px 3px #333333
+  -webkit-font-smoothing: subpixel-antialiased
+  background: color-background
+  // border-bottom: 1px solid #e6e6e6
+  border-left: 1px solid color-background
+  border-radius: 3px
+  border-right: 1px solid #e6e6e6
+  border-top: 1px solid color-background
+  
+  font-size: font-size * 0.85
+  line-height: font-size
+  margin: 5px
+  padding: 6px 8px 3px
+  text-shadow: 0 1px 0 color-background
+  vertical-align: baseline
+  zoom: 1px
+
+
+img
+  &.responsive-img
+    height: auto
+    max-width: 100%
+video.responsive-video
+  height: auto
+  max-width: 100%
+
+
+amp-instagram , amp-vimeo , amp-video , amp-youtube , amp-twitter , .soundcloud-wrapper , .amp-img-wrapper , .googleAdPost , .ad-footer 
+  margin: content-margin content-margin-side

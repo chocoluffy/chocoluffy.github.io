@@ -1,0 +1,81 @@
+//-----------------------------
+// meta
+//-----------------------------
+.meta-content
+  background-color: color-background
+  margin: content-margin * 0.5 content-margin-side
+  padding: 0
+  border-top: 1px dotted color-h-border
+  letter-spacing: letter-spacing
+.meta-wrapper
+  margin: content-margin content-margin-side
+  padding: 0
+  background-color: color-background
+
+h6.tag , h6.categories
+  color: color-default
+  font-size: font-size * 0.9
+  font-weight: bold
+.article-tag-list
+  padding: 0
+.article-tag ,.article-tag-list ,
+.article-categories ,.article-categories-list
+  padding: 0
+  margin: 0
+.article-categories
+  margin-bottom: 1.6em
+.article-tag-list li,
+.article-categories-list li
+  list-style: none
+  display: inline-block
+  padding: 0
+  margin: font-size * 0.2 font-size * 0.1
+  a
+    font-size: font-size * 0.8
+    font-weight: bold
+    padding: font-size * 0.4 font-size * 0.8
+    margin: 0
+    background-color: color-inlineCode-background
+    color: color-default
+    border-radius: 2px
+    display: block
+    &:before
+      content: "#"
+    &:hover
+      color: color-background
+      background-color: color-default
+
+
+.widget
+  margin: content-margin * 0.5 content-margin-side
+  padding: 0
+.widget-h
+  text-align: center
+  margin: content-margin-side * 2 0
+  h6
+    color: color-background
+    background-color: color-default
+    display: inline-block
+    padding: font-size * 0.4 font-size
+    font-size: font-size * 0.9
+    font-weight: bold
+.posts-list
+  li
+    list-style: none
+    margin: content-margin-side 0
+    FlexBox()
+    .posts-list-link
+      FlexGlow(3)
+      a
+        color: color-default
+        font-size: font-size * 1.1
+        font-weight: bold
+        &:hover
+          color: color-link
+    .posts-list-meta
+      font-size: font-size * 0.7
+    .flx
+      &:first-child
+        margin: 0 font-size 0 0
+    amp-img
+      border-radius: 2px
