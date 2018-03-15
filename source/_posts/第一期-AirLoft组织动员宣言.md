@@ -8,7 +8,7 @@ The best education comes from inside.
 
 <!-- more -->
 
-<div style='text-align:center' markdown='1'>![pink](http://ac-TC2Vc5Tu.clouddn.com/b000a844b66d48d1.jpg)</div>
+<img src="http://ac-TC2Vc5Tu.clouddn.com/b000a844b66d48d1.jpg" style="display: block; margin: 0 auto; border: none">
 
 ## Orientation
 
