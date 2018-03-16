@@ -1058,6 +1058,7 @@ pre .javascript .function {
 .posts-expand .post-body h5,
 .posts-expand .post-body h6 {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .posts-expand .post-body h2 .header-anchor,
 .posts-expand .post-body h3 .header-anchor,
@@ -1676,7 +1677,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #91ff24;
+  background: #1d38dd;
 }
 .links-of-blogroll {
   font-size: 13px;
