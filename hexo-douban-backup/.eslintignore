@@ -1,5 +1,3 @@
 node_modules/
-*.log/
-tmp/
 coverage/
-.idea/
+tmp/
