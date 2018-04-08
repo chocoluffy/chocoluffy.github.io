@@ -22,8 +22,6 @@ categories: 技术
 
 下图是截止至今年1月为止的各平台的插件数量，仍在不断地增加中。
 
-![npm script](http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png)
-
 ## 什么是npm script
 
 其实npm script就是希望执行的command的alias， 类似与command line里面的make， 通过提前设置希望执行的命令， 我们可以通过`npm run <alias>`来执行我们预先设置的命令。 还有一些特别方便的commands比如：

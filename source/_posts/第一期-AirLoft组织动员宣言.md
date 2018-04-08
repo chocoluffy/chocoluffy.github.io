@@ -8,8 +8,6 @@ The best education comes from inside.
 
 <!-- more -->
 
-<img src="http://ac-TC2Vc5Tu.clouddn.com/b000a844b66d48d1.jpg" style="display: block; margin: 0 auto; border: none">
-
 ## Orientation
 
 这个ada内部组织airloft成立的目的， 是我希望大家能在一个更加紧密和熟悉的环境下分享和学习课外知识， 采用github托管的形式是因为它管理代码的高协作效率和peer review的便捷。
