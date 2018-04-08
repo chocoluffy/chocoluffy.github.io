@@ -1317,7 +1317,6 @@
       <url>http://chocoluffy.com/2016/05/23/socket-io%E5%BC%80%E5%8F%91%E5%A4%9A%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p>用socket.io搭配express写的一个多人聊天室应用， 同时借这个机会复习了一下socket及TCP/IP的一些细节知识， 在UI上用jquery， 简洁而快速地完成一些基础前端样式的开发， 开发时用nodemon和browser-sync来辅助开发流程。<a href="http://52.20.64.23/chatroom" target="_blank" rel="noopener">在线Demo-网页版</a>, <a href="https://github.com/chocoluffy/chatroom" target="_blank" rel="noopener">github源代码</a>, 欢迎提交bug issue或者pull request~</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/1a5c1f59080e5cc1.png" alt="socket.io"></p>
 <h2 id="什么是socket"><a href="#什么是socket" class="headerlink" title="什么是socket?"></a>什么是socket?</h2><p>socket是对TCP/IP协议的封装， 本身是一个调用接口， 也就是我们常说的API， 用socket可以让程序员更方便的使用TCP/IP协议而已。 </p>
 <p>在学习C语言(csc209)的时候大家接触到的socket的接口函数比如<code>create/listen/connect/accept/send/read/write</code>， 实际上正是针对TCP编程的接口， 在课程里我们用C语言来实现TCP最基础的一个socket链接， 监听， 包括server-client之间的通信，同样的， socket这个调用接口也可以用java, python和nodejs任何后端语言来实现， 也会出现在各种各样需要服务器端和客户端通信的应用中。</p>
 <p>而什么是TCP呢？</p>
@@ -1346,9 +1345,9 @@
 <p><a href="https://github.com/chocoluffy/chatroom" target="_blank" rel="noopener">github源代码    </a></p>
 <p><a href="http://52.20.64.23/chatroom" target="_blank" rel="noopener">在线Demo-网页版</a></p>
 <p>在手机上也是可以用的， 不过UI没有专门针对移动端优化， 会有点糗的感觉😭。有bug汇报到Issue呀， 谢谢~</p>
-<h3 id="效果图Demo"><a href="#效果图Demo" class="headerlink" title="效果图Demo:"></a>效果图Demo:</h3><p>[1] pick a nickname:<br><img src="http://ac-TC2Vc5Tu.clouddn.com/8d0dd106f5f226f4.png" alt="demo-nickname"></p>
-<p>[2] chatroom initialization:<br><img src="http://ac-TC2Vc5Tu.clouddn.com/8b9309129959f85e.png" alt="demo-init"></p>
-<p>[3] multi users chatting(one in chrome, another in safari):<br><img src="http://ac-TC2Vc5Tu.clouddn.com/4aa537ca52ea8080.png" alt="demo-multusers"></p>
+<h3 id="效果图Demo"><a href="#效果图Demo" class="headerlink" title="效果图Demo:"></a>效果图Demo:</h3><p>[1] pick a nickname:</p>
+<p>[2] chatroom initialization:</p>
+<p>[3] multi users chatting(one in chrome, another in safari):</p>
 <h3 id="server端源代码"><a href="#server端源代码" class="headerlink" title="server端源代码"></a>server端源代码</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// A fragment of server.js</span></span><br><span class="line"><span class="keyword">var</span> port = process.env.PORT || <span class="number">3000</span>;</span><br><span class="line">server.listen(port);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'listen on '</span> + port);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> io = socketIO(server);</span><br><span class="line"><span class="keyword">var</span> sockets = [];</span><br><span class="line"><span class="keyword">var</span> ID2user = &#123;&#125;; <span class="comment">// username </span></span><br><span class="line"></span><br><span class="line">io.on(<span class="string">'connection'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">socket</span>)</span>&#123;</span><br><span class="line">	sockets.push(socket);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">var</span> updateUserNum = <span class="function"><span class="keyword">function</span>(<span class="params">skt</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> people = sockets.length === <span class="number">1</span> ? <span class="string">'person'</span> : <span class="string">'people'</span>;</span><br><span class="line">		skt.emit(<span class="string">'greeting-from-server'</span>, &#123;</span><br><span class="line">			greeting: <span class="string">'Welcome! '</span> + sockets.length + <span class="string">' '</span> + people + <span class="string">' online now!'</span></span><br><span class="line">		&#125;);</span><br><span class="line">	&#125;;</span><br><span class="line"></span><br><span class="line">	updateUserNum(socket);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// boardcast?!</span></span><br><span class="line">	socket.on(<span class="string">'message'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">message</span>)</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> userlistChanged = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">if</span>(!ID2user[socket.id])&#123; <span class="comment">// if new user comes in.</span></span><br><span class="line">			<span class="keyword">var</span> profile = &#123;</span><br><span class="line">				username: message.username,</span><br><span class="line">				avatar: message.avatar</span><br><span class="line">			&#125;;</span><br><span class="line">			ID2user[socket.id] = profile;</span><br><span class="line">			userlistChanged = <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i &lt; sockets.length; i++)&#123;</span><br><span class="line">			sockets[i].emit(<span class="string">'message'</span>, message);</span><br><span class="line">			<span class="keyword">if</span>(userlistChanged)&#123; <span class="comment">// update userlist when new user comes in.</span></span><br><span class="line">				<span class="built_in">console</span>.log(ID2user[socket.id].username + <span class="string">'(id: '</span> + socket.id + <span class="string">' )'</span> + <span class="string">'joins!'</span>);</span><br><span class="line">				sockets[i].emit(<span class="string">'userlist'</span>, ID2user);</span><br><span class="line">				updateUserNum(sockets[i]);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">	socket.on(<span class="string">'disconnect'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;sockets.length; i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(sockets[i].id === socket.id)&#123;</span><br><span class="line">				sockets.splice(i, <span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">var</span> usernameOut = ID2user[socket.id].username;</span><br><span class="line">		<span class="keyword">delete</span> ID2user[socket.id]; <span class="comment">// remove user from online users.</span></span><br><span class="line">		<span class="comment">// send to client an updated userlist.</span></span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i &lt; sockets.length; i++)&#123;</span><br><span class="line">			<span class="built_in">console</span>.log(usernameOut + <span class="string">'(id: '</span> + socket.id + <span class="string">' )'</span> + <span class="string">'leaves...'</span>);</span><br><span class="line">			sockets[i].emit(<span class="string">'userlist'</span>, ID2user);</span><br><span class="line">			updateUserNum(sockets[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"There are "</span> + sockets.length + <span class="string">" active sockets remaining."</span>);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>由于我们需要将这个应用放在服务器上看效果， 所以port number就不能一直是本地的localhost了， 需要改成<code>var port = process.env.PORT || 3000;</code>。</p>
 <h3 id="达到的效果"><a href="#达到的效果" class="headerlink" title="达到的效果"></a>达到的效果</h3><ul>
@@ -1410,7 +1409,6 @@
 <p>而今天的主题：在配置工具grunt\webpack等红噪一时的背景下，为什么我想用npm script而不是grunt和gulp等其他工具?</p>
 <p><strong>因为simplicity matters。</strong>没有必要在需要用的时候才去找那些数量有限的grunt, gulp plugins，而直接将node modules拿来用。对于个人开发和维护的小项目， 有没有必要花时间去研究Gruntfile.js怎么去配置， 或者说， 在配置上花的时间相对短期集中开发的时间来说值不值？不是说反对使用grunt, gulp和webpack等工具， 而是我们没有必要拿大炮去打蚊子， 我们想要agile development。 也正是simplicy， 所以才有RoR, meteor等全栈框架的出现来挑战java等较为臃肿的开发流程不是么？</p>
 <p>下图是截止至今年1月为止的各平台的插件数量，仍在不断地增加中。</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/f247d4b81bd3044a.png" alt="npm script"></p>
 <h2 id="什么是npm-script"><a href="#什么是npm-script" class="headerlink" title="什么是npm script"></a>什么是npm script</h2><p>其实npm script就是希望执行的command的alias， 类似与command line里面的make， 通过提前设置希望执行的命令， 我们可以通过<code>npm run &lt;alias&gt;</code>来执行我们预先设置的命令。 还有一些特别方便的commands比如：</p>
 <ul>
 <li><code>npm home request</code>， 可以直接跳转到那个module的介绍页面；</li>
@@ -1464,10 +1462,8 @@
       <url>http://chocoluffy.com/2016/05/13/%E5%8F%A6%E4%B8%80%E7%A7%8D%E9%BC%93%E5%A3%B0-%E8%AF%BB%E3%80%8A%E9%80%94%E5%AE%A2%E5%9C%88%E3%80%8B%E6%9C%89%E6%84%9F/</url>
       <content type="html"><![CDATA[<p>“如果你清醒地知道你要去哪儿，脑海中还保留着那份憧憬，那么你就能逢山开路，遇水搭桥，所有的阻碍都将成为一个个里程碑，被踩在你的身后……”</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/7c3aa7a1e64bda62.png" style="display: block; margin: 0 auto;"></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在<a href="http://chocoluffy.com/2016/04/25/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A%EF%BC%8C-%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86/">关于创业, 那些不能说的秘密</a>里主要记录了阅读<the hard="" thing="" about="" things="">的阅读手记， 而另一本几乎同时完成的书&lt;途客圈创业记&gt;的阅读记录思考，在这里分享。</the></p>
 <p>在一个充斥着来自CEO乃至风险投资人视角的创业回顾的环境下， 一个来自技术合伙人(CTO)的视角显得尤为可贵。 从最早的技术选型， 到带领其它技术人员的开发和维护， 到技术过渡和商业选择， 陈天给了一份很详细和真挚的参考选项。</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/6ceefbf6929babac.png" style="display: block; margin: 0 auto;"></p>
 <p>每本书， 每个文字对不同的人意义都是不同的。 下面纪录了我在看完这本书之后的想法。</p>
 <h2 id="关于创业，那所有无关技术的事"><a href="#关于创业，那所有无关技术的事" class="headerlink" title="关于创业，那所有无关技术的事"></a>关于创业，那所有无关技术的事</h2><p>一开始不要设置过高的期权池， 期权池的主要目的是未来吸引和留住人才。期权与股权不同，股权代表所有权，期权代表的则是在特定的时间、以特定的价格购买特定所有权的权利，它可被视作是员工与公司之间关于股权买卖的一份合同。行权之后员工获得的股份是普通股。</p>
 <h3 id="在创新工场里的打拼"><a href="#在创新工场里的打拼" class="headerlink" title="在创新工场里的打拼"></a>在创新工场里的打拼</h3><p>在和创新工场就入驻细节的交谈中：</p>
@@ -1690,22 +1686,14 @@
       <url>http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/</url>
       <content type="html"><![CDATA[<p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
 <a id="more"></a>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/de08e7610183200c.png" alt="aws"></div>
-
 <h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><p>将之前用nodejs写的对<a href="https://cnodejs.org/?tab=good" target="_blank" rel="noopener">cnode社区精华帖</a>的爬虫放在AWS的EC2 instance下管理， 利用elastic beanstalk来对AWS资源进行分配和调控， 由于使用的还是free-tier的single instance， 则elastic beanstalk所特有的load-balancing的优势没有办法享受到。</p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/69662ed94ae1f3ff.png" alt="ebean"></div>
-
 <p>一开始如果直接按照AWS给的方法, <code>eb init</code>初始化一个elastic beanstalk的项目， <code>eb create</code>创建一个environment和一个EC2实例, 然后<code>eb deploy</code>将.git里面committed的改动push到elastic beanstalk的生产环境里面， 然后用<code>eb open</code>来打开这个IP address， 如果之后需要终止这个app的话， 就<code>eb terminate</code>就好了。</p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/143c21d61cd3cf33.png" alt="heroku"></div>
-
 <p>如果之前有使用heroku的经验的话， 其实你会发现其实amazon elastic beanstalk和heroku提供的服务非常相似， 实际上， 就这两家服务的定位而言， 都是platform as a service（Paas）， 也就是让developer可以将网站， 移动端部署在云端(cloud)不需要顾虑backend server和database的configuration。 而heroku本身相对于其他市面上的Paas在auto-scaling上做得更加出色， 它的computing resources(dyno)可以按照计算的需求而叠加从而满足在高流量下的网站后端流畅运行。而近几年amazon的elastic beanstalk的出现， 在这个Paas的市场给我们developer多一个很好的选择。就自己的使用而言， 感觉两者的command line interface其实设计得差不多， 都很简洁方便， 不过相比heroku， amazon的AWS还涉及租用到计算单元EC2, 就配置的操作来说， 你在配置AWS的服务上需要花更多的时间去设置环境变量和考虑密钥存储， 毕竟你可能有时候有ssh远程登陆amazon linux服务器的需求。相比之下， heroku的配置就是很简单的在<code>~/.bashrc</code>文件里面添加toolbelt文件夹的路径了。</p>
 <blockquote>
 <p> 其实heroku它本身就是deploy在了AWS上的呀😂， 所以理论上在performance上不会有太大的差别。</p>
 </blockquote>
 <p>而在pricing上， 我认为AWS的价格和服务会更加的实惠， 毕竟考虑到你有一张信用卡就可以申请到你一年的free-tier的single instance的使用权利， 而single instance对一些小型的side project来说完完全全是够用的呀。即便不够用， 换成large instance也是several clicks away， 反正也是按用量收费， 经济实惠!</p>
 <h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>第一个使用EB部署的应用是一个nodejs爬虫， 负责爬去cnode社区的精华帖， 然后返回一个json object收集精华帖的link, 标题和作者avatar， 为了显示的直观， 我并没有写前端的样式， 而是直接<code>JSON.stringify(json)</code>然后send会浏览器。之后如果仅仅作为REST API使用的话， 还需要在router上修饰一下URL。目前还是有点粗糙的。<a href="https://github.com/AirLoft/web-scraper" target="_blank" rel="noopener">github链接</a></p>
-<div style="text-align:center" markdown="1"><img src="http://ac-TC2Vc5Tu.clouddn.com/9fd7dd3d203d2d91.png" alt="demo"></div>
-
 <p>一开始我直接将在本地localhost运行的版本deploy到了elastic beanstalk上， 由于缺少了这一行配置<code>var port = process.env.PORT || 3000;</code>， 我直接把port定在了3000， 而elastic beanstalk是有应该占用的port的， 所以得到了“502 bad gateway error”。</p>
 <p>还有一点需要注意的是<code>npm start</code>这个npm script里面的配置， AWS elastic beanstalk会找到这条指令并去执行来执行相应的js文件， 比如我把写cnode网站的爬虫写在了cnode.js里面， 那么我需要</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"node cnode.js"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
@@ -1737,7 +1725,6 @@
 <p>When an Amazon Route 53 DNS server receives a name request for your custom domain name, it resolves to the elasticbeanstalk.com subdomain, which resolves to the public DNS name of your Elastic Load Balancing load balancer, which resolves to your web app’s IP address.</p>
 <p>Note<br>In a single-instance environment, the elasticbeanstalk.com subdomain resolves to an Elastic IP address attached to the instance running your web app.</p>
 <p><strong>关于elastic beanstalk的价格</strong><br>有小伙伴在comment里面提问， 如果用完了一年的free-tier的话， 价格怎么计算呢? 可以参考下amazon的<a href="https://aws.amazon.com/elasticbeanstalk/pricing/" target="_blank" rel="noopener">这篇介绍</a>里面详细记录了EC2, S3, DB等等AWS相关服务的价格。如果是个人的side project, 对CPU和图片等用户信息存储的需求不是特别大的话， 免费的plan或者是micro的instance是完全够用的， 如果是在某方面的需求特别大， 比如说unsplash这个高清摄影图片分享的社区。</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/bb0b5ef1d0298d11.png" alt="unsplash"></p>
 <p> unsplash将用户上传的照片存储在Amazon的S3服务上会比较安全和便捷，(搭配着Imgix这个service使用)， 具体的网站花销可以参考<a href="http://backstage.crew.co/what-does-unsplash-cost/" target="_blank" rel="noopener">这篇博文</a>， 里面记录了unsplash一个月网站使用的各种服务的明细记录， 也可以给一些希望做图片分享社区的创业者们一个参考。一个值得注意的点是， unsplash的花销是比较适合借鉴的， 因为unsplash和目前许多的创业公司一样， 选择将自己的主服务host在heroku这个平台， 选择S3等等主流的服务， 不像一些更geeky的公司可能为了省钱就自己来搭建和管理自己的服务器和数据库。 当然， 管理成本和维护成本都要考虑进去， 所以综上我才认为unsplash的例子是非常值得借鉴的!</p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>下面的链接是我在自己尝试搭建环境时参考的内容， 以及我选择free-tier的configuration的页面。其中就有以express为例子的服务端环境搭建。</p>
 <ul>
@@ -1750,7 +1737,7 @@
 <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html" target="_blank" rel="noopener">How to deploy a nodejs project to EB</a> similar to the previous tutorial post.</li>
 <li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html" target="_blank" rel="noopener">how to connect to EC2 instance using ssh</a><br>by using <code>ec2-describe-instances</code>, we can get the id of my instance.</li>
 </ul>
-<p>So after we have created an project, we go to the elastic beanstalk console, we will see the dashboard of all the application I host on EB such as the recent one(webscraper). The following is a screen capture of the configuration of that application on EB as in a free-tier plan:<br><img src="http://ac-TC2Vc5Tu.clouddn.com/7c3a33a6cfab0843.png" alt="configuration"> In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.</p>
+<p>So after we have created an project, we go to the elastic beanstalk console, we will see the dashboard of all the application I host on EB such as the recent one(webscraper). The following is a screen capture of the configuration of that application on EB as in a free-tier plan:<br>In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.</p>
 <p>When you turn on load balancing, Elastic Beanstalk creates a load balancer, deletes the Elastic IP address from your environment, and provisions a new EC2 instance. Elastic Beanstalk also updates DNS records to point the web app’s domain name to the load balancer instead of to the IP address of a single instance.</p>
 ]]></content>
       
@@ -1778,7 +1765,6 @@
       <url>http://chocoluffy.com/2016/04/27/%E7%AC%AC%E4%B8%80%E6%9C%9F-AirLoft%E7%BB%84%E7%BB%87%E5%8A%A8%E5%91%98%E5%AE%A3%E8%A8%80/</url>
       <content type="html"><![CDATA[<p>The best education comes from inside. </p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/b000a844b66d48d1.jpg" style="display: block; margin: 0 auto; border: none"></p>
 <h2 id="Orientation"><a href="#Orientation" class="headerlink" title="Orientation"></a>Orientation</h2><p>这个ada内部组织airloft成立的目的， 是我希望大家能在一个更加紧密和熟悉的环境下分享和学习课外知识， 采用github托管的形式是因为它管理代码的高协作效率和peer review的便捷。</p>
 <p>为了保证大家自学步骤的一致性和自由发挥的空间， 我决定采取的是任务发布形式。 <strong>每周会由我或我指定的负责人发布1-2篇的教程或任务</strong>， 任务内容从刚入门的git的使用与协作， 到之后的网站样式布局， 移动端，动效设计，后端编程都会涉及， 而教程则主要来源于<strong>所有有心人对某些创意点子的实现过程无论成败的记录(任何人都可以发布)</strong>。 我不会在任务完成度上给大家太多压力， 但是所有的任务都会指向最终AirLoft移动端APP及一系列配套web app的诞生， 能够深入互动参与每个方向讨论和实践并自己动手coding的人， 也会收获远比完成一个作品， 一个产品更多也更重要的东西， being insightful and clear of what you really want to do。</p>
 <p>组织内部大致的方向：<br>我主导的 - AirLoft reactive native的开发， 并将Airloft网站端从angular1.4全部由react重写。<br>朱子宁主导的 - 爬虫scripts， 对于校园内部热门活动消息，教务信息和周边消息的收集和呈现。<br>Joyce主导的 - 走进多大的web app及html5微信移动页面。<br>Jerry主导的 - 基于GPS的餐饮外卖信息呈现和成交平台。</p>
@@ -1825,11 +1811,8 @@
       <url>http://chocoluffy.com/2016/04/25/%E5%85%B3%E4%BA%8E%E5%88%9B%E4%B8%9A%EF%BC%8C-%E9%82%A3%E4%BA%9B%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86/</url>
       <content type="html"><![CDATA[<p>每个人， 在每个阶段， 都会有个不容分说的理由。</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/88dd510b8366b952.jpg" alt="preface image"></p>
 <p>趁着考完期末考的一段自由时间， 把之前一直积压着的两本书给读完了。</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/e98f89a56b7989aa.jpeg" style="display: block; margin: 0 auto;"></p>
 <p>第一本是来自Ben Horowitz的创业维艰， 前半段描述了他管理Loudcloud到Opsware将一个濒临破产的公司带到最后以16亿美元的价格被惠普收购的传奇经历， 后半段则记录下了他对公司管理的各个细节的心得思考。巧合的时， 就在我阅读这本书的期间， 曾任多家上市公司董事， Ben的精神导师Bill Campbell逝世了。 他对Ben说的那句， “要和员工一起宣布这个消息”的告诫仿佛还历历在目， 通过Ben的描述， 看得出Campbell极其富有同理心(empathy)的领袖气质。 向Campbell致敬。</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/6ceefbf6929babac.png" style="display: block; margin: 0 auto;"></p>
 <p> 第二本书是硅谷创业者陈天的随笔。 在一个充斥着来自CEO乃至风险投资人视角的创业回顾的环境下， 一个来自技术合伙人(CTO)的视角显得尤为可贵。 从最早的技术选型(为什么用Django)， 到带领其它技术人员的开发和维护(4台EC2)， 到技术过渡和商业选择， 陈天给了一份很详细和真挚的参考选项， 也让一个非商圈的学生， 慢慢了解到国内白手起家创业的一条非常有代表性的道路。感激陈天老师的分享。</p>
 <p>曾经一直以为， 创业是一件离自己很远的事情。直到一个月前， 一个多伦多大学毕业的直系师兄找到我来聊聊创业的可能。 他希望我能够以技术合伙人的身份帮他做出一个类似airbnb的网站和移动端， 已经有另外两个商科毕业已经工作的学姐愿意参与市场营销和推广， 万事具备， 就差个程序员了。</p>
 <p>也是第一次， 我感觉到创业， 其实也只是一种选择罢了， 突然想到一句微博上看到的话， “对有能力的人来说， 很多事情不是机会， 而是选择。”， 我当然不觉得我自己有能力和把握在这个阶段就合适技术合伙人的身份， 只是当我在一个旁观者的角度去看我身边的故事时， 好像创业， 也并没有倾家荡产， 孤注一掷般的惊天动地， 好像创业， 更像是创始人在生命某个时期赴的一场约， 选择了一条人迹罕至的路， 也由此义无反顾。</p>
@@ -1841,7 +1824,6 @@
 <li><strong>如何做资产重组？</strong> 在Ben即将破产的时候， 他问他自己， 如果要退出， 他会怎么做， 他说他会把opsware带出来卖给别人用， 因为这是他自己开发的， 他知道这个特别好用， 但是基于当时的情况， 这个软件被限制住， 没法和loudcloud分离开用， 于是他回去分配了一个精英小组去尝试从现有软件分离出来。</li>
 <li>在紧急情况的时候， 有很有多人议论你， 他们有些人是因为同情， 因为关心， 也可能是想摧毁你。 也会有很多人想帮你， 想帮你摆脱困境， 给出各种各样的建议。 永远从数据和具体情况出发， 没有任何一个旁观者有这个耐心帮你理顺所有的商业策略， 如果你任凭那些根本不了解具体情况的人对公司指手画脚， 那公司就无药可救了。</li>
 </ul>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/93c8d666c10be4ba.png" alt="pied piper"></p>
 <p><strong>很多时候， 我们都会评论那些伟大的CEO， 很自恋自大， narcisist， 专制。 然而他们只是没有听进去那些愚蠢的建议吧了， 又有谁比他们更清楚公司发展的每一个细节呢？</strong></p>
 <ul>
 <li><p>EPS真正想要的是tangram这家公司的软件， 而opsware在tangram比较低股价的时候收购了tangram， 让主要负责融洽opsware的EPS负责任frank特别高兴。也就是Ben他的要求， 弄清楚买方到底想要什么， 去提供他最想要的东西， 而不是一个劲地夸自己好。</p>
@@ -3191,7 +3173,6 @@
 <h3 id="在hexo博客里面内嵌html静态网页"><a href="#在hexo博客里面内嵌html静态网页" class="headerlink" title="在hexo博客里面内嵌html静态网页"></a>在hexo博客里面内嵌html静态网页</h3><p>我们有将静态网页展示出来作为example的需求， 尤其是在介绍新技术的时候，首先将该静态网站部署在服务器上， 无论是github上利用gh-pages的静态前端网页， 还是elastic beanstalk的后端serve的前端(利用express的<code>app.use(express.static(__dirname + &#39;/public&#39;));</code>可以将public文件夹下面的html文件都serve出来!!!!)， 这么做的好处是我们可以得到external URL， 可以将这个URL插入在iframe里面， 然后在md文章里面直接使用!!!! 比如下面这个例子亲测成功， 注意就是要将插入的网页居中就是了!!</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">'text-align:center'</span> <span class="attr">markdown</span>=<span class="string">'1'</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"400"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span>&gt;</span>Your browser does not support iframes.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="居中文本-图片样式"><a href="#居中文本-图片样式" class="headerlink" title="居中文本\图片样式"></a>居中文本\图片样式</h3><p>具体效果参考<a href="http://chocoluffy.com/2015/03/30/%E4%BC%AF%E5%85%8B%E5%88%A9%E7%9A%84%E7%A7%98%E5%AF%86-%E4%B8%8A-%E6%A2%A6%E6%83%B3%E7%9A%84%E7%81%AB%E5%85%89/">这篇博文</a>的样式， 其中在第一段添加了居中文本作为开头。 特别适合在段落间插入， 作为章节的小结， 很优雅~</p>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/c215777fa66e5464.png" alt="blockquote"></p>
 <p>使用方法<code>&lt;blockquote class=&quot;blockquote-center&quot;&gt;blah blah blah&lt;/blockquote&gt;</code></p>
 <p>将图片居中方法<code>&lt;img src=&quot;http://ac-TC2Vc5Tu.clouddn.com/6ceefbf6929babac.png&quot; style=&quot;display: block; margin: 0 auto;&quot;&gt;</code>， 直接添加inline styling， 在markdown中插入html image tag。</p>
 <p>将图片突破通常边际大小的样式<code>&lt;img src=&quot;/image-url&quot; class=&quot;full-image&quot; /&gt;</code>。</p>
@@ -3632,7 +3613,6 @@
       <url>http://chocoluffy.com/2015/11/20/%E8%BE%A9%E6%89%8B%E8%AF%B4-%E4%BA%BA%E4%BB%AC%E6%9C%89%E6%B2%A1%E6%9C%89%E6%9D%83%E5%88%A9%E6%9D%A5%E5%86%B3%E5%AE%9A%E4%BB%96%E4%BB%AC%E7%9A%84%E7%A8%8E%E6%94%B6%E5%B0%86%E4%BC%9A%E8%A2%AB%E7%94%A8%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%B0%E6%96%B9%EF%BC%9F/</url>
       <content type="html"><![CDATA[<p>出于本能和直觉。</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/b0e28bfbb92f6b69.png" alt="creative"></p>
 <p>观点1: 关于“公地悲剧”<br>这里面会不会出现free rider的问题呢， 就是我们比较熟悉的“公地悲剧”和“搭便车“的问题。 思路是这样的， 如果每个个体可以根据自己的意志选择税收将要被使用在什么地方的话， 我们会觉得， 自己交的税在其中的一个项目中占比微不足道， 比如：公路马路的建设，认为其他人的税收足以支持这些项目，然后将自己的税转移到其他地方。一个显然的结果是， 如果每个人都这么想， 很多并不引起公众注意的社会福利设施将会失去资金支撑， 可以sense到一点“公地悲剧”的味道了。</p>
 <p>观点2: 关于选择的成本<br>如果每个人都被要求做出基于自己的税收想要支出在什么项目的话， 有考虑过决策的成本吗？ 有考虑到因为信息的不对称导致的盲目选择吗？ 这样的系统在决策层面会不会效率太低了一点。不同的选择之间的说服和凝聚都是需要时间和谈判的， 就像我们知道民主是一个缓慢的决策过程， 多方的角力和冲突宣传， 民主低效的体现之一。而这样的过程的最终结果， 感觉又回在不同人的个人选择， 逐渐演变到， 出现了中间人代表人， 然后由代表人之间的胜负决定。 注意， 这种演变， 只是基于谈判效率优化的演变， 和专制暴政无关， 但仔细想想， 这不就是一开始的情景吗？绕了一圈结果回到了原点。</p>
 <p>观点3: 关于社会分工和信息不对称<br>这一点本质上和第二点有交叠。 我们不能指望每一个人都对这个社会的运作有一个百分之百的了解和知识， 实际上， 这也不可能. 这就会导致每个人手上的选票（这里是他们自己的税收）最终流去他们自己关注的地方。 注意， 这里是他们自己关注的地方， 并不是真正需要， 有需求的， 自下往上的地方［嗯嗯嗅到了“专制”的味道］。后果可想而知， 不详述。这里一个比较常用的论点是， ［关于媒体的思考， 很多都和这个有关］， “Being emotional is more impressive, attractive and easier than being rational.” 这就是为什么我们需要可信赖的knowledgable的代表替我们做出决定， 我们也让渡这个决策的权利给政府。</p>
@@ -4504,7 +4484,6 @@
       <url>http://chocoluffy.com/2015/07/14/%E7%A5%9D%E7%A6%8F%E5%A4%A7%E5%9C%A3%E5%BD%92%E6%9D%A5/</url>
       <content type="html"><![CDATA[<p>懂得去欣赏赞同一样作品， 也懂得去冷静地反思公然的狂热。</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/d007aed811b59eb9.png" alt="大圣归来"></p>
 <p>懂得去欣赏赞同一样作品， 也懂得去冷静地反思公然的狂热。 大圣归来口碑的持续发酵过程中一个密不可分的因素， 是国人心底对国产动画压抑很久了的自尊心和英雄情结。</p>
 <p>如果你能理解在广州恒大踢进了某某决赛时身着红衣， 高举红旗， 今夜我们都是广州人口号的感觉； 如果你能理解当母校在某某国际比赛某某高考上赢得荣誉声誉时那刷遍社交圈的感觉…那么你或许就可以多少感受到， 在一部燃血的， 情绪化的英雄身上， 一击击倒暗势力， 满屏荣光是有多值得骄傲； 并不是说这种情结是褒是贬， 而是这种或许带着浪漫眼睛去审视一个作品的时候， 在多大程度上会高估这个作品而忽视作品本身的细节意图和用心。</p>
 <p>暂且不讨论，或者往后再讨论如何展现一个英雄主题的作品， 毕竟， 以少儿动画、合家欢动画为主打消费市场并制作的动画， 评判标准和以故事情节制胜的作品又不一样， 考虑到导演还因为时间约束被迫剪去30分钟的故事， 也应对情节紧凑方面多宽容相待。</p>
@@ -4532,7 +4511,6 @@
       <url>http://chocoluffy.com/2015/07/03/%E5%85%AC%E4%BC%97%E5%8F%B7-%E6%B5%B7%E8%B4%BC%E6%A2%A6-%E7%9A%84%E8%AF%9E%E7%94%9F%E6%97%A5%E8%AE%B0/</url>
       <content type="html"><![CDATA[<p>The world is made up by the people who are not smarter than you.</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/d2dc1a4c3ec6d618.png" alt="friends"></p>
 <p>我也有想过， 究竟我为什么要去申请个公众号。是为了好玩吗？有可能， 毕竟我也是一个贪玩的人； 我最近自己搭建的一个网站也准备上线了， 是一个模仿twitter式的平台， 我的本意其实是想在这个公众号里面和平台一起互动， 满足移动端的需求。但是当我认认真真地做在电脑前， 看着申请公众号的界面， 准备给自己的公众号起一个名字的时候，<br>我犹豫了。</p>
 <p>我希望取一个好听的名字，至少是有那么点意义的名字。</p>
 <p>我不希望对这个公众号太肤浅， 渐渐地， 我觉得， 我对这个地方有了期待， 一种你说不出的沉甸甸的感觉。我觉得自己挺感性的虽然身为一个cs学生，喜欢海贼王， 那种与伙伴并肩战斗的感觉， 喜欢新闻编辑室， 传统媒体在面对各种改变和挑战时那种高贵的英雄主义， 喜欢巴萨， 血统里优雅的足球艺术， 喜欢唐吉柯德， 没有从梦中醒来的骑士…</p>
@@ -4640,7 +4618,6 @@
       <url>http://chocoluffy.com/2015/03/26/%E5%85%89%E8%8D%A3%E4%B8%8E%E6%A2%A6%E6%83%B3%EF%BC%8D%E5%AF%84%E9%99%88%E8%99%BB/</url>
       <content type="html"><![CDATA[<p>创造是一个很浪漫的事情， 但大多数人忘记了下一句， 创造也是很具体的事情， 一个团队不仅仅要灵异奔放，还要勤勉老实。陈虻很反感媒体人利用自己手中的媒体来行公众表白自己的辛苦， 我认为干什么都不容易， 选择了一种工作，实际上就选择了一种生活方式。 因为热爱我们选择的这种职业。</p>
 <a id="more"></a>
-<p><img src="http://ac-TC2Vc5Tu.clouddn.com/d432c2c888c36e4b.png" alt="出发"></p>
 <p>1、一个完全不同的结果， 一定有一个完全不同的过程，你不改变这个过程就改变不了这个结果。</p>
 <p>2、采用新的结构方式， 把最新的新闻时事镜头与过去的历史镜头平行剪接；</p>
 <p>3、陈虻笔记里密密麻麻纪录的不是论点， 也不是论据， 而是从论点到论据的过渡段。我认为，其中一个很好的方法是， 记录下抽象的从论点到论据的推演过程。</p>
