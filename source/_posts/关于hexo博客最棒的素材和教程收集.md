@@ -72,8 +72,6 @@ hexo deploy
 
 具体效果参考[这篇博文](http://chocoluffy.com/2015/03/30/%E4%BC%AF%E5%85%8B%E5%88%A9%E7%9A%84%E7%A7%98%E5%AF%86-%E4%B8%8A-%E6%A2%A6%E6%83%B3%E7%9A%84%E7%81%AB%E5%85%89/)的样式， 其中在第一段添加了居中文本作为开头。 特别适合在段落间插入， 作为章节的小结， 很优雅~
 
-![blockquote](http://ac-TC2Vc5Tu.clouddn.com/c215777fa66e5464.png)
-
 使用方法`<blockquote class="blockquote-center">blah blah blah</blockquote>`
 
 将图片居中方法`<img src="http://ac-TC2Vc5Tu.clouddn.com/6ceefbf6929babac.png" style="display: block; margin: 0 auto;">`， 直接添加inline styling， 在markdown中插入html image tag。

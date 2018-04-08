@@ -8,17 +8,11 @@ categories: 技术
 
 <!-- more -->
 
-<div style='text-align:center' markdown='1'>![aws](http://ac-TC2Vc5Tu.clouddn.com/de08e7610183200c.png)</div>
-
 ## 概览
 
 将之前用nodejs写的对[cnode社区精华帖](<https://cnodejs.org/?tab=good>)的爬虫放在AWS的EC2 instance下管理， 利用elastic beanstalk来对AWS资源进行分配和调控， 由于使用的还是free-tier的single instance， 则elastic beanstalk所特有的load-balancing的优势没有办法享受到。
 
-<div style='text-align:center' markdown='1'>![ebean](http://ac-TC2Vc5Tu.clouddn.com/69662ed94ae1f3ff.png)</div>
-
 一开始如果直接按照AWS给的方法, `eb init`初始化一个elastic beanstalk的项目， `eb create`创建一个environment和一个EC2实例, 然后`eb deploy`将.git里面committed的改动push到elastic beanstalk的生产环境里面， 然后用`eb open`来打开这个IP address， 如果之后需要终止这个app的话， 就`eb terminate`就好了。
-
-<div style='text-align:center' markdown='1'>![heroku](http://ac-TC2Vc5Tu.clouddn.com/143c21d61cd3cf33.png)</div>
 
 如果之前有使用heroku的经验的话， 其实你会发现其实amazon elastic beanstalk和heroku提供的服务非常相似， 实际上， 就这两家服务的定位而言， 都是platform as a service（Paas）， 也就是让developer可以将网站， 移动端部署在云端(cloud)不需要顾虑backend server和database的configuration。 而heroku本身相对于其他市面上的Paas在auto-scaling上做得更加出色， 它的computing resources(dyno)可以按照计算的需求而叠加从而满足在高流量下的网站后端流畅运行。而近几年amazon的elastic beanstalk的出现， 在这个Paas的市场给我们developer多一个很好的选择。就自己的使用而言， 感觉两者的command line interface其实设计得差不多， 都很简洁方便， 不过相比heroku， amazon的AWS还涉及租用到计算单元EC2, 就配置的操作来说， 你在配置AWS的服务上需要花更多的时间去设置环境变量和考虑密钥存储， 毕竟你可能有时候有ssh远程登陆amazon linux服务器的需求。相比之下， heroku的配置就是很简单的在`~/.bashrc`文件里面添加toolbelt文件夹的路径了。
 
@@ -29,8 +23,6 @@ categories: 技术
 ## 遇到的问题
 
 第一个使用EB部署的应用是一个nodejs爬虫， 负责爬去cnode社区的精华帖， 然后返回一个json object收集精华帖的link, 标题和作者avatar， 为了显示的直观， 我并没有写前端的样式， 而是直接`JSON.stringify(json)`然后send会浏览器。之后如果仅仅作为REST API使用的话， 还需要在router上修饰一下URL。目前还是有点粗糙的。[github链接](https://github.com/AirLoft/web-scraper)
-
-<div style='text-align:center' markdown='1'>![demo](http://ac-TC2Vc5Tu.clouddn.com/9fd7dd3d203d2d91.png)</div>
 
 一开始我直接将在本地localhost运行的版本deploy到了elastic beanstalk上， 由于缺少了这一行配置`var port = process.env.PORT || 3000;`， 我直接把port定在了3000， 而elastic beanstalk是有应该占用的port的， 所以得到了“502 bad gateway error”。
 
@@ -99,8 +91,6 @@ In a single-instance environment, the elasticbeanstalk.com subdomain resolves to
 **关于elastic beanstalk的价格**
 有小伙伴在comment里面提问， 如果用完了一年的free-tier的话， 价格怎么计算呢? 可以参考下amazon的[这篇介绍](https://aws.amazon.com/elasticbeanstalk/pricing/)里面详细记录了EC2, S3, DB等等AWS相关服务的价格。如果是个人的side project, 对CPU和图片等用户信息存储的需求不是特别大的话， 免费的plan或者是micro的instance是完全够用的， 如果是在某方面的需求特别大， 比如说unsplash这个高清摄影图片分享的社区。
 
-![unsplash](http://ac-TC2Vc5Tu.clouddn.com/bb0b5ef1d0298d11.png)
-
  unsplash将用户上传的照片存储在Amazon的S3服务上会比较安全和便捷，(搭配着Imgix这个service使用)， 具体的网站花销可以参考[这篇博文](http://backstage.crew.co/what-does-unsplash-cost/)， 里面记录了unsplash一个月网站使用的各种服务的明细记录， 也可以给一些希望做图片分享社区的创业者们一个参考。一个值得注意的点是， unsplash的花销是比较适合借鉴的， 因为unsplash和目前许多的创业公司一样， 选择将自己的主服务host在heroku这个平台， 选择S3等等主流的服务， 不像一些更geeky的公司可能为了省钱就自己来搭建和管理自己的服务器和数据库。 当然， 管理成本和维护成本都要考虑进去， 所以综上我才认为unsplash的例子是非常值得借鉴的!
 
 ## 参考链接
@@ -122,6 +112,6 @@ eb open
 by using `ec2-describe-instances`, we can get the id of my instance.
 
 So after we have created an project, we go to the elastic beanstalk console, we will see the dashboard of all the application I host on EB such as the recent one(webscraper). The following is a screen capture of the configuration of that application on EB as in a free-tier plan:
-![configuration](http://ac-TC2Vc5Tu.clouddn.com/7c3a33a6cfab0843.png) In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.
+In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.
 
 When you turn on load balancing, Elastic Beanstalk creates a load balancer, deletes the Elastic IP address from your environment, and provisions a new EC2 instance. Elastic Beanstalk also updates DNS records to point the web app's domain name to the load balancer instead of to the IP address of a single instance.
