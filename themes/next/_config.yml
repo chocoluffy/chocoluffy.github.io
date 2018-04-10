@@ -356,7 +356,7 @@ baidu_push: false
 use_motion: true
 
 # Fancybox
-fancybox: false
+fancybox: true
 
 
 # Script Vendors.
