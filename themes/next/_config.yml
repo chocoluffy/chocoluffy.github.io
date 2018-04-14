@@ -284,6 +284,9 @@ duoshuo_share: false
 # See: https://www.google.com/webmasters/
 google_site_verification: O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U
 
+# Baidu site verification
+baidu_site_verification: 4TeaTL6Cbs
+
 
 # Google Analytics
 google_analytics: 66874854-1
