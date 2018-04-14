@@ -47,7 +47,9 @@ disqus_shortname: chocoluffy
 
 deploy:
   type: git
-  repository: https://github.com/chocoluffy/chocoluffy.github.io.git
+  repository: 
+    github: https://github.com/chocoluffy/chocoluffy.github.io.git
+    coding: git@git.coding.net:chocoluffy/chocoluffy.git
   branch: master
 
 # Hexo Configuration
