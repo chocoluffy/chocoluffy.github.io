@@ -12,6 +12,8 @@ categories: 技术
 
 仿造beoplay这款耳机[主页的宣传视频](http://www.beoplay.com/products/beoplayh7?_ga=1.127614725.969767543.1461077943#video)来实现一个类似的视频分屏的效果。
 
+![demo](https://ws3.sinaimg.cn/large/006tKfTcgy1fqcsfos35og30dc06f4qz.gif)
+
 ## 版本1.0（不加视频自适应居中）
 
 right video是静止的不动的， 同时位于最底层。 目前所有的伸缩都是在控制left video， 同时由于我们设置了left video的`z-index`为3， 那么左边的视频会覆盖在右边的视频上。接下来的目标就很明确了， 我们需要追踪鼠标在整个container里面的位置(我们会用占宽度的百分比来表示)， 然后， 通过改变左边视频的宽度， 同时也就把位于下面的右边视频暴露出来了， 来达到切换的效果。
@@ -91,10 +93,13 @@ leftVideo.style.webkitTransform = "translate(-" + offsetRight / 2 + "px, 0)";
 
 那这个地方，`offset`就是鼠标在container里面距离左边边框的距离， 那么我们同时根据这个距离， 让左边的视频在视窗移动时， **往相反的方向以一半的速度移动来弥补视窗偏差**。使得可以在视窗移动的时候， 始终保持视频本身拍摄的主体视角也处于该视窗的主体视角! 原理可以参考这个图：
 
+![demo2](https://ws3.sinaimg.cn/large/006tKfTcgy1fqcshvn7p7g30dc049qv6.gif)
 
 那么也就大功告成啦!
 
 ## 总结
+
+![demo3](https://ws4.sinaimg.cn/large/006tKfTcgy1fqcsirwnlgg30dc06hnpi.gif)
 
 HTML5对media文件更多功能上的支持使得我们可以更好的操作media文件， 包括视频的开始暂停， 以及各种音量的调节， 而这个程序实例， 是一个很好的对相关API的使用的一个示范和一个小小的创意细节。这个项目， 也是饭后和朋友聊天聊出来的实现方案，也希望看到更多的创意脑洞和美的设计!
 
