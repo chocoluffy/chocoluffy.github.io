@@ -25,7 +25,7 @@ categories:
 
 - 开发者。
 - 进驻多伦多大学计算机学院孵化器DCSIL。
-- [2018.4.25更新]微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)
+- [2018.4.25更新] 微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)
 
 <img src="https://ws4.sinaimg.cn/large/006tKfTcly1fqqlus9ucjj31kw0nsx6s.jpg" style="display: block; margin: 0 auto; height: 300px">
 
@@ -42,7 +42,7 @@ categories:
 - 鲸语科技创始人，兼开发者。
 - App Store多伦多搜索结果Top5。iOS应用下载量~25K。
 - 鲸语，聚合超过200个加拿大多伦多本地生活服务消息源，同城娱乐，美食推荐，热门活动，省钱攻略第一时间精选推送，内容源涵盖微信公众号，微博，知乎，今日头条等最火社交新闻媒体。利用人工智能，我们尝试改变传统资讯阅读的模式。结合你周围的人正在阅读的消息，实时浮动热门内容；利用文本数据分析，提供所有长文本以标签，极大提升诸如微博等资讯的阅读体验和效率；随时随地的照片识别和文本分析；同时增加校园聊天机器人，充分连接实时有用的校园服务，为多伦多本地学习的留学生提供最便捷的帮助。
-- [2018.2.6更新]进驻多伦多大学工程院孵化器UofT Hatchery，参与2018 NEST Cohort。
+- [2018.2.6更新] 进驻多伦多大学工程院孵化器UofT Hatchery，参与2018 NEST Cohort。
 - [产品首发博客链接](http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/),  [App Store下载链接](https://itunes.apple.com/ca/app/%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/id1196585674?mt=8)
 
 <img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fko0120g1nj30xc0xcwg8.jpg" style="display: block; margin: 0 auto; height: 300px">
