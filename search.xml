@@ -100,9 +100,9 @@
         
         <tags>
             
-            <tag> 书摘 </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> 书摘 </tag>
             
         </tags>
         
@@ -156,9 +156,9 @@
             
             <tag> 日记 </tag>
             
-            <tag> 书摘 </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> 书摘 </tag>
             
             <tag> 科技 </tag>
             
@@ -265,9 +265,9 @@
         
         <tags>
             
-            <tag> 书摘 </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> 书摘 </tag>
             
         </tags>
         
@@ -329,11 +329,11 @@
             
             <tag> 日记 </tag>
             
-            <tag> 书摘 </tag>
+            <tag> 公众号文章 </tag>
             
             <tag> 读书笔记 </tag>
             
-            <tag> 公众号文章 </tag>
+            <tag> 书摘 </tag>
             
             <tag> 存在主义 </tag>
             
@@ -565,9 +565,9 @@
         
         <tags>
             
-            <tag> 书摘 </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> 书摘 </tag>
             
         </tags>
         
@@ -622,9 +622,9 @@
             
             <tag> 日记 </tag>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
             <tag> 年度总结 </tag>
             
@@ -764,9 +764,9 @@
         
         <tags>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -1844,9 +1844,9 @@
             
             <tag> 社会人物 </tag>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -3408,64 +3408,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Agile web developing in rails 第一期]]></title>
-      <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
-      <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
-<a id="more"></a> 
-<h2 id="The-details-you-should-know-about-in-rails"><a href="#The-details-you-should-know-about-in-rails" class="headerlink" title="The details you should know about in rails:"></a>The details you should know about in rails:</h2><ul>
-<li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &apos;Add to Cart&apos;, line_item_path(product_id: product) % &gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Http verb<br>create(post), new(get)等等</p>
-</li>
-<li><p>写法区别</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;delete&quot;, @cart, :method =&gt; :delete % &gt; </span><br><span class="line">&lt;%= button_to &quot;delete&quot;, &#123;:controller =&gt; :carts, :action =&gt; :destroy, :id =&gt; cart.id&#125;, :method =&gt; :delete % &gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ajax in rails<br>add Ajax to cart 目的: 在store页面实现将cart的show展示在sidebar里面， 然后添加user interface<br>注意： 在每一个partial template里面都有一个和template file同名的变量来指代当前变量；</p>
-</li>
-</ul>
-<p>首先， 在发送请求的时候， 将请求改正为ajax请求：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Add to cart&quot;, line_items_path(product_id: product), remote: true % &gt;</span><br></pre></td></tr></table></figure></p>
-<p>然后， 由于button_to默认http请求动作是post， 在line_items_controller里面找到create这个方法， 然后在response_to里面添加<br>一个format.js; 在create这个line_items的method处理了ajax的请求后， 就会去渲染一个同名的file： create.js.erb； 由于rails<br>自动gemfile里面加载了jquery的gem, 所以我们可以直接使用；</p>
-<p>重点： format.js 里面也就是create.js.erb里面渲染的js代码是给format.html里面调用使用的， 也就是在重新渲染store/index.html.erb<br>的时候， 重点不在于index.html.erb， 因为使用ajax的目标之一是只去更新那些改变了的东西， 也就是在sidebar区域的&lt;%= render @cart % &gt;<br>利用ajax， 我们只希望重新渲染&lt;%= render @cart % &gt;, 其他部分保留；</p>
-<p>具体实现的方法： 由于在application.html.erb里面包裹住&lt;%= render @cart % &gt;部分的div是id是cart， 所以我们只需要通过jquery选择<br>到那个div， 然后修改里面的html使之成为更新后的版本就可以了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#cart&quot;).html(&quot;&lt;%= escape_javascript render(@cart) %&gt;&quot;)</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>Add a member route<br>To add a member route, just add a member block into the resource block:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :photos do</span><br><span class="line">  member do</span><br><span class="line">    get &apos;preview&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>This will recognize /photos/1/preview with GET, and route to the preview action of PhotosController, with the resource<br>id value passed in params[:id]. It will also create the preview_photo_url and preview_photo_path helpers.<br>在我们这个网站里面， 通过增加下面这几行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :line_items do</span><br><span class="line">  member do</span><br><span class="line">    put &apos;decrement&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-<p>我们实现的是， 首先能够识别出 /line_items/1/decrement这个路由， 和http里面的put联系起来， 然后去调用line_items controller里面的decrement这个方法<br>同时也将resource的id传入进来, params[:id], 然后创建 decrement_lin_item_url和 decrement_line_item_path;</p>
-<p><strong>注意： 一直困扰我的， 在点击decrement这个按钮的时候， 会出现internet error 505, unable to load the resources; 然后还看到的是关于line_item_controller里面的各种nil class, 其实这就是一个启示， 表示在那个时候使用的@line_item是没有被赋值的； 因此追根溯源找到的赋值的地方是set_line_item， 我们使用hook, before_action限制了使用这个hook的范围， 因此每一次我们新引进一个method的时候， 我们都需要记得在controller最前面的hook看看有没有限制；</strong></p>
-<blockquote>
-<p>总结一下8.16号犯的一些错误：<br>[1]在touch file的时候注意不要放错位置！_line_item.html.erb这个文件的错放导致了很多的问题；<br>[2]添加了member route之后创建的新方法已开始被hook before_action限制住了， 要记得添加他们的使用范围；<br>[3]灵通一点， 在decrement.js.erb中， 通过调换其中一些code的顺序也可以达到同样的效果；</p>
-</blockquote>
-<ul>
-<li>Modify the model<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate scaffold Order name address:text email pay_type</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在rails里面， 没有标明type的属性默认： string<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate migration add_order_to_line_item order:references</span><br></pre></td></tr></table></figure></p>
-<p>在已经存在的line_item model里面添加一个column， order_id；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure></p>
-<p>然后在_cart.html.erb里面增加一个button_to按钮来链接到对应的创建order的操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Checkout&quot;, new_order_path, method: :get % &gt;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
-<p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 技术 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> rails </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[用reveal.js制作生日礼物]]></title>
       <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
       <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
@@ -3739,6 +3681,64 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Agile web developing in rails 第一期]]></title>
+      <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
+      <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
+<a id="more"></a> 
+<h2 id="The-details-you-should-know-about-in-rails"><a href="#The-details-you-should-know-about-in-rails" class="headerlink" title="The details you should know about in rails:"></a>The details you should know about in rails:</h2><ul>
+<li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &apos;Add to Cart&apos;, line_item_path(product_id: product) % &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Http verb<br>create(post), new(get)等等</p>
+</li>
+<li><p>写法区别</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;delete&quot;, @cart, :method =&gt; :delete % &gt; </span><br><span class="line">&lt;%= button_to &quot;delete&quot;, &#123;:controller =&gt; :carts, :action =&gt; :destroy, :id =&gt; cart.id&#125;, :method =&gt; :delete % &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ajax in rails<br>add Ajax to cart 目的: 在store页面实现将cart的show展示在sidebar里面， 然后添加user interface<br>注意： 在每一个partial template里面都有一个和template file同名的变量来指代当前变量；</p>
+</li>
+</ul>
+<p>首先， 在发送请求的时候， 将请求改正为ajax请求：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Add to cart&quot;, line_items_path(product_id: product), remote: true % &gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后， 由于button_to默认http请求动作是post， 在line_items_controller里面找到create这个方法， 然后在response_to里面添加<br>一个format.js; 在create这个line_items的method处理了ajax的请求后， 就会去渲染一个同名的file： create.js.erb； 由于rails<br>自动gemfile里面加载了jquery的gem, 所以我们可以直接使用；</p>
+<p>重点： format.js 里面也就是create.js.erb里面渲染的js代码是给format.html里面调用使用的， 也就是在重新渲染store/index.html.erb<br>的时候， 重点不在于index.html.erb， 因为使用ajax的目标之一是只去更新那些改变了的东西， 也就是在sidebar区域的&lt;%= render @cart % &gt;<br>利用ajax， 我们只希望重新渲染&lt;%= render @cart % &gt;, 其他部分保留；</p>
+<p>具体实现的方法： 由于在application.html.erb里面包裹住&lt;%= render @cart % &gt;部分的div是id是cart， 所以我们只需要通过jquery选择<br>到那个div， 然后修改里面的html使之成为更新后的版本就可以了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#cart&quot;).html(&quot;&lt;%= escape_javascript render(@cart) %&gt;&quot;)</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>Add a member route<br>To add a member route, just add a member block into the resource block:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :photos do</span><br><span class="line">  member do</span><br><span class="line">    get &apos;preview&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>This will recognize /photos/1/preview with GET, and route to the preview action of PhotosController, with the resource<br>id value passed in params[:id]. It will also create the preview_photo_url and preview_photo_path helpers.<br>在我们这个网站里面， 通过增加下面这几行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :line_items do</span><br><span class="line">  member do</span><br><span class="line">    put &apos;decrement&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<p>我们实现的是， 首先能够识别出 /line_items/1/decrement这个路由， 和http里面的put联系起来， 然后去调用line_items controller里面的decrement这个方法<br>同时也将resource的id传入进来, params[:id], 然后创建 decrement_lin_item_url和 decrement_line_item_path;</p>
+<p><strong>注意： 一直困扰我的， 在点击decrement这个按钮的时候， 会出现internet error 505, unable to load the resources; 然后还看到的是关于line_item_controller里面的各种nil class, 其实这就是一个启示， 表示在那个时候使用的@line_item是没有被赋值的； 因此追根溯源找到的赋值的地方是set_line_item， 我们使用hook, before_action限制了使用这个hook的范围， 因此每一次我们新引进一个method的时候， 我们都需要记得在controller最前面的hook看看有没有限制；</strong></p>
+<blockquote>
+<p>总结一下8.16号犯的一些错误：<br>[1]在touch file的时候注意不要放错位置！_line_item.html.erb这个文件的错放导致了很多的问题；<br>[2]添加了member route之后创建的新方法已开始被hook before_action限制住了， 要记得添加他们的使用范围；<br>[3]灵通一点， 在decrement.js.erb中， 通过调换其中一些code的顺序也可以达到同样的效果；</p>
+</blockquote>
+<ul>
+<li>Modify the model<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate scaffold Order name address:text email pay_type</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在rails里面， 没有标明type的属性默认： string<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate migration add_order_to_line_item order:references</span><br></pre></td></tr></table></figure></p>
+<p>在已经存在的line_item model里面添加一个column， order_id；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure></p>
+<p>然后在_cart.html.erb里面增加一个button_to按钮来链接到对应的创建order的操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Checkout&quot;, new_order_path, method: :get % &gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
+<p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> rails </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[一派胡言[第一期]-读书是赴会一场缺席的对话]]></title>
       <url>http://chocoluffy.com/2015/11/24/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80/</url>
       <content type="html"><![CDATA[<p>一场缺席的对话， 一场没有观众的戏剧。</p>
@@ -3774,9 +3774,9 @@
         
         <tags>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -4057,9 +4057,9 @@
         
         <tags>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -4410,9 +4410,9 @@
         
         <tags>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -4645,9 +4645,9 @@
             
             <tag> 日记 </tag>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -4745,9 +4745,9 @@
         
         <tags>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
@@ -4824,9 +4824,9 @@
             
             <tag> 社会人物 </tag>
             
-            <tag> 读书笔记 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 读书笔记 </tag>
             
         </tags>
         
