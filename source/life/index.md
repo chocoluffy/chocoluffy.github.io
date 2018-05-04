@@ -9,8 +9,8 @@ categories:
 这里，是我分享生活的地方。
 
 ## 碎碎念
-
-『[2018年的读书接力](http://chocoluffy.com/books/)』 持续更新中......
+- 『[我的日记碎片](http://chocoluffy.com/weibo/)』 持续更新中......
+- 『[2018年的读书接力](http://chocoluffy.com/books/)』 持续更新中......
 
 ## 思考点滴
 - 『[原来这一切都可以讲述](http://chocoluffy.com/2018/01/01/%E5%8E%9F%E6%9D%A5%E8%BF%99%E4%B8%80%E5%88%87%E9%83%BD%E5%8F%AF%E4%BB%A5%E8%AE%B2%E8%BF%B0/)』 2017年度总结。但无论如何，希望那时候的你，依旧坚定，依旧温柔。
