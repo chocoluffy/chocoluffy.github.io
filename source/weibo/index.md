@@ -5,6 +5,8 @@ categories:
 
 我希望把日子过得特别认真，把回忆进行得特别认真。
 
+这里，是我时光日记的碎片。
+
 内容来源：
 - 『[我的微博](http://weibo.com/chocoluffy)』
 - 『[我的豆瓣](https://www.douban.com/people/chocolufy/)』
