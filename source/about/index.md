@@ -24,8 +24,9 @@ categories:
 
 ### Muma - Music AI - 2018年1月
 
-- 开发者。
+- 联合创始人，兼开发者。
 - 进驻多伦多大学计算机学院孵化器DCSIL。
+- 受邀于2018.4.30在[OCE Discovery](https://www.ocediscovery.com/)会议上展示项目。
 - [2018.4.25更新] 微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)
 
 <img src="https://ws4.sinaimg.cn/large/006tKfTcly1fqqlus9ucjj31kw0nsx6s.jpg" style="display: block; margin: 0 auto; height: 300px">
