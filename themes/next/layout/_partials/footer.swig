@@ -6,4 +6,5 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">余舜哲</span>
+  <span class="post-count"> | 博客全站共{{ totalcount(site) }}字</span>
 </div>
