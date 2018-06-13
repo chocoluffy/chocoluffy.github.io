@@ -160,6 +160,7 @@ douban:
   movie:
     title: 'This is my movie title'
     quote: 'This is my movie quote'
+  timeout: 15000 
   
 # Image lazyload [https://github.com/Robin-front/hexo-lazyload]
 # lazyload:

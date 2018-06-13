@@ -15,19 +15,19 @@ var log = require('hexo-log')({
 });
 
 function resolv(url, timeout) {
-	var response = '';
-	try {
-		response = request(url, {
-			timeout: timeout,
-			dataType: 'xml'
-		});
-	} catch (err){
-		offline = true;
-	}
+    var response = '';
+    try {
+        response = request(url, {
+            timeout: timeout,
+            dataType: 'xml'
+        });
+    } catch (err) {
+        offline = true;
+    }
 
-	if(offline){
-		return [];
-	}
+    if (offline) {
+        return [];
+    }
     var doc = new Dom({
         errorHandler: {
             warning: function (e) {
@@ -42,7 +42,6 @@ function resolv(url, timeout) {
     }).parseFromString(response.data.toString());
 
     var items = xpath.select('//div[@class="game-list"]/div[@class="common-item"]', doc);
-
     var list = [];
     for (var i in items) {
         var parser = new Dom().parseFromString(items[i].toString());
@@ -65,8 +64,6 @@ function resolv(url, timeout) {
         var info = xpath.select1('string(//div[@class="desc"]/text())', parser);
         info = info ? info : '';
         info = info.replace(/(^\s*)|(\s*$)/g, '');
-
-        //image = 'https://images.weserv.nl/?url=' + image.substr(8, image.length - 8) + '&w=100';
 
         list.push({
             title: title,
@@ -92,6 +89,11 @@ module.exports = function (locals) {
         return;
     }
 
+    var root = config.root;
+    if (root.endsWith('/')) {
+        root = root.slice(0, root.length - 1);
+    }
+
     var timeout = 10000;
     if (config.douban.timeout) {
         timeout = config.douban.timeout;
@@ -115,16 +117,16 @@ module.exports = function (locals) {
     var __ = i18n.__(config.language);
 
     var contents = ejs.renderFile(path.join(__dirname, 'templates/game.ejs'), {
-            'quote': config.douban.game.quote,
-            'wish': wish,
-            'played': played,
-            'playing': playing,
-            '__': __
-        },
-        function (err, result) {
-            if (err) console.log(err);
-            return result;
-        });
+        'quote': config.douban.game.quote,
+        'wish': wish,
+        'played': played,
+        'playing': playing,
+        '__': __,
+        'root': root
+    }, function (err, result) {
+        if (err) console.log(err);
+        return result;
+    });
 
     return {
         path: 'games/index.html',

@@ -15,22 +15,22 @@ var log = require('hexo-log')({
 });
 
 function resolv(url, timeout) {
-	var response = '';
-	try {
-		response = request(url, {
-			timeout: timeout,
-			dataType: 'xml'
-		});
-	} catch (err) {
-		offline = true;
-	}
+    var response = '';
+    try {
+        response = request(url, {
+            timeout: timeout,
+            dataType: 'xml'
+        });
+    } catch (err) {
+        offline = true;
+    }
 
-	if (offline){
-		return {
-			list: [],
-			next: ""
-		};
-	}
+    if (offline) {
+        return {
+            list: [],
+            next: ""
+        };
+    }
 
     var doc = new Dom({
         errorHandler: {
@@ -98,6 +98,11 @@ module.exports = function (locals) {
         return;
     }
 
+    var root = config.root;
+    if (root.endsWith('/')) {
+        root = root.slice(0, root.length - 1);
+    }
+
     var timeout = 10000;
     if (config.douban.timeout) {
         timeout = config.douban.timeout;
@@ -141,12 +146,13 @@ module.exports = function (locals) {
     var __ = i18n.__(config.language);
 
     var contents = ejs.renderFile(path.join(__dirname, 'templates/movie.ejs'), {
-            'quote': config.douban.movie.quote,
-            'wish': wish,
-            'watched': watched,
-            'watching': watching,
-            '__': __
-        },
+        'quote': config.douban.movie.quote,
+        'wish': wish,
+        'watched': watched,
+        'watching': watching,
+        '__': __,
+        'root': root
+    },
         function (err, result) {
             if (err) console.log(err);
             return result;
