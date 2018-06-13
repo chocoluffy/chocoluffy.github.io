@@ -17,9 +17,9 @@ install:
     - npm install
 
 script:
-    - rsync -a hexo-douban ./node_modules/
-    - rm -r hexo-douban/
+    - yes | cp book/book.ejs node_modules/hexo-douban/lib/templates
     - hexo clean
+    - hexo douban
     - hexo g
 
 after_script:

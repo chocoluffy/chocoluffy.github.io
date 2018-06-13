@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "3.1.1"
+    "version": "3.7.1"
   },
   "dependencies": {
-    "hexo": "^3.1.1",
+    "hexo": "^3.7.1",
     "hexo-deployer-git": "0.0.4",
-    "hexo-douban": "^0.1.9",
+    "hexo-douban": "1.0.2",
     "hexo-generator-amp": "^3.0.13",
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-baidu-sitemap": "^0.1.2",
