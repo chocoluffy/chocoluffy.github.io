@@ -19,8 +19,8 @@ install:
 script:
     - yes | cp book/book.ejs node_modules/hexo-douban/lib/templates
     - hexo clean
-    - hexo douban
     - hexo g
+    - hexo douban
 
 after_script:
     - ./publish-to-gh-pages.sh
