@@ -1,1 +1,0 @@
-hexo.extend.generator.register('baidu_url_generator', require('./generator'));
