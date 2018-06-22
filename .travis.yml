@@ -19,6 +19,7 @@ install:
 script:
     - yes | cp book/book.ejs node_modules/hexo-douban/lib/templates
     - hexo clean
+    - node ./baidu-url-submit/index.js
     - hexo g
     - hexo douban
 

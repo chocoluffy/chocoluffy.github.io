@@ -183,3 +183,8 @@ generator_amp:
   validateAMP: true   # To AMP HTML validate automatically, please set true.
   # 3. Google Analytics Option
   google_analytics: UA-66874854-1
+
+# Generate baidu_urls.txt and submit to baidu's scraper.
+baidu_url_submit:
+  count: 20 ## 提交最新的一个链接
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
