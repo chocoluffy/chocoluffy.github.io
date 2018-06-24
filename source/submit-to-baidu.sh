@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "http://chocoluffy.com/tech/
-http://chocoluffy.com/life/
-http://chocoluffy.com/books/
-http://chocoluffy.com/weibo/
+echo "\nhttp://chocoluffy.com/tech/\n\
+http://chocoluffy.com/life/\n\
+http://chocoluffy.com/books/\n\
+http://chocoluffy.com/weibo/\n\
 http://chocoluffy.com/about/" >> baidu_urls.txt
 echo Please input your baidu token:
 read token
