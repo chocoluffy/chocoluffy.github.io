@@ -1,6 +1,6 @@
-title: 关于hexo博客最棒的素材和教程收集
+title: 优化hexo博客
 date: 2015-12-25 11:29:20
-tags: [hexo]
+tags: [hexo, 博客]
 categories: 技术
 ---
 
