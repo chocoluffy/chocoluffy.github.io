@@ -32,8 +32,8 @@ github： [hexo-douban/book.ejs at master · mythsman/hexo-douban · GitHub](htt
 
 ### 怎样使用七牛云服务来存储静态资源
 
-- [1][Linux中国采用“七牛”云存储支撑图片访问](https://linux.cn/article-2311-1.html)
-- [2][使用七牛CDN加速博客静态文件访问](https://blog.blahgeek.com/qiniu-cdn-serve-static/)
+- [Linux中国采用“七牛”云存储支撑图片访问](https://linux.cn/article-2311-1.html)
+- [使用七牛CDN加速博客静态文件访问](https://blog.blahgeek.com/qiniu-cdn-serve-static/)
 
 个人的话， 我其实用的是微博图床， 也很方便。 类似的服务还有dropbox, google drive等等。
 
@@ -153,6 +153,3 @@ def replace_img(source_md, target_md, conn):
 	- [去goole search console管理property](https://www.google.com/webmasters/tools/home?hl=en&authuser=0)
 
 	- [google search console sitemap dashboard](https://www.google.com/webmasters/tools/sitemap-list?hl=en&authuser=0&siteUrl=http%3A%2F%2Fchocoluffy.com%2F#MAIN_TAB=0&CARD_TAB=-1)
-
-> 后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：
-![公众号二维码](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg)

@@ -435,5 +435,17 @@ images: images
 #   pngquant: false
 #   progressive: false
 
+# hexo-renderer-marked, https://github.com/hexojs/hexo-renderer-marked
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
+
 # Theme version
 version: 5.0.1
