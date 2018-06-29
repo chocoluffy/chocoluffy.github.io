@@ -11,7 +11,24 @@
 <p>我觉得，关于自我的讨论很大程度被诉求所主导。无论是选择大众理想带来的温暖，还是小径的召唤，自我的牺牲与拯救不过是同一种选择下的两种诠释。站在上帝视角这么看，人们最终得到的，无非是取决于自身的东西，而这也是他们的力量和无辜所在。</p>
 <p>说实话我并没有完全被黑塞说服。从该隐的印记的重新诠释，到“天职”的表述，无不带有强烈的主动性。可这却正好击中了小说的主题所在。黑塞在奔向最真实的自己，我们在观赏他最动人的尝试和最癫狂的痴语。也慢慢理解到他在小说开头写道的话，“我的故事并不令人畅怀，也不像杜撰的故事那样甜美和谐，它味如痴语、混乱、癫狂和梦幻，就像所有那些不愿再自欺欺人的生活一样”。 </p>
 <p>我也不清楚结束阅读之后我还能记得什么。只是依稀记住，他文字里符号化的梦境总让我想起昆德拉<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，他小说的主题总提醒我毛姆和一小丢的加缪。但或许就像蒲公英的种子融进了风里，总有落地扎根的那天我会终于看见方向，然后在另外一本书的文字里牵引回来，留下新的注脚。这也是我能努力做到的浪漫。</p>
-<hr>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>git status</td>
+<td>List all new or modified files</td>
+</tr>
+<tr>
+<td>git diff</td>
+<td>Show file differences that haven’t been staged</td>
+</tr>
+</tbody>
+</table>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;"><a href="https://book.douban.com/subject/1017143/" target="_blank" rel="noopener">《不能承受的生命之轻》</a></span><a href="#fnref:1" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
       
         <categories>
@@ -3377,7 +3394,7 @@
     
     <entry>
       <title><![CDATA[优化hexo博客]]></title>
-      <url>http://chocoluffy.com/2015/12/25/%E4%BC%98%E5%8C%96hexo%E5%8D%9A%E5%AE%A2/</url>
+      <url>http://chocoluffy.com/2015/12/25/%E5%85%B3%E4%BA%8Ehexo%E5%8D%9A%E5%AE%A2%E6%9C%80%E6%A3%92%E7%9A%84%E7%B4%A0%E6%9D%90%E5%92%8C%E6%95%99%E7%A8%8B%E6%94%B6%E9%9B%86/</url>
       <content type="html"><![CDATA[<p>在搭建hexo博客的时候遇到的各种坑， 留下一些最棒的博文和大家分享!</p>
 <a id="more"></a>
 <h2 id="常用功能"><a href="#常用功能" class="headerlink" title="常用功能"></a>常用功能</h2><h3 id="添加豆瓣读书插件"><a href="#添加豆瓣读书插件" class="headerlink" title="添加豆瓣读书插件"></a>添加豆瓣读书插件</h3><blockquote>
@@ -3390,8 +3407,8 @@
 <h3 id="添加微博组件"><a href="#添加微博组件" class="headerlink" title="添加微博组件"></a>添加微博组件</h3><p><a href="http://kuangqi.me/tricks/add-weibo-show-in-hexo/" target="_blank" rel="noopener">在Hexo博客中添加微博秀 | The Bloom of Youth | 锦瑟华年</a></p>
 <p><a href="https://suarezzz.github.io/2016/07/02/hexo-useful-tools/" target="_blank" rel="noopener">Hexo有用的工具和插件汇总 | suarezzz’s blog</a></p>
 <h3 id="怎样使用七牛云服务来存储静态资源"><a href="#怎样使用七牛云服务来存储静态资源" class="headerlink" title="怎样使用七牛云服务来存储静态资源"></a>怎样使用七牛云服务来存储静态资源</h3><ul>
-<li>[1]<a href="https://linux.cn/article-2311-1.html" target="_blank" rel="noopener">Linux中国采用“七牛”云存储支撑图片访问</a></li>
-<li>[2]<a href="https://blog.blahgeek.com/qiniu-cdn-serve-static/" target="_blank" rel="noopener">使用七牛CDN加速博客静态文件访问</a></li>
+<li><a href="https://linux.cn/article-2311-1.html" target="_blank" rel="noopener">Linux中国采用“七牛”云存储支撑图片访问</a></li>
+<li><a href="https://blog.blahgeek.com/qiniu-cdn-serve-static/" target="_blank" rel="noopener">使用七牛CDN加速博客静态文件访问</a></li>
 </ul>
 <p>个人的话， 我其实用的是微博图床， 也很方便。 类似的服务还有dropbox, google drive等等。</p>
 <p>Edit: 16.3.12更新， 现在我自己通过自己写的scripts来自动化将博文中的image上传的任务了， 所有的图片都将上传到leancloud然后得到一个external url可以在md博客中直接展示， 这样做更加的自动化和节省我的时间!! 具体操作方法看下面的介绍。</p>
@@ -3446,9 +3463,6 @@
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
 ]]></content>
       
         <categories>
@@ -3521,46 +3535,6 @@
         <tags>
             
             <tag> rails </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
-<h3 id="开场特效："><a href="#开场特效：" class="headerlink" title="开场特效："></a>开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-      
-        <categories>
-            
-            <category> 技术 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> javascript </tag>
             
         </tags>
         
@@ -3794,6 +3768,46 @@
         <tags>
             
             <tag> machine learning </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
+<h3 id="开场特效："><a href="#开场特效：" class="headerlink" title="开场特效："></a>开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
             
         </tags>
         
