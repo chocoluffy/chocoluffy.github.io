@@ -10,7 +10,7 @@
     "hexo-baidu-url-submit": "0.0.5",
     "hexo-deployer-git": "0.0.4",
     "hexo-douban": "1.0.2",
-    "hexo-footnotes": "^1.0.2",
+    "hexo-footnotes": "https://github.com/chocoluffy/hexo-footnotes/tarball/master",
     "hexo-generator-amp": "^3.0.13",
     "hexo-generator-archive": "^0.1.2",
     "hexo-generator-baidu-sitemap": "^0.1.2",
