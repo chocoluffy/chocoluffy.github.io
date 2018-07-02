@@ -18,7 +18,9 @@
 <p>而我们认为这个方案较为劣等的假设是，我们认为人们自由交易得到的价值高于某一强制性交易。</p>
 <p>这个假设是关键的。这意味着两点，一是以下的思路都基于这个假设的成立，自由比管控能带来更多的价值。而二则是暗示着，这个假设是可变的，它只在它适用的场景下成立，如果我们能找出“管控带来更多价值”的场景，我们可以推理出截然不同的结果。</p>
 <p>首先，一个更符合自由主义经济学家观点的思路是，认为假设是成立的，自由交易比管控经济可以带来更多的价值。</p>
-<p>他们会指出历史上的反面例子，罗斯福新政里面的，政府强制倾倒牛奶，为了维持牛奶价格的稳定和农民工人的生计。之所以需要政府介入并强制性地创造稀缺，是因为政府在短期内着手保护的是农民这个群体。因为他们在自由贸易中是暂时受害的一方，也是因为短期大众对奶制品的需求并不那么受价格因素波动而波动。<br>-&gt; 弱势群体是需要保护性政策的。而尤其当弱势群体成为了当前政体下的主要诉求者。<br>-&gt; 一个有意思的问题是，什么样的社会会创造更多的弱势群体？我们可以将逐渐碎片化且小众的群体比作弱势群体吗，如果可以，互联网是不是在加速这种保护性政策普及的过程？类似得，社会的现代化，如果我特指的是人群的专业化(specialization)，是不是也在加速这个过程？</p>
+<p>他们会指出历史上的反面例子，罗斯福新政里面的，政府强制倾倒牛奶，为了维持牛奶价格的稳定和农民工人的生计。之所以需要政府介入并强制性地创造稀缺，是因为政府在短期内着手保护的是农民这个群体。因为他们在自由贸易中是暂时受害的一方，也是因为短期大众对奶制品的需求并不那么受价格因素波动而波动。</p>
+<p>-&gt; 弱势群体是需要保护性政策的。而尤其当弱势群体成为了当前政体下的主要诉求者。</p>
+<p>-&gt; 一个有意思的问题是，什么样的社会会创造更多的弱势群体？我们可以将逐渐碎片化且小众的群体比作弱势群体吗，如果可以，互联网是不是在加速这种保护性政策普及的过程？类似的，社会的现代化，如果我特指的是人群的专业化(specialization)，是不是也在加速这个过程？</p>
 <p>如果弱势群体的存在证实了政府经济管控的必要性。这同时也意味着，他们更容易接受政府在政治层面实施管控的合理性。</p>
 <p>于是我们得到一个结论<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup>。<br>-&gt; 一个创造出更多碎片化群体的社会，更容易接受政府管制的行为。</p>
 <p>联想起在雷布拉德伯里在《华氏451》里描述的一种社会现象。书本会被一页一页地撕去，因为来自少数族群的压力。</p>
@@ -3647,6 +3649,46 @@
     </entry>
     
     <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
+<h3 id="开场特效："><a href="#开场特效：" class="headerlink" title="开场特效："></a>开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javascript </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Agile web developing in rails 第一期]]></title>
       <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
       <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
@@ -3932,46 +3974,6 @@
         <tags>
             
             <tag> machine learning </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
-<h3 id="开场特效："><a href="#开场特效：" class="headerlink" title="开场特效："></a>开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-      
-        <categories>
-            
-            <category> 技术 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> javascript </tag>
             
         </tags>
         
