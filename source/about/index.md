@@ -4,7 +4,7 @@ tags:
 categories:
 ---
 
-95.11.04，现多伦多大学大四学生，主攻机器学习方向，曾GAP一年在Sysomos的实验室参与数据分析挖掘的实习项目，现创业中。喜欢编程，喜欢实现想法的自由。
+95.11.04，现Cornell Tech计算机系研究生。创业者。主攻机器学习方向，曾GAP一年在Sysomos的实验室参与数据分析挖掘的实习项目。喜欢编程，喜欢实现想法的自由。
 
 - 『[我的技术笔记](http://chocoluffy.com/tech/)』
 - 『[我的生活随笔](http://chocoluffy.com/life/)』
