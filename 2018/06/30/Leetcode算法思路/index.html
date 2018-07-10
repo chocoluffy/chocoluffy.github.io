@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="My Leetcode solution analysis.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-09T14:42:15.911Z">
+<meta property="og:updated_time" content="2018-07-10T08:29:02.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leetcode算法思路">
 <meta name="twitter:description" content="My Leetcode solution analysis.">
@@ -408,7 +408,12 @@
         <p>My Leetcode solution analysis. </p>
 <a id="more"></a>
 <h2 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h2><ul>
-<li>summarize common modular operations and their time complexity, such as “longest common substring\subsequence”.</li>
+<li><p>summarize common modular operations and helpful util functions, with their time complexity, such as “longest common substring\subsequence”, “check if integer overflow”.</p>
+</li>
+<li><p>also recording each solution’s time &amp; space complexity. </p>
+</li>
+<li><p>check “Discussion” tab for smart tricks.</p>
+</li>
 </ul>
 <h2 id="milestone"><a href="#milestone" class="headerlink" title="milestone"></a>milestone</h2><table>
 <thead>
@@ -448,6 +453,16 @@
 <td>6. ZigZag Conversion</td>
 <td>create zigzag moving iterator that follows the pattern of the normal for loop iterator. Essentially, to have a direction indicator that will change the zigzag iterator’s moving direction.</td>
 <td>21 ms, 98.44%</td>
+</tr>
+<tr>
+<td>7. Reverse Integer</td>
+<td>check integer overflow before potential operations, trick is to check if applying reverse operation can yield original result.</td>
+<td>16 ms, 99.17%</td>
+</tr>
+<tr>
+<td>8. String to Integer (atoi)</td>
+<td>convert each character to integer, check if overflow before any further operations.</td>
+<td>4ms, 100%</td>
 </tr>
 </tbody>
 </table>
@@ -696,7 +711,7 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">余舜哲</span>
-  <span class="post-count"> | 博客全站共194.4k字</span>
+  <span class="post-count"> | 博客全站共194.5k字</span>
 </div>
 
         
