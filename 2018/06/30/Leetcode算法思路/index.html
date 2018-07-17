@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="My Leetcode solution analysis.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-17T04:52:25.110Z">
+<meta property="og:updated_time" content="2018-07-17T05:02:51.405Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leetcode算法思路">
 <meta name="twitter:description" content="My Leetcode solution analysis.">
@@ -391,7 +391,7 @@
               <i class="fa fa-clock-o"></i>
             </span>
             <span class="post-meta-item-text">阅读时长</span>
-            <span class="post-count">4 分钟</span>
+            <span class="post-count">2 分钟</span>
           </span>
           
         </div>
@@ -407,80 +407,6 @@
       
         <p>My Leetcode solution analysis. </p>
 <a id="more"></a>
-<h2 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h2><ul>
-<li><p>summarize common modular operations and helpful util functions, with their time complexity, such as “longest common substring\subsequence”, “check if integer overflow”.</p>
-</li>
-<li><p>also recording each solution’s time &amp; space complexity. </p>
-</li>
-<li><p>check “Discussion” tab for smart tricks.</p>
-</li>
-</ul>
-<h2 id="milestone"><a href="#milestone" class="headerlink" title="milestone"></a>milestone</h2><table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Description</th>
-<th>Solution</th>
-<th>Speed &amp; Percentile</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Two Sum</td>
-<td>find a pair summing to target value.</td>
-<td>hashmap with early stop.</td>
-<td>7ms, 98%</td>
-</tr>
-<tr>
-<td>2. Add Two Numbers in Linked List</td>
-<td>doing addition and curry.</td>
-<td>dummy node for linked list.</td>
-<td>41ms, 98%</td>
-</tr>
-<tr>
-<td>3. Longest Substring Without Repeating Characters</td>
-<td>as title.</td>
-<td>bitmap in replace of &lt;char, int&gt; hashmap recording most recent position. if there is a collision then found a repeated character.</td>
-<td>19ms, 98%</td>
-</tr>
-<tr>
-<td>4. Median of Two Sorted Arrays</td>
-<td>find median number from two sorted arrays.</td>
-<td>do binary search on the shorter array between nums1 and nums2, compare the max\min number of left\right hand side. Median is a position that the number of elements at two sides are equal.</td>
-<td>42 ms. 98%</td>
-</tr>
-<tr>
-<td>5. Longest Palindromic Substring</td>
-<td>as title.</td>
-<td>straightforward: for loop each element and expand at both side; best: only expand at right and jump through repeated elements as repeated one no matter how long it is will definitely be a valid palindrome string</td>
-<td>4ms, 100%</td>
-</tr>
-<tr>
-<td>6. ZigZag Conversion</td>
-<td>given a string, and place it in a zigzag way, then collect them row by row to form a new string.</td>
-<td>create zigzag moving iterator that follows the pattern of the normal for loop iterator. Essentially, to have a direction indicator that will change the zigzag iterator’s moving direction.</td>
-<td>21 ms, 98.44%</td>
-</tr>
-<tr>
-<td>7. Reverse Integer</td>
-<td>as title.</td>
-<td>check integer overflow before potential operations, trick is to check if applying reverse operation can yield original result.</td>
-<td>16 ms, 99.17%</td>
-</tr>
-<tr>
-<td>8. String to Integer (atoi)</td>
-<td>as title, with some edge cases.</td>
-<td>convert each character to integer, check if overflow before any further operations.</td>
-<td>4ms, 100%</td>
-</tr>
-<tr>
-<td>11. Container With Most Water</td>
-<td>an array of integer, as vertical lines on coordinates, together with x-axis forms a container, find the one holds most water.</td>
-<td>two pointer at two ends moving inwards. we can prove that moving the longer line inward is always worse than the current result. Thus we move the shorter line inward.</td>
-<td>4ms, 100%</td>
-</tr>
-</tbody>
-</table>
 <h2 id="algorithm-summary"><a href="#algorithm-summary" class="headerlink" title="algorithm summary"></a>algorithm summary</h2><h3 id="median"><a href="#median" class="headerlink" title="median"></a>median</h3><p>A position that the number of elements at two sides is the same.</p>
 <p>Problems: NO.4</p>
 <h3 id="two-pointer"><a href="#two-pointer" class="headerlink" title="two pointer"></a>two pointer</h3><p>Essentially a way of searching. find the direction of keeping the sub-structure optimality. keep the optimality and explore\compare.</p>
@@ -552,8 +478,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/01/谈“破窗理论”下弱势群体的保护主义/" rel="prev" title="谈“破窗理论”下弱势群体的保护主义">
-                谈“破窗理论”下弱势群体的保护主义 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/01/Leetcode题目解析/" rel="prev" title="Leetcode题目解析">
+                Leetcode题目解析 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -564,7 +490,7 @@
       
 
       
-        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/12/04/浅析经典面试算法题-two-pointer的运用/">浅析经典面试算法题-two pointer的运用</a></li></ul>
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2018/07/01/Leetcode题目解析/">Leetcode题目解析</a></li><li><a href="/2016/12/04/浅析经典面试算法题-two-pointer的运用/">浅析经典面试算法题-two pointer的运用</a></li></ul>
       
     </footer>
   </article>
@@ -631,7 +557,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">82</span>
+              <span class="site-state-item-count">83</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -713,7 +639,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#todo"><span class="nav-number">1.</span> <span class="nav-text">todo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#milestone"><span class="nav-number">2.</span> <span class="nav-text">milestone</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#algorithm-summary"><span class="nav-number">3.</span> <span class="nav-text">algorithm summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#median"><span class="nav-number">3.1.</span> <span class="nav-text">median</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#two-pointer"><span class="nav-number">3.2.</span> <span class="nav-text">two pointer</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#data-structure-summary"><span class="nav-number">4.</span> <span class="nav-text">data structure summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#trie-prefix-tree"><span class="nav-number">4.1.</span> <span class="nav-text">trie(prefix tree)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#algorithm-summary"><span class="nav-number">1.</span> <span class="nav-text">algorithm summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#median"><span class="nav-number">1.1.</span> <span class="nav-text">median</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#two-pointer"><span class="nav-number">1.2.</span> <span class="nav-text">two pointer</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#data-structure-summary"><span class="nav-number">2.</span> <span class="nav-text">data structure summary</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#trie-prefix-tree"><span class="nav-number">2.1.</span> <span class="nav-text">trie(prefix tree)</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
@@ -737,7 +663,7 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">余舜哲</span>
-  <span class="post-count"> | 博客全站共194.8k字</span>
+  <span class="post-count"> | 博客全站共195.3k字</span>
 </div>
 
         

@@ -60,7 +60,7 @@
 			    "@id":"http://chocoluffy.com/2018/06/30/Leetcode算法思路/"
 			},
 			"datePublished": "2018-06-30T14:32:06.000Z",
-			"dateModified": "2018-07-17T04:52:25.110Z",
+			"dateModified": "2018-07-17T05:02:51.405Z",
 			
 			"image": {
 				"@type": "ImageObject",
@@ -1866,80 +1866,6 @@ h6.categories {
 			    	<!-- content -->
 			  		<p>My Leetcode solution analysis. </p>
 <a id="more"></a>
-<h2 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h2><ul>
-<li><p>summarize common modular operations and helpful util functions, with their time complexity, such as &#x201C;longest common substring\subsequence&#x201D;, &#x201C;check if integer overflow&#x201D;.</p>
-</li>
-<li><p>also recording each solution&#x2019;s time &amp; space complexity. </p>
-</li>
-<li><p>check &#x201C;Discussion&#x201D; tab for smart tricks.</p>
-</li>
-</ul>
-<h2 id="milestone"><a href="#milestone" class="headerlink" title="milestone"></a>milestone</h2><div class="table-wrapper"><table>
-<thead>
-<tr>
-<th>Title</th>
-<th>Description</th>
-<th>Solution</th>
-<th>Speed &amp; Percentile</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Two Sum</td>
-<td>find a pair summing to target value.</td>
-<td>hashmap with early stop.</td>
-<td>7ms, 98%</td>
-</tr>
-<tr>
-<td>2. Add Two Numbers in Linked List</td>
-<td>doing addition and curry.</td>
-<td>dummy node for linked list.</td>
-<td>41ms, 98%</td>
-</tr>
-<tr>
-<td>3. Longest Substring Without Repeating Characters</td>
-<td>as title.</td>
-<td>bitmap in replace of &lt;char, int&gt; hashmap recording most recent position. if there is a collision then found a repeated character.</td>
-<td>19ms, 98%</td>
-</tr>
-<tr>
-<td>4. Median of Two Sorted Arrays</td>
-<td>find median number from two sorted arrays.</td>
-<td>do binary search on the shorter array between nums1 and nums2, compare the max\min number of left\right hand side. Median is a position that the number of elements at two sides are equal.</td>
-<td>42 ms. 98%</td>
-</tr>
-<tr>
-<td>5. Longest Palindromic Substring</td>
-<td>as title.</td>
-<td>straightforward: for loop each element and expand at both side; best: only expand at right and jump through repeated elements as repeated one no matter how long it is will definitely be a valid palindrome string</td>
-<td>4ms, 100%</td>
-</tr>
-<tr>
-<td>6. ZigZag Conversion</td>
-<td>given a string, and place it in a zigzag way, then collect them row by row to form a new string.</td>
-<td>create zigzag moving iterator that follows the pattern of the normal for loop iterator. Essentially, to have a direction indicator that will change the zigzag iterator&#x2019;s moving direction.</td>
-<td>21 ms, 98.44%</td>
-</tr>
-<tr>
-<td>7. Reverse Integer</td>
-<td>as title.</td>
-<td>check integer overflow before potential operations, trick is to check if applying reverse operation can yield original result.</td>
-<td>16 ms, 99.17%</td>
-</tr>
-<tr>
-<td>8. String to Integer (atoi)</td>
-<td>as title, with some edge cases.</td>
-<td>convert each character to integer, check if overflow before any further operations.</td>
-<td>4ms, 100%</td>
-</tr>
-<tr>
-<td>11. Container With Most Water</td>
-<td>an array of integer, as vertical lines on coordinates, together with x-axis forms a container, find the one holds most water.</td>
-<td>two pointer at two ends moving inwards. we can prove that moving the longer line inward is always worse than the current result. Thus we move the shorter line inward.</td>
-<td>4ms, 100%</td>
-</tr>
-</tbody>
-</table></div>
 <h2 id="algorithm-summary"><a href="#algorithm-summary" class="headerlink" title="algorithm summary"></a>algorithm summary</h2><h3 id="median"><a href="#median" class="headerlink" title="median"></a>median</h3><p>A position that the number of elements at two sides is the same.</p>
 <p>Problems: NO.4</p>
 <h3 id="two-pointer"><a href="#two-pointer" class="headerlink" title="two pointer"></a>two pointer</h3><p>Essentially a way of searching. find the direction of keeping the sub-structure optimality. keep the optimality and explore\compare.</p>

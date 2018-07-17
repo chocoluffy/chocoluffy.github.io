@@ -51,19 +51,11 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Leetcode算法思路]]></title>
-      <url>http://chocoluffy.com/2018/06/30/Leetcode%E7%AE%97%E6%B3%95%E6%80%9D%E8%B7%AF/</url>
-      <content type="html"><![CDATA[<p>My Leetcode solution analysis. </p>
+      <title><![CDATA[Leetcode题目解析]]></title>
+      <url>http://chocoluffy.com/2018/07/01/Leetcode%E9%A2%98%E7%9B%AE%E8%A7%A3%E6%9E%90/</url>
+      <content type="html"><![CDATA[<p>My Leetcode solution collection. </p>
 <a id="more"></a>
-<h2 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h2><ul>
-<li><p>summarize common modular operations and helpful util functions, with their time complexity, such as “longest common substring\subsequence”, “check if integer overflow”.</p>
-</li>
-<li><p>also recording each solution’s time &amp; space complexity. </p>
-</li>
-<li><p>check “Discussion” tab for smart tricks.</p>
-</li>
-</ul>
-<h2 id="milestone"><a href="#milestone" class="headerlink" title="milestone"></a>milestone</h2><table>
+<h1 id="milestone"><a href="#milestone" class="headerlink" title="milestone"></a>milestone</h1><table>
 <thead>
 <tr>
 <th>Title</th>
@@ -129,6 +121,74 @@
 </tr>
 </tbody>
 </table>
+<h2 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h2><ul>
+<li><p>summarize common modular operations and helpful algorithm functions, with their time complexity, such as “longest common substring\subsequence”, “check if integer overflow”. </p>
+</li>
+<li><p>summarize common data structure implementation, such as trie tree. put the above two section on <a href="http://chocoluffy.com/2018/06/30/Leetcode%E7%AE%97%E6%B3%95%E6%80%9D%E8%B7%AF/">Leetcode算法思路</a>.</p>
+</li>
+<li><p>also recording each solution’s time &amp; space complexity. </p>
+</li>
+<li><p>check “Discussion” tab for smart tricks.</p>
+</li>
+</ul>
+<h1 id="1-two-sum"><a href="#1-two-sum" class="headerlink" title="1 two sum"></a>1 two sum</h1><ul>
+<li>最快的算法里对std::sort的使用。</li>
+</ul>
+<p>虽然理论上sort是nlogn，但是在实用中sort可以在某些情况下提高速度。尤其当c++的library function对其添加的优化。</p>
+<h1 id="2-add-two-numbers"><a href="#2-add-two-numbers" class="headerlink" title="2 add two numbers"></a>2 add two numbers</h1><ul>
+<li>想清楚什么时候需要引入dummy node。</li>
+</ul>
+<p>常见的原因是为了更简便地处理while loop里面的edge case，比如这里的第一个node的初始化。我们创建新node是依赖while loop的逻辑的，如果为NULL，在loop使用node-&gt;next会seg fault。所以通过创建dummy node使得可以直接在loop里使用node-&gt;next。然后最后用dummy-&gt;next返回整个链的head。</p>
+<h1 id="3-longest-substring-without-repeating-characters"><a href="#3-longest-substring-without-repeating-characters" class="headerlink" title="3 longest substring without repeating characters"></a>3 longest substring without repeating characters</h1><ul>
+<li>map&lt;char, int&gt;</li>
+</ul>
+<p>优化这个结构的时候，可以考虑bitmap的使用。类似bucketsort的原理。如果是字符则是默认256长度的bitmap，然后对应的位置放置其value。</p>
+<h1 id="14-longest-common-prefix"><a href="#14-longest-common-prefix" class="headerlink" title="14 longest common prefix"></a>14 longest common prefix</h1><p>problem: as title.</p>
+<h2 id="ideas"><a href="#ideas" class="headerlink" title="ideas"></a>ideas</h2><ul>
+<li>[me] vertical scanning. time complexity: O(S), where S is the sum of all characters in all string. space complexity: O(1).</li>
+<li>divide and conquer. because LCP satisfies the associative property, that LCP(1,…, n) = LCP(LCP(1,…, n/2), LCP(n/2+1,…, n)). as like in finding min or max. time complexity is O(S), space complexity is O(mlogn), n is the number of string, m is the average length, since divide and conquer requires to store intermediate results.</li>
+<li>binary search. an improvement on the vertical scanning. apply the binary search on the shortest string and do the vertical scanning to validate if it’s LCP. time complexity is O(S * log(min string length)), space complexity is O(1).</li>
+</ul>
+<h1 id="866-prime-palindrome"><a href="#866-prime-palindrome" class="headerlink" title="866 prime palindrome"></a>866 prime palindrome</h1><p>problem: find a prime number that is also a palindromd over N.</p>
+<h2 id="ideas-1"><a href="#ideas-1" class="headerlink" title="ideas"></a>ideas</h2><ul>
+<li>find palindrome then check if prime. </li>
+</ul>
+<p>the set of palindrome is smaller, and for each palindrome, we can test whether it is prime in O(N^1/2).</p>
+<p>-&gt; find the set of palindrome number over N.</p>
+<p>-&gt; how to find the next palindrome number.</p>
+<p>from the center move outward, find the critical digit to add 1.</p>
+<h2 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h2><p>define the palindrome root. say 121 is 12. thus we can use palindrome root to construct palindrome number by increase it by 1 at a time. </p>
+<ul>
+<li><a href="https://leetcode.com/articles/prime-palindrome/" target="_blank" rel="noopener">https://leetcode.com/articles/prime-palindrome/</a></li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> leetcode </tag>
+            
+            <tag> interview </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Leetcode算法思路]]></title>
+      <url>http://chocoluffy.com/2018/06/30/Leetcode%E7%AE%97%E6%B3%95%E6%80%9D%E8%B7%AF/</url>
+      <content type="html"><![CDATA[<p>My Leetcode solution analysis. </p>
+<a id="more"></a>
 <h2 id="algorithm-summary"><a href="#algorithm-summary" class="headerlink" title="algorithm summary"></a>algorithm summary</h2><h3 id="median"><a href="#median" class="headerlink" title="median"></a>median</h3><p>A position that the number of elements at two sides is the same.</p>
 <p>Problems: NO.4</p>
 <h3 id="two-pointer"><a href="#two-pointer" class="headerlink" title="two pointer"></a>two pointer</h3><p>Essentially a way of searching. find the direction of keeping the sub-structure optimality. keep the optimality and explore\compare.</p>
@@ -3690,64 +3750,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Agile web developing in rails 第一期]]></title>
-      <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
-      <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
-<a id="more"></a> 
-<h2 id="The-details-you-should-know-about-in-rails"><a href="#The-details-you-should-know-about-in-rails" class="headerlink" title="The details you should know about in rails:"></a>The details you should know about in rails:</h2><ul>
-<li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &apos;Add to Cart&apos;, line_item_path(product_id: product) % &gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Http verb<br>create(post), new(get)等等</p>
-</li>
-<li><p>写法区别</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;delete&quot;, @cart, :method =&gt; :delete % &gt; </span><br><span class="line">&lt;%= button_to &quot;delete&quot;, &#123;:controller =&gt; :carts, :action =&gt; :destroy, :id =&gt; cart.id&#125;, :method =&gt; :delete % &gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ajax in rails<br>add Ajax to cart 目的: 在store页面实现将cart的show展示在sidebar里面， 然后添加user interface<br>注意： 在每一个partial template里面都有一个和template file同名的变量来指代当前变量；</p>
-</li>
-</ul>
-<p>首先， 在发送请求的时候， 将请求改正为ajax请求：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Add to cart&quot;, line_items_path(product_id: product), remote: true % &gt;</span><br></pre></td></tr></table></figure></p>
-<p>然后， 由于button_to默认http请求动作是post， 在line_items_controller里面找到create这个方法， 然后在response_to里面添加<br>一个format.js; 在create这个line_items的method处理了ajax的请求后， 就会去渲染一个同名的file： create.js.erb； 由于rails<br>自动gemfile里面加载了jquery的gem, 所以我们可以直接使用；</p>
-<p>重点： format.js 里面也就是create.js.erb里面渲染的js代码是给format.html里面调用使用的， 也就是在重新渲染store/index.html.erb<br>的时候， 重点不在于index.html.erb， 因为使用ajax的目标之一是只去更新那些改变了的东西， 也就是在sidebar区域的&lt;%= render @cart % &gt;<br>利用ajax， 我们只希望重新渲染&lt;%= render @cart % &gt;, 其他部分保留；</p>
-<p>具体实现的方法： 由于在application.html.erb里面包裹住&lt;%= render @cart % &gt;部分的div是id是cart， 所以我们只需要通过jquery选择<br>到那个div， 然后修改里面的html使之成为更新后的版本就可以了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#cart&quot;).html(&quot;&lt;%= escape_javascript render(@cart) %&gt;&quot;)</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>Add a member route<br>To add a member route, just add a member block into the resource block:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :photos do</span><br><span class="line">  member do</span><br><span class="line">    get &apos;preview&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>This will recognize /photos/1/preview with GET, and route to the preview action of PhotosController, with the resource<br>id value passed in params[:id]. It will also create the preview_photo_url and preview_photo_path helpers.<br>在我们这个网站里面， 通过增加下面这几行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :line_items do</span><br><span class="line">  member do</span><br><span class="line">    put &apos;decrement&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-<p>我们实现的是， 首先能够识别出 /line_items/1/decrement这个路由， 和http里面的put联系起来， 然后去调用line_items controller里面的decrement这个方法<br>同时也将resource的id传入进来, params[:id], 然后创建 decrement_lin_item_url和 decrement_line_item_path;</p>
-<p><strong>注意： 一直困扰我的， 在点击decrement这个按钮的时候， 会出现internet error 505, unable to load the resources; 然后还看到的是关于line_item_controller里面的各种nil class, 其实这就是一个启示， 表示在那个时候使用的@line_item是没有被赋值的； 因此追根溯源找到的赋值的地方是set_line_item， 我们使用hook, before_action限制了使用这个hook的范围， 因此每一次我们新引进一个method的时候， 我们都需要记得在controller最前面的hook看看有没有限制；</strong></p>
-<blockquote>
-<p>总结一下8.16号犯的一些错误：<br>[1]在touch file的时候注意不要放错位置！_line_item.html.erb这个文件的错放导致了很多的问题；<br>[2]添加了member route之后创建的新方法已开始被hook before_action限制住了， 要记得添加他们的使用范围；<br>[3]灵通一点， 在decrement.js.erb中， 通过调换其中一些code的顺序也可以达到同样的效果；</p>
-</blockquote>
-<ul>
-<li>Modify the model<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate scaffold Order name address:text email pay_type</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在rails里面， 没有标明type的属性默认： string<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate migration add_order_to_line_item order:references</span><br></pre></td></tr></table></figure></p>
-<p>在已经存在的line_item model里面添加一个column， order_id；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure></p>
-<p>然后在_cart.html.erb里面增加一个button_to按钮来链接到对应的创建order的操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Checkout&quot;, new_order_path, method: :get % &gt;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
-<p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-]]></content>
-      
-        <categories>
-            
-            <category> 技术 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> rails </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[机器学习资料收集[持续更新]]]></title>
       <url>http://chocoluffy.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</url>
       <content type="html"><![CDATA[<p>来自github, 各种关于机器学习的教程博客和工具。</p>
@@ -3975,6 +3977,64 @@
         <tags>
             
             <tag> machine learning </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Agile web developing in rails 第一期]]></title>
+      <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
+      <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
+<a id="more"></a> 
+<h2 id="The-details-you-should-know-about-in-rails"><a href="#The-details-you-should-know-about-in-rails" class="headerlink" title="The details you should know about in rails:"></a>The details you should know about in rails:</h2><ul>
+<li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &apos;Add to Cart&apos;, line_item_path(product_id: product) % &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Http verb<br>create(post), new(get)等等</p>
+</li>
+<li><p>写法区别</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;delete&quot;, @cart, :method =&gt; :delete % &gt; </span><br><span class="line">&lt;%= button_to &quot;delete&quot;, &#123;:controller =&gt; :carts, :action =&gt; :destroy, :id =&gt; cart.id&#125;, :method =&gt; :delete % &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ajax in rails<br>add Ajax to cart 目的: 在store页面实现将cart的show展示在sidebar里面， 然后添加user interface<br>注意： 在每一个partial template里面都有一个和template file同名的变量来指代当前变量；</p>
+</li>
+</ul>
+<p>首先， 在发送请求的时候， 将请求改正为ajax请求：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Add to cart&quot;, line_items_path(product_id: product), remote: true % &gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后， 由于button_to默认http请求动作是post， 在line_items_controller里面找到create这个方法， 然后在response_to里面添加<br>一个format.js; 在create这个line_items的method处理了ajax的请求后， 就会去渲染一个同名的file： create.js.erb； 由于rails<br>自动gemfile里面加载了jquery的gem, 所以我们可以直接使用；</p>
+<p>重点： format.js 里面也就是create.js.erb里面渲染的js代码是给format.html里面调用使用的， 也就是在重新渲染store/index.html.erb<br>的时候， 重点不在于index.html.erb， 因为使用ajax的目标之一是只去更新那些改变了的东西， 也就是在sidebar区域的&lt;%= render @cart % &gt;<br>利用ajax， 我们只希望重新渲染&lt;%= render @cart % &gt;, 其他部分保留；</p>
+<p>具体实现的方法： 由于在application.html.erb里面包裹住&lt;%= render @cart % &gt;部分的div是id是cart， 所以我们只需要通过jquery选择<br>到那个div， 然后修改里面的html使之成为更新后的版本就可以了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#cart&quot;).html(&quot;&lt;%= escape_javascript render(@cart) %&gt;&quot;)</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>Add a member route<br>To add a member route, just add a member block into the resource block:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :photos do</span><br><span class="line">  member do</span><br><span class="line">    get &apos;preview&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>This will recognize /photos/1/preview with GET, and route to the preview action of PhotosController, with the resource<br>id value passed in params[:id]. It will also create the preview_photo_url and preview_photo_path helpers.<br>在我们这个网站里面， 通过增加下面这几行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :line_items do</span><br><span class="line">  member do</span><br><span class="line">    put &apos;decrement&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<p>我们实现的是， 首先能够识别出 /line_items/1/decrement这个路由， 和http里面的put联系起来， 然后去调用line_items controller里面的decrement这个方法<br>同时也将resource的id传入进来, params[:id], 然后创建 decrement_lin_item_url和 decrement_line_item_path;</p>
+<p><strong>注意： 一直困扰我的， 在点击decrement这个按钮的时候， 会出现internet error 505, unable to load the resources; 然后还看到的是关于line_item_controller里面的各种nil class, 其实这就是一个启示， 表示在那个时候使用的@line_item是没有被赋值的； 因此追根溯源找到的赋值的地方是set_line_item， 我们使用hook, before_action限制了使用这个hook的范围， 因此每一次我们新引进一个method的时候， 我们都需要记得在controller最前面的hook看看有没有限制；</strong></p>
+<blockquote>
+<p>总结一下8.16号犯的一些错误：<br>[1]在touch file的时候注意不要放错位置！_line_item.html.erb这个文件的错放导致了很多的问题；<br>[2]添加了member route之后创建的新方法已开始被hook before_action限制住了， 要记得添加他们的使用范围；<br>[3]灵通一点， 在decrement.js.erb中， 通过调换其中一些code的顺序也可以达到同样的效果；</p>
+</blockquote>
+<ul>
+<li>Modify the model<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate scaffold Order name address:text email pay_type</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在rails里面， 没有标明type的属性默认： string<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate migration add_order_to_line_item order:references</span><br></pre></td></tr></table></figure></p>
+<p>在已经存在的line_item model里面添加一个column， order_id；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure></p>
+<p>然后在_cart.html.erb里面增加一个button_to按钮来链接到对应的创建order的操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Checkout&quot;, new_order_path, method: :get % &gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
+<p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> rails </tag>
             
         </tags>
         
