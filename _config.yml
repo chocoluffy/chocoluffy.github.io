@@ -159,8 +159,8 @@ douban:
     title: '时间知道'
     quote: '“时间过去了，我们谁也没有在原地等候......这或许是关于时间和耐心的全部真相。”'
   movie:
-    title: 'This is my movie title'
-    quote: 'This is my movie quote'
+    title: '我收藏的电影'
+    quote: '放松一下~'
   timeout: 15000 
   
 # Image lazyload [https://github.com/Robin-front/hexo-lazyload]
