@@ -2,15 +2,8 @@ title: Leetcode算法思路
 date: 2018-06-30 10:32:06
 tags: [算法, leetcode, interview, C++]
 categories: 技术
-description: test
-mathjax: true
+description: My Leetcode solution analysis.
 ---
-
-My Leetcode solution analysis. 
-
-## MathJax fast test
-
-$$lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n$$
 
 ## algorithm summary
 
