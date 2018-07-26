@@ -29,5 +29,5 @@ Imagine Cup全球决赛圈刚刚在西雅图结束，恭喜smartARM代表加拿�
 
 这其实也昭示现在科技和资本转向的方向。相比近15年来基于互联网和移动设备等基础设施发展起来的各式服务，我们会迎来越来越多基础建设上的创新，譬如AR/VR平台，区块链应用。而我们也将以此获得很宝贵的一段缓冲期，来围绕新的基础设施来构造面向大众市场的服务，找到更匹配的用户场景。
 
-[^1]: [Techcrunch报道](https://techcrunch.com/2018/07/25/smartarms-ai-powered-prosthesis-takes-the-prize-at-microsofts-imagine-cup/)
+[^1]: [Techcrunch报道Imagine Cup决赛优胜队伍](https://techcrunch.com/2018/07/25/smartarms-ai-powered-prosthesis-takes-the-prize-at-microsofts-imagine-cup/)
 [^2]: [加拿大赛区结果](http://web.cs.toronto.edu/news/current/U_of_T_wins_at_the_Canadian_Finals_of_Imagine_Cup_2018.htm)
