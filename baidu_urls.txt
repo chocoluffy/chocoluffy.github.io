@@ -1,3 +1,4 @@
+http://chocoluffy.com/2018/07/26/写在微软Imageine-Cup决赛圈之后/
 http://chocoluffy.com/2018/07/01/谈“破窗理论”下弱势群体的保护主义/
 http://chocoluffy.com/2018/07/01/Leetcode题目解析/
 http://chocoluffy.com/2018/06/30/Leetcode算法思路/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/01/12/时间知道-持续更新/
 http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/
 http://chocoluffy.com/2016/01/09/现实和虚拟的边界/
 http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/
-http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/
