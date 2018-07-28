@@ -1,6 +1,8 @@
 title: 我的诗
 date: 2018-07-28 10:49:08
-categories:
+tags: [日记, 诗]
+categories: 原创
+sidebar: true
 ---
 
 ## 出身 (2018.7.28)
