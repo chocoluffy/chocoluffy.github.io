@@ -1,7 +1,6 @@
 title: 我的诗集
 date: 2018-07-28 10:49:08
-tags: [日记, 诗]
-categories: 原创
+categories:
 sidebar: true
 ---
 
