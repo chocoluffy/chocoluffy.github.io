@@ -9,7 +9,7 @@ categories:
 - 『[我的技术笔记](http://chocoluffy.com/tech/)』
 - 『[我的生活随笔](http://chocoluffy.com/life/)』
 - 『[我的书房](http://chocoluffy.com/books/)』
-- 『[我的日记碎片](http://chocoluffy.com/weibo/)』
+- 『[我的日记碎片](http://chocoluffy.com/weibo/)』& 『[诗集](http://chocoluffy.com/poems/)』
 - 『[我的Github](https://github.com/chocoluffy)』
 
 想像路飞那样一直拼下去，当一个人有了真正想要守护的东西，他才会真正变得强大。
