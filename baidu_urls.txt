@@ -14,6 +14,7 @@ http://chocoluffy.com/2018/01/22/《风沙星辰-夜间飞行》文摘/
 http://chocoluffy.com/2018/01/01/原来这一切都可以讲述/
 http://chocoluffy.com/2017/09/26/鲸语的创业故事-聚焦生活服务的搜索引擎/
 http://chocoluffy.com/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/
+http://chocoluffy.com/2017/06/17/未选择的路-《刀锋》读后感/
 http://chocoluffy.com/2017/03/20/但是你记得-《把你交给时间》读后感/
 http://chocoluffy.com/2017/03/20/App首发｜鲸语-多伦多玩乐攻略第一入口/
 http://chocoluffy.com/2016/12/04/浅析经典面试算法题-two-pointer的运用/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/01/23/象征与符号/
 http://chocoluffy.com/2016/01/20/Responsive-web-design-第二期-position-overlay/
 http://chocoluffy.com/2016/01/12/时间知道-持续更新/
 http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/
-http://chocoluffy.com/2016/01/09/现实和虚拟的边界/
