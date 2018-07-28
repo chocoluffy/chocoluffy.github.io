@@ -7,6 +7,7 @@ http://chocoluffy.com/2018/06/13/该隐的印记-《德米安》读后感/
 http://chocoluffy.com/2018/05/12/玩具气球/
 http://chocoluffy.com/2018/04/15/《童年的消逝》文摘/
 http://chocoluffy.com/2018/04/15/科技的盲点-《童年的消逝》读后感/
+http://chocoluffy.com/2018/03/19/轻与重/
 http://chocoluffy.com/2018/03/16/《华氏451》文摘/
 http://chocoluffy.com/2018/03/16/无法估量的繁盛-《华氏451》读后感/
 http://chocoluffy.com/2018/01/22/《风沙星辰-夜间飞行》文摘/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/01/20/Responsive-web-design-第二期-position-overla
 http://chocoluffy.com/2016/01/12/时间知道-持续更新/
 http://chocoluffy.com/2016/01/12/Flexbox-website-layout-Intro/
 http://chocoluffy.com/2016/01/09/现实和虚拟的边界/
-http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/
