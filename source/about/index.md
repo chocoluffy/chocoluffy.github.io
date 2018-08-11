@@ -28,7 +28,7 @@ categories:
 - 进驻多伦多大学计算机学院孵化器DCSIL。
 - 受邀于2018.4.30在[OCE Discovery](https://www.ocediscovery.com/)会议上展示项目。
 - [2018.4.25更新] 微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)。
-- [2018.5.26更新] 微软Imagine Cup加拿大赛区第二名。[媒体介绍](https://blogs.msdn.microsoft.com/microsoftimagine/2018/05/26/announcing-the-winners-of-the-canadian-finals-of-imagine-cup-2018/)。
+- [2018.5.26更新] 微软Imagine Cup加拿大赛区第二名。[媒体介绍](https://blogs.msdn.microsoft.com/microsoftimagine/2018/05/26/announcing-the-winners-of-the-canadian-finals-of-imagine-cup-2018/)，[博客记录](http://chocoluffy.com/2018/07/26/%E5%86%99%E5%9C%A8%E5%BE%AE%E8%BD%AFImageine-Cup%E5%86%B3%E8%B5%9B%E5%9C%88%E4%B9%8B%E5%90%8E/)。
 
 <img src="https://ws4.sinaimg.cn/large/006tKfTcly1fqqlus9ucjj31kw0nsx6s.jpg" style="display: block; margin: 0 auto; height: 300px">
 
@@ -42,7 +42,7 @@ categories:
 
 ### 鲸语 - 多伦多头条资讯智能聚合 - 2017年3月
 
-- [鲸语科技](http://whalesper.co/)(whalesper.co)创始人，兼开发者。
+- [鲸语科技](http://whalesper.com/)(whalesper.com)创始人，兼开发者。
 - App Store多伦多搜索结果Top5。iOS应用下载量~25K。
 - 鲸语，聚合超过200个加拿大多伦多本地生活服务消息源，同城娱乐，美食推荐，热门活动，省钱攻略第一时间精选推送，内容源涵盖微信公众号，微博，知乎，今日头条等最火社交新闻媒体。利用人工智能，我们尝试改变传统资讯阅读的模式。结合你周围的人正在阅读的消息，实时浮动热门内容；利用文本数据分析，提供所有长文本以标签，极大提升诸如微博等资讯的阅读体验和效率；随时随地的照片识别和文本分析；同时增加校园聊天机器人，充分连接实时有用的校园服务，为多伦多本地学习的留学生提供最便捷的帮助。
 - [2018.2.6更新] 进驻多伦多大学工程院孵化器UofT Hatchery，参与2018 NEST Cohort。
