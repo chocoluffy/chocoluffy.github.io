@@ -41,6 +41,7 @@ categories:
 ## 月总结
 - 『[碎语 2018 Sep.](http://chocoluffy.com/2018/09/04/%E7%A2%8E%E8%AF%AD-2018-Sep/)』 2018年9月。
 - 『[碎语 2018 Aug.](http://chocoluffy.com/2018/09/04/%E7%A2%8E%E8%AF%AD-2018-Aug/)』 2018年8月。
+- 『[碎语 2018 Jul.](http://chocoluffy.com/2018/07/24/%E7%A2%8E%E8%AF%AD-2018-Jul/)』 2018年7月。
 - 『[喜欢冬天，因为可以把寒冷归咎于天气](http://chocoluffy.com/2016/11/20/%E5%96%9C%E6%AC%A2%E5%86%AC%E5%A4%A9%EF%BC%8C%E5%9B%A0%E4%B8%BA%E5%8F%AF%E4%BB%A5%E6%8A%8A%E5%AF%92%E5%86%B7%E5%BD%92%E5%92%8E%E4%BA%8E%E5%A4%A9%E6%B0%94/)』 2016年11月。
 
 ## 转载与点评
