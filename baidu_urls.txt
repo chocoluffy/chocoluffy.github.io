@@ -6,6 +6,7 @@ http://chocoluffy.com/2018/07/01/谈“破窗理论”下弱势群体的保护�
 http://chocoluffy.com/2018/07/01/Leetcode题目解析/
 http://chocoluffy.com/2018/06/30/Leetcode算法思路/
 http://chocoluffy.com/2018/06/29/《加缪手记第二卷》阅读批注/
+http://chocoluffy.com/2018/06/28/碎语-2018-Jun/
 http://chocoluffy.com/2018/06/13/该隐的印记-《德米安》读后感/
 http://chocoluffy.com/2018/05/12/玩具气球/
 http://chocoluffy.com/2018/04/15/《童年的消逝》文摘/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/
 http://chocoluffy.com/2016/02/18/Online-messege-sending后端C实现版/
 http://chocoluffy.com/2016/02/04/Responsive-web-design-第三期-js动画/
 http://chocoluffy.com/2016/01/26/Memory-allocation-in-C/
-http://chocoluffy.com/2016/01/23/象征与符号/
