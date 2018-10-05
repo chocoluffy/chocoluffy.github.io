@@ -12,6 +12,7 @@ categories:
 
 Stay hungry, stay foolish.
 
+- [对李开复新书演讲《AI·未来》的一点思考](http://chocoluffy.com/2018/10/05/%E5%AF%B9%E6%9D%8E%E5%BC%80%E5%A4%8D%E6%96%B0%E4%B9%A6%E6%BC%94%E8%AE%B2%E3%80%8AAI%C2%B7%E6%9C%AA%E6%9D%A5%E3%80%8B%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/)
 - [写在微软Imagine Cup决赛圈之后](http://chocoluffy.com/2018/07/26/%E5%86%99%E5%9C%A8%E5%BE%AE%E8%BD%AFImageine-Cup%E5%86%B3%E8%B5%9B%E5%9C%88%E4%B9%8B%E5%90%8E/)
 - [HiTech面对面·华人创业故事 - 一名多大学生创业者的故事](https://mp.weixin.qq.com/s?__biz=MzIzNDYzMTc5Nw==&mid=2247484697&idx=1&sn=288625d83c1edc6dce8f9d8b40f821a6&chksm=e8f22203df85ab1525099f1e02a6e1218c35a9f1b5d84f6577fbabb04490e2d0e1ff9a4ad4d9#rd)
 - [鲸语的创业故事 - 聚焦生活服务的搜索引擎](http://chocoluffy.com/2017/09/26/%E9%B2%B8%E8%AF%AD%E7%9A%84%E5%88%9B%E4%B8%9A%E6%95%85%E4%BA%8B-%E8%81%9A%E7%84%A6%E7%94%9F%E6%B4%BB%E6%9C%8D%E5%8A%A1%E7%9A%84%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/)
