@@ -67,8 +67,6 @@ class Trie(object):
 
 pop直到结构内元素单调然后push。
 
----
-
 # Algorithm
 
 ### union find
