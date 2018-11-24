@@ -20,6 +20,7 @@ http://chocoluffy.com/2018/03/16/无法估量的繁盛-《华氏451》读后感/
 http://chocoluffy.com/2018/01/22/《风沙星辰-夜间飞行》文摘/
 http://chocoluffy.com/2018/01/01/原来这一切都可以讲述/
 http://chocoluffy.com/2017/09/26/鲸语的创业故事-聚焦生活服务的搜索引擎/
+http://chocoluffy.com/2017/07/28/碎语-2017-Jul/
 http://chocoluffy.com/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/
 http://chocoluffy.com/2017/06/29/碎语-2017-Jan-Jun/
 http://chocoluffy.com/2017/06/17/未选择的路-《刀锋》读后感/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/04/25/关于创业，-那些不能说的秘密/
 http://chocoluffy.com/2016/04/23/创意视频分屏-HTML5-JS/
 http://chocoluffy.com/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/
 http://chocoluffy.com/2016/03/11/MEAN全栈开发-第二期-前端实战手记/
-http://chocoluffy.com/2016/03/06/MEAN全栈开发-第一期-前端布局/
