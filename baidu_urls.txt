@@ -9,6 +9,7 @@ http://chocoluffy.com/2018/07/01/Leetcode题目解析/
 http://chocoluffy.com/2018/06/30/Leetcode算法思路/
 http://chocoluffy.com/2018/06/29/《加缪手记第二卷》阅读批注/
 http://chocoluffy.com/2018/06/28/碎语-2018-Jun/
+http://chocoluffy.com/2018/06/17/离别的信/
 http://chocoluffy.com/2018/06/13/该隐的印记-《德米安》读后感/
 http://chocoluffy.com/2018/05/30/碎语-2018-May/
 http://chocoluffy.com/2018/05/12/玩具气球/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/05/13/另一种鼓声-读《途客圈》有感/
 http://chocoluffy.com/2016/05/12/Angular入门-module和service/
 http://chocoluffy.com/2016/05/07/一派胡言-第三期-民主的不满/
 http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/
-http://chocoluffy.com/2016/04/27/第一期-AirLoft组织动员宣言/
