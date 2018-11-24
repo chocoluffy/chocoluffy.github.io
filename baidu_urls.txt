@@ -2,7 +2,6 @@ http://chocoluffy.com/2018/11/02/碎语-2018-Oct/
 http://chocoluffy.com/2018/10/05/对李开复新书演讲《AI·未来》的一点思考/
 http://chocoluffy.com/2018/09/04/碎语-2018-Sep/
 http://chocoluffy.com/2018/09/01/碎语-2018-Aug/
-http://chocoluffy.com/2018/08/29/碎语-2017-Aug/
 http://chocoluffy.com/2018/07/26/写在微软Imageine-Cup决赛圈之后/
 http://chocoluffy.com/2018/07/24/碎语-2018-Jul/
 http://chocoluffy.com/2018/07/01/谈“破窗理论”下弱势群体的保护主义/
@@ -20,7 +19,9 @@ http://chocoluffy.com/2018/03/16/《华氏451》文摘/
 http://chocoluffy.com/2018/03/16/无法估量的繁盛-《华氏451》读后感/
 http://chocoluffy.com/2018/01/22/《风沙星辰-夜间飞行》文摘/
 http://chocoluffy.com/2018/01/01/原来这一切都可以讲述/
+http://chocoluffy.com/2017/09/28/碎语-2017-Sep/
 http://chocoluffy.com/2017/09/26/鲸语的创业故事-聚焦生活服务的搜索引擎/
+http://chocoluffy.com/2017/08/29/碎语-2017-Aug/
 http://chocoluffy.com/2017/07/28/碎语-2017-Jul/
 http://chocoluffy.com/2017/07/05/写在1-0发布后第50天-鲸语开发者的独白/
 http://chocoluffy.com/2017/06/29/碎语-2017-Jan-Jun/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/
 http://chocoluffy.com/2016/04/27/第一期-AirLoft组织动员宣言/
 http://chocoluffy.com/2016/04/25/关于创业，-那些不能说的秘密/
 http://chocoluffy.com/2016/04/23/创意视频分屏-HTML5-JS/
-http://chocoluffy.com/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/
