@@ -1,3 +1,4 @@
+http://chocoluffy.com/2018/11/30/碎语-2018-Nov/
 http://chocoluffy.com/2018/11/02/碎语-2018-Oct/
 http://chocoluffy.com/2018/10/05/对李开复新书演讲《AI·未来》的一点思考/
 http://chocoluffy.com/2018/09/04/碎语-2018-Sep/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/05/15/前端开发工具库-第一期-npm-script/
 http://chocoluffy.com/2016/05/13/另一种鼓声-读《途客圈》有感/
 http://chocoluffy.com/2016/05/12/Angular入门-module和service/
 http://chocoluffy.com/2016/05/07/一派胡言-第三期-民主的不满/
-http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/
