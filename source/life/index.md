@@ -41,7 +41,7 @@ categories:
 - 『[2014年我来了](http://chocoluffy.com/2014/02/12/2014%E5%B9%B4%E6%88%91%E6%9D%A5%E4%BA%86/)』 这一年发生了好多事呢。
 
 ## 月总结
-- 『[碎语 2018 Nov.](hhttp://chocoluffy.com/2018/11/30/%E7%A2%8E%E8%AF%AD-2018-Nov/)』 2018年11月。抵抗存在的被遗忘。
+- 『[碎语 2018 Nov.](http://chocoluffy.com/2018/11/30/%E7%A2%8E%E8%AF%AD-2018-Nov/)』 2018年11月。抵抗存在的被遗忘。
 - 『[碎语 2018 Oct.](http://chocoluffy.com/2018/11/02/%E7%A2%8E%E8%AF%AD-2018-Oct/)』 2018年10月。仅仅是生活，都可以成为别人的消费。
 - 『[碎语 2018 Sep.](http://chocoluffy.com/2018/09/04/%E7%A2%8E%E8%AF%AD-2018-Sep/)』 2018年9月。要记住，总有人在远方为你祈祷。
 - 『[碎语 2018 Aug.](http://chocoluffy.com/2018/09/04/%E7%A2%8E%E8%AF%AD-2018-Aug/)』 2018年8月。曲终。响起了很长很长的掌声。仿佛磅礴大雨。
