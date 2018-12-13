@@ -6,6 +6,20 @@ sidebar: true
 
 冷冷清清的风风火火。
 
+## 阳光 <small>(2018.12.12)</small>
+
+我时常会轻易地，因为阳光明媚，而毁约。
+
+<img src="https://ws1.sinaimg.cn/large/006tNbRwly1fy4yecdpgwj31400u0kjn.jpg" style="display: block; margin: 0 auto; height: 300px">
+
+
+## 很深很深的蔚蓝 <small>(2018.12.8)</small>
+
+坎昆之行第一天。午觉醒来拉起机窗帘幕。是很深很深的蔚蓝。
+
+<img src="https://ws2.sinaimg.cn/large/006tNbRwly1fy4ybeobemj31400u07wl.jpg" style="display: block; margin: 0 auto; height: 300px">
+
+
 ## 冷落了风 <small>(2018.11.22)</small>
 
 门前一棵不愿凋零的树。像墓碑一样伫立着。讨好着这个季节最后的明媚，却冷落了风。
