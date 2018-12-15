@@ -249,6 +249,9 @@
       {% if not is_index %}
         {{ related_posts(post, site.posts) }}
       {% endif %}
+
+      <div class="addthis_inline_share_toolbox"></div>            
+      
     </footer>
   </article>
 
