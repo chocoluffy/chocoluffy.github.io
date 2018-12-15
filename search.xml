@@ -296,7 +296,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -388,7 +388,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -432,7 +432,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -445,7 +445,7 @@
             
             <tag> 算法 </tag>
             
-            <tag> 社会人物 </tag>
+            <tag> 社会人文 </tag>
             
             <tag> 科技 </tag>
             
@@ -485,7 +485,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -629,7 +629,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 创业 </category>
             
         </categories>
         
@@ -774,15 +774,15 @@
         
         <tags>
             
-            <tag> 社会人物 </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> 社会人文 </tag>
+            
+            <tag> 政治 </tag>
             
             <tag> 经济学 </tag>
             
             <tag> 自由主义 </tag>
-            
-            <tag> 政治 </tag>
             
         </tags>
         
@@ -1084,7 +1084,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -1259,7 +1259,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -1267,6 +1267,10 @@
         <tags>
             
             <tag> 日记 </tag>
+            
+            <tag> 商业评论 </tag>
+            
+            <tag> 剧本 </tag>
             
             <tag> 月总结 </tag>
             
@@ -1305,7 +1309,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -1336,7 +1340,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -1469,7 +1473,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -1477,6 +1481,8 @@
         <tags>
             
             <tag> 日记 </tag>
+            
+            <tag> 商业评论 </tag>
             
             <tag> 月总结 </tag>
             
@@ -1503,7 +1509,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -1608,7 +1614,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -1662,7 +1668,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -1672,6 +1678,8 @@
             <tag> 读书笔记 </tag>
             
             <tag> 书摘 </tag>
+            
+            <tag> 社会人文 </tag>
             
             <tag> 科技 </tag>
             
@@ -1692,7 +1700,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -1818,7 +1826,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -1880,7 +1888,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -2118,7 +2126,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -2173,7 +2181,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -2273,7 +2281,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -2281,6 +2289,8 @@
         <tags>
             
             <tag> 日记 </tag>
+            
+            <tag> 诗 </tag>
             
             <tag> 月总结 </tag>
             
@@ -2364,7 +2374,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -2372,6 +2382,8 @@
         <tags>
             
             <tag> 日记 </tag>
+            
+            <tag> 商业评论 </tag>
             
             <tag> 月总结 </tag>
             
@@ -2453,7 +2465,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -2461,6 +2473,10 @@
         <tags>
             
             <tag> 日记 </tag>
+            
+            <tag> 商业评论 </tag>
+            
+            <tag> 社会人文 </tag>
             
             <tag> 月总结 </tag>
             
@@ -2493,7 +2509,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 创业 </category>
             
         </categories>
         
@@ -2594,7 +2610,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -2603,7 +2619,13 @@
             
             <tag> 日记 </tag>
             
+            <tag> 读书笔记 </tag>
+            
             <tag> 月总结 </tag>
+            
+            <tag> 产品 </tag>
+            
+            <tag> 人工智能 </tag>
             
         </tags>
         
@@ -2675,7 +2697,9 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
+            
+            <category> 创业 </category>
             
         </categories>
         
@@ -2683,6 +2707,8 @@
         <tags>
             
             <tag> 日记 </tag>
+            
+            <tag> 创业 </tag>
             
             <tag> 月总结 </tag>
             
@@ -2733,7 +2759,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 创业 </category>
             
         </categories>
         
@@ -2916,7 +2942,9 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
+            
+            <category> 创业 </category>
             
         </categories>
         
@@ -2925,7 +2953,13 @@
             
             <tag> 日记 </tag>
             
+            <tag> 创业 </tag>
+            
+            <tag> 读书笔记 </tag>
+            
             <tag> 月总结 </tag>
+            
+            <tag> 辩论题 </tag>
             
         </tags>
         
@@ -2966,7 +3000,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -3002,7 +3036,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -3149,7 +3183,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 技术 </category>
             
         </categories>
         
@@ -3216,7 +3250,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -3225,7 +3259,7 @@
             
             <tag> 日记 </tag>
             
-            <tag> 社会人物 </tag>
+            <tag> 社会人文 </tag>
             
             <tag> 月总结 </tag>
             
@@ -3324,7 +3358,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -3363,7 +3397,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -3654,7 +3688,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -3713,7 +3747,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -3933,7 +3967,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -4080,18 +4114,18 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 社会人物 </tag>
-            
             <tag> 读书笔记 </tag>
             
             <tag> 公众号文章 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -4207,7 +4241,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -4299,7 +4333,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 创业 </category>
             
         </categories>
         
@@ -4978,16 +5012,18 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
+            
+            <category> 转载 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 社会人物 </tag>
-            
             <tag> 读书笔记 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -5073,7 +5109,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 收藏帖 </category>
             
         </categories>
         
@@ -5487,7 +5523,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 转载 </category>
             
         </categories>
         
@@ -5969,7 +6005,7 @@
       
         <categories>
             
-            <category> 转载 </category>
+            <category> 收藏帖 </category>
             
         </categories>
         
@@ -6011,7 +6047,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -6040,7 +6076,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -6150,9 +6186,9 @@
         
         <tags>
             
-            <tag> 社会人物 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -6332,7 +6368,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[告别卢安克]]></title>
+      <title><![CDATA[【转载】告别卢安克]]></title>
       <url>http://chocoluffy.com/2015/08/27/%E5%91%8A%E5%88%AB%E5%8D%A2%E5%AE%89%E5%85%8B/</url>
       <content type="html"><![CDATA[<p>某天接到小手的微信，问我对《看见》里面卢安克的看法。我重新去博客上回顾了一下那篇文章，也将我们之间的对话摘录下来。由于只是对话，行文逻辑较松散，但都是第一感觉，未删改。柴静原文《告别卢安克》附在对话最后。</p>
 <a id="more"></a>
@@ -6418,9 +6454,9 @@
         
         <tags>
             
-            <tag> 社会人物 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -6648,7 +6684,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -6697,14 +6733,14 @@
         
         <tags>
             
-            <tag> 社会人物 </tag>
+            <tag> 社会人文 </tag>
             
         </tags>
         
     </entry>
     
     <entry>
-      <title><![CDATA[为什么要读闲书？]]></title>
+      <title><![CDATA[【转载】为什么要读闲书？]]></title>
       <url>http://chocoluffy.com/2015/08/06/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E8%AF%BB%E9%97%B2%E4%B9%A6%EF%BC%9F/</url>
       <content type="html"><![CDATA[<p>只有曾经去思考什么是自由，才有去挣脱的冲动。</p>
 <a id="more"></a>
@@ -6739,7 +6775,7 @@
         
         <tags>
             
-            <tag> 社会人物 </tag>
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -6784,16 +6820,16 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> 社会人物 </tag>
-            
             <tag> 公众号文章 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -6881,7 +6917,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -6912,7 +6948,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -6945,7 +6981,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -6983,16 +7019,20 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
         
         <tags>
             
+            <tag> 社会人物 </tag>
+            
             <tag> 读书笔记 </tag>
             
             <tag> 公众号文章 </tag>
+            
+            <tag> 政治 </tag>
             
         </tags>
         
@@ -7019,7 +7059,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -7060,7 +7100,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -7094,7 +7134,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -7135,7 +7175,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -7160,7 +7200,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
@@ -7196,7 +7236,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 随笔 </category>
             
         </categories>
         
