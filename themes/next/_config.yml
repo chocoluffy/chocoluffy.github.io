@@ -340,7 +340,7 @@ busuanzi_count:
   site_pv_header: 你是第
   site_pv_footer: 个小伙伴
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-eye"></i>
   page_pv_footer:
 
