@@ -27,7 +27,17 @@ hexo.extend.helper.register('related_posts', function(currentPost, allPosts){
     var result = '<h3> 相关文章：</h3><ul class="related-posts">';
     relatedPosts = relatedPosts.sort(compare('weight'));
     for (var i = 0; i < Math.min(relatedPosts.length, 10); i++) {
-        result += '<li><a href="/' + relatedPosts[i].path + '">' + relatedPosts[i].title + '</a></li>';
+        result += '<li><a href="/' + 
+                    relatedPosts[i].path + 
+                    '">' + 
+                    relatedPosts[i].title +
+                    '</a>' + 
+                    '<span id="{{' + relatedPosts[i].path +  '}}" class="leancloud_visitors" data-flag-title="{{' + relatedPosts[i].title + '}}">' + 
+                        '&nbsp; , &nbsp;' + 
+                        '<span class="post-meta-item-text">阅读次数: </span>' + 
+                        '<span class="leancloud-visitors-count"></span>'
+                    '</span>'
+                    '</li>';
     };
     result += '</ul>';
 
