@@ -9,10 +9,11 @@ categories:
 这里，是我分享生活的地方。
 
 ## 碎碎念
-- 『[我的日记碎片](http://chocoluffy.com/weibo/)』 持续更新中......
-- 『[我的诗集](http://chocoluffy.com/poems/)』 持续更新中......
-- 『[我的相册](http://chocoluffy.com/photo/)』 持续更新中......
-- 『[2018年的读书接力](http://chocoluffy.com/books/)』 持续更新中......
+- 『[我的日记碎片](http://chocoluffy.com/weibo/)』 
+- 『[我的诗集](http://chocoluffy.com/poems/)』 
+- 『[我的相册](http://chocoluffy.com/photo/)』 
+- 『[我的影院](http://chocoluffy.com/movies/)』 
+- 『[2018年的读书接力](http://chocoluffy.com/books/)』
 
 ## 思考点滴
 - 『[谈“破窗理论”下弱势群体的保护主义](http://chocoluffy.com/2018/07/01/%E8%B0%88%E2%80%9C%E7%A0%B4%E7%AA%97%E7%90%86%E8%AE%BA%E2%80%9D%E4%B8%8B%E5%BC%B1%E5%8A%BF%E7%BE%A4%E4%BD%93%E7%9A%84%E4%BF%9D%E6%8A%A4%E4%B8%BB%E4%B9%89/)』 书本会被一页一页地撕去。《华氏451》
