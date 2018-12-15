@@ -250,8 +250,16 @@
         {{ related_posts(post, site.posts) }}
       {% endif %}
 
-      <div class="addthis_inline_share_toolbox"></div>            
-      
+      <div class="addthis_inline_share_toolbox" 
+           style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -25px;
+            margin-top: 30px;
+           "
+      ></div>            
+
     </footer>
   </article>
 
