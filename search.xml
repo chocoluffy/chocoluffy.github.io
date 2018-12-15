@@ -61,7 +61,7 @@
       
         <categories>
             
-            <category> 原创 </category>
+            <category> 书摘 </category>
             
         </categories>
         
@@ -1625,6 +1625,8 @@
             
             <tag> 书摘 </tag>
             
+            <tag> 社会人文 </tag>
+            
         </tags>
         
     </entry>
@@ -1836,6 +1838,8 @@
             <tag> 读书笔记 </tag>
             
             <tag> 书摘 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -2136,6 +2140,8 @@
             <tag> 读书笔记 </tag>
             
             <tag> 书摘 </tag>
+            
+            <tag> 社会人文 </tag>
             
         </tags>
         
@@ -2774,6 +2780,8 @@
             
             <tag> 创业 </tag>
             
+            <tag> 商业评论 </tag>
+            
         </tags>
         
     </entry>
@@ -3100,7 +3108,7 @@
       
         <categories>
             
-            <category> 技术 </category>
+            <category> 创业 </category>
             
         </categories>
         
@@ -3112,6 +3120,8 @@
             <tag> iOS </tag>
             
             <tag> 创业 </tag>
+            
+            <tag> 商业评论 </tag>
             
         </tags>
         
@@ -3756,7 +3766,13 @@
             
             <tag> 日记 </tag>
             
+            <tag> 社会人文 </tag>
+            
             <tag> 公众号文章 </tag>
+            
+            <tag> 心情记录 </tag>
+            
+            <tag> 年度总结 </tag>
             
         </tags>
         
@@ -4123,9 +4139,9 @@
             
             <tag> 读书笔记 </tag>
             
-            <tag> 公众号文章 </tag>
-            
             <tag> 社会人文 </tag>
+            
+            <tag> 公众号文章 </tag>
             
         </tags>
         
@@ -4211,7 +4227,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[[第一期]AirLoft组织动员宣言]]></title>
+      <title><![CDATA[AirLoft组织动员宣言]]></title>
       <url>http://chocoluffy.com/2016/04/27/%E7%AC%AC%E4%B8%80%E6%9C%9F-AirLoft%E7%BB%84%E7%BB%87%E5%8A%A8%E5%91%98%E5%AE%A3%E8%A8%80/</url>
       <content type="html"><![CDATA[<p>The best education comes from inside. </p>
 <a id="more"></a>
@@ -5672,7 +5688,7 @@
       
         <categories>
             
-            <category> 技术 </category>
+            <category> 收藏帖 </category>
             
         </categories>
         
@@ -5682,6 +5698,8 @@
             <tag> hexo </tag>
             
             <tag> 博客 </tag>
+            
+            <tag> 收藏帖 </tag>
             
         </tags>
         
@@ -6186,9 +6204,9 @@
         
         <tags>
             
-            <tag> 公众号文章 </tag>
-            
             <tag> 社会人文 </tag>
+            
+            <tag> 公众号文章 </tag>
             
         </tags>
         
@@ -6454,9 +6472,9 @@
         
         <tags>
             
-            <tag> 公众号文章 </tag>
-            
             <tag> 社会人文 </tag>
+            
+            <tag> 公众号文章 </tag>
             
         </tags>
         
@@ -6539,7 +6557,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[《三体》为何在互联网行业内被“圣经化”？]]></title>
+      <title><![CDATA[【转载】《三体》为何在互联网行业内被“圣经化”？]]></title>
       <url>http://chocoluffy.com/2015/08/24/%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%B8%BA%E4%BD%95%E5%9C%A8%E4%BA%92%E8%81%94%E7%BD%91%E8%A1%8C%E4%B8%9A%E5%86%85%E8%A2%AB%E2%80%9C%E5%9C%A3%E7%BB%8F%E5%8C%96%E2%80%9D%EF%BC%9F-1/</url>
       <content type="html"><![CDATA[<p>让《三体》就呆在它应在的科幻小说位置，不要将它粉饰成社会学，经济学甚至所谓成功学的金科玉律，因为后者，有比丛林法则更为合理的规则:即强弱相对，共生相依，相互转化，强即弱，弱亦强，动态平衡才是至理，客观世界如是，人类社会如是，宇宙洪荒不外如是。</p>
 <a id="more"></a>
@@ -6691,9 +6709,15 @@
         
         <tags>
             
+            <tag> 日记 </tag>
+            
             <tag> 读书笔记 </tag>
             
             <tag> 公众号文章 </tag>
+            
+            <tag> 心情记录 </tag>
+            
+            <tag> 年度总结 </tag>
             
         </tags>
         
@@ -6827,9 +6851,9 @@
         
         <tags>
             
-            <tag> 公众号文章 </tag>
-            
             <tag> 社会人文 </tag>
+            
+            <tag> 公众号文章 </tag>
             
         </tags>
         
@@ -6887,6 +6911,8 @@
         
         
         <tags>
+            
+            <tag> 社会人文 </tag>
             
             <tag> 公众号文章 </tag>
             
