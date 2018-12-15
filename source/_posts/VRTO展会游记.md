@@ -1,7 +1,7 @@
 title: VRTO展会游记
 date: 2016-06-27 08:49:07
 tags: [日记, 虚拟现实]
-categories: 原创
+categories: 随笔
 ---
 
 记录在VR Toronto展会第一次尝试Oculus和Vive的使用体验。

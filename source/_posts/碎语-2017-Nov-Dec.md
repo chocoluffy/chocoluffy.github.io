@@ -1,7 +1,7 @@
 title: 碎语 2017 Nov-Dec.
 date: 2017-12-28 10:31:33
-tags: [月总结, 日记]
-categories: 原创
+tags: [月总结, 日记, 诗]
+categories: 随笔
 description: 这个世界在我心里呈现的样子，远比这个世界本身重要的多。
 ---
 

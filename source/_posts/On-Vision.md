@@ -1,7 +1,7 @@
 title: On Vision
 date: 2014-11-27 22:50:38
 tags: [日记]
-categories: 原创
+categories: 随笔
 ---
 
 I have been haunted with the question that what defines the gap between visions and reality. 

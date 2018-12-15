@@ -1,7 +1,7 @@
 title: 碎语 2017 Jan-Jun.
 date: 2017-06-29 22:47:03
-tags: [月总结, 日记]
-categories: 原创
+tags: [月总结, 日记, 辩论题, 读书笔记, 创业]
+categories: [随笔, 创业]
 description: 而真正的阅读体验是，它不必深刻。
 ---
 

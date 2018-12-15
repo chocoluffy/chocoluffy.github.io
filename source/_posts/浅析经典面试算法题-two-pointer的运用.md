@@ -1,7 +1,7 @@
 title: 浅析经典面试算法题-two pointer的运用
 date: 2016-12-04 12:59:47
 tags: [算法, 面试总结, java]
-categories: 原创
+categories: 技术
 ---
 
 前几天和朋友讨论 Google 电面的一道题， 由此启发， 总结了下 two pointer 的使用场景， 在大部分情况下， 恰当地使用 two pointer 可以使时间复杂度保持在 O(n)， 像 online judge 里部分 medium 题经常提及的子数列类型问题， two pointer 也可以提供不错的切入角度。

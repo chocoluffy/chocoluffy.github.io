@@ -1,7 +1,7 @@
 title: 写在微软Imagine Cup决赛圈之后
 date: 2018-07-26 09:57:16
 tags: [科技, 日记, 算法, 创业]
-categories: 原创
+categories: 创业
 description: 参与2018微软Imagine Cup的一些记录。
 ---
 
