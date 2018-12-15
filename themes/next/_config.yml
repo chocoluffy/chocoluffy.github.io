@@ -276,8 +276,8 @@ baidushare: false
 ##  type: button
 
 # Share
-jiathis: false
-#add_this_id:
+jiathis: true
+add_this_id: ra-5c1469ab13400612
 
 # Share
 duoshuo_share: false
