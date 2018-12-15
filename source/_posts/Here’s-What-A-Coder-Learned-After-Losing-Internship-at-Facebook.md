@@ -1,4 +1,4 @@
-title: Here’s What A Coder Learned After Losing Internship at Facebook
+title: 【转载】Here’s What A Coder Learned After Losing Internship at Facebook
 date: 2015-08-24 07:05:00
 tags: [商业评论]
 categories: 转载
