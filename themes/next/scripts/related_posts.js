@@ -32,9 +32,8 @@ hexo.extend.helper.register('related_posts', function(currentPost, allPosts){
                     '">' + 
                     relatedPosts[i].title +
                     '</a>' + 
-                    '<span id="' + relatedPosts[i].path +  '" class="leancloud_visitors" data-flag-title="' + relatedPosts[i].title + '">' + 
-                        '&nbsp; , &nbsp;' + 
-                        '<span class="post-meta-item-text">阅读次数: </span>' + 
+                    '<span id="/' + relatedPosts[i].path +  '" class="leancloud_visitors" data-flag-title="' + relatedPosts[i].title + '">' + 
+                        '<span class="post-meta-item-text">&nbsp; , &nbsp;阅读次数: </span>' + 
                         '<span class="leancloud-visitors-count"></span>'
                     '</span>'
                     '</li>';
