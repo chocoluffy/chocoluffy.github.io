@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。 这里，是我分享生活的地方。 碎碎念 『我的日记碎片』 持续更新中…… 『我的诗集』 持续更新中…… 『我的相册』 持续更新中…… 『2018年的读书接力』 持续更新中……  思考点滴 『谈“破窗理论”下弱势群体的保护主义』 书本会被一页一页地撕去。《华氏451》 『原来这一切都可以讲述』 2017年度总结。但无论如何，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-15T15:41:27.073Z">
+<meta property="og:updated_time" content="2018-12-15T15:58:48.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的随笔集">
 <meta name="twitter:description" content="我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。 这里，是我分享生活的地方。 碎碎念 『我的日记碎片』 持续更新中…… 『我的诗集』 持续更新中…… 『我的相册』 持续更新中…… 『2018年的读书接力』 持续更新中……  思考点滴 『谈“破窗理论”下弱势群体的保护主义』 书本会被一页一页地撕去。《华氏451》 『原来这一切都可以讲述』 2017年度总结。但无论如何，">
@@ -777,6 +777,105 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("8bVuIF2Vk3EPyqe2OmRaXdgu-gzGzoHsz", "nvwBdADmn3ifRtefzQNGADue");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 <script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">

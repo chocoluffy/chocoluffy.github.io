@@ -113,7 +113,7 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fweddx1i7lj31kw16o1l1.jpg">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNbRwly1fwedgy669kj31kw1dxhdt.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNbRwly1fwedhcsl97j31kw1afx6p.jpg">
-<meta property="og:updated_time" content="2018-12-15T15:41:27.073Z">
+<meta property="og:updated_time" content="2018-12-15T15:58:48.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的相册">
 <meta name="twitter:description" content="冷冷清清的风风火火。 阳光 (2018.12.12)我时常会轻易地，因为阳光明媚，而毁约。  很深很深的蔚蓝 (2018.12.8)坎昆之行第一天。午觉醒来拉起机窗帘幕。是很深很深的蔚蓝。  冷落了风 (2018.11.22)门前一棵不愿凋零的树。像墓碑一样伫立着。讨好着这个季节最后的明媚，却冷落了风。  初雪 (2018.11.15) 燃烧 (2018.11.15)枫叶落下了，留下燃烧过的痕迹。">
@@ -747,6 +747,105 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("8bVuIF2Vk3EPyqe2OmRaXdgu-gzGzoHsz", "nvwBdADmn3ifRtefzQNGADue");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 <script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">

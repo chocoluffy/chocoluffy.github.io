@@ -109,7 +109,7 @@
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/c5ee78b5gw1f1mrezw5z0j21kw0t9dqn.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1f1mrhyoxpvj21kw0t7qiu.jpg">
 <meta property="og:image" content="https://giant.gfycat.com/WetLongHapuka.gif">
-<meta property="og:updated_time" content="2018-12-15T15:41:27.057Z">
+<meta property="og:updated_time" content="2018-12-15T15:58:48.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MEAN全栈开发[第一期-前端布局]">
 <meta name="twitter:description" content="AirLoft的原型。一个sharing economy的网站。 Loft是阁楼的意思， 每个心中那个静静守候一些秘密和癖好的地方。 有些情感， 只能在尘封的铁门后诉说， 就像有些话， 只讲给某个人听。厌倦了某些网站没有审美的UI， 也趁着青春轻狂， 去改变吧。第一期， 记录我前端页面开发的一些手记， 后面慢慢过渡到数据库和后台API设计。">
@@ -374,6 +374,15 @@
           
 
           
+          
+             <span id="/2016/03/06/MEAN全栈开发-第一期-前端布局/" class="leancloud_visitors" data-flag-title="MEAN全栈开发[第一期-前端布局]">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
           
 
           
@@ -951,6 +960,105 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("8bVuIF2Vk3EPyqe2OmRaXdgu-gzGzoHsz", "nvwBdADmn3ifRtefzQNGADue");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 <script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
