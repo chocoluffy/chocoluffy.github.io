@@ -1,7 +1,7 @@
 title: App首发｜鲸语 - 多伦多玩乐攻略第一入口
 date: 2017-03-20 19:23:04
-tags: [react native, iOS, 创业]
-categories: 技术
+tags: [react native, iOS, 创业, 商业评论]
+categories: 创业
 ---
 
 我想象，当我想知道在多伦多，哪里有最好吃的煎饼果子或者绵绵冰， 哪里有最好玩的酒吧和密室，鲸语能给我最好的答案。

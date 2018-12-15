@@ -1,7 +1,7 @@
 title: 优化hexo博客
 date: 2015-12-25 11:29:20
-tags: [hexo, 博客]
-categories: 技术
+tags: [hexo, 博客, 收藏帖]
+categories: 收藏帖
 ---
 
 在搭建hexo博客的时候遇到的各种坑， 留下一些最棒的博文和大家分享!

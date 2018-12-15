@@ -1,4 +1,4 @@
-title: '[第一期]AirLoft组织动员宣言'
+title: AirLoft组织动员宣言
 date: 2016-04-27 21:46:44
 tags: [日记, 创业]
 categories: 随笔
