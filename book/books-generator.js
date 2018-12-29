@@ -77,10 +77,10 @@ module.exports = function (locals) {
         return;
     }
 
-    var timeout = 50000; // increase timeout to allow more books query. 
-    if (config.douban.timeout) {
-        timeout = config.douban.timeout;
-    }
+    var timeout = 40000; // increase timeout to allow more books query. 
+    // if (config.douban.timeout) {
+    //     timeout = config.douban.timeout;
+    // }
 
     var root = config.root;
     if (root.endsWith('/')) {
