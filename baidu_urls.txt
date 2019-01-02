@@ -19,11 +19,15 @@ http://chocoluffy.com/2018/06/17/离别的信/
 http://chocoluffy.com/2018/06/13/该隐的印记-《德米安》读后感/
 http://chocoluffy.com/2018/05/30/碎语-2018-May/
 http://chocoluffy.com/2018/05/12/玩具气球/
+http://chocoluffy.com/2018/04/30/碎语-2018-Apr/
 http://chocoluffy.com/2018/04/15/《童年的消逝》文摘/
 http://chocoluffy.com/2018/04/15/科技的盲点-《童年的消逝》读后感/
+http://chocoluffy.com/2018/03/28/碎语-2018-Mar/
 http://chocoluffy.com/2018/03/19/轻与重/
 http://chocoluffy.com/2018/03/16/《华氏451》文摘/
 http://chocoluffy.com/2018/03/16/无法估量的繁盛-《华氏451》读后感/
+http://chocoluffy.com/2018/02/20/碎语-2018-Feb/
+http://chocoluffy.com/2018/01/30/碎语-2018-Jan/
 http://chocoluffy.com/2018/01/22/《风沙星辰-夜间飞行》文摘/
 http://chocoluffy.com/2018/01/01/原来这一切都可以讲述/
 http://chocoluffy.com/2017/12/28/碎语-2017-Nov-Dec/
@@ -44,7 +48,3 @@ http://chocoluffy.com/2016/10/06/社团日记2-新生致辞/
 http://chocoluffy.com/2016/09/11/社团日记1-重新出发/
 http://chocoluffy.com/2016/08/27/用ffmpeg从视频中获取图片及GIF/
 http://chocoluffy.com/2016/08/01/React-ES6-style-guideline/
-http://chocoluffy.com/2016/07/18/webpack与react-hot-reload开发工具库/
-http://chocoluffy.com/2016/07/03/ReactNative-简易个人博客客户端/
-http://chocoluffy.com/2016/06/27/VRTO展会游记/
-http://chocoluffy.com/2016/06/11/写给高考三年后自己的一封信/
