@@ -1,4 +1,6 @@
+http://chocoluffy.com/2019/01/02/永远存在的镜头-《不朽》读后感/
 http://chocoluffy.com/2019/01/01/抵抗存在的被遗忘/
+http://chocoluffy.com/2018/12/31/碎语-2018-Dec/
 http://chocoluffy.com/2018/12/18/谈谈哈伯格税与激进市场/
 http://chocoluffy.com/2018/12/12/《夜空总有最大密度的蓝色》阅读批注/
 http://chocoluffy.com/2018/11/30/碎语-2018-Nov/
@@ -46,5 +48,3 @@ http://chocoluffy.com/2016/07/18/webpack与react-hot-reload开发工具库/
 http://chocoluffy.com/2016/07/03/ReactNative-简易个人博客客户端/
 http://chocoluffy.com/2016/06/27/VRTO展会游记/
 http://chocoluffy.com/2016/06/11/写给高考三年后自己的一封信/
-http://chocoluffy.com/2016/05/23/socket-io开发多人聊天室教程/
-http://chocoluffy.com/2016/05/15/前端开发工具库-第一期-npm-script/
