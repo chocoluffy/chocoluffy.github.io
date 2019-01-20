@@ -26,9 +26,13 @@ categories:
 - 『[一派胡言[第二期]-关于功利主义](http://chocoluffy.com/2015/07/18/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80-%E7%AC%AC%E4%BA%8C%E6%9C%9F-%E5%85%B3%E4%BA%8E%E5%8A%9F%E5%88%A9%E4%B8%BB%E4%B9%89/)』 一个人的感官感受究竟是不是人生最重要最根本的东西？
 - 『[一派胡言[第一期]-读书是赴会一场缺席的对话](http://chocoluffy.com/2015/11/24/%E4%B8%80%E6%B4%BE%E8%83%A1%E8%A8%80/)』 意义是非常私人的， 是你想到什么， 对自己的生活有什么的思考和收获， 别人不能帮你生活。
 - 『[我们需要什么样子的理想主义?](http://chocoluffy.com/2015/04/16/%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%BB%80%E4%B9%88%E6%A0%B7%E5%AD%90%E7%9A%84%E7%90%86%E6%83%B3%E4%B8%BB%E4%B9%89/)』 任何话语都需要一套非话语的机制支撑才能得以运转。
-- 『[[辩手说]人们有没有权利来决定他们的税收将会被用在什么地方？](http://chocoluffy.com/2015/11/20/%E8%BE%A9%E6%89%8B%E8%AF%B4-%E4%BA%BA%E4%BB%AC%E6%9C%89%E6%B2%A1%E6%9C%89%E6%9D%83%E5%88%A9%E6%9D%A5%E5%86%B3%E5%AE%9A%E4%BB%96%E4%BB%AC%E7%9A%84%E7%A8%8E%E6%94%B6%E5%B0%86%E4%BC%9A%E8%A2%AB%E7%94%A8%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%B0%E6%96%B9%EF%BC%9F/)』
 - 『[On vision](http://chocoluffy.com/2014/11/27/On-Vision/)』
 - 『[On terrorism-what would be the next attack?](http://chocoluffy.com/2014/09/06/What-would-be-the-next-attack/)』 Terrorism is not something that comes from nowhere.
+
+## 辩题分析
+
+- 『[人有没有表达偏见的自由？](http://chocoluffy.com/2019/01/17/%E8%BE%A9%E9%A2%98-%E4%BA%BA%E6%9C%89%E6%B2%A1%E6%9C%89%E8%A1%A8%E8%BE%BE%E5%81%8F%E8%A7%81%E7%9A%84%E8%87%AA%E7%94%B1/)』
+- 『[人们有没有权利来决定他们的税收将会被用在什么地方？](http://chocoluffy.com/2015/11/20/%E8%BE%A9%E6%89%8B%E8%AF%B4-%E4%BA%BA%E4%BB%AC%E6%9C%89%E6%B2%A1%E6%9C%89%E6%9D%83%E5%88%A9%E6%9D%A5%E5%86%B3%E5%AE%9A%E4%BB%96%E4%BB%AC%E7%9A%84%E7%A8%8E%E6%94%B6%E5%B0%86%E4%BC%9A%E8%A2%AB%E7%94%A8%E5%9C%A8%E4%BB%80%E4%B9%88%E5%9C%B0%E6%96%B9%EF%BC%9F/)』
 
 ## 心情记录
 
