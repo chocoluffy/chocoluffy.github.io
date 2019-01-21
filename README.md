@@ -8,7 +8,25 @@
 
 - After Travis CI finished pushing master branch every time upload a new post. At local master branch `git checkout master`, pull the master branch and run `sh submit-to-baidu.sh` to submit latest blog posts to baidu crawler. Remember to input token from baidu.
 
-# Common Error
+# Log
+
+### [19.1.20] 自定义模版 & Shortcut
+
+在`scaffolds/post.md`里面定义每一篇文章的基础格式。在`tags`和`categories`里面预先填写好默认值，便于写作时选择管理。
+
+在博客根目录 `./scripts/`下新建 AutoOpenEditor.js 文件（如果没有 scripts 目录则新建）
+```javascript
+let spawn = require('hexo-util/lib/spawn');
+
+hexo.on('new', (data) => {
+  spawn('code', [hexo.base_dir, data.path]);
+});
+```
+在每次`hexo new`的时候可以自动打开VS Code编辑器开始编辑。
+
+### [19.1.20] README
+
+通过`publish-to-gh-pages.sh`可以判断，最后是将`public/`内的内容push上去。因此在`.travis.yml`里最后移动README.md过去即可。
 
 ### [19.1.20] Cloudflare
 强制Https，以及选择Auto Minify HTML。
@@ -36,6 +54,6 @@ script:
 - [node.js - How to edit a node module installed via npm? - Stack Overflow](https://stackoverflow.com/questions/13300137/how-to-edit-a-node-module-installed-via-npm)
 比如 `https://github.com/chocoluffy/hexo-footnotes/tarball/master`
 
-### 添加footnote
+### [18.6.27] 添加footnote
 - [GitHub - LouisBarranqueiro/hexo-footnotes: A plugin to support markdown footnotes in your Hexo blog posts](https://github.com/LouisBarranqueiro/hexo-footnotes)
 添加`[^1]`即可。
