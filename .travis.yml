@@ -22,7 +22,7 @@ script:
     - hexo clean
     - hexo g
     - hexo douban
-    - cp readme/README.md .
+    - cp readme/README.md public
 
 after_script:
     - ./publish-to-gh-pages.sh
