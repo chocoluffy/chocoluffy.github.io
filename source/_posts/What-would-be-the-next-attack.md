@@ -1,6 +1,6 @@
 title: What would be the next attack
 date: 2014-09-06 22:52:07
-tags: [社会人物]
+tags: [社会人文]
 categories: 随笔
 ---
 
