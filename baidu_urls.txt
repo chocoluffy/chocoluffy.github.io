@@ -1,3 +1,4 @@
+http://chocoluffy.com/2019/01/20/价格无法调节的市场-《共享经济》阅读批注/
 http://chocoluffy.com/2019/01/17/辩题-人有没有表达偏见的自由/
 http://chocoluffy.com/2019/01/02/永远存在的镜头-《不朽》读后感/
 http://chocoluffy.com/2019/01/01/抵抗存在的被遗忘/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2016/11/20/喜欢冬天，因为可以把寒冷归咎于�
 http://chocoluffy.com/2016/11/07/Computer-Vision-基于图片特征匹配合成全景图/
 http://chocoluffy.com/2016/10/06/社团日记2-新生致辞/
 http://chocoluffy.com/2016/09/11/社团日记1-重新出发/
-http://chocoluffy.com/2016/08/27/用ffmpeg从视频中获取图片及GIF/
