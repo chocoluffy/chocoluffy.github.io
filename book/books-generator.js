@@ -18,7 +18,7 @@ function callApi(user, start, timeout) {
     var read = [];
     var res = '';
     try {
-        res = request('https://api.douban.com/v2/book/user/' + user + '/collections?start=' + start + '&count=100', {
+        res = request('https://api.douban.com/v2/book/user/' + user + '/collections?start=' + start + '&count=200', {
             timeout: timeout,
             dataType: 'json'
         });
