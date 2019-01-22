@@ -23,6 +23,7 @@ function callApi(user, start, timeout) {
             dataType: 'json'
         });
     } catch (err) {
+        log.info(err, res);
         offline = true;
     }
 
