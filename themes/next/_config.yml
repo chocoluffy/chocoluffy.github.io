@@ -450,5 +450,8 @@ marked:
   modifyAnchors: ''
   autolink: true
 
+# instant.page
+instant-page: true
+
 # Theme version
 version: 5.0.1
