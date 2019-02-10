@@ -21,7 +21,3 @@
   {% set internal_script = url_for(theme.vendors._internal) + '/' + internal %}
   <script type="text/javascript" src="{{ theme.vendors[name] | default(internal_script) }}"></script>
 {% endfor %}
-
-{% if theme.instant-page %}
-  <script src="//instant.page/1.0.0" type="module" integrity="sha384-6w2SekMzCkuMQ9sEbq0cLviD/yR2HfA/+ekmKiBnFlsoSvb/VmQFSi/umVShadQI"></script>
-{% endif %}
