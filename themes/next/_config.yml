@@ -451,7 +451,7 @@ marked:
   autolink: true
 
 # instant.page
-instant-page: false
+instant-page: true
 
 # Theme version
 version: 5.0.1
