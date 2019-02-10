@@ -1,0 +1,1141 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+
+
+
+
+  <meta name="baidu-site-verification" content="4TeaTL6Cbs" />
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="amphtml" href="./amp/index.html">
+
+
+
+  <meta name="keywords" content="javascript,angularjs," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="余舜哲的 One Piece" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="自己学习angular时候记录的学习笔记，这一篇主要讨论module和service。">
+<meta name="keywords" content="javascript,angularjs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular入门-module和service">
+<meta property="og:url" content="http://chocoluffy.com/2016/05/12/Angular入门-module和service/index.html">
+<meta property="og:site_name" content="余舜哲的 One Piece">
+<meta property="og:description" content="自己学习angular时候记录的学习笔记，这一篇主要讨论module和service。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-10T03:27:03.584Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Angular入门-module和service">
+<meta name="twitter:description" content="自己学习angular时候记录的学习笔记，这一篇主要讨论module和service。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 10766069,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Angular入门-module和service | 余舜哲的 One Piece </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '66874854-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=56472517";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">余舜哲的 One Piece</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tech">
+          <a href="/tech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery-full"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-life">
+          <a href="/life" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br />
+            
+            书房
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Angular入门-module和service
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-12T22:43:51-04:00" content="2016-05-12">
+              2016-05-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/12/Angular入门-module和service/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/12/Angular入门-module和service/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/12/Angular入门-module和service/" class="leancloud_visitors" data-flag-title="Angular入门-module和service">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+
+          
+          <span>
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+              <i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读时长</span>
+            <span class="post-count">1 分钟</span>
+          </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>自己学习angular时候记录的学习笔记，这一篇主要讨论module和service。</p>
+<a id="more"></a>
+<h2 id="How-to-define-a-module"><a href="#How-to-define-a-module" class="headerlink" title="How to define a module?"></a>How to define a module?</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// define a module</span></span><br><span class="line">angular.module(<span class="string">'notesApp'</span>,</span><br><span class="line">    [<span class="string">'notesApp.ui'</span>, <span class="string">'thirdCompany.fusioncharts'</span>]);</span><br><span class="line"></span><br><span class="line"><span class="comment">// look up a module.</span></span><br><span class="line">angular.module(<span class="string">'notesApp'</span>);</span><br></pre></td></tr></table></figure>
+<p>Also, make sure the file that defines the module is loaded first.</p>
+<p>After defining the module, we use Angular to use these modules to bootstrap the application. <code>ng-app</code> takes an optional argument, the name of the modulr to load.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">ng-app</span>=<span class="string">"notesApp"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">title</span>&gt;</span>Hello AngularJS<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">      Hello &#123; &#123; 1 + 1 &#125; &#125;nd time AngularJS</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">angular.module(<span class="string">'notesApp'</span>, []); </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Controller-in-Angular"><a href="#Controller-in-Angular" class="headerlink" title="Controller in Angular"></a>Controller in Angular</h2><ul>
+<li>fetching data from server to UI.</li>
+<li>presentation logic.</li>
+<li>user interaction, what will happen when user clicks something. </li>
+</ul>
+<p>An AngularJS controller is almost always directly linked to a view or HTML. We will <strong>never have a controller that is not used in the UI</strong> (that kind of business logic goes into services).</p>
+<h3 id="HTML-code"><a href="#HTML-code" class="headerlink" title="HTML code"></a>HTML code</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">angular.module(<span class="string">'notesApp'</span>, []) .controller(<span class="string">'MainCtrl'</span>, [<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">          <span class="comment">// Controller-specific code goes here</span></span></span><br><span class="line"><span class="javascript">          <span class="built_in">console</span>.log(<span class="string">'MainCtrl has been created'</span>);</span></span><br><span class="line"><span class="undefined">        &#125;]);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>The above code define a module that depends on nothing, and a controller and its dependencies in the second argument, an array(the last argument in that array is the actual function itself).</p>
+<p>We also introduce a new directive, ng-controller. This is used to tell AngularJS to go instantiate an instance of the controller with the given name, and attach it to the DOM element. In this case, it would load MainCtrl, which would end up printing the console.log() statement.</p>
+<h3 id="Angular-code"><a href="#Angular-code" class="headerlink" title="Angular code"></a>Angular code</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;html ng-app=&quot;notesApp&quot;&gt; </span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;title&gt;Notes App&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body ng-controller=&quot;MainCtrl as ctrl&quot;&gt;</span><br><span class="line">      &#123; &#123; ctrl.helloMsg &#125; &#125; AngularJS.</span><br><span class="line">      &lt;br/&gt;</span><br><span class="line">      &#123; &#123; ctrl.goodbyeMsg &#125; &#125; AngularJS</span><br><span class="line">&lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js&quot;&gt;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">angular.module(&apos;notesApp&apos;, [])</span><br><span class="line">  .controller(&apos;MainCtrl&apos;, [function() &#123;</span><br><span class="line">    this.helloMsg = &apos;Hello &apos;;</span><br><span class="line">    var goodbyeMsg = &apos;Goodbye &apos;;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>The reason why it only shows the the hello message it that: We <strong>defined the variable helloMsg on the controller’s instance</strong> (using the “this” keyword, and it is how we expose the data from controller to front-end UI), and the variable goodbyeMsg as a local inner variable in the controller’s in‐ stance (using the var keyword).</p>
+<p>By using <code>ng-controller</code>, it allows us to associate an instance of controller with a UI element, in this case, the <body> tag.</body></p>
+<p>“This” in javascipt, since it will be easily modified by whoever call the function, which causes the case that “this” inside and outside the function(the asychcronous function) may refer to two different objects. Thus, using a proxy variable will help!! Since with the help of the closure, that proxy varibale will always stay the same(pointing to “this”) inside the function.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-repeat</span>=<span class="string">"note in ctrl.notes"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"label"</span>&gt;</span> &#123; &#123; note.label &#125; &#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"status"</span> <span class="attr">ng-bind</span>=<span class="string">"note.done"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>The two methods appear above are the same effect, but we recommend the second way, since the second one will be replaced before the the first one. </p>
+<h2 id="Angular’s-working-flow"><a href="#Angular’s-working-flow" class="headerlink" title="Angular’s working flow"></a>Angular’s working flow</h2><p>After the entire HTML is loaded, angular.js starts to find the <code>ng-app</code> directive, then using that directive, it looks for the angular modules defined and attached to that DOM element. </p>
+<p>Then it starts to find other directive and binding elements inside the range. Every it meets <code>ng-controller</code> or <code>ng-repeat</code>, it creates a scope for that part of element. <strong>scopr is the context of that element</strong>, and it dictates what each DOM has access to in terms of functions, variables and so on.</p>
+<p>Angular also adds <strong>watcher and listeners</strong> on HTML’s DOM element.</p>
+<p>The way angular update the UI, only happens for a certain events including XHR, server calls, page loads and user interaction such clicks and type.</p>
+<h3 id="what-is-XHR"><a href="#what-is-XHR" class="headerlink" title="what is XHR?"></a>what is XHR?</h3><p>XMLHttpRequest (XHR) is an API available to web browser scripting languages such as JavaScript. It is used to send HTTP or HTTPS requests to a web server and load the server response data back into the script.</p>
+<p>Data from the response can be used to alter the current document in the browser window without loading a new web page, and despite the name of the API, this data can be in the form of not only XML, but also JSON, HTML or plain text.</p>
+<p>Ajax depends heavily on XHR.</p>
+<h2 id="More-directive"><a href="#More-directive" class="headerlink" title="More directive"></a>More directive</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-repeat</span>=<span class="string">"note in ctrl.notes"</span> <span class="attr">ng-class</span>=<span class="string">"ctrl.getNoteClass(note.done)"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"label"</span>&gt;</span> &#123; &#123; note.label &#125; &#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"assignee"</span> <span class="attr">ng-show</span>=<span class="string">"note.assignee"</span> <span class="attr">ng-bind</span>=<span class="string">"note.assignee"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">self.getNoteClass = <span class="function"><span class="keyword">function</span>(<span class="params">status</span>) </span>&#123; </span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    done: status,</span><br><span class="line">    pending: !status</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><code>ng-show</code> and <code>ng-hide</code> can help display or hide the DOM element. <code>ng-class</code> will add class to DOM element depending on the [1] if it is string [2] it is a json object, assign the key by the value of that key. <code>ng-switch on=&quot;&lt;some variable value in scopr&gt;&quot;</code> with <code>ng-switch-when=&quot;&lt;the conditional value of that variable&gt;&quot;</code> will create the if-else effect directly in html.</p>
+<h2 id="Testing-in-Angularjs"><a href="#Testing-in-Angularjs" class="headerlink" title="Testing in Angularjs"></a>Testing in Angularjs</h2><h3 id="Test-Runner-Versus-Testing-Framework"><a href="#Test-Runner-Versus-Testing-Framework" class="headerlink" title="Test Runner Versus Testing Framework"></a>Test Runner Versus Testing Framework</h3><p>We have often noticed that developers can sometimes get confused between the test runner and the testing framework. This could be because the same library often handles both responsibilities.</p>
+<p>When working with JS (and AngularJS), we have two separate tools/ libraries for each purpose. Karma, which is the test runner, is solely responsible for finding all the unit tests in our codebase, opening browsers, running the tests in them, and capturing results. It does not care what language or framework we use for writing the tests; it sim‐ ply runs them.</p>
+<p>Jasmine is the testing framework we will use. Jasmine defines the syntax with which we write our tests, the APIs, and the way we write our assertions. It is possible to not use Jasmine, and instead use something like mocha or some other framework to write tests for AngularJS.</p>
+<h2 id="Model-in-angular"><a href="#Model-in-angular" class="headerlink" title="Model in angular"></a>Model in angular</h2><p>The <code>ng-bind</code> and “{ {  } }” we see in the above example demonstrates the one-way data-binding in angular, to use two-way data-binding, we opt for <code>ng-model</code>. As expected, such functionality is heavily used in user form.</p>
+<h2 id="Angular’s-service"><a href="#Angular’s-service" class="headerlink" title="Angular’s service"></a>Angular’s service</h2><p>service refers to reuseable api that can be shared across the applications. One obvious difference between controllers and services is <strong>services are independent of views</strong>, while controllers drives UI.  </p>
+<h3 id="Dependency-injection"><a href="#Dependency-injection" class="headerlink" title="Dependency injection"></a>Dependency injection</h3><p><strong>Dependency injection is a concept that started more on the server side.</strong> Dependency injection states that instead of creating an instance of the dependent service when we need it, the class or function should ask for it instead and the “injector” will be responsible for figuring out how to create it.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Without Dependency Injection</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fetchDashboardData</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> $http = <span class="keyword">new</span> HttpService();</span><br><span class="line">  <span class="keyword">return</span> $http.get(<span class="string">'my/url'</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// With Dependency Injection</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fetchDashboardData</span>(<span class="params">$http</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> $http.get(<span class="string">'my/url'</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>The two probable ways to write service and why the latter is better? In the first example, we use “new” keyword, we have new instance everytime we use service while <strong>service in angular is singletons for the scope of our application, </strong> and two controllers ask for service A will get the vary same instance!</p>
+<p>To use built-in services, we should remember that the built-in services are prefixed with “<code>$</code>“ sign like “<code>$log</code>“, “<code>$http</code>“ and so on.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">myModule.controller(<span class="string">"MainCtrl"</span>, [<span class="string">"$log"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$log</span>) </span>&#123;&#125;]);</span><br><span class="line"></span><br><span class="line">myModule.controller(<span class="string">"MainCtrl"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$log</span>) </span>&#123;&#125;);</span><br></pre></td></tr></table></figure>
+<p>And here are the two ways we usually inject services, but why we prefer the former one, the one with safe style of dependency injection. </p>
+<p>Because of the “uglify” procedure. During the uglifing process, the variable will be shortened to some random string, while at that time, we won’t be able to tell which service it is using! Also, since the “uglify” won’t change string constant, it will help to identify which service we are using. </p>
+<p>Why we call “injection”? because the way we use those services like <code>myModule.controller(&quot;MainCtrl&quot;, [&quot;$log&quot;, &quot;$window&quot;, function($l, $w) {}]);</code> is similar to injecting those services for the function to use. </p>
+<h3 id="Some-common-services"><a href="#Some-common-services" class="headerlink" title="Some common services"></a>Some common services</h3><h4 id="location"><a href="#location" class="headerlink" title="$location"></a>$location</h4><p>The <code>$location</code> service in AngularJS allows us to interact with the URL in the browser bar, and get and manipulate its value. Any changes made to the <code>$location</code> service get reflected in the browser, and any changes in the browser are im‐ mediately captured in the <code>$location</code> service. The <code>$location</code> service has the fol‐ lowing functions, which allow us to work with the URL:</p>
+<ul>
+<li>absUrl. A getter that gives us the absolute URL in the browser (called <code>$location</code>. absUrl()).</li>
+<li>url. A getter and setter that gets or sets the URL. If we give it an argument, it will set the URL; otherwise, it will return the URL as a string.</li>
+<li>path. Again, a getter and setter that sets the path of the URL. Automatically adds the forward slash at the beginning. So <code>$location.path()</code> would give us the current path of the application, and <code>$location.path(&quot;/new&quot;)</code> would set the path to /new.</li>
+<li>search. Sets or gets the search or query string of the current URL. Calling <code>$location.search()</code> without any arguments returns the search parameter as an ob‐ ject. Calling <code>$location.search(&quot;test&quot;)</code> removes the search parameter from the URL, and calling <code>$location.search(&quot;test&quot;, &quot;abc&quot;);</code> sets the search parameter test to abc.</li>
+</ul>
+<h4 id="http"><a href="#http" class="headerlink" title="$http"></a>$http</h4><p>We will deal with <code>$http</code> extensively in Chapter 6, but it is the core AngularJS service used to make XHR requests to the server from the application. Using the <code>$http</code> service, we can make GET and POST requests, set the headers and caching, and deal with server responses and failures.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'notesApp'</span>, [])</span><br><span class="line">  .controller(<span class="string">'MainCtrl'</span>, [<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    self.tab = <span class="string">'first'</span>;</span><br><span class="line">    self.open = <span class="function"><span class="keyword">function</span>(<span class="params">tab</span>) </span>&#123;</span><br><span class="line">      self.tab = tab;</span><br><span class="line">    &#125;;</span><br><span class="line">    &#125;])</span><br><span class="line">  .controller(<span class="string">'SubCtrl'</span>, [<span class="string">'ItemService'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">ItemService</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>; self.list = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> ItemService.list(); </span><br><span class="line">    &#125;;</span><br><span class="line">    </span><br><span class="line">    self.add = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      ItemService.add(&#123;</span><br><span class="line">        id: self.list().length + <span class="number">1</span>,</span><br><span class="line">        label: <span class="string">'Item '</span> + self.list().length</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line">    &#125;])</span><br><span class="line">  </span><br><span class="line">  <span class="comment">// we created ItemService using angular's module function: factory. </span></span><br><span class="line">  .factory(<span class="string">'ItemService'</span>, [<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">    <span class="keyword">var</span> items = [</span><br><span class="line">      &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">label</span>: <span class="string">'Item 0'</span>&#125;,</span><br><span class="line">      &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">label</span>: <span class="string">'Item 1'</span>&#125;</span><br><span class="line">    ];</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      list: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> items; </span><br><span class="line">      &#125;,</span><br><span class="line">      add: <span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line">        items.push(item);</span><br><span class="line">      &#125; </span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;]</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>The point in the above example is that if we add one more item in one of the tabs, we can also see that item in the other tab, because the itemService instance in both tabs are the same. To summerize:</p>
+<p>AngularJS guarantees the following:</p>
+<ul>
+<li>The service will be lazily instantiated. The very first time a controller, service, or directive asks for the service, it will be created.</li>
+<li>The service definition function will be called once, and the instance stored. Every caller of this service will get this same, singleton instance handed to them.</li>
+</ul>
+<h3 id="Factory-provider-and-service"><a href="#Factory-provider-and-service" class="headerlink" title="Factory, provider and service"></a>Factory, provider and service</h3><p><strong>There are several ways to defining a service: factory, provider and service.</strong></p>
+<p>we use “factory” if we define the service in a more functional way, like in the previous example, we return an object that contains functions; or we can use “service” if we define the service in a classic class\OO way, which doesn’t return anything. </p>
+<p>An example of using “serive” is followed:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ItemService</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> items = [</span><br><span class="line">        &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">label</span>: <span class="string">'Item 0'</span>&#125;,</span><br><span class="line">        &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">label</span>: <span class="string">'Item 1'</span>&#125;</span><br><span class="line">      ];</span><br><span class="line">  <span class="keyword">this</span>.list = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> items;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">this</span>.add = <span class="function"><span class="keyword">function</span>(<span class="params">item</span>) </span>&#123;</span><br><span class="line">        items.push(item);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">angular.module(<span class="string">'notesApp'</span>, [])</span><br><span class="line">  .service(<span class="string">'ItemService'</span>, [ItemService])</span><br><span class="line">  .controller(<span class="string">'MainCtrl'</span>, [<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    self.tab = <span class="string">'first'</span>; self.open = <span class="function"><span class="keyword">function</span>(<span class="params">tab</span>) </span>&#123;</span><br><span class="line">          self.tab = tab;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;])</span><br><span class="line">  .controller(<span class="string">'SubCtrl'</span>, [<span class="string">'ItemService'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">ItemService</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>; self.list = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> ItemService.list(); </span><br><span class="line">    &#125;;</span><br><span class="line">    self.add = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      ItemService.add(&#123;</span><br><span class="line">            id: self.list().length + <span class="number">1</span>,</span><br><span class="line">            label: <span class="string">'Item '</span> + self.list().length</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;]</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<h3 id="Communication-with-server"><a href="#Communication-with-server" class="headerlink" title="Communication with server"></a>Communication with server</h3><p><code>$http</code> is a core AngularJS service that allows us to communicate with server endpoints using XHR. Like XHR such tedious task, we usually instantiate a XMLHttpRequest Object and read the response, check the error codes and so on, or using jquery’s <code>$.ajax</code> syntax. </p>
+<p>Also, it follows the Promise interface.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'resourceApp'</span>, [<span class="string">'ngResource'</span>])</span><br><span class="line">    .factory(<span class="string">'ProjectService'</span>, [<span class="string">'$resource'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$resource</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> $resource(<span class="string">'/api/project/:id'</span>); </span><br><span class="line">    &#125;]);</span><br></pre></td></tr></table></figure>
+<p><strong>use <code>ngResource</code> to handle RESTful API </strong> as it will make it extremely easy to send the “GET”\”POST” request to the server. In the above example, we produce a service called “ProjectService”, which depends on the built-in module called “<code>$resource</code>“, which wraps the RESTful endpoint to make our life easier as we can then use:</p>
+<ul>
+<li>ProjectService.query() to get a list of projects.</li>
+<li>ProjectService.save({id: 15}, projectObj) to update a project with ID 15.</li>
+<li>ProjectService.get({id: 19}) to get an individual project with ID 19.</li>
+</ul>
+<p>The following is a full-fledged example, showing how to use <code>ngResource</code> in front end to cooperate with the back end.</p>
+<div style="text-align:center" markdown="1"><br>  <iframe src="http://angular-example-dev.us-east-1.elasticbeanstalk.com/http-post-example.html" width="100%" height="500"><br>    <p>Your browser does not support iframes.</p><br>  </iframe><br></div>
+
+<p>The source code is listed as followed:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// server.js (Express 4.0)</span></span><br><span class="line"><span class="keyword">var</span> express        = <span class="built_in">require</span>(<span class="string">'express'</span>);</span><br><span class="line"><span class="keyword">var</span> morgan         = <span class="built_in">require</span>(<span class="string">'morgan'</span>);</span><br><span class="line"><span class="keyword">var</span> bodyParser     = <span class="built_in">require</span>(<span class="string">'body-parser'</span>);</span><br><span class="line"><span class="keyword">var</span> methodOverride = <span class="built_in">require</span>(<span class="string">'method-override'</span>);</span><br><span class="line"><span class="keyword">var</span> app            = express();</span><br><span class="line"></span><br><span class="line">app.use(express.static(__dirname + <span class="string">'/public'</span>)); <span class="comment">// this line is important as we will serve those html file directly in screen as option, in those html front-end example, we will use angular's ngResource to create http request for the backend of this server.js (the endpoint we just created using express's router).</span></span><br><span class="line">app.use(morgan(<span class="string">'dev'</span>)); 					<span class="comment">// log every request to the console</span></span><br><span class="line">app.use(bodyParser()); 						<span class="comment">// pull information from html in POST</span></span><br><span class="line">app.use(methodOverride()); 					<span class="comment">// simulate DELETE and PUT</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> router = express.Router();</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> notes = [</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">1</span>, <span class="attr">label</span>: <span class="string">'First Note'</span>, <span class="attr">author</span>: <span class="string">'Shyam'</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">2</span>, <span class="attr">label</span>: <span class="string">'Second Note'</span>, <span class="attr">author</span>: <span class="string">'Brad'</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">3</span>, <span class="attr">label</span>: <span class="string">'Middle Note'</span>, <span class="attr">author</span>: <span class="string">'Someone'</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">4</span>, <span class="attr">label</span>: <span class="string">'Last Note'</span>, <span class="attr">author</span>: <span class="string">'Shyam'</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">id</span>: <span class="number">5</span>, <span class="attr">label</span>: <span class="string">'Really the last Note'</span>, <span class="attr">author</span>: <span class="string">'Shyam'</span>&#125;</span><br><span class="line"></span><br><span class="line">];</span><br><span class="line"><span class="keyword">var</span> lastId = <span class="number">6</span>;</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/note'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  res.send(notes);</span><br><span class="line">&#125;);</span><br><span class="line">router.post(<span class="string">'/note'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> note = req.body;</span><br><span class="line">  note.id = lastId; <span class="comment">// An smart way to keep track of the last id.</span></span><br><span class="line">  lastId++;</span><br><span class="line">  notes.push(note);</span><br><span class="line">  res.send(note);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">router.post(<span class="string">'/note/:id/done'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> noteId = req.params.id;</span><br><span class="line">  <span class="keyword">var</span> note = <span class="literal">null</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; notes.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (notes[i].id == req.params.id) &#123;</span><br><span class="line">      note = notes[i];</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  note.label = <span class="string">'Done - '</span> + note.label;</span><br><span class="line">  res.send(notes);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.get(<span class="string">'/note/:id'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; notes.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (notes[i].id == req.params.id) &#123;</span><br><span class="line">      res.send(notes[i]);</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  res.send(&#123;<span class="attr">msg</span>: <span class="string">'Note not found'</span>&#125;, <span class="number">404</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.post(<span class="string">'/note/:id'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; notes.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (notes[i].id == req.params.id) &#123;</span><br><span class="line">      notes[i] = req.body;</span><br><span class="line">      notes[i].id = req.params.id;</span><br><span class="line">      res.send(notes[i]);</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  res.send(&#123;<span class="attr">msg</span>: <span class="string">'Note not found'</span>&#125;, <span class="number">404</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">router.post(<span class="string">'/login'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'API LOGIN FOR '</span>, req.body);</span><br><span class="line">  res.send(&#123;<span class="attr">msg</span>: <span class="string">'Login successful for '</span> + req.body.username&#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">app.use(<span class="string">'/api'</span>, router);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">app.listen(<span class="number">8000</span>);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'Open http://localhost:8000 to access the files now'</span>); <span class="comment">// shoutout to the user</span></span><br></pre></td></tr></table></figure>
+<p>And the front-end part code is:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- File: chapter6/public/http-post-example.html --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">ng-app</span>=<span class="string">"notesApp"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>HTTP Post Example<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    .item &#123;</span></span><br><span class="line"><span class="undefined">      padding: 10px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">  </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">ng-controller</span>=<span class="string">"MainCtrl as mainCtrl"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello Servers!<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">ng-repeat</span>=<span class="string">"todo in mainCtrl.items"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">ng-bind</span>=<span class="string">"todo.label"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>- by <span class="tag">&lt;<span class="name">span</span> <span class="attr">ng-bind</span>=<span class="string">"todo.author"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">ng-bind</span>=<span class="string">"todo.messege"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">name</span>=<span class="string">"addForm"</span></span></span><br><span class="line"><span class="tag">          <span class="attr">ng-submit</span>=<span class="string">"mainCtrl.add()"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">placeholder</span>=<span class="string">"Label"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">ng-model</span>=<span class="string">"mainCtrl.newTodo.label"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">required</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">placeholder</span>=<span class="string">"Author"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">ng-model</span>=<span class="string">"mainCtrl.newTodo.author"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">required</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">placeholder</span>=<span class="string">"messege"</span> <span class="attr">ng-model</span>=<span class="string">"mainCtrl.newTodo.messege"</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">value</span>=<span class="string">"Add"</span></span></span><br><span class="line"><span class="tag">             <span class="attr">ng-disabled</span>=<span class="string">"addForm.$invalid"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.js"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="javascript">  angular.module(<span class="string">'notesApp'</span>, [])</span></span><br><span class="line"><span class="javascript">    .controller(<span class="string">'MainCtrl'</span>, [<span class="string">'$http'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$http</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> self = <span class="keyword">this</span>;</span></span><br><span class="line"><span class="undefined">      self.items = [];</span></span><br><span class="line"><span class="undefined">      self.newTodo = &#123;&#125;;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> fetchTodos = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> $http.get(<span class="string">'/api/note'</span>).then(</span></span><br><span class="line"><span class="javascript">            <span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">              self.items = response.data; <span class="comment">// set the items to be the return data.</span></span></span><br><span class="line"><span class="javascript">            &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">errResponse</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">              <span class="built_in">console</span>.error(<span class="string">'Error while fetching notes'</span>);</span></span><br><span class="line"><span class="undefined">            &#125;);</span></span><br><span class="line"><span class="undefined">      &#125;;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">      fetchTodos();</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="javascript">      self.add = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        $http.post(<span class="string">'/api/note'</span>, self.newTodo)</span></span><br><span class="line"><span class="javascript">            .then(fetchTodos) <span class="comment">// update items.</span></span></span><br><span class="line"><span class="javascript">            .then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">              self.newTodo = &#123;&#125;; <span class="comment">// clear the form.</span></span></span><br><span class="line"><span class="undefined">            &#125;);</span></span><br><span class="line"><span class="undefined">      &#125;;</span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">    &#125;]);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="http-in-detail"><a href="#http-in-detail" class="headerlink" title="$http in detail"></a>$http in detail</h3><p>Promise-style syntax.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'notesApp'</span>, [])</span><br><span class="line">  .controller(<span class="string">'MainCtrl'</span>, [<span class="string">'$http'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">$http</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">    self.items = [];</span><br><span class="line">    $http.get(<span class="string">'/api/note'</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params">response</span>) </span>&#123;</span><br><span class="line">      self.items = response.data;</span><br><span class="line">      &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">errResponse</span>) </span>&#123;</span><br><span class="line">          <span class="built_in">console</span>.error(<span class="string">'Error while fetching notes'</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">  &#125;]</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>why Promise is better? try thinking about a case when we have to make 3 http request in a row, when the latter ones will depend on the information from the first ones. If using callbacks, we will need to nest them all together!</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$http.get(<span class="string">'/api/server-config'</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">configResponse</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $http.get(<span class="string">'/api/'</span> + configResponse.data.USER_END_POINT);</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">userResponse</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> $http.get(<span class="string">'/api/'</span> + userResponse.data.id + <span class="string">'/items'</span>);</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">itemResponse</span>) </span>&#123; </span><br><span class="line">    <span class="comment">// Display items here</span></span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// Common error handling</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Additional-information"><a href="#Additional-information" class="headerlink" title="Additional information"></a>Additional information</h2><h3 id="difference-between-Promise-and-callback-in-js"><a href="#difference-between-Promise-and-callback-in-js" class="headerlink" title="difference between Promise and callback in js?"></a>difference between Promise and callback in js?</h3><p>As for their effect, they are pretty like the same in terms of being asynchronous while Promise’s syntax looks far more clear than nested callbacks.</p>
+<p>Promises provide a more succinct and clear way of representing sequential asynchronous operations in javascript. They are effectively a different syntax for achieving the same effect as callbacks. The advantage is increased readability. Something like this</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">aAsync()</span><br><span class="line">  .then(bAsync)</span><br><span class="line">  .then(cAsync)</span><br><span class="line">  .done(finish);</span><br><span class="line"><span class="comment">// Promise is much more readable then the equivalent of passing each of those individual functions as callbacks, like:</span></span><br><span class="line"></span><br><span class="line">Async(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> bAsync(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cAsync(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            finish()</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>简单来说， Promise就是syntactic sugar。Everything that can be written in Promise can be written in nested callbacks.</p>
+<h3 id="difference-between-websocket-and-RESTful-API"><a href="#difference-between-websocket-and-RESTful-API" class="headerlink" title="difference between websocket and RESTful API?"></a>difference between websocket and RESTful API?</h3><p>It really depends on the context, whether it requires less interaction like reading a blog, or requires time browsing; or it requires rich interaction and messege sending. For the former, close the connection during reading or browsing may actually save resources, which is exactly what HTTP does, while the latter one calls for websocket!!</p>
+<p><strong>HTTP is a pull service, while websocket is bidirectional.</strong></p>
+<p>参考<a href="https://www.pubnub.com/blog/2015-01-05-websockets-vs-rest-api-understanding-the-difference/" target="_blank" rel="noopener">这篇博客</a>介绍得非常详细!!</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>一起加油！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="余舜哲 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/angularjs/" rel="tag">#angularjs</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/07/一派胡言-第三期-民主的不满/" rel="next" title="一派胡言[第三期]-民主的不满">
+                <i class="fa fa-chevron-left"></i> 一派胡言[第三期]-民主的不满
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/13/另一种鼓声-读《途客圈》有感/" rel="prev" title="另一种鼓声-读《途客圈》有感">
+                另一种鼓声-读《途客圈》有感 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+
+      
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/05/04/AWS-elastic-beanstalk使用体验/">AWS elastic beanstalk使用体验</a></li><li><a href="/2015/12/31/D3js-in-3D-Animation-focus/">D3js in 3D [Animation focus]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/">Ajax(with Jquery) on Nodejs server</a></li><li><a href="/2016/08/01/React-ES6-style-guideline/">React/ES6 style guideline</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li></ul>
+      
+
+      <div class="addthis_inline_share_toolbox" 
+           style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -25px;
+            margin-top: 30px;
+           "
+      ></div>            
+
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c1469ab13400612" async = "async" ></script>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+               alt="余舜哲" />
+          <p class="site-author-name" itemprop="name">余舜哲</p>
+          <p class="site-description motion-element" itemprop="description">时间知道</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">113</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">56</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chocoluffy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chocoluffy" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/chocolufy/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/yu-shun-zhe/" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-define-a-module"><span class="nav-number">1.</span> <span class="nav-text">How to define a module?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Controller-in-Angular"><span class="nav-number">2.</span> <span class="nav-text">Controller in Angular</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML-code"><span class="nav-number">2.1.</span> <span class="nav-text">HTML code</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Angular-code"><span class="nav-number">2.2.</span> <span class="nav-text">Angular code</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Angular’s-working-flow"><span class="nav-number">3.</span> <span class="nav-text">Angular’s working flow</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#what-is-XHR"><span class="nav-number">3.1.</span> <span class="nav-text">what is XHR?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#More-directive"><span class="nav-number">4.</span> <span class="nav-text">More directive</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Testing-in-Angularjs"><span class="nav-number">5.</span> <span class="nav-text">Testing in Angularjs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Test-Runner-Versus-Testing-Framework"><span class="nav-number">5.1.</span> <span class="nav-text">Test Runner Versus Testing Framework</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Model-in-angular"><span class="nav-number">6.</span> <span class="nav-text">Model in angular</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Angular’s-service"><span class="nav-number">7.</span> <span class="nav-text">Angular’s service</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Dependency-injection"><span class="nav-number">7.1.</span> <span class="nav-text">Dependency injection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Some-common-services"><span class="nav-number">7.2.</span> <span class="nav-text">Some common services</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#location"><span class="nav-number">7.2.1.</span> <span class="nav-text">$location</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#http"><span class="nav-number">7.2.2.</span> <span class="nav-text">$http</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Factory-provider-and-service"><span class="nav-number">7.3.</span> <span class="nav-text">Factory, provider and service</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Communication-with-server"><span class="nav-number">7.4.</span> <span class="nav-text">Communication with server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#http-in-detail"><span class="nav-number">7.5.</span> <span class="nav-text">$http in detail</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Additional-information"><span class="nav-number">8.</span> <span class="nav-text">Additional information</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#difference-between-Promise-and-callback-in-js"><span class="nav-number">8.1.</span> <span class="nav-text">difference between Promise and callback in js?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#difference-between-websocket-and-RESTful-API"><span class="nav-number">8.2.</span> <span class="nav-text">difference between websocket and RESTful API?</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2013 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">余舜哲</span>
+  <span class="post-count"> | 博客全站共267.9k字</span>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">你是第<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>个小伙伴</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'chocoluffy';
+      var disqus_identifier = '2016/05/12/Angular入门-module和service/';
+      var disqus_title = 'Angular入门-module和service';
+      var disqus_url = 'http://chocoluffy.com/2016/05/12/Angular入门-module和service/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+  <script src="https://chocoluffy.com/toolbox/hexo/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("8bVuIF2Vk3EPyqe2OmRaXdgu-gzGzoHsz", "nvwBdADmn3ifRtefzQNGADue");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1108 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="O92Q-a9Vf5dWXDW5Df-7NMxOta1TkJyuJddQxTM-n4U" />
+
+
+
+
+  <meta name="baidu-site-verification" content="4TeaTL6Cbs" />
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <link rel="amphtml" href="./amp/index.html">
+
+
+
+  <meta name="keywords" content="javascript,nodejs,AWS," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="余舜哲的 One Piece" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感">
+<meta name="keywords" content="javascript,nodejs,AWS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AWS elastic beanstalk使用体验">
+<meta property="og:url" content="http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/index.html">
+<meta property="og:site_name" content="余舜哲的 One Piece">
+<meta property="og:description" content="本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-10T03:27:03.584Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="AWS elastic beanstalk使用体验">
+<meta name="twitter:description" content="本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 10766069,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> AWS elastic beanstalk使用体验 | 余舜哲的 One Piece </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '66874854-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=56472517";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">余舜哲的 One Piece</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tech">
+          <a href="/tech" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-battery-full"></i> <br />
+            
+            技术
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-life">
+          <a href="/life" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            随笔
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-books">
+          <a href="/books" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br />
+            
+            书房
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                AWS elastic beanstalk使用体验
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-04T21:03:58-04:00" content="2016-05-04">
+              2016-05-04
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/04/AWS-elastic-beanstalk使用体验/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/05/04/AWS-elastic-beanstalk使用体验/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/04/AWS-elastic-beanstalk使用体验/" class="leancloud_visitors" data-flag-title="AWS elastic beanstalk使用体验">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+
+          
+          <span>
+            &nbsp; | &nbsp;
+            <span class="post-meta-item-icon">
+              <i class="fa fa-clock-o"></i>
+            </span>
+            <span class="post-meta-item-text">阅读时长</span>
+            <span class="post-count">12 分钟</span>
+          </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本文对目前市面上的主流Paas(platform as a service)提供商进行了比较， 比如heroku和amazon家的新星elastic beanstalk。并以一个nodejs爬虫的实例部署在了eb的服务器上。很多关于服务器端的概念也因此理清了， 比如reverse proxy server, dynamic IP addressing和后端的一些配置。也在文章中做个小结， 分享给感兴趣的大家。</p>
+<a id="more"></a>
+<h2 id="概览"><a href="#概览" class="headerlink" title="概览"></a>概览</h2><p>将之前用nodejs写的对<a href="https://cnodejs.org/?tab=good" target="_blank" rel="noopener">cnode社区精华帖</a>的爬虫放在AWS的EC2 instance下管理， 利用elastic beanstalk来对AWS资源进行分配和调控， 由于使用的还是free-tier的single instance， 则elastic beanstalk所特有的load-balancing的优势没有办法享受到。</p>
+<p>一开始如果直接按照AWS给的方法, <code>eb init</code>初始化一个elastic beanstalk的项目， <code>eb create</code>创建一个environment和一个EC2实例, 然后<code>eb deploy</code>将.git里面committed的改动push到elastic beanstalk的生产环境里面， 然后用<code>eb open</code>来打开这个IP address， 如果之后需要终止这个app的话， 就<code>eb terminate</code>就好了。</p>
+<p>如果之前有使用heroku的经验的话， 其实你会发现其实amazon elastic beanstalk和heroku提供的服务非常相似， 实际上， 就这两家服务的定位而言， 都是platform as a service（Paas）， 也就是让developer可以将网站， 移动端部署在云端(cloud)不需要顾虑backend server和database的configuration。 而heroku本身相对于其他市面上的Paas在auto-scaling上做得更加出色， 它的computing resources(dyno)可以按照计算的需求而叠加从而满足在高流量下的网站后端流畅运行。而近几年amazon的elastic beanstalk的出现， 在这个Paas的市场给我们developer多一个很好的选择。就自己的使用而言， 感觉两者的command line interface其实设计得差不多， 都很简洁方便， 不过相比heroku， amazon的AWS还涉及租用到计算单元EC2, 就配置的操作来说， 你在配置AWS的服务上需要花更多的时间去设置环境变量和考虑密钥存储， 毕竟你可能有时候有ssh远程登陆amazon linux服务器的需求。相比之下， heroku的配置就是很简单的在<code>~/.bashrc</code>文件里面添加toolbelt文件夹的路径了。</p>
+<blockquote>
+<p> 其实heroku它本身就是deploy在了AWS上的呀😂， 所以理论上在performance上不会有太大的差别。</p>
+</blockquote>
+<p>而在pricing上， 我认为AWS的价格和服务会更加的实惠， 毕竟考虑到你有一张信用卡就可以申请到你一年的free-tier的single instance的使用权利， 而single instance对一些小型的side project来说完完全全是够用的呀。即便不够用， 换成large instance也是several clicks away， 反正也是按用量收费， 经济实惠!</p>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>第一个使用EB部署的应用是一个nodejs爬虫， 负责爬去cnode社区的精华帖， 然后返回一个json object收集精华帖的link, 标题和作者avatar， 为了显示的直观， 我并没有写前端的样式， 而是直接<code>JSON.stringify(json)</code>然后send会浏览器。之后如果仅仅作为REST API使用的话， 还需要在router上修饰一下URL。目前还是有点粗糙的。<a href="https://github.com/AirLoft/web-scraper" target="_blank" rel="noopener">github链接</a></p>
+<p>一开始我直接将在本地localhost运行的版本deploy到了elastic beanstalk上， 由于缺少了这一行配置<code>var port = process.env.PORT || 3000;</code>， 我直接把port定在了3000， 而elastic beanstalk是有应该占用的port的， 所以得到了“502 bad gateway error”。</p>
+<p>还有一点需要注意的是<code>npm start</code>这个npm script里面的配置， AWS elastic beanstalk会找到这条指令并去执行来执行相应的js文件， 比如我把写cnode网站的爬虫写在了cnode.js里面， 那么我需要</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"scripts"</span>: &#123;</span><br><span class="line">  <span class="string">"start"</span>: <span class="string">"node cnode.js"</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>来保证服务器执行的是我对cnode这个网站的爬虫。</p>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><p>以下内容是我在自己折腾Elastic Beanstalk的时候收集的一些比较简练而准确的总结， 在这里分享给大家。 其实amazon的AWS教程写得非常详细的， 大家自己如果有能力最好去尝试自己阅读和实践它给的例子!</p>
+<p><strong>How elastic beanstalk works?</strong><br>Now you have a web app running in AWS Elastic Beanstalk. As Elastic Beanstalk creates your environment, it <strong>interacts with several other AWS services</strong> to create the resources required to run your web app securely and resiliently.</p>
+<p><strong>How EC2 instance works?</strong><br>EC2 instance – A virtual machine that runs Amazon Linux or Microsoft Windows Server and that is configured to run web apps on the platform that you choose.<br>Each platform runs a different set of software, configuration files, and scripts to support a specific language version, framework, web container, or combination thereof. Most platforms <strong>use either Apache or nginx as a reverse proxy</strong> that sits in front of your web app, forwards requests to it, serves static assets, and generates access and error logs.</p>
+<p><strong>What is reverse proxy server?</strong><br>A proxy server is a go-between or intermediary server that forwards requests for content from multiple clients to different servers across the Internet. A reverse proxy server is a type of proxy server that typically <strong>sits behind the firewall in a private network</strong> and directs client requests to the appropriate backend server. A reverse proxy provides an additional level of abstraction and control to ensure the smooth flow of network traffic between clients and servers.</p>
+<p>Common uses for a reverse proxy server include:</p>
+<ul>
+<li>Load balancing – A reverse proxy server can act as a “traffic cop,” sitting in front of your backend servers and distributing client requests across a group of servers in a manner that maximizes speed and capacity utilization while ensuring no one server is overloaded, which can degrade performance. If a server goes down, the load balancer redirects traffic to the remaining online servers.</li>
+<li>Web acceleration – Reverse proxies can compress inbound and outbound data, as well as cache commonly requested content, both of which speed up the flow of traffic between clients and servers. They can also perform additional tasks such as SSL encryption to take load off of your web servers, thereby boosting their performance.</li>
+<li>Security and anonymity – By intercepting requests headed for your backend servers, a reverse proxy server protects their identities and acts as an additional defense against security attacks. It also ensures that multiple servers can be accessed from a single record locator or URL regardless of the structure of your local area network.</li>
+</ul>
+<p><strong>What is amazon s3 bucket?</strong><br>Amazon S3 bucket – A storage location for your source code, logs, and other artifacts that are created when you use Elastic Beanstalk.</p>
+<p><strong>How your domain will look like?</strong><br>Domain name – A domain name that routes to your web app in the form subdomain.region.elasticbeanstalk.com.</p>
+<p><strong>When should I use AWS Lambda versus Amazon EC2?</strong></p>
+<p>Amazon Web Services offers a set of compute services to meet a range of needs.</p>
+<p>Amazon EC2 offers flexibility, with a wide range of instance types and the option to customize the operating system, network and security settings, and the entire software stack, allowing you to easily move existing applications to the cloud. With Amazon EC2 you are responsible for provisioning capacity, monitoring fleet health and performance, and designing for fault tolerance and scalability. AWS Elastic Beanstalk offers an easy-to-use service for deploying and scaling web applications in which you retain ownership and full control over the underlying EC2 instances. Amazon EC2 Container Service is a scalable management service that supports Docker containers and allows you to easily run distributed applications on a managed cluster of Amazon EC2 instances.<br>AWS Lambda makes it easy to execute code in response to events, such as changes to Amazon S3 buckets, updates to an Amazon DynamoDB table, or custom events generated by your applications or devices. With Lambda you do not have to provision your own instances; Lambda performs all the operational and administrative activities on your behalf, including capacity provisioning, monitoring fleet health, applying security patches to the underlying compute resources, deploying your code, running a web service front end, and monitoring and logging your code. AWS Lambda provides easy scaling and high availability to your code without additional effort on your part.</p>
+<p><strong>To create a hosted zone in Amazon Route 53</strong></p>
+<ul>
+<li>Open the Amazon Route 53 management console.</li>
+<li>Choose Hosted Zones.</li>
+<li>Choose Create Hosted Zone.</li>
+</ul>
+<p>For Domain Name, type the domain name that you own. For example: example.com.</p>
+<p>Choose Create.</p>
+<p>Next, add a CNAME record to the hosted zone. A CNAME record registers a domain name that you own as an alias of your web app environment’s elasticbeanstalk.com subdomain.</p>
+<p>When an Amazon Route 53 DNS server receives a name request for your custom domain name, it resolves to the elasticbeanstalk.com subdomain, which resolves to the public DNS name of your Elastic Load Balancing load balancer, which resolves to your web app’s IP address.</p>
+<p>Note<br>In a single-instance environment, the elasticbeanstalk.com subdomain resolves to an Elastic IP address attached to the instance running your web app.</p>
+<p><strong>关于elastic beanstalk的价格</strong><br>有小伙伴在comment里面提问， 如果用完了一年的free-tier的话， 价格怎么计算呢? 可以参考下amazon的<a href="https://aws.amazon.com/elasticbeanstalk/pricing/" target="_blank" rel="noopener">这篇介绍</a>里面详细记录了EC2, S3, DB等等AWS相关服务的价格。如果是个人的side project, 对CPU和图片等用户信息存储的需求不是特别大的话， 免费的plan或者是micro的instance是完全够用的， 如果是在某方面的需求特别大， 比如说unsplash这个高清摄影图片分享的社区。</p>
+<p> unsplash将用户上传的照片存储在Amazon的S3服务上会比较安全和便捷，(搭配着Imgix这个service使用)， 具体的网站花销可以参考<a href="http://backstage.crew.co/what-does-unsplash-cost/" target="_blank" rel="noopener">这篇博文</a>， 里面记录了unsplash一个月网站使用的各种服务的明细记录， 也可以给一些希望做图片分享社区的创业者们一个参考。一个值得注意的点是， unsplash的花销是比较适合借鉴的， 因为unsplash和目前许多的创业公司一样， 选择将自己的主服务host在heroku这个平台， 选择S3等等主流的服务， 不像一些更geeky的公司可能为了省钱就自己来搭建和管理自己的服务器和数据库。 当然， 管理成本和维护成本都要考虑进去， 所以综上我才认为unsplash的例子是非常值得借鉴的!</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p>下面的链接是我在自己尝试搭建环境时参考的内容， 以及我选择free-tier的configuration的页面。其中就有以express为例子的服务端环境搭建。</p>
+<ul>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html#set_aes_home_linux" target="_blank" rel="noopener">setting up EC2 cli on mac</a> we store EC2 api tool, aws-access-key and aws-secret-key in <code>~/.bashrc</code>, so that we can use the shortcut commands to do <code>init\create\deploy\open</code>. The common commands are listed as followed.</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">eb init</span><br><span class="line">eb create</span><br><span class="line">eb deploy</span><br><span class="line">eb open</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://docs.aws.amazon.com/quickstarts/latest/webapp/welcome.html" target="_blank" rel="noopener">A high level explanation of what EB does and what can we config</a> trying to give a high-level description of what is the use and purpost of each AWS service, including EC2, the reverse proxy server sitting in front of servers, router 53 and so on so forth.</li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html" target="_blank" rel="noopener">A detailed explanation of how to host an express app on EB full-step tutorial</a> The tutorial uses an express app to explain how to use EB.</li>
+<li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html" target="_blank" rel="noopener">How to deploy a nodejs project to EB</a> similar to the previous tutorial post.</li>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html" target="_blank" rel="noopener">how to connect to EC2 instance using ssh</a><br>by using <code>ec2-describe-instances</code>, we can get the id of my instance.</li>
+</ul>
+<p>So after we have created an project, we go to the elastic beanstalk console, we will see the dashboard of all the application I host on EB such as the recent one(webscraper). The following is a screen capture of the configuration of that application on EB as in a free-tier plan:<br>In this page, we can set the scaling option from single instance to load-balanced configuration, and when we add a load-balancer, it will automatically adjust the number of instances depending on the need.</p>
+<p>When you turn on load balancing, Elastic Beanstalk creates a load balancer, deletes the Elastic IP address from your environment, and provisions a new EC2 instance. Elastic Beanstalk also updates DNS records to point the web app’s domain name to the load balancer instead of to the IP address of a single instance.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>一起加油！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="余舜哲 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+            <a href="/tags/nodejs/" rel="tag">#nodejs</a>
+          
+            <a href="/tags/AWS/" rel="tag">#AWS</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/27/第一期-AirLoft组织动员宣言/" rel="next" title="AirLoft组织动员宣言">
+                <i class="fa fa-chevron-left"></i> AirLoft组织动员宣言
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/07/一派胡言-第三期-民主的不满/" rel="prev" title="一派胡言[第三期]-民主的不满">
+                一派胡言[第三期]-民主的不满 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+
+      
+        <h3> 相关文章：</h3><ul class="related-posts"><li><a href="/2016/02/20/Ajax-with-Jquery-on-Nodejs-server/">Ajax(with Jquery) on Nodejs server</a></li><li><a href="/2016/05/23/socket-io开发多人聊天室教程/">socket.io开发多人聊天室教程</a></li><li><a href="/2016/05/15/前端开发工具库-第一期-npm-script/">前端开发工具库[第一期]-npm script</a></li><li><a href="/2016/03/11/MEAN全栈开发-第二期-前端实战手记/">MEAN全栈开发[第二期-前端实战手记]</a></li><li><a href="/2016/03/22/MEAN全栈开发-第三期-Mongo数据库搭建REST-API/">MEAN全栈开发[第三期-Mongo数据库搭建REST API]</a></li><li><a href="/2016/03/06/MEAN全栈开发-第一期-前端布局/">MEAN全栈开发[第一期-前端布局]</a></li><li><a href="/2015/12/30/D3js-in-3D/">D3js in 3D</a></li><li><a href="/2016/05/12/Angular入门-module和service/">Angular入门-module和service</a></li><li><a href="/2016/02/04/Responsive-web-design-第三期-js动画/">Responsive web design[第三期]-js动画</a></li><li><a href="/2016/01/06/Twitter-engine-in-React/">Twitter engine in React</a></li></ul>
+      
+
+      <div class="addthis_inline_share_toolbox" 
+           style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -25px;
+            margin-top: 30px;
+           "
+      ></div>            
+
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c1469ab13400612" async = "async" ></script>
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-overlay"></div>
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+               alt="余舜哲" />
+          <p class="site-author-name" itemprop="name">余舜哲</p>
+          <p class="site-description motion-element" itemprop="description">时间知道</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">113</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">56</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/chocoluffy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/chocoluffy" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/chocolufy/" target="_blank" title="豆瓣">
+                  
+                    <i class="fa fa-fw fa-book"></i>
+                  
+                  豆瓣
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/yu-shun-zhe/" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概览"><span class="nav-number">1.</span> <span class="nav-text">概览</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-amp-A"><span class="nav-number">3.</span> <span class="nav-text">Q&amp;A</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">4.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2013 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">余舜哲</span>
+  <span class="post-count"> | 博客全站共267.9k字</span>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">你是第<span class="busuanzi-value" id="busuanzi_value_site_pv"></span>个小伙伴</span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'chocoluffy';
+      var disqus_identifier = '2016/05/04/AWS-elastic-beanstalk使用体验/';
+      var disqus_title = 'AWS elastic beanstalk使用体验';
+      var disqus_url = 'http://chocoluffy.com/2016/05/04/AWS-elastic-beanstalk使用体验/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+
+  
+  <script src="https://chocoluffy.com/toolbox/hexo/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("8bVuIF2Vk3EPyqe2OmRaXdgu-gzGzoHsz", "nvwBdADmn3ifRtefzQNGADue");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
+
+</body>
+</html>
