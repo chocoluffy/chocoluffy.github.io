@@ -258,6 +258,7 @@ $(document).ready(function () {
     menu: function (integrator) {
       $('.menu-item').velocity('transition.slideDownIn', {
         display: null,
+        // duration: 200,
         duration: 0,
         complete: function () {
           integrator.next();
@@ -273,6 +274,7 @@ $(document).ready(function () {
 
       function postMotion () {
         var postMotionOptions = window.postMotionOptions || {
+            // stagger: 100,
             stagger: 0,
             drag: true
           };
