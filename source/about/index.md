@@ -28,7 +28,7 @@ categories:
 - 进驻多伦多大学计算机学院孵化器DCSIL。
 - 受邀于2018.4.30在[OCE Discovery](https://www.ocediscovery.com/)会议上展示项目。
 - [2018.4.25更新] 微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)。
-- [2018.5.26更新] 微软Imagine Cup加拿大赛区第二名。[媒体介绍](https://blogs.msdn.microsoft.com/microsoftimagine/2018/05/26/announcing-the-winners-of-the-canadian-finals-of-imagine-cup-2018/)，[博客记录](http://chocoluffy.com/2018/07/26/%E5%86%99%E5%9C%A8%E5%BE%AE%E8%BD%AFImageine-Cup%E5%86%B3%E8%B5%9B%E5%9C%88%E4%B9%8B%E5%90%8E/)。
+- [2018.5.26更新] 微软Imagine Cup加拿大赛区第二名。[媒体介绍](https://techcommunity.microsoft.com/t5/Student-Developer-Blog/Announcing-the-Winners-of-the-Canadian-Finals-of-Imagine-Cup/ba-p/312123)，[博客记录](http://chocoluffy.com/2018/07/26/%E5%86%99%E5%9C%A8%E5%BE%AE%E8%BD%AFImageine-Cup%E5%86%B3%E8%B5%9B%E5%9C%88%E4%B9%8B%E5%90%8E/)。
 
 <img src="https://ws4.sinaimg.cn/large/006tKfTcly1fqqlus9ucjj31kw0nsx6s.jpg" style="display: block; margin: 0 auto; height: 300px">
 
