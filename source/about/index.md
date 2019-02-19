@@ -4,7 +4,9 @@ tags:
 categories:
 ---
 
-95.11.04，现Cornell Tech计算机系研究生。创业者。主攻机器学习和推荐系统方向。喜欢编程，喜欢实现想法的自由。
+95.11.04，现Cornell Tech计算机系研究生。创业者。主攻机器学习和推荐系统方向。喜欢编程和写作。
+
+最喜欢的作家是加缪和昆德拉。最喜欢的作品是堂吉柯德。
 
 - 『[我的技术笔记](http://chocoluffy.com/tech/)』
 - 『[我的生活随笔](http://chocoluffy.com/life/)』
@@ -24,9 +26,15 @@ categories:
 
 ### Firis - 2019年1月
 
+- 联合创始人，兼开发者。
+- Firis是一款视频制作应用，让用户在视频中成为真正的明星。比如，将「复仇者联盟」中的美国队长扮演者史蒂夫罗杰斯替换为用户，让美国队长有用户的面孔和声音。
+- 关键技术：利用CNN，Auto-encoder，CycleGan来完成图像转移和修复。
+
+<img src="https://ws4.sinaimg.cn/large/006tKfTcly1g0bknfa1rkj31dc0tggrg.jpg" style="display: block; margin: 0 auto; height: 300px">
+
 ### 图片反向搜索引擎 - 2018年12月
 
-- [大规模图片反向搜索引擎Kaggle比赛](https://www.kaggle.com/c/cs5785-fall18-final)中排名第一。
+- 开发者。算法结果在[大规模图片反向搜索引擎Kaggle比赛](https://www.kaggle.com/c/cs5785-fall18-final)中排名第一。
 - 算法解决的问题：利用自然语言搜索相关图像。例如，如果用户输入“一个正在玩滑板的人跳跃到空中”，该算法会从大型图像数据库中将最相关的图像进行排序，并返回搜索结果给用户。
 - 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression, Word2Vec，进行多模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
 
@@ -35,6 +43,9 @@ categories:
 <img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bkfdfv5uj31eg0qankp.jpg" style="display: block; margin: 0 auto; height: 300px">
 
 ### Look - 2018年9月
+
+- 开发者。联合Snapchat，Cornell Tech Product Studio项目。
+- Look，是一款基于实时视频推荐在线相关时装的应用。
 
 ### Muma - Music AI - 2018年1月
 
