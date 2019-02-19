@@ -29,17 +29,17 @@ categories:
 - Firis是一款视频制作应用，让用户在视频中成为真正的明星。比如，将「复仇者联盟」中的美国队长扮演者史蒂夫罗杰斯替换为用户，让美国队长有用户的面孔和声音。
 - 关键技术：利用CNN，Auto-encoder，CycleGan来完成图像转移和修复。
 
-<img src="https://ws4.sinaimg.cn/large/006tKfTcly1g0bknfa1rkj31dc0tggrg.jpg" style="display: block; margin: 0 auto; height: 300px">
+<img src="https://ws4.sinaimg.cn/large/006tKfTcly1g0bknfa1rkj31dc0tggrg.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 ### 图片反向搜索引擎 - 2018年12月
 
 - 开发者。算法结果在[大规模图片反向搜索引擎Kaggle比赛](https://www.kaggle.com/c/cs5785-fall18-final)中排名第一。
 - 算法解决的问题：利用自然语言搜索相关图像。例如，如果用户输入“一个正在玩滑板的人跳跃到空中”，该算法会从大型图像数据库中将最相关的图像进行排序，并返回搜索结果给用户。
-- 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression, Word2Vec，对图片特征向量和词语向量进行跨模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
+- 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression， Word2Vec，对图片特征向量和词语向量进行跨模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
 
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bk5k3rrnj31090u04eu.jpg" style="display: block; margin: 0 auto; height: 400px">
+<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bk5k3rrnj31090u04eu.jpg" style="display: block; margin: 0 auto; max-height: 400px">
 
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bkfdfv5uj31eg0qankp.jpg" style="display: block; margin: 0 auto; height: 250px">
+<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bkfdfv5uj31eg0qankp.jpg" style="display: block; margin: 0 auto; max-height: 250px">
 
 ### Look - 2018年9月
 
@@ -54,7 +54,7 @@ categories:
 - [2018.4.25更新] 微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)。
 - [2018.5.26更新] 微软Imagine Cup加拿大赛区第二名。[媒体介绍](https://techcommunity.microsoft.com/t5/Student-Developer-Blog/Announcing-the-Winners-of-the-Canadian-Finals-of-Imagine-Cup/ba-p/312123)，[博客记录](http://chocoluffy.com/2018/07/26/%E5%86%99%E5%9C%A8%E5%BE%AE%E8%BD%AFImageine-Cup%E5%86%B3%E8%B5%9B%E5%9C%88%E4%B9%8B%E5%90%8E/)。
 
-<img src="https://ws4.sinaimg.cn/large/006tKfTcly1fqqlus9ucjj31kw0nsx6s.jpg" style="display: block; margin: 0 auto; height: 300px">
+<img src="https://ws1.sinaimg.cn/large/006tKfTcly1g0blnyhsm4j31780l2b1k.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 
 ### Generalists and Specialists - 2017年11月
@@ -72,14 +72,14 @@ categories:
 - [2018.2.6更新] 进驻多伦多大学工程院孵化器UofT Hatchery，参与2018 NEST Cohort。
 - [产品首发博客链接](http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/),  [App Store下载链接](https://itunes.apple.com/ca/app/%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/id1196585674?mt=8)
 
-<img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fko0120g1nj30xc0xcwg8.jpg" style="display: block; margin: 0 auto; height: 300px">
+<img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fko0120g1nj30xc0xcwg8.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 
 ### Approximate Neighbor Search & Chatbot - 2016年12月
 
 - 在Sysomos's Data Science Lab的演讲稿，讨论关于大规模特征向量的搜索性能，以及在聊天机器人方向上的应用。[资料链接](https://docs.google.com/presentation/d/1QA_91iqOjExL7pIOm7K9d-BUiKl5aerbAykEUHUzfZQ/edit?usp=sharing)。
 
-<img src="http://ww4.sinaimg.cn/large/006y8lVagw1farb9x2ggqj31kw0w1q66.jpg" style="display: block; margin: 0 auto;">
+<img src="http://ww4.sinaimg.cn/large/006y8lVagw1farb9x2ggqj31kw0w1q66.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 
 ### Autonomous Driving - 2016年12月
@@ -88,8 +88,8 @@ categories:
 - Raise the idea of "visual viewpoint" in extend of object's actual viewpoint, to allow exposing more consistent features to classifiers. The highest accuracy rate among all undergraduate and graduate students so far.
 - 技术重点：DPM， SVM(rbf kernel)， intense image preprocessing。
 
-<img src="http://chocoluffy.com/demo-gif/auto-driving.gif" style="display: block; margin: 0 auto;">
-<img src="https://ww4.sinaimg.cn/large/006tNc79gy1flusnl0jd1j312o0nsb29.jpg" style="display: block; margin: 0 auto;">
+<img src="http://chocoluffy.com/demo-gif/auto-driving.gif" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://ww4.sinaimg.cn/large/006tNc79gy1flusnl0jd1j312o0nsb29.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 
 ### Video Image SmArt collaGE - August 2016
@@ -120,7 +120,7 @@ categories:
 - Built with react native, migrated from a node.js web app. Get my hands dirty with RN's amazing mobile support.
 - Part of my react native everyday coding challenge. [Github Source](https://github.com/chocoluffy/ReactNativeEveryday/tree/master/Day2Sentiment).
 
-<img src="http://chocoluffy.com/demo-gif/emocean.gif" style="height: 500px;">
+<img src="http://chocoluffy.com/demo-gif/emocean.gif" style="max-height: 400px;">
 
 
 ### AirLoft  January - March 2016
