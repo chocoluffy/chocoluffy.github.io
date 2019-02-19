@@ -10,9 +10,8 @@ categories:
 
 - 『[我的技术笔记](http://chocoluffy.com/tech/)』
 - 『[我的生活随笔](http://chocoluffy.com/life/)』
-- 『[我的书房](http://chocoluffy.com/books/)』
-- 『[我的日记碎片](http://chocoluffy.com/weibo/)』&『[诗集](http://chocoluffy.com/poems/)』&『[相册](http://chocoluffy.com/photo/)』
-- 『[我的Github](https://github.com/chocoluffy)』& 『[Linkedin](https://www.linkedin.com/in/yushunzhe/)』
+- 『[我的书房](http://chocoluffy.com/books/)』&『[诗集](http://chocoluffy.com/poems/)』&『[相册](http://chocoluffy.com/photo/)』
+- 『[我的Github](https://github.com/chocoluffy)』& 『[豆瓣](https://www.douban.com/people/chocolufy/)』& 『[微博](http://weibo.com/chocoluffy)』& 『[知乎](https://www.zhihu.com/people/yu-shun-zhe/)』& 『[Linkedin](https://www.linkedin.com/in/yushunzhe/)』
 
 想像路飞那样一直拼下去，当一个人有了真正想要守护的东西，他才会真正变得强大。
 
@@ -36,11 +35,11 @@ categories:
 
 - 开发者。算法结果在[大规模图片反向搜索引擎Kaggle比赛](https://www.kaggle.com/c/cs5785-fall18-final)中排名第一。
 - 算法解决的问题：利用自然语言搜索相关图像。例如，如果用户输入“一个正在玩滑板的人跳跃到空中”，该算法会从大型图像数据库中将最相关的图像进行排序，并返回搜索结果给用户。
-- 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression, Word2Vec，进行多模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
+- 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression, Word2Vec，对图片特征向量和词语向量进行跨模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
 
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bk5k3rrnj31090u04eu.jpg" style="display: block; margin: 0 auto; height: 300px">
+<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bk5k3rrnj31090u04eu.jpg" style="display: block; margin: 0 auto; height: 400px">
 
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bkfdfv5uj31eg0qankp.jpg" style="display: block; margin: 0 auto; height: 300px">
+<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bkfdfv5uj31eg0qankp.jpg" style="display: block; margin: 0 auto; height: 250px">
 
 ### Look - 2018年9月
 
