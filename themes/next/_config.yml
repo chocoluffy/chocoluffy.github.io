@@ -132,6 +132,7 @@ social:
   豆瓣: https://www.douban.com/people/chocolufy/
   知乎: https://www.zhihu.com/people/yu-shun-zhe/
   Linkedin: https://www.linkedin.com/in/yushunzhe/
+  友链: https://chocoluffy.com/link/
   #LinkLabel: Link
 
 
@@ -148,7 +149,8 @@ social_icons:
   # Twitter: twitter
   微博: weibo
   豆瓣: book
-  Linkedin: linkedin
+  Linkedin: linkedin-square
+  友链: users
 
 
 reward_comment: 一起加油！
