@@ -9,7 +9,7 @@ categories:
 最喜欢的作家是加缪和昆德拉。最喜欢的作品是堂吉柯德。
 
 - 『[我的技术笔记](http://chocoluffy.com/tech/)』
-- 『[我的生活随笔](http://chocoluffy.com/life/)』
+- 『[我的生活随笔](http://chocoluffy.com/life/)』& 『[友链](http://chocoluffy.com/link/)』
 - 『[我的书房](http://chocoluffy.com/books/)』&『[诗集](http://chocoluffy.com/poems/)』&『[相册](http://chocoluffy.com/photo/)』
 - 『[我的Github](https://github.com/chocoluffy)』& 『[豆瓣](https://www.douban.com/people/chocolufy/)』& 『[微博](http://weibo.com/chocoluffy)』& 『[知乎](https://www.zhihu.com/people/yu-shun-zhe/)』& 『[Linkedin](https://www.linkedin.com/in/yushunzhe/)』
 
