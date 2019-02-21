@@ -64,6 +64,7 @@ mark {
 }
 small {
   font-size: 80%;
+  color: #808080;
 }
 sub,
 sup {
@@ -1006,7 +1007,7 @@ pre .javascript .function {
   }
 }
 .post-body .fancybox img {
-  display: block !important;
+  display: block;
   margin: 0 auto;
   cursor: pointer;
   cursor: zoom-in;
@@ -1677,7 +1678,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c239af;
+  background: #ff1aff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2549,5 +2550,32 @@ ul {
   .footer-inner {
     width: auto;
     text-align: center;
+  }
+}
+.img-3.img-3.img-3 {
+  flex: 33.3%;
+  display: inline-block;
+  margin-bottom: -10px;
+  background: #fff;
+  border: none;
+}
+.img-2.img-2.img-2 {
+  flex: 50%;
+  display: inline-block;
+  margin-bottom: -10px;
+  background: #fff;
+  border: none;
+}
+.img-h.img-h.img-h {
+  max-height: 120px;
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-top: -6px;
+  background: #fff;
+  border: none;
+}
+@media (max-width: 767px) {
+  .img-h.img-h.img-h {
+    max-height: 60px;
   }
 }
