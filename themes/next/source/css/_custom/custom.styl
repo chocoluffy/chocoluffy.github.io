@@ -1,1 +1,27 @@
 // Custom styles.
+
+.img-3.img-3.img-3 {
+    flex: 33.3%; //一行三张，自己按百分比定义一行几张
+    display: inline-block; //单行放置
+    margin-bottom: -10px; //由于图片继承上一个class的底部横线，先覆盖
+    background: white; //定义背景色，遮盖横线
+    border: none; //去掉相框，可选
+}
+
+.img-2.img-2.img-2 {
+    flex: 50%; //一行两张，自己按百分比定义一行几张
+    display: inline-block; //单行放置
+    margin-bottom: -10px; //由于图片继承上一个class的底部横线，先覆盖
+    background: white; //定义背景色，遮盖横线
+    border: none; //去掉相框，可选
+}
+
+.img-h.img-h.img-h {
+    max-height: 120px; // 设置最大高度，其余自动补位。
+    display: inline-block;
+    margin-bottom: -6px;
+    margin-top: -6px;
+    background: white;
+    border: none;
+    +mobile(){max-height: 60px;}
+}

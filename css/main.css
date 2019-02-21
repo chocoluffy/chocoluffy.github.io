@@ -64,6 +64,7 @@ mark {
 }
 small {
   font-size: 80%;
+  color: gray;
 }
 sub,
 sup {

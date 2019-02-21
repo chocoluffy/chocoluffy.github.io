@@ -6,7 +6,7 @@ categories:
 ## 推荐
 
 [张琛昱的博客](http://zhangchenyu.me/)
-推荐理由：Cornell Tech的同学、朋友。一个有想法，并且很自律的人。 / 更新频率：约1次/月。
+推荐理由：Cornell Tech的同学、朋友。一个有想法，并且很自律的人。他的wiki page很值得学习。 / 更新频率：约1次/月。
 
 [张弛原的博客](http://freemind.pluskid.org/)
 推荐理由：MIT博士，加入了Google Brain。极强的专业素质，也很会平衡业余兴趣爱好。 / 更新频率：不定期更新。
