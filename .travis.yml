@@ -10,8 +10,8 @@ cache:
 
 before_install:
     - export TZ='America/New_York'
-    - rm -rf node_modules
-    - npm install -g npm:latest
+    - npm config get registry
+    - npm config set registry=http://registry.npmjs.org/
     - npm install hexo-cli@1.1.0 -g
     - chmod +x ./publish-to-gh-pages.sh
 
