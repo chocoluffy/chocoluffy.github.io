@@ -5,6 +5,9 @@ categories:
 
 ## 推荐
 
+[Jessie Frazelle's Blog](https://blog.jessfraz.com/)
+推荐理由：微软工程师，曾就职于Google、Docker。博客里介绍了很多关于Docker和Linux的hack，以及高度自动化的Docker实践。我也喜欢将自己的workflow高度自动化，但仍主要偏应用层。作为开发者也希望能够在底层以实现更多的自由度，向她学习。 / 更新频率：约2次/月。
+
 [张琛昱的博客](http://zhangchenyu.me/)
 推荐理由：Cornell Tech的同学、朋友。一个有想法，并且很自律的人。他的wiki page很值得学习。 / 更新频率：约1次/月。
 
@@ -13,6 +16,3 @@ categories:
 
 [完美的胖达](https://wmdpd.com/)
 推荐理由：话题广，有干货 / 更新频率：约3次/周。
-
-[Jessie Frazelle's Blog](https://blog.jessfraz.com/)
-推荐理由：微软工程师，曾就职于Google、Docker。博客里介绍了很多关于Docker和Linux的hack，以及高度自动化的Docker实践。很有趣。 / 更新频率：约2次/月。
