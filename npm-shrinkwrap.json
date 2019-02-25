@@ -2994,7 +2994,8 @@
       }
     },
     "hexo-renderer-stylus": {
-      "version": "https://registry.npmjs.org/hexo-renderer-stylus/-/hexo-renderer-stylus-0.2.3.tgz",
+      "version": "0.2.3",
+      "resolved": "https://registry.npmjs.org/hexo-renderer-stylus/-/hexo-renderer-stylus-0.2.3.tgz",
       "integrity": "sha1-AyruxRxHzDlU6fxDyg7Co9CNDq0=",
       "requires": {
         "nib": "^1.1.0",
