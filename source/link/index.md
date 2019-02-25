@@ -14,3 +14,5 @@ categories:
 [完美的胖达](https://wmdpd.com/)
 推荐理由：话题广，有干货 / 更新频率：约3次/周。
 
+[Jessie Frazelle's Blog](https://blog.jessfraz.com/)
+推荐理由：微软工程师，曾就职于Google、Docker。博客里介绍了很多关于Docker和Linux的hack，以及高度自动化的Docker实践。很有趣。 / 更新频率：约2次/月。
