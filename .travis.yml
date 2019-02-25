@@ -12,6 +12,8 @@ before_install:
     - export TZ='America/New_York'
     - npm cache clean
     - npm install -g hexo-cli --ignore-scripts
+    - npm install highlight.js@9.14.2
+    - npm rebuild
     - chmod +x ./publish-to-gh-pages.sh
 
 install:
