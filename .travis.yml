@@ -11,8 +11,8 @@ cache:
 before_install:
     - export TZ='America/New_York'
     - npm cache clean
-    - sudo npm install -g npm
-    - npm install hexo-cli@1.1.0 -g
+    - npm install -g npm
+    - npm install -g hexo
     - chmod +x ./publish-to-gh-pages.sh
 
 install:
