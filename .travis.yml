@@ -11,8 +11,7 @@ cache:
 before_install:
     - export TZ='America/New_York'
     - npm cache clean
-    - npm install -g npm
-    - npm install -g hexo
+    - npm install -g hexo-cli --ignore-scripts
     - chmod +x ./publish-to-gh-pages.sh
 
 install:
