@@ -10,8 +10,8 @@ cache:
 
 before_install:
     - export TZ='America/New_York'
-    - npm update -g minimatch@3.0.2
-    - npm install hexo-cli@1.1.0 -g --no-optional
+    - npm install -g minimatch@3.0.2
+    - npm install hexo-cli@1.1.0 -g
     - chmod +x ./publish-to-gh-pages.sh
 
 install:
