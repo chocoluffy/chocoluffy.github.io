@@ -60,7 +60,7 @@
 			    "@id":"http://chocoluffy.com/2018/07/01/Leetcode题目解析/"
 			},
 			"datePublished": "2018-07-01T14:32:06.000Z",
-			"dateModified": "2019-02-25T21:00:42.022Z",
+			"dateModified": "2019-02-25T21:51:50.587Z",
 			
 			"image": {
 				"@type": "ImageObject",
@@ -1866,7 +1866,7 @@ h6.categories {
 			    	<!-- content -->
 			  		<p>My Leetcode solution collection. </p>
 <a id="more"></a>
-<h1 id="milestone"><a href="#milestone" class="headerlink" title="milestone"></a>milestone</h1><div class="table-wrapper"><table>
+<h1 id="milestone">milestone</h1><div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>Title</th>
@@ -1891,7 +1891,7 @@ h6.categories {
 <tr>
 <td>3. Longest Substring Without Repeating Characters</td>
 <td>as title.</td>
-<td>bitmap in replace of &lt;char, int&gt; hashmap recording most recent position. if there is a collision then found a repeated character.</td>
+<td>bitmap in replace of <char, int=""> hashmap recording most recent position. if there is a collision then found a repeated character.</char,></td>
 <td>19ms, 98%</td>
 </tr>
 <tr>
@@ -1932,7 +1932,7 @@ h6.categories {
 </tr>
 </tbody>
 </table></div>
-<h2 id="todo"><a href="#todo" class="headerlink" title="todo"></a>todo</h2><ul>
+<h2 id="todo">todo</h2><ul>
 <li><p>summarize common modular operations and helpful algorithm functions, with their time complexity, such as &#x201C;longest common substring\subsequence&#x201D;, &#x201C;check if integer overflow&#x201D;. </p>
 </li>
 <li><p>summarize common data structure implementation, such as trie tree. put the above two section on <a href="http://chocoluffy.com/2018/06/30/Leetcode%E7%AE%97%E6%B3%95%E6%80%9D%E8%B7%AF/">Leetcode&#x7B97;&#x6CD5;&#x601D;&#x8DEF;</a>.</p>
@@ -1942,33 +1942,33 @@ h6.categories {
 <li><p>check &#x201C;Discussion&#x201D; tab for smart tricks.</p>
 </li>
 </ul>
-<h1 id="1-two-sum"><a href="#1-two-sum" class="headerlink" title="1 two sum"></a>1 two sum</h1><ul>
+<h1 id="1_two_sum">1 two sum</h1><ul>
 <li>&#x6700;&#x5FEB;&#x7684;&#x7B97;&#x6CD5;&#x91CC;&#x5BF9;std::sort&#x7684;&#x4F7F;&#x7528;&#x3002;</li>
 </ul>
 <p>&#x867D;&#x7136;&#x7406;&#x8BBA;&#x4E0A;sort&#x662F;nlogn&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5B9E;&#x7528;&#x4E2D;sort&#x53EF;&#x4EE5;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x63D0;&#x9AD8;&#x901F;&#x5EA6;&#x3002;&#x5C24;&#x5176;&#x5F53;c++&#x7684;library function&#x5BF9;&#x5176;&#x6DFB;&#x52A0;&#x7684;&#x4F18;&#x5316;&#x3002;</p>
-<h1 id="2-add-two-numbers"><a href="#2-add-two-numbers" class="headerlink" title="2 add two numbers"></a>2 add two numbers</h1><ul>
+<h1 id="2_add_two_numbers">2 add two numbers</h1><ul>
 <li>&#x60F3;&#x6E05;&#x695A;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5F15;&#x5165;dummy node&#x3002;</li>
 </ul>
 <p>&#x5E38;&#x89C1;&#x7684;&#x539F;&#x56E0;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x7B80;&#x4FBF;&#x5730;&#x5904;&#x7406;while loop&#x91CC;&#x9762;&#x7684;edge case&#xFF0C;&#x6BD4;&#x5982;&#x8FD9;&#x91CC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;node&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x65B0;node&#x662F;&#x4F9D;&#x8D56;while loop&#x7684;&#x903B;&#x8F91;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E3A;NULL&#xFF0C;&#x5728;loop&#x4F7F;&#x7528;node-&gt;next&#x4F1A;seg fault&#x3002;&#x6240;&#x4EE5;&#x901A;&#x8FC7;&#x521B;&#x5EFA;dummy node&#x4F7F;&#x5F97;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;loop&#x91CC;&#x4F7F;&#x7528;node-&gt;next&#x3002;&#x7136;&#x540E;&#x6700;&#x540E;&#x7528;dummy-&gt;next&#x8FD4;&#x56DE;&#x6574;&#x4E2A;&#x94FE;&#x7684;head&#x3002;</p>
-<h1 id="3-longest-substring-without-repeating-characters"><a href="#3-longest-substring-without-repeating-characters" class="headerlink" title="3 longest substring without repeating characters"></a>3 longest substring without repeating characters</h1><ul>
-<li>map&lt;char, int&gt;</li>
+<h1 id="3_longest_substring_without_repeating_characters">3 longest substring without repeating characters</h1><ul>
+<li>map<char, int=""></char,></li>
 </ul>
 <p>&#x4F18;&#x5316;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;bitmap&#x7684;&#x4F7F;&#x7528;&#x3002;&#x7C7B;&#x4F3C;bucketsort&#x7684;&#x539F;&#x7406;&#x3002;&#x5982;&#x679C;&#x662F;&#x5B57;&#x7B26;&#x5219;&#x662F;&#x9ED8;&#x8BA4;256&#x957F;&#x5EA6;&#x7684;bitmap&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x5E94;&#x7684;&#x4F4D;&#x7F6E;&#x653E;&#x7F6E;&#x5176;value&#x3002;</p>
-<h1 id="14-longest-common-prefix"><a href="#14-longest-common-prefix" class="headerlink" title="14 longest common prefix"></a>14 longest common prefix</h1><p>problem: as title.</p>
-<h2 id="ideas"><a href="#ideas" class="headerlink" title="ideas"></a>ideas</h2><ul>
+<h1 id="14_longest_common_prefix">14 longest common prefix</h1><p>problem: as title.</p>
+<h2 id="ideas">ideas</h2><ul>
 <li>[me] vertical scanning. time complexity: O(S), where S is the sum of all characters in all string. space complexity: O(1).</li>
 <li>divide and conquer. because LCP satisfies the associative property, that LCP(1,&#x2026;, n) = LCP(LCP(1,&#x2026;, n/2), LCP(n/2+1,&#x2026;, n)). as like in finding min or max. time complexity is O(S), space complexity is O(mlogn), n is the number of string, m is the average length, since divide and conquer requires to store intermediate results.</li>
 <li>binary search. an improvement on the vertical scanning. apply the binary search on the shortest string and do the vertical scanning to validate if it&#x2019;s LCP. time complexity is O(S * log(min string length)), space complexity is O(1).</li>
 </ul>
-<h1 id="866-prime-palindrome"><a href="#866-prime-palindrome" class="headerlink" title="866 prime palindrome"></a>866 prime palindrome</h1><p>problem: find a prime number that is also a palindromd over N.</p>
-<h2 id="ideas-1"><a href="#ideas-1" class="headerlink" title="ideas"></a>ideas</h2><ul>
+<h1 id="866_prime_palindrome">866 prime palindrome</h1><p>problem: find a prime number that is also a palindromd over N.</p>
+<h2 id="ideas-1">ideas</h2><ul>
 <li>find palindrome then check if prime. </li>
 </ul>
 <p>the set of palindrome is smaller, and for each palindrome, we can test whether it is prime in O(N^1/2).</p>
 <p>-&gt; find the set of palindrome number over N.</p>
 <p>-&gt; how to find the next palindrome number.</p>
 <p>from the center move outward, find the critical digit to add 1.</p>
-<h2 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h2><p>define the palindrome root. say 121 is 12. thus we can use palindrome root to construct palindrome number by increase it by 1 at a time. </p>
+<h2 id="summary">summary</h2><p>define the palindrome root. say 121 is 12. thus we can use palindrome root to construct palindrome number by increase it by 1 at a time. </p>
 <ul>
 <li><a href="https://leetcode.com/articles/prime-palindrome/" target="_blank" rel="noopener">https://leetcode.com/articles/prime-palindrome/</a></li>
 </ul>
