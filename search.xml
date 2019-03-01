@@ -4,6 +4,303 @@
   
     
     <entry>
+      <title><![CDATA[碎语 2019 Feb.]]></title>
+      <url>http://chocoluffy.com/2019/02/28/%E7%A2%8E%E8%AF%AD-2019-Feb/</url>
+      <content type="html"><![CDATA[<h2 id="2019-02-28">2019-02-28</h2><ul>
+<li><p>近期有空可以研究的主题：</p>
+<ul>
+<li>p2p + 贷款利息</li>
+<li>ripple；</li>
+<li>firis 现在遇到的法律上问题的解决方案：<ul>
+<li>snippet, how short to not be counted as infringement.</li>
+<li>derivative work, how much degree of freedom.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>研究一下微信运动的模式。一起做。</p>
+</li>
+<li><p>创建一个更强大的workflow:</p>
+<ul>
+<li>inoreader的web extension save webpage，然后订阅这个save到Reeder。</li>
+<li>inoreader的一个好处是，大部分Feed归档、分类都是可以以feed的形式再次导出的。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2019-02-27">2019-02-27</h2><ul>
+<li>ripple: gateway，market maker，核心在于完成交换货币这件事和XRP的价值是没有绝对关系的。很妙的一个设计：利用人们逐利的心理使得虚拟路径无限逼近真实市场路径。缺点，gateway本身扮演market maker。</li>
+<li>吃饭的时候聊天内容的质量与参与人数成反比。</li>
+<li>尝试去寻找下一个bitcoin、ripple。</li>
+<li>可以尝试每天早上在bear里固定一个专栏+模版，来制定今日的计划。然后每个任务开始的时候来计时。</li>
+</ul>
+<h2 id="2019-02-25">2019-02-25</h2><ul>
+<li>Lollapalooza：跨学科多种因素共振造成的合力结果。</li>
+<li><a href="https://blog.jessfraz.com/" target="_blank" rel="noopener">Jessie Frazelle’s Blog</a> 博客里介绍了很多关于Docker和Linux的hack，以及高度自动化的Docker实践。我也喜欢将自己的workflow高度自动化，但仍主要偏应用层。作为开发者也希望能够在底层以实现更多的自由度，向她学习。</li>
+</ul>
+<h2 id="2019-02-24">2019-02-24</h2><ul>
+<li>为了让你们更近一些，我决定向后跑。</li>
+<li>【未来】匹配。关于游戏的两个美好遐想：（1）游戏、广告往电影的体验演化。（2）游戏内容匹配生活。众包，其实是在解决一个实际场景的问题。参考recaptcha，</li>
+</ul>
+<h2 id="2019-02-23">2019-02-23</h2><ul>
+<li>近几年所谓的“金融创新”：资金池 + 时间差。</li>
+</ul>
+<h2 id="2019-02-22">2019-02-22</h2><h3 id="堂吉柯德">堂吉柯德</h3><ul>
+<li>他其实把自己心中很多善恶的标准都投射到了生活里。模仿书中读到的骑士的故事。以悲剧复现悲剧。即便是被欺负了，依然能够自我说服到是一个游侠骑士应当经历的，而变得十分欣然。</li>
+<li>我真的很疑惑，为什么推崇如此夸张的理想主义？有什么用呢？自我陶醉？</li>
+<li>反差很大的是，堂吉柯德对骑士道的起源、发展记得非常清楚，他自己提到的，”这个世道变坏了，需要骑士来保护弱小的人。“，同时，他也告诫自己做好了受苦的准备，风餐露宿是没有关系的。他把风车当作巨人而一路冲锋过去，把过路马车里的女客人当作是被绑架的公主而和车夫发起争执，甚至达到了需要你死我活的决斗的境地，每一次经历了所谓的惩恶扬善之后都命令战败的人去幻想的公主身旁复述自己的丰功伟绩，他也那么相信每一个游侠骑士内心都有着一个绝境时得以述说的公主。<br>按照这个描写的度来说，其实他已经稍稍妨碍到了别人的生活了，为什么作者塞万提斯要这么设计呢？</li>
+<li>桑乔是世俗的，大腹便便，没有收到教育，一直因为封爵的幻想而追随着堂吉柯德。</li>
+</ul>
+<h3 id="加缪">加缪</h3><ul>
+<li>在我们身上保有反抗的力量，又不放任我们否定的能力。形成的悲剧敏感性，就将发展起来，找到它的表达方式。</li>
+</ul>
+<h3 id="哈耶克大全集_-_《致命的自负》">哈耶克大全集 - 《致命的自负》</h3><ul>
+<li>哈耶克的思想很大程度上是对于两次世界大战，以及德国纳粹历史的反馈。</li>
+<li>哈耶克反对的重点不在于意识形态，或者说社会主义是否在道德上可取，而是他是从<strong>“效应”</strong>的角度入手的，他认为社会主义所倡导的办法不能够达到目标。</li>
+<li><strong>“秩序”</strong>。也是Vitalik很感兴趣的方面。组织在没有像德国纳粹那样的人物出现时为什么会崩溃，又是如何自发组织起来的。哈耶克一定很赞同这一句话，“不依赖理性而获得希望”。某种意义上，哈耶克是不赞同“理性的设计”的。</li>
+<li><strong>“拓展秩序”</strong>：处于本能和理性之间的，通过学习和模仿而形成的遵守规则的行为模式。<strong>合作的特点是：人们相互获益，并不是因为他们理解了这种秩序，而是因为他们在相互交往中刻意用这些规则来弥补自己的无知。</strong><blockquote>
+<p>这可以追溯到大卫休谟：“为别人提供服务，这无需他怀有真诚的善意。“</p>
+</blockquote>
+</li>
+<li>而计划经济，的确可能存在和谐状态，但是这种和谐是有前提的，这是以个人既无财产、特殊知识也得不到利用为前提。它是以停滞不前为代价的。<blockquote>
+<p>规则和秩序的关系，就像docker的image和container。</p>
+<p>我也想到了以色列的Kibbutz。<br>另一个想法。想社会主义，自由主义，这些词都有极大的空隙，是有很多调整的空间的。以色列的Kibbutz很像我们曾经的合作公社。但是有一个区别是，后来Kibbutz慢慢演化出来直到现在的规则是，生产资料公有，但是获利是按劳分配。而我们曾经的合作公社则都是公有和计划分配。这同样和-“规模”-是有联系的。<br>以色列一行给我的一个很深的印象是：“规模”。</p>
+</blockquote>
+</li>
+<li>哈耶克：不知道的也是不能计划的。<blockquote>
+<p>🌟我为什么会喜欢这个论断，因为它超出了对人性的假设和预期。”人性本恶“还是”人性本善“在这个逻辑里是不重要的。就算“人性本善”也不一定能够达成更好的平衡，而“人性本恶”也不一定会导致腐败。关键仍然在于哪个规则、秩序更有利于信息信号的传播和反馈。</p>
+<p>这个论断是敏感的，因为很多人容易因为这个逻辑并不劝人向善，因为好像作恶也没有关系。但实际上，它恰恰指出了道德的软肋：我们希求善良、道德，但仅仅只有良好的愿望是不够的。</p>
+</blockquote>
+</li>
+<li>哈耶克：为了保障自由，“用抽象的规则代替共同的具体目标”。</li>
+<li><p>哈耶克的论断只要集中对于近代的资本主义社会，它强调的是这一类秩序是自发形成的。没有解释原因，因而部分忽略了人类理性的作用，以及有某种“必然”演化的成分。</p>
+</li>
+<li><p>吃早餐的时候想到。以后公司开年会可以讲这样的一个故事。自助餐的盘子。准备一大一小的盘子。而后大盘子的人会不会更容易浪费食物。周围会有很多的人给我们提来不同的盘子，估值，融资，股价，但只有我们自己清楚我们到底能够消化多少，我们能够撑得起多少。问题从来都不是出在最终多少食物被浪费了，关键的问题在于我们错误地估计了多少，以及我们认为浪费无所谓而松懈的心态。</p>
+</li>
+</ul>
+<h2 id="2019-02-21">2019-02-21</h2><ul>
+<li>“骑士精神极为强调尊重对手” 赢得不是优越感，而是光明正大的战斗。</li>
+<li>那些我经常写下的，是祈祷，还是审判。</li>
+</ul>
+<h3 id="19-2-19_startup_studio的反馈">19-2-19 startup studio的反馈</h3><ul>
+<li>关于pitch。始终在于如何讲好一个故事。关于Flow的问题。最后希望达到的效果是，如果audience会回应“how do you do that?”， 你就成功了。</li>
+<li>面对不同的人，有不同的动机，就有不同的表达。</li>
+<li><p>以及关于Health Tech的理解。medical startup: -problem of credibility-。</p>
+</li>
+<li><p>【剧本】关于耶路撒冷，或许只是我们的时代没有这些残酷的选择。而<strong>极端是，他操控了我们所有的故事。</strong></p>
+</li>
+<li>思考微博和Twitter的演变。</li>
+<li>广告的本质是：影响力的交接。</li>
+<li>写一个荒谬却无动于衷的故事：受害者与破坏者享受相互伤害的过程。</li>
+<li>当你让数据做决策的时候，很多决策的可解释性反而降低了。</li>
+<li>人们为什么想看日出？看世界慢慢附上颜色。<blockquote>
+<p>[19.2.21更新]人们希望以一个不常有的形式冲击自己，像用冷水醒酒一样。人们对景色的新奇和期待远远超过了对自己内心的反照。</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>朋友圈是一个精致社交的地方。但无论是“看一看”还是“时刻视频”也好，都还没有真正解决张小龙希望解决的问题，就是”真实“。只要最终依旧有强提醒，最终依旧会曝光给好友看。虽然他最新改版的slogan是正确的：“因你看见，所以存在”。但是实际上并没有真正做到。<br>[19.2.21更新] (1) 一个相反的事实观察是：当微信更新后给时刻视频新的入口“你的新好友动态”之后，朋友发时刻视频的频率反而提高了。 (2) 另一个观点是，“一定会曝光给好友看”不一定是坏事。关于自己生活动态的曝光，对发布者来说主要分两种目的，一种是刻意树立、维护自己形象，另一种是随意的分享一些情绪，观点。</p>
+<p>一种改进是，默认发送给“最近互动的人”，后台记录了朋友圈里相互互动的人，然后发送时刻视频的时候，有一个选项是只发给互动的人。</p>
+<p>管理“群组可见”的最大的坏处是，对自己反馈。这是一种很负面的反馈，用户会讨厌一个分组的自己，斤斤计较身份，带有目的性的自己。<strong>从工具本身削弱社交的目的性。比如微信时刻视频不提供任何滤镜。</strong></p>
+<p>快手可以比微信更加真实的原因就在于陌生人的关系。就像微博的我比微信的我更加的真实。<br><strong>熟人：形象image。因为和我们生活的其他方面有交集。我们的形象是破碎而不连续的。而维持多面的形象非常费力。问题不出在熟人，而是出在交集。当多层社会关系出现交集的时候，就像在一席大桌饭宴上，你的态度是由你其中最严肃的社会关系所决定的</strong><br><strong>陌生人：名声reputation。能够持续的维护同一个形象而形成名声。没有交集的焦虑。</strong></p>
+</blockquote>
+<ul>
+<li>“人并没有用视频记录自己生活的需求，看看自己手机里拍过多少视频就知道了，即使拍再多的照片也不会看，但是人有渴望交流的需求。”，张小龙在演讲时曾提到。<blockquote>
+<p>用视频拍摄，其实不是为了记录，而是为了交流。快手实际上做到的是成为那一大部分人和外界交流的工具。而这在很多时候，是很多企业不屑于做的。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2019-02-20">2019-02-20</h2><ul>
+<li>还是要逼着自己去输出！很多时候无意聊天的话题，可以很有启发。<blockquote>
+<p>很多互联网的创业项目，都是努力成为一个漏斗状结构的中间窄口。<br><strong>只要存在瓶颈。就存在借助兼并而扩大话语权。</strong>而现代互联网企业就是通过两端的兼并，最终掌控这个领域资源匹配的话语权，而成为新的瓶颈或者平台。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2019-02-19">2019-02-19</h2><ul>
+<li>bark 浏览器推送到iphone，很适合给惊喜~</li>
+</ul>
+<h3 id="海贼王">海贼王</h3><ul>
+<li>乌索普：我只希望这还是谎言啊。我只是在说谎，明天早上醒来村民大家还是会迎来新的一天。</li>
+<li>乔巴： 我是一只天生就是蓝色鼻子的驯鹿。我是怪物。</li>
+<li>医治这个国家的，是人心 ，是漫天的樱花🌸。</li>
+<li>弗兰奇建造的战船让师傅汤姆受了伤。船匠汤姆：不管建造什么样的船，都没有善恶之分，创造那艘船的人必须爱着它。 男人就要响当当得面对自己所造的船。 </li>
+<li>罗宾：我只想知道这个世界的历史。冰山：如果对这个世界的好奇心会带来这个世界的毁灭的话就应该停止。罗宾：我只是为了草帽团。<br><strong>存在本身并不能成为罪恶。</strong></li>
+</ul>
+<h2 id="2019-02-18">2019-02-18</h2><ul>
+<li><p>讽刺久了，会成为讽刺本身。</p>
+</li>
+<li><p>18年直播分成后的收入150亿往上 可以奔着200亿算 广告刚起步 19年奔着100亿。最主要的 快手支出少 不像抖音 买量全年百亿级。</p>
+<blockquote>
+<p>商业化是重点。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2019-02-17">2019-02-17</h2><ul>
+<li>【软件】收集优秀的stack overflow的回答。</li>
+<li>你的眼神，像蝴蝶飘落。</li>
+<li>“每一个人，身上都拖着一个世界，由他所见过，爱过的一切所组成的世界。”</li>
+</ul>
+<h2 id="2019-02-16">2019-02-16</h2><ul>
+<li>做一个自拍分析皮肤状态的app，拿到了手机用户自拍。或者这么说，为了拿到用户的自拍画像，去做一个自拍分析皮肤状态的app。后者的逻辑比前者更有投资价值。</li>
+<li>研究一下notion+bear的组合。</li>
+<li>刺青、高跟鞋、门前的草坪。是同一样东西。</li>
+<li>reddef originals加rss</li>
+<li><p>【商业观察】直播系统企业定制化；一对一直播；拍卖直播权。只有成交的人需要付金额。</p>
+</li>
+<li><p>从其他软件切回微信，像回家一样。</p>
+</li>
+<li>用视频记录自己，究竟是不是一个需求？<strong>需求是不会变的。但工具会改变门槛，需求会改变形式。</strong></li>
+</ul>
+<p><strong>对快手的用户来说，用段视频、直播记录自己的生活承载了他们社交的需求。但是抖音并不具备这个特性。抖音是城里人的一个娱乐工具，只要出现更新奇的刺激人们就会转移阵地。</strong></p>
+<p><strong>而微信做时刻视频。也不是为了娱乐消费，而是为了分享生活。重点也不在于人（连基础的滤镜也没有）。</strong></p>
+<ul>
+<li>找机会总结sprint1的问题。从笔记里提炼。</li>
+</ul>
+<h2 id="19-2-15">19.2.15</h2><p>原来这就是成长。</p>
+<p>原来我\你的每一句话，都有着我\你一路以来的教养。这就是为什么和我现在的队友沟通是那么舒服。</p>
+<p>你可以专断，但是你得有服众的能力。</p>
+<ul>
+<li>总结sprint1。总结整个准备过程中的冲突和感受。</li>
+</ul>
+<p>关于协作能力。要服众。我一直以来都是小作品的单打独斗，只需要从好朋友里面找到最好的设计师以及最好的产品经理。但是未来对于想做到的更大的事来说，这是远远不够的。</p>
+<p>max很会照顾人的情绪。他知道这个人的动机是什么，然后从他的角度给一个台阶下。甚至在其中不惜把自己的形象也揉碎。</p>
+<p>其中关于是否要让所有成员都展示的话题。真心是要仔细想，到底是为了什么。路飞是这么想的，伙伴比梦想重要。<strong>仔细权衡哪个是更重要的。让每一个人都有参与感，还是一个展示甚至最后还不算分数！</strong></p>
+<blockquote>
+<p>【海贼王】里面索隆的变化。<br>一开始他是这么对路飞说的，我可以和你一起航海，但是如果你妨碍了我成为最厉害的剑豪，我会斩了你。而当他遇到鹰眼的时候要决斗，拼上了性命的那种的时候，路飞并没有拒绝、干涉他。<br>到后来熊的出现，他要承受路飞受到的伤害，他说，如果连伙伴都保护不了的话，还当什么剑豪呢。</p>
+</blockquote>
+<ul>
+<li><p>毛选一开始，分清楚哪些是朋友，哪些是敌人。妈妈也这么说了，要协调好关系，使得哪怕是一个不起眼的人物，都对你心服口服。</p>
+<ul>
+<li>《毛选》</li>
+<li>《我的奋斗》希特勒的自传</li>
+</ul>
+</li>
+<li><p>一开始市场一定是越细分越好。max能够在一开始定位到电影、影视这个市场是对的。</p>
+</li>
+</ul>
+<h2 id="19-2-12">19.2.12</h2><ul>
+<li><p>closed-form solution: 解析解。很多时候loss function不是closed form的，也就是没有解析解。所以会用到gradient descent。</p>
+</li>
+<li><p>室友说，很多群其实都是replica，不如建成slack的channel。有点意思，比如羽毛球群和游戏王群就很适合作为channel。微信的群，主动权在参与的人；而slack的channel，主动权在所有人。</p>
+</li>
+<li><p>还是说，很多时候我在享受一种你把我当作朋友而我不把你当作朋友的高贵快感。我需要这么证明我的存在嘛。</p>
+</li>
+</ul>
+<h2 id="2019-02-11">2019-02-11</h2><ul>
+<li><p>可以通过dense pose estimation的点之间的角度来设置trigger！</p>
+</li>
+<li><p>逆向工程这个questo，#1 product hunt。重点在于OCR + quiz generation。generation的逻辑是，关键词detection以及一些关键数据的parse。思路其实很简单：</p>
+<ul>
+<li>比如数字。然后转换为问题”why…”</li>
+<li>比如easy\difficult\best\worst。然后问题就可以转换为“为什么easy\difficult…”</li>
+</ul>
+</li>
+</ul>
+<h2 id="19-2-10">19.2.10</h2><ul>
+<li><p>【产品设计】关于评分网站的设计。</p>
+<blockquote>
+<p>缘由：1. 你希望扳回大多数人的观点。2. 刻意造谣。</p>
+<ul>
+<li>你只能看到和你相似的一拨人的观点和评分。</li>
+<li>然后将另外一波人的观点也呈现出来，开放非匿名的场合进行辩论。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>很多时候我不自主地笑，都是因为我想起了家里人。尤其是妈妈。</p>
+</li>
+<li><p>有一些情绪可能会有帮助。比如，抵抗的情绪。为什么要专注在一件事上面。有一些脑洞，可能我自己也无法说服我自己。如果我只有7秒的记忆，我一定要做一件10秒的事。因为等我忘记了一切我还可以通过手头的事想起来。</p>
+</li>
+</ul>
+<h2 id="19-2-8">19.2.8</h2><ul>
+<li>改名叫 inplay。</li>
+<li>【公司管理】及时给伙伴反馈！！哪怕简单地就是“已读”。学习max的做法。</li>
+<li><p>产品UX借鉴anchor！！！</p>
+</li>
+<li><p>分析一部小说作品的一个角度，去观察哪个主角死去了，这往往意味着那个主角所代表的想法的妥协。</p>
+</li>
+<li><p>讽刺。他们来到陌生的地方，然后做着熟悉的事。</p>
+</li>
+<li><p><strong>美学概念，在社会背景下，更像是一种奖惩制度。</strong></p>
+<blockquote>
+<p>奖惩制度，也就是演化为一种标准。而不是一种感受。人们越来越擅长赞扬一个人的审美品味，这种抬高或许和赞扬本身无关，而和集体性有关，而在另一端，会不会有人因为个人的感受却受到惩罚？</p>
+<p>社会群体有一个特质，会把很多个人感受抬高成为一种绝对标准。这里面摧毁了很多东西，妥协了很多东西。</p>
+<p>个体坚持理性，知道什么时候应该刹车，说出“it is evil”这句话。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="19-2-7">19.2.7</h2><ul>
+<li>你扶着扶手，我扶着你。</li>
+<li>巴菲特在他的传记里最重要的一个概念是compound，复利。要专注。选出自己的前20个目标，然后选出最重要的前5个，之后就只专注在那5个目标的追逐上面。</li>
+</ul>
+<h2 id="19-2-6">19.2.6</h2><h3 id="《火星编年史》">《火星编年史》</h3><ul>
+<li>你犹豫了。于是你的身上，有了我的影子。于是我心软了。你可以在现在杀了我，不过我很清楚，你终于会成为我。</li>
+<li>英雄死了。不是因为这个世界不再需要英雄了。而是这个世界已经没有那么大那么难，来需要英雄来拯救了。现在，破坏世界、拯救世界的按钮在每一个人的手里。</li>
+<li>大一的时候打过的一场记忆最深刻的辩论。政府是否应该支持人们移居到另一个星球？其中最佳辩手的论据是。正方，应该移居。为了去见证重新开始。为了那份孤寂。为了更好地去理解地球。</li>
+<li>雷布拉德伯里的小说，真是太适合拍电影了。好莱坞那种。</li>
+<li>雨。像破碎的玻璃。</li>
+<li>这是我看雷布拉德伯里的第三本书，继《华氏451》和《蒲公英醇夏》。他真的是一个很天真的人。天真不是指他的性格，而是他想要做到的事，就是那么清晰地展现在读者面前。都是些很简单的梦想。书，童年。然后到这本书的主题，地球和战争。想象力是指技巧嘛，不只是的，也是一种理解，想传递存在着的另一种理解。这份理解曾经只被少数人拥有，现在走近了更多人的共鸣。</li>
+<li>时间，是什么味道？像烟味。时间有声音吗，会不会很像钟乳石尖上滴落的水滴的回声，像地铁里错落有致的金属碰撞的声音，还是像一场夏天降临在石板的雨。</li>
+<li>【灵感】可以以后这么写小说。以时间作为章节，然后把平时的故事转化为小说情节。每个章节，写的都是那些我望着地球时发生的故事。</li>
+<li>小说里还有致敬《华氏451》消防员的彩蛋。</li>
+<li>对比：<ul>
+<li>黑人们的逃离。却把物体安置得整整齐齐。</li>
+<li>道德委员会的抵达。爱伦坡的厄舍古屋。</li>
+</ul>
+</li>
+<li>你的脸，每个人都叫的出一个古老的名字。</li>
+<li>他们在火星仰头看着天空中的那个绿点，就像当初在地球上仰望着火星一样。</li>
+<li><p>讽刺。他们来到陌生的地方，然后做着熟悉的事。</p>
+</li>
+<li><p>买单的时候负责结账的小哥哥，他在闲暇的时候在很专心的画漫画。</p>
+</li>
+<li><p>纸张，被阳光照得透明。</p>
+</li>
+<li><p>【推荐系统】复习一下很有用的概念</p>
+<ul>
+<li>SVD以及其变式</li>
+<li>PLRS，看看如果用Ridge Regression效果怎么样。</li>
+<li>skip-gram, everything into embedding.</li>
+<li>理解maximum likelihood and logistic regression。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>【商业观察】为什么依赖算法分发。这是主动权的一个迁移。作为平台本身，我希望能够掌控所有的话语权。因为我的上游和下游越接近，我的价值就越会被削弱。这个也是中介存在的意义。<br>“Arcade City 的创建本身就基于两个基本原则。：允许司机制定自己的费率，并允许他们建立和维护自己的经常性客户群；这两个原则都是Uber在其服务条款中明确禁止的。”</li>
+</ul>
+<h2 id="19-2-5">19.2.5</h2><ul>
+<li>【商业创意】as app.<ul>
+<li>doc as app, <a href="https://www.producthunt.com/posts/coda-1-0-mobile" target="_blank" rel="noopener">Coda 1.0 + Mobile - A doc as powerful as an app | Product Hunt</a></li>
+<li>text as ads. <a href="https://vidy.com/" target="_blank" rel="noopener">VIDY</a></li>
+<li>video as app?</li>
+<li>video as ads?</li>
+</ul>
+</li>
+</ul>
+<h2 id="19-2-4">19.2.4</h2><ul>
+<li>paprika 《未麻的部屋》</li>
+<li><detroit: become="" humen=""></detroit:></li>
+<li>每一个产品经理都应该读：《游戏设计艺术》</li>
+</ul>
+<h2 id="19-2-1">19.2.1</h2><ul>
+<li>其实每一滴雨，都是来自外太空的雪沫。</li>
+<li>疯狂，是一种保护机制。它以牺牲自我的方法，不让任何人进入、打断自己的思绪。</li>
+</ul>
+<h3 id="google_cocktail_party_sound_problem">google cocktail party sound problem</h3><ul>
+<li>unsupervised</li>
+<li>visual with sound</li>
+<li><p>consecutive frame with CNN(facenet)，sound by spectrogram</p>
+</li>
+<li><p>复习一下PLRS。</p>
+</li>
+<li><p>【公司管理】在亚马逊内部，鼓励员工提出创新项目的同时，会要求员工写一封邮件，邮件内将包含两大部分- 一篇新闻稿，以及大约6页的常见Q&amp;A备忘录。</p>
+</li>
+<li><p>关于微信看一看，是否改变了我的行为动机。我其实只是想要一个地方，你不必一定看到就行了。我不会太在意是熟人还是陌生人的圈子。</p>
+</li>
+<li>一个观察，需要验证是否正确。在抖音引入了微信的好友关系之后，发布的频次会下降。kill-time本身是一类逃避的行为，社交关系在这个背景里面是一种约束。</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[碎语 2019 Jan.]]></title>
       <url>http://chocoluffy.com/2019/02/21/%E7%A2%8E%E8%AF%AD-2019-Jan/</url>
       <content type="html"><![CDATA[<p>特别充实的一个月呢。</p>
@@ -5755,76 +6052,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Agile web developing in rails 第一期]]></title>
-      <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
-      <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
-<a id="more"></a> 
-<h2 id="The_details_you_should_know_about_in_rails:">The details you should know about in rails:</h2><ul>
-<li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &apos;Add to Cart&apos;, line_item_path(product_id: product) % &gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Http verb<br>create(post), new(get)等等</p>
-</li>
-<li><p>写法区别</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;delete&quot;, @cart, :method =&gt; :delete % &gt; </span><br><span class="line">&lt;%= button_to &quot;delete&quot;, &#123;:controller =&gt; :carts, :action =&gt; :destroy, :id =&gt; cart.id&#125;, :method =&gt; :delete % &gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>ajax in rails<br>add Ajax to cart 目的: 在store页面实现将cart的show展示在sidebar里面， 然后添加user interface<br>注意： 在每一个partial template里面都有一个和template file同名的变量来指代当前变量；</p>
-</li>
-</ul>
-<p>首先， 在发送请求的时候， 将请求改正为ajax请求：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Add to cart&quot;, line_items_path(product_id: product), remote: true % &gt;</span><br></pre></td></tr></table></figure></p>
-<p>然后， 由于button_to默认http请求动作是post， 在line_items_controller里面找到create这个方法， 然后在response_to里面添加<br>一个format.js; 在create这个line_items的method处理了ajax的请求后， 就会去渲染一个同名的file： create.js.erb； 由于rails<br>自动gemfile里面加载了jquery的gem, 所以我们可以直接使用；</p>
-<p>重点： format.js 里面也就是create.js.erb里面渲染的js代码是给format.html里面调用使用的， 也就是在重新渲染store/index.html.erb<br>的时候， 重点不在于index.html.erb， 因为使用ajax的目标之一是只去更新那些改变了的东西， 也就是在sidebar区域的&lt;%= render @cart % &gt;<br>利用ajax， 我们只希望重新渲染&lt;%= render @cart % &gt;, 其他部分保留；</p>
-<p>具体实现的方法： 由于在application.html.erb里面包裹住&lt;%= render @cart % &gt;部分的div是id是cart， 所以我们只需要通过jquery选择<br>到那个div， 然后修改里面的html使之成为更新后的版本就可以了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#cart&quot;).html(&quot;&lt;%= escape_javascript render(@cart) %&gt;&quot;)</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>Add a member route<br>To add a member route, just add a member block into the resource block:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :photos do</span><br><span class="line">  member do</span><br><span class="line">    get &apos;preview&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p>This will recognize /photos/1/preview with GET, and route to the preview action of PhotosController, with the resource<br>id value passed in params[:id]. It will also create the preview_photo_url and preview_photo_path helpers.<br>在我们这个网站里面， 通过增加下面这几行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :line_items do</span><br><span class="line">  member do</span><br><span class="line">    put &apos;decrement&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-<p>我们实现的是， 首先能够识别出 /line_items/1/decrement这个路由， 和http里面的put联系起来， 然后去调用line_items controller里面的decrement这个方法<br>同时也将resource的id传入进来, params[:id], 然后创建 decrement_lin_item_url和 decrement_line_item_path;</p>
-<p><strong>注意： 一直困扰我的， 在点击decrement这个按钮的时候， 会出现internet error 505, unable to load the resources; 然后还看到的是关于line_item_controller里面的各种nil class, 其实这就是一个启示， 表示在那个时候使用的@line_item是没有被赋值的； 因此追根溯源找到的赋值的地方是set_line_item， 我们使用hook, before_action限制了使用这个hook的范围， 因此每一次我们新引进一个method的时候， 我们都需要记得在controller最前面的hook看看有没有限制；</strong></p>
-<blockquote>
-<p>总结一下8.16号犯的一些错误：<br>[1]在touch file的时候注意不要放错位置！_line_item.html.erb这个文件的错放导致了很多的问题；<br>[2]添加了member route之后创建的新方法已开始被hook before_action限制住了， 要记得添加他们的使用范围；<br>[3]灵通一点， 在decrement.js.erb中， 通过调换其中一些code的顺序也可以达到同样的效果；</p>
-</blockquote>
-<ul>
-<li>Modify the model<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate scaffold Order name address:text email pay_type</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在rails里面， 没有标明type的属性默认： string<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate migration add_order_to_line_item order:references</span><br></pre></td></tr></table></figure></p>
-<p>在已经存在的line_item model里面添加一个column， order_id；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure></p>
-<p>然后在_cart.html.erb里面增加一个button_to按钮来链接到对应的创建order的操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Checkout&quot;, new_order_path, method: :get % &gt;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
-<p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
-</section>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[机器学习资料收集[持续更新]]]></title>
       <url>http://chocoluffy.com/2015/12/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%94%B6%E9%9B%86/</url>
       <content type="html"><![CDATA[<p>来自github, 各种关于机器学习的教程博客和工具。</p>
@@ -6041,6 +6268,76 @@
 <p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
 </blockquote>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Agile web developing in rails 第一期]]></title>
+      <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
+      <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
+<a id="more"></a> 
+<h2 id="The_details_you_should_know_about_in_rails:">The details you should know about in rails:</h2><ul>
+<li><p>link_to | button_to<br>在link_to 和 button_to的情况下， 因为浏览器已经知道他们调用的是http的什么方法， 因此我们只需要将他们导流到对应controller<br>的位置就可以了；rails会根据http的动作调用相应的方法， 然后用一下shortcut path, 也就是 line_item_path;<br>为了创建一个LineItem obeject， 我们需要product_id和cart_id， cart_id可以在session中得到， product_id则需要用参数传入；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &apos;Add to Cart&apos;, line_item_path(product_id: product) % &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Http verb<br>create(post), new(get)等等</p>
+</li>
+<li><p>写法区别</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;delete&quot;, @cart, :method =&gt; :delete % &gt; </span><br><span class="line">&lt;%= button_to &quot;delete&quot;, &#123;:controller =&gt; :carts, :action =&gt; :destroy, :id =&gt; cart.id&#125;, :method =&gt; :delete % &gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>ajax in rails<br>add Ajax to cart 目的: 在store页面实现将cart的show展示在sidebar里面， 然后添加user interface<br>注意： 在每一个partial template里面都有一个和template file同名的变量来指代当前变量；</p>
+</li>
+</ul>
+<p>首先， 在发送请求的时候， 将请求改正为ajax请求：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Add to cart&quot;, line_items_path(product_id: product), remote: true % &gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后， 由于button_to默认http请求动作是post， 在line_items_controller里面找到create这个方法， 然后在response_to里面添加<br>一个format.js; 在create这个line_items的method处理了ajax的请求后， 就会去渲染一个同名的file： create.js.erb； 由于rails<br>自动gemfile里面加载了jquery的gem, 所以我们可以直接使用；</p>
+<p>重点： format.js 里面也就是create.js.erb里面渲染的js代码是给format.html里面调用使用的， 也就是在重新渲染store/index.html.erb<br>的时候， 重点不在于index.html.erb， 因为使用ajax的目标之一是只去更新那些改变了的东西， 也就是在sidebar区域的&lt;%= render @cart % &gt;<br>利用ajax， 我们只希望重新渲染&lt;%= render @cart % &gt;, 其他部分保留；</p>
+<p>具体实现的方法： 由于在application.html.erb里面包裹住&lt;%= render @cart % &gt;部分的div是id是cart， 所以我们只需要通过jquery选择<br>到那个div， 然后修改里面的html使之成为更新后的版本就可以了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&quot;#cart&quot;).html(&quot;&lt;%= escape_javascript render(@cart) %&gt;&quot;)</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>Add a member route<br>To add a member route, just add a member block into the resource block:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :photos do</span><br><span class="line">  member do</span><br><span class="line">    get &apos;preview&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p>This will recognize /photos/1/preview with GET, and route to the preview action of PhotosController, with the resource<br>id value passed in params[:id]. It will also create the preview_photo_url and preview_photo_path helpers.<br>在我们这个网站里面， 通过增加下面这几行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">resources :line_items do</span><br><span class="line">  member do</span><br><span class="line">    put &apos;decrement&apos;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+<p>我们实现的是， 首先能够识别出 /line_items/1/decrement这个路由， 和http里面的put联系起来， 然后去调用line_items controller里面的decrement这个方法<br>同时也将resource的id传入进来, params[:id], 然后创建 decrement_lin_item_url和 decrement_line_item_path;</p>
+<p><strong>注意： 一直困扰我的， 在点击decrement这个按钮的时候， 会出现internet error 505, unable to load the resources; 然后还看到的是关于line_item_controller里面的各种nil class, 其实这就是一个启示， 表示在那个时候使用的@line_item是没有被赋值的； 因此追根溯源找到的赋值的地方是set_line_item， 我们使用hook, before_action限制了使用这个hook的范围， 因此每一次我们新引进一个method的时候， 我们都需要记得在controller最前面的hook看看有没有限制；</strong></p>
+<blockquote>
+<p>总结一下8.16号犯的一些错误：<br>[1]在touch file的时候注意不要放错位置！_line_item.html.erb这个文件的错放导致了很多的问题；<br>[2]添加了member route之后创建的新方法已开始被hook before_action限制住了， 要记得添加他们的使用范围；<br>[3]灵通一点， 在decrement.js.erb中， 通过调换其中一些code的顺序也可以达到同样的效果；</p>
+</blockquote>
+<ul>
+<li>Modify the model<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate scaffold Order name address:text email pay_type</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在rails里面， 没有标明type的属性默认： string<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails generate migration add_order_to_line_item order:references</span><br></pre></td></tr></table></figure></p>
+<p>在已经存在的line_item model里面添加一个column， order_id；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rake db:migrate</span><br></pre></td></tr></table></figure></p>
+<p>然后在_cart.html.erb里面增加一个button_to按钮来链接到对应的创建order的操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%= button_to &quot;Checkout&quot;, new_order_path, method: :get % &gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># GET /orders/new</span><br><span class="line">def new</span><br><span class="line">  if @cart.line_items.empty?</span><br><span class="line">    redirect_to store_url, notice: &quot;Your cart is empty!&quot;</span><br><span class="line">    return </span><br><span class="line">    # 提前终止程序， 防止double render， 不仅渲染了notice而且还渲染了下面的@order;</span><br><span class="line">  end</span><br><span class="line">  @order = Order.new</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
+<p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
+<p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<p><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif" alt="吹蜡烛"></p>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+<blockquote>
+<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
+</blockquote>
+</section>]]></content>
     </entry>
     
     <entry>
