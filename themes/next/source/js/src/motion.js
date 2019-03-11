@@ -1,6 +1,6 @@
 /* global NexT: true */
 
-$(document).ready(function () {
+$(window).load(function () {
   NexT.motion = {};
 
   var sidebarToggleLines = {
