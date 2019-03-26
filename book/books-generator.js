@@ -78,7 +78,7 @@ module.exports = function (locals) {
         return;
     }
 
-    var timeout = 60000; // increase timeout to allow more books query. 
+    var timeout = 50000; // increase timeout to allow more books query. 
     // if (config.douban.timeout) {
     //     timeout = config.douban.timeout;
     // }
