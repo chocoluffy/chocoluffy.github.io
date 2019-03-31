@@ -267,11 +267,6 @@ int main() {
 if the character specified in the second argument cannot find the right place, then it will assign NULL to p in this case. We can use pointer subtraction to get the index. 
 
 
-> 后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：
-![公众号二维码](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg)
-
-
-
 
 
 

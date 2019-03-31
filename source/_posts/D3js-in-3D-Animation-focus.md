@@ -34,7 +34,3 @@ And set the src to be some texture image or even in this project some funny imag
 - [Official Aframe animations guide](https://aframe.io/docs/core/animation.html)
 - [How to add texture for Aframe objects](http://projects.bmannconsulting.com/aframe-boilerplate/)
 - [How to add event listener to multiple sibling elements](http://www.kirupa.com/html5/handling_events_for_many_elements.htm)
-
-
-> 后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：
-![公众号二维码](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg)

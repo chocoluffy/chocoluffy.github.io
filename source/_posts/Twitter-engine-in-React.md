@@ -220,10 +220,6 @@ references [this post](http://getbootstrap.com/css/) for more Bootstrap property
 
 > Due to my technical issue, I can only make it a local version. I will try me best to host it online.
 
-> 后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：
-![公众号二维码](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg)
-
-
 
 
 

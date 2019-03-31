@@ -121,13 +121,6 @@ Find the structure of this scene, it will like having several `<a-entity>` insid
 
 
 
-> 后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：
-![公众号二维码](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg)
-
-
-
-
-
 
 
 

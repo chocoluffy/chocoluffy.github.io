@@ -144,7 +144,3 @@ There are two other things that happen when you set position: relative; on an el
 - [ilovereact](https://github.com/luckymore0520/sike-react-ilovereact)
 - [最后成品效果ilovereact－添加动画](http://gugugupan.github.io/sike-react-ilovereact/)
 - [上面github项目的index.html](https://github.com/gugugupan/sike-react-ilovereact/blob/master/index.html)
-
-
-> 后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：
-![公众号二维码](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg)
