@@ -105,8 +105,7 @@
 <meta property="og:description" content="Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out Live Demo now!">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezi7ksw2zyj21kw0sa17h.jpg">
-<meta property="og:image" content="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg">
-<meta property="og:updated_time" content="2019-03-30T15:59:54.129Z">
+<meta property="og:updated_time" content="2019-03-31T18:19:20.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="D3js in 3D">
 <meta name="twitter:description" content="Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the math! Check out Live Demo now!">
@@ -417,9 +416,6 @@
 <p>Then by using d3js, we can add corresponding number of <a-entity> to the scene from data array.</a-entity></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">      var data=[10, 10, 10, 10, 10, 10, 10, 10, 10, 10]</span><br><span class="line">      var tip = -0.5;</span><br><span class="line">      var radius = 6;</span><br><span class="line">      var scene = d3.select(&quot;a-scene&quot;)</span><br><span class="line">      scene.append(&quot;a-camera&quot;)</span><br><span class="line">           .attr(&#123;</span><br><span class="line">            position: function()&#123;</span><br><span class="line">              var x = 0;</span><br><span class="line">              var y = tip;</span><br><span class="line">              var z = 0;</span><br><span class="line">              return x + &quot; &quot; + y + &quot; &quot; + z</span><br><span class="line">            &#125;</span><br><span class="line">           &#125;)</span><br><span class="line">      var cubes = scene.selectAll(&quot;a-entity.bar&quot;).data(data)</span><br><span class="line">                  .enter()</span><br><span class="line">                  .append(&quot;a-entity&quot;)</span><br><span class="line">                  .classed(&quot;bar&quot;, true)</span><br><span class="line">                  .attr(&#123;</span><br><span class="line">                    // mixin: &quot;link&quot;,</span><br><span class="line">                    material: &quot;color: #7BC8A4&quot;,</span><br><span class="line">                    geometry: &quot;primitive: box; width: 2; height: 2; depth: 2&quot;,</span><br><span class="line">                    position: function(d, i)&#123;</span><br><span class="line">                      var theta = (i / data.length) * (2 * Math.PI);</span><br><span class="line">                      var x = radius * Math.cos(theta); </span><br><span class="line">                      var y = 0;</span><br><span class="line">                      var z = radius * Math.sin(theta);</span><br><span class="line">                      return x + &quot; &quot; + y + &quot; &quot; + z</span><br><span class="line">                    &#125;,</span><br><span class="line">                    rotation: function(d, i)&#123;</span><br><span class="line">                      var x = 0;</span><br><span class="line">                      var y = -360 * i/data.length;</span><br><span class="line">                      var z = -80*Math.atan(tip/radius);</span><br><span class="line">                      return x + &quot; &quot; + y + &quot; &quot; + z</span><br><span class="line">                    &#125;</span><br><span class="line">                  &#125;)</span><br><span class="line">    cubes.append(&quot;a-mouseenter&quot;)</span><br><span class="line">         .attr(&#123;</span><br><span class="line">            // scale: &quot;1 2 1&quot;,</span><br><span class="line">            position: &quot;0 2 0&quot;,</span><br><span class="line">            visible: false</span><br><span class="line">         &#125;)</span><br><span class="line">    cubes.append(&quot;a-mouseleave&quot;)</span><br><span class="line">         .attr(&#123;</span><br><span class="line">            scale: &quot;1 1 1&quot;</span><br><span class="line">            // position: &quot;0 2 0&quot;</span><br><span class="line">            // visible: true</span><br><span class="line">         &#125;)</span><br></pre></td></tr></table></figure>
 <p>Find the structure of this scene, it will like having several <code>&lt;a-entity&gt;</code> inside <code>&lt;a-scene&gt;</code>, and each of <code>&lt;a-entity&gt;</code> has multiple attributes that defines its position, rotation, material and geometry. And inside the <code>&lt;a-entity&gt;</code>, also has  <code>&lt;a-mouseenter&gt;</code> and <code>&lt;a-mouseleave&gt;</code> tags which helps define the actions when hovered. </p>
-<blockquote>
-<p>后记： 欢迎加入我的私人公众号， 和你分享我思考的观点和文章：<br><img src="http://ww2.sinaimg.cn/large/c5ee78b5gw1ezbljkk2apj20by0byq3q.jpg" alt="公众号二维码"></p>
-</blockquote>
 
       
     </div>
@@ -568,7 +564,7 @@ javascript</a>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">118</span>
+              <span class="site-state-item-count">113</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -701,7 +697,7 @@ javascript</a>
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">余舜哲</span>
-  <span class="post-count"> | 博客全站共292.0k字</span>
+  <span class="post-count"> | 博客全站共269.6k字</span>
 </div>
 
         
