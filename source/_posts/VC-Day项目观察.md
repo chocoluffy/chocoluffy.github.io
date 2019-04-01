@@ -23,12 +23,12 @@ ToC的产品复杂的从来不应该是产品逻辑本身，毕竟如果光是�
 
 目前我的一个观察是，当今其实很多的ToC的产品，实际上是做BtoC而不是CtoC。这是一个可以理解的趋势，因为渠道的红利在慢慢饱和，尤其针对移动端市场而言。
 
-渠道本身的发明是为了降低信息传递的成本。*但当渠道两端信息增加并缺乏有效的匹配机制时，将最终提高整个市场的交易成本。*于是演化出两个改善方向，一是利用更有效的匹配算法，另一个则是在两端逐渐形成中心化模块化的资源集合，为了节约交易成本[^1]。前者，是以今日头条、快手为首的算法推荐方向，后者，是以拼多多、云集微店为代表的B2C平台。
+渠道本身的发明是为了降低信息传递的成本。**但当渠道两端信息增加并缺乏有效的匹配机制时，将最终提高整个市场的交易成本。**于是演化出两个改善方向，一是利用更有效的匹配算法，另一个则是在两端逐渐形成中心化模块化的资源集合，为了节约交易成本[^1]。前者，是以今日头条、快手为首的算法推荐方向，后者，是以拼多多、云集微店为代表的B2C平台。
 
 这也提供了一个观察现场项目的角度。以下是除了我们之外的其余项目的记录，列有项目名称，简介以及一个现场反馈的评分。加粗的项目为反馈较好的项目（也包括我们的Firis！）
 
 - weARlope: AR glass for streaming video content. 6
-- **Xboard**. machine learning deployment and platform for corporation. 10
+- **Xboard**: machine learning deployment and platform for corporation. 10
 - Lightbox: animation production collaboration platform. 4
 - Figi: fashion comparison app. 4
 - Qix: squarespace for bitcoin, visualization for smart contract. 5
@@ -50,13 +50,13 @@ ToC的产品复杂的从来不应该是产品逻辑本身，毕竟如果光是�
 - Grow: a slack extension for personal progress tracking. 8
 
 听现场VC们的点评也能看得出一些常见的问题，尤其对于只有90秒的pitch时间，这个形式有其偏好和局限。
-	* 不适合拥挤赛道的产品。比如fashion，以及e-commerce。
-	* 适合主打商业模式创新的项目。比如Uber for X。
-	* 投资人容易偏好新方向上的需求，比如机器学习toB的方案； Health Tech；以及运动方向的硬件。
+- 不适合拥挤赛道的产品。比如fashion，以及e-commerce。
+- 适合主打商业模式创新的项目。比如Uber for X。
+- 投资人容易偏好新方向上的需求，比如机器学习toB的方案； Health Tech；以及运动方向的硬件。
 
 总结一下：
-* 表达上一定要找到最核心的东西。
-* 而逐渐学习到怎样快速提炼出现象的本质，就是商业能力上的成长。
+- 表达上一定要找到最核心的东西。
+- 而逐渐学习到怎样快速提炼出现象的本质，就是商业能力上的成长。
 
 期待一个月之后的第二场VC day！
 
