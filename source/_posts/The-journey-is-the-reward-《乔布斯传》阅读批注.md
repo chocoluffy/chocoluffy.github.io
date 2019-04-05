@@ -163,6 +163,7 @@ status report
 
 ### Steve Jobs和Bill Gates同台
 
+- [视频：Steve Jobs Introducing The iPhone At MacWorld 2007](https://www.youtube.com/watch?v=x7qPAY9JqE4)
 - [视频：Steve Jobs and Bill Gates Together at D5 Conference 2007](https://www.youtube.com/watch?v=wvhW8cp15tk) 
 - 看产品的不同角度，微软看到的是各式各样的电脑厂商，他们希望搭建软件可以在这些厂商的硬件上运行。苹果看到的是消费者市场，当时没有一个电脑厂商可以提供端到端的体验。
 - 问题：未来5年的设备会有什么改变。盖茨提到了很多很准确、实用的角度，比如导航、电子钱包等应用以及投影、柔性屏等设备上的进步。乔布斯则是回答“不知道”，设备里的体验大多是根据当时的消费者市场而来的，而当时大部分的需求是通讯，以及小部分的娱乐。
