@@ -12,7 +12,6 @@ categories:
 - 『[我的诗集](http://chocoluffy.com/poems/)』 
 - 『[我的相册](http://chocoluffy.com/photo/)』 
 - 『[我的影院](http://chocoluffy.com/movies/)』 
-- 『[2018年的读书接力](http://chocoluffy.com/books/)』
 
 ## 思考点滴
 - 『[抵抗存在的被遗忘](http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/)』 2018年度总结。我的愿望是，抵抗那些因由媚俗而胡编乱造的虚无故事，抵抗存在的被遗忘。
