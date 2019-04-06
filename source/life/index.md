@@ -9,7 +9,6 @@ categories:
 这里，是我分享生活的地方。
 
 ## 碎碎念
-- 『[我的日记碎片](http://chocoluffy.com/weibo/)』 
 - 『[我的诗集](http://chocoluffy.com/poems/)』 
 - 『[我的相册](http://chocoluffy.com/photo/)』 
 - 『[我的影院](http://chocoluffy.com/movies/)』 
