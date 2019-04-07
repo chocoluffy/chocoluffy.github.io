@@ -22,15 +22,44 @@ Stay hungry, stay foolish.
 - [写在1.0发布后第50天 - 鲸语开发者的独白](http://chocoluffy.com/2017/07/05/%E5%86%99%E5%9C%A81-0%E5%8F%91%E5%B8%83%E5%90%8E%E7%AC%AC50%E5%A4%A9-%E9%B2%B8%E8%AF%AD%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E7%8B%AC%E7%99%BD/)，校园媒体报道原文: [鲸语 - 一名多大校园开发者的独白](http://mp.weixin.qq.com/s?__biz=MjM5MjAyOTEzMg==&mid=2650158459&idx=1&sn=1b2f32919458c087c0e4f1099a42bfd3&chksm=beae15d889d99cce4438a03d180690daa8cef5e69681210641dad8c4a17b23a854e5e3c4759f#rd")
 - [鲸语1.0 - 多伦多玩乐攻略第一入口](http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/)，校园媒体报道原文: [ADA出品 | 鲸语-精致你的生活](http://mp.weixin.qq.com/s?__biz=MjM5MjAyOTEzMg==&mid=2650158232&idx=2&sn=719c06bcfad6341e20e0985fbd2260d1&chksm=beae143b89d99d2d3cd52ff785c755b17dae54eb265d5b5f43b494f50dcb4e90c710dfba0302&scene=0#rd)
 
-## 机器学习
+## 机器学习 & 推荐系统
 
-Just be cool with machine learning.
+Something I love and specialize.
+
+### Deep Learning
+
+- [Softmax的numpy实现, 以及SGD、minibatch](https://github.com/chocoluffy/deep-learning-notes/blob/master/DL/Softmax.ipynb)
+- [Ridge Regression的实现](https://github.com/chocoluffy/deep-learning-notes/blob/master/DL/Ridge%20Regression.ipynb)
+- [Customized Convolution Neural Network的Pytorch实现，包括batch normalization](https://github.com/chocoluffy/deep-learning-notes/blob/master/DL/CNN_pytorch.ipynb)
+
+### Kaggle
+
+- [Kaggle Jupyter技巧总结：经典机器学习模型，Pipeline, GridSearch, Ensemble等](https://github.com/chocoluffy/kaggle-notes/tree/master/Kaggle)
+
+### Recommendation System <small>(精选论文)</small>
+
+- [A Cross-Domain Recommendation Mechanism for Cold-Start Users Based on Partial Least Squares Regression](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/PLSR)
+    - 评分：3.5/5。  
+    - 简介：利用PLSR来解决用户推荐场景里cold start的问题。
+    - PLSR适合针对多模态的数据特征进行回归拟合，原理是在压缩降维时考虑最大化cross-domain数据的covariance，区别于PCA，LSI等仅仅最大化单个domain数据的variance。论文针对用户在没有任何历史评分记录的target domain中，利用已有的可能完全不同种类的source domain的评分记录来进行预测。
+
+- [IRGAN - A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/IRGAN)
+    - 评分：5/5。
+    - 简介：将GAN应用在information retrieval上。SIGIR2017满分论文。
+    - 巧妙地构造了一个minmax的机制。discriminator负责判断一个document是否well-matched，通过maximum likelihood。而对generator来说，则是更新参数minimize这个maximum likelihood。可以借鉴的点，在于如何设计的likelihood的期望。Discriminator其实核心就是一个binary classifier，然后利用logistic转换到(0, 1)的值域范围，就可以设计`log(D(d|q)) + log(1-D(d'|q))`的likelihood来达到目标！（其中d'为generator的样本，d为ground truth distribution的样本）。理解的思路其实很简单，generator生成的d'是试图欺骗discriminator的，因此如果D判定d'为well-matched，则因此可以引入large loss来penalize discriminator，也是`log(1-D(d'|q))`的设计思路。
+
+-  [Practical Lessons from Predicting Clicks on Ads at Facebook](https://github.com/chocoluffy/kaggle-notes/tree/master/RecSys/predicting-clicks-facebook)
+    - 评分：5/5。  
+    - 简介：Facebook提出的CTR预估模型，GBDT + Logistic Regression。
+    - 学习到了GBM和LR的结合。用boosted decision tree来主要负责supervised feature learning有很大的优势。之后对接的LR + SGD可以作为online learning保持日常更新训练保证data freshness。
+
+### 博客文章
 
 - [Computer Vision - 基于图片特征匹配合成全景图
 ](http://chocoluffy.com/2016/11/07/Computer-Vision-%E5%9F%BA%E4%BA%8E%E5%9B%BE%E7%89%87%E7%89%B9%E5%BE%81%E5%8C%B9%E9%85%8D%E5%90%88%E6%88%90%E5%85%A8%E6%99%AF%E5%9B%BE/)
 - [用ffmpeg从视频中获取图片及GIF](http://chocoluffy.com/2016/08/27/%E7%94%A8ffmpeg%E4%BB%8E%E8%A7%86%E9%A2%91%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%9B%BE%E7%89%87%E5%8F%8AGIF/)
 
-## 算法面试
+## 算法 & 数据结构
 
 Always be prepared.
 
@@ -40,7 +69,7 @@ Always be prepared.
 
 ## 前端技术库
 
-React is the future of building UI. 持续更新中...
+React is the future of building UI.
 
 - [React/ES6 style guideline](http://chocoluffy.com/2016/08/01/React-ES6-style-guideline/)
 - [webpack与react hot reload开发工具库](http://chocoluffy.com/2016/07/18/webpack%E4%B8%8Ereact-hot-reload%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93/)
@@ -52,7 +81,7 @@ React is the future of building UI. 持续更新中...
 - [前端自动构建工具[第一期]-npm script](http://chocoluffy.com/2016/05/15/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93-%E7%AC%AC%E4%B8%80%E6%9C%9F-npm-script/)
 - [Twitter-scraping engine in React](http://chocoluffy.com/2016/01/06/Twitter-engine-in-React/)
 
-## MEAN Stack
+## MEAN Stack <small>(更新至2015年)</small>
 
 学习接受一种新的技术栈，也是学习一种新的开发态度和观点。从以前的LAMP构架(Linux, Apache, MySQL, PHP)，到前几年大火的MEAN全栈开发(MongoDB, Express, Angularjs, Nodejs)，既然LAMP能完成大部分功能的开发，究竟为什么我们要使用新的技术栈？
 
@@ -87,7 +116,7 @@ D3.js给前端可视化提供了许多的可能性，让艺术的、可交互的
 
 ## Ruby and Rails
 
-Ruby on Rails在湾区感觉已经成为了startup的日常配置，不因为别的，move fast and break things!
+Ruby on Rails在15年左右的湾区感觉已经成为了startup的日常配置，不因为别的，move fast and break things!
 
 - [SearchInsta开发过程手记](http://chocoluffy.com/2015/08/31/rails%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0-instagram-1/)
 - [Agile web developing in rails-读书笔记](http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/)
