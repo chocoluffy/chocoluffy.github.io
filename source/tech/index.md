@@ -38,6 +38,11 @@ Something I love and specialize.
 
 ### Recommendation System <small>(精选论文)</small>
 
+- [Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Embedding-Airbnb)
+    - 评分：5/5。  
+    - 简介：对listing做embedding，将user type，listing type以及query在同一个vector space构建embedding，以实时更新搜索结果并提高准度。KDD 2018 best paper。  
+    - 对实际场景的精准观察是很多机制设计的灵感来源。比如利用in-session signal，将用户行为（包括点击、最终达成交易以及被拒绝）模拟为一个时序序列，类比word2vec中的单个句子。然后利用skip-gram和negative sampling来进行word2vec模型的训练。
+
 - [A Cross-Domain Recommendation Mechanism for Cold-Start Users Based on Partial Least Squares Regression](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/PLSR)
     - 评分：3.5/5。  
     - 简介：利用PLSR来解决用户推荐场景里cold start的问题。
