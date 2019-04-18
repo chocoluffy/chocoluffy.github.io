@@ -38,6 +38,10 @@ Something I love and specialize.
 
 ### Recommendation System <small>(精选论文)</small>
 
+-  [Deep Neural Networks for YouTube Recommendations](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Youtube-DNN)
+    - 评分：5+/5。  
+    - 简介：使用DNN对大规模线上推荐系统架构的一次综述，包含Candidate Generation和Ranking两部分。Candidiate Gneration的部分负责生成user embedding，借鉴wordvec的skip gram negative sampling模型，Ranking部分使用类似的架构，并用weighted LR将目标改为预计观看时间。很经典的文章。  
+
 - [Collaborative Deep Learning for Recommender Systems](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Collaborative-Deep-Learning)
     - 评分：4/5。  
     - 简介：针对rating和content information matrix，设计MAP(Maximum A Priori)的objective function来改善user embedding。相比传统collaborative filtering不擅长直接处理稀疏rating输入，CDL通过更好地结合content information可以得到更好的rating prediction。  
