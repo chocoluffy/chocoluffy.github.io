@@ -38,37 +38,13 @@ Something I love and specialize.
 
 ### Recommendation System <small>(精选论文)</small>
 
--  [Deep Neural Networks for YouTube Recommendations](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Youtube-DNN)
-    - 评分：5+/5。  
-    - 简介：使用DNN对大规模线上推荐系统架构的一次综述，包含Candidate Generation和Ranking两部分。Candidiate Gneration的部分负责生成user embedding，借鉴wordvec的skip gram negative sampling模型，Ranking部分使用类似的架构，并用weighted LR将目标改为预计观看时间。很经典的文章。  
-
-- [Collaborative Deep Learning for Recommender Systems](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Collaborative-Deep-Learning)
-    - 评分：4/5。  
-    - 简介：针对rating和content information matrix，设计MAP(Maximum A Priori)的objective function来改善user embedding。相比传统collaborative filtering不擅长直接处理稀疏rating输入，CDL通过更好地结合content information可以得到更好的rating prediction。  
-
-- [Wide & Deep Learning for Recommender Systems](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Wide%26Deep)
-    - 评分：5/5。  
-    - 简介：利用logistic regression针对广度的交叉特征(cross product transformation)，利用NN负责深度特征挖掘，并同时进行joint training。来自Google的工程实践总结。  
-
-- [Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Embedding-Airbnb)
-    - 评分：5/5。  
-    - 简介：对listing做embedding，将user type，listing type以及query在同一个vector space构建embedding，以实时更新搜索结果并提高准度。KDD 2018 best paper。  
-    - 对实际场景的精准观察是很多机制设计的灵感来源。比如利用in-session signal，将用户行为（包括点击、最终达成交易以及被拒绝）模拟为一个时序序列，类比word2vec中的单个句子。然后利用skip-gram和negative sampling来进行word2vec模型的训练。
-
-- [A Cross-Domain Recommendation Mechanism for Cold-Start Users Based on Partial Least Squares Regression](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/PLSR)
-    - 评分：3.5/5。  
-    - 简介：利用PLSR来解决用户推荐场景里cold start的问题。
-    - PLSR适合针对多模态的数据特征进行回归拟合，原理是在压缩降维时考虑最大化cross-domain数据的covariance，区别于PCA，LSI等仅仅最大化单个domain数据的variance。论文针对用户在没有任何历史评分记录的target domain中，利用已有的可能完全不同种类的source domain的评分记录来进行预测。
-
-- [IRGAN - A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/IRGAN)
-    - 评分：5/5。
-    - 简介：将GAN应用在information retrieval上。SIGIR2017满分论文。
-    - 巧妙地构造了一个minmax的机制。discriminator负责判断一个document是否well-matched，通过maximum likelihood。而对generator来说，则是更新参数minimize这个maximum likelihood。可以借鉴的点，在于如何设计的likelihood的期望。Discriminator其实核心就是一个binary classifier，然后利用logistic转换到(0, 1)的值域范围，就可以设计`log(D(d|q)) + log(1-D(d'|q))`的likelihood来达到目标！（其中d'为generator的样本，d为ground truth distribution的样本）。理解的思路其实很简单，generator生成的d'是试图欺骗discriminator的，因此如果D判定d'为well-matched，则因此可以引入large loss来penalize discriminator，也是`log(1-D(d'|q))`的设计思路。
-
--  [Practical Lessons from Predicting Clicks on Ads at Facebook](https://github.com/chocoluffy/kaggle-notes/tree/master/RecSys/predicting-clicks-facebook)
-    - 评分：5/5。  
-    - 简介：Facebook提出的CTR预估模型，GBDT + Logistic Regression。
-    - 学习到了GBM和LR的结合。用boosted decision tree来主要负责supervised feature learning有很大的优势。之后对接的LR + SGD可以作为online learning保持日常更新训练保证data freshness。
+- 「5+/5」[Deep Neural Networks for YouTube Recommendations](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Youtube-DNN)
+- 「4/5」[Collaborative Deep Learning for Recommender Systems](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Collaborative-Deep-Learning)
+- 「4/5」[Wide & Deep Learning for Recommender Systems](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Wide%26Deep)
+- 「5/5」[Real-time Personalization using Embeddings for Search Ranking at Airbnb](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Embedding-Airbnb)
+- 「3/5」[A Cross-Domain Recommendation Mechanism for Cold-Start Users Based on Partial Least Squares Regression](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/PLSR) 
+- 「5/5」[IRGAN - A Minimax Game for Unifying Generative and Discriminative Information Retrieval Models](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/IRGAN) 
+- 「4/5」[Practical Lessons from Predicting Clicks on Ads at Facebook](https://github.com/chocoluffy/kaggle-notes/tree/master/RecSys/predicting-clicks-facebook)
 
 ### 博客文章
 
