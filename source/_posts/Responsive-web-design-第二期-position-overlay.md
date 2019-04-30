@@ -44,7 +44,7 @@ Let's move div-1 down 20 pixels, and to the left 40 pixels:
  left:-40px;
 }
 ```
-Notice the space where div-1 normally would have been if we had not moved it: now it is an empty space. The next element (div-after) did not move when we moved div-1. That's because div-1 still occupies that original space in the document, even though we have moved it. 效果参考：![position relative](http://ww3.sinaimg.cn/large/c5ee78b5gw1f08roukzilj20ry0lwjw8.jpg)
+Notice the space where div-1 normally would have been if we had not moved it: now it is an empty space. The next element (div-after) did not move when we moved div-1. That's because div-1 still occupies that original space in the document, even though we have moved it. 效果参考：
 
 另外， position:relative 还带来了z-index的属性。
 - references from [Absolute, Relative, Fixed Positioning: How Do They Differ?](https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)
@@ -66,7 +66,7 @@ There are two other things that happen when you set position: relative; on an el
 }
 ```
 
-效果参考：![relative and absolute](http://ww4.sinaimg.cn/large/c5ee78b5gw1f08rtih4o4j20pe0iadk1.jpg)
+
 
 > 最后一个补充：我们常常和`float`搭配使用的`clear: both`, 作用是使得定义了该属性的元素的左侧和右侧均不允许出现浮动元素。
 
@@ -96,7 +96,7 @@ There are two other things that happen when you set position: relative; on an el
 
 让它们position: fixed, 效果参考：
 
-![movement control](http://ww3.sinaimg.cn/large/c5ee78b5gw1f06g8ze3fhj20yo0pw76w.jpg)
+
 
 
 
@@ -136,7 +136,7 @@ There are two other things that happen when you set position: relative; on an el
 }
 ```
 
-![overlay](http://ww4.sinaimg.cn/large/c5ee78b5gw1f06lr99d5xj21kw0q47cw.jpg)
+
 
 ## 参考资料
 

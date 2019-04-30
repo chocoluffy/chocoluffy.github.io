@@ -40,7 +40,7 @@ theme: next
 
 favicon: ./source/favicon.png
 
-avatar: "http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+avatar: "https://raw.githubusercontent.com/chocoluffy/blog_assets/master/me.jpg"
 share: true
 duoshuo: false
 disqus_shortname: chocoluffy

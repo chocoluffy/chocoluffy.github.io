@@ -8,8 +8,6 @@ The hand-on project to get myself familiar with React.js, which pulls the latest
 
 <!-- more -->
 
-![screen capture](http://ww4.sinaimg.cn/large/c5ee78b5gw1ezqtafuny9j21kw0uhqhx.jpg)
-
 **Some important details you want to learn on this project**
 
 ## Browserify

@@ -8,8 +8,6 @@ My first attempt to build up a responsive website using Flexbox layout. Check [L
 
 <!-- more -->
 
-![overview](http://ww3.sinaimg.cn/large/c5ee78b5gw1ezx7kdisiuj21kw0r1di7.jpg)
-
 check [this post](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) on the complete guide about Flexbox layout.
 
 > Below is the code that can be applied to many text\presentation related website. [1] font is cool and elegant. [2] layout is fast since we set div to `display: flex`. We won't be bother to type that anymore, focusing on "position" and "stretch"

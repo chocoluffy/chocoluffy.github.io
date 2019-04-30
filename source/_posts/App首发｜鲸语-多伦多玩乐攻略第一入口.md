@@ -90,13 +90,6 @@ categories: 创业
 
 也致21岁的上半场。
 
-
-<img src="https://ww2.sinaimg.cn/large/006tKfTcgy1fe2ctucdesj31hc1407wi.jpg" style="display: block; margin: 0 auto;">
-
-<img src="https://ww2.sinaimg.cn/large/006tKfTcgy1fe2cv5dxurj31hc140kjl.jpg" style="display: block; margin: 0 auto;">
-
-<img src="https://ww3.sinaimg.cn/large/006tKfTcgy1fe2cvnecnnj31hc140kjo.jpg" style="display: block; margin: 0 auto;">
-
 鲸语来自多伦多盛大而无常的生活，也希望带给大家这座城市更精致的一面。
 
 

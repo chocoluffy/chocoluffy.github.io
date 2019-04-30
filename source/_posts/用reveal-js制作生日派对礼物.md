@@ -7,7 +7,6 @@ categories: 技术
 这篇笔记作为revealjs的学习记录 & 网页制作的迭代
 
 <!-- more -->
-![吹蜡烛](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezadadm0hkg20dw07ndwp.gif)
 
 1. 首先理清楚每天需要做的东西
    在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；

@@ -8,8 +8,6 @@ Create a virtual-reality-like scene in mobile and desktop. Using D3js to do the 
 
 <!-- more -->
 
-![virtual scene](http://ww2.sinaimg.cn/large/c5ee78b5gw1ezi7ksw2zyj21kw0sa17h.jpg)
-
 Inspired by [d33d](https://www.youtube.com/watch?v=Tb2b5nFmmsM), 💣** [Live Demo](http://chocoluffy.com/d3js-Aframe/) **
 
 ## Build up a local server to avoid cross-origin error

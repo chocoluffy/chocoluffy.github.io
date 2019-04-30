@@ -31,7 +31,7 @@ categories:
 - Firis是一款视频制作应用，让用户在视频中成为真正的明星。比如，将「复仇者联盟」中的美国队长扮演者史蒂夫罗杰斯替换为用户，让美国队长有用户的面孔和声音。
 - 关键技术：利用CNN，Auto-encoder，CycleGan来完成图像转移和修复。
 
-<img src="https://ws4.sinaimg.cn/large/006tKfTcly1g0bknfa1rkj31dc0tggrg.jpg" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/firis2.png" style="display: block; margin: 0 auto; max-height: 300px">
 
 ## 2018
 
@@ -41,9 +41,9 @@ categories:
 - 算法解决的问题：利用自然语言搜索相关图像。例如，如果用户输入“一个正在玩滑板的人跳跃到空中”，该算法会从大型图像数据库中将最相关的图像进行排序，并返回搜索结果给用户。
 - 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression， Word2Vec，对图片特征向量和词语向量进行跨模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
 
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bk5k3rrnj31090u04eu.jpg" style="display: block; margin: 0 auto; max-height: 400px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper2.png" style="display: block; margin: 0 auto; max-height: 400px">
 
-<img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0bkfdfv5uj31eg0qankp.jpg" style="display: block; margin: 0 auto; max-height: 250px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper3.png" style="display: block; margin: 0 auto; max-height: 250px">
 
 ### Look <small>(2018.9)</small>
 
@@ -58,9 +58,9 @@ categories:
 - 技术重点：基于具体食料图像识别的深度迁移学习。
 
 <div style="display: flex;">
-  <img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0dta46e4xj30qa0z6e81.jpg" class="img-3" />
-  <img src="https://ws3.sinaimg.cn/large/006tKfTcly1g0dtalqw5ng30gk0qknpe.gif" class="img-3" />
-  <img src="https://ws4.sinaimg.cn/large/006tKfTcly1g0dtaagodmg30gk0qkx6p.gif" class="img-3" />
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/iit-logo.png" class="img-3" />
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/iit-demo1-optimized.gif" class="img-3" />
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/iit-demo2-optimized.gif" class="img-3" />
 </div>
 
 
@@ -72,7 +72,7 @@ categories:
 - [2018.4.25更新] 微软Imagine Cup加拿大赛区finalist，[项目介绍](https://imagine.microsoft.com/en-us/Team/eb66f6b4-5037-41bb-a940-f44ceba21aa8)。
 - [2018.5.26更新] 微软Imagine Cup加拿大赛区第二名。[媒体介绍](https://techcommunity.microsoft.com/t5/Student-Developer-Blog/Announcing-the-Winners-of-the-Canadian-Finals-of-Imagine-Cup/ba-p/312123)，[博客记录](http://chocoluffy.com/2018/07/26/%E5%86%99%E5%9C%A8%E5%BE%AE%E8%BD%AFImageine-Cup%E5%86%B3%E8%B5%9B%E5%9C%88%E4%B9%8B%E5%90%8E/)。
 
-<img src="https://ws1.sinaimg.cn/large/006tKfTcly1g0blnyhsm4j31780l2b1k.jpg" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/vivi2.png" style="display: block; margin: 0 auto; max-height: 300px">
 
 ## 2017
 
@@ -91,7 +91,7 @@ categories:
 - [2018.2.6更新] 进驻多伦多大学工程院孵化器UofT Hatchery，参与2018 NEST Cohort。
 - [产品首发博客链接](http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/),  [App Store下载链接](https://itunes.apple.com/ca/app/%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/id1196585674?mt=8)
 
-<img src="https://ww1.sinaimg.cn/large/006tKfTcgy1fko0120g1nj30xc0xcwg8.jpg" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/%E9%B2%B8%E8%AF%ADlogo.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 ## 2016
 
@@ -99,7 +99,7 @@ categories:
 
 - 在Sysomos's Data Science Lab的演讲稿，讨论关于大规模特征向量的搜索性能，以及在聊天机器人方向上的应用。[资料链接](https://docs.google.com/presentation/d/1QA_91iqOjExL7pIOm7K9d-BUiKl5aerbAykEUHUzfZQ/edit?usp=sharing)。
 
-<img src="http://ww4.sinaimg.cn/large/006y8lVagw1farb9x2ggqj31kw0w1q66.jpg" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/sysomos-talk.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 
 ### Autonomous Driving <small>(2016.12)</small>
@@ -108,8 +108,8 @@ categories:
 - Raise the idea of "visual viewpoint" in extend of object's actual viewpoint, to allow exposing more consistent features to classifiers. The highest accuracy rate among all undergraduate and graduate students so far.
 - 技术重点：DPM， SVM(rbf kernel)， intense image preprocessing。
 
-<img src="http://chocoluffy.com/demo-gif/auto-driving.gif" style="display: block; margin: 0 auto; max-height: 300px">
-<img src="https://ww4.sinaimg.cn/large/006tNc79gy1flusnl0jd1j312o0nsb29.jpg" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/master/auto-driving-optimized.gif" style="display: block; margin: 0 auto; max-height: 300px">
+<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/master/auto-driving2.jpg" style="display: block; margin: 0 auto; max-height: 300px">
 
 
 ### Video Image SmArt collaGE <small>(2016.8)</small>
@@ -131,17 +131,11 @@ categories:
 - Backend build with python flask, with nodejs handling user input and serving information to flask.
 - Over 66 articles from UT(University of Toronto) assistant have been processed as database seed data, and it will be updated seamlessly with authenticated upload. This system has been integrated into wechat's public channel. [Github Source](https://github.com/chocoluffy/wechat_web_scraper)
 
-![demo](http://ww3.sinaimg.cn/large/006tNbRwgw1f5xu48r9gvj319a0um163)
-
-
 ### SOS(Sentiment on Sentences) <small>(2016.6)</small>
 
 - Using sentiment analysis techniques to infer user-input sentences' sentiment on the fly. Model is pre-trained by Naive Bayes and SVM classifiers, based on twitter massive tweet data. In other words, the output sentiment results can to some extends reflect how people think over that topic currently. Super interesting!
 - Built with react native, migrated from a node.js web app. Get my hands dirty with RN's amazing mobile support.
 - Part of my react native everyday coding challenge. [Github Source](https://github.com/chocoluffy/ReactNativeEveryday/tree/master/Day2Sentiment).
-
-<img src="http://chocoluffy.com/demo-gif/emocean.gif" style="max-height: 400px;">
-
 
 ### AirLoft  January <small>(2016.3)</small>
 
@@ -155,8 +149,6 @@ categories:
 * A hand-on Nodejs project, using Ajax to request for tweets json file and use Bootstrap\fontawesome for pretty display.
 * Involved javascript programming both client side and server side. Desire to learn more on Nodejs.
 * A elegant display with background lighthighting and informatio alert.
-
-![project gif](https://zippy.gfycat.com/FancyWeeBrontosaurus.gif)
 
 
 ### NLP on tweets <small>(2016.2)</small>
@@ -180,6 +172,7 @@ categories:
 - A virtual reality website gift for my friends' birthday!
 - Heavily use D3.js to simulate the spining bomb objects, and use Aframe.io to build the virtual scene. 
 - [Github repo](https://github.com/chocoluffy/d3js3D)
+
 
 
 ### [I Love React](http://chocoluffy.com/flex-layout/) <small>(2016.1)</small>
@@ -209,6 +202,4 @@ categories:
 
 - A search engine designed specifically for instagram feeds. Users can type in certain key words and the engine will scape related feeds(latest and most-liked) from Instagram API, and display in a more compact but elegant way.
 - My Idea - Rails + Bootstrap + Jquery + multiple ruby gems.
-
-![screenshot](http://ww1.sinaimg.cn/large/c5ee78b5gw1f1k16o74lgj21kw0s5wir.jpg)
 

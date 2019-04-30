@@ -8,8 +8,6 @@ Focus on how animations work in such 3D scene and how I achieve that. [Live Demo
 
 <!-- more -->
 
-![Animation](http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg)
-
 ## Animation
 
 One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.

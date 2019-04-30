@@ -40,8 +40,6 @@ categories: 书摘
 
 基于这个前提能够预想的未来是，人工智能会逐渐承接商务的沟通，仅仅是信息的传递和整理呈现，比如：自动化的客服服务，售后服务，功能说明书以及菜单等等。而人们则会应对更多个性化交流的场景，比如：老年人陪护，私教，美容时尚咨询以及婚礼规划师等等。[^4]
 
-![slide](https://ws1.sinaimg.cn/large/006tNbRwly1fvxthb0bzcj31840nk0uv.jpg)
-
 Todo: 下一篇博客尝试写一下关于中心化和去中心化的比较，去中心化并没有被包装那么美好，这意味着每一个节点个体需要承担起曾经由中心化承担的风险，这也意味着所有的责任：维护，收益等都交付给了节点本身，这意味着专业信息的不平等造成的差距会进一步增大，也意味着任何对效率的追求都终将引向中心化的复辟。也思考下平等和效率的冲突，快手和抖音现在竞争的本质。
 
 [^1]: [Apple’s ‘Differential Privacy’ Is About Collecting Your Data—But Not ​Your Data | WIRED](https://www.wired.com/2016/06/apples-differential-privacy-collecting-data/)
