@@ -104,12 +104,10 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ww4.sinaimg.cn/large/7853084cgw1f78xtzb0xyg20dc08u1ky.gif">
-<meta property="og:updated_time" content="2019-04-25T01:05:22.903Z">
+<meta property="og:updated_time" content="2019-04-30T15:07:10.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用ffmpeg从视频中获取图片及GIF">
 <meta name="twitter:description" content="最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。">
-<meta name="twitter:image" content="http://ww4.sinaimg.cn/large/7853084cgw1f78xtzb0xyg20dc08u1ky.gif">
 
 
 
@@ -397,7 +395,6 @@
         <p>最近的项目涉及比较多的视频和图片的处理， 发现了一个特别好用的linux library “ffmpeg”， 在其官网的介绍中可以发现的是convert\record\stream video和audio的功能， 但其实我只是利用这个工具来从视频中获取一张张单独的图片(frame)， 然后来做后续的机器学习(相似度匹配PCE， 人像识别等等)等处理。 </p>
 <a id="more"></a>
 <p>在项目的展示中， 我提出了来自youtube的启发， 我感觉也是最近这几周， youtube上的视频列表多了一个新功能是， 当你鼠标hover当前视频时， 静态图片会变成视频中其中的一段GIF， 然后过一段时间再变回来， 具体效果看这个动图：</p>
-<p><img src="http://ww4.sinaimg.cn/large/7853084cgw1f78xtzb0xyg20dc08u1ky.gif" style="margin: 0 auto;"></p>
 <p>当时上youtube就觉得用户体验好棒， 很快想到的一些问题是， youtube是随机攫取GIF的嘛， 是否这个GIF就是这个视频的重要scene， 是利用收集的社交数据和评论来预测重要性的， 还是仅仅通过比较frame出现的时长来比较……</p>
 <p>这些都是很有趣的问题， 每一个方向展开来说都可以逐渐细分到实现的算法和数据格式。 我现在正在做的也正是我上面提到的其中一个方向哈哈， 而今天这篇博文想要探讨的， 是实现上面所有后续构想的building block， 怎样获取数据源和呈现。 ffmpeg和imagemagick这两个处理照片和视频特别方便的库也再这里介绍一下。</p>
 <h2 id="Preparation">Preparation</h2><p>安装ffmpeg的方式很简单， 在OSX里面<code>brew install ffmpeg</code>就可以了。同理也有<code>brew install imagemagick</code>。</p>
@@ -577,7 +574,7 @@ machine learning</a>
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ez498sfwnuj208w08wmxt.jpg"
+               src="https://raw.githubusercontent.com/chocoluffy/blog_assets/master/me.jpg"
                alt="余舜哲" />
           <p class="site-author-name" itemprop="name">余舜哲</p>
           <p class="site-description motion-element" itemprop="description">时间知道</p>

@@ -1509,7 +1509,7 @@ pre .javascript .function {
   }
 }
 .sidebar {
-  background: url("https://ws3.sinaimg.cn/large/006tKfTcly1g0n2ouvdxhj307t0dawf2.jpg");
+  background: url("https://raw.githubusercontent.com/chocoluffy/blog_assets/master/side-column-background.jpg");
   background-size: cover;
   position: fixed;
   right: 0;
@@ -1678,7 +1678,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #083416;
+  background: #6c0459;
 }
 .links-of-blogroll {
   font-size: 13px;

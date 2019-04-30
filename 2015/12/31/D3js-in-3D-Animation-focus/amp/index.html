@@ -10,7 +10,7 @@
 	<meta property="og:type" content="article">
 	<meta property="og:url" content="http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/">
 	
-		<meta property="og:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
+		<meta property="og:image" content="/amp-dist/sample/sample-substituteTitleImage.png">
 	
 	<meta property="og:site_name" content="余舜哲的 One Piece">
 	
@@ -24,7 +24,7 @@
 		<meta name="twitter:description" content="&lt;p&gt;Focus on how animations work in such 3D scene and how I achieve that. &lt;a href=&#34;http://chocoluffy.com/d3js3D/&#34;&gt;Live Demo&lt;/a&gt; here! &lt;/p&gt;">
 	
     
-    	<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
+    	<meta name="twitter:image" content="/amp-dist/sample/sample-substituteTitleImage.png">
 	
 	
 	
@@ -60,13 +60,13 @@
 			    "@id":"http://chocoluffy.com/2015/12/31/D3js-in-3D-Animation-focus/"
 			},
 			"datePublished": "2015-12-31T17:14:50.000Z",
-			"dateModified": "2019-04-25T01:05:22.899Z",
+			"dateModified": "2019-04-30T15:07:10.422Z",
 			
 			"image": {
 				"@type": "ImageObject",
-				"url": "http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg",
-				"width" : "2048",
-				"height" : "840"
+				"url": "/amp-dist/sample/sample-substituteTitleImage.png",
+				"width" : "1920",
+				"height" : "935"
 			},
 			
 			"author": {
@@ -1828,7 +1828,7 @@ h6.categories {
 						
 			          	<div class="header-thumb flx">
 			          		<div class="thumbImg-w circle">
-			          			<amp-img class="thumbImg" layout="fixed" width="243" height="100" src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg">
+			          			<amp-img class="thumbImg" layout="fixed" width="205" height="100" src="/amp-dist/sample/sample-substituteTitleImage.png">
 			          			</amp-img>
 			          		</div>
 			          	</div>
@@ -1866,7 +1866,6 @@ h6.categories {
 			    	<!-- content -->
 			  		<p>Focus on how animations work in such 3D scene and how I achieve that. <a href="http://chocoluffy.com/d3js3D/">Live Demo</a> here! </p>
 <a id="more"></a>
-<div class="amp-img-wrapper"><amp-img src="http://ww3.sinaimg.cn/large/c5ee78b5gw1ezjckugw4nj21kw0ncn9h.jpg" width="2048" height="840" layout="responsive"></amp-img></div>
 <h2 id="Animation">Animation</h2><p>One key thing for such 3D scene is animations and we need a lot of interaction to finish that cooperation. Thus, in usual, we need to add multiple event listener to many sibling elements and the way we did that is by creating a parent element and by utilizing the event propagation to achieve the goal.</p>
 <p>Say, we have a lot of <code>&lt;a-cube&gt;</code> now, and we want to add the click event listener to the <code>&lt;a-cube&gt;</code> below to trigger the animations of the <code>&lt;a-cube&gt;</code> above the scene. [The way we add animations is to append tag <code>&lt;a-animation&gt;</code>  as the childNode of the <code>&lt;a-cube&gt;</code>]. Now, in order to do that attachment in one time, we need to group all the <code>&lt;a-cube&gt;</code> into a container, we can just use a <code>&lt;a-entity id=&#x201C;meteor&#x201D;&gt;&lt;/a-entity&gt;</code> to do that thing. So we can add the click event listener at the parent node, and when the childNode get clicked, the event will propagated to the parent level by level, and back then when it achieve the targeted parent. we can trigger the function and do all the <code>append</code> or other actions on <code>e.target</code>. [here <code>e.target</code> refers to the one get clicked]. </p>
 <p>In the later interaction. we want the action of one object may trigger another object&#x2019;s actions. Then, we need to leave such mark to indicate which object may be related to! For example, in my code, I use  a data-attribute called &#x201C;flag&#x201D; as a id to indicate which object to bind. So later in the eventListener, we can use <code>e.target.getAttribute(&#x201C;flag&#x201D;)</code> to obtain that value for further use like <code>meteorParentNode.childNodes[e.target.getAttribute(&#x201C;flag&#x201D;)].append()</code> some animation nodes to the &#x201C;meteor&#x201D;!!</p>
