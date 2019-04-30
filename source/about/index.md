@@ -164,9 +164,6 @@ categories:
 - Fully-functional game looping logic with modular javascript files for each game components.
 - [Github repo](https://github.com/chocoluffy/html5touch)
 
-![project gif](http://chocoluffy.com/demo-gif/donut-hero.gif)
-
-
 ### [Virtual Reality World](http://chocoluffy.com/d3js3D/) <small>(2016.1)</small>
 
 - A virtual reality website gift for my friends' birthday!
