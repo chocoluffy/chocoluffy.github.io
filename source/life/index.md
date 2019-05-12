@@ -50,6 +50,7 @@ categories:
 
 ## 月总结
 
+- 『[碎语 2019 Apr.](https://chocoluffy.com/2019/05/01/%E7%A2%8E%E8%AF%AD-2019-Apr/)』2019年4月。我的回忆里有你温和的气候。
 - 『[碎语 2019 Mar.](https://chocoluffy.com/2019/04/05/%E7%A2%8E%E8%AF%AD-2019-Mar/)』 2019年3月。遥远的相似性。
 - 『[碎语 2019 Feb.](https://chocoluffy.com/2019/02/28/%E7%A2%8E%E8%AF%AD-2019-Feb/)』 2019年2月。那些我经常写下的，是祈祷，还是审判。
 - 『[碎语 2019 Jan.](https://chocoluffy.com/2019/02/21/%E7%A2%8E%E8%AF%AD-2019-Jan/)』 2019年1月。我突然发现我很容易被震撼到。仅仅是一小点阳光就足够挽留我了。沉默也能。
