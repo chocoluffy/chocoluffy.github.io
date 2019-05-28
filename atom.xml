@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2019-05-21T16:48:02.218Z</updated>
+  <updated>2019-05-28T15:23:53.953Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -15,11 +15,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[再看区块链的分权设计细节]]></title>
+    <link href="http://chocoluffy.com/2019/05/21/%E5%86%8D%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%88%86%E6%9D%83%E8%AE%BE%E8%AE%A1%E7%BB%86%E8%8A%82/"/>
+    <id>http://chocoluffy.com/2019/05/21/再看区块链的分权设计细节/</id>
+    <published>2019-05-22T03:11:31.000Z</published>
+    <updated>2019-05-28T15:23:53.953Z</updated>
+    <content type="html"><![CDATA[<p>《The Book of Satoshi》的读后感。我为什么觉得加密货币经济很吸引人，因为它实际上是在从机制设计这个角度在挑战人性里最难克服的一部分：马太效应。</p>
+<p>尽管加密货币对安全性的高要求可能是对商业环境上的一个不合理的假设，而导致未来的一段时间可能很难看见具体的消费者场景</p>
+<p>以下拿Satoshi的区块链和比特币来举例。理解一致的公开账本（global timestamp byzantine problem）以及支付验证（digital signature &amp; hash chain）是如何通过<strong>分布式的实体</strong>来实现的，是区块链的精髓。<strong>因为如果这些操作是由一个中心化的实体完成的，那么这个故事本质上和银行没有什么区别</strong>。而这马上带来的另一个挑战就是，如何设计规则去激励或者惩罚他们，使得分布式节点在有可能共谋，甚至还未存在（未来才加入）的情况下，依旧能达成共识。</p>
+<p>Satoshi提出的方案是proof of work。</p>
+<p>任何一个腐败的系统去追溯他们的源头可能都来自于官商勾结，<strong>在于制定规则的人成为游戏的最大玩家</strong>，而形成后来者难以破除的垄断关系。而pow带来的是另一个思维，任何的后来者都能够几乎平等和所有先前加入系统的人平等竞争（permissionless &amp; memoryless），仲裁者匿名且没有固定身份。</p>
+<p>尽管目前的市场被大量欺诈性质的ICO所干扰，我依旧坚定看好，也期待着加密货币的前景。<strong>新事物的流行往往都会经历「投机阶段」和「实用主义阶段」</strong>。投机，是一个快速积累资本和社会共识的过程，无论这个资本是社会资本（social status）</p>
+<p>针对后续有读者提出“矿场被垄断，接近51%的算力被垄断”这个观点，我是这么回应的。 </p>
+<p>的确算在算力垄断接近51%的情况，但这个优势并不会阻碍后来人入场的机会呀，这个讨论更多是在于能和不能之间，而不是擅长和不擅长，大型机构的确在规模上更容易控制成本，但是这个系统并不会阻碍任意一个后来者进入系统，这个「是否能加入系统的能力」是及其重要的；相比其他机制设计比如proof of stake，为了节约资源而重新转向了基于authority的规则就和政治上的世袭没有太多区别了，后来者不再拥有加入的机会。</p>
+<p>在进入擅长和不擅长的讨论之前，我们更希望把社会从不能到能的过渡。</p>
+<p>同样我们需要<strong>对「垄断」和「作恶」要区别开来</strong>。在pow这个机制下，垄断算力并不代表作恶。</p>
+<p>即便拥有了51%的算力，攻击者基于自己的利益依旧会选择维护这个系统，而不是选择去攻击它。这是和我们通常意识里的“垄断”是很不同的，矿场的产生更好应该被当作是维护者，而不是决策者。原因：【1】攻击者即便拥有51%算力也只最多只能够改变自己的交易历史形成double spend攻击，而无法改变别人的，因为没有别人的私钥 【2】基于51%的算力，维护当前的系统也就通过继续挖矿所得到的利益远大于攻击这个系统需要重写整个分链历史的成本。</p>
+<p>垄断，指资源的集中，但也同时给予了垄断者潜在利用这个系统作恶的机会。但这个机会不一定会被执行出来，也就是我刚刚提到的，<strong>「垄断」不等于「作恶」</strong>。因为在这个规则下作恶的成本远远高于资源持有者维护现有体系的成本。</p>
+<p>而一个系统的安全性可以这么衡量，去破坏但是破坏的代价是你会比你遵守规则至少失去（或者缴获）了X。X越大，这个系统就越安全。这也是一种思维的转变，很多时候我们其实不需要也不可能有绝对安全的系统，我们只需要当他们破坏这个系统的成本足够大的时候即可。</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">，但它对我们社会依旧有意义，因为它其实是在尝试提出一种分权设计的思路。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">目前的应用大部分是基于quorum的公司私链，比如JP Morgan coin。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;">这利用了一个强制的办法：谁付出的work（时间）多，谁就是历史。换言之，谁付出的成本高，谁就是历史。这个思路可以有效减少攻击者的发生。</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;">相比Vitalik的proof of stake，但pos本质上不具备pow的开放性。先发者容易获得天然优势而垄断token。</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;">同时创造出一个集体共识（global timestamp）。而同样，我们也会去奖励付出了工作量的矿工，比特币的价值最终会趋向于付出的成本，也间接反应了参与人数和当前的难度。任意一个规则的执行者也就是矿工为了平衡他们pow的支出会流转起他们得到的比特币，这也保证了比特币作为货币不会垄断在「规则执行者」也就是矿工的手上。和「资源持有者」的身份不会构成重叠。</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;">启发于hashcash的发明。也符合进化学现象，见Handicap principle。</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;">还是金融资本。而为了迎来加密货币的实用阶段，我们需要给予这项技术于时间，于土壤。土壤这个比喻其实是很重要的，理解哈耶克的经济理论</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;">social status as a service.</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;">的一个关键是理解他认为市场是作为一个”园丁”的隐喻。园丁只是负责剪枝，松土，不是拿那些条条框框去约束它，而是让这个市场自然地生长，里面的信息信号充分的自由流动。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;">加密货币的提出接近哈耶克的“货币去国家化”的假设。理论的核心在于“货币的稳定性”，而比特币由于供给按严格速率支配，在市场需求稳定后，能够成为比黄金更稳定而不受政府管制的价值存储媒介。</span><a href="#fnref:5" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    <summary type="html">
+    <![CDATA[《The Book of Satoshi》的读后感。我为什么觉得加密货币经济很吸引人，因为它实际上是在从机制设计这个角度在挑战人性里最难克服的一部分：马太效应。]]>
+    
+    </summary>
+    
+      <category term="哈耶克" scheme="http://chocoluffy.com/tags/%E5%93%88%E8%80%B6%E5%85%8B/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="科技" scheme="http://chocoluffy.com/tags/%E7%A7%91%E6%8A%80/"/>
+    
+      <category term="加密货币" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E5%AF%86%E8%B4%A7%E5%B8%81/"/>
+    
+      <category term="区块链" scheme="http://chocoluffy.com/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+      <category term="书摘" scheme="http://chocoluffy.com/categories/%E4%B9%A6%E6%91%98/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[我没有绝对的害怕，也不必须微笑。]]></title>
     <link href="http://chocoluffy.com/2019/05/12/%E6%88%91%E6%B2%A1%E6%9C%89%E7%BB%9D%E5%AF%B9%E7%9A%84%E5%AE%B3%E6%80%95%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%BF%85%E9%A1%BB%E5%BE%AE%E7%AC%91%E3%80%82/"/>
     <id>http://chocoluffy.com/2019/05/12/我没有绝对的害怕，也不必须微笑。/</id>
     <published>2019-05-12T20:59:11.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<p>什么是自由？</p>
 <p>我也到了一个时刻，需要对这些问题有自己的想法了。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 <p>自由有很多语境。不同语境下的自由意味着不同的东西。这里想分享一个从媚俗和审美的角度出发理解自由的角度，以及为什么艺术和文学能够帮助我们维护自由。</p>
@@ -57,7 +96,7 @@
     <link href="http://chocoluffy.com/2019/05/02/Startup-Studio%E7%BB%93%E8%AF%BE%E6%80%BB%E7%BB%93/"/>
     <id>http://chocoluffy.com/2019/05/02/Startup-Studio结课总结/</id>
     <published>2019-05-03T00:21:04.000Z</published>
-    <updated>2019-05-21T16:48:02.214Z</updated>
+    <updated>2019-05-28T15:23:53.949Z</updated>
     <content type="html"><![CDATA[<p>在Cornell Tech这一年里最有收获的几堂课之一，由David Tisch主讲的Startup Studio就这样结束了。其实很多时候并不是在评价这门课本身的好坏，而是在于它创造了一个和其他优秀小伙伴组队的机会，并且设置了一个高难度的关卡，而在整个过关的过程里，你不断暴露出缺点也不断改进，最终学习到这个关卡目标所代表的意义。如果关卡是一份作业，那么你学习到完成这个作业所需要的知识仅此而已，而在这里，这个关卡是学习创立一个公司，从零到一。仔细一想，这个逻辑其实也解释了学校，而非教育，的意义。The best education comes from inside, only.</p>
 <a id="more"></a>
 <h3 id="Startup_Studio_final_presentation_-_19-4-30">Startup Studio final presentation - 19.4.30</h3><ul>
@@ -127,7 +166,7 @@
     <link href="http://chocoluffy.com/2019/05/01/%E7%A2%8E%E8%AF%AD-2019-Apr/"/>
     <id>http://chocoluffy.com/2019/05/01/碎语-2019-Apr/</id>
     <published>2019-05-01T23:56:29.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-04-30">2019-04-30</h2><ul>
 <li>削弱意义的方式：放到大庭广众的面前。</li>
 <li>spark: email delegation. assign to somebody and set deadline(choose to follow all updates or only it get done). model: allow 10 active delegations per team, otherwise pay premium</li>
@@ -599,7 +638,7 @@
     <link href="http://chocoluffy.com/2019/04/05/%E7%A2%8E%E8%AF%AD-2019-Mar/"/>
     <id>http://chocoluffy.com/2019/04/05/碎语-2019-Mar/</id>
     <published>2019-04-06T01:53:29.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.961Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-03-31">2019-03-31</h2><ul>
 <li><p>TrimIt。一个有启发的故事。将barber通过Vans运输到客户那里，客户利用app预约剪头发。同时在剪头的时候打开车门，是效果很好的市场营销。这个可以应用于很多实体店的服务。<br>接下来的商业化：从理发延伸到你的私人造型师，随时预约随到；以及基于地理位置的需求pooling。</p>
 <blockquote>
@@ -870,7 +909,7 @@
     <link href="http://chocoluffy.com/2019/04/05/The-journey-is-the-reward-%E3%80%8A%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/04/05/The-journey-is-the-reward-《乔布斯传》阅读批注/</id>
     <published>2019-04-05T18:39:59.000Z</published>
-    <updated>2019-05-21T16:48:02.214Z</updated>
+    <updated>2019-05-28T15:23:53.953Z</updated>
     <content type="html"><![CDATA[<p>我答应自己在毕业前要看的几本书。 其中有《乔布斯传》和《堂吉柯德》。</p>
 <p>我想，教育，以及独特的经历在达成这样的目的：<strong>有一个坚定想要的东西，不会因为生活巨大的震荡所干扰。</strong></p>
 <p>而人的一生，也不过是通过漫长的道路，重新发现那两三个简单却丰盛的词语。然后从它们出发，去观察整个世界。</p>
@@ -1075,7 +1114,7 @@
     <link href="http://chocoluffy.com/2019/03/31/VC-Day%E9%A1%B9%E7%9B%AE%E8%A7%82%E5%AF%9F/"/>
     <id>http://chocoluffy.com/2019/03/31/VC-Day项目观察/</id>
     <published>2019-04-01T01:06:57.000Z</published>
-    <updated>2019-05-21T16:48:02.214Z</updated>
+    <updated>2019-05-28T15:23:53.953Z</updated>
     <content type="html"><![CDATA[<p>近期我参与到了Cornell Tech组织的VC day，并代表Firis团队做了公开pitch。这篇博客作为我参与流程中的观察和思考。</p>
 <p>能够在多名重量级VC面前实打实地pitch是一次很宝贵的锻炼机会。90秒时间，到时间强制打断，只有三张slides的展示机会。基本钉死了要我们剥离出这个产品最重要的东西。</p>
 <p>不同的产品在准备故事的时候有不同的侧重点。</p>
@@ -1144,7 +1183,7 @@
     <link href="http://chocoluffy.com/2019/03/30/%E6%8A%80%E6%9C%AF%E7%9A%84%E5%81%8F%E8%A7%81-%E3%80%8A%E6%8A%80%E6%9C%AF%E5%9E%84%E6%96%AD%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/03/30/技术的偏见-《技术垄断》阅读批注/</id>
     <published>2019-03-30T15:36:57.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<p>4.5/5星。 </p>
 <p>有些时候我会很警惕被热烈拥护的主流观点，我不是在反对主流本身，而只是想看清楚我们会失去什么，和那些还没被说完甚至被刻意隐瞒的话。</p>
 <p>这也是这本书观察技术进步史的角度。</p>
@@ -1257,7 +1296,7 @@
     <link href="http://chocoluffy.com/2019/03/06/%E5%A6%82%E4%BD%95%E5%90%91%E6%8A%95%E8%B5%84%E4%BA%BA%E8%AE%B2%E5%A5%BD%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B/"/>
     <id>http://chocoluffy.com/2019/03/06/如何向投资人讲好一个故事/</id>
     <published>2019-03-07T02:05:45.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<h2 id="如何讲好一个故事">如何讲好一个故事</h2><ul>
 <li>不一定要追求形式，比如要讲market, why now, validation, demo等等，而是以flow流畅地串联起来。记住一定不要讲core tech。<strong>目的是，如果最终audience提问的时候问：”你们这个是怎么做的？“，对你的tech感兴趣了，就说明你的story是成功的。</strong></li>
 <li>对待不同的人，会讲不同的故事。比如对于投资人来说，最重要的永远是market和product。对待客户来说，最重要的是你到底能够帮助我解决一个怎样的问题，可以带给他多大的利益。</li>
@@ -1310,7 +1349,7 @@
     <link href="http://chocoluffy.com/2019/02/28/%E4%B8%8D%E4%BE%9D%E8%B5%96%E7%90%86%E6%80%A7%E8%80%8C%E8%8E%B7%E5%BE%97%E5%B8%8C%E6%9C%9B-%E3%80%8A%E8%87%B4%E5%91%BD%E7%9A%84%E8%87%AA%E8%B4%9F%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/02/28/不依赖理性而获得希望-《致命的自负》阅读批注/</id>
     <published>2019-03-01T01:44:54.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.953Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>哈耶克的思想很大程度上是对于两次世界大战，以及德国纳粹历史的反馈。</li>
 <li>哈耶克反对的重点不在于意识形态，或者说社会主义是否在道德上可取，而是他是从<strong>“效应”</strong>的角度入手的，他认为社会主义所倡导的办法不能够达到目标。</li>
@@ -1355,7 +1394,7 @@
     <link href="http://chocoluffy.com/2019/02/28/%E7%A2%8E%E8%AF%AD-2019-Feb/"/>
     <id>http://chocoluffy.com/2019/02/28/碎语-2019-Feb/</id>
     <published>2019-03-01T01:11:01.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-02-28">2019-02-28</h2><ul>
 <li><p>近期有空可以研究的主题：</p>
 <ul>
@@ -1659,7 +1698,7 @@
     <link href="http://chocoluffy.com/2019/02/21/%E7%A2%8E%E8%AF%AD-2019-Jan/"/>
     <id>http://chocoluffy.com/2019/02/21/碎语-2019-Jan/</id>
     <published>2019-02-22T00:43:23.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<p>特别充实的一个月呢。</p>
 <p>写下了过去一年的总结，像把手伸向夜空里的星星一样，我向着心里面打捞着微光闪烁。算是厘清楚了，我所追逐的自由的背面，不是束缚，曾经我以为是彷徨，当时的我觉得是媚俗。而再过去一个月，现在的我还想增加一个选项。比媚俗更可怕的，是基于媚俗的优越感。</p>
 <p>我也第一次踏上了去以色列的旅途。边境，沙漠，集中营。如果不是学校组织，我自己恐怕是没这个勇气和胆识来这么多地方的。喜欢一种被陌生击碎的新奇感觉，却也熟知故事都是押韵的。一路上也捕获了很多灵感，特别是我未来第二和第三只猫的名字，我想叫你们Sancho和Dolorosa呢。而我遇见的最美的名字还是这座城市特拉维夫（Tel Aviv），翻译过来是，被石头堆叠起来的春天。我想，这就是文明（Civilization）的意思吧，带着人类最大的骄傲。</p>
@@ -2208,7 +2247,7 @@
     <link href="http://chocoluffy.com/2019/01/20/%E4%BB%B7%E6%A0%BC%E6%97%A0%E6%B3%95%E8%B0%83%E8%8A%82%E7%9A%84%E5%B8%82%E5%9C%BA-%E3%80%8A%E5%85%B1%E4%BA%AB%E7%BB%8F%E6%B5%8E%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/01/20/价格无法调节的市场-《共享经济》阅读批注/</id>
     <published>2019-01-21T00:54:51.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.953Z</updated>
     <content type="html"><![CDATA[<p>4/5星。</p>
 <p>区别于价格市场，配对市场里，价格不能清理市场，市场参与者在意他们和谁交易，以及建立长期关系。由配对市场引出的几个规则很有意思，比如2012年诺奖理论的“延迟接受”算法，隐式市场里的第二高价拍卖机制，以及在稠密市场的情况下对堵塞的不同反映机制（提前交易或者最后入场等）。关于市场设计同样重要的还有（1）如何形成市场的稠密性。（2）解决市场堵塞。（3）保护设计使得参与者能够安全透露真实意愿。（4）合理释放信号促进市场效率。没有五星的理由是作者太执着于特定细分市场的规则分析，而且中译版的题目有凑热点的嫌疑<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，这本书并没有主要讨论大家希望了解的共享经济，而是在分析匹配市场的规则设计，也算是让我回顾了一下本科的博弈论这门课。拍卖是个人类很古老而智慧的发明，看看以后我可以怎么运用起来。</p>
 <ul>
@@ -2302,7 +2341,7 @@
     <link href="http://chocoluffy.com/2019/01/17/%E8%BE%A9%E9%A2%98-%E4%BA%BA%E6%9C%89%E6%B2%A1%E6%9C%89%E8%A1%A8%E8%BE%BE%E5%81%8F%E8%A7%81%E7%9A%84%E8%87%AA%E7%94%B1/"/>
     <id>http://chocoluffy.com/2019/01/17/辩题-人有没有表达偏见的自由/</id>
     <published>2019-01-17T23:18:32.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.961Z</updated>
     <content type="html"><![CDATA[<p>2018新国辩，哲理辩论（第二场）周玄毅VS黄执中：人有/没有表达偏见的自由。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 <h2 id="正方：人有表达偏见的自由（周玄毅）">正方：人有表达偏见的自由（周玄毅）</h2><ul>
 <li>我们对偏见本身就是有偏见的。有些偏见可能无关痛痒，而另外一些却会遭到极力的排斥。</li>
@@ -2358,7 +2397,7 @@
     <link href="http://chocoluffy.com/2019/01/04/%E9%9D%9E%E4%B8%BB%E6%B5%81%E7%9A%84%E4%B8%BB%E6%B5%81-%E3%80%8A%E8%AE%A2%E9%98%85%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/01/04/非主流的主流-《订阅》阅读批注/</id>
     <published>2019-01-05T01:36:41.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.961Z</updated>
     <content type="html"><![CDATA[<p>未来的娱乐内容的分布：越来越多的续集会出现在电影院线上，因为这是风险最小的；精品剧集集中出现在订阅式流媒体，而原创新品则放在Youtube等低门槛平台负责曝光造势和社区影响力。</p>
 <a id="more"></a>
 <ul>
@@ -2441,7 +2480,7 @@
     <link href="http://chocoluffy.com/2019/01/02/%E6%B0%B8%E8%BF%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E9%95%9C%E5%A4%B4-%E3%80%8A%E4%B8%8D%E6%9C%BD%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     <id>http://chocoluffy.com/2019/01/02/永远存在的镜头-《不朽》读后感/</id>
     <published>2019-01-02T20:55:30.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<p>昆德拉的小说是没有结局的。</p>
 <p>他自己也在小说里面承认了这一点。他没有一个希望匆匆奔向的目标。他说“小说不应该像一场自行车比赛，而要像一场宴会，频繁上菜。一个新的人物，他不是任何东西的因，也绝不产生果”，我也恍然，原来这就是《轻》的由来。</p>
 <ul>
@@ -2491,7 +2530,7 @@
     <link href="http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/"/>
     <id>http://chocoluffy.com/2019/01/01/抵抗存在的被遗忘/</id>
     <published>2019-01-01T22:09:52.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<h2 id="1">1</h2><p>今年的关键词让我来选择，是“告别”。</p>
 <p>我告别了给予我第一场雪的城市，和一群我最最依赖的伙伴。</p>
 <p>这个时代也是流行告别的。</p>
@@ -2558,7 +2597,7 @@
     <link href="http://chocoluffy.com/2018/12/31/%E7%A2%8E%E8%AF%AD-2018-Dec/"/>
     <id>http://chocoluffy.com/2018/12/31/碎语-2018-Dec/</id>
     <published>2019-01-01T02:49:18.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.957Z</updated>
     <content type="html"><![CDATA[<h2 id="18-12-31_2018年度总结">18.12.31 2018年度总结</h2><blockquote>
 <p>塞万提斯在《堂吉柯德》的结尾这么说，我的愿望只有一个，那就是：让人们厌弃骑士小说中的那些胡编乱造的故事。最终，一部坚定反对骑士文化的作品塑造了我相信的骑士文化。</p>
 <p>我的愿望也很简单，抵抗那些因由媚俗而胡编乱造的虚无故事，抵抗存在的被遗忘。 - <a href="http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/">抵抗存在的被遗忘</a></p>
@@ -2855,7 +2894,7 @@
     <link href="http://chocoluffy.com/2018/12/18/%E8%B0%88%E8%B0%88%E5%93%88%E4%BC%AF%E6%A0%BC%E7%A8%8E%E4%B8%8E%E6%BF%80%E8%BF%9B%E5%B8%82%E5%9C%BA/"/>
     <id>http://chocoluffy.com/2018/12/18/谈谈哈伯格税与激进市场/</id>
     <published>2018-12-18T22:15:07.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
+    <updated>2019-05-28T15:23:53.961Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>导语：</p>
 <p>哈伯格税的提出，是为了解决闲置私人资产的流通。私有资产会导致垄断，而极端的公有化又容易造成公地悲剧。这套体系的提出，也是在思考绝对的私有制和公有制之间是否存在折中的方案。</p>
@@ -2929,7 +2968,7 @@
     <link href="http://chocoluffy.com/2018/12/12/%E3%80%8A%E5%A4%9C%E7%A9%BA%E6%80%BB%E6%9C%89%E6%9C%80%E5%A4%A7%E5%AF%86%E5%BA%A6%E7%9A%84%E8%93%9D%E8%89%B2%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2018/12/12/《夜空总有最大密度的蓝色》阅读批注/</id>
     <published>2018-12-13T01:42:42.000Z</published>
-    <updated>2019-05-21T16:48:02.218Z</updated>
+    <updated>2019-05-28T15:23:53.953Z</updated>
     <content type="html"><![CDATA[<p>这或许会成为我最喜欢的诗集了。</p>
 <p>我想像作者那样，写出镜头般的文字.</p>
 <p>就像她说的，“把被摄者内心之中的情感以及故事，稍许变换颜色呈现出来”。把这些存在作为礼物的一半留下来。然后静静地等待。</p>
@@ -2996,243 +3035,6 @@
       <category term="剧本" scheme="http://chocoluffy.com/tags/%E5%89%A7%E6%9C%AC/"/>
     
       <category term="书摘" scheme="http://chocoluffy.com/categories/%E4%B9%A6%E6%91%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[碎语 2018 Nov.]]></title>
-    <link href="http://chocoluffy.com/2018/11/30/%E7%A2%8E%E8%AF%AD-2018-Nov/"/>
-    <id>http://chocoluffy.com/2018/11/30/碎语-2018-Nov/</id>
-    <published>2018-12-01T02:49:18.000Z</published>
-    <updated>2019-05-21T16:48:02.222Z</updated>
-    <content type="html"><![CDATA[<h2 id="18-11-28_作者小结">18.11.28 作者小结</h2><p>给我影响最大的作者，应该是加缪和昆德拉。</p>
-<h3 id="加缪">加缪</h3><p>为什么？</p>
-<p>我觉得我最珍惜的一种能力，是能够感受的能力，是我的敏感。这意味着我拥有着发现不一样的世界的权利。我不愿意错过美好的东西。</p>
-<p>“为了纠正天生了无动于衷，我置身于历史和阳光之间，贫穷告诉我，历史不总是美好的，而阳光则让我明白，历史并不是一切。”，理解加缪思想的一个切入点，就是去理解他的核心，“沉默与阳光”，沉默意味着的是荒谬，每一个人的沉默里的故事。而阳光，是能够不再沉默的权利。</p>
-<p>你会发现，有些词语你会反复地提及，慢慢地，变成了祈祷。</p>
-<h3 id="昆德拉">昆德拉</h3><p>喜欢昆德拉，是从他耶路撒冷奖的颁奖词之后，从《轻》到了《不朽》。</p>
-<p>“人之所以为个人，不是因为他思考着和其他所有人都同样的东西。恰恰是因为他失去对真理的肯定和对别人的一致同意。而小说，则是个人想象的天堂。在这块土地上，没有人是真理的占有者。”</p>
-<blockquote>
-<p>联想到一点：雷布拉德伯里讨论过的，社会上少数族群的人带来的对文字、言论自由的压迫。社交媒体的初衷，就是为了被看到，被发现。公开的文字和书里的文字。</p>
-</blockquote>
-<p>“人类一思考，上帝就发笑。”，这句话是劝阻人们不思考吗，不是的，恰恰相反。他希望人们多去思考，并与此同时记住自己视野的狭隘。<strong>没有那种唯一的、明确的真理。真理最终使人丧失个性。</strong></p>
-<p>而说到底，他和加缪是殊途同归的。</p>
-<p>《小说的艺术》里他提到，“小说的意义是发现只有小说才能发现的，探索人的具体的生活，保护它，<strong>抵抗存在的被遗忘。</strong>”</p>
-<blockquote>
-<p>这个时代是流行告别的。亦或者说，只有当我们告别了，我们才想起来它们的存在。</p>
-</blockquote>
-<p>最后还是回到了发现人的生活。</p>
-<p>艺术的三大敌人是：媚俗，对既成思考的不思考，以及不快活的人。他认为欧洲文化最珍贵的地方在于对个人的尊重，对个人的特殊思想的尊重，对个人享有的私生活不被侵犯的权利的尊重，鼓励思想游荡在温和与闲在的自由中。</p>
-<blockquote>
-<p>感觉终于有点理解，为什么欧洲会有GDPR的出现。个人的私生活是不得侵犯的。因为-侵犯会带来改变-，能够侵入每个人的私生活就有能力去干涉并改变他的私生活，哪怕披着的是以良善的美好愿景。对自由的另一种诠释。</p>
-<p>抖音的slogan: 记录美好生活<br>快手的slogan: 记录生活记录你</p>
-<p>而什么是美好？</p>
-</blockquote>
-<h3 id="哈耶克">哈耶克</h3><p>理解哈耶克。要从他的自由主义立场出发，思考他宣扬的自由市场的优势，是更充分地利用分散的信息。</p>
-<p>柏拉图：哲学王 -&gt; 亚里士多德：法治。</p>
-<h2 id="18-11-27《不朽》">18.11.27《不朽》</h2><p>每个人根据自己性格的不同，最后不过成了一个环，有人从家庭走向了家庭，有人从孤独最后留在了孤独。</p>
-<p>个性是少于人的。那个离别的手势里，有另一些平行世界。</p>
-<h2 id="18-11-26">18.11.26</h2><p>短视频，之于图片，之于文字，在于细节，在于共情。</p>
-<p>短视频会逐渐剧情化，电影化。而当短视频接管越来越多人们获取信息的注意力的时候，其本身也即承担了资讯分发的功能。未来的内容资讯消费方式，会越来越接近人们在电影院消费电影的方式。</p>
-<h2 id="18-11-25_流量变现">18.11.25 流量变现</h2><p>抖音：公域流量【流量大而不稳定】<br>快手：私域流量【很简单的一个区分方式是，你对看过的这些内容的记忆是归因去平台，还是个人IP】</p>
-<ul>
-<li>不同的流量类型，变现方式是不同的。</li>
-</ul>
-<p>对于一个个人的IP，它的变现模式目前来说是相对固定的，是首先完成粉丝积累toC，然后完成品牌的转化toB。【之所以需要toC的一步是因为核心仍在于证明流量的稳定性】</p>
-<p>对于抖音来说，需要把握好这种临时的大流量的冲击力，以及短暂的欢愉带给人的冲动所促成的消费行为。</p>
-<p>而快手，则可以更好地借鉴目前微博变现流量的方式。快手，本质上在我看来，是这个时代的微博，也是一个更加符合“微博”定义的平台。【注意这也不一定是好事。举例，豆瓣存在的必要性】</p>
-<ul>
-<li>对于经济学来说，人们最容易犯的一个错误就是：<blockquote>
-<p>把自然科学的思维放在了社会科学上。<br>没有绝对的“所有信息”，而是分散的，分布在每一个人上的信息。于是，经济学讨论的是一种机制，哪种制度更适合这类信号传播给其他人。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="18-11-23">18.11.23</h2><h3 id="《未来简史》">《未来简史》</h3><ul>
-<li><p>当火车头跌落悬崖的时候，第200厢的车厢仍在稳定地前移。变化从来都是渐进的历史过程。没有好莱坞式的世界末日。而是当有一天我们回过头来，发现我们已经写不出诗，不再流泪的时候。我们成为了当年的我们所认为的神，成为了另一种物种。</p>
-<blockquote>
-<p>什么是自由。对自己生活的控制权。我们在让渡很多的决策权给智能的技术，我们在牺牲很多抵达终点的过程。我们想让手机使我们更快乐，而不是自己使自己更快乐；我们想让安眠药、抗抑郁药使我们更安心，而不是自己让自己安心。<br><strong>当我们习惯了把喜怒哀乐的权利让渡出去。然后想着自己还能够紧紧攥住自己更重要的善良，自己生而为人的自由意志。而不过一样的选择罢了。</strong></p>
-</blockquote>
-</li>
-<li><p>什么是超能力。能够研发出假肢，让截肢的患者能够重新走路的科技，也能为健康人进化升级。科技的双刃剑，举例，伟哥和整容技术。</p>
-</li>
-<li><p>高跟鞋的流行。以及住宅门前草坪的流行。乃至抽烟和纹身。都是人们证明身份的一种象征。高跟鞋，意味着我不再需要进行体力劳动。门前的草坪，意味着我不再需要用草坪来畜牧，种植，区分自己和劳动阶级。抽烟、纹身意味着我身体能够承受得了这些伤害。</p>
-</li>
-<li><p>人与动物的区别在于，人类能够大规模的合作。这都是基于人类想象的秩序。基于共识。有了共识，才愿意遵守一样的规则。</p>
-<blockquote>
-<p>共识的力量而不是物质世界的力量。举例，苏联的解体。没有城堡的轰然崩塌，没有玻璃的破碎和战火的声音。是一份人人皆知的协议，分开了这个世界。</p>
-</blockquote>
-</li>
-<li><p>“大多数人生活的意义，都只存在于彼此讲述的故事之中。” 除了客观，主观之外，还有另外一种存在的形式，是存在于“相互主体”之中（共识）。从宗教神话，到社会仪式，都是来自于我们认为这有意义。</p>
-<blockquote>
-<p>不要去追求他人定义的意义。他人定义的美好。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="其他">其他</h3><ul>
-<li><p>门前一棵不愿凋零的树。像墓碑一样伫立着。讨好着这个季节最后的明媚，却冷落了风。</p>
-</li>
-<li><p>未来的人们。有着更大规模的爱与恨，喧嚣与寂寞。我们现在拥有的很多能力，就曾经是历史纹路下的超能力。</p>
-<blockquote>
-<p>每一个虚构的命题，都仅仅只是把过去作用在现在的变化，放大了。</p>
-<p>即时信息共享的芯片，就是现在的互联网。</p>
-</blockquote>
-</li>
-<li><p>每个时代都有着这个时代所特有的无知。以及时代所特有的无知的伪装。</p>
-</li>
-<li><p>我无法说服自己相信黑塞的想法。</p>
-</li>
-<li><p>“诗的存在，并非让你去明白的意义，只是为了让你将它读出来。”</p>
-</li>
-<li><p>【18.9】任意有可被交易。的思维是有惯性的。 <strong>你想相信这个世界上有一些事情它没有代价。它很不方便。但它很美。</strong></p>
-</li>
-</ul>
-<h2 id="18-11-22_社交平台">18.11.22 社交平台</h2><h3 id="如何解决平台上的不良内容这个问题。">如何解决平台上的不良内容这个问题。</h3><p>一个发现：是基于人的。如果和名誉绑定之后，</p>
-<p>如果每一次发布是困难的。是会消耗的。这一点可以阻止spam。handcash的思路。</p>
-<blockquote>
-<p>专家来制定规则（点赞或者踩内容来决定该用户的名誉值），众人平等权利发布。</p>
-</blockquote>
-<h3 id="社交的附加价值">社交的附加价值</h3><ul>
-<li>我喜欢一个人，关注一个人，就有兴趣希望进入他的圈子。关注他的圈子。这一点是很自然的成为一个premium pkg的一个附加功能。然后完全交给志愿者来负责日常更新和维护这个附加圈子。<br>一个月一块钱。一万的订阅者。其实就足够养活一个辅助的运营志愿者团队。<blockquote>
-<p>这个想法本身有点意思：我依靠着看见你的生活而生活。一个人看着一个人看着一个人。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="18-11-20_《好笑的爱》">18.11.20 《好笑的爱》</h2><ul>
-<li><p>我在很多不同的领域工作，寻找我的风格，寻找我自己。当我写下我第一个故事之后，我确信我找到了自我，我成为写散文的人，写小说的人，而不是其他的任何什么人。</p>
-</li>
-<li><p>那时候，我深深渴望的唯一东西就是清醒的，觉悟的目光。我在小说里发现了它，所以对我来说，小说不仅仅是一种体裁，而且还是一种态度，一份立场。</p>
-</li>
-</ul>
-<h2 id="18-11-19">18.11.19</h2><p>人们习惯把成功道德合理化。</p>
-<h2 id="18-11-17_《不必交谈的时刻》">18.11.17 《不必交谈的时刻》</h2><ul>
-<li>太轻易写完的悼词宛如被太快总结完的一生。</li>
-<li>伟大的肖像没有表情。</li>
-<li>他们在句子中表现的那么兴奋，可他们实际上却没有兴奋，只是为了显得合群。</li>
-<li>对孩子最好的引诱是让他们去阅读 。这样就算他们遇到糟糕的事 ，也会知道还有个备份的世界 ，那里有备份的梦想 、备份的宁静 、备份的旅行 、备份的诗句 ，还有备份的爱情 。<blockquote>
-<p>我不记得从哪一篇读书笔记里写到，读书的一个优点，是它有让你放慢步调的神奇。以前一直以为这是落俗套的解释，现在慢慢明白那是一种“听我慢慢诉来”。以纸张抵挡脚步。现在发现读书的另一个优点，那里原来有一个备份的世界，换句话说，一个避难所。第三个论点，一个人的阅读史也是一个人的心灵成长史。</p>
-</blockquote>
-</li>
-<li>在所有的整理项目里 ，最难整理的是回忆 。 人回忆是因为人老了 。年轻人是来不及回忆的 ，他们有新的人生要品尝 ，新的世界要观看 ，新的笑话要笑 ，新的伤心要哭 。直到有一天 ，你就只能回头看 ，直到失去聚焦的能力 ，带着混沌走向失忆 。是的 ，我亲见一个我所见过的最不轻易动容的人 ，在回忆的当口流下眼泪 。在一本书的最后一页 ，我看见一句话 ——当时一激动 ，拿出小黑本 ，就抄了下来 ：我只能等待最后那场健忘症的来临 ，它将擦去人的整个一生 。 ——路易斯 ·布努埃尔<blockquote>
-<p>“失去聚焦的能力”。宛如黄昏下读书。忽然抬起头来，天暗了。毛姆</p>
-</blockquote>
-</li>
-<li>回想去年的谈话 ， 有一句我还记得 ——人都可以拍出至少一张大师级别的照片 ，但不是每个人都可以拍出一整组大师级别的照片 。这是偶然和蓄谋的区别 ，也是文艺爱好者和真正创作者的区别 。如今都是这样 ，这个时代的气质就是这样 ——大家发挥着世俗生活里剩余的文艺热情 ，为的是拍一张照片 ，唱一首歌 ，然后转向下一个 。<blockquote>
-<p>很有趣的一个话题，有没有什么东西是绝对小众的？还是说，小众这个概念是被人为创造出来的，总有那么些人，在被别人了解中获得满足，而当原有小众的东西走向大众，于是再创造一个新的小众话题占为己有。</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="18-11-16">18.11.16</h2><p>最近每次和投资人pitch结尾的时候，我都会习惯说 that’s our everything, thank you! 慢慢变成一种仪式。这个项目是我的所有了。这段时间以来的每一个愿望和流浪。请你好好收下。 </p>
-<p>一些精彩的思路：</p>
-<ul>
-<li>Ari论文。db里生成十个honey word，如果用户填写这个honey word就可以马上知道是hacker。</li>
-<li>利用kernel的信息压缩。</li>
-</ul>
-<h2 id="18-11-14_法律与自由">18.11.14 法律与自由</h2><p>很多时候，美国最高法院作出的抉择，和道德立场无关。和道德、良善的定位无关。而是和选择的自由有关：</p>
-<p>麻州决定将合法的婚姻范围扩大到同性的伴侣，即同性恋合法化。原因是at stake is an individual freely choosing the person with whom to share an exclusive commitment. 关键在于个体能否自主选择。</p>
-<p>很多类似的议题都可以参考相似的逻辑，比如法律是否支持堕胎等。尤其当许多宗教信仰的判断介入道德判断和定义的时候。自由选择是更重要的。 </p>
-<blockquote>
-<p>问题并不在于选择的道德价值， 而是个体作出选择的权利。 【自由中立看法 】</p>
-<p>反驳：但是政府虽然是以中立性原则做出的决定，但是决定做出并公示之后带来的效果并不是自由中立的。</p>
-</blockquote>
-<h2 id="18-11-13_诗">18.11.13 诗</h2><p>湖面的落日，逆着时间，上升。</p>
-<p>我每次看见你，就想起了我。</p>
-<p>加缪的文字：沉默和阳光。</p>
-<p>我把我的狂乱，真实，高高地筑上了堤坝。而我的技巧还无法抵达。</p>
-<h2 id="18-11-12_强连接性的工具">18.11.12 强连接性的工具</h2><p>人的诉求是不会消失的，只是会被压抑住，然后在相反的方向更加强烈的释放出来。</p>
-<p>如果强连接性的工具意味着减少了人们日常之间的直接交流（被默认为低效率），那么在另一端在创造出共同临场感和陪伴感的体验中，将得以释放这种力量。</p>
-<p>将来大多数人们的空闲时间会被虚拟社交、直播软件所占据。并不是因为人们有多希望发生这一场对话。而是因为它必须维持着，以证明个体还有着被连接和沟通的价值。</p>
-<blockquote>
-<p>镜面另一端耀眼的太阳，像是更温暖的光。</p>
-</blockquote>
-<p>而当，对话，失去了对话最初的意义。你必须存在，却和你没有关系。</p>
-<p>我不喜欢这种逻辑。</p>
-<blockquote>
-<p>当虚拟比真实更加真实。当在虚拟的世界里你能获得更多的尊严感和自由感。甚至是“尊严”和“自由”。</p>
-<p>一个近视的人摘掉眼镜也能够坚定地相信这个眼前世界的真实。</p>
-<p>微博回复：是的！而且有些时候你想努力改变，克服的东西，在别人眼里不过只是风车而已。看见这些东西或许并不是因为悲观，也可能恰恰相反。</p>
-</blockquote>
-<p><strong>这个思考的角度是，对于使用强连接性工具，失去的是，我们拒绝的自由。</strong></p>
-<h2 id="18-11-11_诗">18.11.11 诗</h2><p>叶子落下了，燃烧过。焦虑的颜色。</p>
-<blockquote>
-<p>留下燃烧过的痕迹。燃烧过的颜色。</p>
-</blockquote>
-<p>我写下的每一个字，我在接近它，确认它。</p>
-<blockquote>
-<p>而成为祈祷。</p>
-</blockquote>
-<h2 id="18-11-9_碎语_-_偏见与偏爱。">18.11.9 碎语 - 偏见与偏爱。</h2><ul>
-<li>这是我的偏见，也是我的偏爱。</li>
-<li>小说的真实感：<ul>
-<li>《刀锋》黄昏在医院里看着床上奄奄一息的舅舅，窗外摇晃而来的一束岛灯。</li>
-<li>加缪《局外人》，他第一次把手伸给我，我感到了他手上的痂皮。</li>
-</ul>
-</li>
-<li>给自己一个写作训练：“以及”和“比较”。<ul>
-<li>往棺木上抛洒的血红色泥土，以及夹杂在泥土中的白色树根。《局外人》</li>
-<li>一场沾湿了每一片花瓣的雨。</li>
-<li>天色变暗，以及暗沉下来的还有你的目光。</li>
-<li>城里的喧嚣来自低处，比照在海湾上的灯光还遥远。《若有若无之间》</li>
-</ul>
-</li>
-</ul>
-<h2 id="18-11-8_碎语_-_夏季的天，黑的很慢。">18.11.8 碎语 - 夏季的天，黑的很慢。</h2><ul>
-<li>有些时候我把回忆写出来，是为了忘记。</li>
-<li>什么时候，我有勇气迎接《堂吉柯德》和陀思妥耶夫斯基。</li>
-<li>当回忆只剩下修辞。当回忆不需要修辞。</li>
-<li>诗应该由失败的人来写，因为他们表达的是一种渴望，而不是叙述一件事实。而对于历史，则恰恰相反。成功的，写下了一段历史；而失败者，留下了诗。</li>
-<li>博尔赫斯，“等你到了我的年纪，你也会几乎完全失明。你只能看见黄颜色和明暗。你不必担心。逐渐失明并不是悲惨的事情。那像是夏季天黑的很慢。”<blockquote>
-<p>时光得流逝感。那是天黑得很快的冬天。</p>
-</blockquote>
-</li>
-<li>神话里的国王，他在巫师使他睡在猪圈里之前也不曾做过梦。</li>
-</ul>
-<h2 id="18-11-6_碎语_-_过期，是你错过了我的期待。">18.11.6 碎语 - 过期，是你错过了我的期待。</h2><ul>
-<li>吸电子烟的人，就像熬着夜喝着枸杞水的人，是懦弱的。</li>
-<li>在黄昏，总觉得这个时刻适合等候。</li>
-<li>过期，是你错过了我的期待。</li>
-</ul>
-<h2 id="18-11-3">18.11.3</h2><p>奇葩说第11.3期。你已经很努力了，不是一句好话。因为他只看到了一个方向，甚至于他只承认你的一个方向。最大的忽悠是，给你欢呼的人群，给你奔跑的伙伴，给你远方的颁奖台，你就慢慢地开始跑了，而你并不知道奔跑的意义。<br>相反，如果这句话来自于自己。来自认可而非评判，是一种总结，则是好话。</p>
-<ul>
-<li>什么是一个好的反馈？反馈的形式、反馈的量级都是可以控制的。都是工程师自己的哲学。然而人们总是倾向于把恶魔制造了出来，才认得出它地狱般的样子。<blockquote>
-<p>【18.4.19】连接的弊端。而社交媒体，正在促成这样的情况。它曝光了，或者说它带来了很多以前看不到的节点，但它用海啸般地反馈来威胁小众，只剩下沉默。</p>
-</blockquote>
-</li>
-</ul>
-<p>社交网络：我注视着你注视之物而得到注视。</p>
-<blockquote>
-<p>社交网络，不过是熟记有一条通往你的路径。</p>
-</blockquote>
-<p>落叶，像无数朵璀璨重生的花。</p>
-<p>一个不断分离，精细化的社会。雷布拉德伯里《华氏451》里的少数族群。<br>advantage:</p>
-<ul>
-<li>comfort，效率来自于隔离。</li>
-<li>发言的人是专业的人，他付出了他的名誉。</li>
-</ul>
-<p>disadvantage:</p>
-<ul>
-<li>更容易受煽动。蛊惑人心的专业观点。</li>
-<li>标签。</li>
-<li>简化。一个人的生活被简化为他的社会职责。</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[抵抗存在的被遗忘。]]>
-    
-    </summary>
-    
-      <category term="日记" scheme="http://chocoluffy.com/tags/%E6%97%A5%E8%AE%B0/"/>
-    
-      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
-    
-      <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="加缪" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E7%BC%AA/"/>
-    
-      <category term="存在主义" scheme="http://chocoluffy.com/tags/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/"/>
-    
-      <category term="月总结" scheme="http://chocoluffy.com/tags/%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title><![CDATA[再看区块链的分权设计细节]]></title>
+      <url>http://chocoluffy.com/2019/05/21/%E5%86%8D%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%88%86%E6%9D%83%E8%AE%BE%E8%AE%A1%E7%BB%86%E8%8A%82/</url>
+      <content type="html"><![CDATA[<p>《The Book of Satoshi》的读后感。我为什么觉得加密货币经济很吸引人，因为它实际上是在从机制设计这个角度在挑战人性里最难克服的一部分：马太效应。</p>
+<p>尽管加密货币对安全性的高要求可能是对商业环境上的一个不合理的假设，而导致未来的一段时间可能很难看见具体的消费者场景</p>
+<p>以下拿Satoshi的区块链和比特币来举例。理解一致的公开账本（global timestamp byzantine problem）以及支付验证（digital signature &amp; hash chain）是如何通过<strong>分布式的实体</strong>来实现的，是区块链的精髓。<strong>因为如果这些操作是由一个中心化的实体完成的，那么这个故事本质上和银行没有什么区别</strong>。而这马上带来的另一个挑战就是，如何设计规则去激励或者惩罚他们，使得分布式节点在有可能共谋，甚至还未存在（未来才加入）的情况下，依旧能达成共识。</p>
+<p>Satoshi提出的方案是proof of work。</p>
+<p>任何一个腐败的系统去追溯他们的源头可能都来自于官商勾结，<strong>在于制定规则的人成为游戏的最大玩家</strong>，而形成后来者难以破除的垄断关系。而pow带来的是另一个思维，任何的后来者都能够几乎平等和所有先前加入系统的人平等竞争（permissionless &amp; memoryless），仲裁者匿名且没有固定身份。</p>
+<p>尽管目前的市场被大量欺诈性质的ICO所干扰，我依旧坚定看好，也期待着加密货币的前景。<strong>新事物的流行往往都会经历「投机阶段」和「实用主义阶段」</strong>。投机，是一个快速积累资本和社会共识的过程，无论这个资本是社会资本（social status）</p>
+<p>针对后续有读者提出“矿场被垄断，接近51%的算力被垄断”这个观点，我是这么回应的。 </p>
+<p>的确算在算力垄断接近51%的情况，但这个优势并不会阻碍后来人入场的机会呀，这个讨论更多是在于能和不能之间，而不是擅长和不擅长，大型机构的确在规模上更容易控制成本，但是这个系统并不会阻碍任意一个后来者进入系统，这个「是否能加入系统的能力」是及其重要的；相比其他机制设计比如proof of stake，为了节约资源而重新转向了基于authority的规则就和政治上的世袭没有太多区别了，后来者不再拥有加入的机会。</p>
+<p>在进入擅长和不擅长的讨论之前，我们更希望把社会从不能到能的过渡。</p>
+<p>同样我们需要<strong>对「垄断」和「作恶」要区别开来</strong>。在pow这个机制下，垄断算力并不代表作恶。</p>
+<p>即便拥有了51%的算力，攻击者基于自己的利益依旧会选择维护这个系统，而不是选择去攻击它。这是和我们通常意识里的“垄断”是很不同的，矿场的产生更好应该被当作是维护者，而不是决策者。原因：【1】攻击者即便拥有51%算力也只最多只能够改变自己的交易历史形成double spend攻击，而无法改变别人的，因为没有别人的私钥 【2】基于51%的算力，维护当前的系统也就通过继续挖矿所得到的利益远大于攻击这个系统需要重写整个分链历史的成本。</p>
+<p>垄断，指资源的集中，但也同时给予了垄断者潜在利用这个系统作恶的机会。但这个机会不一定会被执行出来，也就是我刚刚提到的，<strong>「垄断」不等于「作恶」</strong>。因为在这个规则下作恶的成本远远高于资源持有者维护现有体系的成本。</p>
+<p>而一个系统的安全性可以这么衡量，去破坏但是破坏的代价是你会比你遵守规则至少失去（或者缴获）了X。X越大，这个系统就越安全。这也是一种思维的转变，很多时候我们其实不需要也不可能有绝对安全的系统，我们只需要当他们破坏这个系统的成本足够大的时候即可。</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">，但它对我们社会依旧有意义，因为它其实是在尝试提出一种分权设计的思路。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">目前的应用大部分是基于quorum的公司私链，比如JP Morgan coin。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;">这利用了一个强制的办法：谁付出的work（时间）多，谁就是历史。换言之，谁付出的成本高，谁就是历史。这个思路可以有效减少攻击者的发生。</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;">相比Vitalik的proof of stake，但pos本质上不具备pow的开放性。先发者容易获得天然优势而垄断token。</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;">同时创造出一个集体共识（global timestamp）。而同样，我们也会去奖励付出了工作量的矿工，比特币的价值最终会趋向于付出的成本，也间接反应了参与人数和当前的难度。任意一个规则的执行者也就是矿工为了平衡他们pow的支出会流转起他们得到的比特币，这也保证了比特币作为货币不会垄断在「规则执行者」也就是矿工的手上。和「资源持有者」的身份不会构成重叠。</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;">启发于hashcash的发明。也符合进化学现象，见Handicap principle。</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;">还是金融资本。而为了迎来加密货币的实用阶段，我们需要给予这项技术于时间，于土壤。土壤这个比喻其实是很重要的，理解哈耶克的经济理论</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;">social status as a service.</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;">的一个关键是理解他认为市场是作为一个”园丁”的隐喻。园丁只是负责剪枝，松土，不是拿那些条条框框去约束它，而是让这个市场自然地生长，里面的信息信号充分的自由流动。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;">加密货币的提出接近哈耶克的“货币去国家化”的假设。理论的核心在于“货币的稳定性”，而比特币由于供给按严格速率支配，在市场需求稳定后，能够成为比黄金更稳定而不受政府管制的价值存储媒介。</span><a href="#fnref:5" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[我没有绝对的害怕，也不必须微笑。]]></title>
       <url>http://chocoluffy.com/2019/05/12/%E6%88%91%E6%B2%A1%E6%9C%89%E7%BB%9D%E5%AF%B9%E7%9A%84%E5%AE%B3%E6%80%95%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%BF%85%E9%A1%BB%E5%BE%AE%E7%AC%91%E3%80%82/</url>
       <content type="html"><![CDATA[<p>什么是自由？</p>
