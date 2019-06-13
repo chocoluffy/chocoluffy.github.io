@@ -39,6 +39,7 @@ Something I love and specialize.
 
 ### Recommendation System <small>(精选论文)</small>
 
+- 「4/5」[BERT4Rec- Sequential Recommendation with Bidirectional Encoder Representations from Transformer](https://github.com/chocoluffy/deep-recommender-system/tree/master/RecSys/BERT4Rec)
 - 「3/5」[Behavior Sequence Transformer for E-commerce Recommendation in Alibaba](https://github.com/chocoluffy/deep-recommender-system/tree/master/RecSys/Transformer-in-WDL)
 - 「5+/5」[Deep Neural Networks for YouTube Recommendations](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Youtube-DNN)
 - 「4/5」[Collaborative Deep Learning for Recommender Systems](https://github.com/chocoluffy/deep-learning-notes/tree/master/RecSys/Collaborative-Deep-Learning)
