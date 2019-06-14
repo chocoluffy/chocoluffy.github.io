@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title><![CDATA[钱不是必要的，流动性才是。]]></title>
+      <url>http://chocoluffy.com/2019/06/14/%E9%92%B1%E4%B8%8D%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84%EF%BC%8C%E6%B5%81%E5%8A%A8%E6%80%A7%E6%89%8D%E6%98%AF%E3%80%82/</url>
+      <content type="html"><![CDATA[<p>钱，fiat currency，是没有真正价值的，能与之兑换的黄金才有。纸币被创造出来是为了帮助价值在时间和空间上的转移<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，这意味着流动性。而从另一个角度看，钱本质上也是价值流动性短缺的结果。而如果实现了更高效的价值转移，钱将因此不是必要的。这个趋势其实已经出现了，以paypal，微信支付等的电子支付，其实提供了一定线索。只是随着加密货币的应用范围不断拓展，将出现流动性更高的流通货币<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，而资产债券化也将更普遍。</p>
+<p>银行的存在是为了缩短钱的周转周期，<strong>因此银行本质上提供的是流动性。</strong>在直接的贸易交换中，直到我给你真金白银的时刻，你才拥有了支配那些钱的权利。但是在存在银行参与的情况下，不管我银行账户里有没有钱，在我们达成交易的时刻，你的账户里就多了这一笔钱而你可以随时随地消费它，我进而与银行存在了一笔债务。我和银行之间的的结算其实是滞后的，<strong>被缩短的这个时间差极大地改善了经济运转的效率，并使市场衍化出更为复杂的异步（asynchronous）结构。</strong>。从这个角度去看那些各式的金融衍生品，比如期货，次贷等等，实际上都是为了提高流动性，无论这个流动性是真实的，还是掺假的（即没有对应价值的抵押物）<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。</p>
+<p>进一步地，我们经常说比特币能够代替银行，其实说的是能够取代银行的信用，而<strong>信用提供了流动性</strong>。<strong>因为我信任你，所以你的债务能够流动开。</strong>这也是为什么银行的债务具备公信力，而最具备公信力的是国债。</p>
+<p>基于这个逻辑，我们能够得到一个有趣的结果：<strong>能够提供信用的人，也能够承担一部分银行的作用</strong>。</p>
+<p>而信用的来源则决定了其流动性的安全性。</p>
+<p>有人说，信用来自于名声。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+<p>还有人说，信用来自于抵押物。<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> </p>
+<p>又或者，信用来自于已经付出的成本。<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+<p>有意思的是，上述信用来源的次序，同样呈现出中心化程度逐次递减，而可验证的容易程度逐次递增。中心化程度递减好理解，从资源的分布可以看出来。名声是注定稀缺的，因为它会随着供应的增加而迅速贬值。而抵押物，也作为被公认可交换的资源，也不是所有人都能拥有的。而付出的成本<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>，相比之下，受垄断的程度远比资本的垄断程度要低。而为什么可验证这个属性值得讨论，这意味着自由随机的竞争，这也意味着权力的不对等优势。因为不可验证的东西不存在竞争，也更倾向于垄断。而同时通过验证，真正做了功的人，应当拥有超越其人口统计学比例的权力影响结果，而不受民粹的看客影响。</p>
+<p>这些不同的模式，有着不同的适用范围，和不同的成本考量。其实没有所谓的绝对“安全”的感念，只要破坏这个系统的成本足够高，系统就是足够安全的。<strong>我们想聊流动性的安全性，其实是在聊流动性的成本。</strong></p>
+<p>实现完全的去中心化，需要高企的成本，预设了极其严苛的信用前提。而后续所有针对去中心化效率提高的提案，无非是尝试削弱对信用的预设，引入中心化的实体提供额外的默认信用。</p>
+<p>这究竟是好是坏，各执己见。我只是想提出一种可能性，相比起现在大范围流通的钱，私人流通的债券，在其私人领域会更有效，能够提供更高的流动性。这个私人领域可以是一个中心化公司的商业环境<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>，可以是一个DAO，也可以简单是一个人际关系的小圈子。能够传递内部交易信息的货币，是相比外部货币更高效的流通媒介，尽管这同样意味着需要由个人承担起交易风险。</p>
+<p>这也是去中心化的祝福与代价。</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">解决&quot;coincidence of wants&quot;。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;">和我们熟悉的电子支付的区别在于，不再依赖中心化的信用担保。</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;">后果见08年次贷危机。</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;">而支撑起名声的，可能是封建迷信的风俗，比如所谓的天赐皇权，教皇至上的制度；也可能是军事战力，比如国家的形成。</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;">比如Vitalik主张的Proof of Stake。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline; vertical-align: top;">比如Satoshi主张的Proof of Work。</span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline; vertical-align: top;">在Proof of Work的框架下，意味着电力和机器的成本，该成本仍远低于资本的垄断程度。</span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline; vertical-align: top;">Facebook将于19.6.18公开其私域流通的加密货币的白皮书。</span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline; vertical-align: top;">本文的部分思路启发于《evil is the root of all money》。</span><a href="#fnref:9" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[一部货币演化史，以及21世纪的“比特币本位”]]></title>
       <url>http://chocoluffy.com/2019/06/01/%E4%B8%80%E9%83%A8%E8%B4%A7%E5%B8%81%E6%BC%94%E5%8C%96%E5%8F%B2%EF%BC%8C%E4%BB%A5%E5%8F%8A21%E4%B8%96%E7%BA%AA%E7%9A%84%E2%80%9C%E6%AF%94%E7%89%B9%E5%B8%81%E6%9C%AC%E4%BD%8D%E2%80%9D/</url>
       <content type="html"><![CDATA[<p>《The Bitcoin Standard》的读后感。4.5星。这本书更像是一部货币演化史，依次介绍了货币在不同时期的作用和局限。</p>
@@ -2589,8 +2608,18 @@
 <p>而每一套理论框架的优劣势都是动态的。随着科技的变化所不断降低的实施成本已经深刻地改变了很多曾经既有理论的基础，而这也将为我们带来新的思考方向。 自由一定比管制优越吗，自由和隐私的边界在哪里……等等有趣的议题我觉得基于这个时代的技术都能够给予新的诠释。</p>
 <p>我也很感兴趣哈伯格税这套理论能够在哪些场景应用。目前通过调查已知的，是在一个DAO游戏《进化星球》的药水价格机制的设计中出现过<sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup>。如何找到一个合适的场景，虚拟代币交易或者二手市场等等，会是我后续一直关注的方向。</p>
 <p>或许未来已经来了，只是还没扩散开。</p>
-<p>🌟 知乎专栏链接：<a href="https://zhuanlan.zhihu.com/p/52724869" target="_blank" rel="noopener">哈伯格税：面向共享经济的创新？</a><br>🌟 豆瓣书评：<a href="https://book.douban.com/review/9836743/" target="_blank" rel="noopener">哈伯格税：面向共享经济的创新？</a></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">《激进市场》同样入选了经济学人18年的年度书单。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;"><a href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=12668&amp;context=journal_articles" target="_blank" rel="noopener">《Property Is Only Another Name for Monopoly》, Posner and Weyl</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;"><a href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=12668&amp;context=journal_articles" target="_blank" rel="noopener">《Property Is Only Another Name for Monopoly》, Posner and Weyl</a>  Page 52.</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;"><a href="https://orange.xyz/p/254" target="_blank" rel="noopener">再谈哈伯格税：极端的计划经济和市场经济，没准是同一个东西                                                                         - 橙皮书</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;"><a href="https://site.douban.com/280724/widget/notes/193432971/note/643686878/" target="_blank" rel="noopener">哈耶克：知识在社会中的运用</a> 我认可哈耶克所代表的芝加哥自由主义经济学派的观点。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline; vertical-align: top;"><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTM5NTYzMA==&amp;mid=2659494084&amp;idx=1&amp;sn=051f4dad152486be3799e8b69c50b1a2&amp;chksm=84e5a205b3922b13c9b1e725a155c1e9ad4df4384709ccfb7b016bfae89a191cdce8a0995282&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">《人类简史》作者分析特朗普崛起：自由主义终结了么？</a> 复习一下民粹主义在美国总统大选中的影响。</span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline; vertical-align: top;"><a href="https://www.nytimes.com/2018/08/09/nyregion/uber-nyc-vote-drivers-ride-sharing.html" target="_blank" rel="noopener">Uber and the False Hopes of the Sharing Economy - The New York Times</a></span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline; vertical-align: top;"><a href="https://orange.xyz/p/62" target="_blank" rel="noopener">hashcash算法：中本聪关于区块链的秘密都在这里                                                                           - 橙皮书</a></span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline; vertical-align: top;"><a href="https://forum.evolution.land/posts/7" target="_blank" rel="noopener">EvolutionLand (进化星球) 是什么！ · EvolutionLand</a></span><a href="#fnref:9" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+<h3 id="Q&amp;A_(2019-6-5更新)">Q&amp;A <small>(2019.6.5更新)</small></h3><ul>
+<li>关于提问“其实同样存在其他成本，比如折旧，机会成本等等，这些都算持有成本，为什么要强制征税？” 答：这个强制的税算是把这些隐式的成本给可视化了从而推动用户决策，中心仍是为了帮助用户找到自己对资产的真实估值（因为无论偏高还是偏低都对自己不利）</li>
+<li>关于资产类别的问题。答：我个人也不认为由政府对“实体”资产征收具有可行性，但是在小范围人群内能够对所有人交易转移所有权，流动性极高的信息（包括电子身份，以及域名，知识产权这些）是我认为可行的。</li>
+<li>和fomo 3d的区别。答：fomo3d是庞氏的机制，其推动资产流动的动力不是来自于自由交易（共赢）而是来自于发展接盘者（零和）。</li>
+<li>局限性？答：是存在这类问题的，因为强调了资产的流动性而容易导致降低了用户对资产的投资预期，比如你如果知道域名可能在未来某个时间被交易走你可能对这个域名内容投入的努力会减少等等，因此作者在论文中也建议，对那些偏向价值累进的资产场景（比如房屋，知识产权等等，重视一些投资价值）征收相对较低的税。</li>
+<li>关于IP一块的讨论。答：是适用的场景。简单来说，这会导致专利流氓的持有成本增高的特别快，防止他们holdout。</li>
+</ul>
+<ul>
+<li>知乎专栏链接：<a href="https://zhuanlan.zhihu.com/p/52724869" target="_blank" rel="noopener">哈伯格税：面向共享经济的创新？</a></li>
+<li>豆瓣书评：<a href="https://book.douban.com/review/9836743/" target="_blank" rel="noopener">哈伯格税：面向共享经济的创新？</a><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">《激进市场》同样入选了经济学人18年的年度书单。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;"><a href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=12668&amp;context=journal_articles" target="_blank" rel="noopener">《Property Is Only Another Name for Monopoly》, Posner and Weyl</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;"><a href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=12668&amp;context=journal_articles" target="_blank" rel="noopener">《Property Is Only Another Name for Monopoly》, Posner and Weyl</a>  Page 52.</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;"><a href="https://orange.xyz/p/254" target="_blank" rel="noopener">再谈哈伯格税：极端的计划经济和市场经济，没准是同一个东西                                                                         - 橙皮书</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;"><a href="https://site.douban.com/280724/widget/notes/193432971/note/643686878/" target="_blank" rel="noopener">哈耶克：知识在社会中的运用</a> 我认可哈耶克所代表的芝加哥自由主义经济学派的观点。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline; vertical-align: top;"><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTM5NTYzMA==&amp;mid=2659494084&amp;idx=1&amp;sn=051f4dad152486be3799e8b69c50b1a2&amp;chksm=84e5a205b3922b13c9b1e725a155c1e9ad4df4384709ccfb7b016bfae89a191cdce8a0995282&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">《人类简史》作者分析特朗普崛起：自由主义终结了么？</a> 复习一下民粹主义在美国总统大选中的影响。</span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline; vertical-align: top;"><a href="https://www.nytimes.com/2018/08/09/nyregion/uber-nyc-vote-drivers-ride-sharing.html" target="_blank" rel="noopener">Uber and the False Hopes of the Sharing Economy - The New York Times</a></span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline; vertical-align: top;"><a href="https://orange.xyz/p/62" target="_blank" rel="noopener">hashcash算法：中本聪关于区块链的秘密都在这里                                                                           - 橙皮书</a></span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline; vertical-align: top;"><a href="https://forum.evolution.land/posts/7" target="_blank" rel="noopener">EvolutionLand (进化星球) 是什么！ · EvolutionLand</a></span><a href="#fnref:9" rev="footnote"> ↩</a></li></ol></div></div></li>
+</ul>
+]]></content>
     </entry>
     
     <entry>
@@ -7030,6 +7059,28 @@
     </entry>
     
     <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+</section>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Agile web developing in rails 第一期]]></title>
       <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
       <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
@@ -7071,28 +7122,6 @@
 <p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
 <p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-</section>]]></content>
     </entry>
     
     <entry>

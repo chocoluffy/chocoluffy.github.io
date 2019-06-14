@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2019-06-03T14:25:08.129Z</updated>
+  <updated>2019-06-14T13:16:13.451Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -15,11 +15,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[钱不是必要的，流动性才是。]]></title>
+    <link href="http://chocoluffy.com/2019/06/14/%E9%92%B1%E4%B8%8D%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84%EF%BC%8C%E6%B5%81%E5%8A%A8%E6%80%A7%E6%89%8D%E6%98%AF%E3%80%82/"/>
+    <id>http://chocoluffy.com/2019/06/14/钱不是必要的，流动性才是。/</id>
+    <published>2019-06-14T14:57:27.000Z</published>
+    <updated>2019-06-14T13:16:13.451Z</updated>
+    <content type="html"><![CDATA[<p>钱，fiat currency，是没有真正价值的，能与之兑换的黄金才有。纸币被创造出来是为了帮助价值在时间和空间上的转移<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，这意味着流动性。而从另一个角度看，钱本质上也是价值流动性短缺的结果。而如果实现了更高效的价值转移，钱将因此不是必要的。这个趋势其实已经出现了，以paypal，微信支付等的电子支付，其实提供了一定线索。只是随着加密货币的应用范围不断拓展，将出现流动性更高的流通货币<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，而资产债券化也将更普遍。</p>
+<p>银行的存在是为了缩短钱的周转周期，<strong>因此银行本质上提供的是流动性。</strong>在直接的贸易交换中，直到我给你真金白银的时刻，你才拥有了支配那些钱的权利。但是在存在银行参与的情况下，不管我银行账户里有没有钱，在我们达成交易的时刻，你的账户里就多了这一笔钱而你可以随时随地消费它，我进而与银行存在了一笔债务。我和银行之间的的结算其实是滞后的，<strong>被缩短的这个时间差极大地改善了经济运转的效率，并使市场衍化出更为复杂的异步（asynchronous）结构。</strong>。从这个角度去看那些各式的金融衍生品，比如期货，次贷等等，实际上都是为了提高流动性，无论这个流动性是真实的，还是掺假的（即没有对应价值的抵押物）<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。</p>
+<p>进一步地，我们经常说比特币能够代替银行，其实说的是能够取代银行的信用，而<strong>信用提供了流动性</strong>。<strong>因为我信任你，所以你的债务能够流动开。</strong>这也是为什么银行的债务具备公信力，而最具备公信力的是国债。</p>
+<p>基于这个逻辑，我们能够得到一个有趣的结果：<strong>能够提供信用的人，也能够承担一部分银行的作用</strong>。</p>
+<p>而信用的来源则决定了其流动性的安全性。</p>
+<p>有人说，信用来自于名声。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+<p>还有人说，信用来自于抵押物。<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> </p>
+<p>又或者，信用来自于已经付出的成本。<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+<p>有意思的是，上述信用来源的次序，同样呈现出中心化程度逐次递减，而可验证的容易程度逐次递增。中心化程度递减好理解，从资源的分布可以看出来。名声是注定稀缺的，因为它会随着供应的增加而迅速贬值。而抵押物，也作为被公认可交换的资源，也不是所有人都能拥有的。而付出的成本<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>，相比之下，受垄断的程度远比资本的垄断程度要低。而为什么可验证这个属性值得讨论，这意味着自由随机的竞争，这也意味着权力的不对等优势。因为不可验证的东西不存在竞争，也更倾向于垄断。而同时通过验证，真正做了功的人，应当拥有超越其人口统计学比例的权力影响结果，而不受民粹的看客影响。</p>
+<p>这些不同的模式，有着不同的适用范围，和不同的成本考量。其实没有所谓的绝对“安全”的感念，只要破坏这个系统的成本足够高，系统就是足够安全的。<strong>我们想聊流动性的安全性，其实是在聊流动性的成本。</strong></p>
+<p>实现完全的去中心化，需要高企的成本，预设了极其严苛的信用前提。而后续所有针对去中心化效率提高的提案，无非是尝试削弱对信用的预设，引入中心化的实体提供额外的默认信用。</p>
+<p>这究竟是好是坏，各执己见。我只是想提出一种可能性，相比起现在大范围流通的钱，私人流通的债券，在其私人领域会更有效，能够提供更高的流动性。这个私人领域可以是一个中心化公司的商业环境<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>，可以是一个DAO，也可以简单是一个人际关系的小圈子。能够传递内部交易信息的货币，是相比外部货币更高效的流通媒介，尽管这同样意味着需要由个人承担起交易风险。</p>
+<p>这也是去中心化的祝福与代价。</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">解决&quot;coincidence of wants&quot;。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;">和我们熟悉的电子支付的区别在于，不再依赖中心化的信用担保。</span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;">后果见08年次贷危机。</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;">而支撑起名声的，可能是封建迷信的风俗，比如所谓的天赐皇权，教皇至上的制度；也可能是军事战力，比如国家的形成。</span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;">比如Vitalik主张的Proof of Stake。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline; vertical-align: top;">比如Satoshi主张的Proof of Work。</span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline; vertical-align: top;">在Proof of Work的框架下，意味着电力和机器的成本，该成本仍远低于资本的垄断程度。</span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline; vertical-align: top;">Facebook将于19.6.18公开其私域流通的加密货币的白皮书。</span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline; vertical-align: top;">本文的部分思路启发于《evil is the root of all money》。</span><a href="#fnref:9" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
+    <summary type="html">
+    <![CDATA[我们经常说比特币能够代替银行，其实说的是能够取代银行的信用，而信用提供了流动性。因为我信任你，所以你的债务能够流动开。这也是为什么银行的债务具备公信力，而最具备公信力的是国债。基于这个逻辑，我们能够得到一个有趣的结果：能够提供信用的人，也能够承担一部分银行的作用。本文尝试基于不同的信用来源，提出一个脑洞，相比起现在大范围流通的政府印出的纸币，私人流通的债券，在其私人领域会更有效，能够提供更高的流动性，尽管这同样意味着需要由个人承担起交易风险。这也正是去中心化的祝福与代价。]]>
+    
+    </summary>
+    
+      <category term="社会人文" scheme="http://chocoluffy.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E6%96%87/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="区块链" scheme="http://chocoluffy.com/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/"/>
+    
+      <category term="哈耶克" scheme="http://chocoluffy.com/tags/%E5%93%88%E8%80%B6%E5%85%8B/"/>
+    
+      <category term="科技" scheme="http://chocoluffy.com/tags/%E7%A7%91%E6%8A%80/"/>
+    
+      <category term="脑洞" scheme="http://chocoluffy.com/tags/%E8%84%91%E6%B4%9E/"/>
+    
+      <category term="加密经济" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E5%AF%86%E7%BB%8F%E6%B5%8E/"/>
+    
+      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[一部货币演化史，以及21世纪的“比特币本位”]]></title>
     <link href="http://chocoluffy.com/2019/06/01/%E4%B8%80%E9%83%A8%E8%B4%A7%E5%B8%81%E6%BC%94%E5%8C%96%E5%8F%B2%EF%BC%8C%E4%BB%A5%E5%8F%8A21%E4%B8%96%E7%BA%AA%E7%9A%84%E2%80%9C%E6%AF%94%E7%89%B9%E5%B8%81%E6%9C%AC%E4%BD%8D%E2%80%9D/"/>
     <id>http://chocoluffy.com/2019/06/01/一部货币演化史，以及21世纪的“比特币本位”/</id>
     <published>2019-06-01T20:14:13.000Z</published>
-    <updated>2019-06-03T14:25:08.129Z</updated>
+    <updated>2019-06-14T13:16:13.443Z</updated>
     <content type="html"><![CDATA[<p>《The Bitcoin Standard》的读后感。4.5星。这本书更像是一部货币演化史，依次介绍了货币在不同时期的作用和局限。</p>
 <p>经济学里面有一个很有意思的讨论是，信用体系和货币体系究竟谁先出现。这个讨论启发了后续很多的机制设计的大致思路。Vitalik认为是信用体系先出现，也即债券的流动先于货币出现<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，而<strong>信用的流动性源于抵押物</strong>。这也成为了Vitalik提出的Proof of Stake的核心思想：Staking。而另一个方向，也是这本书的出发点，认为货币体系早于信用体系的出现，这强调货币作为价值交换媒介的属性，而成为交换媒介的前提是价值存储。<strong>其拥有的价值源于其稀缺性，也就是生产所付出的时间成本</strong>。这也成为了Satoshi提出的Proof of Work的核心思想，而比特币的价格也将最终趋向于挖矿成本的纳什平衡。</p>
 <p>这本书前半部分很精彩。概括来说，时代的变迁带来了不同的关注点，19世纪经济学家的重心在于，理解货币作为一种市场商品，得以在时间，空间上帮助经济价值交换。这带来了纸币普及等发展。而随着战争爆发，中心银行的建立导致货币贬值危机发生，20世纪许多经济学家的主要理论聚焦在：反思如何保持货币对主权（sovereign）的独立性。而21世纪的经济理论和发明将尝试实现，去中心化（去主权）的货币独立，比如比特币。</p>
@@ -60,7 +103,7 @@
     <link href="http://chocoluffy.com/2019/05/21/%E5%86%8D%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%88%86%E6%9D%83%E8%AE%BE%E8%AE%A1%E7%BB%86%E8%8A%82/"/>
     <id>http://chocoluffy.com/2019/05/21/再看区块链的分权设计细节/</id>
     <published>2019-05-22T03:11:31.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.443Z</updated>
     <content type="html"><![CDATA[<p>《The Book of Satoshi》的读后感。我为什么觉得加密货币经济很吸引人，因为它实际上是在从机制设计这个角度在挑战人性里最难克服的一部分：马太效应。</p>
 <p>尽管加密货币对安全性的高要求可能是对商业环境上的一个不合理的假设，而导致未来的一段时间可能很难看见具体的消费者场景<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，但它对我们社会依旧有意义，因为它其实是在尝试提出一种分权设计的思路。</p>
 <p>以下拿Satoshi的区块链和比特币来举例。理解一致的公开账本（global timestamp byzantine problem）以及支付验证（digital signature &amp; hash chain）是如何通过<strong>分布式的实体</strong>来实现的，是区块链的精髓。<strong>因为如果这些操作是由一个中心化的实体完成的，那么这个故事本质上和银行没有什么区别</strong>。而这马上带来的另一个挑战就是，如何设计规则去激励或者惩罚他们，使得分布式节点在有可能共谋，甚至还未存在（未来才加入）的情况下，依旧能达成共识。</p>
@@ -99,7 +142,7 @@
     <link href="http://chocoluffy.com/2019/05/12/%E6%88%91%E6%B2%A1%E6%9C%89%E7%BB%9D%E5%AF%B9%E7%9A%84%E5%AE%B3%E6%80%95%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%BF%85%E9%A1%BB%E5%BE%AE%E7%AC%91%E3%80%82/"/>
     <id>http://chocoluffy.com/2019/05/12/我没有绝对的害怕，也不必须微笑。/</id>
     <published>2019-05-12T20:59:11.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<p>什么是自由？</p>
 <p>我也到了一个时刻，需要对这些问题有自己的想法了。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 <p>自由有很多语境。不同语境下的自由意味着不同的东西。这里想分享一个从媚俗和审美的角度出发理解自由的角度，以及为什么艺术和文学能够帮助我们维护自由。</p>
@@ -137,7 +180,7 @@
     <link href="http://chocoluffy.com/2019/05/02/Startup-Studio%E7%BB%93%E8%AF%BE%E6%80%BB%E7%BB%93/"/>
     <id>http://chocoluffy.com/2019/05/02/Startup-Studio结课总结/</id>
     <published>2019-05-03T00:21:04.000Z</published>
-    <updated>2019-06-03T14:25:08.129Z</updated>
+    <updated>2019-06-14T13:16:13.439Z</updated>
     <content type="html"><![CDATA[<p>在Cornell Tech这一年里最有收获的几堂课之一，由David Tisch主讲的Startup Studio就这样结束了。其实很多时候并不是在评价这门课本身的好坏，而是在于它创造了一个和其他优秀小伙伴组队的机会，并且设置了一个高难度的关卡，而在整个过关的过程里，你不断暴露出缺点也不断改进，最终学习到这个关卡目标所代表的意义。如果关卡是一份作业，那么你学习到完成这个作业所需要的知识仅此而已，而在这里，这个关卡是学习创立一个公司，从零到一。仔细一想，这个逻辑其实也解释了学校，而非教育，的意义。The best education comes from inside, only.</p>
 <a id="more"></a>
 <h3 id="Startup_Studio_final_presentation_-_19-4-30">Startup Studio final presentation - 19.4.30</h3><ul>
@@ -207,7 +250,7 @@
     <link href="http://chocoluffy.com/2019/05/01/%E7%A2%8E%E8%AF%AD-2019-Apr/"/>
     <id>http://chocoluffy.com/2019/05/01/碎语-2019-Apr/</id>
     <published>2019-05-01T23:56:29.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-04-30">2019-04-30</h2><ul>
 <li>削弱意义的方式：放到大庭广众的面前。</li>
 <li>spark: email delegation. assign to somebody and set deadline(choose to follow all updates or only it get done). model: allow 10 active delegations per team, otherwise pay premium</li>
@@ -679,7 +722,7 @@
     <link href="http://chocoluffy.com/2019/04/05/%E7%A2%8E%E8%AF%AD-2019-Mar/"/>
     <id>http://chocoluffy.com/2019/04/05/碎语-2019-Mar/</id>
     <published>2019-04-06T01:53:29.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-03-31">2019-03-31</h2><ul>
 <li><p>TrimIt。一个有启发的故事。将barber通过Vans运输到客户那里，客户利用app预约剪头发。同时在剪头的时候打开车门，是效果很好的市场营销。这个可以应用于很多实体店的服务。<br>接下来的商业化：从理发延伸到你的私人造型师，随时预约随到；以及基于地理位置的需求pooling。</p>
 <blockquote>
@@ -950,7 +993,7 @@
     <link href="http://chocoluffy.com/2019/04/05/The-journey-is-the-reward-%E3%80%8A%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/04/05/The-journey-is-the-reward-《乔布斯传》阅读批注/</id>
     <published>2019-04-05T18:39:59.000Z</published>
-    <updated>2019-06-03T14:25:08.129Z</updated>
+    <updated>2019-06-14T13:16:13.439Z</updated>
     <content type="html"><![CDATA[<p>我答应自己在毕业前要看的几本书。 其中有《乔布斯传》和《堂吉柯德》。</p>
 <p>我想，教育，以及独特的经历在达成这样的目的：<strong>有一个坚定想要的东西，不会因为生活巨大的震荡所干扰。</strong></p>
 <p>而人的一生，也不过是通过漫长的道路，重新发现那两三个简单却丰盛的词语。然后从它们出发，去观察整个世界。</p>
@@ -1155,7 +1198,7 @@
     <link href="http://chocoluffy.com/2019/03/31/VC-Day%E9%A1%B9%E7%9B%AE%E8%A7%82%E5%AF%9F/"/>
     <id>http://chocoluffy.com/2019/03/31/VC-Day项目观察/</id>
     <published>2019-04-01T01:06:57.000Z</published>
-    <updated>2019-06-03T14:25:08.129Z</updated>
+    <updated>2019-06-14T13:16:13.443Z</updated>
     <content type="html"><![CDATA[<p>近期我参与到了Cornell Tech组织的VC day，并代表Firis团队做了公开pitch。这篇博客作为我参与流程中的观察和思考。</p>
 <p>能够在多名重量级VC面前实打实地pitch是一次很宝贵的锻炼机会。90秒时间，到时间强制打断，只有三张slides的展示机会。基本钉死了要我们剥离出这个产品最重要的东西。</p>
 <p>不同的产品在准备故事的时候有不同的侧重点。</p>
@@ -1224,7 +1267,7 @@
     <link href="http://chocoluffy.com/2019/03/30/%E6%8A%80%E6%9C%AF%E7%9A%84%E5%81%8F%E8%A7%81-%E3%80%8A%E6%8A%80%E6%9C%AF%E5%9E%84%E6%96%AD%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/03/30/技术的偏见-《技术垄断》阅读批注/</id>
     <published>2019-03-30T15:36:57.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<p>4.5/5星。 </p>
 <p>有些时候我会很警惕被热烈拥护的主流观点，我不是在反对主流本身，而只是想看清楚我们会失去什么，和那些还没被说完甚至被刻意隐瞒的话。</p>
 <p>这也是这本书观察技术进步史的角度。</p>
@@ -1337,7 +1380,7 @@
     <link href="http://chocoluffy.com/2019/03/06/%E5%A6%82%E4%BD%95%E5%90%91%E6%8A%95%E8%B5%84%E4%BA%BA%E8%AE%B2%E5%A5%BD%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B/"/>
     <id>http://chocoluffy.com/2019/03/06/如何向投资人讲好一个故事/</id>
     <published>2019-03-07T02:05:45.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.443Z</updated>
     <content type="html"><![CDATA[<h2 id="如何讲好一个故事">如何讲好一个故事</h2><ul>
 <li>不一定要追求形式，比如要讲market, why now, validation, demo等等，而是以flow流畅地串联起来。记住一定不要讲core tech。<strong>目的是，如果最终audience提问的时候问：”你们这个是怎么做的？“，对你的tech感兴趣了，就说明你的story是成功的。</strong></li>
 <li>对待不同的人，会讲不同的故事。比如对于投资人来说，最重要的永远是market和product。对待客户来说，最重要的是你到底能够帮助我解决一个怎样的问题，可以带给他多大的利益。</li>
@@ -1390,7 +1433,7 @@
     <link href="http://chocoluffy.com/2019/02/28/%E4%B8%8D%E4%BE%9D%E8%B5%96%E7%90%86%E6%80%A7%E8%80%8C%E8%8E%B7%E5%BE%97%E5%B8%8C%E6%9C%9B-%E3%80%8A%E8%87%B4%E5%91%BD%E7%9A%84%E8%87%AA%E8%B4%9F%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/02/28/不依赖理性而获得希望-《致命的自负》阅读批注/</id>
     <published>2019-03-01T01:44:54.000Z</published>
-    <updated>2019-06-03T14:25:08.129Z</updated>
+    <updated>2019-06-14T13:16:13.443Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>哈耶克的思想很大程度上是对于两次世界大战，以及德国纳粹历史的反馈。</li>
 <li>哈耶克反对的重点不在于意识形态，或者说社会主义是否在道德上可取，而是他是从<strong>“效应”</strong>的角度入手的，他认为社会主义所倡导的办法不能够达到目标。</li>
@@ -1435,7 +1478,7 @@
     <link href="http://chocoluffy.com/2019/02/28/%E7%A2%8E%E8%AF%AD-2019-Feb/"/>
     <id>http://chocoluffy.com/2019/02/28/碎语-2019-Feb/</id>
     <published>2019-03-01T01:11:01.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-02-28">2019-02-28</h2><ul>
 <li><p>近期有空可以研究的主题：</p>
 <ul>
@@ -1739,7 +1782,7 @@
     <link href="http://chocoluffy.com/2019/02/21/%E7%A2%8E%E8%AF%AD-2019-Jan/"/>
     <id>http://chocoluffy.com/2019/02/21/碎语-2019-Jan/</id>
     <published>2019-02-22T00:43:23.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<p>特别充实的一个月呢。</p>
 <p>写下了过去一年的总结，像把手伸向夜空里的星星一样，我向着心里面打捞着微光闪烁。算是厘清楚了，我所追逐的自由的背面，不是束缚，曾经我以为是彷徨，当时的我觉得是媚俗。而再过去一个月，现在的我还想增加一个选项。比媚俗更可怕的，是基于媚俗的优越感。</p>
 <p>我也第一次踏上了去以色列的旅途。边境，沙漠，集中营。如果不是学校组织，我自己恐怕是没这个勇气和胆识来这么多地方的。喜欢一种被陌生击碎的新奇感觉，却也熟知故事都是押韵的。一路上也捕获了很多灵感，特别是我未来第二和第三只猫的名字，我想叫你们Sancho和Dolorosa呢。而我遇见的最美的名字还是这座城市特拉维夫（Tel Aviv），翻译过来是，被石头堆叠起来的春天。我想，这就是文明（Civilization）的意思吧，带着人类最大的骄傲。</p>
@@ -2288,7 +2331,7 @@
     <link href="http://chocoluffy.com/2019/01/20/%E4%BB%B7%E6%A0%BC%E6%97%A0%E6%B3%95%E8%B0%83%E8%8A%82%E7%9A%84%E5%B8%82%E5%9C%BA-%E3%80%8A%E5%85%B1%E4%BA%AB%E7%BB%8F%E6%B5%8E%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/01/20/价格无法调节的市场-《共享经济》阅读批注/</id>
     <published>2019-01-21T00:54:51.000Z</published>
-    <updated>2019-06-03T14:25:08.129Z</updated>
+    <updated>2019-06-14T13:16:13.443Z</updated>
     <content type="html"><![CDATA[<p>4/5星。</p>
 <p>区别于价格市场，配对市场里，价格不能清理市场，市场参与者在意他们和谁交易，以及建立长期关系。由配对市场引出的几个规则很有意思，比如2012年诺奖理论的“延迟接受”算法，隐式市场里的第二高价拍卖机制，以及在稠密市场的情况下对堵塞的不同反映机制（提前交易或者最后入场等）。关于市场设计同样重要的还有（1）如何形成市场的稠密性。（2）解决市场堵塞。（3）保护设计使得参与者能够安全透露真实意愿。（4）合理释放信号促进市场效率。没有五星的理由是作者太执着于特定细分市场的规则分析，而且中译版的题目有凑热点的嫌疑<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，这本书并没有主要讨论大家希望了解的共享经济，而是在分析匹配市场的规则设计，也算是让我回顾了一下本科的博弈论这门课。拍卖是个人类很古老而智慧的发明，看看以后我可以怎么运用起来。</p>
 <ul>
@@ -2382,7 +2425,7 @@
     <link href="http://chocoluffy.com/2019/01/17/%E8%BE%A9%E9%A2%98-%E4%BA%BA%E6%9C%89%E6%B2%A1%E6%9C%89%E8%A1%A8%E8%BE%BE%E5%81%8F%E8%A7%81%E7%9A%84%E8%87%AA%E7%94%B1/"/>
     <id>http://chocoluffy.com/2019/01/17/辩题-人有没有表达偏见的自由/</id>
     <published>2019-01-17T23:18:32.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
+    <updated>2019-06-14T13:16:13.451Z</updated>
     <content type="html"><![CDATA[<p>2018新国辩，哲理辩论（第二场）周玄毅VS黄执中：人有/没有表达偏见的自由。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 <h2 id="正方：人有表达偏见的自由（周玄毅）">正方：人有表达偏见的自由（周玄毅）</h2><ul>
 <li>我们对偏见本身就是有偏见的。有些偏见可能无关痛痒，而另外一些却会遭到极力的排斥。</li>
@@ -2438,7 +2481,7 @@
     <link href="http://chocoluffy.com/2019/01/04/%E9%9D%9E%E4%B8%BB%E6%B5%81%E7%9A%84%E4%B8%BB%E6%B5%81-%E3%80%8A%E8%AE%A2%E9%98%85%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/01/04/非主流的主流-《订阅》阅读批注/</id>
     <published>2019-01-05T01:36:41.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
+    <updated>2019-06-14T13:16:13.451Z</updated>
     <content type="html"><![CDATA[<p>未来的娱乐内容的分布：越来越多的续集会出现在电影院线上，因为这是风险最小的；精品剧集集中出现在订阅式流媒体，而原创新品则放在Youtube等低门槛平台负责曝光造势和社区影响力。</p>
 <a id="more"></a>
 <ul>
@@ -2521,7 +2564,7 @@
     <link href="http://chocoluffy.com/2019/01/02/%E6%B0%B8%E8%BF%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E9%95%9C%E5%A4%B4-%E3%80%8A%E4%B8%8D%E6%9C%BD%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     <id>http://chocoluffy.com/2019/01/02/永远存在的镜头-《不朽》读后感/</id>
     <published>2019-01-02T20:55:30.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<p>昆德拉的小说是没有结局的。</p>
 <p>他自己也在小说里面承认了这一点。他没有一个希望匆匆奔向的目标。他说“小说不应该像一场自行车比赛，而要像一场宴会，频繁上菜。一个新的人物，他不是任何东西的因，也绝不产生果”，我也恍然，原来这就是《轻》的由来。</p>
 <ul>
@@ -2571,7 +2614,7 @@
     <link href="http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/"/>
     <id>http://chocoluffy.com/2019/01/01/抵抗存在的被遗忘/</id>
     <published>2019-01-01T22:09:52.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<h2 id="1">1</h2><p>今年的关键词让我来选择，是“告别”。</p>
 <p>我告别了给予我第一场雪的城市，和一群我最最依赖的伙伴。</p>
 <p>这个时代也是流行告别的。</p>
@@ -2638,7 +2681,7 @@
     <link href="http://chocoluffy.com/2018/12/31/%E7%A2%8E%E8%AF%AD-2018-Dec/"/>
     <id>http://chocoluffy.com/2018/12/31/碎语-2018-Dec/</id>
     <published>2019-01-01T02:49:18.000Z</published>
-    <updated>2019-06-03T14:25:08.133Z</updated>
+    <updated>2019-06-14T13:16:13.447Z</updated>
     <content type="html"><![CDATA[<h2 id="18-12-31_2018年度总结">18.12.31 2018年度总结</h2><blockquote>
 <p>塞万提斯在《堂吉柯德》的结尾这么说，我的愿望只有一个，那就是：让人们厌弃骑士小说中的那些胡编乱造的故事。最终，一部坚定反对骑士文化的作品塑造了我相信的骑士文化。</p>
 <p>我的愿望也很简单，抵抗那些因由媚俗而胡编乱造的虚无故事，抵抗存在的被遗忘。 - <a href="http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/">抵抗存在的被遗忘</a></p>
@@ -2927,80 +2970,6 @@
       <category term="社交网络" scheme="http://chocoluffy.com/tags/%E7%A4%BE%E4%BA%A4%E7%BD%91%E7%BB%9C/"/>
     
       <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[哈伯格税：面向共享经济的创新？]]></title>
-    <link href="http://chocoluffy.com/2018/12/18/%E8%B0%88%E8%B0%88%E5%93%88%E4%BC%AF%E6%A0%BC%E7%A8%8E%E4%B8%8E%E6%BF%80%E8%BF%9B%E5%B8%82%E5%9C%BA/"/>
-    <id>http://chocoluffy.com/2018/12/18/谈谈哈伯格税与激进市场/</id>
-    <published>2018-12-18T22:15:07.000Z</published>
-    <updated>2019-06-03T14:25:08.137Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>导语：</p>
-<p>哈伯格税的提出，是为了解决闲置私人资产的流通。私有资产会导致垄断，而极端的公有化又容易造成公地悲剧。这套体系的提出，也是在思考绝对的私有制和公有制之间是否存在折中的方案。</p>
-<p>我一直认为没有最正确的经济体系，只有最适应这个时代的体系。当人们慢慢习惯一个强调使用权而非拥有权的时代，当个体的身份、群体之间的关系逐渐虚拟化和碎片化，我们会不会更容易接受这项议题：我和陌生人们按比例共同拥有着这些资产，譬如我们的房屋，手机，乃至我们的移民身份……</p>
-<p>现在的经济市场对曾经的人们来说，一度也是激进市场。尝试去理解哈伯格税，也是为了去理解那些潜藏在身边的观念和需求的变化。</p>
-<p>或许未来已经来了，只是还没扩散开。</p>
-</blockquote>
-<p>了解哈伯格税的缘由，来自于以太坊创始人Vitalik今年四月的一篇书评博文<a href="https://vitalik.ca/general/2018/04/20/radical_markets.html" target="_blank" rel="noopener"><on radical="" markets=""></on></a>，关于Posner和Glen Weyl的新书《激进市场》<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>。书里阐述了四项激进的实验性策略，涉及经济和政治等不同领域，分别尝试去调解新时代背景下的财产权，选民投票权，移民以及数据隐私等议题。</p>
-<p>而其中最令我感兴趣的哈伯格税，来自于作者对闲置物品财产权归属问题的研究。辅助参考了作者另外一篇论文《产权只是另一种形式的垄断》<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，我也想写下一些我的看法。</p>
-<h3 id="哈伯格税_(Harberger_tax)">哈伯格税 (Harberger tax)</h3><p>首先，这个税的规则是：</p>
-<ol>
-<li>为私人拥有的财产提交自己的估价，同时根据估价，每年提交相应的税。</li>
-<li>市场上的任何人都可以支付你提交的估价，而强行达成交易。</li>
-</ol>
-<p>简单来说，这个规则会让你为自己的财产估值而付出代价。如果估得低，别人提出的匹配价格也低，可以直接买走你的财产，而如果估得高，则自己需要上缴的税也会高，以此来达到平衡，鼓励每个人客观的评估自己的财产。</p>
-<p>这一套规则首先尝试解决一个影响市场交易效率的问题：<strong>私有财产估价虚高。</strong></p>
-<p>这个问题的基础出于一个假设：<strong>产权是一种垄断</strong>，而由于垄断带来的持有者议价能力的提高阻碍了市场的交易。简单来说：<strong>私有财产所创造的议价问题会阻碍分配效率</strong>。</p>
-<p>通过提议每个人为自己的估价提交税，哈伯格税同时尝试解决的第二个问题则是，<strong>解决闲置资源的市场匹配。</strong></p>
-<h3 id="质疑">质疑</h3><p>首先分析一下实用性。</p>
-<p>在尝试将这个想法运用在真实的交易场景中的时候，会发现实际情况不一定能够满足这个理论的基础假设。</p>
-<p>如果我们希望交易的闲置物品是大宗商品，我们处于一个买方市场而非卖方市场的时候。对资产的垄断并不能推出交易时报价偏高的结论，因为存在市场其他产品持有者的价格压力。<strong>此时你的议价能力是由市场上其他竞争者所决定的，而非来源于你的垄断</strong>。</p>
-<p>因此该论文所讨论的假想对象，还是集中在诸如土地，房产，高科技设备等偏向卖方市场的资产，有垄断企图的资产。这一部分资产将因为哈伯格税的存在而减少闲置成本的耗费。</p>
-<p>进一步推断，这个假设同样也适用于“人为造成”的供应者市场。譬如：极其个性化定制的商品，或者由于人的关联价值而留下的纪念品，遗物比如梵高的向日葵画等等。</p>
-<p>作者在论文中确实证实了我这个推断的前一部分，论文提到了土地等自然资源，以及房产资源，同时作者还补充了，公司财产的处置也可以应用该规则。同样适用的，还有专利法则。作者引用了第三方调查认为某种意义上，知识作为一种垄断财产，专利法则也是在妨碍知识在市场上被更好地分配和利用。<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></p>
-<p>这些经济学家认为，打破垄断的唯一方法，是对财产通过税收进行国有化。( only solution to the monopoly problem was nationalization (through taxation) of many forms of property. ) 进而引出了拍卖机制。</p>
-<p>同时需要注意的还有，哈伯格税致力削弱的财产垄断，影响了原有的哪些垄断的好处。作者认为，因由私人产权所带来的垄断，给予了拥有者投资改善该资产的激励。某种程度上来说，<strong>私人产权意味着，拥有把这个资产空置的权利</strong>。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> 而该稳定的所有权及其预期，将允许所有者通过后续投资 (investment) 而获利。类似地，譬如公司品牌归属于该公司私人资产的范畴，同时也具有长期稳定的预期，除非公司倒闭该品牌会一直伴随其中。而这在某种程度上也解释了为什么腾讯视频等大型视频内容提供商愿意花大价钱去制作小众而口碑好的产品，譬如奇遇人生等。相反地，如果我对资产有着不确定的预期，假如未来的某一天都可能有人剥夺该资产，伤害的是所有者的投资意愿。在相同的例子里，如果某视频网站处在一个极其激烈的，随时可能被取代的市场环境，利己的策略是赚快钱存活下来，而非花大价钱投资品牌。</p>
-<p>基于这个思路，我认为这项哈伯格税可能带来的<strong>最大的害处，或许就在于人们可能低估了拥有权不稳定的情况对人们行为预期的影响，在于私有财产不再神圣不可侵犯</strong>。</p>
-<p>这意味着很多。</p>
-<p>这意味着你只是在行使财产暂时的使用权，而非拥有的权利。这意味着你无须对财产作进一步投资，你无须有和它更加长远的规划。</p>
-<p>对我一个存在主义者来说，这也是认为，我无须真正感受它，驯服它，以及想象和它的未来。没有归属感。好吧挺讨厌的。</p>
-<p>听起来有点熟悉吧，这其实就是公地悲剧的原型嘛。曾经我们说解决公地悲剧的其中一种办法是，外部利益内部化，也即建立内部私有产权机制。而哈伯格税这套理论，在某种意义上是希望逆向拆解了私有产权而创建了一个公有资源的交易环境。而相比公地场景下直接的的共同所有权 (common ownership) ，作者提出的部分共同所有权 (partial common ownership) 更像是一个折中的方案。我与其他人共同拥有资产，从而在保留我对资产的投资愿意的同时，也允许我通过资产的重分配而获利。</p>
-<p>改善“资产垄断而妨碍分配效率“还有没有其他方式呢。在知识产权上，我们有一个更极端的典范，就是有时限的知识产权。知识，专利作为短期内发明者的私人资产，在保护期结束后归属于全人类所有。但是面对社会私人资产譬如土地，房产，施行有时限的产权会面临很大的社会阻力。某种意义上哈伯格税预示着大范围的财富再分配，这对于资产持有者多的人群影响最大。</p>
-<h3 id="创新点">创新点</h3><p>除去上文所提及的哈伯格税规则实行的潜在弊端，这项规则有没有带来什么创新的地方呢。</p>
-<p>我认为其中一点是根据交易前提交的自我评估的价格交税。重点在“交易前”和“自我评估”。类似的规则还会有很多变式，譬如“交易后的补偿价格”，或者是引入“第三方的司法评估”。之所以哈伯格税选择这一种搭配，我认为是为了<strong>最大化私人信息的准确性</strong>。</p>
-<p>经济学，相比于自然科学，其中一个很大的区别在于，没有绝对的“所有信息”，信息而是分散的，是分布在每一个人上的。于是，经济学讨论的是一种机制，如何设计更适合将分散的信息信号传播给其他人，从消费者传播给生产者。<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup> 而人们自己对财产的估值，就是这样一种私人的分散的信息。信息越准确，越能反应局部的供需关系，越能提高市场的交易效率。</p>
-<p>第二点是哈伯格税尝试促进的闲置物品的分配效率，而不是私人产权所着重的投资效率，在我们这个时代背景下的意义。当前在公司运作规则上常见的股份制或许会扩大其适用的范围。我们或许会同时和很多陌生人共享某些财产的拥有权，也拥有即时买入卖出这部分权利的机会。而当大多数人都或多或少参与进资本市场，拥有获得回报的权利，这会不会某种程度上削弱了近期民粹主义兴起的根基。相反地，让没有利益干系，责任能力的人具有投票权，往往迎合的是极端的革命家口号。<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
-<p>其次是对共享经济体系的影响。人们对这个时代的伪共享经济体系比如Ofo，Uber等等有很多误解，首先我觉得一个比较好区分是否是共享经济的方式，是去看这个商业模式是在分享闲置资源，还是在不断创造新的资源。当你看到的数据是数百万的小黄车被新制造出来投放进市场最后成为堆叠如山的城市垃圾，当你发现世界上超过2/3的Uber司机实际是全职司机，其中超过80%买车为了赚钱糊口<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup>……<strong>这不是通过分享闲置资源而取得进步的共享经济 (sharing economy)，而是利用新创造出来的资源以及大数据的调度而形成的按需经济 (on-demand economy)</strong>。这是科技进步带来的优势，而非制度的优势。</p>
-<p>在这一层澄清的基础上，去理解哈伯格税所面向的共享经济，是去平衡私人投资维护资产的意愿以及当资产闲置时用于市场交易的效率。开个脑洞，用Airbnb来举个例子。其实目前Airbnb面临的一个很棘手的问题是，出租房屋在经历了租客之后的维护。租客本身和房屋没有利益关系，底线是不破坏，这很大程度上依赖于租客的素质，而别说租客对房屋的投资意愿了，比如说清理，装饰，置办家具等等了。引入哈伯格税会带来什么改变呢，试想一下，每一个租户从上一个租户那里按照后者评估的价格买来该房屋的使用权，同时租户也为自己的使用期间估算价格并计算哈伯格税上缴给房屋拥有者。<strong>这个哈伯格税实际上，就是个体能够承受资产空置的代价，本质上也是个人对资产使用价值的理性评估</strong>。当我喜欢租这个房屋的时候，我愿意为了多住它而设置高的估值并上缴更多的哈伯格税，而当我结束租房希望出手交易的时候，可以设置较低的估值而找到下一个租客。这个规则的改变带来的变化是，出租的房屋和租客本身建立的利益关系，也因此由于该利益关系带来的对投资意愿的鼓励。试想想这种情况如果租客乱破坏房屋市场上还会有人愿意和他达成交易吗。</p>
-<p>作为脑洞这种设计还是具有很多明显漏洞的，但是实际在共享经济的背景下利用哈伯格的税收规则来定义人们的行为是具有借鉴意义的。以此延伸，另外想稍作启发的一点是。<strong>哈伯格税本质上增加财产持有的门槛，而这在某种意义上也是区分真正使用者，减少滥用（spam）的一种思路</strong>。参考hashcash 的设计原理<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>。为了炒房空囤房屋，为了营销发送大量垃圾邮件等等情景在某种程度上都可以归属于滥用，房屋的所有权被滥用导致闲置，邮件发送的廉价使用权被滥用导致垃圾邮件。而当我们逐一根据其滥用的方向征收成本的时候，对房屋所有权征收哈伯格税，对机器发送邮件验证哈希增加计算成本，是不是可以缓解滥用带来的危害。</p>
-<p>正如上文论述的哈伯格税的优劣之处，该理论的确阐述的是一个激进市场，而难以在短期内为政府所用。鉴于法律上的自由中立原则，以及法案决定的警示效应，该理论也很难短期通过法律。即便如此，这套理论带来的启示是多方面的，是面向一个我们可能很快就会迎接的共享经济的时代。</p>
-<p>而每一套理论框架的优劣势都是动态的。随着科技的变化所不断降低的实施成本已经深刻地改变了很多曾经既有理论的基础，而这也将为我们带来新的思考方向。 自由一定比管制优越吗，自由和隐私的边界在哪里……等等有趣的议题我觉得基于这个时代的技术都能够给予新的诠释。</p>
-<p>我也很感兴趣哈伯格税这套理论能够在哪些场景应用。目前通过调查已知的，是在一个DAO游戏《进化星球》的药水价格机制的设计中出现过<sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup>。如何找到一个合适的场景，虚拟代币交易或者二手市场等等，会是我后续一直关注的方向。</p>
-<p>或许未来已经来了，只是还没扩散开。</p>
-<p>🌟 知乎专栏链接：<a href="https://zhuanlan.zhihu.com/p/52724869" target="_blank" rel="noopener">哈伯格税：面向共享经济的创新？</a><br>🌟 豆瓣书评：<a href="https://book.douban.com/review/9836743/" target="_blank" rel="noopener">哈伯格税：面向共享经济的创新？</a></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline; vertical-align: top;">《激进市场》同样入选了经济学人18年的年度书单。</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline; vertical-align: top;"><a href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=12668&amp;context=journal_articles" target="_blank" rel="noopener">《Property Is Only Another Name for Monopoly》, Posner and Weyl</a></span><a href="#fnref:2" rev="footnote"> ↩</a></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">3.</span><span style="display: inline; vertical-align: top;"><a href="https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=12668&amp;context=journal_articles" target="_blank" rel="noopener">《Property Is Only Another Name for Monopoly》, Posner and Weyl</a>  Page 52.</span><a href="#fnref:3" rev="footnote"> ↩</a></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">4.</span><span style="display: inline; vertical-align: top;"><a href="https://orange.xyz/p/254" target="_blank" rel="noopener">再谈哈伯格税：极端的计划经济和市场经济，没准是同一个东西                                                                         - 橙皮书</a></span><a href="#fnref:4" rev="footnote"> ↩</a></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">5.</span><span style="display: inline; vertical-align: top;"><a href="https://site.douban.com/280724/widget/notes/193432971/note/643686878/" target="_blank" rel="noopener">哈耶克：知识在社会中的运用</a> 我认可哈耶克所代表的芝加哥自由主义经济学派的观点。</span><a href="#fnref:5" rev="footnote"> ↩</a></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">6.</span><span style="display: inline; vertical-align: top;"><a href="https://mp.weixin.qq.com/s?__biz=MzA4MTM5NTYzMA==&amp;mid=2659494084&amp;idx=1&amp;sn=051f4dad152486be3799e8b69c50b1a2&amp;chksm=84e5a205b3922b13c9b1e725a155c1e9ad4df4384709ccfb7b016bfae89a191cdce8a0995282&amp;scene=0#wechat_redirect" target="_blank" rel="noopener">《人类简史》作者分析特朗普崛起：自由主义终结了么？</a> 复习一下民粹主义在美国总统大选中的影响。</span><a href="#fnref:6" rev="footnote"> ↩</a></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">7.</span><span style="display: inline; vertical-align: top;"><a href="https://www.nytimes.com/2018/08/09/nyregion/uber-nyc-vote-drivers-ride-sharing.html" target="_blank" rel="noopener">Uber and the False Hopes of the Sharing Economy - The New York Times</a></span><a href="#fnref:7" rev="footnote"> ↩</a></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">8.</span><span style="display: inline; vertical-align: top;"><a href="https://orange.xyz/p/62" target="_blank" rel="noopener">hashcash算法：中本聪关于区块链的秘密都在这里                                                                           - 橙皮书</a></span><a href="#fnref:8" rev="footnote"> ↩</a></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">9.</span><span style="display: inline; vertical-align: top;"><a href="https://forum.evolution.land/posts/7" target="_blank" rel="noopener">EvolutionLand (进化星球) 是什么！ · EvolutionLand</a></span><a href="#fnref:9" rev="footnote"> ↩</a></li></ol></div></div>]]></content>
-    <summary type="html">
-    <![CDATA[当人们慢慢习惯一个强调使用权而非拥有权的时代，当个体的身份、群体之间的关系逐渐虚拟化和碎片化，我们会不会更容易接受这项议题：我和陌生人们按比例共同拥有着这些资产，譬如我们的房屋，手机，乃至我们的移民身份……现在的经济市场对曾经的人们来说，一度也是激进市场。尝试去理解哈伯格税，也是为了去理解那些潜藏在身边的观念和需求的变化。或许未来已经来了，只是还没扩散开。]]>
-    
-    </summary>
-    
-      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
-    
-      <category term="读书笔记" scheme="http://chocoluffy.com/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
-    
-      <category term="科技" scheme="http://chocoluffy.com/tags/%E7%A7%91%E6%8A%80/"/>
-    
-      <category term="自由主义" scheme="http://chocoluffy.com/tags/%E8%87%AA%E7%94%B1%E4%B8%BB%E4%B9%89/"/>
-    
-      <category term="政治" scheme="http://chocoluffy.com/tags/%E6%94%BF%E6%B2%BB/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="书摘" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/%E4%B9%A6%E6%91%98/"/>
     
   </entry>
   
