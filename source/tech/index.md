@@ -23,6 +23,12 @@ Stay hungry, stay foolish.
 - [写在1.0发布后第50天 - 鲸语开发者的独白](http://chocoluffy.com/2017/07/05/%E5%86%99%E5%9C%A81-0%E5%8F%91%E5%B8%83%E5%90%8E%E7%AC%AC50%E5%A4%A9-%E9%B2%B8%E8%AF%AD%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E7%8B%AC%E7%99%BD/)，校园媒体报道原文: [鲸语 - 一名多大校园开发者的独白](http://mp.weixin.qq.com/s?__biz=MjM5MjAyOTEzMg==&mid=2650158459&idx=1&sn=1b2f32919458c087c0e4f1099a42bfd3&chksm=beae15d889d99cce4438a03d180690daa8cef5e69681210641dad8c4a17b23a854e5e3c4759f#rd")
 - [鲸语1.0 - 多伦多玩乐攻略第一入口](http://chocoluffy.com/2017/03/20/App%E9%A6%96%E5%8F%91%EF%BD%9C%E9%B2%B8%E8%AF%AD-%E5%A4%9A%E4%BC%A6%E5%A4%9A%E7%8E%A9%E4%B9%90%E6%94%BB%E7%95%A5%E7%AC%AC%E4%B8%80%E5%85%A5%E5%8F%A3/)，校园媒体报道原文: [ADA出品 | 鲸语-精致你的生活](http://mp.weixin.qq.com/s?__biz=MjM5MjAyOTEzMg==&mid=2650158232&idx=2&sn=719c06bcfad6341e20e0985fbd2260d1&chksm=beae143b89d99d2d3cd52ff785c755b17dae54eb265d5b5f43b494f50dcb4e90c710dfba0302&scene=0#rd)
 
+## 加密经济
+
+Something I have deep faith in. 
+
+- [钱不是必要的，流动性才是。](https://chocoluffy.com/2019/06/14/%E9%92%B1%E4%B8%8D%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84%EF%BC%8C%E6%B5%81%E5%8A%A8%E6%80%A7%E6%89%8D%E6%98%AF%E3%80%82/)
+
 ## 机器学习 & 推荐系统
 
 Something I love and specialize.

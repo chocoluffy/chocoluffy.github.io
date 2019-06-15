@@ -24,3 +24,6 @@ Think different.
 
 [Airing的小屋](https://me.ursb.me)
 推荐理由：中山大学哲学系，零熊团队的管理人，也喜欢捣鼓创业项目。 / 更新频率：约3次/月。
+
+[南百城的城堡周刊](https://chengbao.bitcron.com/)
+推荐理由：一名做书人，生活的记录者。 / 更新频率：约1次/周。
