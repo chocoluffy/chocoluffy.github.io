@@ -103,6 +103,8 @@
 <meta property="og:site_name" content="余舜哲的 One Piece">
 <meta property="og:description" content="95.11.04，现Cornell Tech计算机系研究生。主攻机器学习和推荐系统方向。创业者·加密货币爱好者·文学爱好者。 我喜欢计算机，商业，加密经济，它们逐渐成为了我思考的坐标系，我的工具。而我喜欢文学，是它逐渐成为了我的触觉和我的声音。 最敬佩的作家是加缪和昆德拉。会念想着一辈子的作品，是堂吉柯德。  『我的技术笔记』 『我的生活随笔』&amp;amp; 『友链』 『我的书房』&amp;amp;『诗集』&amp;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper-demo.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/firis2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper2.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper3.png">
@@ -114,11 +116,11 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/sysomos-talk.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/master/auto-driving-optimized.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/master/auto-driving2.jpg">
-<meta property="og:updated_time" content="2019-06-15T10:12:40.395Z">
+<meta property="og:updated_time" content="2019-07-28T03:22:28.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于我">
 <meta name="twitter:description" content="95.11.04，现Cornell Tech计算机系研究生。主攻机器学习和推荐系统方向。创业者·加密货币爱好者·文学爱好者。 我喜欢计算机，商业，加密经济，它们逐渐成为了我思考的坐标系，我的工具。而我喜欢文学，是它逐渐成为了我的触觉和我的声音。 最敬佩的作家是加缪和昆德拉。会念想着一辈子的作品，是堂吉柯德。  『我的技术笔记』 『我的生活随笔』&amp;amp; 『友链』 『我的书房』&amp;amp;『诗集』&amp;">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/firis2.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper.png">
 
 
 
@@ -318,7 +320,14 @@
 <p>“One Piece到底存不存在，我不想知道。”</p>
 <p>或许将永远困惑，但也将永远寻找。困惑是我的真实，寻找是我的勇敢。</p>
 <a id="more"></a>
-<h1 id="个人经历">个人经历</h1><h2 id="2019">2019</h2><h3 id="Firis_(2019-1)">Firis <small>(2019.1)</small></h3><ul>
+<h1 id="个人经历">个人经历</h1><h2 id="2019">2019</h2><h3 id="基于深度学习的人眼修复_(2019-5)">基于深度学习的人眼修复 <small>(2019.5)</small></h3><ul>
+<li>开发者，负责模型训练和后端搭建。Cornell Tech CSC5787 Deep Learning近满分的结课项目。</li>
+<li>算法解决的问题：基于深度学习的人眼轮廓修复。适用场景如集体照中有小伙伴闭眼需要修复，以及后期人像调整时对眼部轮廓和颜色的微调。</li>
+<li>关键技术：两阶段GAN合同训练。一个负责边缘连接，另一个负责上色。</li>
+</ul>
+<div style="display: flex;"><br>  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper.png" class="img-2"><br>  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper-demo.png" class="img-2"><br></div>
+
+<h3 id="Firis_(2019-1)">Firis <small>(2019.1)</small></h3><ul>
 <li>联合创始人，兼开发者。</li>
 <li>Firis是一款视频制作应用，让用户在视频中成为真正的明星。比如，将「复仇者联盟」中的美国队长扮演者史蒂夫罗杰斯替换为用户，让美国队长有用户的面孔和声音。</li>
 <li>关键技术：利用CNN，Auto-encoder，CycleGan来完成图像转移和修复。</li>
@@ -329,8 +338,8 @@
 <li>算法解决的问题：利用自然语言搜索相关图像。例如，如果用户输入“一个正在玩滑板的人跳跃到空中”，该算法会从大型图像数据库中将最相关的图像进行排序，并返回搜索结果给用户。</li>
 <li>关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression， Word2Vec，对图片特征向量和词语向量进行跨模态的建模训练和回归预测。<a href="https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf" target="_blank" rel="noopener">论文地址</a>，<a href="https://github.com/chocoluffy/image-reverse-search-engine" target="_blank" rel="noopener">项目Github地址</a>。</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper2.png" style="display: block; margin: 0 auto; max-height: 400px"></p>
-<p><img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper3.png" style="display: block; margin: 0 auto; max-height: 250px"></p>
+<div style="display: flex;"><br>  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper2.png" class="img-2"><br>  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper3.png" class="img-2"><br></div>
+
 <h3 id="Look_(2018-9)">Look <small>(2018.9)</small></h3><ul>
 <li>开发者。联合Snapchat，Cornell Tech Product Studio项目。</li>
 <li>Look，是一款基于实时视频推荐在线相关时装的应用。</li>

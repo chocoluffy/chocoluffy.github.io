@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2019-06-15T10:12:40.391Z</updated>
+  <updated>2019-07-28T03:22:28.179Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -19,9 +19,9 @@
     <link href="http://chocoluffy.com/2019/06/14/%E9%92%B1%E4%B8%8D%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84%EF%BC%8C%E6%B5%81%E5%8A%A8%E6%80%A7%E6%89%8D%E6%98%AF%E3%80%82/"/>
     <id>http://chocoluffy.com/2019/06/14/钱不是必要的，流动性才是。/</id>
     <published>2019-06-14T14:57:27.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<p>钱，fiat currency，是没有真正价值的，能与之兑换的黄金才有。纸币被创造出来是为了帮助价值在时间和空间上的转移<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，这意味着流动性。而从另一个角度看，钱本质上也是价值流动性短缺的结果。而如果实现了更高效的价值转移，钱将因此不是必要的。这个趋势其实已经出现了，以paypal，微信支付等的电子支付，其实提供了一定线索。只是随着加密货币的应用范围不断拓展，将出现流动性更高的流通货币<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，而资产债券化也将更普遍。</p>
-<p>银行的存在是为了缩短钱的周转周期，<strong>因此银行本质上提供的是流动性。</strong>在直接的贸易交换中，直到我给你真金白银的时刻，你才拥有了支配那些钱的权利。但是在存在银行参与的情况下，不管我银行账户里有没有钱，在我们达成交易的时刻，你的账户里就多了这一笔钱而你可以随时随地消费它，我进而与银行存在了一笔债务。我和银行之间的的结算其实是滞后的，<strong>被缩短的这个时间差极大地改善了经济运转的效率，并使市场衍化出更为复杂的异步（asynchronous）结构。</strong>。从这个角度去看那些各式的金融衍生品，比如期货，次贷等等，实际上都是为了提高流动性，无论这个流动性是真实的，还是掺假的（即没有对应价值的抵押物）<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。</p>
+<p>银行的存在是为了缩短钱的周转周期，<strong>因此银行本质上提供的是流动性。</strong>在直接的贸易交换中，直到我给你真金白银的时刻，你才拥有了支配那些钱的权利。但是在存在银行参与的情况下，不管我银行账户里有没有钱，在我们达成交易的时刻，你的账户里就多了这一笔钱而你可以随时随地消费它，我进而与银行存在了一笔债务。我和银行之间的的结算其实是滞后的，<strong>被缩短的这个时间差极大地改善了经济运转的效率，并使市场衍化出更为复杂的异步（asynchronous）结构</strong>。从这个角度去看那些各式的金融衍生品，比如期货，次贷等等，实际上都是为了提高流动性，无论这个流动性是真实的，还是掺假的（即没有对应价值的抵押物）<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。</p>
 <p>进一步地，我们经常说比特币能够代替银行，其实说的是能够取代银行的信用，而<strong>信用提供了流动性</strong>。<strong>因为我信任你，所以你的债务能够流动开。</strong>这也是为什么银行的债务具备公信力，而最具备公信力的是国债。</p>
 <p>基于这个逻辑，我们能够得到一个有趣的结果：<strong>能够提供信用的人，也能够承担一部分银行的作用</strong>。</p>
 <p>而信用的来源则决定了其流动性的安全性。</p>
@@ -62,7 +62,7 @@
     <link href="http://chocoluffy.com/2019/06/01/%E4%B8%80%E9%83%A8%E8%B4%A7%E5%B8%81%E6%BC%94%E5%8C%96%E5%8F%B2%EF%BC%8C%E4%BB%A5%E5%8F%8A21%E4%B8%96%E7%BA%AA%E7%9A%84%E2%80%9C%E6%AF%94%E7%89%B9%E5%B8%81%E6%9C%AC%E4%BD%8D%E2%80%9D/"/>
     <id>http://chocoluffy.com/2019/06/01/一部货币演化史，以及21世纪的“比特币本位”/</id>
     <published>2019-06-01T20:14:13.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<p>《The Bitcoin Standard》的读后感。4.5星。这本书更像是一部货币演化史，依次介绍了货币在不同时期的作用和局限。</p>
 <p>经济学里面有一个很有意思的讨论是，信用体系和货币体系究竟谁先出现。这个讨论启发了后续很多的机制设计的大致思路。Vitalik认为是信用体系先出现，也即债券的流动先于货币出现<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，而<strong>信用的流动性源于抵押物</strong>。这也成为了Vitalik提出的Proof of Stake的核心思想：Staking。而另一个方向，也是这本书的出发点，认为货币体系早于信用体系的出现，这强调货币作为价值交换媒介的属性，而成为交换媒介的前提是价值存储。<strong>其拥有的价值源于其稀缺性，也就是生产所付出的时间成本</strong>。这也成为了Satoshi提出的Proof of Work的核心思想，而比特币的价格也将最终趋向于挖矿成本的纳什平衡。</p>
 <p>这本书前半部分很精彩。概括来说，时代的变迁带来了不同的关注点，19世纪经济学家的重心在于，理解货币作为一种市场商品，得以在时间，空间上帮助经济价值交换。这带来了纸币普及等发展。而随着战争爆发，中心银行的建立导致货币贬值危机发生，20世纪许多经济学家的主要理论聚焦在：反思如何保持货币对主权（sovereign）的独立性。而21世纪的经济理论和发明将尝试实现，去中心化（去主权）的货币独立，比如比特币。</p>
@@ -103,7 +103,7 @@
     <link href="http://chocoluffy.com/2019/05/21/%E5%86%8D%E7%9C%8B%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E5%88%86%E6%9D%83%E8%AE%BE%E8%AE%A1%E7%BB%86%E8%8A%82/"/>
     <id>http://chocoluffy.com/2019/05/21/再看区块链的分权设计细节/</id>
     <published>2019-05-22T03:11:31.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<p>《The Book of Satoshi》的读后感。我为什么觉得加密货币经济很吸引人，因为它实际上是在从机制设计这个角度在挑战人性里最难克服的一部分：马太效应。</p>
 <p>尽管加密货币对安全性的高要求可能是对商业环境上的一个不合理的假设，而导致未来的一段时间可能很难看见具体的消费者场景<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，但它对我们社会依旧有意义，因为它其实是在尝试提出一种分权设计的思路。</p>
 <p>以下拿Satoshi的区块链和比特币来举例。理解一致的公开账本（global timestamp byzantine problem）以及支付验证（digital signature &amp; hash chain）是如何通过<strong>分布式的实体</strong>来实现的，是区块链的精髓。<strong>因为如果这些操作是由一个中心化的实体完成的，那么这个故事本质上和银行没有什么区别</strong>。而这马上带来的另一个挑战就是，如何设计规则去激励或者惩罚他们，使得分布式节点在有可能共谋，甚至还未存在（未来才加入）的情况下，依旧能达成共识。</p>
@@ -142,7 +142,7 @@
     <link href="http://chocoluffy.com/2019/05/12/%E6%88%91%E6%B2%A1%E6%9C%89%E7%BB%9D%E5%AF%B9%E7%9A%84%E5%AE%B3%E6%80%95%EF%BC%8C%E4%B9%9F%E4%B8%8D%E5%BF%85%E9%A1%BB%E5%BE%AE%E7%AC%91%E3%80%82/"/>
     <id>http://chocoluffy.com/2019/05/12/我没有绝对的害怕，也不必须微笑。/</id>
     <published>2019-05-12T20:59:11.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<p>什么是自由？</p>
 <p>我也到了一个时刻，需要对这些问题有自己的想法了。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 <p>自由有很多语境。不同语境下的自由意味着不同的东西。这里想分享一个从媚俗和审美的角度出发理解自由的角度，以及为什么艺术和文学能够帮助我们维护自由。</p>
@@ -180,7 +180,7 @@
     <link href="http://chocoluffy.com/2019/05/02/Startup-Studio%E7%BB%93%E8%AF%BE%E6%80%BB%E7%BB%93/"/>
     <id>http://chocoluffy.com/2019/05/02/Startup-Studio结课总结/</id>
     <published>2019-05-03T00:21:04.000Z</published>
-    <updated>2019-06-15T10:12:40.383Z</updated>
+    <updated>2019-07-28T03:22:28.171Z</updated>
     <content type="html"><![CDATA[<p>在Cornell Tech这一年里最有收获的几堂课之一，由David Tisch主讲的Startup Studio就这样结束了。其实很多时候并不是在评价这门课本身的好坏，而是在于它创造了一个和其他优秀小伙伴组队的机会，并且设置了一个高难度的关卡，而在整个过关的过程里，你不断暴露出缺点也不断改进，最终学习到这个关卡目标所代表的意义。如果关卡是一份作业，那么你学习到完成这个作业所需要的知识仅此而已，而在这里，这个关卡是学习创立一个公司，从零到一。仔细一想，这个逻辑其实也解释了学校，而非教育，的意义。The best education comes from inside, only.</p>
 <a id="more"></a>
 <h3 id="Startup_Studio_final_presentation_-_19-4-30">Startup Studio final presentation - 19.4.30</h3><ul>
@@ -250,7 +250,7 @@
     <link href="http://chocoluffy.com/2019/05/01/%E7%A2%8E%E8%AF%AD-2019-Apr/"/>
     <id>http://chocoluffy.com/2019/05/01/碎语-2019-Apr/</id>
     <published>2019-05-01T23:56:29.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-04-30">2019-04-30</h2><ul>
 <li>削弱意义的方式：放到大庭广众的面前。</li>
 <li>spark: email delegation. assign to somebody and set deadline(choose to follow all updates or only it get done). model: allow 10 active delegations per team, otherwise pay premium</li>
@@ -722,7 +722,7 @@
     <link href="http://chocoluffy.com/2019/04/05/%E7%A2%8E%E8%AF%AD-2019-Mar/"/>
     <id>http://chocoluffy.com/2019/04/05/碎语-2019-Mar/</id>
     <published>2019-04-06T01:53:29.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-03-31">2019-03-31</h2><ul>
 <li><p>TrimIt。一个有启发的故事。将barber通过Vans运输到客户那里，客户利用app预约剪头发。同时在剪头的时候打开车门，是效果很好的市场营销。这个可以应用于很多实体店的服务。<br>接下来的商业化：从理发延伸到你的私人造型师，随时预约随到；以及基于地理位置的需求pooling。</p>
 <blockquote>
@@ -993,7 +993,7 @@
     <link href="http://chocoluffy.com/2019/04/05/The-journey-is-the-reward-%E3%80%8A%E4%B9%94%E5%B8%83%E6%96%AF%E4%BC%A0%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/04/05/The-journey-is-the-reward-《乔布斯传》阅读批注/</id>
     <published>2019-04-05T18:39:59.000Z</published>
-    <updated>2019-06-15T10:12:40.383Z</updated>
+    <updated>2019-07-28T03:22:28.171Z</updated>
     <content type="html"><![CDATA[<p>我答应自己在毕业前要看的几本书。 其中有《乔布斯传》和《堂吉柯德》。</p>
 <p>我想，教育，以及独特的经历在达成这样的目的：<strong>有一个坚定想要的东西，不会因为生活巨大的震荡所干扰。</strong></p>
 <p>而人的一生，也不过是通过漫长的道路，重新发现那两三个简单却丰盛的词语。然后从它们出发，去观察整个世界。</p>
@@ -1198,7 +1198,7 @@
     <link href="http://chocoluffy.com/2019/03/31/VC-Day%E9%A1%B9%E7%9B%AE%E8%A7%82%E5%AF%9F/"/>
     <id>http://chocoluffy.com/2019/03/31/VC-Day项目观察/</id>
     <published>2019-04-01T01:06:57.000Z</published>
-    <updated>2019-06-15T10:12:40.383Z</updated>
+    <updated>2019-07-28T03:22:28.171Z</updated>
     <content type="html"><![CDATA[<p>近期我参与到了Cornell Tech组织的VC day，并代表Firis团队做了公开pitch。这篇博客作为我参与流程中的观察和思考。</p>
 <p>能够在多名重量级VC面前实打实地pitch是一次很宝贵的锻炼机会。90秒时间，到时间强制打断，只有三张slides的展示机会。基本钉死了要我们剥离出这个产品最重要的东西。</p>
 <p>不同的产品在准备故事的时候有不同的侧重点。</p>
@@ -1267,7 +1267,7 @@
     <link href="http://chocoluffy.com/2019/03/30/%E6%8A%80%E6%9C%AF%E7%9A%84%E5%81%8F%E8%A7%81-%E3%80%8A%E6%8A%80%E6%9C%AF%E5%9E%84%E6%96%AD%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/03/30/技术的偏见-《技术垄断》阅读批注/</id>
     <published>2019-03-30T15:36:57.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<p>4.5/5星。 </p>
 <p>有些时候我会很警惕被热烈拥护的主流观点，我不是在反对主流本身，而只是想看清楚我们会失去什么，和那些还没被说完甚至被刻意隐瞒的话。</p>
 <p>这也是这本书观察技术进步史的角度。</p>
@@ -1380,7 +1380,7 @@
     <link href="http://chocoluffy.com/2019/03/06/%E5%A6%82%E4%BD%95%E5%90%91%E6%8A%95%E8%B5%84%E4%BA%BA%E8%AE%B2%E5%A5%BD%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B/"/>
     <id>http://chocoluffy.com/2019/03/06/如何向投资人讲好一个故事/</id>
     <published>2019-03-07T02:05:45.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<h2 id="如何讲好一个故事">如何讲好一个故事</h2><ul>
 <li>不一定要追求形式，比如要讲market, why now, validation, demo等等，而是以flow流畅地串联起来。记住一定不要讲core tech。<strong>目的是，如果最终audience提问的时候问：”你们这个是怎么做的？“，对你的tech感兴趣了，就说明你的story是成功的。</strong></li>
 <li>对待不同的人，会讲不同的故事。比如对于投资人来说，最重要的永远是market和product。对待客户来说，最重要的是你到底能够帮助我解决一个怎样的问题，可以带给他多大的利益。</li>
@@ -1433,7 +1433,7 @@
     <link href="http://chocoluffy.com/2019/02/28/%E4%B8%8D%E4%BE%9D%E8%B5%96%E7%90%86%E6%80%A7%E8%80%8C%E8%8E%B7%E5%BE%97%E5%B8%8C%E6%9C%9B-%E3%80%8A%E8%87%B4%E5%91%BD%E7%9A%84%E8%87%AA%E8%B4%9F%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/02/28/不依赖理性而获得希望-《致命的自负》阅读批注/</id>
     <published>2019-03-01T01:44:54.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<ul>
 <li>哈耶克的思想很大程度上是对于两次世界大战，以及德国纳粹历史的反馈。</li>
 <li>哈耶克反对的重点不在于意识形态，或者说社会主义是否在道德上可取，而是他是从<strong>“效应”</strong>的角度入手的，他认为社会主义所倡导的办法不能够达到目标。</li>
@@ -1478,7 +1478,7 @@
     <link href="http://chocoluffy.com/2019/02/28/%E7%A2%8E%E8%AF%AD-2019-Feb/"/>
     <id>http://chocoluffy.com/2019/02/28/碎语-2019-Feb/</id>
     <published>2019-03-01T01:11:01.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<h2 id="2019-02-28">2019-02-28</h2><ul>
 <li><p>近期有空可以研究的主题：</p>
 <ul>
@@ -1782,7 +1782,7 @@
     <link href="http://chocoluffy.com/2019/02/21/%E7%A2%8E%E8%AF%AD-2019-Jan/"/>
     <id>http://chocoluffy.com/2019/02/21/碎语-2019-Jan/</id>
     <published>2019-02-22T00:43:23.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<p>特别充实的一个月呢。</p>
 <p>写下了过去一年的总结，像把手伸向夜空里的星星一样，我向着心里面打捞着微光闪烁。算是厘清楚了，我所追逐的自由的背面，不是束缚，曾经我以为是彷徨，当时的我觉得是媚俗。而再过去一个月，现在的我还想增加一个选项。比媚俗更可怕的，是基于媚俗的优越感。</p>
 <p>我也第一次踏上了去以色列的旅途。边境，沙漠，集中营。如果不是学校组织，我自己恐怕是没这个勇气和胆识来这么多地方的。喜欢一种被陌生击碎的新奇感觉，却也熟知故事都是押韵的。一路上也捕获了很多灵感，特别是我未来第二和第三只猫的名字，我想叫你们Sancho和Dolorosa呢。而我遇见的最美的名字还是这座城市特拉维夫（Tel Aviv），翻译过来是，被石头堆叠起来的春天。我想，这就是文明（Civilization）的意思吧，带着人类最大的骄傲。</p>
@@ -2331,7 +2331,7 @@
     <link href="http://chocoluffy.com/2019/01/20/%E4%BB%B7%E6%A0%BC%E6%97%A0%E6%B3%95%E8%B0%83%E8%8A%82%E7%9A%84%E5%B8%82%E5%9C%BA-%E3%80%8A%E5%85%B1%E4%BA%AB%E7%BB%8F%E6%B5%8E%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/01/20/价格无法调节的市场-《共享经济》阅读批注/</id>
     <published>2019-01-21T00:54:51.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<p>4/5星。</p>
 <p>区别于价格市场，配对市场里，价格不能清理市场，市场参与者在意他们和谁交易，以及建立长期关系。由配对市场引出的几个规则很有意思，比如2012年诺奖理论的“延迟接受”算法，隐式市场里的第二高价拍卖机制，以及在稠密市场的情况下对堵塞的不同反映机制（提前交易或者最后入场等）。关于市场设计同样重要的还有（1）如何形成市场的稠密性。（2）解决市场堵塞。（3）保护设计使得参与者能够安全透露真实意愿。（4）合理释放信号促进市场效率。没有五星的理由是作者太执着于特定细分市场的规则分析，而且中译版的题目有凑热点的嫌疑<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>，这本书并没有主要讨论大家希望了解的共享经济，而是在分析匹配市场的规则设计，也算是让我回顾了一下本科的博弈论这门课。拍卖是个人类很古老而智慧的发明，看看以后我可以怎么运用起来。</p>
 <ul>
@@ -2425,7 +2425,7 @@
     <link href="http://chocoluffy.com/2019/01/17/%E8%BE%A9%E9%A2%98-%E4%BA%BA%E6%9C%89%E6%B2%A1%E6%9C%89%E8%A1%A8%E8%BE%BE%E5%81%8F%E8%A7%81%E7%9A%84%E8%87%AA%E7%94%B1/"/>
     <id>http://chocoluffy.com/2019/01/17/辩题-人有没有表达偏见的自由/</id>
     <published>2019-01-17T23:18:32.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<p>2018新国辩，哲理辩论（第二场）周玄毅VS黄执中：人有/没有表达偏见的自由。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 <h2 id="正方：人有表达偏见的自由（周玄毅）">正方：人有表达偏见的自由（周玄毅）</h2><ul>
 <li>我们对偏见本身就是有偏见的。有些偏见可能无关痛痒，而另外一些却会遭到极力的排斥。</li>
@@ -2481,7 +2481,7 @@
     <link href="http://chocoluffy.com/2019/01/04/%E9%9D%9E%E4%B8%BB%E6%B5%81%E7%9A%84%E4%B8%BB%E6%B5%81-%E3%80%8A%E8%AE%A2%E9%98%85%E3%80%8B%E9%98%85%E8%AF%BB%E6%89%B9%E6%B3%A8/"/>
     <id>http://chocoluffy.com/2019/01/04/非主流的主流-《订阅》阅读批注/</id>
     <published>2019-01-05T01:36:41.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<p>未来的娱乐内容的分布：越来越多的续集会出现在电影院线上，因为这是风险最小的；精品剧集集中出现在订阅式流媒体，而原创新品则放在Youtube等低门槛平台负责曝光造势和社区影响力。</p>
 <a id="more"></a>
 <ul>
@@ -2564,7 +2564,7 @@
     <link href="http://chocoluffy.com/2019/01/02/%E6%B0%B8%E8%BF%9C%E5%AD%98%E5%9C%A8%E7%9A%84%E9%95%9C%E5%A4%B4-%E3%80%8A%E4%B8%8D%E6%9C%BD%E3%80%8B%E8%AF%BB%E5%90%8E%E6%84%9F/"/>
     <id>http://chocoluffy.com/2019/01/02/永远存在的镜头-《不朽》读后感/</id>
     <published>2019-01-02T20:55:30.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<p>昆德拉的小说是没有结局的。</p>
 <p>他自己也在小说里面承认了这一点。他没有一个希望匆匆奔向的目标。他说“小说不应该像一场自行车比赛，而要像一场宴会，频繁上菜。一个新的人物，他不是任何东西的因，也绝不产生果”，我也恍然，原来这就是《轻》的由来。</p>
 <ul>
@@ -2614,7 +2614,7 @@
     <link href="http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/"/>
     <id>http://chocoluffy.com/2019/01/01/抵抗存在的被遗忘/</id>
     <published>2019-01-01T22:09:52.000Z</published>
-    <updated>2019-06-15T10:12:40.387Z</updated>
+    <updated>2019-07-28T03:22:28.175Z</updated>
     <content type="html"><![CDATA[<h2 id="1">1</h2><p>今年的关键词让我来选择，是“告别”。</p>
 <p>我告别了给予我第一场雪的城市，和一群我最最依赖的伙伴。</p>
 <p>这个时代也是流行告别的。</p>
@@ -2681,7 +2681,7 @@
     <link href="http://chocoluffy.com/2018/12/31/%E7%A2%8E%E8%AF%AD-2018-Dec/"/>
     <id>http://chocoluffy.com/2018/12/31/碎语-2018-Dec/</id>
     <published>2019-01-01T02:49:18.000Z</published>
-    <updated>2019-06-15T10:12:40.391Z</updated>
+    <updated>2019-07-28T03:22:28.179Z</updated>
     <content type="html"><![CDATA[<h2 id="18-12-31_2018年度总结">18.12.31 2018年度总结</h2><blockquote>
 <p>塞万提斯在《堂吉柯德》的结尾这么说，我的愿望只有一个，那就是：让人们厌弃骑士小说中的那些胡编乱造的故事。最终，一部坚定反对骑士文化的作品塑造了我相信的骑士文化。</p>
 <p>我的愿望也很简单，抵抗那些因由媚俗而胡编乱造的虚无故事，抵抗存在的被遗忘。 - <a href="http://chocoluffy.com/2019/01/01/%E6%8A%B5%E6%8A%97%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A2%AB%E9%81%97%E5%BF%98/">抵抗存在的被遗忘</a></p>
