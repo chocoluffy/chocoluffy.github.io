@@ -28,6 +28,17 @@ categories:
 
 ## 2019
 
+### 基于深度学习的人眼修复 <small>(2019.5)</small>
+
+- 开发者，负责模型训练和后端搭建。Cornell Tech CSC5787 Deep Learning近满分的结课项目。
+- 算法解决的问题：基于深度学习的人眼轮廓修复。适用场景如集体照中有小伙伴闭眼需要修复，以及后期人像调整时对眼部轮廓和颜色的微调。
+- 关键技术：两阶段GAN合同训练。一个负责边缘连接，另一个负责上色。
+
+<div style="display: flex;">
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper.png" class="img-2">
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/gan-paper-demo.png" class="img-2">
+</div>
+
 ### Firis <small>(2019.1)</small>
 
 - 联合创始人，兼开发者。
@@ -44,9 +55,10 @@ categories:
 - 算法解决的问题：利用自然语言搜索相关图像。例如，如果用户输入“一个正在玩滑板的人跳跃到空中”，该算法会从大型图像数据库中将最相关的图像进行排序，并返回搜索结果给用户。
 - 关键技术：利用Partial Least Squares Regression(PLSR)，Ridge Regression， Word2Vec，对图片特征向量和词语向量进行跨模态的建模训练和回归预测。[论文地址](https://github.com/chocoluffy/image-reverse-search-engine/blob/master/Report.pdf)，[项目Github地址](https://github.com/chocoluffy/image-reverse-search-engine)。
 
-<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper2.png" style="display: block; margin: 0 auto; max-height: 400px">
-
-<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper3.png" style="display: block; margin: 0 auto; max-height: 250px">
+<div style="display: flex;">
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper2.png" class="img-2">
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/paper3.png" class="img-2">
+</div>
 
 ### Look <small>(2018.9)</small>
 
