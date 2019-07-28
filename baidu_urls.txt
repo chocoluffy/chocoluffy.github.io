@@ -1,5 +1,6 @@
 http://chocoluffy.com/2019/06/14/钱不是必要的，流动性才是。/
 http://chocoluffy.com/2019/06/01/一部货币演化史，以及21世纪的“比特币本位”/
+http://chocoluffy.com/2019/05/31/碎语-2019-May/
 http://chocoluffy.com/2019/05/21/再看区块链的分权设计细节/
 http://chocoluffy.com/2019/05/12/我没有绝对的害怕，也不必须微笑。/
 http://chocoluffy.com/2019/05/02/Startup-Studio结课总结/
@@ -47,4 +48,3 @@ http://chocoluffy.com/2018/02/20/碎语-2018-Feb/
 http://chocoluffy.com/2018/01/30/碎语-2018-Jan/
 http://chocoluffy.com/2018/01/22/《风沙星辰-夜间飞行》文摘/
 http://chocoluffy.com/2018/01/01/原来这一切都可以讲述/
-http://chocoluffy.com/2017/12/28/碎语-2017-Nov-Dec/
