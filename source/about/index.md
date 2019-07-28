@@ -46,8 +46,8 @@ categories:
 - 关键技术：利用GAN以及Auto-encoder来完成图像转移和修复。
 
 <div style="display: flex;">
-  <img src="https://github.com/chocoluffy/blog_assets/blob/gh-pages/firis.png" class="img-2">
-  <img src="https://github.com/chocoluffy/blog_assets/blob/gh-pages/firis-team.jpg" class="img-2">
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/firis.png" class="img-2">
+  <img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/firis-team.jpg" class="img-2">
 </div>
 
 ## 2018
