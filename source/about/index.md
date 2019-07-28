@@ -41,11 +41,14 @@ categories:
 
 ### Firis <small>(2019.1)</small>
 
-- 联合创始人，兼开发者。
-- Firis是一款视频制作应用，让用户在视频中成为真正的明星。比如，将「复仇者联盟」中的美国队长扮演者史蒂夫罗杰斯替换为用户，让美国队长有用户的面孔和声音。
-- 关键技术：利用CNN，Auto-encoder，CycleGan来完成图像转移和修复。
+- 联合创始人，兼开发者，负责模型训练和移动端开发。
+- Firis是一款视频制作应用，让用户轻松迁移电影中的特效，扮演视频角色。比如，将「复仇者联盟」中的美国队长扮演者史蒂夫罗杰斯替换为用户，让美国队长有用户的面孔和声音。
+- 关键技术：利用GAN以及Auto-encoder来完成图像转移和修复。
 
-<img src="https://raw.githubusercontent.com/chocoluffy/blog_assets/gh-pages/firis2.png" style="display: block; margin: 0 auto; max-height: 300px">
+<div style="display: flex;">
+  <img src="https://github.com/chocoluffy/blog_assets/blob/gh-pages/firis.png" class="img-2">
+  <img src="https://github.com/chocoluffy/blog_assets/blob/gh-pages/firis-team.jpg" class="img-2">
+</div>
 
 ## 2018
 
