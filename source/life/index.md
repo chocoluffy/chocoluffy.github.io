@@ -51,6 +51,7 @@ categories:
 
 ## 月总结
 
+- 『[碎语 2019 Jun.](https://chocoluffy.com/2019/05/31/%E7%A2%8E%E8%AF%AD-2019-Jun/)』2019年6月。我写作，是为了遗忘。
 - 『[碎语 2019 May.](https://chocoluffy.com/2019/05/31/%E7%A2%8E%E8%AF%AD-2019-May/)』2019年5月。正是因为多数人的不理解，我才得以自由。
 - 『[碎语 2019 Apr.](https://chocoluffy.com/2019/05/01/%E7%A2%8E%E8%AF%AD-2019-Apr/)』2019年4月。我的回忆里有你温和的气候。
 - 『[碎语 2019 Mar.](https://chocoluffy.com/2019/04/05/%E7%A2%8E%E8%AF%AD-2019-Mar/)』 2019年3月。遥远的相似性。

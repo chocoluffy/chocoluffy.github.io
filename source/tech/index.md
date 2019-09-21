@@ -8,10 +8,11 @@ categories:
 
 这里，是我分享技术类文章的地方。
 
-## 创业笔记
+## 创业笔记 & 商业分析
 
 Stay hungry, stay foolish.
 
+- [AI换脸zao戏，及背后个性化形象的市场](https://chocoluffy.com/2019/09/21/AI%E6%8D%A2%E8%84%B8zao%E6%88%8F%EF%BC%8C%E5%8F%8A%E8%83%8C%E5%90%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E5%BD%A2%E8%B1%A1%E7%9A%84%E5%B8%82%E5%9C%BA/)
 - [Cornell Tech Startup Studio结课总结](https://chocoluffy.com/2019/05/02/Startup-Studio%E7%BB%93%E8%AF%BE%E6%80%BB%E7%BB%93/)
 - [VC Day项目观察](https://chocoluffy.com/2019/03/31/VC-Day%E9%A1%B9%E7%9B%AE%E8%A7%82%E5%AF%9F/)
 - [如何向投资人讲好一个故事](https://chocoluffy.com/2019/03/06/%E5%A6%82%E4%BD%95%E5%90%91%E6%8A%95%E8%B5%84%E4%BA%BA%E8%AE%B2%E5%A5%BD%E4%B8%80%E4%B8%AA%E6%95%85%E4%BA%8B/)
