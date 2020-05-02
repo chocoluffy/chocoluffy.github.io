@@ -28,6 +28,13 @@ categories:
 
 ## 2019
 
+### 《激进市场》中译本审阅 <small>(2019.9)</small>
+
+- 因在豆瓣上写下英译本的书评：[《哈伯格税：面向共享经济的创新？》](https://book.douban.com/review/9836743/)，被中译本引进团队的编辑联系，并参与进该书中译本的审阅过程。在书序第12页的感谢名单中留下名字。
+- 了解这本书的缘由，来自于以太坊创始人Vitalik在2018年4月的一篇书评博文。Posner和Glen Weyl的新书<a target="_blank" href="https://book.douban.com/subject/27155450/"> 《Radical Markets》</a>阐述了四项激进的实验性策略，涉及经济和政治等不同领域，分别尝试去调解新时代背景下的财产权，选民投票权，移民以及数据隐私等议题。入选2018经济学人年度推荐榜单。
+
+<img src="https://img9.doubanio.com/view/subject/s/public/s29752020.jpg" style="display: block; margin: 0 auto; max-height: 200px">
+
 ### 基于深度学习的人眼修复 <small>(2019.5)</small>
 
 - 开发者，负责模型训练和后端搭建。Cornell Tech CSC5787 Deep Learning近满分的结课项目。
