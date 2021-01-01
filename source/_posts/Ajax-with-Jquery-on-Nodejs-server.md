@@ -7,9 +7,6 @@ categories: 技术
 Nodejs的第一个上手小项目， 就是尝试自己在本地的页面来发送Ajax请求， 并且通过nodejs的json文件返回后以比较优雅的前端样式呈现出来。 算是再一次复习了Bootstrap， fontawesome库的调用， 以及一些jquery的语法。 仔细回想， 其实nodejs的后端开发和rails\django的router的本质都是一样的， 以前在还没有理解实质的时候就上手实战， 现在慢慢理解了才能够融会贯通， 现在的开发速度大大进步了。 同时也学会了如何允许CORS的请求， 和正则匹配的部分细节。
 <!-- more -->
 
-![project gif](https://zippy.gfycat.com/FancyWeeBrontosaurus.gif)
-
-
 ## Requirements
 
 Requesting 127.0.0.1:3000 should give your index page (with CSS and JS). For the subsequent requests, you should use AJAX to send requests to the Node server and update only some parts of the page with the response data. Ideally, you should return JSON data as a response and then format that using Javascript.
