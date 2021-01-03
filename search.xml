@@ -168,15 +168,8 @@
 <h2 id="2020/12/12">2020/12/12</h2><h3 id="bitcoin">bitcoin</h3><ul>
 <li>比特币，为什么这个市值这么高？1. 商业延展性特别差。2. 阻塞网络。3. 耗费电力。</li>
 <li>它的真实贡献是，创作出了具备极高<strong>社会延展性的制度</strong>。social scalability。<ul>
-<li><ol>
 <li>permissionless。无准入。</li>
-</ol>
-</li>
-<li><ol>
 <li>asymmetric。非对称。</li>
-</ol>
-</li>
-<li><ol>
 <li>social scalability。一种协作关系/共同的努力的均衡关系。很高的褒义。1. 规模效应不会带来混乱，也即成本提升的速度是否比获益更快。乃至参与者本身的成本是否会受影响。2. 没有公地悲剧。机制下的角色是利益共同体。一个很有意思的考量标准是：有多少人能够在这个机制下获益，这个数字的上限是否受权力/随心所欲的控制。还是说获益的决定权在参与者的手里。3. 准入门槛本身是否受权力/随心所欲的控制。4. 风险是否同步提升。5. 退出成本。当退出成本/沉没成本高企的时候，往往倾向于合并一体，强耦合的结构，来降低成本损失风险。<ul>
 <li>邓巴数（英語：<strong>Dunbar’s number</strong>），也稱150定律，指能與某個人維持緊密人際關係的人數上限，通常人們認為是150。 这里的人际关系是指某个人知道其他人是谁并且了解那些人之间的关系。</li>
 <li><strong>解决这个问题的方案是：去信任。也即让渡一部分理智的负担给网络。</strong></li>
@@ -189,8 +182,6 @@
 </li>
 <li>[2020/12/14] 某种意义上，货币和价格机制，也是提高了社会拓展性。</li>
 </ul>
-</li>
-</ol>
 </li>
 </ul>
 </li>
@@ -211,9 +202,9 @@
 </li>
 <li>研究一个机制设计的时候，首先去选择最极端的冲突：税收制度，显然两方利益是冲突的；然后借助这个过程，看税收是如何衡量价值的。</li>
 </ul>
-<h2 id="2020/12/11">2020/12/11</h2><pre><code>- <span class="keyword">*</span><span class="keyword">*</span>通胀不是给所有持有者，而是给流动性提供者。避免囤积的现象。<span class="keyword">*</span><span class="keyword">*</span>
-- 设计一层cache债券，抵消间隔时间backlash带来的影响。
-</code></pre><ul>
+<h2 id="2020/12/11">2020/12/11</h2><ul>
+<li><strong>通胀不是给所有持有者，而是给流动性提供者。避免囤积的现象。</strong></li>
+<li>设计一层cache债券，抵消间隔时间backlash带来的影响。</li>
 <li>经济学/金融 + 平台的意思，不是说完成交易/发币，而是说我通过设计行为的预期成本/盈利来使得系统收敛于预期的平衡。</li>
 <li>手套保护了手，却让其失去触觉。 ^戴上手套后再也分不清钥匙扣和工卡时有感。</li>
 </ul>
@@ -282,7 +273,6 @@
 </ul>
 </li>
 <li>building communities as a company.</li>
-<li></li>
 </ul>
 <h2 id="2020/12/4">2020/12/4</h2><ul>
 <li><a href="https://stripe.com/treasury" target="_blank" rel="noopener">Stripe Treasury: Banking-as-a-service for platforms</a></li>
@@ -308,10 +298,8 @@
 </li>
 <li>人不会为可替代品多浪费一分钱。<ul>
 <li>而娱乐体验，不允许一点儿中庸。因为免费的替代品太多了。<br><strong>一位业内人士说，在一个内容公司，做内容的人突然间没钱也没权了。“集权的人根本不懂内容。”</strong><blockquote>
-<p>相比之下，龚宇很早认定了这个是一个娱乐的行业。给钱给制作团队。和netflix的方式很像。<br><strong>组织架构的能力，体现在如何解决公地悲剧。</strong></p>
-<pre><code>-<span class="ruby"> 如何说服团队因长期利益而必需承受的短期成本。
-</span>-<span class="ruby"> 是统一战线，而不是跑马圈地不断创造只对自己有利的规则而使合作成本高企。文中“做错了谁来担责任”基本解释了腾讯视频/影业，优酷/阿里这几年的决策结果。
-</span>tribal harmful but global beneficial. 
+<p>相比之下，龚宇很早认定了这个是一个娱乐的行业。给钱给制作团队。和netflix的方式很像。<br><strong>组织架构的能力，体现在如何解决公地悲剧。</strong><br>如何说服团队因长期利益而必需承受的短期成本。<br>是统一战线，而不是跑马圈地不断创造只对自己有利的规则而使合作成本高企。文中“做错了谁来担责任”基本解释了腾讯视频/影业，优酷/阿里这几年的决策结果。</p>
+<pre><code><span class="label">tribal</span> harmful <span class="keyword">but </span><span class="preprocessor">global</span> <span class="keyword">beneficial. </span>
 </code></pre><p>说点别的。公司组织架构能力，，，。。跨团队合作的落地速度和满意度很重要。</p>
 </blockquote>
 </li>
@@ -400,10 +388,8 @@
 <li><strong>本质上，hashrate是一个公共时钟，它不一定是现在的这个问题，也可能是寻找下一个质数之类的问题。这个问题需要满足几个条件：规则透明，所有人都清楚的知道。当给出答案的时候，所有人都能够轻易认证这个答案。</strong></li>
 </ul>
 </li>
-<li><p><strong>Ledger plane。</strong>while the Ledger plane is where the blocks finally gets stored once they are mined.<br>As a general abstraction, the consensus plane ingests messages from the Network Plane and outputs transactions for insertion into the system ledger for integration into the blockchain</p>
-</li>
-<li><p><strong>Throughput</strong>（每秒多少笔交易） = Transactions/Block - Blocks/second (Inverse of Block interval),</p>
-</li>
+<li><strong>Ledger plane。</strong>while the Ledger plane is where the blocks finally gets stored once they are mined.<br>As a general abstraction, the consensus plane ingests messages from the Network Plane and outputs transactions for insertion into the system ledger for integration into the blockchain</li>
+<li><strong>Throughput</strong>（每秒多少笔交易） = Transactions/Block - Blocks/second (Inverse of Block interval),</li>
 <li>Transactions/Block = Bitcoin capacity /average Transaction size</li>
 <li>The current Block capacity for Bitcoin is 1MB for a Block interval of 10 minutes and given the average transaction size of nearly 540 bytes, the Bitcoin network currently processes ~1950 transactions per Block, which translates to <strong>~3 transactions per second (TPS).</strong><ul>
 <li><strong>提高blockchain throughput的方式：提高每个block能够容纳的交易数量。比如利用onchain，offchain的方式。在二级市场，或者二层来做快速/中介交易，然后将交易结果上链。</strong><ul>
@@ -423,21 +409,18 @@
 <h2 id="2020/11/28">2020/11/28</h2><ul>
 <li>准备一篇NFT/合成资产/电商想法的文章，发问答，最后加上一个二维码。讨论加密经济以及其平台应用。</li>
 <li>中国互联网环境独特。封闭的下游限制了上游的闭环方式。</li>
-<li><p>一个很关键的信息。19年Q4开始，用户在视频消费的时长已经高于花在社交通讯上的时长。</p>
-<ul>
+<li>一个很关键的信息。19年Q4开始，用户在视频消费的时长已经高于花在社交通讯上的时长。<ul>
 <li>解释：不是人们不爱社交了，而是人们的社交活动逐渐在转移场景。</li>
 </ul>
 </li>
-<li><p>spotify收购megaphone。</p>
-<ul>
+<li>spotify收购megaphone。<ul>
 <li><a href="https://inside.com/campaigns/inside-podcasting-2020-11-25-25510" target="_blank" rel="noopener">https://inside.com/campaigns/inside-podcasting-2020-11-25-25510</a></li>
 <li>DAI是根据收听者的用户信息，在download的时候。动态插入的广告。</li>
 <li>SAI是更实时，在streaming的过程中，插入。SAI更先进。</li>
 <li>从视频/音频。从一个异步发生的过程，逐渐增加交互。</li>
 </ul>
 </li>
-<li><p>【今日最佳】“生物材料学”。“例如，鲍鱼和蜗牛通过在富含矿物质的海底收集钙分子来构建一个强壮的外壳。复杂的生物机制控制着这一过程，所有的编码都是由蜗牛的DNA完成的。从理论上讲，可以微调生物体的DNA，使其能够吸引黄金或铜等导电材料，对生物学的材料范围进行扩展。”</p>
-</li>
+<li>【今日最佳】“生物材料学”。“例如，鲍鱼和蜗牛通过在富含矿物质的海底收集钙分子来构建一个强壮的外壳。复杂的生物机制控制着这一过程，所有的编码都是由蜗牛的DNA完成的。从理论上讲，可以微调生物体的DNA，使其能够吸引黄金或铜等导电材料，对生物学的材料范围进行扩展。”</li>
 </ul>
 <h3 id="constant_function_market_maker">constant function market maker</h3><ul>
 <li><p>新一代的供需关系撮合机制。</p>
@@ -723,10 +706,8 @@
 </ul>
 </li>
 <li>美团优选的扩张打法是先挖兴盛的团长。<blockquote>
-<p>和云集的区别是，不希望只流动关系链，而最终是平台发货给消费者，本质上荐物分享的人只是起到了一个提供关系链降低营销成本的作用。<br>社区团购确定性地引入了团长这个角色，构建了一个三方网络。在网络稠密之后，针对团长的定位（包括后续激励制度，SaaS服务）是一个方向决策问题：</p>
-<pre><code>-<span class="ruby"> 如果平台只推爆款，本质上，消费者跟着爆款走。削弱团长的控制力。
-</span>-<span class="ruby"> 如果平台提供金融工具，营销工具，支付手段给团长。看似是提高团长的能力，但同时也提高了团长对平台的依赖程度。（类似shopify，visa的三边市场思路）我自己更信服这个模式，但并不适合快速铺量这个阶段。</span>
-</code></pre></blockquote>
+<p>和云集的区别是，不希望只流动关系链，而最终是平台发货给消费者，本质上荐物分享的人只是起到了一个提供关系链降低营销成本的作用。<br>社区团购确定性地引入了团长这个角色，构建了一个三方网络。在网络稠密之后，针对团长的定位（包括后续激励制度，SaaS服务）是一个方向决策问题：<br>如果平台只推爆款，本质上，消费者跟着爆款走。削弱团长的控制力。<br>如果平台提供金融工具，营销工具，支付手段给团长。看似是提高团长的能力，但同时也提高了团长对平台的依赖程度。（类似shopify，visa的三边市场思路）我自己更信服这个模式，但并不适合快速铺量这个阶段。</p>
+</blockquote>
 </li>
 <li>有点意思的规则，美团不会做团长的“地域保护”。也是希望团长之间相互制衡。避免团长收割私域流量。</li>
 <li>消费者本质上跟着便宜走。不是刚需，需求可拖延，较低的平台忠诚度，还是哪里方便去哪里。只是因为线下场景存在地理位置的垄断，呈现出平台忠诚的假象；但在线上场景里，还是看最终节省的花销大家用脚投票。拼多多很需要这个邻近市场。今年春晚的玩法和打法喻意值得期待。</li>
@@ -845,11 +826,8 @@
 </li>
 </ul>
 <blockquote>
-<p>【年度】构建三方平台。除了生产者和消费者之外，还有第三方，为生产者服务。product hunt有hunter这个角色设定，他们能够通过推荐出好产品而获利。    </p>
-<pre><code>- visa银行bank的例子（ben thompson）： 
-    - bank &amp; people &amp; shop之间站着visa。
-    - <span class="keyword">*</span><span class="keyword">*</span>visa的前身Bank Americard就是帮助小商家来解决收款和财政账户管理的问题。<span class="keyword">*</span><span class="keyword">*</span>b端支付3%交易额。为什么不用care大商家，因为他们自己会做闭环。很敬佩的三家公司：<span class="keyword">*</span><span class="keyword">*</span>shopify, plaid<span class="keyword">*</span><span class="keyword">*</span>, substack。大卫和格利亚。这是一个趋势是：普通的创作者和大公司gamble，来获得流量，获得曝光。某种意义上，越附庸于平台的规则，就能获得越高的收益。
-    - 
+<p>【年度】构建三方平台。除了生产者和消费者之外，还有第三方，为生产者服务。product hunt有hunter这个角色设定，他们能够通过推荐出好产品而获利。<br> visa银行bank的例子（ben thompson）：<br> bank &amp; people &amp; shop之间站着visa。<br> <strong>visa的前身Bank Americard就是帮助小商家来解决收款和财政账户管理的问题。</strong>b端支付3%交易额。为什么不用care大商家，因为他们自己会做闭环。很敬佩的三家公司：<strong>shopify, plaid</strong>, substack。大卫和格利亚。这是一个趋势是：普通的创作者和大公司gamble，来获得流量，获得曝光。某种意义上，越附庸于平台的规则，就能获得越高的收益。</p>
+<pre><code><span class="bullet">- </span>
 </code></pre><ul>
 <li>信用卡：instant loan。解决的问题：随时借钱。<ul>
 <li>借债关系的流动性。目前还是质押金的模式。</li>
@@ -868,12 +846,15 @@
 </li>
 </ul>
 </blockquote>
-<pre><code>-<span class="ruby"> 比如快手电商。让主播自己维系供应链和供货，甚至财务和营销广告手段是流动性很差的。
-</span>    -<span class="ruby"> **这也就是为什么要推动peer-to-protocol的制度演化，而不是peer-to-peer的。**
-</span>    -<span class="ruby"> 快手的快接单终于改成这个样子了。对标字节的星图。
-</span>    -<span class="ruby"> 快手电商也终于有了分销制度。（直播直接对接现有供应链），替代了魔筷<span class="constant">Saas</span>。
-</span>    -<span class="ruby"> 广告主创建商品难+运营和数据难，直播商品上架难。有了金牛电商平台 &amp; 手机扫描即上架。</span>
-</code></pre><ul>
+<ul>
+<li><p>比如快手电商。让主播自己维系供应链和供货，甚至财务和营销广告手段是流动性很差的。</p>
+<ul>
+<li><strong>这也就是为什么要推动peer-to-protocol的制度演化，而不是peer-to-peer的。</strong></li>
+<li>快手的快接单终于改成这个样子了。对标字节的星图。</li>
+<li>快手电商也终于有了分销制度。（直播直接对接现有供应链），替代了魔筷Saas。</li>
+<li>广告主创建商品难+运营和数据难，直播商品上架难。有了金牛电商平台 &amp; 手机扫描即上架。</li>
+</ul>
+</li>
 <li><p><strong>技术是手段，不是目的。我们要盯着问题看，去解决问题。而不是盯着锤子看，去找个钉子。</strong></p>
 </li>
 <li><p>【商业模式】<strong>鼓励中长视频：带货即打赏。是和贴片广告对应的，两条腿走路，一个公域，一个私域的变现方式。</strong></p>
@@ -921,7 +902,6 @@
 </ul>
 <h3 id="互动">互动</h3><ul>
 <li>游戏直播 -&gt; 直播游戏。<strong>观众作为玩家。</strong></li>
-<li></li>
 </ul>
 <h3 id="社会外部性的讨论">社会外部性的讨论</h3><ul>
 <li>free of speech, 和speech的外部性质。</li>
@@ -1150,17 +1130,9 @@
 </ul>
 <h3 id="b站">b站</h3><ul>
 <li>关键词：<ul>
-<li><ol>
-<li>内容模式。 <ul>
+<li>内容模式。 </li>
 <li>花絮即正片。</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><ol>
 <li>商业模式。</li>
-</ol>
-</li>
 </ul>
 </li>
 </ul>
@@ -1208,11 +1180,7 @@
 <li><strong>目的：防止政府掩盖货币的贬值，无法转嫁支出。</strong>实现方式：一旦某个货币贬值，则该货币就会被逐出本国的货币市场。</li>
 <li>哈耶克的出发点是，对政府货币发行的限制：“一旦货币机制出现偏离，人们会使用另一个国家的货币取代。”</li>
 <li><strong>局限 &amp; 反驳：</strong><ul>
-<li><ol>
 <li>hayek论述的是一个闭环生态。一旦有一方不是这个规则体系内的，它将成为最大受益者。囚徒困境，在每个人都会背叛其他人的纳什均衡里。</li>
-</ol>
-</li>
-<li><ol>
 <li>引入私人企业加入货币竞争。会带来监管的压力。负面例子：P2P贷爆雷。承诺高收益的P2P贷款，也即承诺一个更优的货币兑换利率。<ul>
 <li><strong>现在和历史的差别：</strong><ul>
 <li>liquidity mining和08年的MBS（morgage-..），在于具有定价权的权力结构。</li>
@@ -1220,8 +1188,6 @@
 </ul>
 </li>
 </ul>
-</li>
-</ol>
 </li>
 </ul>
 </li>
@@ -1244,18 +1210,11 @@
 <li><p>为什么流动性重要？为什么选择激励质押（liquidity mining）的方式？</p>
 <ul>
 <li>回答：<ul>
-<li><ol>
 <li>从项目的角度。<strong>去中心化地（去信任化地），让用户投入资本在这个项目机制中。也是同时让用户成为这个项目的管理者，部分所有者。（也称：资本即治理）。</strong></li>
-</ol>
-</li>
-<li><ol>
 <li>从用户的角度。未来参与加密货币交易的方式是：矿机或者eth质押；现在转换为任意资本的输入。参与方式变成permissionless。Rather, users are supplying assets to a protocol, which does not come at an upfront cost, but rather opportunity cost.</li>
-</ol>
-</li>
 <li>Etherum的安全性和容量。（也是排在最后的理由）<blockquote>
-<p>【年度】<strong>也是理解defi项目的一个入口。为什么会采取这种形式？</strong><br> <strong>什么商业项目能够成功。转化用户从付出直接巨额成本到，modularized，能够去提供机会成本。去做选择。去做组合选择。（也即为什么平台功能优势之一的composibility 可组合性很重要！！！）</strong><br> <strong>- composibility：意味着用户从付出直接成本（upfront cost），转换为付出机会成本（Opportunity cost）也即委托形式.</strong></p>
-<pre><code><span class="bullet">- </span>意味着走向大众。也意味着会吸引很多并不是为了协议来的人。盈利模式会变。会变成广告。广告是收割流量的盈利方式。 
-</code></pre></blockquote>
+<p>【年度】<strong>也是理解defi项目的一个入口。为什么会采取这种形式？</strong><br> <strong>什么商业项目能够成功。转化用户从付出直接巨额成本到，modularized，能够去提供机会成本。去做选择。去做组合选择。（也即为什么平台功能优势之一的composibility 可组合性很重要！！！）</strong><br> <strong>- composibility：意味着用户从付出直接成本（upfront cost），转换为付出机会成本（Opportunity cost）也即委托形式.</strong><br>意味着走向大众。也意味着会吸引很多并不是为了协议来的人。盈利模式会变。会变成广告。广告是收割流量的盈利方式。 </p>
+</blockquote>
 </li>
 </ul>
 </li>
