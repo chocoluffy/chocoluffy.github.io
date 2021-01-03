@@ -298,9 +298,8 @@
 </li>
 <li>人不会为可替代品多浪费一分钱。<ul>
 <li>而娱乐体验，不允许一点儿中庸。因为免费的替代品太多了。<br><strong>一位业内人士说，在一个内容公司，做内容的人突然间没钱也没权了。“集权的人根本不懂内容。”</strong><blockquote>
-<p>相比之下，龚宇很早认定了这个是一个娱乐的行业。给钱给制作团队。和netflix的方式很像。<br><strong>组织架构的能力，体现在如何解决公地悲剧。</strong><br>如何说服团队因长期利益而必需承受的短期成本。<br>是统一战线，而不是跑马圈地不断创造只对自己有利的规则而使合作成本高企。文中“做错了谁来担责任”基本解释了腾讯视频/影业，优酷/阿里这几年的决策结果。</p>
-<pre><code><span class="label">tribal</span> harmful <span class="keyword">but </span><span class="preprocessor">global</span> <span class="keyword">beneficial. </span>
-</code></pre><p>说点别的。公司组织架构能力，，，。。跨团队合作的落地速度和满意度很重要。</p>
+<p>相比之下，龚宇很早认定了这个是一个娱乐的行业。给钱给制作团队。和netflix的方式很像。<br><strong>组织架构的能力，体现在如何解决公地悲剧。</strong><br>如何说服团队因长期利益而必需承受的短期成本。<br>是统一战线，而不是跑马圈地不断创造只对自己有利的规则而使合作成本高企。文中“做错了谁来担责任”基本解释了腾讯视频/影业，优酷/阿里这几年的决策结果。<br>tribal harmful but global beneficial. </p>
+<p>说点别的。公司组织架构能力，，，。。跨团队合作的落地速度和满意度很重要。</p>
 </blockquote>
 </li>
 </ul>
@@ -1433,10 +1432,8 @@
 </blockquote>
 </li>
 <li>对于给定的目标网络编码，作者只从真实数据中提取不匹配的源编码<blockquote>
-<p>【模型想法】<strong>用GAN的方式来做精排教粗排的模型。其中粗排就是Generator.</strong></p>
-<pre><code>-<span class="ruby"> 去从源头解决这个问题。因为仅仅网络结构相似，或者隐层的数值分布相似，是不足以证明结构相似的。
-</span>-<span class="ruby">&gt; 粗排去学习精排的输出。精排本身就是discriminator, 精排预估值 &lt; x 的就是粗排的负样本。</span>
-</code></pre></blockquote>
+<p>【模型想法】<strong>用GAN的方式来做精排教粗排的模型。其中粗排就是Generator.</strong><br>去从源头解决这个问题。因为仅仅网络结构相似，或者隐层的数值分布相似，是不足以证明结构相似的。<br>粗排去学习精排的输出。精排本身就是discriminator, 精排预估值 &lt; x 的就是粗排的负样本。</p>
+</blockquote>
 </li>
 </ul>
 <h3 id="为什么GAN在文本/推荐上用的比较少">为什么GAN在文本/推荐上用的比较少</h3><ul>
@@ -1467,14 +1464,9 @@
 <li>运营成本本就内生于监管。</li>
 <li><p>出租车市场的主导地位高度依赖监管。监管出租车的，不仅有成本高昂、数量有限的牌照要求，还有对经营费率的限制。长期以来，出租车企业乐见市场壁垒的存在。刺破这层壁垒，是优步成功的原因之一。优步平台的优势在于：<strong>在新的市场运营，又直接和旧的市场竞争</strong>。优步的资深战略副总裁如此形容这一点，“（我们）是技术企业，不受世界各地对交通企业的监管”。</p>
 <blockquote>
-<p>一个服务市场成熟（衰退）的体现，在于出现监管许可证、执照和价格管制甚至法律诉讼这些壁垒。</p>
-<pre><code>-<span class="ruby">  垄断的状态 != 收税。垄断描述的是企业的客观情况，而收税是企业的主观策略。收税的方式有很多种，<span class="number">30</span>%应用收入归app store是税，骑手消失的<span class="number">5</span>分钟也是税，平台通过孤立个体达成的不平等合约和决策都可以理解为税。
-</span>-<span class="ruby"> 只不过当企业处于垄断状态的时候，收税所得的利润相比创新变得更容易了。
-</span>-<span class="ruby"> 因此当一个行业被头部集团垄断的时候，他们往往会为了维护自己收税的状态而给后来者制造出壁垒，故意制造稀缺性。</span>
-</code></pre><p><strong>而未来新的创新，往往在于跳出原有市场的监管。往往呈现的状态是：在新市场运营，和旧市场竞争同一批的用户/时长。</strong></p>
-<pre><code>-<span class="ruby"> 对社交媒体来说，这往往意味着媒介的变化。twitter -&gt; ins -&gt; tiktok。
-</span>-<span class="ruby"> 对电商来说，这往往意味着链路的优化。</span>
-</code></pre><p>而同时，在新市场里，平台对接的往往是孤立的个体。而非传统组织。</p>
+<p>一个服务市场成熟（衰退）的体现，在于出现监管许可证、执照和价格管制甚至法律诉讼这些壁垒。<br>垄断的状态 != 收税。垄断描述的是企业的客观情况，而收税是企业的主观策略。收税的方式有很多种，30%应用收入归app store是税，骑手消失的5分钟也是税，平台通过孤立个体达成的不平等合约和决策都可以理解为税。<br>只不过当企业处于垄断状态的时候，收税所得的利润相比创新变得更容易了。<br>因此当一个行业被头部集团垄断的时候，他们往往会为了维护自己收税的状态而给后来者制造出壁垒，故意制造稀缺性。</p>
+<p><strong>而未来新的创新，往往在于跳出原有市场的监管。往往呈现的状态是：在新市场运营，和旧市场竞争同一批的用户/时长。</strong><br>对社交媒体来说，这往往意味着媒介的变化。twitter -&gt; ins -&gt; tiktok。<br>对电商来说，这往往意味着链路的优化。</p>
+<p>而同时，在新市场里，平台对接的往往是孤立的个体。而非传统组织。</p>
 </blockquote>
 </li>
 <li><p>国内都是直接跪下的状态。</p>
@@ -1780,10 +1772,8 @@
 <li>【年度】<strong>互联网创新的表现之一，就是放弃死利润（单次买卖的定价差），而追求规模效应。</strong></li>
 <li>类似robinhood，不过专注于房屋保险。我们用了很大篇幅来分析Lemonade商业模式，可以概括为：<strong>通过放弃死差利润快速获客，依靠规模扩大赚取费差，利差则是后续规模效应的产物。</strong></li>
 <li>传统保险巨头长期处于一个均衡状态，公司、代理人和客户之前实现了动态平衡，Lemonade正在打破这个平衡，一方面通过放弃死差利润切了保险公司利润，另一方面去掉了代理人环节省去了大量佣金，这些实打实的利益都转移给了用户，在终端体现为较低保费。<blockquote>
-<p>【战略】对于抵抗巨头的观点。</p>
-<pre><code>- 为什么facebook/instagram一直反应很慢。<span class="keyword">*</span><span class="keyword">*</span>因为新模式会伤害他们的既得利益。<span class="keyword">*</span><span class="keyword">*</span>
-- 为什么虎牙/触手/斗鱼，直播业务先发，但是一直没做大。因为深度绑定主播公会，从流量倾斜，到收入模型。他们没有办法给普通人开直播更多的流量。
-</code></pre></blockquote>
+<p>【战略】对于抵抗巨头的观点。<br> 为什么facebook/instagram一直反应很慢。<strong>因为新模式会伤害他们的既得利益。</strong><br> 为什么虎牙/触手/斗鱼，直播业务先发，但是一直没做大。因为深度绑定主播公会，从流量倾斜，到收入模型。他们没有办法给普通人开直播更多的流量。</p>
+</blockquote>
 </li>
 <li>传统保险巨头对面这样一个变革模式的公司会觉得很头疼，<strong>如果我去做了一个同样模式的子公司，用同样的打法切入，那如何向自身庞大的代理人队伍交代呢？很显然打破价格体系的行动在既有模式中并不容易执行，而放弃死差会计利润的模式导致净利率模型变化，又如何向我的股东交代呢？我不认为巨头的职业经理人们有自断一臂的觉悟和执行力去打击一个季度收入才30m的Tiny。</strong></li>
 <li>这一幕国内投资这应该非常熟悉，拼多多崛起可以完整的体现“切超额利润-用户增长“的理念。天猫的高额交易佣金让商家迫切的寻找流量洼地，拼多多借助社交链裂变帮助商家切了阿里的超额利润，<strong>阿里不愿意也不能放弃自己核心电商业务的利润率</strong>，也就无法对聚划算、淘宝特价版实行真正意义上的扶持，也就无法避免拼多多的用户增长。</li>
@@ -12389,28 +12379,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-</section>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[Agile web developing in rails 第一期]]></title>
       <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
       <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
@@ -12452,6 +12420,28 @@
 <p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
 <p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+</section>]]></content>
     </entry>
     
     <entry>
