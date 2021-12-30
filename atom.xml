@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://chocoluffy.com/"/>
-  <updated>2021-12-30T08:50:21.712Z</updated>
+  <updated>2021-12-30T09:57:04.079Z</updated>
   <id>http://chocoluffy.com/</id>
   
   <author>
@@ -15,11 +15,1476 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[碎语 2021 Jun.]]></title>
+    <link href="http://chocoluffy.com/2021/12/30/%E7%A2%8E%E8%AF%AD-2021-Jun/"/>
+    <id>http://chocoluffy.com/2021/12/30/碎语-2021-Jun/</id>
+    <published>2021-12-30T22:49:08.000Z</published>
+    <updated>2021-12-30T09:57:04.079Z</updated>
+    <content type="html"><![CDATA[<h2 id="2021/6/30">2021/6/30</h2><ul>
+<li>无铸币税的货币。<ul>
+<li><em>很多时候，货币背后的经济设计和货币本身是糅合在一起的。</em><ul>
+<li>什么是经济设计？比如交易的分成机制，百分之几分给谁。是否实现UBI。是否有黑洞/销毁机制等等等等。<ul>
+<li>pro-creator 货币，比如splits</li>
+<li>pro-gambler 货币，比如EverRise系列 / 黑洞系列和FOMO3D系列。</li>
+</ul>
+</li>
+<li>几种常见机制的优劣：<ul>
+<li>铸币权，意味着制造通货膨胀的权力。理解通货膨胀，从传播的角度看也存在中心和边缘，最晚得到货币供给的边缘人群，受支付压力的影响最大，也是变相地将财富从边缘转移给中心。同样地，如果放在时间轴上看，随着时间逐渐通胀，也意味着财富从老的囤积者逐渐转移到新的持有者手上。</li>
+<li>税收。定向转移。</li>
+<li>烧毁。将财富转移到持有资产的人。</li>
+<li>定向的铸币权。<blockquote>
+<p><em>本质仍是相信，优越的设计/best practice是能够逐步累积的，是可组合的，使得不再是偶然，而是行为发生的必然。</em></p>
+<p>一个思想实验：一个加密货币，能够买到我们现在用人民币买到的所有东西，只是名字不一样，计量单位不一样。它能替代人民币吗? 可能我们会说，工资是否会以这种方式发放呢？医院，房屋中介，政府能接受吗？发现了吗，我们的质疑点都在使用方式是否足够广泛？仅此而已。<br>能够支持货币无摩擦流动的一种尝试来自于质押（custody）的权力，是zero-knowledge transactions.  如果支付依赖对你的信用评级，该货币就只能流通在能够持续履信的范围里，在很大程度上这意味着你的公开社交圈。这种权力也是个人token / social token能够真正普及至日常消费的前提。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/6/29">2021/6/29</h2><ul>
+<li><em>NFT / creator economy和补贴的区别：在于ownership在谁那里</em><ul>
+<li>本质在于income stability。</li>
+<li>capital vs labor； -&gt; platform vs participants. 本质因为利益没有重合。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/6/27">2021/6/27</h2><h3 id="关于token">关于token</h3><ul>
+<li>crypto token的意义是流通。这个流通的门槛，范围变得更低，乃至就像发一个text/发一封邮件一下，你就可以转让你的权益所有权。权益证明这个事情不是新的，因为股票/期权市场就有类似功能的证明，但是改变的重点是：<em>流动性和可组合性。</em><ul>
+<li><em>能够跳出劳务合同的范畴。让你的最好的用户成为你的股东。</em>【创业】设计创业第一天的NFT，让限购的人，直接成为我们的股东。不需要考虑first comer的问题，而是应用无限拍卖的原理，让最大程度金融贡献的人来成为我们的股东。</li>
+</ul>
+</li>
+<li>为什么crypto重要，数据：<em>到现在为止，全世界17亿人口是没有银行账户的。</em>对于他们来说金融服务就是自己拿着纸币去不同的机构支付和交换。</li>
+<li>解决的问题：<ul>
+<li>high barrier</li>
+<li>low efficiency </li>
+<li>trust.</li>
+</ul>
+</li>
+<li>举个例子：我可以在1s内把我所有的资产转移到一个刚发布没有价值基础的小项目上。</li>
+<li>token大致分为3类：equity，utility和governance<ul>
+<li>equity：需要考虑的问题很有意思：<ul>
+<li><em>去中心化的稀缺资源整合。（因为所有的资源都来自于用户，而非中心化的实体）</em>比如是uniswap‘s LP.</li>
+<li><em>谁拥有这个稀缺资源的证明。</em></li>
+<li><em>怎样去设计正和的激励机制。</em></li>
+</ul>
+</li>
+<li>utility：<ul>
+<li><em>提供的实用功能包括：作为借贷的抵押物。比如：compound抵押eth，借出更多的USDT来买入更多的eth，实现杠杆。</em></li>
+</ul>
+</li>
+<li>governance：<ul>
+<li>AB股的A股（具备投票权的股票）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NFT<ul>
+<li>Identity and belonging 【创业】：显示社交地位，比如更换profile头像。</li>
+<li>Status 【创业】follow/like counts的兑换流通「redeem」，比如：你得到的赞等等，可以从公共资金池（广告商赞助）里兑换出来资金。或者兑换出真正的商品。</li>
+<li>Personal meaning 【创业】对历史事件/时间的证明。比如Uniswap L3的LP NFT</li>
+<li>*Relationships- 【创业】授予买卖者的证明：给予他们炫耀的空间，比如“肖战的No.1粉丝”</li>
+<li>Collecting。【创业】哈伯格税的应用。<ul>
+<li>What if Spotify listeners voted on playlists and top curators received a mix of cash and Spotify stock? What if Pinterest compensated top pinners the same way they compensate top engineers? </li>
+</ul>
+</li>
+<li>Superpowers。【创业】本质就是VIP能力。tinder的VIP。communities decide who becomes and owns what power. 众筹的权力。</li>
+</ul>
+</li>
+<li><em>加密经济的总结：crypto不是去颠覆信任的，而是给大家更多的自由去选择信任谁。</em></li>
+<li>商业的演进，一直是封闭的中心化的解决方案战胜了开放的，去中心化方案。因为去中心化方案。</li>
+</ul>
+<h2 id="2021/6/26">2021/6/26</h2><h3 id="NFT">NFT</h3><blockquote>
+<p>nft本质：your hard work need prove and liquidity</p>
+<ul>
+<li>第一代的nft是艺术品，收藏价值</li>
+<li>第二代的nft是可交易的资产</li>
+<li>P2E模式使玩家能够以游戏内代币/奖励的形式获得收入。这些游戏中的代币/奖励既可以在游戏中使用，也可以在公开的交易所进行交易，还可以兑现为玩家的本地法定货币。</li>
+</ul>
+</blockquote>
+<h3 id="NFT_top_bidder_/_拍卖理论">NFT top bidder / 拍卖理论</h3><ul>
+<li>加密货币里的空投，其实就是价格歧视。（人群定向 -&gt; 算法模型的泛化）</li>
+<li>【剧本】很有意思，一个人，面对着一整个世界为他设计的诱惑。（适合画一幅画）。</li>
+<li>真实世界有很多的价值剩余，而算法仅仅是做在某个定义的方向上把价值剩余量化 &amp; 且商业化的事情。</li>
+</ul>
+<h2 id="2021/6/24">2021/6/24</h2><ul>
+<li>the most liquid assets supports the highest yield of passive earns. <ul>
+<li>-&gt; support play to earns. </li>
+<li>Axie Infinity的SLP在目前大盘低峰期的价格也维持相对稳定。</li>
+<li>IP的价值在于抵抗周期。</li>
+</ul>
+</li>
+<li>volatile asset’s major disadvantage is not about volatility, but uncertainty. </li>
+<li>the largest loaning platform can also be the largest yield generators. <ul>
+<li>关键在于collateral，让永远不活跃的抵押物流动。</li>
+</ul>
+</li>
+<li>ponzi是最好的玩法，所有场景下让人们能够接受的玩法。</li>
+<li>all the same(MBS/ABS) as 2008, while auto liquidation early-stop the snow crash. <ul>
+<li>一个很有意思的隐喻，NFT本身就是资产，NFT用于抵押，会带来一系列有意思的现象：<ul>
+<li>出现NFT的评级机构，本质就是资信评级机构比如Standard &amp; Poor。</li>
+<li>基于NFT的证券化流程，比如已经出现的fractionalized NFT。</li>
+<li>和由NFT-backed securities带来的次贷危机，exactly the same as MBS/ABS in 2008. </li>
+<li>better pricing -&gt; better risk management. </li>
+<li>more tight bond with a human IP, more volatile. </li>
+<li>能够直接清算产生现金流的不会产生风险，但对于艺术品/人的IP的风险评估，其中有太多的操控空间。</li>
+<li>we praise objectivity, while we desperately need subjectivity. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[很多时候，货币背后的经济设计和货币本身是糅合在一起的。]]>
+    
+    </summary>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[碎语 2021 May.]]></title>
+    <link href="http://chocoluffy.com/2021/12/30/%E7%A2%8E%E8%AF%AD-2021-May/"/>
+    <id>http://chocoluffy.com/2021/12/30/碎语-2021-May/</id>
+    <published>2021-12-30T22:42:54.000Z</published>
+    <updated>2021-12-30T09:57:04.079Z</updated>
+    <content type="html"><![CDATA[<h2 id="2021/5/23">2021/5/23</h2><ul>
+<li>🌟 为什么要staking才有reward，为什么不能有持有即拥有reward？因为要锁定兑换权力，staking使得资产集中能够被协议所使用。<em>穷人的权利和leverage。</em></li>
+<li>标品的匹配依赖交易所/AMM，非标品NFT的匹配依赖推荐算法和拍卖。<ul>
+<li>因为艺术/音乐/视频等内容资产都是非标品。</li>
+<li>NFT一个很大的隐喻是交易时间。时间不一定是人的物理时间，也可以是资产的锁定时间。</li>
+</ul>
+</li>
+</ul>
+<h3 id="doge">doge</h3><ul>
+<li><em>doge是不断增发的币，意味着他不断把价值从原来的holder转移到新的holder上。也即：社区定义资产。</em><ul>
+<li>货币价值设计：<ul>
+<li><ol>
+<li>量化宽松。由中心化实体决定激励和补贴方向。</li>
+</ol>
+</li>
+<li><ol>
+<li>通货紧缩。价值转移给持有者。</li>
+</ol>
+</li>
+<li><ol>
+<li>block reward定向通胀。给维持这个系统安全性的角色激励。</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/5/22">2021/5/22</h2><ul>
+<li>当一个公司作恶的时候，应该怎么办。<pre><code>-<span class="ruby"> 以前资产是属于公司的。不透明。现在资产是属于contract的，社区成员可以fork。<span class="number">51</span>% attack。
+</span>-<span class="ruby"> 过去，声誉带来最多的正当性。现在在可证伪的领域，比如科学，一个不可证伪的理论掌握正当性。现在不再是这样了。
+</span>-<span class="ruby"> *现在出版行业/作为记者争取的是正当性。报纸上报道的fact，和随口说出的fact，和<span class="constant">FDA</span>发文披露的fact，拥有着不同的力量。*
+</span>    -<span class="ruby"> 中心化的正当性容易作恶。
+</span>    -<span class="ruby"> 去中心化的正当性能够纠偏。</span>
+</code></pre></li>
+<li>🌟 <em>For a good idea to have the most impact, that idea cannot just be freely available – that idea also needs to achieve legitimacy.</em><ul>
+<li>一个成熟的社会/社区，都会转向倾听authority的形象/signal，而不是他的内容，因为这样更有效率。</li>
+<li>推荐系统的职责永远是反过来。</li>
+<li><em>购买NFT的时候，本质是在购买其他人1. 未来对这个资产的价值期望。2. 能够炫耀所有权（当场变现持有权，也即持有权的附加价值，能够提高社会地位）。大部分的潮流都在做的事情是，创造稀缺度，哪怕</em></li>
+<li>NBA发行的NBA top shot和一个学生发行的NBA top shot的区别。签名与签名之间的正当性。</li>
+</ul>
+</li>
+<li>喜欢经济学的一个原因：这个系统在教你怎么去设计动力（加速度）。</li>
+</ul>
+<h2 id="2021/5/21">2021/5/21</h2><h3 id="Alchemix">Alchemix</h3><blockquote>
+<p>token的意义？</p>
+<ul>
+<li>仅仅是governance token。meme。</li>
+<li>是否能够捕获协议的价值。<ul>
+<li><ol>
+<li>价值来自于手续费（burnt by transaction fee）</li>
+</ol>
+</li>
+<li><ol>
+<li>价值来自于成为系统原生资产。（backed by or pegged with native assets.）</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><a href="https://messari.io/article/alchemix-bringing-future-yields-to-the-present" target="_blank" rel="noopener">https://messari.io/article/alchemix-bringing-future-yields-to-the-present</a></li>
+<li><em>将质押和借贷业务结合在一起。</em><ul>
+<li>用质押的收益，来自动偿还借贷的部分。</li>
+<li>The system effectively reduces user-generated debt /automatically/when yields are returned, while /removing the risk of liquidation/ of the underlying collateral. </li>
+<li><em>稳定币的价值来自于流动性。stable originates from liquidity, and stable maximize its function through liquidity.</em></li>
+</ul>
+</li>
+<li>另一个有意思的想法，AMM as a yearn generator. 把深度资产池用于资产增值服务。同时设置一个N% margin call，如果活跃liquidity和用于staking的资产差距小于N的时候，自动撤回质押出去的资产。</li>
+<li>为什么能够这么做/创新。本质是风险可控。或者说完全透明的信号传播。去中心化有两个阶段，一个是简单的Peer2Peer，另一个是在Peer2Peer的结构上实现two-hop connection。每一个子节点都能够连接到另一个子节点。<ul>
+<li><em>当IPO/ICO成为仅仅在交易所上组一个资产池。和在中心化交易所交易上线的区别？一个让市场的两侧猜测决定价格，极度不透明，充满投机，意味着庄家容易操盘；一个是让资产深度决定价格，极度透明。</em></li>
+</ul>
+</li>
+<li><em>在开源的世界里，护城河是流动性和整合能力。（一个新发/新forked出来的币是没有流动性的；）</em></li>
+<li>blockchain给管理带来的思路：透明化方案。&amp; 一键复现。</li>
+<li>优化技术，是最直接优化网络效应的手段。</li>
+<li>当我们说最终的答案是人心的时候，我们应当知道我们选择了一条最难的路。</li>
+</ul>
+</blockquote>
+<h2 id="2021/5/15">2021/5/15</h2><ul>
+<li>avatar的反身性，人们会改变自己的行为去迎合自己的肖像。<ul>
+<li>因此most avatar拥有above-average的吸引力。</li>
+<li>肖像 &amp; 皮肤。可以买卖。</li>
+<li>人们希望表达他们是一个什么样的人。（市场信号的传递）<ul>
+<li>change wallet address，change your persona, your skin, and your social life. </li>
+</ul>
+</li>
+<li><em>one can wear many, 也同时意味着 many can wear one。</em><ul>
+<li>toC的逻辑：one can wear many。</li>
+<li>toB的逻辑：many can wear one。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>why google earth can’t be metaverse? </li>
+</ul>
+<h2 id="2021/5/8">2021/5/8</h2><ul>
+<li>grayscale增加大部分的mana持仓，和少部分的LPT，LINK和FIL</li>
+</ul>
+<h2 id="2021/5/7">2021/5/7</h2><ul>
+<li>现代科技的进步，只是让收税的位置换了地方 &amp; 变得更高效。<ul>
+<li>当税收不再是一个点对点的财富转移，而是点到全部的移动。</li>
+<li>财富的通缩和通胀将更能够拉动以及用于预判群体的行为。</li>
+<li>于是，paradigm shift：以前是沉淀的资产定义社群，未来是社区定义资产。</li>
+<li>meme brings volume，volume pay taxes. a positive cycle.  </li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[以前是沉淀的资产定义社群，未来是社区定义资产。]]>
+    
+    </summary>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[碎语 2021 Apr.]]></title>
+    <link href="http://chocoluffy.com/2021/12/30/%E7%A2%8E%E8%AF%AD-2021-Apr/"/>
+    <id>http://chocoluffy.com/2021/12/30/碎语-2021-Apr/</id>
+    <published>2021-12-30T22:26:26.000Z</published>
+    <updated>2021-12-30T09:57:04.075Z</updated>
+    <content type="html"><![CDATA[<h2 id="2021/4/25">2021/4/25</h2><h3 id="NFT的延伸">NFT的延伸</h3><ul>
+<li>NFT实现了个性化票据的能力。<strong>资产票据化。</strong> （不只是艺术NFT类别，只能够表达资产的所有权，使用权等等）<ul>
+<li>每个人通过和defi协议交互会得到LP token，比如借贷，但每个人的需求和当时发生的场景是不一样的，比如有的人是希望存300天，有的人希望存400天，但是我们拿到的是同样的LP token。这没有办法体现我们需求的不同。而现有的eth ERC-20 token协议的描述能力就是如此。</li>
+<li><strong>本质上金融就是缔造金融契约，而契约约定了我们的某种权利。创建契约票据的能力的强弱，决定了这个产品在描述金融复杂度上的能力高低。</strong><ul>
+<li>举个例子，现在所有人在这边得到的都是同样的金融服务。但是完全应该根据用户的不同需求，以及需求的强弱高低来决定服务的收益率。</li>
+<li>Mist，将LP存入的时候mint一个NFT。</li>
+</ul>
+</li>
+<li><strong>未来的趋势：1. 很多的defi平台最终都会产出NFT。是因为用户的需求 &amp; 需求的复杂度倒逼他们这么做。2. 金融平台开始接受收藏品NFT作为抵押物。</strong></li>
+</ul>
+</li>
+<li><strong>defi的本质，其根本优势是：可组合性。</strong><ul>
+<li><strong>金融的本质从来都是财富的转移，而不是财富的创造。一个协议能够让你赚钱，一定是某个人在某个地方亏了钱，或者是心甘情愿地付了钱。而什么时候亏一点，谁少亏一点，是一种机制设计的平衡和精妙之处。传统世界没有那么强的可组合型，这是超越中心化金融的根本优势。</strong></li>
+<li><strong>闪电贷：defi的时空是点状的。在点与点之间，你只要能够反悔，就可以反悔。这就是一种全新的手段。</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="税的用法">税的用法</h3><ul>
+<li>数字签名，量化了渠道的剩余价值，也让价格歧视（个性化税收）愈加普及。有意思的是，税的用法看得出其战略眼光。有的直接纳入囊中，这和封建地主阶级没有任何区别；有的把税收重新投资基建，比如罗斯福新政/现在拜登的新基建计划，本质等价于定向的行业投资，ubi；还有的，直接烧掉，真正意义上的价值平均分布；有的把给流动者esd<ul>
+<li>这一点上，是区分凯恩斯主义和罗斯福新政的关键区别。<ul>
+<li>凯恩斯：财政赤字；等价于所有人的资产同时贬值。</li>
+<li>罗斯福：高税收高基建。等价于定价增发。而资本流动路径收到特定范围的限制。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="《后NFT时代》">《后NFT时代》</h3><ul>
+<li>“我们从2020年的数据来看，<strong>艺术品和收藏品的一级市场和二级市场份额占比均接近7:3</strong>（来源：nonfungible.com nft yearly report 2020），而<strong>游戏和元宇宙则相反，一级和二级占比约为3:7。”</strong></li>
+<li><strong>NFT收藏家的最佳展览场景：是metaverse。</strong></li>
+<li>NFT，就是资产加上数字签名，而问题在于谁都可以在签，不同的链乃至不同的平台都可以有同一作品的数字签名。最终对NFT价值的共识 = 作品本身的共识 + 数字签名的共识。当大家注意前者的时候，也不要忽略后者的马太效应。一个有意思的比喻，中国只会有一个合规的教育部认证。<ul>
+<li><strong>NFT的预示，产权可以高度分割的，是资产可以和所有权分离。而人们购买和二级市场流通的仅仅是持有权。</strong><ul>
+<li>头部玩家发行NFT没有问题，因为我们能够很好的辨识他的真实身份，资产的所有者和签名的署名者是同者。</li>
+<li>曾经的版权侵犯，是资产的复制。是因为通过复制资产就能达成复制所有权。从另一个角度说，能将bittorrent和pirate bay从庇护盗版行为的道德洼地拯救出来的，其实是NFT的发行与销毁。</li>
+<li><strong>未来的版权侵犯，不是对头部作品的侵犯，而是对长尾资产的侵犯。是所有权签名的身份与作品的真实作者不符。</strong></li>
+<li>注脚：pirate bay是一个很理想主义的技术人，陷进一个自我辩解与成全的坑里的故事。渠道应当为流通的内容负责，就像工具应当为使用的场景与后果负责一样。那些自我辩解着希望打造最隐私，无论技艺再高超，也犯下了智识的懒惰。就像当时纳粹集中营的工作人员，说“我只为他们设计最安全的传输方案，把一部分人转移到另一个地方”。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>关键问题：如何解释当前加密货币和q币这类代币的区别？加密货币真正的作用，超脱于对其当前状态的描述，而在于整个生态里各个部件能发挥出来的全部效用，包括去中心化交易所amm/算法稳定币rebase/flashloan等等。<ul>
+<li>最简单的例子，腾讯里游戏的资产你希望变卖的话，怎么办？1. 游戏内置的交易区，你在那里站着等。2. 游戏论坛，你在那里水帖等。其本质依然是最原始的物物交易。随着交易的规模增大，投机的人转身一变成为中介，批量收购资产再批量转手卖，依赖资产池吃规模效应的利差，这也是中心化交易所的起源。</li>
+<li><strong>关键问题：去中心化交易所，本质是一个提升效率的发明。是一把更好的锤子。但创业不是拿着锤子找钉子的过程，而是先去看痛点，在去制造对应的锤子。你拿着一把漂亮的锤子，仅仅告诉我你很适合做科研。</strong>这不是metaverse的必要条件，甚至也不充分。<ul>
+<li>反驳：不要低估量变带来质变的过程。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>所有音频经济最终都会选择视觉化的场景拓展。因为抵抗不住诱惑。</li>
+<li>【思维】<strong>关键思路：涌现的力量。当各种公链还在炒以太坊的defi的时候，它内部长出来一个不亚于defi规模的NFT。你不知道未来哪里又会冒出来一个从来没有想到过的东西。</strong></li>
+<li>flashloan的设计？</li>
+<li><strong>alchemistcoin的设计？</strong><ul>
+<li>crypto makes us all investors, like internet makes us all publishers.</li>
+</ul>
+</li>
+</ul>
+<h3 id="OHM_&amp;_对治理代币的理解">OHM &amp; 对治理代币的理解</h3><ul>
+<li>“所有的仿盘基本都是以稳定为目的，而rebase是通过精确丈量经济来微调达到稳定，不是为稳定而稳定。<strong>仿盘们一般通过掺入其他优质币或设计治理代币两种方式来追求稳定</strong>，关于这些做法的后果我之前也分析过了，尤其是治理代币，就是先天存在“代理人风险”，<strong>之所以我们不想用usdt这种法币稳定币，就是因为联储的存在，因为联储每年都往货币里面注水导致持币人的财富流失，这就是代理人风险，而治理代币就是想干联储的事</strong>，这无论是从动机还是实力而言，都是扯淡的事”<ul>
+<li><strong>有一个关键的差异点在于：如果联储是协议本身。而不是依赖治理代币的持有人的意愿。</strong></li>
+</ul>
+</li>
+<li>通过OHM的新机制去理解债券<ul>
+<li>ample的forth，是治理代币，和原有的ample功能分割。</li>
+</ul>
+</li>
+<li>“最适销的资产，也会是最好的货币。“<ul>
+<li>比特币和以太坊，都是资产，而不是货币。</li>
+</ul>
+</li>
+</ul>
+<h3 id="稳定币">稳定币</h3><ul>
+<li>Fei/Rai/Float和Dai是同一个赛道的，和Ample的逻辑不同。</li>
+</ul>
+<h2 id="2021/4/22">2021/4/22</h2><ul>
+<li>“A burn achieves the same economic effects as an airdrop, with no need for as many tx on the blockchain, and more evenly distributed. I am always surprised that few understand this,”</li>
+<li>新的媒介，意味着新的获客成本的变化。传统行业用30年积累的活跃用户，你5年甚至1年就能触及。同样的数字，不同的含义，但已有足够丰富的衍生玩法。这也是所谓的“所有行业都值得再做一遍”的意思。</li>
+<li>网络效应的另一层意思是，当其中一个人放弃使用这个网络的时候，它对已有成员的打击也是累加的。</li>
+</ul>
+<h2 id="2021/4/19">2021/4/19</h2><ul>
+<li>音乐人的诉求：need money right now, right here. 这也是大部分资金池公司的商业模式：pooling assets, pooling risks. 富人向穷人，或者换一个版本，组织向个人售卖稳定预期。<ul>
+<li>音乐label company和音乐人的关系。</li>
+</ul>
+</li>
+<li><strong>穷人或者个体，失去的是什么：自由选择的权利。因为被长期锁定了。</strong><ul>
+<li>ISA（income sharing agreement）</li>
+</ul>
+</li>
+</ul>
+<h3 id="ISA_收入分成协议">ISA 收入分成协议</h3><ul>
+<li><strong>ISA依赖的是：仲裁系统，最大的纷争在于真实性的认证</strong></li>
+<li><strong>可规模化职业的奖励分配趋向于遵循幂律分配。与此同时，不可规模化职业的奖励遵循更为正态的分布。</strong><ul>
+<li><strong>处理可规模化职业的风险和不确定性的最佳方法是将风险分摊出去。</strong>对未来忧心忡忡的医生或健身教练、作家或投资顾问可以发行自己的代币，并让其粉丝和顾客参与其个人事业的起起伏伏。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/4/16">2021/4/16</h2><ul>
+<li>行为：<ul>
+<li>私密行为，不用激励。</li>
+<li>存在外部性行为，需要激励来抵消成本。</li>
+</ul>
+</li>
+<li>LP在短视频领域就是视频创作者。</li>
+</ul>
+<h3 id="todo">todo</h3><ul>
+<li><strong>Uniswap 之所以能取得今天这样的成就，流动性挖矿发挥了决定性作用。值得庆幸的是，有一种方法可以解决上面提及的问题：你不能让用户通过 Uniswap 订阅（subscribe），然后仅奖励那些持有 LP NFT 的用户，这种模式是不对的。取而代之的是，他们必须通过一个共享合约在 Uniswap 上存款，这个共享合约会指定一个合理的价格区间（比如 80-120 美元），并时刻确保价值有效，如果中间市价逐渐走低，那么可能需要偶尔重新设置新的价格区间。</strong></li>
+<li>🌟<strong>影响外部的权力，最好是中心化的。</strong></li>
+<li><strong>这种机制还能使协议支持的做市变得更加容易，比如 Fei 就已经成功做到了！</strong></li>
+</ul>
+<ul>
+<li>货币不是资产，资产一定是具备产权且因而价格不一的。<strong>而NFT正刻画出数字资产的产权属性。其分散流动性的意义在于，体现出局部敏感或因具备关键信息而变化的供需关系，这也是fiat currency的局限所在。NFT = a good localized currency.</strong><ul>
+<li>看完Uniswap V3白皮书，几点启示：<ul>
+<li>V3允许LP设定提供流动性的价格范围，本质等同于发行这个价格范围内的factionalized NFT.</li>
+<li>伴随着局部价格策略的复杂化，会诞生出围绕V3喊价策略的整合商，类似Yearn。对机构LP更友好了，牺牲个人LP利益。</li>
+<li>a good/low-entry experience must be a passive experience. 简单小结，就是影响外部的权力，应当是中心化而不是去中心化的。这也是大家熟知的抖音公域流量控制的核心思想。V3还差了点，有些实践此类PCV（protocol controlled value）的协议已经跑在前面了，比如Fei。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/4/13">2021/4/13</h2><h3 id="AI起到的作用">AI起到的作用</h3><ul>
+<li>制造出作品的成本越低，作品的价值就越依赖作者的声誉。</li>
+<li>AI art是终极的造神运动。因为一个牛逼的人，连它呼吸过的空气都是有价值的。</li>
+</ul>
+<h2 id="2021/4/12">2021/4/12</h2><h3 id="关于阿里的反垄断罚单">关于阿里的反垄断罚单</h3><ul>
+<li>阿里的罚单交了以后，每年等于大约会拿出200亿左右的预算来防止品牌外逃。阿里目前准备怎么花这笔预算呢？<ul>
+<li>核心思路还是如何保持商家二选一的状态，但同时不被国家监管。个人观点哈，其实有很多流量侧的玩法去变向惩罚&amp;奖励。如果阿里开公告说，”能够持续在阿里平台上独家经营的能够奖励流量”，这么听下来是不是就好像没什么滥用垄断地位的问题了？一个比喻是流动性，当以后我要让一个地方的流动性枯竭的做法不再是明令禁止了，而是我限制它和其他地方的连通（像wx禁止某小程序/h5分享），甚至给其他区域增发，等效于变向贬值。主要也因为现在推荐模型和参数是没法监管的，通过叠加策略来让改变流量分配体系，并最终呈现等效的惩罚是能够实现的。这也是铸币税可怕的地方，现在那些算法控制流量的平台，都有着最高的赋税权，像抖快要让商家独家，或者惩罚双栖的手段都是悄无声息的。</li>
+</ul>
+</li>
+<li>这个思路有道理，而且流量的价格实际上是低于这笔预算的（坑定兑价支付流量了），但这样做也可能导致新品牌一开始就难以留在阿里<ul>
+<li>嗯嗯确实；但这个策略只要比“明令要求二选一”有效，就达到目的了。新品牌大多不会是原“二选一”政策的受众范围，毕竟沉没成本不高；“二选一”政策圈定的应该大多是那些沉没成本特别高，且自身没有更高效营销能力只能靠已有阿里的存量吃老本的商家，这种一割一个准。</li>
+<li>这也解释为什么国家这么着急要出面了，毕竟国家的决策基本都从这些小散户的利益出发，现在的阿里已经不是原来的阿里了。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/4/11">2021/4/11</h2><h3 id="拍卖的意义">拍卖的意义</h3><blockquote>
+<p>拍卖的适用领域变成：未来的需求和未来的收益。<br><strong>拍卖解决的问题是：信息不对称下的估值问题。也正是数字资产目前面临的最大的困境。</strong></p>
+<pre><code><span class="bullet">- </span>所有数字资产都将成为金融资产，而所有具备金融属性的数字资产都将重新面临一套新的交易估价体系。
+</code></pre></blockquote>
+<ul>
+<li>人们总可以给最终呈现的结果做一个解释，可新解释不等于好解释。</li>
+<li>当一个人可以任意说谎时，你不可能再使他在做其他坏事的时候还有什么大的心理障碍。</li>
+<li>语言腐败的本质是，要借助人们已经形成的这样一些善的语言，来表达你想做的可能是恶的东西。</li>
+<li>进入NFT拍卖场的人，他们的胜利不仅仅来自于经济回报，还有参与拍卖的人数。</li>
+</ul>
+<h2 id="2021/4/10">2021/4/10</h2><ul>
+<li>【创业】<strong>唐彬森：你给我一个2个小时的短片，我返回给你10s的精剪。</strong></li>
+</ul>
+<h3 id="NFT综述">NFT综述</h3><p><strong>解决的问题：数字资产的未来。</strong></p>
+<ul>
+<li>compound的white paper。</li>
+<li>protocol control value的前景</li>
+<li>NFT的整体思路整理。<ul>
+<li>Foundation、AsyncArt、SuperRare、NiftyGateway、MakersPlace、Rarible六大NFT交易平台的交易机制。</li>
+</ul>
+</li>
+<li>NFT的估值问题，如何系统地解决：<ul>
+<li>foundation/zora是怎么利用bonding curve的？</li>
+<li>NFT和compound等AMM的结合？</li>
+<li><strong>和拍卖的联系？</strong>当资产数字化后，什么才是数字化系统的价格？这要靠一套交易机制来体现。</li>
+</ul>
+</li>
+<li>基于目前的结论，如何创造新的商业模式？ <a href="https://mp.weixin.qq.com/s/HF0eQTCENNDwdNPusvGMgA" target="_blank" rel="noopener">无平台化媒体正在崛起</a><ul>
+<li>作者的结论：<ul>
+<li>预售和众筹</li>
+<li>二级市场的收入</li>
+<li>准入权限</li>
+</ul>
+</li>
+<li>大部分NFT的应用仍然停留在社区的治理代币 / 分红代币上，但是NFT和数字原声资产的结合是最具魅力的：包括游戏、音乐、艺术、写作等领域。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/4/9">2021/4/9</h2><h3 id="《艺术品如何定价》">《艺术品如何定价》</h3><ul>
+<li>市场和文化生活的关系？<ul>
+<li>曾经认为是相互排斥的，因为价格机制的异化和降维。</li>
+<li>但是作者认为，<strong>市场是一种文化群落。市场交易是高度仪式化的。价格会慢慢成为文化载体，以致于艺术家/收藏家和交易商人都有赖于它而生存。</strong><ul>
+<li>我的解释: 市场交易是会主动创造文化的。因为交易追求的是稳定性。而文化圈层 &amp; 固定的交易模式与习惯正是他们所追求的稳定性。</li>
+<li>[ 2021-11-19 ] 怎么理解：就像公司的创造为了降低内部的交易成本，在具备相同文化符号的私人市场内也能降低交易的摩擦。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>少用差异这个词，因为它俨然成为了一种事实正确的省略，而提供不了更多的信息。</li>
+<li>NFT的其中一个作用，用来标记一种社会关系。</li>
+<li>章节结构：<ul>
+<li>第一章：如何定价。</li>
+<li>第二章：如何演变成三边结构（艺术家/收藏者和中介）</li>
+<li>第三章：结构与价格之间的相互影响。</li>
+</ul>
+</li>
+<li>价格是多义的。一旦一个事物成为了文化信号，它就一定是多义的。因为不同圈层的理解不同。</li>
+<li>**反思价格的社会学意义：- <ul>
+<li><strong>社会统一定价，往往反映的是社会权力之间的博弈，往往是一种次优的结果</strong></li>
+<li>理解文化，是一种媒介，是传播学的一种概念。存在介质和媒介对应的传播速度和先后顺序。</li>
+</ul>
+</li>
+<li>🌟艺术评论，也是一种社会权力下的产物，目的是提高艺术品的曝光。【剧本】你自以为自由的呐喊与游行，也是资本计划的一部分。<ul>
+<li>现代艺术品商人，从19世纪开始出现，其本质特征是，将注意力从销售单幅油画转移到选择一定数量的艺术家并积极推进这些艺术家的职业生涯发展。为了达到这个目的，这些艺术品商人很大程度上依靠，并故意制造，艺术批评来提升艺术作品的人气。</li>
+<li><strong>以人为目的的市场与以物为目的的市场，存在不同的动机。</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/4/8">2021/4/8</h2><ul>
+<li>大部分能看得到的熟练，都是无数次假想的攻防演练。<ul>
+<li>我不太相信一夜领悟和一夜长大的，大部分的结果都是厚积薄发。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[金融正是在缔造金融契约，而契约约定了我们的某种权利。创建契约票据的能力的强弱，决定了这个产品在描述金融复杂度上的能力高低。]]>
+    
+    </summary>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[碎语 2021 Mar.]]></title>
+    <link href="http://chocoluffy.com/2021/12/30/%E7%A2%8E%E8%AF%AD-2021-Mar/"/>
+    <id>http://chocoluffy.com/2021/12/30/碎语-2021-Mar/</id>
+    <published>2021-12-30T22:18:24.000Z</published>
+    <updated>2021-12-30T09:57:04.079Z</updated>
+    <content type="html"><![CDATA[<h2 id="2021/3/29">2021/3/29</h2><ul>
+<li>让身份买卖成为可能。</li>
+</ul>
+<h2 id="2021/3/28">2021/3/28</h2><ul>
+<li>让每一个人发币的作用？</li>
+</ul>
+<h3 id="ESD_&amp;_olympus的区别">ESD &amp; olympus的区别</h3><ul>
+<li>olympus不依赖rebase（数量调整）。</li>
+<li>ESD和olympus的区别在于，去观察价格波动时候触发的行为，当价格 &gt; $1：<ul>
+<li>ESD：<ul>
+<li>增发的ESD直接给staker（&gt;$1，意味着需求提高，需要增发，但是直接增发给staker容易鼓励货币囤积行为，相同的趋势在存在于价格下降的时候，导致死亡螺旋）。</li>
+</ul>
+</li>
+<li>olympus<ul>
+<li>protocol直接卖olympus给市场。<strong>用赚到的利润给staker mint更多的OHM（赚的利润成为新OHM的资产支撑）</strong></li>
+<li><strong>解决的问题：将赚得的利润平均分给所有人，而不是像ample那样，由最精致的投机者赚取最多的钱。Olympus sells new supply itself, ensuring that the profits from market operations are shared by all stakers, regardless of their sophistication or market activity.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>当价格 &lt; $1时：<ul>
+<li>ESD发行第二种代币coupon（债券）, 用户可以兑换成ESD，本质还是减少市场上ESD的流动性，让价格恢复为$1。(然而用户只能在价格&gt;$1的时候行使兑换的权力，同时为了鼓励这种行为，也增加了债券的利息)。但是有两个局限是，1.债券有过期时间30天的限制，存在风险。 2. 债券的比例不能超过货币供给的35%。</li>
+<li>而Olympus的protocol直接从市场上买回来OHM，并烧毁供给。Olympus的优势是，所有货币都是有资产支撑的，因为protocol有能力从市场中买回来OHM</li>
+</ul>
+</li>
+</ul>
+<h3 id="NFT（a16z_podcast）">NFT（a16z podcast）</h3><ul>
+<li>🌟 <strong>去中心化的基础是各个节点的理性，为什么NFT是头部玩家的变现工具，因为他们的粉丝社区就是最好的曝光渠道。因为，当我告诉你，现在没有平台了，你需要自己去promote你的作品，自己管理现金流，与粉丝互动；那结果必然是头部玩家更具备更为成熟的能力。其实平台的作用是，弥补并成为那些长尾资产的曝光渠道。</strong></li>
+<li>【创业】NFT本质作用还是，创造一种长期联系。<strong>持有证的变现方式。</strong><ul>
+<li>比如凭借持有NFT才能进的discord group，其实和知识星球没有太大差别。但价格是一个permissionless的门槛，而NFT的稀缺性是一种门槛。</li>
+</ul>
+</li>
+<li><strong>以及NFT创造了一种部分所有权。这个是实物完全没有办法做到的。</strong><ul>
+<li>例子：NBA top shot，拥有一个moment的证明。</li>
+<li><strong>是一种基于共识性的稀缺。</strong></li>
+<li><strong>蒙娜丽莎的价值，不在于世界上只有锁在卢浮宫的一副真品而无人了解；而在于所有人都或多或少接触过她的赝品，而真品只在卢浮宫展出。</strong></li>
+<li>FT的价值来自于稀缺，而NFT的价值来自于富足（共识）。<ul>
+<li>例子：黄金的稀缺，和米老鼠的稀缺，是不一样的。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>投机（炫耀）以及各种身份游戏只是第一阶段。持有身份会成为第二阶段的一个入场券，有更丰富的应用体验，比如：discord / virtualland（game）等等</strong></li>
+<li>NFT和ICO的区别：<ul>
+<li>ICO是对未来的变现。NFT是具体的物。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/3/27">2021/3/27</h2><h3 id="和范旭松见面">和范旭松见面</h3><ul>
+<li>行为操控。</li>
+<li><strong>c端的本质是皮肤生意。</strong>只不过我用在的b端，因为它的商业化天然跑得通。</li>
+<li>帮MCN制造clone &amp; 维护一个素材库（长尾可交易的资产平台，他们可以从我这边找到需要的虚拟形象 &amp; ip租赁）。<ul>
+<li>赛道：脱口秀的幽默搞笑赛道。旅游文创赛道。</li>
+</ul>
+</li>
+<li>平台的思路：<ul>
+<li>支持品牌方在这个平台制造一些IP形象，然后是能够很好的迁移到他们的场景的。</li>
+</ul>
+</li>
+<li>了解一个项目的方式：不断追问，什么社交? 什么知识管理？和roam research有什么区别？</li>
+</ul>
+<h2 id="2021/3/26">2021/3/26</h2><h3 id="NFT与产权">NFT与产权</h3><ul>
+<li>“我们先说说产权理论。经济学家倾向于把产权视为非单一的东西，是由法律、合同甚至习惯支配的一系列不同的权利。例如，你可以拥有某样东西，但不占有它。你可以占有某样东西，但无权转让它。你可以控制某样东西，但无权排除他人享受它。<strong>产权是可以高度分割的。</strong>我可以写一份合同将我的财产转让给你，但同时规定我保留实际使用权或收入流。艺术品转售特许权使用费框架是将这些可分割的权利概念纳入法律的一个具体实例。购买一件艺术品的 NFT，就是拥有了某件东西，但却没有办法不让别人享受它。买家从拥有某样东西中获得的快乐，就是所有权本身的体验。这种体验值多少钱呢？我们现在看到的 NFTs 的疯狂价格，就是对这种纯粹的所有权价值的价格发现过程。”</li>
+<li><strong>产权被区分为：所有权和持有权。</strong><ul>
+<li>原来的，所有权 = 持有权。<ul>
+<li>举例：netflix一开始租碟，等同于它拥有了这些碟子。</li>
+</ul>
+</li>
+<li>现在，终于可以区分所有权 != 持有权。</li>
+<li>也和资产的匿名性有关。纸币永远不会被淘汰，因为纸币提供了一种匿名的交易。现代化的文明，意味着流动性不再匿名，过程也具有价值。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/3/25">2021/3/25</h2><ul>
+<li>准备和唐彬森的交流：<ul>
+<li><strong>准备好的问题，跳离元气森林的范畴。而是更大的视野。</strong><ul>
+<li>如果出现一个同样互联网打法的新消费品牌，怎么应对？新消费的不同阶段。</li>
+</ul>
+</li>
+<li><strong>尽可能帮到他，争取下一次见面的机会。</strong></li>
+<li>更多是对已有模式的借鉴和大力出奇迹。<ul>
+<li><strong>我这边去给他多介绍一些有意思 &amp; 有价值的模式。</strong></li>
+</ul>
+</li>
+<li>可能去引导的一些问题 &amp; 方向，今晚去@宋伟：</li>
+</ul>
+</li>
+<li>清华产品交流：<ul>
+<li><strong>对这个行业有更多的兴趣和感受。</strong></li>
+<li><strong>个人品牌：把微信号分享出去。</strong></li>
+</ul>
+</li>
+<li>去中心化应用的隐含意思是，walled garden能更有效率的实现，差异在于诱惑抵抗。</li>
+</ul>
+<h2 id="2021/3/23">2021/3/23</h2><h3 id="推荐系统产品_&amp;_策略分享Notes">推荐系统产品 &amp; 策略分享Notes</h3><ul>
+<li>在进入行业之前，去看这个推荐算法出现所要解决的问题；以及大家所熟悉的产品是怎么做的。</li>
+<li><p>我的背景。19年毕业加入快手。</p>
+<ul>
+<li><p>为什么需要推荐系统？有什么价值。</p>
+<ul>
+<li>一个很简单的例子，去观察有推荐系统之前的样子。搜索引擎，资讯门户类 / 多媒体类网站。同样的背景：<strong>千人一面的结果</strong>。<ul>
+<li>这里搜索引擎单独拿出来说。2018年，没有比普通结果更好（带有主动目的性，行为极强的位置偏差；更多的内容相关性建模）。关注重点是，新闻门户/视频网站，为什么会选择推荐系统。</li>
+<li>千人一面带来的直接影响就是，内容流量分布具备极强的头部效应。<strong>在我没有更好的了解用户的情况下，追求内容公约数，是最保险的选择。</strong>早期的新闻/视频平台只能解决“头部资产”的流动性问题。</li>
+<li>但现状是，随着媒介普及 &amp; 生产力提升，大量长尾优质内容的价值被忽视。让这些长尾内容曝光，被用户消费，同时也不希望消费体验太差。于是有人提出“协同过滤”的方式。如果两个用户对不同内容消费评价接近，那么其中一个人的点击能够被推给另一个人，这也是推荐系统最早的算法。<strong>而这同时不依赖于一个编辑/curator的个人选择。</strong></li>
+<li><strong>评价推荐系统质量最关键的，也是冷启动效率：当一个视频完全没有被曝光的时候（数据很稀疏），怎么推荐给最合适的人。</strong><ul>
+<li>大家一个想法：抖音调性很好，快手low low的，b站的话又鬼畜又女权，特别容易崩。</li>
+</ul>
+</li>
+<li><strong>一个很有意思的点：判断推荐系统的优劣，和内容的调性是没有关系的。</strong><ul>
+<li>内容调性：1. 圈层属性；2. 以及运营手段。</li>
+<li><strong>抖音slogan：看见美好生活。实际上是：看见每一种我想让你看见的美好生活。</strong></li>
+</ul>
+</li>
+<li><strong>用产品的话说：怎么去给长尾资产估价。一个估值问题。</strong>效率越高的推荐系统，能够给越准确的估值。</li>
+</ul>
+</li>
+<li>给不同的人推荐不同的长尾资产，<strong>流动性带来价值发现。</strong><ul>
+<li>例子：给一通石油估价。去街边吆喝，多少人愿意以多少价格买卖。石油期货，期货市场高频地交易。</li>
+</ul>
+</li>
+<li>信号输入。<ul>
+<li>没有推荐系统之前，还在编辑精选的时代，我们通常称编辑为curator。他们干的事情，他们是根据他们的审美，收集用户的反馈/销量，来判断排序。而推荐系统正是把这个流程抽象化 &amp; 流水线化。</li>
+<li>曾经需要通过销量/用户问卷才能达成的数据闭环，**通过搭建一个信息流的场景来缩短数据闭环（反馈）的时间。以及All time spent become signal.- </li>
+<li><strong>延伸：交互的框架决定行为成本，而行为成本决定数据信号收集的不同 &amp; 反馈的周期和方式。</strong><ul>
+<li>信息流；单列和双列。区别在于：不同的操作方式，带来的推荐系统优化的目标不一致。</li>
+</ul>
+</li>
+<li><strong>曾经被忽略的极具价值的用户显式/隐式反馈信号，被充分利用。- Productivity advances by increasing the number of important operations we can perform without thinking about them. </strong>生产力的提升，往往正是在于我们能够无意识地做出更多重要决策。无意识地完成费力的任务- 重要决策的信息能够被充分循环 &amp; 利用。<ul>
+<li>一颦一笑。你的眼球转动。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>不只是推荐系统的功劳。<ul>
+<li>也有移动设备。显著提升你在消费数字内容的时长。增加了数字内容的供给。当资产匮乏的时候，是没有推荐的/推荐的边际效应不高（买房）。只有当资产富余/资产分布 &amp; 兴趣分布贴合。需要推荐。</li>
+<li>趋势：不只只是视频。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>不同推荐系统的区别：</p>
+<ul>
+<li><strong>流量分发的区别（推荐策略pm）</strong><ul>
+<li>2018年<ul>
+<li>b站早期运营精选。推荐系统被开源出来。<ul>
+<li>依赖xtr。而不是pxtr。</li>
+<li>策略依赖up主的历史行为，和粉丝数。<strong>依赖粉丝数来做推荐的意思：就是路径依赖。早期涨粉容易，涨起来的作者成为头部作者的成本较低；而现在的作者涨粉慢，在相同的路径上经历了更高的成本。也意味着马太效应。</strong></li>
+<li>极度中心化 &amp; 缺乏流动性的社会。</li>
+</ul>
+</li>
+<li>抖音<ul>
+<li>极度中心化 &amp; 流动性极高的社会。<strong>仅依赖内容本身的优劣来做推荐。</strong></li>
+<li><strong>推荐策略：分级分发。</strong>平台上5%的内容占据了80%的流量。<ul>
+<li>等效于去问：<strong>流量暴击的商业化 &amp; 作者侧的价值</strong>：<ul>
+<li>延伸到：1. 平台变现方式是流量变现，2. 电商演变是天猫化（缺少和作者长期信任关系，需要品牌店来补足）；3. 内容（只是品牌曝光的一个载体）。</li>
+</ul>
+</li>
+<li>例子：抖音与抖音火山的索引打通的表现。</li>
+<li><strong>本质上分级分发的意思，是引入一个人为的先验概率。那些不符合分级要求的视频，先验概率是0.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>快手。<ul>
+<li>没有人为干预的。早年的快手会对头部流量进行打压：极度去中心化，2kw的创作者。</li>
+<li>极度去中心化 &amp; <strong>流动性一般</strong>的社会。</li>
+</ul>
+</li>
+<li>小结：<strong>社会流动性的意思：流量规则是平台控制，还是人去控制。</strong><ul>
+<li>如果市场没有规则，人们自己会创造对自己有利的规则，并产生排他性，造成马太效应（强者越强，弱者越弱），其实也就是文中提到的幂律分布。而私域流量，恰好正是目前缺失市场规则的地带。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2021年的新故事。<ul>
+<li>抖音106min，快手102min。差距不大。在整体商业化能力没有明显拉开的时候，对专业创作者来说，是没有差别的。专业作者会选择多平台同步发。<ul>
+<li><strong>商业化影响的是边际创作者。</strong></li>
+</ul>
+</li>
+<li>直播的双发例子。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>场景的区别，比如单列全屏上下滑，双列和单列信息流的区别。（推荐工程师）</strong><ul>
+<li>双列：<ul>
+<li>容错率，人态化的作品</li>
+<li>adload率 &amp;  &amp; 创造者激励</li>
+<li><strong>ctr/cvr预估- &amp; 商业化规模上限。</strong>条件概率。**</li>
+</ul>
+</li>
+<li>单列全屏上下滑<ul>
+<li>叙事性</li>
+<li><strong>vtr</strong>/wtd预估 &amp; 剧情性质的作品，以及不同duration的视频存在很强的duration bias。</li>
+<li>互动行为和观看时长是有强关联的。</li>
+</ul>
+</li>
+<li>单列信息流<ul>
+<li>选择性 &amp; 产品的行为设计意图。<strong>交互外露（突出交互本身的产品目的，比如鼓励点赞，鼓励评论，缩短了这些行为的路径，但也增加了直接转化内容的路径）。</strong></li>
+<li>auxiliary ctr/cvr task. 用交互的目标去辅助建模ctr/cvr。</li>
+<li><strong>推荐不友好的UI：缺失很多主动行为的信号。信息的质量，来自于分层和结构。</strong></li>
+</ul>
+</li>
+<li>小结：<ul>
+<li><strong>推荐系统如何辅助额外附加目标的实现。本质都是一种：帕累托优化。（在不突破限制边界下达到全局更优的结果）</strong>比如：正在直播信号，电商信号，转发拉新信号等等。</li>
+<li><strong>技术本身是整个技术界共享的，区别在于业务信号的发掘和思考。</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>有意思的例子：<ul>
+<li>信息茧房<ul>
+<li>推荐系统设计的exploit &amp; explore。技术角度: 召回信号 &amp; 短期行为序列建模。</li>
+<li>信息茧房更多是一个社会学问题。<ul>
+<li>确认是：去中心化的结构。回音室。<strong>隔离</strong>。<strong>隔离是政治最害怕的东西。秘密产生权力和暴力。</strong></li>
+<li>有问题的，不是通过公共讨论方式去合理释放压力，而是去寻求极端声音的庇护。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>冷启动<ul>
+<li>协同过滤与泛化。U2U, U2U2I.</li>
+<li>pre-train + fine-tune. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>追加问题：<ul>
+<li>为什么选择快手做推荐算法？<ul>
+<li><strong>又长又湿的雪道。意思不只是我在上面滚，而是我得以去观察雪球是怎么滚起来的。</strong>得以观察，短视频 &amp; 直播这些媒介真正发生的作用。</li>
+<li>很大问题：作品是属于平台的。<ul>
+<li>有人问：那我直接做赞赏呗。1. 赞赏 / patreaon模式是与作者的长期信任关系。2. 直播打赏。</li>
+<li><strong>内容资产都是金融资产。</strong></li>
+</ul>
+</li>
+<li>虚拟形象 &amp; metaverse</li>
+</ul>
+</li>
+<li>未来的趋势<ul>
+<li>技术上： 超大规模的深度架构精排模型。多介质混排模型。联邦学习。</li>
+<li>产品 &amp; 战略上：<ul>
+<li>产品上：**视频的边界拓宽，更多低频高静值的场景。同样是高频带低频。- 目的是，提高有用性。<ul>
+<li>种草，玉石鉴赏，艺术品拍卖，<strong>云游戏（把云游戏当作一个没有尽头的直播间，你点进去就开始玩）</strong>。</li>
+<li>**非标品的推荐上（脱离于推荐视频的范畴）。- （非标品对于产品自身的款式、创意、服务等的附加值很高。）<ul>
+<li>游戏资产</li>
+<li>艺术品</li>
+</ul>
+</li>
+<li>video as a context. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>视频号：</p>
+<ul>
+<li>微信的价值永远在于：真实的身份ID。你的社会关系，政府关系都在上面。唯一真实的 &amp; 被证实的facts。<ul>
+<li><strong>视频号：是呈现这些真实身份的媒介。</strong><ul>
+<li>它能够干掉的是大众点评，成为一个服务字典。（主动搜索，区别于抖音快手的种草）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>只要视频号坚持：跳朋友tab，它就一定只是一个小圈子的。等价于小型的facebook。候选池子是限制死的。效率问题。</strong><ul>
+<li>Facebook和抖音快手最大的区别仍然在于，<strong>长尾资产的流动性和估价问题。 -&gt; 效率问题</strong></li>
+<li>看一下视频号的用户分布。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/3/21">2021/3/21</h2><ul>
+<li>最具效率的系统，是主动减少人为选择和输入的系统。Between what it is and what it should be lies an extraordinary company。厉害的人，会创造问题。</li>
+</ul>
+<h2 id="2021/3/20">2021/3/20</h2><h3 id="Bancor">Bancor</h3><ul>
+<li>NFT是什么：一个资产 + 个人数字签名。丰碑的价值来自于门庭若市。</li>
+<li>理解代币价值的关键，在于它实现的作用，和其影响范围的溢价。<ul>
+<li>国债是炒不起来的，因为他不代表一种市场稀缺性，仅仅是一段债务关系。而同时利率是政府控制的，不存在可影响的市场。</li>
+<li>为什么一级市场/二级市场/NFT能炒起来，因为市场存在。你能够去影响人们对资产的印象和估值。</li>
+<li>而我们经常说媒介改变溢价，也同样是因为媒介决定了市场信息的传播结构，是接近水波扩散结构式的，存在中心与边缘。那么中心与边缘对信息接受的差异和敏感程度决定了利差。</li>
+</ul>
+</li>
+</ul>
+<h3 id="NFT_&amp;_所有权经济">NFT &amp; 所有权经济</h3><ul>
+<li>NFT是什么：一个资产 + 个人数字签名。<ul>
+<li>也就是所有新创造出来的虚拟财产是有署名的，是能追溯所有权的。NFT意味着创作者保留其所有权的同时，并不妨碍内容本身的传播。</li>
+<li>“NFT极可能会颠覆媒体内容的所有权模型， 向创作者、内容受众、以及相关开发者提供<strong>围绕所有权持有者的服务</strong>，这也是一种基于平台驱动的、货币化的可行替代方案。” 也即<strong>所有的资产都有一个新的维度，一个z轴，“第三方可以查询到一副作品的所有历史和背景，从而增加其文化和金融价值。”</strong></li>
+<li>音乐产业，唱片公司拥有音乐所有权。因此拥有了掌握艺术家的权力。</li>
+<li>平台从创作者提供的内容中获得了大部分收益。</li>
+<li>而下一代平台将由用户直接构建，运营和拥有。</li>
+<li><strong>NFT意味着：拥有数字媒体资产的方式，近似于拥有数字金融资产。</strong></li>
+</ul>
+</li>
+<li>NFT意味着，社会上的数字资产，将从稀缺 -&gt; 富足 -&gt; 再次走向被刻意标记的稀缺。这个转变其实很合理，是通过区分度不断榨干数字资产的剩余价值，从而实现资产所有者的利益最大化。 <ul>
+<li>a brainteaser: Universal Basic Income is always capitalism, never communism. </li>
+<li>怎么解释？其实不同的资产分布方式，只是符合资产所有者利益的一种手段演化。资产稀缺，意味着通过垄断而掌握的定价权；而随着生产力的提升以及媒介的普及，资产供给的垄断不再有效，游戏风向便转向了提供过剩的资产，去抢占消费者存量的注意力；但无差别的超发，意味着大量无效的沉没成本，于是通过拉开区分度，让边缘的人享受免费的赝品，让中心的人竞价稀缺标记和群体认可，从而榨干利润。商业化的手段一直在流动，可服务的人从没有变过。</li>
+</ul>
+</li>
+<li>【创业slogan】低成本制作数字资产的能力。虚拟形象也是数字资产，定位：新时代的出版商。<ul>
+<li><strong>什么是艺术品？内容资产 + 个人签名。个人身份的剩余价值。</strong></li>
+</ul>
+</li>
+<li><strong>NFT的交易市场也存在各种问题，其中有几个问题最为显著：对敲交易、估值、流动性以及如何发现有价值的NFT。</strong></li>
+</ul>
+<h3 id="职位规划">职位规划</h3><ul>
+<li>暂时我还是需要proof of work的证明。</li>
+<li>为什么看好快手的长期：<ul>
+<li>国内的使用时长。今天的app使用时长OKR订下要超过抖音。这意味着流量的广度，后面需要慢慢深耕产业化。</li>
+<li>拿下海外的第二名的市场。</li>
+<li>2021/3/19晚和海外负责人徐智威沟通：<ul>
+<li>对做第二名很有信心：<ul>
+<li>我们的迁移成本远低于市场其他玩家的学习成本。比如：努力抄作业，速度能比其他公司都要快。</li>
+<li>专业的生产者议价能力高，很难平台独占，是全平台发布作品的。只要我们的消费体量和第一名tiktok差不太多，能获得专业生产者的作品。用单列的媒体属性和tiktok在消费&amp;时长上对攻。</li>
+<li>创作者工具（特效和魔法表情）容易迁移。除了tiktok外，只有一个对手，snapchat。</li>
+<li>我们有花钱做本地运营的觉悟，会在南美冠名美洲杯。</li>
+<li>商业化非常早期，tiktok也没做特别好，本身是非常依赖当地文化 &amp; 广告主市场成熟程度的，这块还有机会，看战略决策的方向。比如：弱化直播打赏，强化直播电商。为什么？从内容属性上看，直播是较低效的内容分发方式，而同时秀场内容在海外并不具备优势（因为海外色情内容泛滥），而直播电商能够较快与本地电商平台合作跑通，比如tiktok和shopify的合作。商业化程度能够决定创作者规模。</li>
+</ul>
+</li>
+<li>在市场渗透上还有tiktok没覆盖的机会<ul>
+<li>比如中东等等，快手增速较快。文化壁垒决定了本地化程度，也意味着tiktok会在这些地区失去原有的先发内容优势，还有机会。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/3/19">2021/3/19</h2><ul>
+<li>真实世界的资产管理还缺少类似yfii的聚合器。<ul>
+<li>xx in your pocket.</li>
+</ul>
+</li>
+<li>【创业】虚拟形象的发布会，两个模式，自动播放 &amp; 人工接管。- 一开始我来接管，然后无缝衔接到自动播放。</li>
+</ul>
+<h2 id="2021/3/18">2021/3/18</h2><ul>
+<li>准备下周五见元气森林创始人。</li>
+</ul>
+<h3 id="metaverse">metaverse</h3><ul>
+<li>虚拟世界的意思是，你在真实世界的注意力和看到的品牌，虚拟世界里会再出现一份。使用时间的争夺。</li>
+</ul>
+<h3 id="快消品">快消品</h3><ul>
+<li>IP</li>
+<li>渠道</li>
+<li>不同阶段的挑战：<ul>
+<li>第一阶段的对手，是传统行业的老牌玩家，他们不能数字营销，不懂最新的媒介</li>
+<li>第二阶段的对手，是拥有同样资本的新入场玩家。和他们比降低成本。</li>
+<li>第三阶段的对手，是占领同样使用场景 / 使用时间的玩家。（比如：游戏和社交的关系）</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/3/14">2021/3/14</h2><h3 id="debt相关的创业项目">debt相关的创业项目</h3><ul>
+<li>the difference between debt and stock. <ul>
+<li>nasdaq for debt </li>
+</ul>
+</li>
+<li>【创业】pipe<ul>
+<li>卖我未来的收入现金流。 </li>
+<li>设计一种token。</li>
+<li>一种商业模式的典型方式：<strong>1. 首先定义一种价值单位，2. 然后为这个价值创造一个市场，引入买方和卖方。3. 然后是引入共同利益的伙伴。</strong><ul>
+<li>之所以股票这个制度优越，是因为他把第三方（也就是雇员的利益和买卖双方拉起了）。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/3/13">2021/3/13</h2><ul>
+<li>IP，也是一种社会性劳作证明。</li>
+</ul>
+<h2 id="2021/3/11">2021/3/11</h2><pre><code>- 针对zoom call自动做transcribe和note。<span class="keyword">*</span><span class="keyword">*</span>UI是合理且舒服的。<span class="keyword">*</span><span class="keyword">*</span>
+</code></pre><ul>
+<li>微信是真实身份，已经是一套完整的公开身份了。包括医疗保障，政府服务。<ul>
+<li><strong>一个产品最可怕的地方是，已经成为了基建。</strong></li>
+</ul>
+</li>
+<li>抖音的反面是什么？一个极度自治而相互连通的世界。roblox？</li>
+</ul>
+<h2 id="2021/3/9">2021/3/9</h2><ul>
+<li>to control team’s vision, not their paths. and celebrate their own versions of visions.</li>
+<li>虚拟形象的用法之一：24hours品牌直播间主播介绍。</li>
+</ul>
+<h2 id="2021/3/7">2021/3/7</h2><ul>
+<li>而遗憾的是，我们都或多或少享用着那些没有被剥削尽的剩余价值里。</li>
+<li>NFT的意思是，任何东西都可以有它的股票。这也意味着，我们会发现画展行业的特斯拉，NBA套卡行业的蔚来。</li>
+</ul>
+<h2 id="2021/3/3">2021/3/3</h2><ul>
+<li>想象一个游戏app，玩家在其中操作着运镜看完一场电影。这不是游戏的上探，而是电影叙事的民主化。both technically and ethically. </li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[产权是可以高度分割的。]]>
+    
+    </summary>
+    
+      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[碎语 2021 Feb.]]></title>
+    <link href="http://chocoluffy.com/2021/12/30/%E7%A2%8E%E8%AF%AD-2021-Feb/"/>
+    <id>http://chocoluffy.com/2021/12/30/碎语-2021-Feb/</id>
+    <published>2021-12-30T21:57:20.000Z</published>
+    <updated>2021-12-30T09:57:04.075Z</updated>
+    <content type="html"><![CDATA[<h2 id="2021/2/27">2021/2/27</h2><ul>
+<li>每个人都在寻找属于自己的那座岛，那个世界。去到那个位置便花光了所有的年华，以至于后面的辉煌已然顺理成章。或许在故事的结尾，他最终也会成为一座岛，等候着或热闹或冷清的航线。uncharted island, aka life. </li>
+</ul>
+<h2 id="2021/2/21">2021/2/21</h2><ul>
+<li>kol master的竞争对手: izea, sprout social, noxinfluencer. </li>
+<li>头部玩家躲避风险。头部品牌购买大数据服务来做舆论避险。</li>
+<li>广告主20w的预算怎么使用，10w元给fb投放广告，最终算出来150$一个视频的转化。但是ins的KOL带货效率更高，20w粉丝的KOL。国外没有一个真正公域的推荐场景。fb只是一个小的社交圈子。</li>
+<li>KOL master目的：产出账号数据映射。本质等效于推荐系统里的冷启动过程，目的是做一个u2u的相似度匹配。</li>
+<li><p>虚拟形象的解释方式：</p>
+<ul>
+<li>千人千面的KOL。用于广告或者直播带货。</li>
+<li>跑通MVP的流程：用一个80%的迪丽热巴去测试广告主的意愿，产出一段1min-3min的广告视频。</li>
+</ul>
+</li>
+<li><p>音频经济：因为那些我们想听他们说的人，更愿意说，而不是写。这么说，脑机接口才是最终的造神运动。</p>
+</li>
+<li>仅仅是处在头部玩家的位置就有很多剩余价值没有被利用到。</li>
+</ul>
+<h2 id="2021/2/17">2021/2/17</h2><ul>
+<li>可拓展的系统是，吸引那些想变好的创作者</li>
+<li>数字化意味着更短的反馈周期。</li>
+<li>中心化的意思也是，已经聚集起来的观众，缩短了正负反馈周期。</li>
+<li>不要低估人性和创作者心态的剩余价值。</li>
+</ul>
+<h2 id="2021/2/16">2021/2/16</h2><ul>
+<li>核心问题：就是如何让我想你的状态不侵入式地让你知道。</li>
+</ul>
+<h2 id="2021/2/15">2021/2/15</h2><h3 id="媒体">媒体</h3><ul>
+<li>media’s most important sources of power: being the only place that could offer access to an audience. 媒体之所以有力量，是因为它曾经能是唯一接触到受众的媒介。</li>
+<li>资本会集中。而连接性的提高意味着资本家也成为影响力的中心。未来的富豪不需要去收购华盛顿邮报。Elon Musk的twitter本身就是一个不受监管的发行媒体。</li>
+<li>在这个时代下，监管的意义是什么？</li>
+<li>有权势的人曾经会害怕媒体，诱惑贿赂媒体。而现在是不屑一顾。</li>
+<li>【年度】<strong>关注关系如果控制不好，就不是一个permissionless的系统。具有极强的马太效应。</strong><blockquote>
+<p>我们在丧失经过严格素质训练的观点和尊重复杂性的宽容。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="2021/2/14">2021/2/14</h2><ul>
+<li>【年度】长视频是横向的信息流。</li>
+<li>【书评】本雅明的启示：摄影的起源：身份，距离与话语权</li>
+<li>慢慢到达一个节点：我要解决的问题在市面上已经找不到参考答案。</li>
+<li>【创业】视频定位搜索。基于字幕caption的比对。从字幕稠密的比如美妆和服饰口播领域切入。和大佬去聊天。@杨水石 @孟敬慈 ，解决什么问题要说清楚。然后去找thomas。<ul>
+<li><strong>我是不是真的了解快手。</strong></li>
+<li>写一篇公众号：我怎么理解中视频。</li>
+</ul>
+</li>
+<li>【创业】轻宠。活期利息资助up主。创造明星币，交易手续费返还给持有币的人。</li>
+<li>我们害怕的是动态被滥用，但人们开始追求静态。</li>
+</ul>
+<h3 id="了解快手">了解快手</h3><ul>
+<li>公域大，等于平台（政府）对创作者（企业）收税，资源分配掌握在平台手里。<ul>
+<li>一个很有意思的问题是，什么场景适合专制控制，什么场景适合去中心化？</li>
+</ul>
+</li>
+<li>本质上，缺少公域控制的社区都会遇到目前快手遇到的问题。b站当前遇到的lex的事件，和辛巴的影响力事件接近。</li>
+<li>快手和抖音都在成为媒体。</li>
+<li>商业化<ul>
+<li>平台主导。<ul>
+<li>广告。 = vv - ad_load - 售卖率 - eCPM</li>
+<li>粉条（内容分发权）的内容营销平台。</li>
+</ul>
+</li>
+<li>达人主导。<ul>
+<li>磁力聚星 / 快接单，直播打赏，直播带货。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2020年上线快手好物联盟。</li>
+<li>2016年4月上线直播功能。直到2018年初只有10%用户可以在快手看到广告。</li>
+<li>2018年收入200亿元其中直播占比95%。</li>
+<li>2019年收入400亿元其中直播75%。主要来自于直播，广告和电商。</li>
+<li>直播间存在一种现象：挂榜涨粉，本质是流量购买行为。机会。平台给予正规渠道疏通。</li>
+<li>直播付费率20%， 虎牙/YY/斗鱼只有10%。平均付费金额45元/人/月，平均付费金额ARPPU较低。</li>
+<li>商业化也对抑制头部主播效应有帮助，因为找到一个合理合规的变现和涨粉路径。<ul>
+<li>给予创作者可持续&amp;有规律的商业增长方法。</li>
+</ul>
+</li>
+<li>2020年9月智能推广，从30天作品中择优选择作品做粉条推广。</li>
+<li>磁力聚星：达人定制原生的商业短视频或内容。<ul>
+<li>快接单：创作者完成广告主的指定任务，一口价计费。10w粉丝数以上才能入驻（总人数接近10w，和抖音的巨量星图人数接近）。</li>
+<li>快任务：创作者自主选择，按照效果计费，降低双方的沟通成本。（门槛更低）5w粉丝以上也可以受邀开通。</li>
+<li>价格：<ul>
+<li>500万达人，短视频报价在5w以下。</li>
+<li>1000万，短视频报价15w。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>政策治理：公域投放低税收，私域投放高税收。</strong></li>
+<li>广告收入：<ul>
+<li>效果广告收入：<ul>
+<li>广告曝光 - CPM</li>
+<li>广告曝光：用户数 - vv - ad load - 售出率。其中adload由于直播时长也会影响。</li>
+<li>CPM = <ul>
+<li>双列： 出价 - ctr - cvr - 1000</li>
+<li>单列：出价 - cvr - 1000</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>单列的优势在于：<ul>
+<li>即开即用。</li>
+<li>消费是第一起点，给转化提供入口。而不是挑选。</li>
+<li>【创业】能够精准匹配类型，都用单列的形态去改造场景。</li>
+</ul>
+</li>
+<li>【战略观察】<ul>
+<li><strong>粉条是重点。作为内容加热产品，属于内容产品。加载率不低于广告。平台鼓励运用工具杠杆创造内容。也即：我们需要创造更多的工具杠杆。</strong></li>
+<li>极速版承载更多商业化功能。</li>
+<li>主站单列精选的意义是拓展新用户，提升用户时长，广告的加载率会低于发现页。</li>
+</ul>
+</li>
+<li>快手广告变现效率 2.5元/人/月。抖音13元/人/月。手淘23元/人/月。</li>
+<li>快手电商做生态。<ul>
+<li>permissionless。任何商户或创作者到快手，都有上升通道。完善基础设施，帮助创作者和供应链的匹配。</li>
+</ul>
+</li>
+<li>电商分类：<ul>
+<li>有明确目标：搜索。视频的作用是：辅助消费决策。</li>
+<li>模糊目标：信息分类 &amp; 挑选。</li>
+<li>没有目标：内容消费。<ul>
+<li>问题是，个性化需求落在哪个标准里。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/2/12">2021/2/12</h2><h3 id="关于解决不平等">关于解决不平等</h3><ul>
+<li>关于自由市场的讨论永远不会停止。暂停在第一层的争论，而进入第二层的探讨：自由市场是有效的，但是其引导的结果是否是可持续的？这个制度会受制于什么变化而被利用。</li>
+<li>“知识工作者尤其是科技工作者几乎可以毫不费力地无视自己工作对社会带来何种影响，纯以工作本身为目的。伴随着“工作目的”的失位而来的是知识工作者乃至企业对社会责任的淡漠。”，在集中营里负责的那个人，他说他的职责是将一批人从一个地方转移到另一个地方而已。</li>
+<li>我希望尝试探讨一个具备社会拓展性和流动性的系统。<ul>
+<li>如果有特权，则特权不可兼并，且需要严格监管。</li>
+<li>我们熟知的历史是政治战争线，但是还有另外一条资本线也很有意思。</li>
+<li>政府有土地要创建经济效益的时候：需要鼓励人们建设铁路。早期极其便宜招标。对应的是资本方的兼并。</li>
+<li>而当政府没有土地的时候发现所有权 &amp; 分红权以及在资本方那里。以及资本方会用资本介入立法阶段，形成政治游说。<blockquote>
+<p>单列具备最高的规则纠错能力。</p>
+<p>单列和双列：<br>集权和民主 和 流动性 没有直接关系。</p>
+<p>抖音的单列在成为局部流动性好的集权制度，而快手则在学习并在更大的范围内实现流动性。采用同样的交互方式。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>比所有同龄人过得差，我要不要玩命追？<br>第一层：<ul>
+<li>追与不追。</li>
+</ul>
+</li>
+</ul>
+<p>第二层：</p>
+<pre><code>-<span class="ruby"> 正：自卑是燃料还是毒药。
+</span>-<span class="ruby"> 反：自己的节奏。天才是有自己的节奏的。&amp; 跳出同龄人的圈子。宁为牛后，不为鸡首。</span>
+</code></pre><h3 id="《单向街》本雅明">《单向街》本雅明</h3><ul>
+<li>淘汰一种艺术的，可能并不是娱乐，而是另一种更容易传播的艺术。</li>
+<li>艺术的可复制性将艺术品从其对礼仪语境的寄生中解放了出来。</li>
+<li>作为IP的预示是：所有的传说，所有的神话和传奇故事，所有创立宗教的人和宗教本身的故事…都有朝一日，能够在水银灯下复活，在大银幕上在线。而主人公们，则在远处你推我搡。</li>
+<li>技术复制的好处（摄影）。它将原作带进了一个新的语境。一种说法是艺术的贬值，而另一种说法是艺术的侵入。</li>
+<li>艺术的历史语境，是它独一无二的区别于复制品的地方。</li>
+<li>艺术品的传播，涉及三种人：艺术家，复刻人和包装商。</li>
+<li>人们必须了解：技术革新会改变艺术的表达技巧，而由此去影响艺术创作本身。最终或许还会以最迷人的方式，改变艺术概念本身。</li>
+<li>马克思是一个弥赛亚式的学者，他的全部努力，在于使他的研究具备预言未来的价值。<blockquote>
+<p><strong>当人像出现在了摄影里的时候，其崇拜价值便超越了展示价值。反之亦然。</strong></p>
+</blockquote>
+</li>
+<li>舞台剧和电影的对比：<ul>
+<li>舞台演员的艺术成就，对观众来说，是通过观看演员自身表演来获得的。而电影演员所表现出来的成就，则还有另一层维度：运镜和剪辑。</li>
+<li>电影，获得了局部的特权。而局部，意味着共情。容易产生崇拜。</li>
+<li>电影，是一种接耦合作。</li>
+<li>电影，掌握了叙事的权力 = 解读权力。与此相对，现实的那些非机械的方面，就成了其最富有艺术意味的方面，而形成对比。<ul>
+<li>【思维】<strong>真相必然完整而平坦，拼接组合的结果带有价值观的偏见。</strong></li>
+</ul>
+</li>
+<li>画家眼中的事实 &amp; 外科手术医生般的事实。<blockquote>
+<p>大部分人的生活都是舞台剧。技术在成为他们的镜头和剪辑，塑造成电影。<br>[ 2021-11-19 ] 大部分人的生活都是舞台剧。旁人的解读在成为他们的镜头和剪辑，塑造成电影。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><strong>电影的启示是：旁观者的瞳孔，只能与摄影机保持一致。</strong><ul>
+<li>【创业】<strong>长视频的产品做法：短视频是长视频的封面。那么封面是可供选择的。</strong>不应该让长视频按照顺序执行。而是应该找到更加结构化的解法：长视频的抽取和推荐。</li>
+</ul>
+</li>
+<li>艺术的社会意义减少得越多，观众的批判和欣赏态度也就被化解的越多。<blockquote>
+<p>对我自己最大的教诲是，不要依赖别人的想象而活。</p>
+</blockquote>
+</li>
+<li>生活应该是画布，而不是放映电影的幕布。面对着画布，观赏者就沉浸于他的联想活动；而面对着电影银幕，观赏者却无法沉浸于他的联想和想象。</li>
+</ul>
+<h2 id="2021/2/11">2021/2/11</h2><h3 id="银行信用_-_米塞斯">银行信用 - 米塞斯</h3><ul>
+<li>银行作为中间人，以其名声显著的信用，使你获得其他陌生的“大众”的筹款。其利润来源：可流动信用的授予。</li>
+<li>信用的交易：当前的商品交换未来的商品。</li>
+<li>主要是两个基础业务：<ul>
+<li>可随时兑换的债券。本质和货币一致。【商业思维】通过等价物的方式来流通起来积累信用，为第二阶段打基础。</li>
+<li>一定时间后可兑换的债券。信用的玩法。</li>
+</ul>
+</li>
+<li><strong>利率波动的本质，是对信用的需求变化。</strong><ul>
+<li>从这个角度看，即时债券的发行，并不会影响利率体系。因为银行发行它不需要信用。<strong>当更多的「银行券」进入贷款市场，使得信用的供给量增加，会降低利率。</strong></li>
+<li><strong>但是当更多的「票据」进入市场是，会增加信用的需求，因此会提高利率。</strong></li>
+</ul>
+</li>
+<li>什么叫授予信用： 将尚未到期的债权能够被接受 &amp; 流传开来，就等同于对他人授予信用。<ul>
+<li>关键点：「尚未到期」意味着如果是随时可兑换的则就仍是货币的玩法。</li>
+</ul>
+</li>
+<li>货币交易的两种方式：<ul>
+<li>用货币交换。</li>
+<li>用可抵消的债务来完成。<ul>
+<li>其中这一种可能性带来了一个新的场景：即私人领域流通的债券其流动性是可以大于货币的。但其基础是对私人信用的共识。</li>
+<li>还有另外一个好处是能够反应局部的价格信息变化。这个是货币无法体现的，在不同时刻&amp;场景&amp;体量的交易反映出的背后的价值变化。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>去中心化的意思是：我用透明可审查的制度来创造共识 &amp; 信用。而不是依赖声望。</strong><ul>
+<li>用所有人可验证的方式。</li>
+</ul>
+</li>
+<li>信用媒介，减少狭义货币需求。清算所，减少广义货币需求<ul>
+<li>我理解DCEP的意义之一，是成为这个信用媒介。以及成为更大范围地缘贸易的清算方式。</li>
+<li>采用信用媒介来流动，有一个好处：避免了人们转向生产源头的竞争，比如对黄金开采的竞争中。这会影响金属本身用于生产目的的成本。</li>
+</ul>
+</li>
+<li>我不太想玩基金：我不想把资本投资当成数字游戏，走到了纯数字判断的阶段。我投资，基于我对这家公司内部价值增长的判断，和逼迫自己去做出这种判断的动力。</li>
+<li>这也是为什么快手在被列入头部指数之后股价一直在涨，因为会自动进入那些指数基金的范围。</li>
+<li>【思维】供给侧1+1 &gt; 2，需要稳定预期。消费测2 &gt; 1+1，抢占舆论溢价。</li>
+<li>streaming money &amp; gig economy，零工经济。</li>
+<li>拼多多。<ul>
+<li>判断哪些人是潜在的收益贡献用户。</li>
+<li>存钱送东西。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2020年度_-_困惑与萌芽">2020年度 - 困惑与萌芽</h2><p>去年年末，我停留在个人内心的求索。我想要知道，自由的反面，是束缚，是彷徨，其实是媚俗。<br>今年我深度参与了三个孵化项目的演化，三场硬仗。陪伴着一家独角兽上市公司的成长。一路走，一路记。<br>有很多界限模糊了，在模糊的地带有新的事物出现。</p>
+<ul>
+<li><p>媒介的作用与职责</p>
+<ul>
+<li>短视频不只是一个媒介，也是一个场景，承载了很多场景的功能。</li>
+</ul>
+</li>
+<li><p>平台的作用与责任。</p>
+<ul>
+<li>平台成为一个经济体。与上下游的关系。</li>
+</ul>
+</li>
+<li><p>资本的作用与责任。</p>
+<ul>
+<li>我今年最关注的另一个话题，加密经济。</li>
+</ul>
+</li>
+</ul>
+<p>这就是2020在我心中的缩影。</p>
+<ul>
+<li>不对称优势。</li>
+<li>疫情后时代的文学，会不会和战后文学很像？总需要重建些什么。而什么才是这一代人的存在主义？</li>
+<li>有的人会说cyberpunk。我的反对意见是，它不足够proof of work。会遇到越来越多不对称的风险与优势。你可以去利用它，但我建议你去了解你所驾驭着的力量。<ul>
+<li>【剧本】有的人依赖着为别人造梦而生存。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/2/9">2021/2/9</h2><ul>
+<li>永远知道谁是敌人 谁是值得争取的人 关键票。<ul>
+<li>小公司对大公司的leverage 从来不是这一场仗；而是我一旦让你陷入这个战场，你的其他大对手会见缝来制衡你，甚至创造出新的战场。</li>
+</ul>
+</li>
+</ul>
+<h3 id="社交_-_社区_-_媒体">社交 - 社区 - 媒体</h3><ul>
+<li>思路很对。</li>
+<li>结论是：社交的机会存在于：虚拟形象 &amp; 身份 + 合作。</li>
+<li>浏览器。brave浏览器，上游的，离消费者更近的场景。brave reward给创作者收入当他们上传内容的时候。<a href="https://creators.brave.com/" target="_blank" rel="noopener">https://creators.brave.com/</a><ul>
+<li>Brave Rewards is built on the <strong>Basic Attention Token (BAT)</strong>. People who use the Brave Browser can earn tokens by viewing privacy-respecting ads.<ul>
+<li>和快手极速版的发红包的区别。token流转具备平台调控能力，而等价的现金不能。而且还存在心理因素的差异。举个例子，我可以搞资产&amp;代币decay的速度，但是如果是现金，意味着每次交易都产生的手续费。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="虚拟avatars">虚拟avatars</h3><ul>
+<li>roblox收购 Loom.ai</li>
+<li>皮肤。<ul>
+<li>虚拟勋章。将真实生活的proof of work印证到虚拟世界里。虚拟世界提供的是流动性。反面是：抵抗住用资本越界的风险。<ul>
+<li>让他们拥有不对称的优势 &amp; 权力。</li>
+<li>关键问题是仲裁问题。如果将线下的努力和成果映射到线上 &amp; 如何保证线下的仲裁。<ul>
+<li>比较适合的场景：1. 跑步 + GPS定位的认证。2. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>social status / signal as a service. </li>
+<li>The North Face offers in-game gear for Pokemon Go while Gucci has partnered with Genies to offer apparel and accessories for its celebrity avatar clientele—all of which can be purchased by the consumer to accessorize their own alt-persona.</li>
+</ul>
+</li>
+<li>【创业】每一个人都有一个style（和弦）。然后同一首歌可以有不同的曲风变化。<strong>游戏 + 社交。</strong><ul>
+<li>Every band member had an avatar and a unique personality and style. </li>
+</ul>
+</li>
+<li>【创业】品牌联合。拟人化avatar生成。做brands的生意。</li>
+</ul>
+<h4 id="Defi一年复盘">Defi一年复盘</h4><ul>
+<li>流动性挖矿。<ul>
+<li>将中心化交易所会慢慢吸过来。中心化交易所的配置是滞后的，但现在还没有synthetix，compound这些代币。</li>
+<li>上一个交易所非常麻烦 &amp; 昂贵。</li>
+<li>但是现在大家都上uniswap了。<br>作者认为liquidity farming做得好的地方：</li>
+</ul>
+</li>
+<li>SUSHI locks rewards for 6 months (with 1/3 up-front)</li>
+<li>ARC uses the concept of reward campaigns rather than continuous yield farming</li>
+<li>YFI used yield farming as the initial distribution and made A LOT of early farmers extremely rich</li>
+<li>关键问题。每个社区在一开始都会设置门槛，最终进来的是聪明的人 &amp; 有钱的蠢人。</li>
+<li><strong>每一个优质项目都会吸引聪明人 &amp; 带资本的投机者。如何通过激励制度去区分这两类人，使得投机者投机的收益要小于聪明人做贡献的收益。</strong><blockquote>
+<p>让恒产者有恒心，让恒心者恒产。描述的是一个proof of work机制。</p>
+</blockquote>
+</li>
+<li>不同人群看比特币看到的事情是不同的，国内看比特币和当时看到黄金看到茅台是一个角度。虽然结果恰巧一样，但一个人看多有很多理由，看空只需要一个理由。</li>
+<li>【情商】没有永远的敌人。只有战略性争取权力的取舍。</li>
+<li>对咨询行业不受欢迎的反驳。细分专业的不一致，有的人是当作将领培养的，有的人是当作军师培养的，两个的市场供需与稀缺程度都不一样。</li>
+</ul>
+<h2 id="2021/2/8">2021/2/8</h2><ul>
+<li>【创业】pooltogether。当资本增值效率大于劳动增值的效率。敛财的方式成为大家争相改进的方向。<ul>
+<li>提供这样一个活动：<strong>将大家的资本集中起来，然后定投yearn或者compound，得到的利率分给那个中奖的人。而其他没有中奖的人仍然能够拿回来所有的资本。</strong></li>
+<li>本质上，健身房 &amp; 房地产，乃至ofo，也是大资金池的玩法。</li>
+</ul>
+</li>
+<li>maker的dai，其实也是抵押借贷的服务（借的是现金），其实是compound服务的一个子集。</li>
+<li>【商业】所有权往使用权的转变过程，是渠道越来越能够榨干内容的剩余价值。延长了交易窗口，直到你出手清算前，一直保留仲裁的权力。</li>
+<li>有时候感恩遇见一个人，是以后我做的每一个决定里都有你的影子。</li>
+</ul>
+<h2 id="2021/2/7">2021/2/7</h2><ul>
+<li>只要还存在主流声音。</li>
+<li>抖音的流动性很好的说法是不够准确的，也只是符合他们价值观的，能够进入他们审美流量池的流动性很好。</li>
+<li>很好的控制了竞争机会这个源头，却在另一大流量地没控制规则。</li>
+<li>理解快手。</li>
+<li>我们一边跑，一边落下了彩色的回忆。</li>
+<li>我记得，我们一起读过那句不要温和走进良夜的话。多年以后，当我再撞见你的眼眸，希望还带有那份闪烁。</li>
+</ul>
+<h3 id="合成资产_Synthetix">合成资产 Synthetix</h3><ul>
+<li>为什么我们需要合成资产：<ul>
+<li>降低交易摩擦。任意资产不必持有即可模拟二级市场的交易。以及针对任何资产。</li>
+<li>锚定真实资产，实现跨链交易。</li>
+</ul>
+</li>
+<li>交易方式：<ul>
+<li>Before you could mint any synth, you will need SNX token to be used as collateral。750%的质押比例，因为SYX的波动相对较大。可以去mint或者通过其他交易所交易得到。</li>
+</ul>
+</li>
+<li>正向 &amp; 反向资产价格。</li>
+<li>所有权的交割意味着保留剩余价值。也意味着会受流动性的延迟影响。比如债务的偿还周期等等。未来的货币是弹性可追溯的意思是，债务也会随着价值而同比波动。就像Synths的做法。</li>
+<li>synths也推出了synths index指数。作为资产池来平摊风险。</li>
+<li>所谓的指数，其实是一种表达价格走势的工具。</li>
+<li>指数就是一个选股规则。而且指数基金，不需要基金经理主动选股，直接买这些指数背后的成分股，构成对应的指数基金。</li>
+<li>基金就是把钱都交给一个基金公司，让他来代替你做投资。</li>
+<li>对手盘不是p2p的，让其他用户来产生流动性，而是和合约交易，由合约本身提供流动性。<ul>
+<li>优势：价格稳定。大规模的交易不容易产生交易滑点。</li>
+<li>本质上把非标品重新组合切碎为标品来交易的模式。</li>
+</ul>
+</li>
+<li>【创业】合约经济。资产虚拟化。用户交易的是合约，而不是真实资产。</li>
+<li>脑洞。合成资产的交易趋势，去反向推动真实交易所的价格。</li>
+</ul>
+<h3 id="compound">compound</h3><ul>
+<li>是什么：<ul>
+<li>一个没有门槛的借贷交易所，不需要注册，通过供给平衡来由算法决定利率。</li>
+</ul>
+</li>
+<li>很容易成为一个价格 &amp; 身份歧视的重灾区。但是原因可能并不是人性本恶，而是为了避险。</li>
+<li>协议利率范围，始终是一个秘密。</li>
+<li>为了鼓励抵押，在存储抵押物的时候获得与之对应的ctoken，利率通过ctoken来传递出去。</li>
+<li>最终的呈现方式是以汇率的方式，定义token:ctoken的汇率。</li>
+<li>ctoken也是ERC20代币</li>
+</ul>
+<h2 id="Youtube_2021战略">Youtube 2021战略</h2><ul>
+<li><a href="https://blog.youtube/inside-youtube/letter-from-susan-our-2021-priorities" target="_blank" rel="noopener">Letter from Susan: Our 2021 Priorities</a><ul>
+<li>观察YouTube的战略。<ul>
+<li>直播作为一种文化内容。</li>
+<li>同样地，直播作为一种电商工具，作为一种支付方式，还有很多的可能性。LiveShop</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/2/6">2021/2/6</h2><ul>
+<li>如果注意力也存在汇率，那么clubhouse一直在抹平汇差。<ul>
+<li>以往follower / followee之间的互动方式，注意力的兑换是非常不对称的。现在clubhouse则是将行为一直在broadcast，在争取着所有关注者的兑换。</li>
+</ul>
+</li>
+</ul>
+<h3 id="非对称风险（skin_in_the_game）">非对称风险（skin in the game）</h3><ul>
+<li>过去我们总问一个问题：让这个世界更繁荣富庶的方法是什么？经济学早就给出了答案：就是促进社会的分化和分工。今天塔勒布的新书提出了一个新问题：那治疗繁荣富庶带来的后遗症的方法是什么？<strong>就是尽可能通过制度设计还原整个人类社会对称性</strong>啊。</li>
+<li>“这个是次贷危机的恶果告诉我们的真理：让风险和责任不对称，人只会作恶到底。”<ul>
+<li>收益和风险对称：就是“让恒心者恒产，让恒产者有恒心”。</li>
+</ul>
+</li>
+<li>【年度】当我在说不对称优势的时候，时刻提醒自己也存在着不对称风险。</li>
+</ul>
+<h3 id="快手">快手</h3><ul>
+<li>公私域共存的风险是什么？<ul>
+<li>发现页&amp;精选页。</li>
+<li>公域的skin not in the game. </li>
+<li>如果创新的源头是风险转移，则不值一提。</li>
+</ul>
+</li>
+<li>我对我自己最大的期待还是具有完整叙事的权力。<ol>
+<li>在流动性泛滥的前提下，最好的选择是去做流动性的源头。</li>
+<li>以及它仍然是一个无法被剥夺的自由之地。</li>
+</ol>
+</li>
+<li>“围绕在我们身边的解构，焦虑和讽刺，是高级的沉默和精致的回避，是他们无力改变现实的借口。”</li>
+<li>地狱与火的酸度。人为创造地狱，是对造物者的蔑视。它将救赎的权力重新掌握在了人的手中。</li>
+<li>“一切对虎的诅咒，都必然具有虎的斑纹。”博尔赫斯。</li>
+<li>视频的意思，就是我看见你曾看见的。</li>
+</ul>
+<h3 id="微信10周年">微信10周年</h3><ul>
+<li>视频号一开始的定位，是视频化的微博。因为认为公众号的门槛很高。</li>
+<li>微信很大的价值在于它的身份或者说它的ID价值。微信朋友圈是一个私密ID。而视频号的挑战在于需要一个公开的ID。<ul>
+<li>很大一个问题：用户对于在一个平台里同时管理私密和公开身份的一致性。他们是否能够这么理解。以及不断从公开身份给私密身份导流的趋势。</li>
+<li>微信团队在逐渐无意识地冲淡私密身份的价值。（通货膨胀），而微信群聊是最后一道防线。</li>
+<li>以至于后面微信团队不得不仔细考虑的问题就是群聊的排序和置顶。以及置顶里的再置顶。</li>
+</ul>
+</li>
+<li>ID的意义也是对于机构。等同于他们的IP地址。</li>
+<li>评估一个产品的使用成本：完成操作需要的平均时间。</li>
+<li><strong>对视频号来说，视频应该是结构化的数据。</strong>而不是视频文件。</li>
+<li>长短视频的思考：只存在短视频是指1分钟以内，如果是长视频就定义为头1分钟是整个视频封面。</li>
+<li>我们希望有一天这个知识库通过搜索推荐的方式可以被挖掘，长视频是对未来数据的积累。<blockquote>
+<p>三天可见是最失败的一个功能。因为这个是一个补漏的举措。同时也最终发现是不可逆的。</p>
+</blockquote>
+</li>
+<li>机器推荐的是，如果对质量可控制，就应该是全屏的。如果是人挑选的，质量不可控，不应该是全屏幕。</li>
+<li>公众号关注关系里的「特别关注」，也是一个补漏的举措，因为关注多的人挑选效率下降了。<blockquote>
+<p>腾讯：产品和推荐的配合关系。腾讯习惯于从产品角度出发去解决问题，而推荐团队优化的也是挑选效率。但产品形态的变化是不可逆的，会越来越复杂。而不是简单。<br>一个insight：出现了新的内容，就会出现基于新内容的重要性分级。</p>
+<p>流动性越高的地方，越应该全屏幕，笃定第一条的质量，并且去优化它。再比如搜索引擎，如果对搜索结果足够有信息，为什么不能直接展示结果？</p>
+</blockquote>
+</li>
+<li>“我点开一个人的名片，这个名片是活的，这个人戴了一个眼镜，可以直播他看到的，你只要进入他的名片就可以看到他的直播，看到他眼睛所看到的东西，这可能是直播一种形态，每个人都是别人的眼睛，每个人都可以通过别人的眼睛来看到他所看到的，这里直播变成了一个很终极化的东西。”</li>
+<li>运营是生态规则的补充。是你在放一些先验信息去改进这个生态系统。</li>
+<li>有些场景是有很高的cliff的，是你只有在积累到一定程度之后，才能去尝试的。尤其是社交互动相关的实验。很多时候你实验失败了，可能只是规模不够。</li>
+<li>规模带来规律（秩序）。微信的DA。</li>
+<li>社交名片是社交的起点，名片上公约数内容的位置设计决定了社交的冷启动方式。</li>
+<li><strong>社交产品设计的关键点：你写一段话不难，但是你写一段让很多人看的话很困难。</strong><ul>
+<li><strong>以这个作为起点，社交产品是决策公开性和私密性程度的产品经理。这是朋友圈。</strong></li>
+</ul>
+</li>
+<li>“我们也希望看到一个场景，未来如果你在某一个状态里面，你一定也会希望看到还有谁跟你在同一个状态里面，你也希望看到他们，比如在一起打游戏，一起旅游的人，甚至是同一种心情的人都可以被“状态”涵概进去，有时候我在内部经常说社交的本质是找到同类，状态也是帮我们找到同类的一种方法。”</li>
+</ul>
+<h3 id="clubhouse">clubhouse</h3><ul>
+<li>clubhouse的启示是从来都不是功能层面的。而是把一批与已有产品绝缘人群的需求聚集了起来。<ul>
+<li>拥有着主流话语权的人聚集了起来。让你以为是在世界中心。很多人也终于得到了站在了聚光灯下的机会。</li>
+<li>这个时代，你给主流圈子里的人搞一个宠物社交的app，发个狗狗币都可以炒上天。只不过clubhouse又踩中了音频这个时间点。</li>
+<li>同时也是这个世界越来越适应这样的价值增长方式。</li>
+<li><strong>也会发现，普通人也会同样的贪婪成性。也一样会有意形成马太效应。</strong></li>
+</ul>
+</li>
+<li>clubhouse有着和抖音很相似的冷启动方式。也即开屏即声音。</li>
+<li>借助声网sdk来做一些事情。</li>
+<li>agora，新一代的电信运营商。有意思的是，这个领域不会有网络中立方案。</li>
+</ul>
+<h2 id="2021/2/5">2021/2/5</h2><ul>
+<li>“包括电商在内的新兴业务，尚处于培育期，对于快手的营收贡献仅有 <em>数十亿元</em> ，所以快手眼下还只能以GMV为主要指标来探讨其增长潜力。按照此前 <a href="http://stock.finance.sina.com.cn/usstock/quotes/KRKR.html" target="_blank" rel="noopener">36氪</a> 的报道，快手2020年直播电商的GMV目标为2500亿元；而更新后的招股书显示，当年前三季度快手就已经完成了这一目标中的2041亿元，且消费者的平均复购率超过65%。目前中国的 <em>直播电商平台的服务费率一般为5%左右，快手在这一指标上还不到1%</em> 。”</li>
+<li><p>“快手共设九个董事席位，除了执行董事宿华与程一笑外，除了两名执行董事程一笑和宿华，四名非执行董事分别是腾讯李朝晖、五源资本张斐、百度沈抖、DCM 林欣禾，以及三名独立董事：美团王慧文、前京东 CFO 黄宣德、前海航总裁马寅。”</p>
+</li>
+<li><p>clubhouse的启示，相同功能在不同垂类人群上的影响。增长手段。以获得隐私作为盈利点。</p>
+</li>
+</ul>
+<h4 id="快手商业化">快手商业化</h4><blockquote>
+<p>马老师一直在强调一句话：我们可能会迟到，但是绝对不会缺席。</p>
+<ul>
+<li>2017年3月战略分析。针对陌陌。</li>
+<li>[image:D24C3935-816F-48D3-8463-4B79F84C6861-380-0002617C13CD7AEC/85BCA2C9-11DA-4011-9CB3-0B611869BA7C.png]</li>
+<li>2018年6月1.5亿被抖音反超。2018年初也在做单列。2018年10月开始极速版但还是双列，19年6月是上下滑，19年7月23号上线。</li>
+<li>抖音广告收入全部用于买量。快手倾向于不打扰用户。</li>
+<li>战略会：增长 &amp; 商业化 &amp; 国际化。也是马老师开始做增长的时候。</li>
+<li>用户产品（直播和主业务强耦合，能够涨dau） &amp; 商业产品（广告，跌dau）。</li>
+<li>是否直播商业化就足够了？因此商业化存在的基础比较弱。</li>
+<li>小店通：给小店，类似粉条。品牌广告字节占20%，我们只占4%。联盟对应字节的穿山甲。 </li>
+</ul>
+</blockquote>
+<ul>
+<li>【年度】那些我正在关注的，觉得很有意思的事：</li>
+</ul>
+<h3 id="平台">平台</h3><ul>
+<li>快手抖音，对手盘都是平台。</li>
+<li>而交易所，对手盘是另一个相同预期价格的人。</li>
+</ul>
+<h3 id="生成式">生成式</h3><ul>
+<li>Mac pro和Mac air的分类。行业都有两个优化思路是做那个最显著的地标 &amp; 提供。 Restaurant &amp; recipet。</li>
+<li>为视频互动 &amp; 游戏互动的开发降低成本。</li>
+</ul>
+<h3 id="一个人或者一群人的经济体">一个人或者一群人的经济体</h3><ul>
+<li>在工具层面实现连接的便捷性。是放大了流动信息的影响</li>
+</ul>
+<h3 id="公地悲剧_&amp;_公域管理">公地悲剧 &amp; 公域管理</h3><ul>
+<li>“现实中，部分号称实行民主的公域似乎悲剧不明显，一是公地的低效投入与维护的高成本被发达的私产经济创造的财富覆盖了；二是公域实行了相对确定的规则而限制了民主原则的运用，即它并不是真正的公域民主。”</li>
+<li>“<strong>自由，可以浓缩为一句话：以私有财产权为基础和边界的自愿合作交换的状态</strong>（转述自米塞斯的观点）。越贴近这个状态的社会，我们就可以说它越自由，同时，它也必然更为可欲。”</li>
+<li>无论任何时刻，我都会尽力去避开丛林法则的解决方案。它的同义词有很多，比如适者生存，比如优胜劣汰。无论是哪一个表述都暗示了牺牲的合理性。追求一种非黑即白的解法是思考的惰性驱使。</li>
+<li>规则与协议。</li>
+<li>公地过度私有化，也是将内部成本外部化的体现。</li>
+<li>“私产伦理的核心就是三条原则：1，自我所有；2，先占先得；3，自愿交易。”</li>
+<li>“<strong>将民主与自由混为一谈</strong>，将“自由”偷换为“凑够了多数就可以制定公共规则”、“个人行动不受其他私权限制”是全球主要国家（尤其是欧美）的思想主流。”<ul>
+<li><strong>人们把自由的规则偷换成了民主的玩法。自由是：我不可侵犯你的自由。但是民主的意思是，多数决定一切。</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="周三见yilun">周三见yilun</h3><ul>
+<li>b站版权支出。</li>
+<li>上市公司看的是公司的执行能力。<ul>
+<li>美团/字节/拼多多。一个大脑，下面去执行。</li>
+<li>前几天社区团购的结果也出来了。美团GMV第一。</li>
+</ul>
+</li>
+<li>美团社区团购对地区选择有思考：江浙沪物流发达，暂时不去考虑；四川能物流效率低下的也先放放。</li>
+<li>中国股市投机能力差，保护散户。所以大部分流动资金进入固定资产市场。美国就是一个丛林法则，任意收割。</li>
+<li>投机者想的是如何赢。而创始人总有初心。</li>
+<li>出海市场：<ul>
+<li>新闻二创搬运</li>
+<li>国外YouTube &amp; tiktok的华人媒体市场</li>
+<li>YouTube涨粉速度极快。</li>
+</ul>
+</li>
+</ul>
+<h2 id="2021/2/2">2021/2/2</h2><ul>
+<li>【思维】当一件事被反对的时候，不是急于奔向事物的反面，而是去想被针对的点如何避免 &amp; 反对的动机。</li>
+<li>很多时候大家都说要赌赛道。其实不只是存量机会，还有增量的考量，比如当一个全新的场景出现的时候，现有的基础设施能否给予最大的杠杆去占领。比如: AR，云游戏等等。</li>
+<li>未来5年的规划。为什么是直播电商？要求GMV到万亿级别？<ul>
+<li>2021/2/5 回答：创始人偏好用户产品，而不是商业产品。用户产品的意思是本身也是内容的一部分。&amp; 马老师说最重要的是内循环广告（粉条）。</li>
+</ul>
+</li>
+<li>【年度】停留时长的意义。<ul>
+<li>它不是媒体平台，却承担了媒体编辑和发行的作用。</li>
+<li>它不是电商平台，却承担了购物的需求。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[去年年末，我停留在个人内心的求索。我想要知道，自由的反面，是束缚，是彷徨，其实是媚俗。今年我深度参与了三个孵化项目的演化，三场硬仗。陪伴着一家独角兽上市公司的成长。一路走，一路记。有很多界限模糊了，在模糊的地带有新的事物出现。]]>
+    
+    </summary>
+    
+      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
+    
+      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
+    
+      <category term="经济学" scheme="http://chocoluffy.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[碎语 2021 Jan.]]></title>
     <link href="http://chocoluffy.com/2021/01/30/%E7%A2%8E%E8%AF%AD-2021-Jan/"/>
     <id>http://chocoluffy.com/2021/01/30/碎语-2021-Jan/</id>
     <published>2021-01-30T19:32:07.000Z</published>
-    <updated>2021-12-30T08:50:21.712Z</updated>
+    <updated>2021-12-30T09:57:04.079Z</updated>
     <content type="html"><![CDATA[<h2 id="2021/1/31">2021/1/31</h2><ul>
 <li>微信支付是否能在国外普及？<ol>
 <li>对比的对象，不是现金，而是信用卡支付。<ul>
@@ -100,10 +1565,8 @@
 </ul>
 </li>
 <li>“银行也将不再是经济体的中心，也不再是寻租的场所，相反，他们会跟其它行业一样，更卖力地竞争资本。今天，货币资本大部分都归于银行系统，但在比特币化的世界里将不再如此。作为转型的一部分，货币的流动也将越来越远离银行业，它会更直接、更自由地在实际创造价值的参与者之间流动。”<blockquote>
-<p><strong>我关注这个市场，是因为资本配置永远是一把很重要的武器。而目前它是主要被用于来富人服务的。</strong></p>
-<pre><code>- <span class="keyword">*</span><span class="keyword">*</span>质押市场存在一个双向。给需要短期流动性的人提供流动性。以及用前者提供的抵押物作为富人（流动性提供者）的资产避险工具。<span class="keyword">*</span><span class="keyword">*</span>
-- defi创新的一点是，它极大地提高信息流动性，避免了违约的连锁反应。
-</code></pre></blockquote>
+<p><strong>我关注这个市场，是因为资本配置永远是一把很重要的武器。而目前它是主要被用于来富人服务的。</strong><br><strong>质押市场存在一个双向。给需要短期流动性的人提供流动性。以及用前者提供的抵押物作为富人（流动性提供者）的资产避险工具。</strong><br>defi创新的一点是，它极大地提高信息流动性，避免了违约的连锁反应。</p>
+</blockquote>
 </li>
 <li>【年度】宏观的国际市场金融化 &amp; 微观的行业金融化。<ul>
 <li>最终探索的还是人与组织结构的配置，怎样放大生产力。越来越深刻感受到的一点是，人们的利益诉求会随着组织成长，市场环境，制度演化，而发生明显改变。</li>
@@ -326,11 +1789,8 @@
 </ul>
 <h2 id="2021/1/2">2021/1/2</h2><h3 id="hayek_money_&amp;_稳定币">hayek money &amp; 稳定币</h3><blockquote>
 <p>我的核心疑虑：<strong>变化的是数量和变化的是价格，为什么会有差别？？</strong></p>
-<p>回答：</p>
-<pre><code>- 生效范围。（我们观察到的价值波动，是否能够及时反应到每个人的资产上，还是存在一定的<span class="keyword">*</span><span class="keyword">*</span>滞后性质，以及这个滞后性会带来什么损失。<span class="keyword">*</span><span class="keyword">*</span>）
-- 可组合性质。（价格剧烈波动不符合当前价格的清算体系，当前大部分金融创新资产比如期货等都是以价格为主要口径清算的。） 
-- <span class="keyword">*</span><span class="keyword">*</span>最关键的一个环节：因为交易清算后发生在体系之外，没有办法rebase去覆盖到。<span class="keyword">*</span><span class="keyword">*</span>
-</code></pre><p>这也是为什么，bitcoin是电子黄金，但是没有办法在现实生活中做交换媒介。</p>
+<p>回答：<br>生效范围。（我们观察到的价值波动，是否能够及时反应到每个人的资产上，还是存在一定的<strong>滞后性质，以及这个滞后性会带来什么损失。</strong>）<br>可组合性质。（价格剧烈波动不符合当前价格的清算体系，当前大部分金融创新资产比如期货等都是以价格为主要口径清算的。）<br><strong>最关键的一个环节：因为交易清算后发生在体系之外，没有办法rebase去覆盖到。</strong></p>
+<p>这也是为什么，bitcoin是电子黄金，但是没有办法在现实生活中做交换媒介。</p>
 </blockquote>
 <ul>
 <li><strong>常规的货币政策，生效的范围是有限的：</strong><ul>
@@ -475,7 +1935,7 @@
     <link href="http://chocoluffy.com/2020/12/30/%E7%A2%8E%E8%AF%AD-2020-Dec/"/>
     <id>http://chocoluffy.com/2020/12/30/碎语-2020-Dec/</id>
     <published>2020-12-31T02:53:50.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/12/28">2020/12/28</h2><ul>
 <li>想象一下，<strong>如果比特币的价格无法上升，只有那些立马就需要用它来交易的人才有直接的激励去拥有它，那么比特币根本活不到今天，因为没有哪个用例可以形成一个足够大的体量。正因如此，对于网络和双边市场来说，让早期采用者从后来的采用者那里获得好处是如此重要。</strong></li>
 <li>成熟的文明，会以税收的制度外化很多隐形的福利和成本，促使达成行为预期的共识。</li>
@@ -828,7 +2288,7 @@
     <link href="http://chocoluffy.com/2020/11/30/%E7%A2%8E%E8%AF%AD-2020-Nov/"/>
     <id>http://chocoluffy.com/2020/11/30/碎语-2020-Nov/</id>
     <published>2020-12-01T02:45:56.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/11/29">2020/11/29</h2><ul>
 <li>🌟/ <a href="https://www.nichanank.com/" target="_blank" rel="noopener">Nichanan Kesonpat</a>/  很好的博客。</li>
 </ul>
@@ -1232,7 +2692,7 @@
     <link href="http://chocoluffy.com/2020/10/30/%E7%A2%8E%E8%AF%AD-2020-Oct/"/>
     <id>http://chocoluffy.com/2020/10/30/碎语-2020-Oct/</id>
     <published>2020-10-31T01:36:28.000Z</published>
-    <updated>2021-12-30T08:50:21.712Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/10/31">2020/10/31</h2><h3 id="《语言与沉默》">《语言与沉默》</h3><ul>
 <li>“没有批评，创造本身或许也会陷入沉默。”</li>
 <li>这个时代需要反思这样一个问题：扣动了扳机的人，可能回到家也会朗读莎士比亚和歌德。</li>
@@ -1798,7 +3258,7 @@
     <link href="http://chocoluffy.com/2020/09/30/%E7%A2%8E%E8%AF%AD-2020-Sep/"/>
     <id>http://chocoluffy.com/2020/09/30/碎语-2020-Sep/</id>
     <published>2020-10-01T01:21:22.000Z</published>
-    <updated>2021-12-30T08:50:21.712Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/9/25">2020/9/25</h2><ul>
 <li>“一旦危机结束，誓言和承诺就很容易失去力量。”</li>
 <li><p>观点：太多人把defi当作余额宝在用了。但实际上，流动性的作用在于治理。</p>
@@ -2075,7 +3535,7 @@
     <link href="http://chocoluffy.com/2020/08/30/%E7%A2%8E%E8%AF%AD-2020-Aug/"/>
     <id>http://chocoluffy.com/2020/08/30/碎语-2020-Aug/</id>
     <published>2020-08-31T01:05:28.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/8/28">2020/8/28</h2><ul>
 <li><a href="http://www.ccidnet.com/2020/0826/10540516.shtml" target="_blank" rel="noopener">快手土潮乐库项目获德国设计奖，第二支单曲翻红彩云追月<em>资讯</em>互联网_赛迪网</a><ul>
 <li>「土潮乐库」。一带一。合作舞台。民间的创意 + 专业人员的行业注意力。</li>
@@ -2351,7 +3811,7 @@
     <link href="http://chocoluffy.com/2020/07/30/%E7%A2%8E%E8%AF%AD-2020-Jul/"/>
     <id>http://chocoluffy.com/2020/07/30/碎语-2020-Jul/</id>
     <published>2020-07-31T00:54:18.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/7/28">2020/7/28</h2><ul>
 <li>当所有资源都可以被在线搜到的时候，为什么我们还愿意去电影院看？同步的力量。</li>
 </ul>
@@ -2546,7 +4006,7 @@
     <link href="http://chocoluffy.com/2020/06/30/%E7%A2%8E%E8%AF%AD-2020-Jun/"/>
     <id>http://chocoluffy.com/2020/06/30/碎语-2020-Jun/</id>
     <published>2020-06-30T22:47:27.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/6/28">2020/6/28</h2><ul>
 <li>🌟 有空研究下foam：<a href="https://github.com/foambubble/foam" target="_blank" rel="noopener">GitHub - foambubble/foam: A personal knowledge management and sharing system for VSCode</a></li>
 <li><a href="https://obsidian.md/" target="_blank" rel="noopener">https://obsidian.md/</a> 和roam research类似的note taking app。</li>
@@ -2770,7 +4230,7 @@
     <link href="http://chocoluffy.com/2020/06/01/%E7%A2%8E%E8%AF%AD-2020-May/"/>
     <id>http://chocoluffy.com/2020/06/01/碎语-2020-May/</id>
     <published>2020-06-01T21:35:51.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2020/5/31">2020/5/31</h2><h3 id="民主">民主</h3><ul>
 <li>机制的不对称优势没变，是底层人民的影响力变了。</li>
 </ul>
@@ -3104,7 +4564,7 @@
     <link href="http://chocoluffy.com/2020/05/02/%E7%A2%8E%E8%AF%AD-2020-Apr/"/>
     <id>http://chocoluffy.com/2020/05/02/碎语-2020-Apr/</id>
     <published>2020-05-02T21:41:35.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="4-30">4.30</h2><ul>
 <li>个体和社群之间的权力关系。</li>
 <li>技术存在路径依赖。（麦克卢汉：媒介即信息）&lt;&gt; 社会团体。</li>
@@ -3466,7 +4926,7 @@
     <link href="http://chocoluffy.com/2020/03/30/%E7%A2%8E%E8%AF%AD-2020-Mar/"/>
     <id>http://chocoluffy.com/2020/03/30/碎语-2020-Mar/</id>
     <published>2020-03-30T21:30:19.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="3-31">3.31</h2><ul>
 <li>产品解决不了的问题。是战略。<ul>
 <li>市面上大部分产品只是ui产品。</li>
@@ -3615,7 +5075,7 @@
     <link href="http://chocoluffy.com/2020/02/28/%E7%A2%8E%E8%AF%AD-2020-Feb/"/>
     <id>http://chocoluffy.com/2020/02/28/碎语-2020-Feb/</id>
     <published>2020-02-28T22:01:25.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="2-28">2.28</h2><ul>
 <li>世界上聪明的人很多，决定上限的是，选对赛道。</li>
 <li>为什么优质内容生产体系和开发分发机制（比如：rss）是互斥的。或者换句话说，怎样是构建一个花园<strong>体验</strong>最好的方式。</li>
@@ -3768,7 +5228,7 @@
     <link href="http://chocoluffy.com/2020/01/30/%E7%A2%8E%E8%AF%AD-2020-Jan/"/>
     <id>http://chocoluffy.com/2020/01/30/碎语-2020-Jan/</id>
     <published>2020-01-30T22:01:25.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="1-31">1.31</h2><ul>
 <li>逆人性欲望的行业，往往通过gamify来缩短反馈周期。<a href="https://www.producthunt.com/posts/next-fitness" target="_blank" rel="noopener">Next! Fitness - AI powered gym | Product Hunt</a>。 健身企业的目标：Gym, Game &amp; Personal Trainer.</li>
 </ul>
@@ -4201,7 +5661,7 @@
     <link href="http://chocoluffy.com/2019/12/31/%E7%A2%8E%E8%AF%AD-2019-Dec/"/>
     <id>http://chocoluffy.com/2019/12/31/碎语-2019-Dec/</id>
     <published>2019-12-31T21:17:22.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.071Z</updated>
     <content type="html"><![CDATA[<h2 id="12-31">12.31</h2><ul>
 <li>那些攻破城墙而立的君王，会铸造起更坚固的城墙。胜利者，习惯将自己的过往塑造为标准，甚至成本来维护自己的统治。</li>
 </ul>
@@ -4374,7 +5834,7 @@
     <link href="http://chocoluffy.com/2019/11/30/%E7%A2%8E%E8%AF%AD-2019-Nov/"/>
     <id>http://chocoluffy.com/2019/11/30/碎语-2019-Nov/</id>
     <published>2019-11-30T16:50:07.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
+    <updated>2021-12-30T09:57:04.075Z</updated>
     <content type="html"><![CDATA[<h2 id="11-30">11.30</h2><h3 id="moment_factory">moment factory</h3><ul>
 <li>campfire. 社交。</li>
 <li><a href="http://www.topys.cn/article/detail?id=28932" target="_blank" rel="noopener">moment factory - 空间成像设计</a> slogan: we do it in public. </li>
@@ -4527,804 +5987,6 @@
       <category term="政治" scheme="http://chocoluffy.com/tags/%E6%94%BF%E6%B2%BB/"/>
     
       <category term="月总结" scheme="http://chocoluffy.com/tags/%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="加密经济" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E5%AF%86%E7%BB%8F%E6%B5%8E/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[碎语 2019 Oct.]]></title>
-    <link href="http://chocoluffy.com/2019/10/30/%E7%A2%8E%E8%AF%AD-2019-Oct/"/>
-    <id>http://chocoluffy.com/2019/10/30/碎语-2019-Oct/</id>
-    <published>2019-10-30T14:13:55.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
-    <content type="html"><![CDATA[<h2 id="10-26">10.26</h2><ul>
-<li>【创业】<strong>直播转化为短视频。</strong>用户导入一段长视频，我们通过内容理解，导出一段精彩的短视频。<blockquote>
-<p><strong>记住用户调研的时候：音乐非常重要。</strong><br>对于真正的快手用户来说，他们平时看的内容是我们无法理解的。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="积木课堂">积木课堂</h3><ul>
-<li>知识是模块化的。这符合我们日常通过搜索学习和课堂学习的过程。一个搜索引擎。积木课堂。把各个阶段串联起来。形成一个学习本。允许用户像整理歌单一样整理自己的学习列表。</li>
-</ul>
-<h2 id="10-23">10.23</h2><ul>
-<li><p>From Aaron Sorkin’s/The Newsroom/: “You know why people don’t like liberals? Because they lose. If liberals are so f<em>**</em>ing smart, how come they lose so goddamn always?”</p>
-</li>
-<li><p>hackathon想法。</p>
-<ul>
-<li>质变带来量变。</li>
-<li><strong>edge generator + imphanting network。</strong></li>
-<li><strong>insta Gan</strong></li>
-</ul>
-</li>
-</ul>
-<h2 id="10-19">10.19</h2><ul>
-<li><strong>为什么没有勇气举手发言？？</strong>我不同意你说的希望以后看到更少这样的问题。<ul>
-<li>但本质上这其实也是一个信息流动的方式。这是业界的最佳实践，像您说的这是望远镜。更何况，我觉得提出这个问题的作者是非常在意快手这家公司才会在问答上po这个问题的。因为有足够的信任，才会有高期待。</li>
-<li>这不是没有先例的，我们是通过「存在即完美」。只是恰好那个视频是快手的剪辑。<ul>
-<li>有没有想过这样一个问题，如果当初剪辑走红的视频，并不是快手的混剪，而是抖音的混剪。这个视频在网络上走红了，我们非常有可能出现的情况是，某一个员工看到这个内容，然后希望转发到「问答」上，因为他希望更多的人看见，就起了一个稍微有一点标题党的标题…是不是我们也会寄希望于某一位大佬突然看到，然后推进，而不是让看到这个帖子的任何人都可以看到，然后在某一次会议上提出来快速推进。</li>
-</ul>
-</li>
-<li>我希望看到的是，哪怕那个视频是竞争对手的内容剪辑，我们也应当学习到这是在提升品牌上的业界最佳实践之一，我们能够借鉴并且有能力做的更好。</li>
-<li>说回来到这个问题本身。拼多多的多多果园和百亿补贴的覆盖面远超很多人的想象。如果说我们在春节的时候准备了40亿的红包雨。希望通过发红包的方式。</li>
-<li>不让每一个对这家公司热心的人灰心，是非常重要，哪怕现在这些热心的人可能采用的方式可能没那么舒适，但是我真心不希望这样的问题越来越少。然后问答上充斥的问题都是，东西好不好吃，福利什么时候发，这些可能运营和hr就能够回答的问题。</li>
-</ul>
-</li>
-</ul>
-<h2 id="10-17">10.17</h2><ul>
-<li><strong>avatar chat?? touch screen to say</strong>。质变带来量变。切入点一定要小。<ul>
-<li>用cyclegan来实现texture的改变。斑马是简单的，因为pattern是重复的。<strong>即使出错了，也是斑马。为什么先切入生成音乐或者诗，因为can’t judge.</strong></li>
-<li>luckin? 蓝白相间。</li>
-<li>目前他们的demo不如预期也是和firis一个问题，不真实。</li>
-<li>快手上很多吃播，段子。</li>
-</ul>
-</li>
-<li><strong>google map，的语音提示，从在这个building左转 -&gt; 从这个星巴克左转。</strong></li>
-<li><strong>题外话，现在大部分text的地方，未来都可以替换成video。</strong></li>
-<li>永远在线？</li>
-<li>NFC + tasker连接现实世界的打卡。<blockquote>
-<p>教育，游戏直播？</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="10-13">10.13</h2><ul>
-<li><a href="https://gofelix.ai/?ref=producthunt" target="_blank" rel="noopener">felix - blog to video</a> 其实就是找图片和加字幕。整合加入zapier，可以让生成的视频直接发布到社交平台上。</li>
-</ul>
-<h2 id="10-07">10.07</h2><ul>
-<li>付费形态:提醒付费。同样允许用户稍微地增加操作的难易度来获得免费版本。参考例子：popclip。</li>
-<li>有多少人在听歌的时候，也在一起哼歌？？上传音乐remix。来制定你自己的音轨。</li>
-<li>“受到威胁的不仅仅是社交平台，还有流媒体音乐平台。以Spotify为例，从年初开始，平台在内测名为“Cavans”的视觉传播功能，用户可以在歌曲播放页面添加GIF图片，也可以直接以竖屏的音乐短视频的形式呈现歌曲。在新专辑《Lover》发布时，霉霉就专门为Spotify录制了相关的歌曲宣传短视频。”  <a href="https://36kr.com/p/5251390" target="_blank" rel="noopener">抖音的全球战事</a></li>
-</ul>
-<h3 id="蓝领经济">蓝领经济</h3><ul>
-<li><p>同城的流动人口工作。</p>
-<ul>
-<li>Uber work。给 staffing industry 提供technology。<ul>
-<li><strong>carry-on的reviews</strong>。某种程度上，流动性损失的是传统的完整性？<strong>流动时，曾经是无法携带或无法利用过去信息的。现在流动，能够在保持独立性的前提上，提供信息的完整。（过去的历史），这能够颠覆的是所有依赖人提供的服务业。因为最不好评估和收集的对服务的评价，在现在成为了可能。</strong>，这其实是，大众点评，还有uber点评的更进一步。<strong>服务业的关键还是如何去评价一个服务。热榜的诞生，是从一个可以量化的角度去做的指标，比如点赞数，评论数等等。但当涉及到一个非标准化的市场的时候，目前，除了简单的review和打星，好像已经没有别的更好的方式？</strong></li>
-<li>提供对其交易历史的人工智能生成分析。<strong>让你的过去成为你的简历。</strong>比如「过去x小时交易x」…</li>
-<li>🌟 为什么shift worker（流动性人口）这个市场有机会？<strong>也是依赖于服务业的标准化，某种程度上，匹配的前提也是标准化。因此当发现某个市场的流动性增加的时候，它会增加上下游的标准化程度，进而促成一个匹配市场</strong>。</li>
-<li>更好的匹配，意味着流动劳动力的效率得到提高。进而对<strong>服务的评价体系和内部资源分发进行反哺。</strong></li>
-<li><strong>现状：服务业存在不稳定的需求曲线。餐厅在高峰期需要的人力在其他时刻是不需要的。</strong></li>
-<li>题外话：<strong>uber一直喜欢把自己定位为一个technology platform而不是一家transportation company，也是因为这样有更低的风险。一开始一定是市场上已有的玩家合作，和不同的staffing company合作来降低舆论的攻击和反噬。</strong></li>
-<li>具体<strong>蓝领市场</strong>的数据看：《美团要做蓝领生意，“馒头直聘”这馒头好啃吗？》</li>
-<li>目前市场上的玩家：美团馒头招聘，斗米，58同镇，BOSS直聘。<blockquote>
-<p>🌟 <strong>时刻记住：要借东风。天时地利人和的情况是：快手会在内容获得腾讯赋予的很大优势。（精制剧，游戏，MCN名人资源等等），我们需要拓展渠道的形态。会是一个借力打力的方向</strong></p>
-</blockquote>
-</li>
-<li>timely feedback</li>
-</ul>
-</li>
-<li>只能说是另一个匹配市场，也是一个服务市场。很多基于服务的反馈机制都有先验。</li>
-</ul>
-</li>
-<li><p>与其开拓新形态，不如借助快手的核心优势去找邻近市场。</p>
-</li>
-<li>快手的优势是<strong>半熟人陌生人社区黏性：信任</strong>，而<strong>信任能够提供价值基础：流动性。</strong></li>
-</ul>
-<h2 id="10-06">10.06</h2><h3 id="《论自发性》">《论自发性》</h3><ul>
-<li>大道甚夷，而人好径。意思是：大道是平坦而清晰的，但是人们喜欢走捷径。</li>
-</ul>
-<h3 id="xdeepfm">xdeepfm</h3><p><strong>学习这个，是为了做增量改进。</strong></p>
-<ul>
-<li>xdeepfm: 优于其他特征组合模型的原因都是通过CIN。(compressed interaction network)</li>
-<li>fm强调的是高阶特征。因此才会有wide &amp; deep以及之后的deep &amp; cross来<strong>兼顾</strong>低阶和高阶特征。</li>
-<li>field-aware one-hot encoding，其实就是embedding concat起来。</li>
-<li><strong>对NN的使用，仅仅是实现了bitwise的交互。</strong>因为针对每一个bit都有对应的weight。<strong>局限是：同一个field里面的bit也会相互影响。</strong></li>
-<li>而PNN，DeepFM则是加入一个two-way interaction。是vector-wise相乘的。<strong>前提是每一个field对应的embedding需要维度相同。</strong></li>
-<li>DIN的用法，是用来取代sum pooling的。</li>
-<li>一个sense是：用户的click存在很大的位置bias。</li>
-</ul>
-<h3 id="快手未来的方向">快手未来的方向</h3><ul>
-<li>@刘明<strong>可以做很重的embedding representation learning，用于topprerank，离线的使用。</strong></li>
-<li><p>在线的FM结构的改进。做增量的修改。</p>
-<ul>
-<li>从bit-wise到vector-wise的explicit interaction.</li>
-</ul>
-</li>
-<li><p>抖音因为头部注意力，而创造出的新的匹配的空间「识别」。快手对应的突破口是什么？</p>
-</li>
-<li>“词语本身是不具备实际的力量的。现在前卫的词语，终会成为明日的政治宣言。”</li>
-</ul>
-<h3 id="以太币">以太币</h3><ul>
-<li>人们提到互联网有用，提及的其实是互联网的应用层。</li>
-<li>信息能够被无限复制。<strong>因此从供应的角度来说，信息不能够成为货币。</strong></li>
-<li>“以太坊是一个为任何数字资产提供数字稀缺性的平台。” <strong>将以太坊定位在应用层之下的价值层。提供资产的稀缺性。</strong></li>
-</ul>
-<h2 id="10-05">10.05</h2><ul>
-<li>快手直播能力saas（临近）应该选择什么模式？</li>
-<li>娱乐体验的领域依赖内容。而没有那么多的产品的差异化。</li>
-<li><strong>platform（shopify）支撑起供应商的差异化。而aggregator（amazon）支撑起供应商的标准化</strong></li>
-<li><p>-订阅Ben Thompson的daily update-</p>
-<ul>
-<li>先从他的twitter观察（计划退订）。<strong>但是关注过多的碎片信息会导致提前疲劳！</strong></li>
-</ul>
-</li>
-<li><p>【产品】为什么call需要人接通才可以开始？</p>
-<ul>
-<li>因为保护的是接受端。就和社交网络微信不使用「已读」保护的是接收信息的人一样。</li>
-<li>但是有没有可能，在足够的亲密度下，可以存在这种直接的通话。我们称作为“唤醒”而从不离线。</li>
-</ul>
-</li>
-<li><p>人们习惯创造出，自己还无法理解的事物。</p>
-<ul>
-<li>但事实的确是，<strong>体系是可以弥补的，战略和纲领是可以在事后反思的，但是如果没有一开始想要征服一切的冲动，最终什么也不会发生。</strong></li>
-</ul>
-</li>
-<li>【年度】信息传播会越来越具像化。因为表现艺术的手段更加精致了。这会影响人的想象力（抽象能力）。不是信息本身会破坏想象力，而是分散的，没有中心的信息会破坏想象力。因为想象力本身就是极度的聚焦。</li>
-<li>解决问题的思维：城市交通规划。如果只把场景放在很多车堵在路上这个问题，只会推导出人行道，自行车道变窄，去除商铺预留道路等等的解决方案。但是交通运输是因为人们希望在这一片土地上工作，生活。商铺都去掉了人们只能通过开车去更远的地方买东西。参考瑞士的苏黎世的街道规划：公共交通（public transit）应当被置于更高的位置。</li>
-<li>我其实很享受这种「navigator」的状态。就是去接受新事物\资讯的inspired，然后记录启发和思考，和制定后续的计划。</li>
-</ul>
-<h3 id="比特币_-_虚拟货币">比特币 - 虚拟货币</h3><ul>
-<li>比特币的本身定位：是激励。对矿工付出mining power确认交易信息的激励。它的价值来自于认同。<strong>而构建在认同之上的，也最终会在猜疑中消解。</strong>现在市面上流通货币的价值，来自于主权信用。</li>
-<li>因此目前大部分宏观的改进：在「点对点」和「电子支付」之上，加上「主权信用」。</li>
-</ul>
-<h3 id="快手">快手</h3><ul>
-<li>组长认可我，最主要的原因是：<strong>愿意多去主动地想。</strong>以及我对自己的要求是，<strong>比预期多做一点。</strong>就像如果我自己有一个副手的话，我会希望他能够准备到的事。</li>
-<li>从组长身上学到的一点：<ul>
-<li>创造算法空间。比如抖音的视频相似搜索。比如垂类和一拖三。</li>
-<li>有自己的一个金矿。从而能够沉下心来去做一些长远的事情。</li>
-<li>小孩子才做选择，成年人全都要。</li>
-</ul>
-</li>
-</ul>
-<h3 id="关于知乎">关于知乎</h3><ul>
-<li>大众化后依旧活得很好的标志之一：不断抱怨知乎变了却依旧使用它的人越来越多。接地气的东西，才能够活得长久。</li>
-<li>【产品】品牌提问<br><strong>依旧是这个原理：从平台里面去使用和观察，然后把一些尚未被引导的人们的自然冲动，为他们建立合理的引导机制和流量分发规则。</strong><ul>
-<li>人们从一个通用的优质信息社区逃离到一个垂类社区的根本原因，是通用社区没有足以达到该特定形态的信息组织和交互的方式，也是「通用」本身的局限。</li>
-<li>一部分人使用知乎的方式是，作为种草前的确认和探风。种草的本质是：「体验的单向传播」。凡是最终和体验挂上钩的，最终的落脚点都是人的感官感受和想象力，而形成的两个方向。<ul>
-<li>小红书：双瀑布流。小红书做的对的一个地方是，发现了短视频鼓励「感同身受」的交换体验的作用。双瀑布流追求的是：信息多样性的平衡，以及选择的空间。因为这种产品形态足够包容，能够以较低的成本给普通的视频曝光的机会。<ul>
-<li>小红书适不适合做抖音一样的全屏上下滑？全屏上下滑作为搜索结果比较的方式来说，成本还是太高了。除非他们有极大的信心保证，前几个推荐的视频足以说服用户。同时可以得出的结论是：搜索的产品形态其实有很多空间，反倒是推荐的产品形态在固化。</li>
-<li>点赞数排序，意味着大众的接受程度。可是这不是个性化的。</li>
-</ul>
-</li>
-<li>知乎：顶踩的列表。</li>
-<li>抖音：全屏上下滑。上下滑是取代了用户的选择空间 。与此换取的是，头部内容更充分的曝光机会和展示空间。</li>
-<li>cake浏览器。搜索的产品交互新形式。对于搜索结果collection的呈现方式。<ul>
-<li>UI上还有很多改进空间：1.横bar的位置。2.标题的动态伸缩透出。3.随时fallback到默认形式。4.借鉴时光机的思路！</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>一部分人使用知乎的方式是，知识社区。</li>
-<li>以及twitter火起来的一个产品改动是「global trend」：热榜。UGC迎合的是生产端的需求，而不是消费端。而生产端和消费端中间相隔的巨大的匹配市场，就是算法的空间。这也是为什么推荐系统会越来越热的原因。</li>
-</ul>
-</li>
-</ul>
-<h2 id="10-4">10.4</h2><ul>
-<li><strong>有赢家就必定会产生专政。</strong>如何克服赢者持续统治的局面。<ul>
-<li>pow: 相同概率赢。不对称优势。</li>
-</ul>
-</li>
-</ul>
-<h2 id="10-2">10.2</h2><ul>
-<li>价格和价值的关系，在供应的角度和市场的角度是不同的。供应的角度(monetary supply)是，供给每少一点，其他拥有者就更加富有。但是市场的角度，只是交换利率(exchange rate)而已。<ul>
-<li>bitcoin是不会贬值的。供应固定，它的价值直接取决于人们是否采纳它。</li>
-</ul>
-</li>
-<li><p><strong>货币的核心是价值捕捉：在于过去定位的价值，未来依旧能够被需求到。</strong>The fundamental challenge is to<strong>acquire something now, that someone else will want later</strong>.</p>
-<ul>
-<li>**acquire now- 当前的价值</li>
-<li><strong>someone else</strong>: 广泛被需要，意味着流动性。同时也意味着低流动成本。</li>
-<li><strong>will want later- 满足时间错位的需求。</strong>暗示了不可伪造（供应端的归属）。因为贬值会降低需求。</li>
-</ul>
-</li>
-<li><p>自由的前提是隐私。我藏的东西，带给我权力，和敏感。</p>
-</li>
-<li>成本高的有利的事，其实很可能会被坏人利用。因为好人们会选择成本低的方式。比特币，目前更像是一个解决方案在寻找问题。人们有已有的电子支付，而还看不见比特币解决的问题，或者说比特币解决掉的成本还没有显性地成为生活中的一部分。</li>
-<li>That Bitcoin will tend to be used “sole”ly by “ne’er do wells”, because it is marginally useful to them and marginally inconvenient for innocent people. And therefore that Bitcoin should be completely suppressed.</li>
-<li>公平：是让成本能够积累到结果。并展示出一种不对称优势。为什么很多人喜欢玩游戏，因为那些生命力真正持久的游戏是不会轻易让金钱侵入他的成本积累体系的。盈利的其实是皮肤。<ul>
-<li>明灯和暗灯。基建是保持我们不塌的关键，而我们需要聚光灯来维持生计。</li>
-</ul>
-</li>
-<li>如果成本积累的方式必须经过人的管理统治，那必然会导致最终的腐败。</li>
-<li>为什么我对未来充满信心，因为我们会慢慢找到体系的理性。</li>
-<li>成本要公开且可累计。成本私有化：pos。</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[为什么我对未来充满信心，因为我们会慢慢找到体系的理性。]]>
-    
-    </summary>
-    
-      <category term="产品逻辑" scheme="http://chocoluffy.com/tags/%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/"/>
-    
-      <category term="月总结" scheme="http://chocoluffy.com/tags/%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="快手" scheme="http://chocoluffy.com/tags/%E5%BF%AB%E6%89%8B/"/>
-    
-      <category term="加密经济" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E5%AF%86%E7%BB%8F%E6%B5%8E/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[碎语 2019 Sep.]]></title>
-    <link href="http://chocoluffy.com/2019/09/29/%E7%A2%8E%E8%AF%AD-2019-Sep/"/>
-    <id>http://chocoluffy.com/2019/09/29/碎语-2019-Sep/</id>
-    <published>2019-09-29T20:24:59.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
-    <content type="html"><![CDATA[<h2 id="9-28">9.28</h2><ul>
-<li>推荐系统：神经网络的归因。从而推荐理由外显。</li>
-<li>self attention是full-size variant kernel convolution。 传统convolution里kernel固定，因为position invariance. 但是attention里weight和自己的特征相关。</li>
-<li>不要以大公司移动慢作为借口，要警惕他们的反扑。比如迪士尼对于流媒体。淘宝对于团购。</li>
-<li>内部孵化的思路：<ul>
-<li>是现在的临近市场。可以基于现有优势：<strong>直播技术，短视频技术，短视频内容，社交关系。</strong></li>
-<li>不会伤害到主app，拥有秘密孵化的空间。<strong>微教育和搜索？模仿youtube教育生态。</strong><ul>
-<li>黏性是重点。只关注留存。<ul>
-<li>首页：一个dock，就是一个桌面。和一个搜索框。</li>
-<li>旁边：推荐。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="9-27">9.27</h2><ul>
-<li>另一个关键的时间节点：从此我也是要被oncall的人啦。</li>
-</ul>
-<h2 id="9-22">9.22</h2><ul>
-<li>知乎live没有解决任何问题。选择知乎live只是尝试解决问题时获取信息的第一步。和在线教育是相同的困境。反馈周期太长。<ul>
-<li>需要解决的问题：也是缩短反馈周期。</li>
-</ul>
-</li>
-<li>attention，中双向还是单向，其实是由mask，对QK‘ 的n*n矩阵用mask做约束条件，决定的。</li>
-<li>1*1的kernel的作用是channel之间互通信息，起到升维或者降维的作用，其实相当于一个全连接层。</li>
-</ul>
-<h3 id="数字金融">数字金融</h3><p><a href="https://www.8btc.com/article/481713?from=timeline&amp;isappinstalled=0" target="_blank" rel="noopener">重磅！姚前演讲全文：数字资产和数字金融<em>巴比特</em>服务于区块链创新者</a></p>
-<ul>
-<li>“通过数字化，资产属性变得多样化了：可以是证券也可以是货币，可以是现货也可以是期货……这些名目，在传统金融业务中是资产可以流通的“护身符”，唯有在这些属性的界定下，资产才能流动起来；而在数字资产的新金融模式下，边界模糊了。”</li>
-<li>“近期美国证监会（SEC）批准了BlockStack等多个项目，让大家看到了这一点: 没有传统意义上的金融中介的参与，融资活动照样可以开展，而且资产的数字化使融资成本可以更低，范围可以更广，效率可以更高……”</li>
-<li>“以证券为例，它本身就是为了让底层资产流动起来而人为创造的符号表征。<br><strong>股票是股东权益的证券化，债券是债权的证券化，电子黄金是黄金的证券化，抵押贷款证券（MBS）是银行信贷的证券化……</strong>证券的意义在于为资产创造了流动性，但有了资产数字化，传统证券的涵义可能就会有新的变化。因为资产数字化后，天然就有了流动性，就无须证券这一层薄纱，也就没有什么所谓的证券属性认定了，相应的<strong>监管体制也随之消解。</strong>”</li>
-<li>“ICO之所以争议很大，除了被利用成为诈骗工具之外，就在于数字股权的公开发行、流通和交易，与传统的股票概念、模式有所不同，使传统的证券概念以及建立在此基础上的整个金融体系和监管规则，出现了歧义。”<blockquote>
-<p>任何事情做大之后是<strong>需要监管</strong>的。数字资产未来也很可能会发布自己的证券。这和技术无关，只是权力依附的对象从曾经的实体资产转移到了数字资产而已。<br>“<strong>后面加上Security（证券）的用意，更多的是为了表达它的政策立场。</strong>”</p>
-</blockquote>
-</li>
-<li>不是所有的数字化，都可以称作是电子资产。<br>“因为，其记录的只是作为流通工具的部分信息，并没有记录显示合同、物流、发票、税务、保理等底层与真实贸易背景相关的信息。真正意义上的数字资产应该是原生的、包含全量信息的、以数字形式展现和流转的资产。数字化后的订货合同、物流单据、发票、保理合同等资产，才是真正的数字资产。”</li>
-<li>“在《资本的秘密》中，赫尔南多- 德- 索托曾这样描绘资本的创造过程：“正规的所有权制度提供了使我们可以把资产体现为活跃的资本所需的过程、形式和法律……把资产加工成资本所采用的方法是，仔细描述资产在经济和社会中最有利用价值的方面，使它们在记录系统中得到确认，然后极富成效地对其进行组织，并收录在所有权凭证中。”<blockquote>
-<p><strong>资产到资本的转变，最重要的是流动性的变化。而从另一个角度来想，什么东西改变了流动性，就能够创造出更强的底层价值释放的空间。</strong></p>
-</blockquote>
-</li>
-<li>“以<strong>中小企业资产证券化</strong>为例，我国<strong>中小企业融资难</strong>融资贵问题由来已久，备受关注，在实际业务开展过程中，一直面临着参与主体众多、信息来源分散、底层资产信息庞杂、难以穿透等难题，导致中小企业无法真正利用资产证券化工具盘活资产，有效获得金融支持。如何才能让中小企业获得平等的信息话语权和自主融资的能力？一个行之有效的解决方案是利用分布式账本与分布式文件系统技术，将底层资产的全量原生信息同步上链，利用公私钥技术实现权利人持有并转移资产，通过核心企业的信息服务商接入，持续有效地披露底层真实贸易背景，从而形成数字资产。”<blockquote>
-<p>想法和场景都是好的。但是关于上链的仲裁，交给谁？这个上链的监管能力是否会成为下一个中心化的庞然大物。值得商榷。<br>整体上说，<strong>姚前，把区块链，数字资产，也当作是一种信息流通和穿透的方式。</strong>（但其实也对，每一个字节点上都有完整的历史。）</p>
-</blockquote>
-</li>
-<li>“数字资产呼唤数字货币！对此，私人部门和公共部门均在发力。虚拟货币正在矫正缺乏价值支撑这一根本性缺陷。从比特币的缺乏基础资产支撑，到各类稳定代币的探索，或基于法币抵押，或基于算法，再到监管部门的介入，基于法币抵押的稳定代币因对法币的价值锚定得到增信，再到近期JPM Coin、Facebook Libra的出现，虚拟货币价值不稳定和不合规的问题有望得到解决。表面上，虚拟货币的价值在锚定央行货币，其实是在“去虚拟化”。”<blockquote>
-<p><strong>凡是希望锚定法币的稳定币，其实潜台词都是：去虚拟化。那么他们的作用是什么？跨境交易。海关清算。避开曾经监管特别严的市场。</strong></p>
-</blockquote>
-</li>
-<li>因此，加密货币与虚拟货币的概念需要重新审视，<strong>加密货币不再一定就是虚拟货币</strong>，要把脏水泼掉，把孩子抱起。某种意义上，区分加密货币与虚拟货币，意义重大。<blockquote>
-<p>未来法币也可以加密。加密只是一种手段。</p>
-</blockquote>
-</li>
-<li>“中央银行一向被认为不适合承担数字货币供给这一角色。除了狭义银行化的顾虑，主要担忧是当数字货币向C端（零售客户端，即社会公众）发行流通时，中央银行可能会面临极大的服务压力和成本。这是各国在研发法定数字货币过程中所面临的难题之一。目前各国开展的央行数字货币试验，比如加拿大央行Jasper项目、新加坡金管局Ubin项目、欧洲中央银行和日本中央银行Stella项目等，正在试验加密货币技术，但还停留在B端（机构端）应用场景。”</li>
-<li>“按照IMF经济学家Tobias Adrian和Tommaso Mancini-Griffoli等人的观点， <strong>100% 备付准备金存缴央行后的支付宝和微信支付，相当于以中央银行负债进行交易，本质上就是央行数字货币。</strong>若此，则中国早就是全球首个实现<strong>法币数字化的泱泱大国</strong>，当然这还只是1.0版本。需要注意的是，Facebook的Libra白皮书提出的100%资产储备和大家说的100%备付准备金，并非一个概念，前者将资金交由第三方托管，后者则是将所有资金存缴中央银行。”<blockquote>
-<p>「100% 备付准备金存缴央行」注意这个概念。今年年初已经贯彻落实了。<br><strong>备付准备金：在付款和收货之间的时间差创造的资金盘。目前100%放在央行，防止兑付。</strong></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="9-20">9.20</h2><ul>
-<li>做自己喜欢做的，太重要了。在线教育的讲座。我的商业嗅觉是优秀的。</li>
-<li>遇见每一个人都是恩赐，他们成为了往后我遇见的每一个人面前的我。@王若愚 @钱相如</li>
-<li>在线教育。</li>
-</ul>
-<h2 id="9-15">9.15</h2><ul>
-<li>京东和大众点评做得很对的一点：榜单。</li>
-<li>下午为给女朋友挑礼物，在刷淘宝。AI能帮助做到很多业务：<ul>
-<li>定制油画，素描相册等等。</li>
-</ul>
-</li>
-<li>弹幕，是一种操控情绪的手段。</li>
-</ul>
-<h2 id="9-14">9.14</h2><ul>
-<li>看博客，商业博客比如ben thompson的那种。虽然质量已经算好的，但还是面向的是现在。重心在分析。看书，是面向未来的。重心在抽象思考。</li>
-<li>或许我只是，影子的影子。</li>
-<li>厄运会越来越糟。不是因为世界真得变得更坏了，而是人们手上用来传递厄运的喇叭更大了。</li>
-<li>新技术。不对称优势。和集体防御。</li>
-<li><strong>技术和科学从来都不是中立的。我的意思并不是区分“好技术”与“坏技术”，而是强调他们的不对称优势。</strong></li>
-</ul>
-<h3 id="ben_thompson">ben thompson</h3><ul>
-<li>platform和aggregator的区别。<ul>
-<li>平台会促成第三方和消费者之间的关系。然而aggregator会尝试介入并控制它。</li>
-<li>区分的一个标准其实很简单。Bill Gates: 人们在上面创造的价值要大于这个平台本身的价值。比如：windows操作系统；aws，以及各类云服务商。app store。 淘宝。等等。</li>
-<li>怎么去判定aggregator。极致的end user experience. 不是去垄断上游的提供商，而是去垄断下游的用户。这个改变同样也是由于互联网带来的。因为交易成本为零了。<blockquote>
-<p>很有意思的逻辑：当交易成本高企的时候，是应该囤上游的供应，因为找到用户也不一定能够达成交易，因为交易成本。但是当交易成本降低至零的时候，游戏就变了，应该去消费端找消费者。<strong>现代形式的垄断。</strong></p>
-<p><strong>从这个角度去理解：报纸行业，出版社，社交网络，出租车行业和酒店行业的变化。在价值链上最强势的一环能够让其他部分趋向标准化。</strong></p>
-<p>很想问ben thompson的一个问题是：如果市场上有一个很强大的aggregator，你的作为另一个垂类的弱势aggregator，你是愿意将自己的内容加入他们成为他们的供应商，还是封闭地做。比如yelp起诉google在answer box里的信息只是由google提供的，没有合理地提供第三方的信息。<strong>这个起诉本身其实暴露出yelp战略上的短视。与其成为google强大aggregator效应下的一个供应商，不如主攻移动端，让用户直接消费。类似amazon决定取消在google上投放自身广告的决策一样。</strong></p>
-<p>一个aggregator越不公平，越容易催生出碎片化和封闭化的生态。</p>
-<p>对于fb来说也是的。将user experience打造到极致是不会畏惧透明的。就算允许用户将数据导出来，是否存在另外的应用能够让用户体验到相似的他们依赖的功能呢? 在用户拥有选择权之前，自由地隐私保护其实是伪命题，说到底其实还是我牺牲一部分隐私来换取更卓越的服务。</p>
-<p>已有的巨头aggregator，都是通过避开了成为上一个aggregator的供应商而起来的。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="密码朋克">密码朋克</h3><ul>
-<li>经济交易的自由，相比隐私和言论自由。<blockquote>
-<p>经济交易会越来越重要。因为人们的生活越来越大程度上交割成为交易的一部分。</p>
-</blockquote>
-</li>
-<li><strong>一个人会为自身的权力花钱。</strong><ul>
-<li>警惕一个人所热烈宣扬的正义。</li>
-</ul>
-</li>
-<li>每一项技术，需要找到最初的一批投机者。他们会游说防止技术的监管。</li>
-<li>政治有一点不好的地方在于。人们并不是缺乏对好政策的认知，而是涉及更多的权力的游戏和圈地比赛。<ul>
-<li>政治献金者。利用利润去实现从真正有生产力的行业到没有生产力的部门的财富转移。</li>
-<li>但是同样必须承认的是。大多数游说以及对国会施加的影响确实来自富有生产力的工业界，这些行业要确保法律继续准许其保持生产力。<blockquote>
-<p>想到当初fb因为剑桥的事情去国会听证的时候，国会对fb的商业模式几近一无所知。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>当盒式录音带出现的时候，他们也觉得唱片工业要完了。以及itunes开创为单首电子音乐付费。到spotify流式音乐。多少次人们觉得唱片工业要完了，但是实际上唱片工业得到了迅猛的发展。</li>
-<li><strong>美国工会的拖沓和繁琐的游说制度其实是对稳定的一种保护，以及对主导参与者的反抗。</strong>那些抱怨国会低效率的人们，有没有想过如果换成另外一种更高效地观点游说的方式会发生什么。比如很简单一个例子：<strong>拍卖</strong>，让大部分流程和实践给标准化，公开地拍卖选票。为什么这样不行呢？因为在这种体系下，<strong>主导参与者能够在不撼动大众观点的情况下实现对政策的偏移。从上至下的监管，某种程度的专制。</strong>而仔细观察近期互联网的创新，是不可预测的，远远超出政策制定的。<strong>监管，应当是被用来确保市场自由而不滥受监管。</strong><blockquote>
-<p><strong>低效。是一种缓冲。让声音和宣言充分的暴露自己。</strong><br><strong>高效，容易被具备先发优势的人当作维护自己利益和权力的工具。</strong></p>
-<p>版权战争是一个例子。立法者努力想要全社会都做出改变，以适应一种由好莱坞定义的框架。他们会说：“你们的新文化运动是不道德的，所以，如果你们不想自行了断，那我们就来设置法律工具来阻止你们去做你们自以为是的好事。”<br><strong>警惕那些希望推翻一切的，革命性质的政策。他们口里说着革命，可能只是想要混乱。</strong>这不是制定政策的好的方式。好的政策一定是适应这个世界，并且能够纠正错事，促成好事的。</p>
-</blockquote>
-</li>
-<li>关于透明和隐私一个有意思的观点：<strong>秘密会从没有权力的人那里被转交到有权有势的人手里。</strong></li>
-<li>“未来世界最积极的方向：那就是自我认知，多样性和自决的网络。”<strong>如果只有一个乌托邦，那这个乌托邦对我来说就是一个反乌托邦。乌托邦的理想必须意味着体系和互动模式的多样性。</strong></li>
-<li>阿桑奇是比较理性和悲观的。出现的全面监控，以及只有部分受过高等教育拥有反叛技术的人才能够拥有自由。宛若笨重臃肿剧院中灵活的老鼠。</li>
-</ul>
-<h2 id="9-13">9.13</h2><ul>
-<li>【产品】提醒分享图片。给照片内出现的人。google photos?</li>
-<li>【创业】dating方向。社交网站。FB dating允许用户import他们精选的story。</li>
-<li>【创业】黑卡会员。会员制界的拼多多。</li>
-<li>我哭之前，是无尽的干涸。</li>
-<li>“「把 B 站打造成以内容为中心的社区，能极大减少由于用户规模的增加对原有用户的体验。每次用户见面只在视频下面见，社区扩大了十倍，只要这一类内容还在，他会觉得这个氛围是没有变化的。」”</li>
-<li>幼稚鬼才一直记仇。</li>
-<li>不要忘记多去关注ben thompson的最新文章。</li>
-<li>他们本身不带恶意，是人们的偏见带有恶意。美和丑。</li>
-<li>以前一直认为理性是一种能力。现在觉得理性其实是一种态度，它诞生于相互理解。</li>
-<li>【年度】仅仅是美好的愿景是不够的。抛开基础经济设施去做善恶引导，是不够有效的。<ul>
-<li>当我说出最有感触的几个场景。我可能不再偏向说，哪些哪些人留下的风花雪月。我会关注，有多少人在这个平台上切实地改善了自己的生活，从而实现对自己生活控制的自由。我不愿意，小看任何一个人，对自己生活的孤注一掷和期许。如果有什么书能够总结我的一生，陀翁说，《堂吉柯德》，这就是我的生活了，<strong>你会因此而责怪我吗？</strong></li>
-</ul>
-</li>
-<li>有时候生活就是魔幻。一年前自己写的博客，一年后里面提及的书的译版就面世了，自己也凑巧参与进了中译版的审阅工作而在书里留下名字。再回头看当时的文字，把哈伯格税的思路仅仅放在闲置实物交易市场其实是短期无实用解的，因为无法仲裁。反而转向虚拟财产的交易，更能够短期内依托中心化的方案应用起来，比如游戏道具交易，广告主交易等等场景。还有我一直想做的基于社群身份的交易。欢迎讨论哈哈！说回来，书还是推荐的，《激进市场》，去年经济学人的年度榜单之一。</li>
-<li>二手市场交易规模越来越大，闲鱼，胖虎，毒……</li>
-<li><strong>希望有一天。我会和我最信任的朋友们提到：想不想和我一起，去把这个世界搞的天翻地覆。用我们的方式去守护。</strong></li>
-<li><strong>每一个光线靓丽的项目背后，都有很宏大而且必须存在的基础设施。这是这家公司的根。</strong><ul>
-<li>@刘明：实时的数据链路。样本采用的特征。是否能够梳理的更好。</li>
-<li>@垂类项目：作者类目树的划分，用户等级的重新划分等等。</li>
-</ul>
-</li>
-<li><p>快手的电商。<strong>为什么会担心私域流量的逃离。里面涉及到一个很关键的问题就是：如何借助后期售后服务的不对称力量来挽回私域流量的逃离？比如逃去微信或者淘宝直播。</strong></p>
-</li>
-<li><p>快手和腾讯合作的合资公司。主要领域会是：</p>
-<ul>
-<li><strong>游戏和文娱</strong>：云游戏，动漫，影视。<ul>
-<li>快手的A站，十字星动漫。孵化的小剧场app。</li>
-</ul>
-</li>
-<li>基于快手成为一个更有效的分发渠道。</li>
-<li>腾讯旗下的腾讯影业，企鹅影视，加之阅文收购的新丽传闻在影视行业。</li>
-<li>参考资料：“在历史上，腾讯比较倾向于进行战略投资，将对方纳入联营公司范畴，反而不太经常进行并购。2016年以来，腾讯只进行过两次大规模并购：收购中国音乐集团(CMC)并将其并入腾讯音乐，通过控股子公司阅文集团收购新丽传媒。毕竟，腾讯的管理体系比较宽松、倾向于“联邦分权”而非“中央集权”，并不一定非要全面收购。” <a href="http://www.sohu.com/a/340082442_649045" target="_blank" rel="noopener">腾讯与快手深入合作的三种可能性与路线图_投资</a><blockquote>
-<p>快手会专注于渠道的改进（包括短视频和直播。以及之后必有一战的<strong>实时IM</strong>），然后慢慢进军内容制作的上游。</p>
-<p>换一个角度想，在这个时机上，相关的<strong>垂类渠道</strong>的项目是不够吸引人的。<strong>可以观察一下现在这个时候出来的新创项目的切入点是什么？</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>什么样的垂类最有优势？<ul>
-<li>存在信息不对称。**很多时候这个信息不对称是因为：1.重资产，导致的低频交易；比如买车买房市场。2. 稀缺，低需求场景；比如牙医市场等等。</li>
-</ul>
-</li>
-<li>越来越觉得，一个脑洞要成为现实需要一批投机者。</li>
-<li>对于头条来说，出海在<strong>战略上</strong>究竟有没有用。还是仅仅作为一个<strong>摇钱树</strong>的作用。<ul>
-<li>强调搜索是关键的。因为和头条已有的商业模式完美吻合。</li>
-</ul>
-</li>
-</ul>
-<h2 id="9-10">9.10</h2><ul>
-<li>pow。不可伪造。成本分布。</li>
-<li>在路上，司机师傅在把快手当作主播电台在听。他喜欢听一个四川的主播，专门用来调解一些离婚和外遇的事件。<ul>
-<li>快手是否可以切入podcast的方向。关于<strong>音乐</strong>这个细分领域。</li>
-<li>生态的意思。<strong>意味着我们能够提供完备的工具。让他们自由而自律地书写内容。</strong></li>
-<li>每一样工具，都有自己的优势，和想要塑造出的形象。</li>
-</ul>
-</li>
-</ul>
-<h2 id="9-08">9.08</h2><h3 id="MC_=_MR">MC = MR</h3><ul>
-<li>Because free markets encourage the lowest priced goods, the energy used in producing any good is minimized.<br>自由市场会选择能量消耗最少的方式。也就是成本最低的方式（价格最便宜）。</li>
-<li>Bonding curve。收藏品价格随数量改变。最终会逐出小型消费者。</li>
-<li>大意为 “<strong>人类文明多发端于大江大河下游</strong>”。老师的意思是，亚当·斯密用交易费用解释了人类文明的起源——<strong>惟在河网密布之处，运输费用才够低，交相贸易的结果便是人类文明的繁荣。</strong></li>
-<li>下沉市场的娱乐体验：美女，音乐和游戏。</li>
-<li>通过为用户找借口，甚至创造借口的公司。<ul>
-<li>源头，今天听到的一种观点：“people actually read more, but…”</li>
-</ul>
-</li>
-<li>都说服务业商品化，其实是商品先服务化。两者的核心区别应当是所有权的归属。服务业交易的只是使用权。</li>
-<li>摄影，让我体会温柔。是经过而不打扰。尤其是拍陌生人像的时候，其实很多情况下他们是能够感知到摄像头的存在的，但是你需要给他们信任感和安全感。我知会了这么多秘密，我也会守口如瓶的。你会愿意相信我嘛。 ​​​​</li>
-<li>切入阅读这个领域很难：<ul>
-<li>因为这个领域的产出和付出是不对称的。你很难衡量出你到底得到了什么。</li>
-<li><strong>很难衡量体验的场景，就会很容易地被讨巧用以游戏化。因为这相当于用娱乐体验来代替理性的成就感。</strong></li>
-<li>从这个角度再去看，duolingo（学习外语的app），甚至<strong>拼多多（不会强调购物体验，而是强调消费和砍价的娱乐体验）</strong>等等。这也解释了为什么黄峥会说，拼多多是迪士尼+costco。</li>
-</ul>
-</li>
-<li>很不负责任的演讲。因为信息不对称，甚至还以信息不对称为骄傲。<ul>
-<li>想象的场景，主持人问，你成功最大的因素是什么？嘉宾回答两个字：坚持、努力什么的等等。</li>
-</ul>
-</li>
-</ul>
-<h2 id="9-7">9.7</h2><ul>
-<li>能解决实时视频社交的，是虚拟形象。</li>
-</ul>
-<h2 id="9-01">9.01</h2><ul>
-<li>“但我想现在就应该开始重新思考乔布斯和苹果：不只思考他们为人类带来了什么，也思考他们虽然暗示了、但未能交付什么。只有这样，我们才能朝着那被暗示的方向继续前行。“</li>
-<li>【best】新时代的运营。personalized。微信仍然是最好的私域流量。 </li>
-<li>少数群体总倾向于借凯恩斯主义获得庇护的借口，而现代媒介的进化在逐渐把我们所在的人群分类为一个个少数群体，他们想要的自由，其实是填缺不平等对话的保护主义。人们难以跳出自己的立场考虑真正的自由。<strong>弗里德曼的《自由选择》</strong></li>
-<li>现代人可以谈天论地，却不愿意理解身边的人。</li>
-<li>“按照某前辈的话说，管理一个工程团队，只需要做好两件事：一是定义好目标，二是建立一个评测系统，那么不论你的团队强弱，都能逐渐接近那个目标。”</li>
-<li>“再来谈谈作家的角色，同样责任重大。确切地说，<strong>今天的作家不应为制造历史的人服务，而要为承受历史的人服务。</strong>否则，他将形影相吊，远离真正的艺术。任何暴君的千百万军队都无法将一个作家从孤独中拯救出来，尤其当这个作家同他们的步调一致的时候。相反，一个无名囚徒的沉默，一个被遗弃在世界另一个角落百般受辱的囚徒，就足以将作家从流放中召回，就算这个作家身处优境，只要他不忘记这种沉默，用艺术的种种方式来彰表这种沉默。”</li>
-<li>光荣，来自于承担。</li>
-<li>“写作之所以光荣，是因为它有所承担，它承担的不仅仅是写作。它迫使我以自己的方式、凭自己的力量、和这个时代所有的人一起，承担我们共有的不幸和希望。”</li>
-<li>学会理解他人的不幸。很多人，只是因为过度绝望，才选择虚无主义，或者被虚无主义所选择。</li>
-<li>“这代人，生于一战之初；二十来岁时伴随早期的工业革命进程，又遭遇希特勒的暴政；随后，仿佛要让他们的经历更完美，发生了西班牙战争、二战、集中营惨剧，整个欧洲满目苍夷、狱祸四起；如今，他们又不得不在核毁灭的阴影下哺育子嗣、成就事业。<strong>没人能要求他们更乐观。- </strong>我甚至主张在与之斗争的同时，要理解他们的错误。**他们只是因为过度绝望才行不智之举，对时代的虚无主义趋之若鹜。但终究我们中的大多数，不止是在我国，也在整个欧洲，都拒绝这样的虚无主义，致力于追寻合法性。我们需要锻造一种灾难时代生活的艺术，以全新的面貌获得再生，与历史生涯中死亡的本能作斗争。”<blockquote>
-<p>由此去理解这句话，为了改变天生的无动于衷，我置身于苦难和阳光之间。苦难令我明白，历史上记述的不都是美好的，阳光则告诉我，历史不是一切。<br><strong>i do not willing to mistake disenchantment for truth. 应当这么去理解：我不愿意把现实主义当作是现实。</strong></p>
-</blockquote>
-</li>
-<li>“或许，每一代人都自负能重构这个世界。而我们这一代人却明白这是痴人说梦。但我们的使命也许更伟大，那就是要防止这个世界分崩离析。”<blockquote>
-<p>我很难解释清楚这个秘密。我想起他总提到的反抗。这意味着在一个分崩离析的世界里保持清醒，却也不依赖理性来获得希望。<br>我主张，在表扬而积极追逐的时候，去承认它无法做到的；在批评并与之抗争的时候，去理解他们的错误和来源。</p>
-</blockquote>
-</li>
-<li>“由此回到现实中的我，回到我的局限、我的债务，回到我艰难的信仰上来。作为结束，我感到能更坦然地向诸位表达我的情意。这份殊荣，我愿意接受并与所有同我一起战斗的人分享，他们从未得到过任何一点奖赏，却唯独受尽了折磨与不幸。最后，请再次接受我发自内心的感激和公开忠诚的承诺。这一古老而忠诚的承诺，是每一个真正的艺术家每天面对自己默默必行的功课。”</li>
-<li><strong>无限丰富的虚无</strong></li>
-<li>“我处处寻找的不是实质，而是不相干的俏皮。”<blockquote>
-<p>其实我对待生活也是这个态度。</p>
-</blockquote>
-</li>
-<li>【剧本】我依赖贩卖自己的生活而生活。自我暴露并迷恋上享受伤害。因为流量。</li>
-<li>【创业】和声优男(女)朋友谈恋爱。AI合成声音，拍拖时打电话。</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[遇见每一个人都是恩赐，他们成为了往后我遇见的每一个人面前的我。]]>
-    
-    </summary>
-    
-      <category term="科技" scheme="http://chocoluffy.com/tags/%E7%A7%91%E6%8A%80/"/>
-    
-      <category term="年度总结" scheme="http://chocoluffy.com/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="月总结" scheme="http://chocoluffy.com/tags/%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="加密经济" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E5%AF%86%E7%BB%8F%E6%B5%8E/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[AI换脸zao戏，及背后个性化形象的市场]]></title>
-    <link href="http://chocoluffy.com/2019/08/31/AI%E6%8D%A2%E8%84%B8zao%E6%88%8F%EF%BC%8C%E5%8F%8A%E8%83%8C%E5%90%8E%E4%B8%AA%E6%80%A7%E5%8C%96%E5%BD%A2%E8%B1%A1%E7%9A%84%E5%B8%82%E5%9C%BA/"/>
-    <id>http://chocoluffy.com/2019/08/31/AI换脸zao戏，及背后个性化形象的市场/</id>
-    <published>2019-09-01T01:22:38.000Z</published>
-    <updated>2021-12-30T08:50:21.700Z</updated>
-    <content type="html"><![CDATA[<h2 id="产品介绍">产品介绍</h2><p>通过用户的一张自拍照片，能够将用户的脸移植到其他的影视作品里的演员的脸上。App Store 搜索「zao好戏」或者在微博热搜上都可以看到应用相关信息。</p>
-<p>31号爆红，白天经历服务器排队，目前至9月1日下午时，已可以重新恢复制作视频。</p>
-<p>其实「zao」也代表了近期一系列基于deepfake换脸的应用，能够替换现有影视作品的演员制作表情包和视频。</p>
-<h2 id="一些看法">一些看法</h2><h3 id="工具类低留存">工具类低留存</h3><p><strong>工具类低留存的困境这个app也很难摆脱。</strong></p>
-<p>简单来说，那些因为好奇心，猎奇心追逐潮流而来下载使用的人，也会因为它在成为爆款街品之后因为失去了标新立异的能力而离它而去。<br>对于依赖制造潮流而火的产品，最后拼的还是持续制造潮流的能力。如果没有想到更适合切入的商业模式，「zao戏」一定概率和之前曾爆火的prisma，zepto等在几周后褪散热度。也可以尝试预测一下「zao」是不是会开始极力鼓励用户邀请好友合拍视频，拿到关系链，然后往snapchat的模式走。</p>
-<h3 id="区别">区别</h3><p>「zao戏」背后由大厂支持。对于目前被普遍采用的deepfake方案，对于每个用户上传的头像离线训练换脸模型的成本极高，GPU花销在高峰期一夜超过百万元的成本，并不是多数厂商能够并愿意负担的，这也间接解释了为什么zao背后是「陌陌」在支持，陌陌依赖直播不差钱，且该功能后续对直播以及视频制作有更多的作用，这一点后续具体展开。</p>
-<h2 id="启发">启发</h2><h3 id="视频分发_&amp;_生产的新玩法">视频分发 &amp; 生产的新玩法</h3><p><strong>最直观的感受是，生产以及二次生产的门槛降低。</strong></p>
-<p>拍张相片就能把脸换进场景剧中生成视频，是生产门槛的极大降低。但本质上，基于已有内容的改编其实更应当被算作是二次生产，而值得注意的一点是，二次生产并没有创造或记录新的东西，其面向的是纯娱乐消费。我们应当看到其在娱乐领域上的潜力。</p>
-<p>首先是对品牌方，影视剧方的视频分发的影响。</p>
-<p>很多电影制作方曾在快手，抖音上尝到收益。比如代言人黄渤《一出好戏》的快手话题页面有超过8千万人参与，其短视频电影预告共拿到超百万点赞等等。但绝大多数时候，这类传播是单向的，是制作方凭借自己影响力的输出。如果配合精剪精筛视频物料的换脸玩法，能在传播渠道上更加丰富，用户更容易自发转发到其他渠道形成多向传播，并形成热门话题和与制作方契合的预期槽点与笑点。</p>
-<p>配合已有作品的换脸玩法，以及提供二次创作的能力。这么听感觉有点像同框玩法。但其实本质上就是一回事，只是相比而言，换脸的用户操作门槛更低，场景更丰富，以及拥有直接嵌入原场景的用户体验优势。</p>
-<p><strong>这样的选择同时也是为了控制风险。</strong></p>
-<p>在技术以及政策的初期，我们更倾向于选择2B（和品牌方影视方合作来规划可被二次制作的视频范围）而不是直接2C（让用户随意上传视频并且随意换脸，因为这样的内容以及成像更加不可控。）</p>
-<h3 id="对直播的辅助">对直播的辅助</h3><p><strong>换脸，意味着视频中人物形象的呈现能力和身份的拆分。</strong></p>
-<p>演技优良的作者可以在后期被编辑换上更符合潮流流量的脸，甚至依托观看历史，在呈现方式上做个性化的细微调整（比如脸上妆戴哪款饰物更有利于相关电商转化）。这也进一步对直播市场做供给细分，拆分出表演类目的作者和颜值类目的作者，一方负责肢体呈现，另一方负责形象租赁。</p>
-<p>一个更为细分的市场同样促使了市场的标准化，也进一步提供了匹配的空间，有潜力出一个平台级的选手。</p>
-<p>而以上提到的作者，其实并不局限于真人 。个人观点是偏向于从虚拟形象入手，因为这么做能够更好的切割形象的所属权，虚拟形象的IP属于平台，而个人形象的IP归属更为复杂（涉及个人，其工作室，平台等等）。</p>
-<p>同时必须承认的是，现有的开源方案并不支持实时性，而是根据来源和目标训练好的模型对视频抽帧处理。这里对直播侧的讨论更多算一个脑洞，但是对毋需实时的视频制作能力的改变是已经存在的，也预估短期会有更多的相关项目出现。</p>
-<h3 id="互动剧集">互动剧集</h3><p><strong>竖屏长剧相比短视频，意味着额外的制作能力。</strong>而这也为换脸这一类互动形式提供了空间。</p>
-<p>比如，竖屏长剧的剧作者是否能够在剧集后保留30s的彩蛋时间，由其社交平台上的粉丝们来换脸参与该彩蛋时间的剧情交互，并由观看者决定是否解锁该剧情的分支，以及收看最热门临摹视频的版本。等等等等……玩法很多很细。</p>
-<h2 id="局限性">局限性</h2><p>AI换脸是否涉嫌侵权，是一个很重要也无法回避的问题。</p>
-<p><strong>个人看法是需要区分其中涉及的权利。</strong></p>
-<p>从对改编的作品是否侵权的层面看，我的回答是模糊的。用户以贡献自己肖像的形式参与作品，该成果会被当作用户衍生作品(derivative work)，在这个纬度能够保护用户来改编。但是由于引用的作品所有权不属于该用户，其引用改编的时长和程度会影响到这个侵权行为的判决。由于相关法案仍处于空白，我个人倾向于对短时长周期的引用（&lt;7s）是比较避险的做法。但必须指出这和引用的内容极其相关，任何触及政治和法律红线的敏感内容都将直接侵权甚至违法。</p>
-<p>从平台对用户征收肖像数据的层面看，其中大概率涉及侵权行为。从「zao」的霸道用户协议也可以看到，原文：“授予”ZAO”及其关联公司以及”ZAO”用户全球范围内完全免费、不可撤销、永久、可转授权和可再许可的权利”…这一点基本暗示了他们背后能操作这些肖像图片的空间，后续的法律纠纷大概率会集中在这一点。</p>
-<h2 id="后续Q&amp;A">后续Q&amp;A</h2><ul>
-<li>「zao」为代表的换脸技术和快手，抖音推的AR滤镜有什么区别？</li>
-</ul>
-<p>个人观点：从产品角度理解，我觉得两者代表的是两个方向。</p>
-<p>「魔表」推到极致，是对自己场景的修改，重心依旧在自己，通过模型对自己希望呈现的形象做增强。而「换脸」推到极致则是将作者置于另一个场景，重心在新的视频场景和剧情，作者不过只是附着在场景上的一个更亲切的形象。因此基于这个理解，我认为魔表（形象增强）的技术发展是强调实时性和夸张性的，是个性和潮流的体现；而换脸（形象交换）的发展具有更大的应用空间，适合视频制作，广告等等依赖impression的市场领域，其中有很大的算法匹配空间。</p>
-<ul>
-<li>个人隐私是个大问题？</li>
-</ul>
-<p>个人观点：对侵权的问题，我依旧希望从两个层面拆解来看，一是对改编作品的行为是否侵权，二是平台通过用户协议获得用户肖像权是否侵权。目前来看，因为zao不合理的用户协议，对二的声讨远远盖过对技术本身和其应用范围的一的讨论。而二其实是一个更宽泛的针对平台用户协议约束力的问题，这反而分散了对这项技术本身应当给予的讨论空间。我认为用户隐私非常关键，<strong>但是我同样认为从技术的提出到落地存在很大的执行空间。</strong>我们能够通过很多方式来降低风险和保护用户的隐私。不仅仅是更友好和平等的用户协议，还有内容的传播，源头和归属等等……我在文中也有提及：这其实也解释了为什么首先是通过2B而不是直接2C的方式来应用这项技术。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[平台产生的前提是市场标准化。长远地看AI换脸技术，能促生出形象租赁，个性化形象广告等的交易场景，值得持续关注。]]>
-    
-    </summary>
-    
-      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
-    
-      <category term="产品逻辑" scheme="http://chocoluffy.com/tags/%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/"/>
-    
-      <category term="人工智能" scheme="http://chocoluffy.com/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
-    
-      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
-    
-      <category term="投资" scheme="http://chocoluffy.com/tags/%E6%8A%95%E8%B5%84/"/>
-    
-      <category term="科技" scheme="http://chocoluffy.com/tags/%E7%A7%91%E6%8A%80/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[碎语 2019 Aug.]]></title>
-    <link href="http://chocoluffy.com/2019/08/30/%E7%A2%8E%E8%AF%AD-2019-Aug/"/>
-    <id>http://chocoluffy.com/2019/08/30/碎语-2019-Aug/</id>
-    <published>2019-08-31T02:09:58.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
-    <content type="html"><![CDATA[<h2 id="8-24">8.24</h2><ul>
-<li>愚昧总是着急地变着样子，而幸福却一直是最古老的模样。</li>
-<li>只强调使用权的爆款。<strong>电子身份</strong>。</li>
-<li>“县域本地经济，非常落后。停滞在80年代水平，但是消费水平几乎与时代同步。”</li>
-<li>没有什么身份是绝对高级的。他们不过是挪用了更多的他们的付出而视而不见。</li>
-<li>互联网，移动互联网，是现代的道路。</li>
-<li><strong>不同的内容形式，都存在与之对应的最合适的偶像与流行形式。</strong></li>
-<li>【剧本】双重人格。自我实现的狂热。只看见自己想看见的生活。</li>
-<li>【剧本】回落初空。我们看到的不是真的世界，而我们的想象力才是我们的整个世界。决定自由，是因为我不想错过其他可能。<strong>一个越来越具象的世界，是一个不断输出价值观的世界。人们变得浮躁，是因为他们所接受到的信息本身变得精致无比。越抽象的传递，越依赖双方的默契。</strong>写作者写下的每一个字，读者费尽心力解开。</li>
-<li>这个世界是多元的。除了广告这个极端之外。应当有另一个极端的盈利模式。</li>
-<li>“越趋向叙事表达的内容形态，会更接近能够产生直接内容收入的形态。越趋向综艺表达的内容形态，会更接近广告收入为主，内容为社交服务的倾向也会更重。越趋向具象表达与叙事的内容的生产成本会更高，内容的生产更高的概率依赖PGC。越趋向抽象表达与综艺的内容生产成本会更低，内容的生产更高的概率依赖UGC。”</li>
-<li>辛巴的婚礼，各路明星包括成龙，花费7000万。最后直播卖货，收益1.3亿。</li>
-</ul>
-<h3 id="关于平台">关于平台</h3><p><a href="https://mp.weixin.qq.com/s/3M58Ise7K9ou7tdX84sZCw" target="_blank" rel="noopener">美团张川：做了8年平台，我总结了平台的5道坎</a></p>
-<ul>
-<li>低频需求靠广告，高频需求才靠补贴。他们面向买家打广告，但二手车市场供不应求，供给端改革才是核心。<strong>所以给买家打广告的人人车对比给卖家打广告、强调卖车赚钱的瓜子，后者才真正意识到了商业的本质。</strong></li>
-<li>平台遇到的第一关，是能否确定、并识别出平台的两端是极其不平衡的业务，并通过运营、产品，保持两端的不平衡，这样才能最终成就平台的价值。<br>这部分主要思考的，是商业社会最常见的Two Sided Marketplace（双边平台），如淘宝、美团、滴滴都是典型的双边平台。<br><strong>动态不平衡，即这个市场的活跃度足够高，不会产生单个用户和单个服务提供者在一段时间内多次达成同一个交易的过程。</strong></li>
-<li>产品标准化的过程，是在加速形成这种<strong>动态不平衡，也即，没有什么是不可代替的</strong>。</li>
-<li><strong>第二个陷阱是“平台专家陷阱”</strong>。如果平台是以知识，特别是独有性知识为前提的平台，容易掉入这个陷阱。典型的就是律师、医生、老师。这类平台用户选择成本很高，需求会集中到专家身上。当平台养出好的服务者以后，他可能就离开平台。<br><strong>专家型的陷阱会让很多创业者一开始觉得平台做得还不错，但是很快就进入平台的停滞期，随着用户和专家的流失，平台进入衰退期。</strong><blockquote>
-<p>也即私域流量。私域流量很大的一个缺点。不是不能做，是重心要偏向腰部。</p>
-</blockquote>
-</li>
-<li>标准化的现象的一个性质：<strong>当它可以测量的时候</strong>。</li>
-<li>经济学原理中有一句话: <strong>短期看需求，长期看供给。</strong></li>
-<li>平台到了最后构造商业模式的时候，一定要想清楚是做是做<strong>剃须刀(LTV，生命周期总价值)，还是电冰箱(CAC，用户获取成本)的生意。</strong>剃须刀的生意，就是看中一个客户的长期价值，第一次生意不追求赚钱，甚至是亏钱的，但是依靠长期卖刀片的生意，把利润做高做大。打印机生意同理。电冰箱的生意，就是一定要在本次交易中覆盖用户获得成本，生意的公式就是本次收入-获客成本，不要期待未来还能依靠给冰箱卖鸡蛋能够从单个客户上获得更多的收入。</li>
-</ul>
-<h2 id="8-23">8.23</h2><p>我确定我喜欢你的时候，是当我发现我们之间的沉默也是甜的。</p>
-<h2 id="8-19">8.19</h2><ul>
-<li><strong>我会希望把他们纳入自己控制的体系里。而不是短期竭泽而渔。</strong></li>
-<li>微信公众号是一个减税的过程。</li>
-</ul>
-<h2 id="2019/8/17">2019/8/17</h2><p><strong>“当你想打破什么时，社交媒体很有用；可当你想用它来重新建设些什么，它就失灵了。”</strong>” 来自<a href="https://mp.weixin.qq.com/s/zEWcszlzVN6UvhxIAmMgQQ" target="_blank" rel="noopener">步调一致的狂热</a>。</p>
-<blockquote>
-<p>极度的不对称。</p>
-<p>现实世界。和虚拟世界。<br>现实世界里的身边。他们通过家庭，邻里的筛选，最终形成我们的身影。<br>而虚拟世界里。仅仅依靠谁嗓门最大。（总有人会在享受伤害带来的流量。）</p>
-<p>呼吁返回现实世界的生活体验。其实是呼吁尊重这一类价值观。有一些东西他们很难形成，但是很容易辨认的。边际成本分布体系。</p>
-<p>我们很难选择我们身处的世界。<br>可以我们却很容易选择我们虚拟身份加入的群体。</p>
-<p>曾经我们在一切不适应中学会成长，学会谦卑。<br>现在我们不断要求世界适应自己的出言不逊。</p>
-<p>这是共识的狂欢。也是共识的谷底。没有自由的选择。</p>
-<p>为什么商业公司的思维逃脱不了“转，评，赞？”</p>
-<p><strong>科技每打破一个障碍。也在重新分配成本的分布。</strong></p>
-<p>文学，艺术，音乐应当不断干预政治。直到政治不再干预文学，艺术，音乐。</p>
-</blockquote>
-<h2 id="2019/8/13">2019/8/13</h2><ul>
-<li>虽然已经两亿用户了。虽然已经是一个接近8000人的公司。虽然仅仅入职1个月，但我还是能够做出贡献直接影响所有用户。要尊重这份力量。</li>
-</ul>
-<h2 id="2019/8/3">2019/8/3</h2><ul>
-<li>我们在决定着人们能够看到怎么样的世界。<ul>
-<li>有一些可能费力但是没有绩效的事情。比如hate rate。一个非常不对称的指标。hate涨了对导致对用户不可逆的伤害，但是hate跌却没有明显的收益。</li>
-</ul>
-</li>
-<li>今天早餐的庆丰包子铺，饿了吗的快递员因为长时间的等待对结账的服务员大妈破口大骂，双方都火气冲天。其实快递员是在担心因为自己送货慢导致的被用户投诉然后扣工资，而包子铺的大妈更是做着本职工作，希望维持嘈杂人群的秩序。人们都只是在努力工作着，为了生活，也为了能够保护自己想要保护的人。仅此而已。<strong>而商业模式决定了人们力量的指向，决定了人们的对峙。</strong>我想，其实是有改进空间的。只要把测量的时间放置在从餐馆出餐到快递送达的时间段即可，而不是从用户订餐到快递送达的时间段。而后者是为了消费者的绝对体验，前者是在消费者方面稍做妥协却对快递员更人性化的考量，也是快递员唯一能够改变的区间。<strong>没有什么是绝对轻松的。消费者享受的悠闲，只是成本转移到了别人身上，只是他们看不见也不想看见而已</strong>。而如何控制成本的流通途径和可证明可累积的性质，是我一直想要想明白的东西。今年年终的年度总结就是这个话题了， MR(margin revenue) = MC(margin cost) 永远都会成立，只是 MC 的受众和显隐性会不同。人们努力私生活提高的MR，将由所在体系下的规则决定MC的流向…很巧。<br>也想到了天龙人玛丽乔亚里的传送带，实际上是在地底下的奴隶们实现的。<blockquote>
-<p><strong>一样东西的价值，在于它的成本。</strong>这里的成本绝不只是制作生产成本。还有创意，灵感成本。这些<strong>私人租金</strong>。<br>而创意这个东西是模糊的，是主观的。<br>因为它是主观的。它有了被包装和营销的空间。于是有人们尝试在包装和营销上出力，为了在真正的主观创造上偷懒。</p>
-</blockquote>
-</li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[愚昧总是着急地变着样子，而幸福却一直是最古老的模样。]]>
-    
-    </summary>
-    
-      <category term="产品逻辑" scheme="http://chocoluffy.com/tags/%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/"/>
-    
-      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
-    
-      <category term="社会人文" scheme="http://chocoluffy.com/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E6%96%87/"/>
-    
-      <category term="月总结" scheme="http://chocoluffy.com/tags/%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="快手" scheme="http://chocoluffy.com/tags/%E5%BF%AB%E6%89%8B/"/>
-    
-      <category term="随笔" scheme="http://chocoluffy.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[碎语 2019 Jul.]]></title>
-    <link href="http://chocoluffy.com/2019/07/30/%E7%A2%8E%E8%AF%AD-2019-Jul/"/>
-    <id>http://chocoluffy.com/2019/07/30/碎语-2019-Jul/</id>
-    <published>2019-07-31T01:42:43.000Z</published>
-    <updated>2021-12-30T08:50:21.708Z</updated>
-    <content type="html"><![CDATA[<h2 id="2019/7/28">2019/7/28</h2><ul>
-<li>有一些职位是流动着的，比如设计师。他们的流向，是人们注意力的方向。</li>
-<li>在陌生感和挫败感中学会宽容。不仅仅是理解，宽容别人；也是理解，宽容自己。我们活着，是为了成为宿命外的自己。</li>
-<li>G的duplex，最适合微信来做。从整合服务入口的自动化，到自动化整个服务。但为什么微信其实可能永远都不会这么做，小程序可能已经是他们最具有侵略意义的举措：<strong>因为上游的整合，容易伤害到下游的多样性。</strong></li>
-<li>张一鸣的故事里，很重要的一环是认识了酷讯投资人王琼。<ul>
-<li>“2009年底，<strong>酷讯投资人王琼找到张一鸣</strong>，让再创业。王琼把酷讯房产业务独立出来。正好饭否关站，张一鸣就创立了九九房，在业内率先上线了5款移动APP，快速收割了百万用户。这也让他发现移动互联网快速发展的趋势。掌上家族共包含五款移动找房应用，用户通过掌上家族找房，不仅通过地图浏览具体位置，还能通过房源详情了解最全面的房源信息;并且为用户提供的一键拨打功能，大大提高了用户的找房效率。”</li>
-</ul>
-</li>
-</ul>
-<h3 id="【年度】MR_=_MC">【年度】MR = MC</h3><p><a href="http://www.truthcoin.info/blog/pow-cheapest/" target="_blank" rel="noopener">Nothing is Cheaper than Proof of Work | Truthcoin: Making Cheap Talk Expensive</a></p>
-<ul>
-<li>MR是系统中可以调节的部分。MC是否cumulative成为关键。如果MC是累进的，则是拍卖制， highest bidder win。</li>
-<li>MC_rent + MC_nonrent = MR。对于任何去中心化的应用来说，<strong>rent应当一直为0。而同样地，中心化意味着租金收入。</strong></li>
-<li>即便我可能是交易中的收益者，我实际上是通过隐瞒自己的真实需求来实现的MR &gt; MC。比如，在我急需用车的时候打到正常价格的的士，以及在我需要用药的时候买到普通价格的药。<strong>我是在用我的私人信息向我自己收取了租金。因为需求没有被暴露出来。</strong></li>
-<li>MR = MC 的情况只存在在没有外部性的情景里。</li>
-<li>而对于消费者来说，<strong>他们不断在追求MR - MC的最大化，就是他们得到的利润，其实就是在不断追求MC方信息对称</strong>的一个过程。<strong>而创业者的作用，往往是利用其行业经验以及资本能力，将这一部分租金成本（信息）标准化地以更低的价格销售给普通消费者。</strong>这会带来那一个行业市场内的信息流通方式的改变，而这个改变的方向和速度，往往和这个行业的结构相关。</li>
-<li><strong>租金rent意味着排他性。只有当对手无法拥有的时候，才存在租金的一说。当信息不再排他的时候，它就不构成租金的一部分。</strong>或许这就是加密货币巧妙的地方。他通过设置算hash的方式，<strong>将租金彻底地从系统中消灭了。</strong>每一个结点都有验证信息的关键知识，即hash是否计算正确。而目前在人类系统里，这个关键的验证手段依赖的是名望。<blockquote>
-<p>为什么这个系统很重要。因为在加密经济里，我们付出的成本是电力和运算成本。而在一个商业系统里，这个成本是时间。</p>
-<p>简单来说，比特币的运作方式是，你以一个极高的成本获取一个和系统紧密相关联的一个价值单位。</p>
-</blockquote>
-</li>
-<li>这也是为什么ripple不是真正的P2P。这个体系里面存在banking收取租金的关系。</li>
-<li>因此，在P2P的系统里面，是没有「租金」这个概念的。这意味着，MR = MC。<strong>我们日常消费中，所得到的利润和亏损，都可以理解为租金，是通过双方掩藏自己的真实需求估价而得的差值。</strong>对于POW来说，每10min有12.5bitcoin出现意味着有12.5bitcoin的浪费。</li>
-<li>pow的随机性打乱了共谋collusion的形成。</li>
-<li>pow对MC的设计<strong>使得系统更容易让MC追上MR，因为permissionless。</strong><ul>
-<li>因此对于说希望拿比特币制造的热量来供热的说法是不成立的。因为任何额外的收益都将最终转嫁到提高的成本上。</li>
-</ul>
-</li>
-<li>为什么不切换成另外一个方式，比如对社会有益的方式，而不是来解hash问题，可能相对没有意义。<ul>
-<li>外部性的引入是危险的。因为成员本身没有这个利益驱动去获得正外部性。</li>
-</ul>
-</li>
-<li><strong>Tendermint/Casper</strong><ul>
-<li>每一个人可以通过抵押自己的部分资产而加入validator（验证者）。如果他们不正当的操作，他们抵押的资产会被没收。因此只要这些行为正当的验证者数量够多，能够维护共识而不需要挖矿来得到。</li>
-<li>validator获得newcoin以及交易手续费。</li>
-<li>为什么说即便是POW的变种POS，其实也遵守的是MR = MC。<strong>一个MR = MC的系统，资本并不是大量集中在参与者手中的，而是因为需要覆盖MC的成本而流通到了市场里。一个MR &gt; MC的系统，参与者能够积累大量的系统资本而形成垄断。</strong>如果把消费的概念引入，MR = MC能够极大的增加消费的多样性。而MR &gt; MC则是会形成一个固化的消费体系和结构。</li>
-<li>流动性为什么重要，问问雷曼兄弟。而POS恰恰做到的是相反的事情，他们需要让资本锁定，减少了流动性。</li>
-<li><strong>锁定资本并不等同于改变了资本的供应（并不减少了资本的供应）。</strong>因为人们锁定是为了未来能够拿出来。</li>
-<li><strong>POW以直接消耗硬件和电力的成本来完成循环，而POS则是将这个成本通过流动性短缺嫁接给整个市场。从而以影响到整个市场的效率为成本来降低POW产出的co2对环境的影响。</strong><blockquote>
-<p>🌟 <strong>成本的嫁接。MC是否由同一个获得MR的人承担，还是MC会被转嫁到更隐晦的地方。很多时候，我们为了更好的监管这部分成本的流通，我们会选择更直接的方式。</strong></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li><p>未来很可能的情况是两种系统都会存在。<strong>只是成本的分布不一样而已。</strong></p>
-</li>
-<li><p><strong>Delegated Proof-of-Stake (DPoS)</strong></p>
-<ul>
-<li>这一种形式是，更像是<strong>世袭制度</strong>。人们用资本选出100个senator，他们来负责签署区块按照次序，并由此来是系统达成共识。</li>
-<li>🌟 **“voting” is only effective when it is cheap to cast an informed vote.- 选票是被买来的。并不是以一种非常显然的方式。因为它的显然性也会成为它的危险性。</li>
-<li><strong>一个零和游戏意味着。除了一方外的其他参与方的付出最终都会白费。</strong></li>
-<li><strong>很多时候，候选游戏里的候选人会选择让整个游戏变得复杂，这会让选民做出informed vote的成本变高，从而达到更容易散播笼络人心的信息的目的</strong>, adding self-fulfilling expectation of hopelessness。</li>
-<li><strong>同时也和数量有关。</strong>数量越多，投出informed vote的意义也越小。（<strong>为什么会有quadratic voting。为了体现意志的不对称性</strong>）</li>
-<li>为什么<strong>资本主义经济比较有效。因为它明确的规定了MR和MC的流向，是私有的，一分钱的风险得到一分钱的回报。而DPOS和一切的voting一致，都不是资本主义性质的，因为在voting里，回报是外部性质的，并不是私人所有，而投票的成本是零，也没有私人的风险。</strong></li>
-</ul>
-</li>
-<li><p>美国的创始国父们选择一个Limited Goverment也是为了降低MR，使得MC（政治贿赂，腐败，勾结）也会因此而降低。</p>
-</li>
-<li><strong>钱在短期内是零和的。这意味着短期内给其他人更多的钱，自己的钱会贬值。uniform changes are meaningless, that non-uniform changes are meaningful. 我们注意的不是钱的绝对值，而是相对值。</strong></li>
-<li>“Satoshi’s design insight was to/channel/that/inevitable work/into a/cumulative/process, to optimally stablize a peer-to-peer clock in a cartel-resistant way.”</li>
-</ul>
-<h2 id="2019/7/27">2019/7/27</h2><ul>
-<li>身边很多的问答都是在简单地补充信息不对称。而我期待的问题和回响，是抛出另一个方向。</li>
-</ul>
-<h3 id="关于快手和抖音">关于快手和抖音</h3><blockquote>
-<p>快手特别的地方在于，<br>保护每一个人那些可能没那么多收益的事情，很难，但仍有人在坚持。<br>和youtube真的很像。<strong>youtube的发展史有很大帮助。</strong><br><strong>必须承认的是，针对不同的人群有不同的更适合的盈利模式。</strong><br><strong>始终记得快手最大的优势：是这8年来平台上记录的真实的不加粉饰的生活。</strong></p>
-<pre><code> -<span class="ruby"> 真实而且极其个性化的场景，意味着这很难标准化。以及可能并不适合很多依托于标准化流水线式变现的商业逻辑。
-</span>-<span class="ruby"> 比如已经成为快手收入主来源的直播。我们不是靠推出很多标准化的秀场而脱颖而出的，我们赢在不胜数的极具个人特色的直播间数量，以及依赖铁粉能达到的高比例的打赏率。
-</span>-<span class="ruby"> 比如我们想做的电商。老铁们带货无法成为规模化的商品。我们希望做的不是帮助他们打造影响力的爆款，而是具备长期稳定需求预期的订货合作。使得老铁们能一人带动多人逐渐形成一个微型的供应链。「带货」是极具个人生活化的事情，这意味着每一个货都经过他的手营销出去。
-</span>-<span class="ruby"> 比如我们的主产品短视频。我们不是依赖标准化滤镜和主流单一的审美。我们依赖的是生活百态以及每一个人独特的存在。</span>
-</code></pre><p>但必须澄清一点的是：<strong>这并不是说我们不能借鉴标准化的做法。每一个平台上都存在不同比例的消费者和生产者。合理地区分人群以及在不同人群上推广更适合的商业模式，是我们想要看到的双赢。</strong></p>
-<p>这个熟人系统也存在局限。</p>
-<p>我认为最大的漏洞在于，一旦「这部分信任变得容易复制」，我们的平台的价值就越小。和货币是相似的，没有生产力支撑的纸币在超发后会贬值。而没有信任度支撑起来的网红，其轻易成功的事迹使得「积累粉丝」这件事变得贬值。是老铁们对「掉粉」的敬畏，得以约束自己规避非法牟利。不像抖音只需要一个成名时刻，老铁们在长期朴素耕耘着自己的形象，而我们应当极力守护这份朴素和真诚。</p>
-<p>抖音的特点：</p>
-<ul>
-<li>快速的流量变现，使得<strong>影响力的价值是打折扣的</strong>。电商，依托的仍是陌生人交易的典型电商场景，核心在于<strong>平台为商品质量背书。</strong></li>
-<li>基于流量的盈利模式，使得头条需要打造类似谷歌的高效率广告匹配系统，也注定他们会不断拓展到注意力多的场景里。</li>
-</ul>
-<p>往抖音那个方向应该学习的点应当是：</p>
-<pre><code><span class="bullet">- </span>那些只愿意为抖音平台的生产者的原因。
-</code></pre><p>【创业】基于vlog日记的配对。<strong>记录的目的是为了交流。</strong>你能够付出的努力能够被极其容易的认证出来。而当你把这部分内容和你的形象绑定得越紧密，当你越在意前来和你对话的人的时候，你会准备得越充分。</p>
-</blockquote>
-<h2 id="2019/7/26">2019/7/26</h2><ul>
-<li>发现了吗，算法达到最终的阶段，就是用户按照算法训练的意愿而操作。而我为之一生所自省和成长的目标，就是自由。不被操控，不被自己的感官操控。</li>
-<li><strong>新人的生活。仿佛就像在拼拼图。</strong>有两个时刻是最关键的：<ul>
-<li>当我决定来这里的时候。从那个时刻起，我的优化目标就从选择，改成了改进。我因为，广阔的第一线战场，权力等等来的这里，我也要在这里拿到这些。</li>
-<li>当我终于和组里的人信息一致的时候。终于在提出改进意见之前，我自己能够评估这个思路的可靠程度和收益。</li>
-</ul>
-</li>
-<li>打动我的有很多瞬间，500个家乡，你的存在即是完美等等。<strong>很多时候，不受主流审美待见的江湖气，其实保留着一个人最初的真诚和欲望。</strong></li>
-<li><strong>这是一条更难的路。</strong>但是也很有温度和人情味。这件事总要有人做的。就让我来试一试吧。</li>
-</ul>
-<h2 id="2019/7/25">2019/7/25</h2><p><a href="https://detail.youzan.com/show/goods?alias=2oli4043ubv6m&amp;" target="_blank" rel="noopener">一答（yiida）单词棒 | AI 智能交互翻译机，手指点击即刻翻译</a></p>
-<blockquote>
-<p>CV的实际应用。一个很好的例子。</p>
-</blockquote>
-<h2 id="2019/7/18">2019/7/18</h2><ul>
-<li><strong>我就是那么俗。每一次都会被感动。可是还有什么比活着更俗了嘛。</strong></li>
-<li>当一群人大笑的时候，每个人都会看自己最喜欢的人。</li>
-<li>平均本质是获取一个平均方向，但是会丢失强度信息。例如对NLP里的句向量来说会丢失句长信息，对ctr预估里的用户行为序列来说会丢失用户活跃度信息。因此求平均的效果要看任务本身对强度信息是否需要，如果不需要的话，求平均可能就能得到不错的结果，否则的话求mean可能不如求sum。</li>
-<li>从youku、youtube的发展看ugc、pgc以及快手小剧场。</li>
-</ul>
-<h2 id="2019/7/13">2019/7/13</h2><ul>
-<li>学习youtube尤其是游戏直播上的产品设计。<ul>
-<li>super sticker，其实对应的是快手的直播打赏。</li>
-<li>buy comment ? 允许用户买一段评论。</li>
-<li>charity。允许用户自发的领取一个公益组织，并在自己的页面显示，用户可以选择捐赠，捐赠的钱直接捐赠到对应的组织渠道。</li>
-<li>教育模式。用户打开youtube首页没有推荐，通过列表的方式为用户推教育视频。<blockquote>
-<p>消费后的信息的结构化。有意思的是，UGC是否必然会过渡到UGC的结构化或者PGC？有意思的趋势是，在抖音消费，在快手生产？又想到当初Twitter在不温不火的时候，点燃用户活跃程度的一个产品功能是：热榜。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="年度话题：不对称性">年度话题：不对称性</h3><ul>
-<li>我们要学会设置门槛。<ul>
-<li>关注和搜索很难。这其实和微信公众号的思路有相似之处，保证你关注的，能够进入你关注页享受流量曝光的，可能更少，但是你更在乎的人。</li>
-</ul>
-</li>
-<li>MR = MC。MC部分的例子：<ul>
-<li>现在在南部城市里一些快手大V（7月广州调研），其实他们并不缺钱，可能家里就是经济条件还很不错的，但是他们通过学习这个平台的风格，拍摄了一些很接底气的视频，把自己包装成为了另一个形象，从而达到电商卖货的目的。生活的「真实感」也可以伪造。</li>
-<li>抖音以及youtube上造就了这么一批新创公司方向，他们掌握着核心的剧本拍摄和剪辑能力，然后通过和品牌合作，只需要品牌方给一个故事灵感和方向，他们可以帮助完成整支视频的拍摄和宣发。「美好感」也可以伪造。</li>
-</ul>
-</li>
-<li>这意味着一点：对于不同的门槛，人们的反应条件和程度都是不同的。<strong>产品思路上，我们主观设置的对好人低门槛的功能，是否同样会吸引到那些不怀好意的坏人们。</strong></li>
-<li><strong>不仅仅要会设置门槛，还要对门槛成本的积累作把控。这决定了成本是否不可伪造，以及耗费是否有意义。</strong></li>
-<li>而有些愚蠢的设计，把资本资源当作了门槛。</li>
-</ul>
-<p>这引出我希望主要讨论的原则：</p>
-<ul>
-<li>很难积累。</li>
-<li><p>但积累的成果极其容易验证。</p>
-</li>
-<li><p>今天获知的一个很重要的信息： <strong>“掌握货源和供应链的人才是站在金字塔的顶层。”</strong></p>
-</li>
-</ul>
-<h2 id="2019/7/12">2019/7/12</h2><ul>
-<li>时间是有回声的。</li>
-<li>亲自去呼吸，让春天自由。</li>
-<li>直播慢慢回落的原因。以及为什么没有考虑会员制。</li>
-<li>我们负责周边的基础架构。比如掌握资源获取的便利程度，比如衣服和饰品，最后让用户挂名即可。</li>
-<li>Today, we’re introducing Learning Playlists to provide a dedicated learning environment for people who come to YouTube to learn.</li>
-<li><strong>关注youtube的产品变动</strong></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[新人的生活，仿佛就像在拼拼图。我知道，这是一条更难的路，但我很享受这份听从内心的自由。]]>
-    
-    </summary>
-    
-      <category term="创业" scheme="http://chocoluffy.com/tags/%E5%88%9B%E4%B8%9A/"/>
-    
-      <category term="产品逻辑" scheme="http://chocoluffy.com/tags/%E4%BA%A7%E5%93%81%E9%80%BB%E8%BE%91/"/>
-    
-      <category term="商业评论" scheme="http://chocoluffy.com/tags/%E5%95%86%E4%B8%9A%E8%AF%84%E8%AE%BA/"/>
-    
-      <category term="月总结" scheme="http://chocoluffy.com/tags/%E6%9C%88%E6%80%BB%E7%BB%93/"/>
-    
-      <category term="快手" scheme="http://chocoluffy.com/tags/%E5%BF%AB%E6%89%8B/"/>
     
       <category term="加密经济" scheme="http://chocoluffy.com/tags/%E5%8A%A0%E5%AF%86%E7%BB%8F%E6%B5%8E/"/>
     
