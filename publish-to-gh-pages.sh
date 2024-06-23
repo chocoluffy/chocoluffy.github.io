@@ -1,13 +1,27 @@
 #!/bin/bash
 set -ev
 
+# Check if public directory exists and is a directory
+if [ ! -d "./public" ]; then
+    echo "Error: public directory not found. Make sure 'hexo g' completed successfully."
+    exit 1
+fi
+
+# Debug: Check public directory contents
+echo "Contents of public directory:"
+ls -la ./public
+
 # get clone master
 git clone https://${GH_REF} .deploy_git
 cd .deploy_git
 git checkout master
-
 cd ../
-mv .deploy_git/.git/ ./public/
+
+# Debug: Print current directory and its contents
+echo "Current directory: $(pwd)"
+ls -la
+
+mv .deploy_git/.git/ ./public
 
 cd ./public
 

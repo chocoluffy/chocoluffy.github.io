@@ -170,8 +170,3 @@ airbnb在网站的第一屏是用一段视频来当做背景的， 非常惊艳�
           });
         </script>
 ```
-
-还有很多的功能选项， 在[主页](https://github.com/nicinabox/superslides)可以查看到最全的功能配置，也可以参考他的[实例页面](http://archive.nicinabox.com/superslides/#1) 那就搞定了! 最后附上成品的gif:
-![project gif](https://giant.gfycat.com/WetLongHapuka.gif)
-
-
