@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/chocoluffy/chocoluffy.github.io.svg?branch=master)](https://travis-ci.org/chocoluffy/chocoluffy.github.io)
+[![Build Status](https://app.travis-ci.com/chocoluffy/chocoluffy.github.io.svg?token=ydyzD6J7tLQBsjbkCisv&branch=master)](https://travis-ci.org/chocoluffy/chocoluffy.github.io)
 
 # Deploy
 
