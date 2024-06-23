@@ -162,7 +162,7 @@ douban:
   movie:
     title: '我收藏的电影'
     quote: '放松一下~'
-  timeout: 40000 
+  timeout: 100000 
   
 # Image lazyload [https://github.com/Robin-front/hexo-lazyload]
 # lazyload:

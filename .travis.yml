@@ -20,7 +20,7 @@ script:
     - yes | cp book/book.ejs node_modules/hexo-douban/lib/templates
     - yes | cp book/books-generator.js node_modules/hexo-douban/lib
     - hexo clean
-    - hexo g
+    - hexo generate --debug
 
 after_script:
     - ./publish-to-gh-pages.sh
