@@ -1,12 +1,6 @@
 #!/bin/bash
 set -ev
 
-# Check if public directory exists and is a directory
-if [ ! -d "./public" ]; then
-    echo "Error: public directory not found. Make sure 'hexo g' completed successfully."
-    exit 1
-fi
-
 # Debug: Check public directory contents
 echo "Contents of public directory:"
 ls -la ./public
