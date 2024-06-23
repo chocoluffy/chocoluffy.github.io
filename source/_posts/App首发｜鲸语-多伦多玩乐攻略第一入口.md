@@ -10,15 +10,15 @@ categories: 创业
 
 鲸语是我过去几个月用业余时间开发出来的作品，**每天推送多伦多城市生活，校园生活的最新资讯**，实时追踪着主流媒体平台的本地报道，涵盖微信公众号，微博，知乎，Facebook及各大潮流杂志等等。结合全面的搜索功能，**每一个话题，都可以关注到最实用和最及时的回答**，从浪漫的约会地点到实惠的报税攻略......如果能省下些平时刷公众号的时间，少些急用时又搜不到的焦虑，也是我最大的愿望。
 
-<img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif" style="display: block; margin: 0 auto; height: 500px">
+<img src="https://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif" height="500" style="display: block; margin: 0 auto; height: 500px">
 
 鲸语也同步了近期多伦多周边最热门的活动，一键加入日历或者开始导航。
 
-<img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-event.gif" style="display: block; margin: 0 auto; height: 500px">
+<img src="https://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-event.gif" height="500" style="display: block; margin: 0 auto; height: 500px">
 
 同时，诞生于多伦多大学校园的鲸语，也聚合了大部分华人社团的动态，在此基础上，打通了UTADA社团旗下的UT助手平台的数据库，引入自动化聊天机器人，希望以最快捷的方式提供实时校园服务，包括各图书馆开放时间查询，期末考时间查询，课程课本乃至建筑物的查询等等等等...
 
-<img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-campus.gif" style="display: block; margin: 0 auto; height: 500px">
+<img src="https://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-campus.gif" height="500" style="display: block; margin: 0 auto; height: 500px">
 
 纷乱嘈杂的媒体环境，掩盖了许多不被分享的美好。而鲸语想实现的，是想把这些优质的本土内容攻略，沉淀下来，分享出去。用最自动化的方式。
 

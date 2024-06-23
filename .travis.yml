@@ -17,12 +17,10 @@ install:
     - npm install
 
 script:
-    - npm install hexo@latest # try fixing hexo g problom of not generateing public folder
     - yes | cp book/book.ejs node_modules/hexo-douban/lib/templates
     - yes | cp book/books-generator.js node_modules/hexo-douban/lib
     - hexo clean
-    - mkdir public
-    - hexo generate --verbose
+    - hexo generate --debug
 
 after_script:
     - ./publish-to-gh-pages.sh
