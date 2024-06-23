@@ -1,6 +1,12 @@
 #!/bin/bash
 set -ev
 
+# Ensure public directory exists
+if [ ! -d "./public" ]; then
+    echo "Public directory doesn't exist. Creating it."
+    mkdir -p ./public
+fi
+
 # get clone master
 git clone https://${GH_REF} .deploy_git
 cd .deploy_git
