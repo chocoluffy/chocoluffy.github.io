@@ -1,18 +1,17 @@
 #!/bin/bash
 set -ev
 
-# Ensure public directory exists
-if [ ! -d "./public" ]; then
-    echo "Public directory doesn't exist. Creating it."
-    mkdir -p ./public
-fi
-
 # get clone master
 git clone https://${GH_REF} .deploy_git
 cd .deploy_git
 git checkout master
 
 cd ../
+
+# Debug: Print current directory and its contents
+echo "Current directory: $(pwd)"
+ls -la
+
 mv .deploy_git/.git/ ./public/
 
 cd ./public
