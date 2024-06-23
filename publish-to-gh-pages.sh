@@ -1,9 +1,17 @@
 #!/bin/bash
 set -ev
 
+
+# Check if public is a file instead of a directory
+if [ -f "./public" ]; then
+    echo "Error: 'public' is a file, not a directory. Hexo generation may have failed."
+    echo "Contents of 'public' file:"
+    cat ./public
+fi
+
 # Debug: Check public directory contents
 echo "Contents of public directory:"
-ls -la ./public
+ls -la public
 
 # get clone master
 git clone https://${GH_REF} .deploy_git
@@ -15,9 +23,9 @@ cd ../
 echo "Current directory: $(pwd)"
 ls -la
 
-mv .deploy_git/.git/ ./public
+mv .deploy_git/.git/ public
 
-cd ./public
+cd public
 
 git config user.name "chocoluffy"
 git config user.email "luffy.yu@mail.utoronto.ca"
