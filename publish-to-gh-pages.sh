@@ -26,4 +26,6 @@ git config user.email "luffy.yu@mail.utoronto.ca"
 git add .
 git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 
-git push --force --quiet "https://${TravisCI_Token}@${GH_REF}" master:master
+# git push --force --quiet "https://${TravisCI_Token}@${GH_REF}" master:master
+# 240624 Update Github Push.
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
