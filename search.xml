@@ -12396,11 +12396,11 @@
       <content type="html"><![CDATA[<p>我想象，当我想知道在多伦多，哪里有最好吃的煎饼果子或者绵绵冰， 哪里有最好玩的酒吧和密室，鲸语能给我最好的答案。</p>
 <a id="more"></a>
 <p>鲸语是我过去几个月用业余时间开发出来的作品，<strong>每天推送多伦多城市生活，校园生活的最新资讯</strong>，实时追踪着主流媒体平台的本地报道，涵盖微信公众号，微博，知乎，Facebook及各大潮流杂志等等。结合全面的搜索功能，<strong>每一个话题，都可以关注到最实用和最及时的回答</strong>，从浪漫的约会地点到实惠的报税攻略……如果能省下些平时刷公众号的时间，少些急用时又搜不到的焦虑，也是我最大的愿望。</p>
-<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif" style="display: block; margin: 0 auto; height: 500px"></p>
+<p><img src="https://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-search.gif" height="500" style="display: block; margin: 0 auto; height: 500px"></p>
 <p>鲸语也同步了近期多伦多周边最热门的活动，一键加入日历或者开始导航。</p>
-<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-event.gif" style="display: block; margin: 0 auto; height: 500px"></p>
+<p><img src="https://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-event.gif" height="500" style="display: block; margin: 0 auto; height: 500px"></p>
 <p>同时，诞生于多伦多大学校园的鲸语，也聚合了大部分华人社团的动态，在此基础上，打通了UTADA社团旗下的UT助手平台的数据库，引入自动化聊天机器人，希望以最快捷的方式提供实时校园服务，包括各图书馆开放时间查询，期末考时间查询，课程课本乃至建筑物的查询等等等等…</p>
-<p><img src="http://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-campus.gif" style="display: block; margin: 0 auto; height: 500px"></p>
+<p><img src="https://chocoluffy.com/ReactNativeEverydayDemo/images/xs-whalesper-campus.gif" height="500" style="display: block; margin: 0 auto; height: 500px"></p>
 <p>纷乱嘈杂的媒体环境，掩盖了许多不被分享的美好。而鲸语想实现的，是想把这些优质的本土内容攻略，沉淀下来，分享出去。用最自动化的方式。</p>
 <h2 id="一个没有编辑部的媒体平台_-_鲸语是什么">一个没有编辑部的媒体平台 - 鲸语是什么</h2><p>曾经接触过许多优秀的学生开发者的作品，可每当发现作品的内容终止更新的时候，总会感到些许惋惜。</p>
 <p>的确，作为学生，难以取舍的运营成本抑或突如其来的人情世故，太容易放弃作品背后的冲动。也或许是这样，在我有开发鲸语的计划时，自动化成为了我最重要的目标。</p>
@@ -13582,7 +13582,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;section&quot; id=&quot;android&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;containerrow&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;slides&quot;&gt;</span><br><span class="line">      &lt;ul class=&quot;slides-container&quot;&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;img src=&quot;./image/desk.jpg&quot; alt=&quot;&quot;&gt;</span><br><span class="line">          &lt;div class=&quot;reverselay&quot;&gt;&lt;/div&gt;</span><br><span class="line">          &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;</span><br><span class="line">          &lt;div class=&quot;mainbadget&quot;&gt;</span><br><span class="line">              &lt;h5&gt;</span><br><span class="line">                &lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;&amp;nbsp;134 &amp;nbsp;&amp;nbsp;</span><br><span class="line">                &lt;span class=&quot;glyphicon glyphicon-fire&quot;&gt;&lt;/span&gt;&amp;nbsp;3440</span><br><span class="line">              &lt;/h5&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">          &lt;div class=&quot;text-container&quot;&gt;</span><br><span class="line">            &lt;div class=&quot;maintitle&quot;&gt;</span><br><span class="line">               &lt;a href=&quot;&quot;&gt;Morning Call&lt;/a&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">            &lt;div class=&quot;maintext&quot;&gt;</span><br><span class="line">              &lt;p&gt;Join our breakfast cooking club for fresh pancakes and sunshine!</span><br><span class="line">              Meet your friends here and enjoy every piece of buttered toast. &lt;a href=&quot;&quot;&gt;See more.&lt;/a&gt;&lt;/p&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">          &lt;/div&gt;    </span><br><span class="line">        &lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">      &lt;nav class=&quot;slides-navigation&quot;&gt;</span><br><span class="line">        &lt;a href=&quot;#&quot; class=&quot;prev&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;/span&gt;&lt;/a&gt;</span><br><span class="line">        &lt;a href=&quot;#&quot; class=&quot;next&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;&lt;/a&gt;</span><br><span class="line">      &lt;/nav&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;div id=&quot;slider-control&quot;&gt;</span><br><span class="line">      &lt;a href=&quot;#react&quot; class=&quot;active&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">      &lt;a href=&quot;#intro&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">      &lt;a href=&quot;#native&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">      &lt;a href=&quot;#touch&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">      &lt;a href=&quot;#android&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;dot&quot;&gt;&lt;/div&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p>注意我这里的<code>text-container</code>, <code>maintitle</code>, <code>maintext</code>都是用来创建overlay在图片上面的文字， 分离出来比较方便定位。最后记得要初始化js：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  $(&apos;#slides&apos;).superslides(&#123;</span><br><span class="line">    animation: &apos;fade&apos;,</span><br><span class="line">    play: &apos;8000&apos;</span><br><span class="line">  &#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<p>还有很多的功能选项， 在<a href="https://github.com/nicinabox/superslides" target="_blank" rel="noopener">主页</a>可以查看到最全的功能配置，也可以参考他的<a href="http://archive.nicinabox.com/superslides/#1" target="_blank" rel="noopener">实例页面</a> 那就搞定了! 最后附上成品的gif:<br><img src="https://giant.gfycat.com/WetLongHapuka.gif" alt="project gif"></p>
 ]]></content>
     </entry>
     
@@ -14184,6 +14183,28 @@
     </entry>
     
     <entry>
+      <title><![CDATA[用reveal.js制作生日礼物]]></title>
+      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
+      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
+<a id="more"></a>
+<ol>
+<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
+<p>[3] </p>
+</li>
+<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
+</ol>
+<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
+<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
+<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
+<p>然后给中心的图标添加一个火箭发射的动效</p>
+<p>关于reveal.js的在section的部分添加视频</p>
+<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
+
+<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
+</section>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Agile web developing in rails 第一期]]></title>
       <url>http://chocoluffy.com/2015/12/24/agile-web-developing-in-rails-%E7%AC%AC%E4%B8%80%E6%9C%9F/</url>
       <content type="html"><![CDATA[<p>目的： 将agile rails web application一书里面的精华概括下来， 为之后运用rails开发打基础</p>
@@ -14225,28 +14246,6 @@
 <p><strong>  再补充一遍， new只是得到一个form的页面， 真正的create操作是由create来完成的， 通过http的verb也可以看出来；</strong></p>
 <p>在修改了new的方法之后， 尤其是改变了redirect的方向之后， 需要同时去修改test里面的文件；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">test &quot;should redirect to store_url because of empty cart when checkout&quot; do</span><br><span class="line">  get :new</span><br><span class="line">  assert_redirected_to store_url</span><br><span class="line">  assert_equal flash[:notice], &quot;Your cart is empty!&quot;</span><br><span class="line">end</span><br><span class="line"></span><br><span class="line">test &quot;should get new&quot; do</span><br><span class="line">  item = LineItem.new</span><br><span class="line">  item.build_cart</span><br><span class="line">  item.product = products(:one)</span><br><span class="line">  item.save!</span><br><span class="line">  session[:cart_id] = item.cart.id</span><br><span class="line">  get :new</span><br><span class="line">  assert_response :success</span><br><span class="line">end</span><br></pre></td></tr></table></figure></p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[用reveal.js制作生日礼物]]></title>
-      <url>http://chocoluffy.com/2015/12/24/%E7%94%A8reveal-js%E5%88%B6%E4%BD%9C%E7%94%9F%E6%97%A5%E6%B4%BE%E5%AF%B9%E7%A4%BC%E7%89%A9/</url>
-      <content type="html"><![CDATA[<p>这篇笔记作为revealjs的学习记录 &amp; 网页制作的迭代</p>
-<a id="more"></a>
-<ol>
-<li><p>首先理清楚每天需要做的东西<br>在tracy换头像的时候保存头像， 最后还需要大家帮忙把头像收集好；<br>需要整理关于他们最爱的东西的问题：<br>[1] 最喜欢的颜色？<br>tracy: 黄色<br>xth:<br>[2] 最喜欢的场景？<br>tracy: 雪天的时候在房间里面看雪景,  喝着热巧， 吃cookie，看雪景。<br>用飘雪的效果<br>xth: 萤火虫的效果</p>
-<p>[3] </p>
-</li>
-<li>网上一些很棒的资源<br><a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></li>
-</ol>
-<p><a href="http://codepen.io/aamirafridi/pen/sfgGA" target="_blank" rel="noopener">很美的萤火虫的特效scrolling</a><br><a href="http://codepen.io/rikschennink/pen/eNbXMP" target="_blank" rel="noopener">萤火虫闪光</a></p>
-<p>找css background gradient的一个好地方：<br><a href="http://uigradients.com/#" target="_blank" rel="noopener">http://uigradients.com/#</a></p>
-<h3 id="开场特效：">开场特效：</h3><p>参考<a href="http://codepen.io/andreasstorm/pen/rHDjf" target="_blank" rel="noopener">click anywhere to start an animation!</a><br>use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(html).on(‘mousedown’, function(e))</span><br></pre></td></tr></table></figure></p>
-<p>然后给中心的图标添加一个火箭发射的动效</p>
-<p>关于reveal.js的在section的部分添加视频</p>
-<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop="">
-
-<p>使用长图片做parallax scrolling effect:<br><a href="https://github.com/hakimel/reveal.js/" target="_blank" rel="noopener">https://github.com/hakimel/reveal.js/</a><br>的parallax background部分！！</p>
-</section>]]></content>
     </entry>
     
     <entry>
