@@ -24,6 +24,7 @@ function resolv(url, timeout, headers) {
             headers: headers,
         });
     } catch (err) {
+        console.log("resolv error:", err)
         offline = true;
     }
 
@@ -73,10 +74,19 @@ function resolv(url, timeout, headers) {
         var tags = xpath.select1('string(//span[@class="tags"])', parser);
         tags = tags ? tags.substr(3) : '';
 
-        var recommend = xpath.select1('string(//li/span[starts-with(@class,"rating")]/@class)', parser);
-        recommend = renderStar(recommend.substr(6, 1));
-        var comment = xpath.select1('string(//p[@class="comment"])', parser);
-        comment = comment ? comment : '';
+        // update rating
+        var ratingClass = xpath.select1('string(//span[starts-with(@class,"rating")]/@class)', parser);
+        var rating = ratingClass ? ratingClass.match(/\d/)[0] : '0';
+        var recommend = renderStar(rating);
+
+        // update comment parsing
+        var comment = xpath.select1('string(//p[@class="comment comment-item"])', parser);
+        comment = comment ? comment.trim() : '';
+
+        // console.log("title", title);
+        // console.log("recommend:", recommend);
+        // console.log("comment:", comment);
+        
 
         //image = 'https://images.weserv.nl/?url=' + image.substr(8, image.length - 8) + '&w=100';
 
@@ -110,7 +120,7 @@ module.exports = function (locals) {
         root = root.slice(0, root.length - 1);
     }
 
-    var timeout = 40000; // time to wait for pulling book info.
+    var timeout = 100000;
     if (config.douban.timeout) {
         timeout = config.douban.timeout;
     }
